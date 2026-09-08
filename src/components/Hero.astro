@@ -1,0 +1,130 @@
+---
+// The first viewport. Editorial: a large serif line, a quiet lede, one action, and one honest photograph
+// of healed brows on a face. Nothing is drawn on top of the photo.
+import type { SiteSettings, Photo as PhotoType } from "../lib/content";
+import Photo from "./Photo.astro";
+import Caption from "./Caption.astro";
+import Icon from "./Icon.astro";
+
+interface Props {
+  settings: SiteSettings;
+  photo: PhotoType;
+}
+const { settings, photo } = Astro.props;
+---
+
+{/* No .reveal here: the scroll-entry reveal is for blocks that arrive, and the hero is already there.
+    Fading it in would hold the page's LCP element at zero opacity for the length of the transition. */}
+<section class="hero page" data-hero>
+  <div class="hero__copy">
+    <h1>Natural enough that no one asks.</h1>
+    <p class="lede">
+      Permanent makeup mapped, measured, and drawn by one artist, so the result looks like you on a good day.
+    </p>
+    <div class="hero__actions">
+      <a class="btn hero__call" href={`tel:${settings.phoneTel}`}>
+        <Icon name="phone" />
+        Call {settings.phone}
+      </a>
+      <a class="link" href="#work">
+        See the work
+        <Icon name="arrow" />
+      </a>
+    </div>
+    <p class="hero__meta">
+      <span>
+        {settings.locationLine}. Every service is two visits: the session, then a perfecting touch-up around six weeks
+        later.
+      </span>
+    </p>
+  </div>
+
+  <figure class="hero__figure">
+    <Photo
+      photo={photo}
+      loading="eager"
+      fetchpriority="high"
+      widths={[640, 960, 1320]}
+      sizes="(min-width: 60rem) 44vw, (min-width: 34rem) 480px, 100vw"
+    />
+    <figcaption>
+      <Caption service="Microblading and shading" detail="Healed" />
+    </figcaption>
+  </figure>
+</section>
+
+<style>
+  .hero {
+    display: grid;
+    gap: var(--space-7);
+    padding-block: var(--space-8) var(--section);
+  }
+  .hero__copy {
+    display: grid;
+    gap: var(--space-5);
+    align-content: center;
+  }
+  /* Stacked, copy and photograph are one document column. Without the cap the
+     figure runs the full 776px of a tablet and renders a metre of face, and the
+     meta rule outruns every line of type above it. */
+  .hero__copy,
+  .hero__figure {
+    max-width: 30rem;
+  }
+  .hero__copy h1 {
+    max-width: 14ch;
+  }
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+    margin-top: var(--space-2);
+  }
+  .hero__call {
+    display: none;
+  }
+  /* The rule spans the copy column so it lands on the same edge as the heading;
+     the sentence keeps its own measure inside it. */
+  .hero__meta {
+    font-size: var(--fs-caption);
+    color: var(--ink-muted);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+  }
+  .hero__meta span {
+    display: block;
+    max-width: 46ch;
+  }
+  .hero__figure {
+    margin: 0;
+  }
+  /* Phone: tall crop keeps both brows; desktop: a squarer crop so neither brow is lost to the frame. */
+  .hero__figure :global(.photo) {
+    aspect-ratio: 4 / 5;
+  }
+  @media (min-width: 60rem) {
+    .hero {
+      /* Capped so a tall viewport does not stretch a 650px composition over 1000px
+         of empty shell; the cream band below stays visible and invites the scroll. */
+      grid-template-columns: 1.05fr 1fr;
+      align-items: center;
+      column-gap: var(--space-8);
+      padding-block: var(--space-9) var(--section);
+      min-height: min(calc(100svh - var(--header-h)), 46rem);
+    }
+    .hero__call {
+      display: inline-flex;
+    }
+    .hero__copy,
+    .hero__figure {
+      max-width: none;
+    }
+    .hero__figure :global(.photo) {
+      aspect-ratio: 6 / 5;
+    }
+    .hero__figure :global(.photo img) {
+      object-position: 50% 40%;
+    }
+  }
+</style>

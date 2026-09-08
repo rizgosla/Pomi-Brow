@@ -1,0 +1,60 @@
+---
+// The Yelp count as one line of editorial type.
+import type { SiteSettings } from "../lib/content";
+import Icon from "./Icon.astro";
+
+interface Props {
+  settings: SiteSettings;
+}
+const { settings } = Astro.props;
+const count = settings.yelpReviewCount;
+---
+
+<section class="count section" aria-labelledby="count-heading">
+  <div class="page count__row reveal">
+    <p class="count__numeral" aria-hidden="true">{count}+</p>
+    <div class="count__text">
+      <h2 id="count-heading" class="count__heading">
+        <span class="visually-hidden">{count} or more </span>Five-star reviews on Yelp.
+      </h2>
+      <p class="muted">Every one written by a client of one artist. Read them before you call.</p>
+      <a class="link" href={settings.yelpUrl} rel="noopener">
+        Read the reviews
+        <Icon name="external" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .count__row {
+    display: grid;
+    gap: var(--space-5);
+    align-items: center;
+  }
+  .count__numeral {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-size: var(--fs-numeral);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+  .count__text {
+    display: grid;
+    gap: var(--space-3);
+    max-width: 40ch;
+  }
+  .count__heading {
+    font-family: var(--font-body);
+    font-size: var(--fs-h3);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  @media (min-width: 48rem) {
+    .count__row {
+      grid-template-columns: auto 1fr;
+      gap: var(--space-8);
+    }
+  }
+</style>

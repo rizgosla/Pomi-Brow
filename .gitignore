@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.impeccable/config.local.json
+.impeccable/questions/
+.impeccable/review/
+.wrangler/
+*.log
+.DS_Store
+Thumbs.db
+
+# Impeccable working artifacts. The reports (.impeccable/critique/*.md),
+# the surface briefs and design.json are the durable record and stay tracked;
+# the screenshot captures and live-session journals are per-run scratch.
+.impeccable/critique/capture-*/
+.impeccable/critique/*.mjs
+.impeccable/live/sessions/
+.impeccable/live/roots.json

@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Is permanent makeup safe?",
+    "slug": "is-permanent-makeup-safe",
+    "summary": "Permanent makeup is a cosmetic tattoo, so the questions to ask any artist are about needles, pigments, and hygiene. Ask Pomi at your consultation; nothing touches your skin before you have talked it through and agreed on the shape.",
+    "relatedService": null,
+    "showAsFaq": true
+  },
+  {
+    "title": "Are powder brows for me?",
+    "slug": "are-powder-brows-for-me",
+    "summary": "Powder brows suit oily or mature skin and anyone who fills in their brows daily with pencil or powder. Hair strokes suit drier skin and a sparser, more natural look.",
+    "relatedService": "ombre-powder-brows",
+    "showAsFaq": true
+  },
+  {
+    "title": "How long does permanent makeup last?",
+    "slug": "how-long-it-lasts",
+    "summary": "Most work holds its shape for one to three years, softening gradually. Sun, oily skin, and skincare acids fade it faster. A yearly touch-up keeps it crisp.",
+    "relatedService": "microblading",
+    "showAsFaq": true
+  },
+  {
+    "title": "PMU healing timeline",
+    "slug": "pmu-healing-timeline",
+    "summary": "Day 1 it looks bold and dark. Days 4 to 7 it flakes. Around day 10 it looks too light. By week 4 the true color returns, and at week 6 the perfecting touch-up finishes it.",
+    "relatedService": "microblading",
+    "showAsFaq": false
+  },
+  {
+    "title": "Eyeliner vs lash enhancement",
+    "slug": "eyeliner-vs-lash-enhancement",
+    "summary": "Lash enhancement fills the gaps between lashes with no visible line. Eyeliner adds a defined line above them. Both are done in the same two-visit process.",
+    "relatedService": "lash-enhancement",
+    "showAsFaq": false
+  },
+  {
+    "title": "Lip tint vs lip blush",
+    "slug": "lip-tint-vs-lip-blush",
+    "summary": "They are names for the same technique: a sheer wash of color through the whole lip, not a lip liner.",
+    "relatedService": "lip-tint",
+    "showAsFaq": false
+  },
+  {
+    "title": "Who is a good candidate for permanent makeup?",
+    "slug": "good-pmu-candidates",
+    "summary": "Most healthy adults. Pregnancy, blood thinners, active skin conditions on the area, and recent retinol or chemical peels are reasons to wait. Ask before booking if unsure.",
+    "relatedService": null,
+    "showAsFaq": true
+  },
+  {
+    "title": "How to prepare for your appointment",
+    "slug": "prepare-for-appointment",
+    "summary": "No alcohol, caffeine, or blood thinners for 24 hours. No retinol or exfoliants on the area for a week. Come in with your usual makeup so Pomi can see the shape you like.",
+    "relatedService": null,
+    "showAsFaq": false
+  },
+  {
+    "title": "Scalp micropigmentation",
+    "slug": "scalp-micropigmentation",
+    "summary": "Thousands of tiny pigment dots that mimic shaved hair follicles, filling thinning crowns and softening hairlines.",
+    "relatedService": "scalp-micropigmentation",
+    "showAsFaq": false
+  },
+  {
+    "title": "Why the touch-up matters",
+    "slug": "importance-of-touch-up",
+    "summary": "Skin heals unevenly, and some strokes fade more than others. The six-week touch-up refines shape and color once healing is done. It is part of the service, not an extra.",
+    "relatedService": "microblading",
+    "showAsFaq": false
+  }
+]

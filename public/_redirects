@@ -1,0 +1,16 @@
+# Cloudflare Pages redirects. One rule per line: from  to  status
+
+# The GoDaddy site served the home page at two addresses. Keep one.
+/home  /  301
+/home/  /  301
+
+# Two Learn URLs carried an encoded "?" in the slug. Clean addresses take over.
+/are-powder-brows-for-me%3F-1  /learn/are-powder-brows-for-me  301
+/are-powder-brows-for-me%3F-1/  /learn/are-powder-brows-for-me  301
+/is-permanent-makeup-safe%3F  /learn/is-permanent-makeup-safe  301
+/is-permanent-makeup-safe%3F/  /learn/is-permanent-makeup-safe  301
+
+# TODO before launch: export the full URL list from the live GoDaddy site and map every
+# legacy service and Learn address here (e.g. /microblading -> /services/microblading,
+# /pmu-healing-timeline -> /learn/pmu-healing-timeline). Every existing address must
+# either keep working or 301 to its replacement.

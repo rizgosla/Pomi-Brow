@@ -1,0 +1,367 @@
+@import "@fontsource-variable/newsreader/index.css";
+@import "@fontsource-variable/newsreader/opsz.css";
+@import "@fontsource-variable/geist/index.css";
+@import "./tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  background: var(--canvas);
+  color: var(--ink-body);
+  font-family: var(--font-body);
+  font-size: 100%;
+  line-height: var(--lh-body);
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  scrollbar-color: #d4d2ce var(--canvas);
+  scrollbar-width: thin;
+  caret-color: var(--pink-ink);
+  accent-color: var(--pink-ink);
+}
+
+@media (max-width: 59.99rem) {
+  html {
+    scroll-padding-bottom: calc(var(--callbar-h) + env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-size: var(--fs-body);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--pale-pink);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d2ce;
+  border: 3px solid var(--canvas);
+  border-radius: 999px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variation-settings: "opsz" 72;
+  line-height: var(--lh-display);
+  letter-spacing: var(--track-display);
+}
+
+h1 {
+  font-size: var(--fs-display);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--border);
+  transition: text-decoration-color var(--dur-fast) ease;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Layout primitives */
+.page {
+  width: min(100% - 2 * var(--gutter), var(--page-max));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section);
+}
+
+.section + .section {
+  border-top: 1px solid var(--border);
+}
+
+.section-head {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  max-width: 44rem;
+}
+
+.lede {
+  font-size: var(--fs-lede);
+  line-height: 1.5;
+  color: var(--ink-muted);
+  max-width: 40ch;
+}
+
+.measure {
+  max-width: var(--measure);
+}
+
+.muted {
+  color: var(--ink-muted);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Buttons: solid ink, slight radius, no shadow */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55em;
+  min-height: 2.875rem;
+  padding: 0 1.25rem;
+  border-radius: var(--radius-sm);
+  background: var(--pink-ink);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: var(--fs-small);
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color var(--dur-base) ease,
+    transform var(--dur-base) var(--ease-out);
+}
+
+.btn:hover {
+  background: var(--pink-ink-hover);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn--quiet {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+.btn--quiet:hover {
+  background: var(--bone);
+}
+
+.btn .icon {
+  width: 1.05em;
+  height: 1.05em;
+}
+
+/* Text link */
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--fs-small);
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color var(--dur-base) ease;
+}
+
+.link:hover {
+  text-decoration-color: currentColor;
+}
+
+.link .icon {
+  width: 1em;
+  height: 1em;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.link:hover .icon {
+  transform: translateX(3px);
+}
+
+/* Tags: pastel pills, tiny, tracked caps */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  padding: 0 0.6rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-tag);
+  font-weight: 500;
+  letter-spacing: var(--track-tag);
+  text-transform: uppercase;
+  line-height: 1;
+  background: var(--bone);
+  color: var(--ink-body);
+}
+
+/* Category tags carry the pigment, not an abstract semantic colour. */
+.tag--brow {
+  background: var(--tag-brow);
+  color: var(--tag-brow-ink);
+}
+.tag--eye {
+  background: var(--tag-eye);
+  color: var(--tag-eye-ink);
+}
+.tag--lip {
+  background: var(--tag-lip);
+  color: var(--tag-lip-ink);
+}
+.tag--hair {
+  background: var(--tag-hair);
+  color: var(--tag-hair-ink);
+}
+.tag--pink {
+  background: var(--pale-pink);
+  color: var(--pink-ink);
+}
+
+/* Form status keeps the semantic pastels; they mean success and error there. */
+.tag--red {
+  background: var(--pale-red);
+  color: var(--pale-red-ink);
+}
+.tag--green {
+  background: var(--pale-green);
+  color: var(--pale-green-ink);
+}
+
+/* Cards: exactly one hairline, crisp radius, generous padding */
+.card {
+  background: var(--canvas);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 1.2rem + 1.2vw, 2.5rem);
+  transition: box-shadow var(--dur-base) ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* Meta text (prices, phone numbers) */
+.meta {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--ink-muted);
+  letter-spacing: 0;
+}
+
+/* Scroll-entry reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity var(--dur-reveal) var(--ease-out),
+    transform var(--dur-reveal) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Microblading",
+    "slug": "microblading",
+    "category": "Eyebrows",
+    "order": 10,
+    "price": 600,
+    "touchUpPrice": 100,
+    "summary": "Individual hair strokes drawn into the skin, one by one, to follow the way your own brow grows.",
+    "galleryFolder": "microblading",
+    "showOnHome": true
+  },
+  {
+    "title": "Microblading + Shading",
+    "slug": "microblading-shading",
+    "category": "Eyebrows",
+    "order": 20,
+    "price": 700,
+    "touchUpPrice": 100,
+    "summary": "Hair strokes at the front, soft shading through the body and tail. Fuller than microblading alone, still natural.",
+    "galleryFolder": "microblading-shading",
+    "showOnHome": true
+  },
+  {
+    "title": "Ombre Powder Brows",
+    "slug": "ombre-powder-brows",
+    "category": "Eyebrows",
+    "order": 30,
+    "price": 600,
+    "touchUpPrice": 100,
+    "summary": "A soft powdered finish, lighter at the front and deeper at the tail, like a well-blended brow pencil.",
+    "galleryFolder": "ombre-powder-brows",
+    "showOnHome": true
+  },
+  {
+    "title": "Eyeliner",
+    "slug": "eyeliner",
+    "category": "Eyes",
+    "order": 40,
+    "price": 600,
+    "touchUpPrice": 100,
+    "summary": "A fine line along the lash line that stays put through swimming, sleep, and sweat.",
+    "galleryFolder": "eyeliner",
+    "showOnHome": true
+  },
+  {
+    "title": "Lash Enhancement",
+    "slug": "lash-enhancement",
+    "category": "Eyes",
+    "order": 50,
+    "price": 600,
+    "touchUpPrice": 100,
+    "summary": "Pigment placed between the lashes only. Lashes look fuller; nobody sees a line.",
+    "galleryFolder": "lash-enhancement",
+    "showOnHome": true
+  },
+  {
+    "title": "Lip Tint",
+    "slug": "lip-tint",
+    "category": "Lips",
+    "order": 60,
+    "price": 600,
+    "touchUpPrice": 100,
+    "summary": "Evens lip tone and gives back the color that fades with time. Your lips, a shade warmer.",
+    "galleryFolder": "lip-tint",
+    "showOnHome": true
+  },
+  {
+    "title": "Scalp Micropigmentation",
+    "slug": "scalp-micropigmentation",
+    "category": "Hair",
+    "order": 70,
+    "price": 500,
+    "priceUnit": "hr",
+    "summary": "Tiny pigment dots that read as closely shaved hair, filling thinning areas and hairlines.",
+    "galleryFolder": "scalp-micropigmentation",
+    "showOnHome": true
+  },
+  {
+    "title": "Yearly touch-up",
+    "slug": "yearly-touch-up",
+    "category": "Maintenance",
+    "order": 80,
+    "price": 300,
+    "priceNote": "existing clients",
+    "summary": "A color refresh once a year keeps healed work crisp.",
+    "showOnHome": true
+  },
+  {
+    "title": "Additional touch-up",
+    "slug": "additional-touch-up",
+    "category": "Maintenance",
+    "order": 90,
+    "price": 100,
+    "priceNote": "if needed",
+    "summary": "Any extra perfecting session beyond the included one.",
+    "showOnHome": true
+  },
+  {
+    "title": "Tattoo removal",
+    "slug": "tattoo-removal",
+    "category": "Correction",
+    "order": 100,
+    "price": 200,
+    "priceUnit": "session",
+    "priceNote": "up to 4 sessions",
+    "summary": "Lightens old or unwanted permanent makeup before correcting it.",
+    "showOnHome": true
+  }
+]

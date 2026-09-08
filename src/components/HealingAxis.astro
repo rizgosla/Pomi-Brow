@@ -1,0 +1,177 @@
+---
+// The method and the healing timeline, one quiet vertical rule from mapping to the six-week touch-up.
+import type { Photo as PhotoType } from "../lib/content";
+import Photo from "./Photo.astro";
+import Caption from "./Caption.astro";
+
+interface Props {
+  photo: PhotoType | null;
+}
+const { photo } = Astro.props;
+
+const steps = [
+  {
+    when: "Before pigment",
+    dot: "var(--heal-0)",
+    ring: "var(--ink-muted)",
+    title: "Mapped and measured",
+    body: "Pomi draws the shape on with pencil and thread first: head, arch, tail, measured against your own features. Nothing is permanent until you agree with what you see in the mirror.",
+  },
+  {
+    when: "Day 1",
+    dot: "var(--heal-1)",
+    ring: "var(--heal-1)",
+    title: "Bolder than the final",
+    body: "Fresh work looks darker and sharper than it will heal. This is normal and it is temporary.",
+  },
+  {
+    when: "Days 4 to 7",
+    dot: "var(--heal-2)",
+    ring: "var(--heal-2)",
+    title: "Flaking",
+    body: "The surface flakes as the skin heals. Keep it dry and leave it alone; the color underneath is setting.",
+  },
+  {
+    when: "Around day 10",
+    dot: "var(--heal-3)",
+    ring: "var(--heal-4)",
+    title: "Too light",
+    body: "The color looks like it disappeared. It has not. It is under a new layer of skin and will come back.",
+  },
+  {
+    when: "Week 4",
+    dot: "var(--heal-4)",
+    ring: "var(--heal-4)",
+    title: "The true color",
+    body: "Healed skin turns clear and the real shade shows, softer and more natural than day one.",
+  },
+  {
+    when: "Week 6",
+    dot: "var(--pink-ink)",
+    ring: "var(--pink-ink)",
+    title: "The perfecting touch-up",
+    body: "Skin heals unevenly, so some strokes need a second pass. This appointment refines shape and color and finishes the work. It is part of the service, not an extra.",
+    last: true,
+  },
+];
+---
+
+<section class="method section" id="method" aria-labelledby="method-heading">
+  <div class="page">
+    <div class="section-head reveal">
+      <h2 id="method-heading">Precision first. Then six weeks of patience.</h2>
+      <p class="lede">
+        Natural is not luck. It is measured before a single stroke, then given time to heal into your skin.
+      </p>
+    </div>
+
+    <div class="method__grid">
+      {
+        photo && (
+          <figure class="method__figure reveal">
+            <Photo photo={photo} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960, 1320]} ratio="4 / 5" />
+            <figcaption>
+              <Caption service="Microblading" detail="Mapped, then healed" />
+            </figcaption>
+          </figure>
+        )
+      }
+
+      <ol class="axis">
+        {
+          steps.map((s, i) => (
+            <li class:list={["axis__step", "reveal", { "axis__step--last": s.last }]} style={`--i: ${i}; --dot: ${s.dot}; --dot-ring: ${s.ring}`}>
+              <span class:list={["tag", { "tag--pink": s.last }]}>{s.when}</span>
+              <h3 class="axis__title">{s.title}</h3>
+              <p class="axis__body">{s.body}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>
+
+<style>
+  .method__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+  .method__figure {
+    margin: 0;
+  }
+  .axis {
+    position: relative;
+    padding-left: 2rem;
+  }
+  .axis::before {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 3px;
+    border-radius: 2px;
+    /* The pigment across six weeks: dense, flaking, washed out around day ten,
+       returning, settled. The rail is the argument, made in colour. */
+    background: linear-gradient(
+      to bottom,
+      var(--heal-0) 0%,
+      var(--heal-1) 14%,
+      var(--heal-2) 34%,
+      var(--heal-3) 55%,
+      var(--heal-4) 78%,
+      var(--heal-5) 100%
+    );
+  }
+  .axis__step {
+    position: relative;
+    display: grid;
+    gap: var(--space-2);
+    justify-items: start;
+    padding-bottom: var(--space-7);
+  }
+  .axis__step::before {
+    content: "";
+    position: absolute;
+    left: calc(-2rem + 0.4rem - 5px);
+    top: 0.45rem;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    /* Each dot is filled at that moment's pigment value. The day-ten dot is
+       deliberately the palest thing on the page -- that is the point of it --
+       so every dot carries a ring to stay perceivable at 11px. */
+    background: var(--dot, var(--canvas));
+    border: 1px solid var(--dot-ring, var(--ink-muted));
+    box-shadow: 0 0 0 3px var(--canvas);
+  }
+  .axis__step--last::before {
+    background: var(--pink-ink);
+    border-color: var(--pink-ink);
+  }
+  .axis__step--last {
+    padding-bottom: 0;
+  }
+  .axis__body {
+    color: var(--ink-muted);
+    max-width: 46ch;
+  }
+  @media (min-width: 60rem) {
+    .method__grid {
+      grid-template-columns: 5fr 6fr;
+      gap: var(--space-9);
+    }
+    .method__figure {
+      position: sticky;
+      top: calc(var(--header-h) + var(--space-6));
+      align-self: start;
+    }
+    .axis {
+      padding-left: 2.5rem;
+    }
+    .axis__step::before {
+      left: calc(-2.5rem + 0.4rem - 4px);
+    }
+  }
+</style>

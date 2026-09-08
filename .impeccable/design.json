@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-07T00:00:00Z",
+  "title": "Design System: Pomi B. Brow Studio",
+  "stack": {
+    "framework": "Astro, static output",
+    "cms": "Sanity; Studio served at /admin, schema in cms/",
+    "content": "src/lib/content.ts with seed JSON fallback",
+    "hosting": "Cloudflare Pages",
+    "images": "astro:assets (webp, quality 80, responsive widths) via src/components/Photo.astro",
+    "fonts": "@fontsource-variable/newsreader (index + opsz axis), @fontsource-variable/geist, self-hosted; Geist Mono is a stack only, not loaded",
+    "tokens": "src/styles/tokens.css (:root custom properties), src/styles/global.css (primitives: .page .section .section-head .lede .btn .btn--quiet .link .tag .card .meta .reveal)",
+    "logo": "src/assets/brand/logo-black.svg, logo-white.svg (client brush-script wordmark, inlined via ?raw)",
+    "protocol": ".agents/skills/minimalist-ui/SKILL.md (pinned 2026-09-07, replaced the Brow Map world)"
+  },
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink",
+        "canonical": "#111111",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(85% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink-hover": {
+        "role": "primary",
+        "displayName": "Ink Hover",
+        "canonical": "#333333",
+        "derivedFrom": "ink"
+      },
+      "ink-body": {
+        "role": "neutral",
+        "displayName": "Ink Body",
+        "canonical": "#2f3437",
+        "tonalRamp": [
+          "oklch(15% 0.008 220)",
+          "oklch(28% 0.008 220)",
+          "oklch(35% 0.008 220)",
+          "oklch(45% 0.008 220)",
+          "oklch(55% 0.008 220)",
+          "oklch(70% 0.008 220)",
+          "oklch(85% 0.008 220)",
+          "oklch(95% 0.008 220)"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "#787774",
+        "tonalRamp": [
+          "oklch(15% 0.004 80)",
+          "oklch(25% 0.004 80)",
+          "oklch(35% 0.004 80)",
+          "oklch(45% 0.004 80)",
+          "oklch(56% 0.004 80)",
+          "oklch(70% 0.004 80)",
+          "oklch(85% 0.004 80)",
+          "oklch(95% 0.004 80)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Canvas",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(85% 0 0)",
+          "oklch(100% 0 0)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "#f7f6f3",
+        "tonalRamp": [
+          "oklch(15% 0.005 90)",
+          "oklch(25% 0.005 90)",
+          "oklch(35% 0.005 90)",
+          "oklch(45% 0.005 90)",
+          "oklch(55% 0.005 90)",
+          "oklch(70% 0.005 90)",
+          "oklch(85% 0.005 90)",
+          "oklch(97% 0.005 90)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#f9f9f8",
+        "tonalRamp": [
+          "oklch(15% 0.003 90)",
+          "oklch(25% 0.003 90)",
+          "oklch(35% 0.003 90)",
+          "oklch(45% 0.003 90)",
+          "oklch(55% 0.003 90)",
+          "oklch(70% 0.003 90)",
+          "oklch(85% 0.003 90)",
+          "oklch(98% 0.003 90)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#eaeaea",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(85% 0 0)",
+          "oklch(93% 0 0)"
+        ]
+      },
+      "pale-yellow": {
+        "role": "tertiary",
+        "displayName": "Pale Yellow (Eyebrows, Week 6, selection)",
+        "canonical": "#fbf3db",
+        "tonalRamp": [
+          "oklch(15% 0.04 85)",
+          "oklch(25% 0.06 85)",
+          "oklch(35% 0.08 85)",
+          "oklch(45% 0.1 85)",
+          "oklch(55% 0.1 85)",
+          "oklch(70% 0.08 85)",
+          "oklch(85% 0.06 85)",
+          "oklch(96% 0.03 85)"
+        ]
+      },
+      "pale-yellow-ink": {
+        "role": "tertiary",
+        "displayName": "Pale Yellow Ink",
+        "canonical": "#956400",
+        "derivedFrom": "pale-yellow"
+      },
+      "pale-blue": {
+        "role": "tertiary",
+        "displayName": "Pale Blue (Eyes)",
+        "canonical": "#e1f3fe",
+        "tonalRamp": [
+          "oklch(15% 0.04 235)",
+          "oklch(25% 0.06 235)",
+          "oklch(35% 0.08 235)",
+          "oklch(45% 0.1 235)",
+          "oklch(55% 0.1 235)",
+          "oklch(70% 0.08 235)",
+          "oklch(85% 0.06 235)",
+          "oklch(95% 0.03 235)"
+        ]
+      },
+      "pale-blue-ink": {
+        "role": "tertiary",
+        "displayName": "Pale Blue Ink",
+        "canonical": "#1f6c9f",
+        "derivedFrom": "pale-blue"
+      },
+      "pale-red": {
+        "role": "tertiary",
+        "displayName": "Pale Red (Lips, error)",
+        "canonical": "#fdebec",
+        "tonalRamp": [
+          "oklch(15% 0.05 20)",
+          "oklch(25% 0.08 20)",
+          "oklch(35% 0.1 20)",
+          "oklch(45% 0.12 20)",
+          "oklch(55% 0.12 20)",
+          "oklch(70% 0.1 20)",
+          "oklch(85% 0.06 20)",
+          "oklch(95% 0.03 20)"
+        ]
+      },
+      "pale-red-ink": {
+        "role": "tertiary",
+        "displayName": "Pale Red Ink",
+        "canonical": "#9f2f2d",
+        "derivedFrom": "pale-red"
+      },
+      "pale-green": {
+        "role": "tertiary",
+        "displayName": "Pale Green (Hair, success)",
+        "canonical": "#edf3ec",
+        "tonalRamp": [
+          "oklch(15% 0.04 145)",
+          "oklch(25% 0.06 145)",
+          "oklch(35% 0.08 145)",
+          "oklch(45% 0.08 145)",
+          "oklch(55% 0.08 145)",
+          "oklch(70% 0.06 145)",
+          "oklch(85% 0.04 145)",
+          "oklch(96% 0.02 145)"
+        ]
+      },
+      "pale-green-ink": {
+        "role": "tertiary",
+        "displayName": "Pale Green Ink",
+        "canonical": "#346538",
+        "derivedFrom": "pale-green"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero h1 only; max-width 12ch, text-wrap balance, Newsreader opsz 72."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "The Yelp review count as one object beside a sans title; one per page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Every section h2, inside a .section-head capped at 44rem. No kicker above it."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Short review quotes (under 220 characters) in Newsreader opsz 24; longer quotes fall back to Body."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h3s in Geist 500: service names, timeline step titles, the review-count sentence."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The single deck under each h2, max 40ch, Ink Muted."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs, FAQ answers, inputs. Measure 62ch. Secondary paragraphs drop to Ink Muted."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Buttons, nav links, text links, price rows, footer. Tabular numerals for phone numbers and prices."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Photo captions, form labels, hero meta line, price footnote. Sentence case; service name in Ink 500."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tag text only. The only uppercase on the site."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Optional price in a caption, in the monospace stack (system mono; Geist Mono is not loaded)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-hover",
+        "value": "0 2px 8px rgba(0, 0, 0, 0.04)",
+        "purpose": "The only shadow. Cards and Instagram tiles on hover over 200ms; absent at rest. Never on buttons."
+      },
+      {
+        "name": "input-focus-ring",
+        "value": "0 0 0 3px rgba(17, 17, 17, 0.06)",
+        "purpose": "Focus spread on inputs, with the border turned to Ink."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Reveal, button active, arrow nudge, call-bar slide."
+      },
+      {
+        "name": "dur-fast",
+        "value": "150ms",
+        "purpose": "Color and underline transitions on links, nav, inputs."
+      },
+      {
+        "name": "dur-base",
+        "value": "200ms",
+        "purpose": "Button fill, card hover shadow, arrow nudge, call-bar slide."
+      },
+      {
+        "name": "dur-reveal",
+        "value": "600ms",
+        "purpose": "Scroll-entry reveal: opacity 0 to 1, translateY(12px) to none; siblings stagger by calc(var(--i) * 80ms); IntersectionObserver threshold 0.05, rootMargin 0 0 -8% 0; inert under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "bento-2col",
+        "value": "40rem",
+        "purpose": "Bento to two columns; form name/phone row to two columns."
+      },
+      {
+        "name": "footer-3col",
+        "value": "48rem",
+        "purpose": "Footer to 1.6fr 1fr 1fr; review numeral beside its text."
+      },
+      {
+        "name": "desktop",
+        "value": "60rem",
+        "purpose": "Primary switch: nav and header Call button appear, mobile call bar hides, two-column sections and 3-col bento engage."
+      }
+    ],
+    "imagery": {
+      "grade": "filter: saturate(0.88) contrast(1.02)",
+      "grain": "::after, opacity 0.04, mix-blend-mode multiply, warm fractal-noise SVG tiled at 160px",
+      "frame": "1px solid var(--border), border-radius 12px, background var(--surface), object-fit cover",
+      "ratios": {
+        "hero": "4 / 5",
+        "method": "4 / 5",
+        "about": "4 / 5",
+        "instagram": "1 / 1",
+        "map": "4 / 3"
+      },
+      "note": "Grade is deliberately mild: pigment color is the evidence and must not be misrepresented. Nothing is drawn over a photograph."
+    },
+    "icons": {
+      "set": "hand-drawn, src/components/Icon.astro",
+      "stroke": "2px, round caps and joins, currentColor, viewBox 0 0 24 24",
+      "names": [
+        "phone",
+        "arrow",
+        "instagram",
+        "yelp",
+        "pin",
+        "menu",
+        "close",
+        "external",
+        "plus",
+        "minus"
+      ],
+      "sizes": "1rem to 1.15rem inline; 1.05em inside buttons"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action. Ink fill, 6px radius, no shadow; hover to #333, active scale .98. Carries the phone number with tabular figures.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6.5 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.2 6.2l1.3-2 4 1.5v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z\"/></svg><span>Call (949) 427-7664</span></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.55em; min-height: 2.875rem; padding: 0 1.25rem; border-radius: var(--radius-sm, 6px); background: var(--ink, #111111); color: #ffffff; font-family: var(--font-body, 'Geist Variable', 'Geist Sans', 'Helvetica Neue', system-ui, sans-serif); font-weight: 500; font-size: var(--fs-small, 0.9375rem); letter-spacing: 0.005em; font-variant-numeric: tabular-nums; text-decoration: none; white-space: nowrap; transition: background-color 200ms ease, transform 200ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn:hover { background: #333333; } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--ink, #111111); outline-offset: 3px; } .ds-btn .ds-icon { width: 1.05em; height: 1.05em; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Outbound proof links (Instagram handle, all reviews on Yelp). Transparent with the hairline; hover fills Bone.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3.5\" y=\"3.5\" width=\"17\" height=\"17\" rx=\"4.5\"/><circle cx=\"12\" cy=\"12\" r=\"3.8\"/><circle cx=\"17.2\" cy=\"6.8\" r=\"1\" fill=\"currentColor\" stroke=\"none\"/></svg><span>@pomib.browstudio</span></a>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; justify-content: center; gap: 0.55em; min-height: 2.875rem; padding: 0 1.25rem; border-radius: var(--radius-sm, 6px); background: transparent; color: var(--ink, #111111); border: 1px solid var(--border, #eaeaea); font-family: var(--font-body, 'Geist Variable', 'Geist Sans', 'Helvetica Neue', system-ui, sans-serif); font-weight: 500; font-size: var(--fs-small, 0.9375rem); text-decoration: none; white-space: nowrap; transition: background-color 200ms ease, transform 200ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-quiet:hover { background: var(--bone, #f7f6f3); } .ds-btn-quiet:active { transform: scale(0.98); } .ds-btn-quiet:focus-visible { outline: 2px solid var(--ink, #111111); outline-offset: 3px; } .ds-btn-quiet .ds-icon { width: 1.05em; height: 1.05em; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "button-quiet",
+      "description": "Secondary action beside a button: Ink 500 with an arrow that nudges 3px on hover.",
+      "html": "<a class=\"ds-link\" href=\"#\">See the work <svg class=\"ds-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15\"/><path d=\"m13 6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-link { display: inline-flex; align-items: center; gap: 0.45em; text-decoration: none; font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); font-weight: 500; font-size: var(--fs-small, 0.9375rem); color: var(--ink, #111111); } .ds-link .ds-icon { width: 1em; height: 1em; transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-link:hover .ds-icon { transform: translateX(3px); } .ds-link:focus-visible { outline: 2px solid var(--ink, #111111); outline-offset: 3px; border-radius: 4px; }"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "The only pill and the only color. Neutral Bone for timeline dates and sources; four pastels keyed to meaning.",
+      "html": "<span class=\"ds-tag\">Before pigment</span> <span class=\"ds-tag ds-tag--yellow\">Eyebrows</span> <span class=\"ds-tag ds-tag--blue\">Eyes</span> <span class=\"ds-tag ds-tag--red\">Lips</span> <span class=\"ds-tag ds-tag--green\">Hair</span>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; min-height: 1.5rem; padding: 0 0.6rem; border-radius: 9999px; font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); font-size: var(--fs-tag, 0.6875rem); font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; background: var(--bone, #f7f6f3); color: var(--ink-muted, #787774); margin-right: 0.5rem; } .ds-tag--yellow { background: var(--pale-yellow, #fbf3db); color: var(--pale-yellow-ink, #956400); } .ds-tag--blue { background: var(--pale-blue, #e1f3fe); color: var(--pale-blue-ink, #1f6c9f); } .ds-tag--red { background: var(--pale-red, #fdebec); color: var(--pale-red-ink, #9f2f2d); } .ds-tag--green { background: var(--pale-green, #edf3ec); color: var(--pale-green-ink, #346538); }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "One bento cell: tag, title, muted summary, hairline-topped price row with arrow. White, one hairline, 12px, 4% shadow only on hover.",
+      "html": "<div class=\"ds-card\"><span class=\"ds-card__tag\">Eyebrows</span><h3 class=\"ds-card__title\">Microblading + Shading</h3><p class=\"ds-card__summary\">Hair strokes at the front, soft shading through the body and tail. The most requested brow.</p><div class=\"ds-card__price\"><span class=\"ds-card__amount\">$700</span><span class=\"ds-card__muted\">+ $100 touch-up</span><svg class=\"ds-card__arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15\"/><path d=\"m13 6 6 6-6 6\"/></svg></div></div>",
+      "css": ".ds-card { display: grid; gap: 0.75rem; align-content: start; max-width: 22rem; background: var(--canvas, #ffffff); border: 1px solid var(--border, #eaeaea); border-radius: var(--radius, 12px); padding: clamp(1.5rem, 1.2rem + 1.2vw, 2.5rem); font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); color: var(--ink-body, #2f3437); transition: box-shadow 200ms ease; } .ds-card:hover { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); } .ds-card__tag { justify-self: start; margin-bottom: 0.5rem; display: inline-flex; align-items: center; min-height: 1.5rem; padding: 0 0.6rem; border-radius: 9999px; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; background: var(--pale-yellow, #fbf3db); color: var(--pale-yellow-ink, #956400); } .ds-card__title { margin: 0; font-size: 1.25rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3; color: var(--ink, #111111); } .ds-card__summary { margin: 0; color: var(--ink-muted, #787774); font-size: 0.9375rem; line-height: 1.6; } .ds-card__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; margin-top: 0.75rem; padding-top: 1rem; border-top: 1px solid var(--border, #eaeaea); font-size: 0.9375rem; font-variant-numeric: tabular-nums; } .ds-card__amount { color: var(--ink, #111111); font-weight: 500; font-size: 1.125rem; } .ds-card__muted { color: var(--ink-muted, #787774); } .ds-card__arrow { width: 1rem; height: 1rem; margin-left: auto; align-self: center; color: var(--ink-muted, #787774); transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-card:hover .ds-card__arrow { transform: translateX(3px); color: var(--ink, #111111); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Caption-size label over a hairline field at 6px. Focus turns the border to Ink with a 3px 6% ring.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field__label\">Email <span class=\"ds-field__optional\">optional</span></span><input class=\"ds-input\" type=\"email\" placeholder=\"you@example.com\" /></label>",
+      "css": ".ds-field { display: grid; gap: 0.4rem; max-width: 22rem; font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); } .ds-field__label { font-size: 0.8125rem; font-weight: 500; color: var(--ink, #111111); } .ds-field__optional { font-weight: 400; color: var(--ink-muted, #787774); margin-left: 0.35em; } .ds-input { width: 100%; font: inherit; font-size: 1.0625rem; line-height: 1.6; color: var(--ink, #111111); background: var(--canvas, #ffffff); border: 1px solid var(--border, #eaeaea); border-radius: var(--radius-sm, 6px); padding: 0.7rem 0.85rem; transition: border-color 150ms ease, box-shadow 150ms ease; } .ds-input::placeholder { color: var(--ink-muted, #787774); } .ds-input:focus-visible { outline: none; border-color: var(--ink, #111111); box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.06); } .ds-input[aria-invalid='true'] { border-color: var(--pale-red-ink, #9f2f2d); }"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "button-primary",
+      "description": "Sticky, near-white with 12px blur, hairline bottom. Wordmark, muted Small links, one Ink Call button.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-header__brand\" href=\"#\">Pomi B.</a><nav class=\"ds-header__nav\"><a href=\"#\">The method</a><a href=\"#\">Work</a><a href=\"#\">Prices</a><a href=\"#\">Questions</a><a href=\"#\">Contact</a></nav><a class=\"ds-header__cta\" href=\"#\">Call (949) 427-7664</a></header>",
+      "css": ".ds-header { display: flex; align-items: center; gap: 1.5rem; min-height: 4.25rem; padding: 0 1.5rem; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border, #eaeaea); font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); } .ds-header__brand { font-family: 'Brush Script MT', cursive; font-size: 1.5rem; color: var(--ink, #111111); text-decoration: none; } .ds-header__nav { display: flex; gap: 1.25rem; margin-left: 0.75rem; } .ds-header__nav a { text-decoration: none; font-size: 0.9375rem; font-weight: 500; color: var(--ink-muted, #787774); transition: color 150ms ease; } .ds-header__nav a:hover { color: var(--ink, #111111); } .ds-header__cta { margin-left: auto; display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 1rem; border-radius: 6px; background: var(--ink, #111111); color: #fff; font-size: 0.9375rem; font-weight: 500; font-variant-numeric: tabular-nums; text-decoration: none; transition: background-color 200ms ease; } .ds-header__cta:hover { background: #333333; } .ds-header__cta:focus-visible, .ds-header__nav a:focus-visible { outline: 2px solid var(--ink, #111111); outline-offset: 3px; }"
+    },
+    {
+      "name": "Framed Photo with Caption",
+      "kind": "custom",
+      "refersTo": "photo-frame",
+      "description": "Every image: 12px frame, one hairline, mild grade, 4% warm grain, sentence-case caption beneath.",
+      "html": "<figure class=\"ds-photo-fig\"><div class=\"ds-photo\"><img src=\"https://picsum.photos/seed/pomi-brow/640/800\" alt=\"Healed microblading and shading on both brows\" /></div><figcaption class=\"ds-caption\"><span class=\"ds-caption__service\">Microblading and shading</span><span class=\"ds-caption__detail\">Healed</span><span class=\"ds-caption__price\">$700 + $100 touch-up</span></figcaption></figure>",
+      "css": ".ds-photo-fig { margin: 0; max-width: 20rem; font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); } .ds-photo { position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: var(--surface, #f9f9f8); border: 1px solid var(--border, #eaeaea); border-radius: var(--radius, 12px); } .ds-photo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(0.88) contrast(1.02); } .ds-photo::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.04; mix-blend-mode: multiply; background-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.25 0 0 0 0 0.15 0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\"); background-size: 160px 160px; } .ds-caption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; padding-top: 0.75rem; font-size: 0.8125rem; line-height: 1.4; color: var(--ink-muted, #787774); } .ds-caption__service { color: var(--ink, #111111); font-weight: 500; } .ds-caption__price { margin-left: auto; font-family: 'Geist Mono', 'SF Mono', ui-monospace, Menlo, monospace; }"
+    },
+    {
+      "name": "Healing Timeline Step",
+      "kind": "custom",
+      "refersTo": "tag",
+      "description": "One step on the hairline axis: neutral tag, Title, muted body, 9px hollow dot; the final step takes the yellow tag and a filled Ink dot.",
+      "html": "<ol class=\"ds-axis\"><li class=\"ds-axis__step\"><span class=\"ds-axis__tag\">Week 4</span><h3 class=\"ds-axis__title\">The true color</h3><p class=\"ds-axis__body\">Healed skin turns clear and the real shade shows, softer and more natural than day one.</p></li><li class=\"ds-axis__step ds-axis__step--last\"><span class=\"ds-axis__tag ds-axis__tag--yellow\">Week 6</span><h3 class=\"ds-axis__title\">The perfecting touch-up</h3><p class=\"ds-axis__body\">Skin heals unevenly, so some strokes need a second pass. It is part of the service, not an extra.</p></li></ol>",
+      "css": ".ds-axis { position: relative; margin: 0; padding: 0 0 0 2rem; list-style: none; max-width: 30rem; font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); } .ds-axis::before { content: ''; position: absolute; left: 0.4rem; top: 0.5rem; bottom: 0.5rem; width: 1px; background: var(--border, #eaeaea); } .ds-axis__step { position: relative; display: grid; gap: 0.5rem; justify-items: start; padding-bottom: 3rem; } .ds-axis__step--last { padding-bottom: 0; } .ds-axis__step::before { content: ''; position: absolute; left: calc(-2rem + 0.4rem - 4px); top: 0.45rem; width: 9px; height: 9px; border-radius: 50%; background: var(--canvas, #ffffff); border: 1px solid var(--ink-muted, #787774); } .ds-axis__step--last::before { background: var(--ink, #111111); border-color: var(--ink, #111111); } .ds-axis__tag { display: inline-flex; align-items: center; min-height: 1.5rem; padding: 0 0.6rem; border-radius: 9999px; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1; background: var(--bone, #f7f6f3); color: var(--ink-muted, #787774); } .ds-axis__tag--yellow { background: var(--pale-yellow, #fbf3db); color: var(--pale-yellow-ink, #956400); } .ds-axis__title { margin: 0; font-size: 1.25rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.3; color: var(--ink, #111111); } .ds-axis__body { margin: 0; color: var(--ink-muted, #787774); font-size: 1.0625rem; line-height: 1.6; max-width: 46ch; }"
+    },
+    {
+      "name": "FAQ Item",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Native details with no box: hairline bottom rule, Body 500 summary, plus/minus toggle, muted answer.",
+      "html": "<details class=\"ds-faq\" open><summary class=\"ds-faq__summary\"><span>Is permanent makeup safe?</span><span class=\"ds-faq__mark\"><svg class=\"ds-faq__plus\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14\"/><path d=\"M5 12h14\"/></svg><svg class=\"ds-faq__minus\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/></svg></span></summary><div class=\"ds-faq__answer\"><p>Yes, when it is done with single-use needles, pigments made for skin, and a licensed artist. Pomi walks through the whole process before anything permanent happens.</p></div></details>",
+      "css": ".ds-faq { max-width: 34rem; border-bottom: 1px solid var(--border, #eaeaea); font-family: var(--font-body, 'Geist Variable', 'Geist Sans', system-ui, sans-serif); } .ds-faq__summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 0; font-size: 1.0625rem; font-weight: 500; color: var(--ink, #111111); line-height: 1.35; } .ds-faq__summary::-webkit-details-marker { display: none; } .ds-faq__summary:focus-visible { outline: 2px solid var(--ink, #111111); outline-offset: 3px; border-radius: 4px; } .ds-faq__mark { display: inline-grid; place-items: center; flex: 0 0 auto; color: var(--ink-muted, #787774); } .ds-faq__mark svg { width: 1rem; height: 1rem; grid-area: 1 / 1; } .ds-faq__minus { display: none; } .ds-faq[open] .ds-faq__plus { display: none; } .ds-faq[open] .ds-faq__minus { display: block; } .ds-faq__answer { padding: 0 0 1.4rem; color: var(--ink-muted, #787774); font-size: 1.0625rem; line-height: 1.6; max-width: 58ch; } .ds-faq__answer p { margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Document",
+    "overview": "This site is a document, not a brochure. Everything on the page that is not a photograph or a sentence is a one-pixel #EAEAEA line. The world follows the installed minimalist-ui protocol (premium utilitarian minimalism): a pure white canvas, a warm off-black type family, an editorial serif for the few lines that carry the argument, and a clean sans for everything else. Color is scarce and only ever means something. The persuasion is carried by real healed photography with quiet sentence-case captions, a healing timeline, and third-party reviews; the interface stays out of their way.\n\nDensity is low and rhythm is macro-first. Sections breathe at six to eight rem, sit on a single hairline, and hold one heading, one lede, and one body of proof each. Nothing lifts, glows, or slides except a scroll-entry reveal that fades content twelve pixels upward as it arrives. The client's brush-script wordmark is the only ornament and the only thing on the page that is not set in Newsreader or Geist.\n\nThis world replaced the earlier \"Brow Map\" system on 2026-09-07 after the client rejected it. Confirmed rejections carried from that decision: no skin-tone or brown colored section fields, no mapping lines or diagrams drawn over photographs, no pill-shaped buttons, no drop shadows, no script or display faces beyond the wordmark, no soft-focus face hero.",
+    "keyCharacteristics": [
+      "White canvas only; surfaces differ by a hairline, never by a colored slab.",
+      "One border color (#EAEAEA) at one weight (1px) does all structural work: section rules, card edges, photo frames, dividers, the timeline axis.",
+      "Newsreader at optical size 72 for h1, h2, and the review numeral; Geist for body and every control.",
+      "Four muted pastels appear only inside tags and form status, always with a semantic meaning.",
+      "Every photograph is framed at 12px with a 1px border, receives the same mild grade and 4% warm grain, and carries a caption.",
+      "Buttons are solid #111111, 6px radius, no shadow. Tags are the only pill shape.",
+      "Motion is one gesture: the scroll-entry reveal. Nothing else animates beyond 200ms color and arrow-nudge transitions."
+    ],
+    "rules": [
+      {
+        "name": "The One Hairline Rule",
+        "body": "Every border, rule, divider, and frame is 1px solid #EAEAEA. There is no second border color and no second weight; the timeline dot's outline (#787774) is the sole exception because it must read at 9px.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tag-Only Color Rule",
+        "body": "Pastel fills appear only in tags (24px tall pills) and the form status line. Never as a section field, card fill, icon background, heading color, or button.",
+        "section": "colors"
+      },
+      {
+        "name": "The White Field Rule",
+        "body": "Sections have no background color. Adjacent sections are separated by one hairline and six to eight rem of white, nothing else.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Newsreader is used for h1, h2, the numeral, and short quotes; everything else is Geist. No third face except the client's wordmark SVG.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Kicker Rule",
+        "body": "Nothing sits above a heading. Section heads are h2 then lede, full stop. Tags label cards and timeline steps, never headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence-Case Rule",
+        "body": "Uppercase exists only inside tags. Captions, labels, nav, and buttons are sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-At-Rest Rule",
+        "body": "Nothing carries a shadow at rest. Buttons never carry one at all. The only shadow is the 4% hover lift on cards and tiles.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Fixed-Light Rule",
+        "body": "It is never painted on a scrolling section.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the canvas white and separate sections with one full-width 1px solid #EAEAEA rule and clamp(6rem, 4rem + 5vw, 8rem) of padding.",
+      "Do use 1px solid #EAEAEA for every border, frame, divider, and axis at exactly one weight.",
+      "Do set h1 and h2 in Newsreader at opsz 72, weight 400, -0.025em, line-height 1.1, and everything else in Geist at line-height 1.6.",
+      "Do make every button #111111 with white text, 6px radius, 2.875rem tall, hover #333333, active scale(0.98), and no shadow.",
+      "Do reserve the four pastels for tags and form status, each with a fixed meaning (yellow Eyebrows / Week 6, blue Eyes, red Lips, green Hair; green success, red error).",
+      "Do frame every photograph at 12px with a hairline, apply saturate(0.88) contrast(1.02) and the 4% warm grain, and caption it in sentence case.",
+      "Do hold content to the 64rem column and section heads to 44rem; ledes to 40ch, body to 62ch.",
+      "Do enter content with the scroll-entry reveal (12px, 600ms, 80ms stagger) and nothing else.",
+      "Do draw icons from the hand-drawn 2px-stroke set in currentColor, sized 1rem to 1.15rem.",
+      "Do show a single Call control in the header and the mobile bar while booking is by phone."
+    ],
+    "donts": [
+      "Don't give any section, hero, or card a colored or tinted background; Bone and Surface are for tag fills and image placeholders only.",
+      "Don't put a kicker, eyebrow, or tag above a heading; h2 then lede is the whole section head.",
+      "Don't use a pill radius on anything except a tag; buttons and cards top out at 6px and 12px.",
+      "Don't add a shadow at rest anywhere, or exceed 0 2px 8px rgba(0,0,0,0.04) on hover.",
+      "Don't draw lines, maps, or overlays on a photograph, or push the grade past the mild uniform grade.",
+      "Don't introduce a third typeface, uppercase anything outside a tag, or use pure #000000 for text.",
+      "Don't add a dark mode or a Book control until a booking target exists; neither is built."
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+---
+// A small curated sample chosen in the CMS. Every tile links to the live profile, which is the real portfolio.
+import type { SiteSettings, Service } from "../lib/content";
+import { photoCaption } from "../lib/content";
+import Photo from "./Photo.astro";
+import Caption from "./Caption.astro";
+import Icon from "./Icon.astro";
+
+interface Props {
+  settings: SiteSettings;
+  services: Service[];
+}
+const { settings, services } = Astro.props;
+const picks = settings.instagramPicks.slice(0, 4);
+---
+
+{
+  picks.length > 0 && (
+    <section class="ig section" id="work" aria-labelledby="ig-heading">
+      <div class="page">
+        <div class="ig__head reveal">
+          <div class="section-head" style="margin-bottom: 0">
+            <h2 id="ig-heading">Recent work, as it heals.</h2>
+            <p class="lede">Pomi posts new results most weeks. The feed is the portfolio; this is a sample.</p>
+          </div>
+          <a class="btn btn--quiet" href={settings.instagramUrl} rel="noopener">
+            <Icon name="instagram" />
+            @{settings.instagramHandle}
+          </a>
+        </div>
+
+        <ul class="ig__grid">
+          {picks.map((p, i) => {
+            const c = photoCaption(p, services);
+            return (
+              <li class="reveal" style={`--i: ${i}`}>
+                <a class="ig__tile" href={settings.instagramUrl} rel="noopener">
+                  <Photo photo={p} sizes="(min-width: 60rem) 24vw, 50vw" widths={[400, 700]} ratio="1 / 1" />
+                  <Caption service={c.service} detail={c.detail} />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .ig__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: var(--space-5);
+    margin-bottom: var(--space-8);
+  }
+  .ig__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-4);
+  }
+  .ig__tile {
+    display: block;
+    text-decoration: none;
+  }
+  .ig__tile :global(.photo) {
+    transition: box-shadow var(--dur-base) ease;
+  }
+  .ig__tile:hover :global(.photo) {
+    box-shadow: var(--shadow-hover);
+  }
+  @media (min-width: 60rem) {
+    .ig__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+</style>

@@ -1,0 +1,54 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import ReviewCount from "../components/ReviewCount.astro";
+import PricingTable from "../components/PricingTable.astro";
+import HealingAxis from "../components/HealingAxis.astro";
+import AboutPomi from "../components/AboutPomi.astro";
+import Reviews from "../components/Reviews.astro";
+import InstagramGrid from "../components/InstagramGrid.astro";
+import Faq from "../components/Faq.astro";
+import ContactForm from "../components/ContactForm.astro";
+import { getSiteSettings, getServices, getReviews, getLearnArticles, localPhoto } from "../lib/content";
+
+const [settings, services, reviews, learn] = await Promise.all([
+  getSiteSettings(),
+  getServices(),
+  getReviews(),
+  getLearnArticles(),
+]);
+
+const faqs = learn.filter((l) => l.showAsFaq).slice(0, 5);
+const microblading = services.find((s) => s.slug === "microblading");
+const heroPhoto =
+  localPhoto("microblading-shading/01", "Healed microblading and shading on both brows, by Pomi") ??
+  microblading?.gallery[0];
+const methodPhoto = localPhoto(
+  "microblading/03",
+  "Brow mapping with a ruler before microblading, and the healed result beneath"
+);
+const aboutPhoto = localPhoto("ombre-powder-brows/04", "Healed ombre powder brows on a client in her forties, by Pomi");
+
+const title = `${settings.businessName} | Natural permanent makeup in Tustin, near Irvine`;
+---
+
+<Base
+  title={title}
+  description={settings.metaDescription}
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath="/"
+  ogImage="/og.jpg"
+>
+  {/* Reassure first: the result, the method, the work, then the proof, then who and what it costs. */}
+  {heroPhoto && <Hero settings={settings} photo={heroPhoto} />}
+  <HealingAxis photo={methodPhoto} />
+  <InstagramGrid settings={settings} services={services} />
+  <ReviewCount settings={settings} />
+  <Reviews reviews={reviews} settings={settings} />
+  <AboutPomi settings={settings} fallbackPhoto={aboutPhoto} />
+  <PricingTable services={services} />
+  <Faq faqs={faqs} />
+  <ContactForm settings={settings} services={services} />
+</Base>

@@ -1,0 +1,243 @@
+---
+import type { SiteSettings } from "../lib/content";
+import Icon from "./Icon.astro";
+import logo from "../assets/brand/logo-mark-black.svg?raw";
+
+interface Props {
+  settings: SiteSettings;
+}
+const { settings } = Astro.props;
+const bookIsCall = settings.bookingHref.startsWith("tel:");
+
+const nav = [
+  { label: "The method", href: "#method" },
+  { label: "Work", href: "#work" },
+  { label: "Prices", href: "#services" },
+  { label: "Questions", href: "#questions" },
+  { label: "Contact", href: "#contact" },
+];
+---
+
+<header class="header" data-header>
+  <div class="page header__row">
+    <a class="header__brand" href="/" aria-label={`${settings.businessName} home`}>
+      <span class="header__logo" set:html={logo} />
+    </a>
+
+    <nav class="header__nav" aria-label="Primary">
+      <ul>
+        {nav.map((n) => (
+          <li>
+            <a href={n.href}>{n.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      {
+        bookIsCall ? (
+          <a class="header__phone" href={`tel:${settings.phoneTel}`}>
+            <Icon name="phone" />
+            <span>{settings.phone}</span>
+          </a>
+        ) : (
+          <>
+            <a class="header__phone" href={`tel:${settings.phoneTel}`}>
+              {settings.phone}
+            </a>
+            <a class="btn header__cta" href={settings.bookingHref}>
+              Book
+            </a>
+          </>
+        )
+      }
+      <button class="header__menu" type="button" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
+        <Icon name="menu" class="header__menu-open" />
+        <Icon name="close" class="header__menu-close" />
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" hidden data-mobile-nav>
+    <nav aria-label="Primary, mobile">
+      <ul>
+        {nav.map((n) => (
+          <li>
+            <a href={n.href} data-nav-link>{n.label}</a>
+          </li>
+        ))}
+        <li>
+          <a href="#about" data-nav-link>About Pomi</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-nav__meta">
+      <p>{settings.street}<br />{settings.city}, {settings.state} {settings.zip}</p>
+      <a href={settings.instagramUrl} rel="noopener">@{settings.instagramHandle}</a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .header__row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    min-height: var(--header-h);
+  }
+  .header__brand {
+    display: block;
+    text-decoration: none;
+    flex: 0 0 auto;
+  }
+  .header__logo :global(svg) {
+    height: 2.25rem;
+    width: auto;
+  }
+  .header__nav {
+    display: none;
+    margin-left: var(--space-3);
+  }
+  .header__nav ul {
+    display: flex;
+    gap: clamp(1rem, 0.5rem + 1vw, 1.5rem);
+  }
+  .header__nav a {
+    text-decoration: none;
+    font-size: var(--fs-small);
+    font-weight: 500;
+    color: var(--ink-muted);
+    transition: color var(--dur-fast) ease;
+  }
+  .header__nav a:hover {
+    color: var(--ink);
+  }
+  .header__actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  .header__phone {
+    display: none;
+    color: var(--pink-ink);
+    align-items: center;
+    gap: 0.45rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: var(--fs-small);
+    font-variant-numeric: tabular-nums;
+  }
+  .header__phone :global(.icon) {
+    width: 1rem;
+    height: 1rem;
+  }
+  .header__cta {
+    display: none;
+    min-height: 2.5rem;
+    padding-inline: 1rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .header__menu {
+    display: inline-grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+  }
+  .header__menu :global(.icon) {
+    width: 1.15rem;
+    height: 1.15rem;
+    grid-area: 1 / 1;
+    transition: opacity var(--dur-fast) ease;
+  }
+  .header__menu :global(.header__menu-close) {
+    opacity: 0;
+  }
+  .header__menu[aria-expanded="true"] :global(.header__menu-open) {
+    opacity: 0;
+  }
+  .header__menu[aria-expanded="true"] :global(.header__menu-close) {
+    opacity: 1;
+  }
+
+  .mobile-nav {
+    border-top: 1px solid var(--border);
+    padding: var(--space-4) var(--gutter) var(--space-6);
+    background: var(--canvas);
+  }
+  .mobile-nav li + li {
+    border-top: 1px solid var(--border);
+  }
+  .mobile-nav nav a {
+    display: block;
+    padding: 0.85rem 0;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .mobile-nav__meta {
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-5);
+  }
+  .mobile-nav__meta a {
+    text-decoration: none;
+    color: var(--pink-ink);
+    white-space: nowrap;
+  }
+
+  @media (min-width: 60rem) {
+    .header__nav {
+      display: block;
+    }
+    .header__phone,
+    .header__cta {
+      display: inline-flex;
+    }
+    .header__menu,
+    .mobile-nav {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>("[data-menu-toggle]");
+  const panel = document.querySelector<HTMLElement>("[data-mobile-nav]");
+
+  if (toggle && panel) {
+    const close = () => {
+      toggle.setAttribute("aria-expanded", "false");
+      panel.hidden = true;
+    };
+    toggle.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!open));
+      panel.hidden = open;
+    });
+    panel.querySelectorAll("[data-nav-link]").forEach((a) => a.addEventListener("click", close));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+    });
+  }
+</script>

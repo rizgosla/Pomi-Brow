@@ -1,0 +1,83 @@
+---
+import type { SiteSettings, Photo as PhotoType } from "../lib/content";
+import Photo from "./Photo.astro";
+import Caption from "./Caption.astro";
+import Icon from "./Icon.astro";
+
+interface Props {
+  settings: SiteSettings;
+  /** Shown until a real headshot is supplied in Site settings. */
+  fallbackPhoto: PhotoType | null;
+}
+const { settings, fallbackPhoto } = Astro.props;
+const photo = settings.headshot ?? fallbackPhoto;
+const isHeadshot = Boolean(settings.headshot);
+// Until a real bio is supplied the section degrades to the photograph and the
+// link, rather than printing scaffolding where the page asks for trust.
+const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
+---
+
+<section class="about section" id="about" aria-labelledby="about-heading">
+  <div class="page about__grid">
+    <div class="about__copy reveal">
+      <h2 id="about-heading">{settings.aboutHeading}</h2>
+      {bio.length > 0 && <div class="about__bio">{bio.map((p) => <p>{p}</p>)}</div>}
+      <div class="about__links">
+        <a class="link" href="/about">
+          More about Pomi
+          <Icon name="arrow" />
+        </a>
+        <a class="link" href={settings.instagramUrl} rel="noopener">
+          <Icon name="instagram" />
+          @{settings.instagramHandle}
+        </a>
+      </div>
+    </div>
+    {
+      photo && (
+        <figure class="about__figure reveal" style="--i: 1">
+          <Photo photo={photo} sizes="(min-width: 60rem) 36vw, 100vw" widths={[640, 960]} ratio="4 / 5" />
+          <figcaption>
+            <Caption
+              service={isHeadshot ? "Pomi" : "Ombre powder brows"}
+              detail={isHeadshot ? "Permanent makeup artist" : "Healed, by Pomi"}
+            />
+          </figcaption>
+        </figure>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .about__grid {
+    display: grid;
+    gap: var(--space-8);
+  }
+  .about__copy {
+    display: grid;
+    gap: var(--space-5);
+    align-content: center;
+  }
+  .about__bio {
+    color: var(--ink-muted);
+    max-width: 52ch;
+  }
+  .about__bio p:first-child {
+    color: var(--ink-body);
+  }
+  .about__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-5);
+  }
+  .about__figure {
+    margin: 0;
+  }
+  @media (min-width: 60rem) {
+    .about__grid {
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-9);
+    }
+  }
+</style>
