@@ -1,0 +1,25 @@
+// Cloudflare Workers deployment: the built site in dist/ served as static assets, with one small
+// Worker in front of /api/* for the Instagram feed. Workers Builds runs `npm run build` and then
+// `npx wrangler deploy`; this file is what stops Wrangler from "auto-configuring" the project
+// (which installs the Astro Cloudflare adapter, moves the output to dist/client and breaks the
+// link check). Keep the name in step with the Worker in the Cloudflare dashboard.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pomi-brow",
+  "compatibility_date": "2026-09-11",
+  "main": "src/worker.ts",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Astro builds /about/index.html with trailingSlash "never": serve it at /about, and send
+    // /about/ there. public/_redirects and _headers apply as on Pages.
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "none",
+    // Only the API reaches the Worker; every other request is answered from the assets directly.
+    "run_worker_first": ["/api/*"]
+  },
+  // Secrets are set in the dashboard or with `wrangler secret put INSTAGRAM_ACCESS_TOKEN`.
+  // To enable weekly token refresh, create a KV namespace and add its id here:
+  // "kv_namespaces": [{ "binding": "INSTAGRAM_KV", "id": "<namespace id>" }],
+  "observability": { "enabled": true }
+}

@@ -26,8 +26,8 @@ With the gate on:
 
 ## When it is on
 
-On in Cloudflare Pages builds (Cloudflare sets `CF_PAGES=1`), off for `astro dev`, local builds
-and the screenshot workflow. Override either way with `HOME_ONLY=true` or `HOME_ONLY=false`,
+On in Cloudflare builds (Workers Builds sets `WORKERS_CI=1`, Pages sets `CF_PAGES=1`), off for
+`astro dev`, local builds and the screenshot workflow. Override either way with `HOME_ONLY=true` or `HOME_ONLY=false`,
 for example to check the gated site locally:
 
 ```
@@ -36,8 +36,16 @@ HOME_ONLY=true npm run build && npm run preview
 
 The Cloudflare build log prints `[launch] home-only gate is on` when it applies.
 
+## Deploying
+
+The site deploys as a Cloudflare Worker with static assets, configured in `wrangler.jsonc`.
+In the Worker's build settings: build command `npm run build`, deploy command
+`npx wrangler deploy`, no output directory. Without `wrangler.jsonc` Wrangler would
+"auto-configure" the project on deploy, install the Astro Cloudflare adapter, rebuild into
+`dist/client` and fail the link check.
+
 ## Lifting it
 
-Set `HOME_ONLY=false` in the Cloudflare Pages environment variables, or delete
+Set `HOME_ONLY=false` in the Worker's build variables, or delete
 `src/middleware.ts`, `src/lib/launch.ts`, `tests/launch.test.ts`, the two CSS rules and the
 sitemap filter. Nothing else references them.

@@ -41,6 +41,7 @@
     "entities": "^4.5.0",
     "node-html-parser": "^7.1.0",
     "puppeteer-core": "^25.10.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.131.1"
   }
 }

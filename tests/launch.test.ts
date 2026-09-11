@@ -3,9 +3,12 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { homeOnlyFromEnv, leavesHome, disableInternalLinks } from "../src/lib/launch.ts";
 
-test("homeOnlyFromEnv is on in Cloudflare Pages builds and off elsewhere, with HOME_ONLY overriding both", () => {
+test("homeOnlyFromEnv is on in Cloudflare builds and off elsewhere, with HOME_ONLY overriding both", () => {
   assert.equal(homeOnlyFromEnv({}), false);
+  assert.equal(homeOnlyFromEnv({ CI: "true" }), false);
+  assert.equal(homeOnlyFromEnv({ WORKERS_CI: "1" }), true);
   assert.equal(homeOnlyFromEnv({ CF_PAGES: "1" }), true);
+  assert.equal(homeOnlyFromEnv({ WORKERS_CI: "1", HOME_ONLY: "false" }), false);
   assert.equal(homeOnlyFromEnv({ CF_PAGES: "1", HOME_ONLY: "false" }), false);
   assert.equal(homeOnlyFromEnv({ HOME_ONLY: "true" }), true);
   assert.equal(homeOnlyFromEnv({ HOME_ONLY: "1" }), true);
