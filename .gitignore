@@ -19,3 +19,6 @@ Thumbs.db
 .impeccable/critique/*.mjs
 .impeccable/live/sessions/
 .impeccable/live/roots.json
+
+# Subagent-driven-development scratch (ledger, briefs, review packages)
+.superpowers/
