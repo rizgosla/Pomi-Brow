@@ -69,6 +69,9 @@ const blank = { kind: "remote", src: "", srcset: "", width: 640, height: 640, al
   const grid = document.querySelector<HTMLUListElement>("[data-ig-feed]");
   const template = document.querySelector<HTMLTemplateElement>("template[data-ig-tile]");
 
+  type LivePost = { permalink: string; image: string; alt: string; timestamp: string };
+  type FeedBody = { ok?: boolean; posts?: LivePost[] };
+
   function postDate(iso: string): string {
     const d = new Date(iso);
     if (Number.isNaN(d.getTime())) return "On Instagram";
@@ -78,10 +81,9 @@ const blank = { kind: "remote", src: "", srcset: "", width: 640, height: 640, al
   if (grid && template) {
     const count = Number(grid.dataset.igCount) || 4;
     fetch("/api/instagram", { headers: { Accept: "application/json" } })
-      .then((r) => (r.ok ? r.json() : null))
+      .then((r): Promise<FeedBody | null> => (r.ok ? (r.json() as Promise<FeedBody>) : Promise.resolve(null)))
       .then((body) => {
-        const posts: Array<{ permalink: string; image: string; alt: string; timestamp: string }> =
-          body?.ok && Array.isArray(body.posts) ? body.posts.slice(0, count) : [];
+        const posts = body?.ok && Array.isArray(body.posts) ? body.posts.slice(0, count) : [];
         if (posts.length === 0) return;
         const tiles = posts.map((post, i) => {
           const li = template.content.firstElementChild!.cloneNode(true) as HTMLLIElement;
