@@ -1,0 +1,232 @@
+[
+  {
+    "slug": "home",
+    "url": "https://pomibrow.com/home",
+    "embedId": "pomi-home-intro-block",
+    "words": 233,
+    "blocks": 19,
+    "nativeBlocks": 0,
+    "colors": 9,
+    "error": null
+  },
+  {
+    "slug": "about-pomi",
+    "url": "https://pomibrow.com/about-pomi",
+    "embedId": "pomi-artist-matters-page",
+    "words": 1379,
+    "blocks": 122,
+    "nativeBlocks": 0,
+    "colors": 19,
+    "error": null
+  },
+  {
+    "slug": "faqs",
+    "url": "https://pomibrow.com/faqs",
+    "embedId": "pomi-faq-page",
+    "words": 1766,
+    "blocks": 130,
+    "nativeBlocks": 0,
+    "colors": 19,
+    "error": null
+  },
+  {
+    "slug": "safety",
+    "url": "https://pomibrow.com/safety",
+    "embedId": "pomi-safety-page",
+    "words": 1436,
+    "blocks": 144,
+    "nativeBlocks": 0,
+    "colors": 19,
+    "error": null
+  },
+  {
+    "slug": "aftercare",
+    "url": "https://pomibrow.com/aftercare",
+    "embedId": "pomi-aftercare-page",
+    "words": 1591,
+    "blocks": 158,
+    "nativeBlocks": 0,
+    "colors": 19,
+    "error": null
+  },
+  {
+    "slug": "contact-form",
+    "url": "https://pomibrow.com/contact-form",
+    "embedId": null,
+    "words": 0,
+    "blocks": 0,
+    "nativeBlocks": 0,
+    "colors": 0,
+    "error": null
+  },
+  {
+    "slug": "microblading",
+    "url": "https://pomibrow.com/microblading",
+    "embedId": "pomi-microblading-page",
+    "words": 743,
+    "blocks": 83,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "microblading-shading",
+    "url": "https://pomibrow.com/microblading-shading",
+    "embedId": "pomi-microblading-shading-page",
+    "words": 795,
+    "blocks": 85,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "ombre-powder-brows",
+    "url": "https://pomibrow.com/ombre-powder-brows",
+    "embedId": "pomi-ombre-page",
+    "words": 790,
+    "blocks": 83,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "eyeliner",
+    "url": "https://pomibrow.com/eyeliner",
+    "embedId": "pomi-eyeliner-page",
+    "words": 766,
+    "blocks": 85,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "lash-enhancement",
+    "url": "https://pomibrow.com/lash-enhancement",
+    "embedId": "pomi-lash-enhancement-page",
+    "words": 761,
+    "blocks": 85,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "lip-tint",
+    "url": "https://pomibrow.com/lip-tint",
+    "embedId": "pomi-lip-tint-page",
+    "words": 777,
+    "blocks": 85,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "scalp-micropigmentation",
+    "url": "https://pomibrow.com/scalp-micropigmentation",
+    "embedId": "pomi-scalp-micropigmentation-page",
+    "words": 751,
+    "blocks": 85,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "good-pmu-candidates",
+    "url": "https://pomibrow.com/good-pmu-candidates",
+    "embedId": "pomi-candidate-learn-page",
+    "words": 1413,
+    "blocks": 141,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "how-long-it-lasts",
+    "url": "https://pomibrow.com/how-long-it-lasts",
+    "embedId": "pomi-how-long-page",
+    "words": 1231,
+    "blocks": 140,
+    "nativeBlocks": 25,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "pmu-healing-timeline",
+    "url": "https://pomibrow.com/pmu-healing-timeline",
+    "embedId": "pomi-healing-timeline-page",
+    "words": 1283,
+    "blocks": 138,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "prepare-for-appointment",
+    "url": "https://pomibrow.com/prepare-for-appointment",
+    "embedId": "pomi-prepare-learn-page",
+    "words": 1287,
+    "blocks": 137,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "lip-tint-vs-lip-blush",
+    "url": "https://pomibrow.com/lip-tint-vs-lip-blush",
+    "embedId": "pomi-lip-tint-blush-learn-page",
+    "words": 1250,
+    "blocks": 115,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "importance-of-touch-up",
+    "url": "https://pomibrow.com/importance-of-touch-up",
+    "embedId": "pomi-touchups-learn-page",
+    "words": 1336,
+    "blocks": 138,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "are-powder-brows-for-me",
+    "url": "https://pomibrow.com/are-powder-brows-for-me%3F-1",
+    "embedId": "pomi-powder-brows-learn-page",
+    "words": 1183,
+    "blocks": 117,
+    "nativeBlocks": 54,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "is-permanent-makeup-safe",
+    "url": "https://pomibrow.com/is-permanent-makeup-safe%3F",
+    "embedId": "pomi-safety-learn-page",
+    "words": 1397,
+    "blocks": 154,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "eyeliner-vs-lash-enhancement",
+    "url": "https://pomibrow.com/eyeliner-lash-enhancement",
+    "embedId": "pomi-eyeliner-lash-learn-page",
+    "words": 1338,
+    "blocks": 118,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  },
+  {
+    "slug": "learn-scalp-micropigmentation",
+    "url": "https://pomibrow.com/scalp-micropigmentation-1",
+    "embedId": "pomi-smp-learn-page",
+    "words": 1326,
+    "blocks": 140,
+    "nativeBlocks": 0,
+    "colors": 22,
+    "error": null
+  }
+]

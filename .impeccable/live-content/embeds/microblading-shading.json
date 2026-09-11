@@ -1,0 +1,533 @@
+{
+  "title": "Microblading-Shading",
+  "embedId": "pomi-microblading-shading-page",
+  "kicker": "Microblading / Shading in Tustin, CA",
+  "h1": "Microblading / Shading for Fuller, Softer, More Defined Brows",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Microblading / Shading in Tustin, CA",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Microblading / Shading for Fuller, Softer, More Defined Brows",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading / Shading combines fine hair-like strokes with soft powder shading for brows that look fuller, balanced, and naturally defined. At Pomi B. Brow Studio in Tustin, your brow shape and color are customized to fit your face, skin tone, and everyday style.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Microblading / Shading Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Hair strokes + shading",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Custom brow mapping",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-brow-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Microblading / Shading**",
+      "cls": "pomi-brow-card"
+    },
+    {
+      "tag": "text",
+      "text": "Hair-like strokes with soft shading for more fullness and definition.",
+      "cls": "pomi-brow-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Best fit",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Microblading / Shading is ideal if you want natural detail with extra fullness",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading / Shading is a strong choice if you want the natural look of fine brow strokes with added softness and density through shaded areas.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "This service works well for clients with sparse brows, uneven shape, patchy areas, or anyone who wants more definition than microblading alone.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Sparse brows",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Add hair-like detail and soft shading where brows look thin.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Uneven shape",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Create better balance with a mapped brow shape before the service begins.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Patchy areas",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Use shading to soften gaps and build a more complete brow look.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Less brow makeup",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Spend less time filling, shaping, and correcting your brows each day.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "About the service",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What is Microblading / Shading?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading / Shading is a combination brow service. Microblading creates fine hair-like strokes, while shading adds a soft powder effect to create more density and definition.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The goal is to keep the brows soft and natural while adding enough fullness to improve shape, balance, and everyday polish.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "kicker",
+      "text": "Benefits",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why clients choose Microblading / Shading",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Clients choose this combination service when they want natural hair-stroke detail with more fullness than microblading alone.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Natural detail",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Fine strokes help the brow look soft and realistic.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Added fullness",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Shading helps fill patchy areas and create a more complete brow.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Better definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Create more shape through the arch and tail while keeping the front softer.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Custom brow shape",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Your brows are mapped around your face before the service starts.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Your appointment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "A combination brow look designed around your face",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Your appointment starts with a consultation and brow mapping. Pomi reviews your natural brows, your preferred finish, and your daily makeup routine before creating the final shape.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Consultation and brow goals",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Talk through your current brows, how you fill them in, and the result you want.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Mapping and shape approval",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Your brow shape is mapped, reviewed, and adjusted before the service begins.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Hair strokes, shading, and aftercare",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Fine strokes and soft shading are added, then you receive healing guidance.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "kicker",
+      "text": "Pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Microblading / Shading pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Microblading / Shading + Touch Up",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "p",
+      "text": "Pricing listed on the current Pomi B. Brow Studio website. Rates are subject to change and are non-negotiable.",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "text",
+      "text": "$700 + $100",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Ask a Question",
+      "cls": "pomi-actions",
+      "href": "mailto:pomibstudio@gmail.com"
+    },
+    {
+      "tag": "kicker",
+      "text": "Location",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "h2",
+      "text": "Microblading / Shading near Irvine and Orange County",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, close to Irvine and central Orange County. Clients visit the studio for natural-looking permanent makeup services, including microblading, shading, powder brows, lip tint, eyeliner, lash enhancement, and scalp micropigmentation.",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "**Pomi B. Brow Studio**  2801 El Camino Real  Tustin, CA 92782",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Microblading / Shading FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "What is the difference between microblading and Microblading / Shading?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading uses fine hair-like strokes. Microblading / Shading combines those strokes with soft shading to create more fullness, density, and definition.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who is Microblading / Shading best for?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "This service is a strong fit if you want a natural brow look but need more fullness than hair strokes alone provide. It works well for sparse, uneven, or patchy brows.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does Microblading / Shading look natural?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. The goal is a soft, balanced brow. The hair strokes create natural detail, while the shading adds fullness without making the brows look too heavy.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How long does Microblading / Shading last?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Results vary by skin type, lifestyle, aftercare, and how your skin holds pigment. Most clients need a touch-up to refine the color, shape, and softness after the initial appointment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Is the touch-up included?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The current price for Microblading / Shading + Touch Up is $700 + $100. Confirm current pricing when booking, since rates are subject to change.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The studio is located at 2801 El Camino Real, Ste 13, in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking Microblading / Shading?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, undergoing certain skin treatments, or have a skin condition near the brow area.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Ready for fuller, more defined brows?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book your Microblading / Shading appointment at Pomi B. Brow Studio in Tustin and get brows designed for your face, your routine, and your style.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/contact-form?from=microblading#top",
+    "mailto:pomibstudio@gmail.com"
+  ],
+  "images": [],
+  "wordCount": 795,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-microblading-shading-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-microblading-shading-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-microblading-shading-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-microblading-shading-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-microblading-shading-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-microblading-shading-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-microblading-shading-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-microblading-shading-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-microblading-shading-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-microblading-shading-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-microblading-shading-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-microblading-shading-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-microblading-shading-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-microblading-shading-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-microblading-shading-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-microblading-shading-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-microblading-shading-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-microblading-shading-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-microblading-shading-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-microblading-shading-page .pomi-brow-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 40%, rgba(143, 90, 71, 0.18), transparent 32%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-microblading-shading-page .pomi-brow-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-microblading-shading-page .pomi-brow-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-microblading-shading-page .pomi-brow-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-microblading-shading-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-microblading-shading-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-microblading-shading-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-microblading-shading-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-microblading-shading-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-microblading-shading-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-microblading-shading-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-microblading-shading-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-microblading-shading-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-microblading-shading-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-microblading-shading-page .pomi-pricing {\n      background: #2b211d;\n      color: #ffffff;\n      border-radius: 30px;\n      padding: 34px;\n      display: grid;\n      grid-template-columns: 1fr auto;\n      gap: 24px;\n      align-items: center;\n      margin-top: 24px;\n    }\n\n    #pomi-microblading-shading-page .pomi-pricing h3,\n    #pomi-microblading-shading-page .pomi-pricing p {\n      color: #ffffff;\n    }\n\n    #pomi-microblading-shading-page .pomi-price {\n      font-size: clamp(38px, 5vw, 58px);\n      line-height: 1;\n      font-weight: 800;\n      color: #ffffff;\n      white-space: nowrap;\n    }\n\n    #pomi-microblading-shading-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-microblading-shading-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-microblading-shading-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-microblading-shading-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-microblading-shading-page .pomi-location {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-microblading-shading-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-microblading-shading-page .pomi-final h2,\n    #pomi-microblading-shading-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-microblading-shading-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-microblading-shading-page .pomi-hero-grid,\n      #pomi-microblading-shading-page .pomi-two-col {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-microblading-shading-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-microblading-shading-page .pomi-process,\n      #pomi-microblading-shading-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-microblading-shading-page .pomi-pricing {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-microblading-shading-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-microblading-shading-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-microblading-shading-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-microblading-shading-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-microblading-shading-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 8,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 2,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 2,
+      "#8f5a47": 4,
+      "#ffffff": 12,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 5,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.18)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 1
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "1fr auto",
+      "1fr",
+      "repeat(2, 1fr)"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-brow-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-pricing",
+      "pomi-price",
+      "pomi-faq",
+      "pomi-location",
+      "pomi-final"
+    ]
+  },
+  "slug": "microblading-shading",
+  "url": "https://pomibrow.com/microblading-shading",
+  "capturedAt": "2026-09-11"
+}

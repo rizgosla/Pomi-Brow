@@ -1,0 +1,533 @@
+{
+  "title": "Lip Tint + Touch Up in Tustin, CA | Pomi B. Brow Studio",
+  "embedId": "pomi-lip-tint-page",
+  "kicker": "Lip Tint in Tustin, CA",
+  "h1": "Lip Tint for Soft Color, Better Definition, and a Natural Finish",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Lip Tint in Tustin, CA",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Lip Tint for Soft Color, Better Definition, and a Natural Finish",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint adds soft, natural-looking color to your lips while improving definition and balance. At Pomi B. Brow Studio in Tustin, your lip color is customized to fit your skin tone, natural lip color, and everyday style.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Lip Tint Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Soft natural color",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Custom lip shade",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-lip-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Lip Tint + Touch Up**",
+      "cls": "pomi-lip-card"
+    },
+    {
+      "tag": "text",
+      "text": "Soft color and natural definition for everyday lips.",
+      "cls": "pomi-lip-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Best fit",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip tint is ideal if you want soft color without daily lipstick",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is a strong choice if your lips look pale, uneven, undefined, or washed out without makeup.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "This service works well for clients who want a natural-looking tint, better lip definition, and a fresh everyday color that does not rely on constant lipstick or liner.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Soft color",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Add a natural tint that helps your lips look fresh and balanced.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Better definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Improve the look of your lip shape without a harsh lined result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Even tone",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Soften uneven color and create a more consistent lip appearance.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Less makeup time",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Spend less time applying, correcting, and reapplying lip products.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "About the service",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What is lip tint?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is a permanent makeup service that places pigment into the lips to create soft color, improved shape, and a more even-looking tone.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The goal is not to create a heavy lipstick look. The goal is to enhance your natural lips with a shade that looks fresh, soft, and wearable every day.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "kicker",
+      "text": "Benefits",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why clients choose lip tint",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Clients choose lip tint when they want natural color, better lip definition, and a more polished look without daily lipstick.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Natural-looking color",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Add a soft tint that works with your natural lip tone.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Improved lip shape",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Enhance definition while keeping the result soft and balanced.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "More even tone",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Help lips look more consistent in color from edge to center.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Fresh everyday look",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Wake up with lips that already have soft color and definition.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Your appointment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip color designed around your natural tone",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Your appointment starts with a consultation. Pomi reviews your natural lip color, skin tone, desired softness, and everyday makeup preferences before the service begins.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Consultation and color goals",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Talk through your current lip color, your preferred shade, and the look you want.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Shade and shape review",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Your lip tone and shape are reviewed so the final result looks soft and balanced.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip tint and aftercare",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Pigment is applied to the lips, then you receive aftercare guidance for healing.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "kicker",
+      "text": "Pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip Tint pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip Tint + Touch Up",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "p",
+      "text": "Pricing listed on the current Pomi B. Brow Studio website. Rates are subject to change and are non-negotiable.",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "text",
+      "text": "$600 + $100",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Ask a Question",
+      "cls": "pomi-actions",
+      "href": "mailto:pomibstudio@gmail.com"
+    },
+    {
+      "tag": "kicker",
+      "text": "Location",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip tint near Irvine and Orange County",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, close to Irvine and central Orange County. Clients visit the studio for natural-looking permanent makeup services, including lip tint, microblading, powder brows, eyeliner, lash enhancement, and scalp micropigmentation.",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "**Pomi B. Brow Studio**  2801 El Camino Real, Ste 13  Tustin, CA 92782",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip Tint FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "What is lip tint?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is a permanent makeup service that adds soft pigment to the lips for natural-looking color, better definition, and a more even tone.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does lip tint look natural?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Lip tint can be customized for a soft, natural-looking finish. The goal is to enhance your lips, not create a heavy lipstick look.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who is lip tint best for?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is a strong fit if your lips look pale, uneven, undefined, or if you want soft everyday color without applying lipstick or liner every day.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How long does lip tint last?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Results vary by skin type, lifestyle, aftercare, natural lip color, and how your skin holds pigment. Most clients need a touch-up to refine color and softness after the initial appointment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Is the touch-up included?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The current price for Lip Tint + Touch Up is $600 + $100. Confirm current pricing when booking, since rates are subject to change.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The studio is located at 2801 El Camino Real, Ste 13 in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking lip tint?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active cold sores, have a history of frequent cold sores, or have irritation near the lips.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Ready for soft, natural-looking lip color?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book your Lip Tint appointment at Pomi B. Brow Studio in Tustin and get lip color designed for your face, your routine, and your style.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/contact-form?from=microblading#top",
+    "mailto:pomibstudio@gmail.com"
+  ],
+  "images": [],
+  "wordCount": 777,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-lip-tint-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-lip-tint-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-lip-tint-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-lip-tint-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-lip-tint-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-lip-tint-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-lip-tint-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-lip-tint-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-lip-tint-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-lip-tint-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-lip-tint-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-lip-tint-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-lip-tint-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-lip-tint-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-lip-tint-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-lip-tint-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-lip-tint-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-lip-tint-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-lip-tint-page .pomi-lip-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-lip-tint-page .pomi-lip-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-lip-tint-page .pomi-lip-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-lip-tint-page .pomi-lip-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-lip-tint-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-lip-tint-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-lip-tint-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-lip-tint-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-lip-tint-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-lip-tint-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-lip-tint-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-lip-tint-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-lip-tint-page .pomi-pricing {\n      background: #2b211d;\n      color: #ffffff;\n      border-radius: 30px;\n      padding: 34px;\n      display: grid;\n      grid-template-columns: 1fr auto;\n      gap: 24px;\n      align-items: center;\n      margin-top: 24px;\n    }\n\n    #pomi-lip-tint-page .pomi-pricing h3,\n    #pomi-lip-tint-page .pomi-pricing p {\n      color: #ffffff;\n    }\n\n    #pomi-lip-tint-page .pomi-price {\n      font-size: clamp(38px, 5vw, 58px);\n      line-height: 1;\n      font-weight: 800;\n      color: #ffffff;\n      white-space: nowrap;\n    }\n\n    #pomi-lip-tint-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-lip-tint-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-lip-tint-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-lip-tint-page .pomi-location {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-lip-tint-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-lip-tint-page .pomi-final h2,\n    #pomi-lip-tint-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-lip-tint-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-lip-tint-page .pomi-hero-grid,\n      #pomi-lip-tint-page .pomi-two-col {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-lip-tint-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-lip-tint-page .pomi-process,\n      #pomi-lip-tint-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-lip-tint-page .pomi-pricing {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-lip-tint-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-lip-tint-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-lip-tint-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-lip-tint-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-lip-tint-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 8,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 2,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 2,
+      "#8f5a47": 4,
+      "#ffffff": 12,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 5,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 1
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "1fr auto",
+      "1fr",
+      "repeat(2, 1fr)"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-lip-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-pricing",
+      "pomi-price",
+      "pomi-faq",
+      "pomi-location",
+      "pomi-final"
+    ]
+  },
+  "slug": "lip-tint",
+  "url": "https://pomibrow.com/lip-tint",
+  "capturedAt": "2026-09-11"
+}

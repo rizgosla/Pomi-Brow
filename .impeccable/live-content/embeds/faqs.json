@@ -1,0 +1,831 @@
+{
+  "title": "Permanent Makeup FAQ | Pomi B. Brow Studio",
+  "embedId": "pomi-faq-page",
+  "kicker": "Permanent Makeup FAQ",
+  "h1": "Questions to Ask Before Permanent Makeup",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Permanent Makeup FAQ",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Questions to Ask Before Permanent Makeup",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is personal, so it is normal to have questions before booking. This FAQ explains what to know about brows, eyeliner, lash enhancement, lip tint, scalp micropigmentation, healing, safety, and touch-ups.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Ask Before Booking",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "**Clear answers before you book.**",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "Learn what to expect, what to ask, and how to prepare.",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "h3",
+      "text": "Brows",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading, powder brows, and combination brow questions.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyes and lips",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Eyeliner, lash enhancement, and lip tint questions.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Healing",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "What is normal after your appointment and when to ask.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Safety",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Who should ask before booking and how to prepare.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Start here",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What should I know before booking?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The best permanent makeup results start with clear expectations. Fresh pigment usually looks darker, brighter, or more defined at first. As your skin heals, the color softens and the final result becomes more natural.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Before booking, think about your goal, your skin, your lifestyle, and your healing schedule. If you have medical, skin, eye, lip, scalp, or cold sore concerns, ask before scheduling.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "My advice",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Please ask questions before your appointment. It is always better to talk through timing, skin concerns, healing, and expectations before we begin.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup Questions",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "General Permanent Makeup FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "What is permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is a cosmetic tattoo service that adds pigment to areas such as the brows, lash line, lips, or scalp. The goal is to create a softer, more polished look with less daily makeup.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What services does Pomi B. Brow Studio offer?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio offers microblading, microblading / shading, ombre powder brows, permanent eyeliner, lash enhancement, lip tint, scalp micropigmentation, touch-ups, and tattoo removal.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located at 2801 El Camino Real in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who is a good candidate for permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "A good candidate wants natural-looking enhancement, understands the healing process, follows aftercare, and does not have active skin or health concerns that would make timing unsafe.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active irritation, have a cold sore history for lip tint, have eye irritation for eye services, or recently had cosmetic treatments near the area.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How do I choose the right permanent makeup service?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Start with the result you want. Choose microblading for hair-like brow strokes, powder brows for a soft filled-in brow look, lash enhancement for subtle eye definition, eyeliner for a more visible liner look, lip tint for soft lip color, and scalp micropigmentation for the look of fuller hair density.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h3",
+      "text": "Brows FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "What is microblading?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading is a brow service that creates fine hair-like strokes. It is best for clients who want a natural brow-hair look and better shape without filling in their brows every day.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What are ombre powder brows?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ombre powder brows use soft shading to create a fuller, filled-in brow look. The front of the brow usually stays softer, while the arch and tail look more defined.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What is microblading / shading?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading / shading combines hair-like strokes with soft shading. It is a good choice for clients who want natural detail with extra fullness.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Which brow service looks most natural?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading usually gives the most hair-like look. Powder brows give a more filled-in look. Microblading / shading gives both hair-like detail and soft density.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Are powder brows better than microblading?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "One is not better for everyone. Powder brows may be better if you want a soft makeup finish or have skin that does not hold fine strokes well. Microblading may be better if you want a more hair-like look.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can permanent brows look too dark at first?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Fresh brows often look darker and sharper at first. As the skin heals, the color softens and the final result looks more natural.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyeliner and Lash Enhancement FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "What is permanent eyeliner?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner adds pigment along the eye area to create a more defined liner look. It is best for clients who wear eyeliner often and want to save time applying it.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What is lash enhancement?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement places pigment close to the lash line to make the base of the lashes look darker and fuller. It is softer and more natural-looking than permanent eyeliner.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What is the difference between eyeliner and lash enhancement?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement is the subtle option and blends into the lash line. Permanent eyeliner gives a more visible liner look and more definition.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Which eye service looks more natural?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement usually looks more natural because it sits close to the lash line instead of creating a visible eyeliner shape.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking eyeliner or lash enhancement?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you have eye irritation, recent eye surgery, certain eye medications, recent cosmetic eye treatments, or concerns about sensitivity near the eyes.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip Tint FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "What is lip tint?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is a cosmetic tattoo service that adds soft color to the lips. It can help improve lip tone, shape, and natural definition.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Is lip tint the same as lip blush?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Many people use the terms in a similar way. Both usually refer to a soft cosmetic tattoo for the lips. At Pomi B. Brow Studio, lip tint focuses on a natural-looking, wearable result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does lip tint look like lipstick?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is not meant to look like heavy lipstick. The healed result is usually softer and more natural. It adds color and definition without looking overdone.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Will my lips look bright at first?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Fresh lip tint often looks brighter at first. The color softens as the lips heal, so do not judge the final color too early.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can I get lip tint if I get cold sores?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "If you have ever had a cold sore, ask before booking. Lip tattooing may trigger a cold sore for some clients. For medical guidance, speak with your healthcare provider.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp Micropigmentation FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "What is scalp micropigmentation?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation is a cosmetic tattoo service that places tiny pigment impressions on the scalp to create the look of fuller hair density.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who is scalp micropigmentation for?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "SMP is for clients who want the look of more density in thinning areas, a cleaner hairline, or less visible scalp contrast.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does scalp micropigmentation grow hair?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "No. SMP does not grow new hair. It creates the cosmetic appearance of hair density by adding small pigment impressions to the scalp.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How is SMP different from hair transplant surgery?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "SMP is a cosmetic tattoo service. Hair transplant surgery is a medical procedure that moves hair follicles. Speak with a medical provider if you are considering surgery.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking SMP?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you have active scalp irritation, open skin, sunburn, active flaking, a skin condition in the treatment area, recent scalp treatments, or recent hair transplant work.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h3",
+      "text": "Healing and Aftercare FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "What should I expect while permanent makeup heals?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup usually looks darker, brighter, or more defined at first. As the skin heals, the color softens. Dryness, flaking, and temporary patchiness may happen depending on the service.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Is flaking normal after permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Light flaking can be normal for some services. Do not pick, peel, or scratch the treated area. Let dry skin release on its own.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why does the color look patchy while healing?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Color can look uneven while the skin renews. This does not always mean something is wrong. The final result should be judged after the full healing period.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can I wear makeup while permanent makeup heals?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid applying makeup directly on or near the treated area until you are cleared. This helps protect the healing skin and the final result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What should I avoid after permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Follow the aftercare instructions for your service. In general, avoid picking, heavy sweating, soaking, steam, pools, saunas, harsh skincare, and sun exposure while the area heals.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where can I read aftercare instructions?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "You can review the [Aftercare page](https://pomibrow.com/aftercare) before your appointment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h3",
+      "text": "Touch-Up and Maintenance FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "Does permanent makeup need a touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Most permanent makeup services need a touch-up to refine the healed color, shape, softness, and any areas that healed lighter than expected.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why are touch-ups important?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "A touch-up helps finish the healed result. It gives the artist a chance to see what your skin kept and adjust the color, shape, or density if needed.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "When should I book a touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Book after the treated area has healed enough to evaluate the final color and shape. Contact the studio for timing based on your service.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What is a yearly touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "A yearly touch-up is a maintenance appointment that refreshes color and definition after the result has faded over time.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How long does permanent makeup last?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup fades over time. How long it lasts depends on the service, your skin, aftercare, sun exposure, skincare, and touch-up schedule.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h3",
+      "text": "Safety and Preparation FAQ",
+      "cls": "pomi-faq-group"
+    },
+    {
+      "tag": "summary",
+      "text": "Is permanent makeup safe?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is safest when done in a clean, controlled studio with proper sanitation, single-use tools, careful setup, and clear aftercare instructions.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How should I prepare for my appointment?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Arrive with clean skin, avoid irritation or sunburn, share health details, and follow the pre-care instructions for your specific service.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What should I avoid before permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid tanning, sunburn, active irritation, and last-minute cosmetic treatments near the area. Ask about retinol, acids, exfoliants, blood thinners, alcohol, and caffeine before your appointment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Should I bring inspiration photos?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Inspiration photos can help explain the style you like, especially for brows, eyeliner, lip color, or scalp hairline goals.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Should I book before a big event?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Plan ahead. Permanent makeup goes through visible healing stages, so avoid booking too close to weddings, vacations, photo shoots, or major events.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where can I read safety information?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "You can review the [Safety page](https://pomibrow.com/safety) before scheduling.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "kicker",
+      "text": "Location",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup FAQ for Tustin and Irvine Clients",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, close to Irvine and central Orange County. Clients visit the studio for brows, eyeliner, lash enhancement, lip tint, scalp micropigmentation, touch-ups, and tattoo removal.",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "**Pomi B. Brow Studio**  2801 El Camino Real, Ste 13  Tustin, CA 92782",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "If you are unsure whether you are a good candidate, ask before booking. Please include the service you are interested in and any skin, health, cold sore, eye, lip, or scalp concerns.",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "h2",
+      "text": "Still have a question?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Contact Pomi B. Brow Studio in Tustin before booking. I can help you understand which service fits your goals, skin, lifestyle, and comfort level.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/aftercare",
+    "https://pomibrow.com/safety",
+    "https://pomibrow.com/contact-form?from=microblading#top"
+  ],
+  "images": [],
+  "wordCount": 1766,
+  "faqSchema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does Pomi B. Brow Studio offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pomi B. Brow Studio offers microblading, microblading / shading, ombre powder brows, permanent eyeliner, lash enhancement, lip tint, scalp micropigmentation, touch-ups, and tattoo removal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Pomi B. Brow Studio located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pomi B. Brow Studio is located at 2801 El Camino Real in Tustin, CA, near Irvine and central Orange County."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is microblading?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microblading is a brow service that creates fine hair-like strokes. It is best for clients who want a natural brow-hair look and better shape without filling in their brows every day."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are ombre powder brows?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ombre powder brows use soft shading to create a fuller, filled-in brow look. The front of the brow usually stays softer, while the arch and tail look more defined."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between eyeliner and lash enhancement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lash enhancement is the subtle option and blends into the lash line. Permanent eyeliner gives a more visible liner look and more definition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is lip tint the same as lip blush?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many people use the terms in a similar way. Both usually refer to a soft cosmetic tattoo for the lips. At Pomi B. Brow Studio, lip tint focuses on a natural-looking, wearable result."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is scalp micropigmentation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scalp micropigmentation is a cosmetic tattoo service that places tiny pigment impressions on the scalp to create the look of fuller hair density."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does permanent makeup need a touch-up?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most permanent makeup services need a touch-up to refine the healed color, shape, softness, and any areas that healed lighter than expected."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is permanent makeup safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Permanent makeup is safest when done in a clean, controlled studio with proper sanitation, single-use tools, careful setup, and clear aftercare instructions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should ask before booking permanent makeup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active irritation, have a cold sore history for lip tint, have eye irritation for eye services, or recently had cosmetic treatments near the area."
+        }
+      }
+    ]
+  },
+  "styleCss": "\n    #pomi-faq-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-faq-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-faq-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-faq-page .pomi-hero {\n      padding: 76px 0 56px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-faq-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.08fr 0.92fr;\n      gap: 38px;\n      align-items: center;\n    }\n\n    #pomi-faq-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-faq-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-faq-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-faq-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-faq-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-faq-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-faq-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-faq-page .pomi-lead {\n      font-size: 20px;\n      max-width: 720px;\n      color: #4b3c36;\n    }\n\n    #pomi-faq-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-faq-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-faq-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-faq-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-faq-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-faq-page .pomi-hero-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n    }\n\n    #pomi-faq-page .pomi-hero-card-inner {\n      border-radius: 24px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.14), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 28px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-faq-page .pomi-hero-card svg {\n      width: 100%;\n      max-width: 320px;\n      height: auto;\n      margin: 0 auto 20px;\n      display: block;\n    }\n\n    #pomi-faq-page .pomi-hero-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-faq-page .pomi-section {\n      padding: 64px 0;\n    }\n\n    #pomi-faq-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-faq-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 38px;\n      align-items: start;\n    }\n\n    #pomi-faq-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 28px;\n    }\n\n    #pomi-faq-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-faq-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-faq-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 28px;\n    }\n\n    #pomi-faq-page .pomi-note-box a,\n    #pomi-faq-page .pomi-text-link {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-faq-page .pomi-faq-group {\n      margin-top: 44px;\n    }\n\n    #pomi-faq-page .pomi-faq-group:first-of-type {\n      margin-top: 28px;\n    }\n\n    #pomi-faq-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 20px;\n    }\n\n    #pomi-faq-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n      box-shadow: 0 8px 22px rgba(74, 50, 40, 0.06);\n    }\n\n    #pomi-faq-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-faq-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-faq-page .pomi-location {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-faq-page .pomi-final {\n      text-align: center;\n      padding: 72px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-faq-page .pomi-final h2,\n    #pomi-faq-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-faq-page .pomi-final p {\n      max-width: 760px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-faq-page .pomi-hero-grid,\n      #pomi-faq-page .pomi-two-col {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-faq-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-faq-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-faq-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-faq-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-faq-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 2,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 3,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 3,
+      "#ffffff": 8,
+      "#d5b6a8": 1,
+      "#efd9cf": 5,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.14)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "rgba(74, 50, 40, 0.08)": 1,
+      "rgba(74, 50, 40, 0.06)": 1
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "30px",
+      "24px",
+      "18px"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)",
+      "0 8px 22px rgba(74, 50, 40, 0.06)"
+    ],
+    "grids": [
+      "1.08fr 0.92fr",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "1fr",
+      "repeat(2, 1fr)"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-hero-card",
+      "pomi-hero-card-inner",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-note-box",
+      "pomi-text-link",
+      "pomi-faq-group",
+      "pomi-faq",
+      "pomi-location",
+      "pomi-final"
+    ]
+  },
+  "slug": "faqs",
+  "url": "https://pomibrow.com/faqs",
+  "capturedAt": "2026-09-11"
+}

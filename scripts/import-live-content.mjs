@@ -1,9 +1,10 @@
-// Renders the live GoDaddy site and extracts its copy.
+// Renders the live GoDaddy site and extracts the copy in its outer DOM.
 //
-// The live site is client-rendered: a plain HTTP fetch returns nav, footer and a cookie
-// notice and nothing else, and the gallery images are lazy placeholder GIFs in the served
-// HTML. So this drives real Chrome, waits for render, scrolls to trigger the lazy images,
-// and dumps text + resolved image URLs per page for review.
+// NOTE: this misses the page bodies. Every page body on the live site is a "custom HTML" embed
+// rendered inside an <iframe> from its `srcDoc` attribute, which this outer-DOM walk never enters
+// (hence the 6 to 13 word results for most pages). scripts/import-live-embeds.mjs reads the
+// srcDoc directly and is the capture to use. This script is kept for the native widgets it does
+// see: the lazy-loaded gallery images and the two older articles under the embeds.
 //
 // Output is raw material, not content. It gets read and hand-placed, never piped into a build.
 //
@@ -11,46 +12,13 @@
 import puppeteer from "puppeteer-core";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { BASE, PAGES, BROWSER_CANDIDATES } from "./live-pages.mjs";
 
 const out = process.argv[2] ?? ".impeccable/live-content";
 mkdirSync(out, { recursive: true });
 
-const candidates = [
-  "C:/Program Files/Google/Chrome/Application/chrome.exe",
-  "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
-  `${process.env.LOCALAPPDATA}/Google/Chrome/Application/chrome.exe`,
-  "C:/Program Files/Microsoft/Edge/Application/msedge.exe",
-  "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
-];
-const executablePath = candidates.find((p) => existsSync(p));
+const executablePath = BROWSER_CANDIDATES.find((p) => existsSync(p));
 if (!executablePath) throw new Error("No Chrome or Edge found");
-
-const BASE = "https://pomibrow.com";
-const PAGES = [
-  ["home", "/home"],
-  ["about-pomi", "/about-pomi"],
-  ["faqs", "/faqs"],
-  ["safety", "/safety"],
-  ["aftercare", "/aftercare"],
-  ["contact-form", "/contact-form"],
-  ["microblading", "/microblading"],
-  ["microblading-shading", "/microblading-shading"],
-  ["ombre-powder-brows", "/ombre-powder-brows"],
-  ["eyeliner", "/eyeliner"],
-  ["lash-enhancement", "/lash-enhancement"],
-  ["lip-tint", "/lip-tint"],
-  ["scalp-micropigmentation", "/scalp-micropigmentation"],
-  ["good-pmu-candidates", "/good-pmu-candidates"],
-  ["how-long-it-lasts", "/how-long-it-lasts"],
-  ["pmu-healing-timeline", "/pmu-healing-timeline"],
-  ["prepare-for-appointment", "/prepare-for-appointment"],
-  ["lip-tint-vs-lip-blush", "/lip-tint-vs-lip-blush"],
-  ["importance-of-touch-up", "/importance-of-touch-up"],
-  ["are-powder-brows-for-me", "/are-powder-brows-for-me%3F-1"],
-  ["is-permanent-makeup-safe", "/is-permanent-makeup-safe%3F"],
-  ["eyeliner-vs-lash-enhancement", "/eyeliner-lash-enhancement"],
-  ["learn-scalp-micropigmentation", "/scalp-micropigmentation-1"],
-];
 
 const browser = await puppeteer.launch({ executablePath, headless: true, args: ["--no-sandbox"] });
 const index = [];

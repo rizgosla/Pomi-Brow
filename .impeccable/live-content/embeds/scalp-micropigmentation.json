@@ -1,0 +1,533 @@
+{
+  "title": "Scalp Micropigmentation",
+  "embedId": "pomi-scalp-micropigmentation-page",
+  "kicker": "Scalp Micropigmentation in Tustin, CA",
+  "h1": "Scalp Micropigmentation for Fuller-Looking Hair Density",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Scalp Micropigmentation in Tustin, CA",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Scalp Micropigmentation for Fuller-Looking Hair Density",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation adds tiny pigment impressions to the scalp to create the look of fuller hair density. At Pomi B. Brow Studio in Tustin, each treatment is customized around your hairline, thinning areas, skin tone, and desired result.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Scalp Micropigmentation Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Fuller-looking density",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Custom hairline planning",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-scalp-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Scalp Micropigmentation**",
+      "cls": "pomi-scalp-card"
+    },
+    {
+      "tag": "text",
+      "text": "Tiny pigment impressions for the look of fuller hair density.",
+      "cls": "pomi-scalp-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Best fit",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Scalp micropigmentation is ideal if you want the look of more hair density",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation is a strong choice if your scalp shows through thinning areas, your hairline looks less defined, or you want the appearance of fuller coverage.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "This service works well for clients who want a non-surgical cosmetic option to improve the look of hair density, scalp contrast, and hairline definition.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Thinning areas",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Add the look of more density where the scalp shows through.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Hairline definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Create a cleaner-looking hairline shape with custom planning.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp contrast",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Reduce the visual contrast between hair and scalp in sparse areas.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Custom result",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Plan the density, placement, and softness around your natural features.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "About the service",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What is scalp micropigmentation?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation, also called SMP, is a cosmetic tattoo service that uses tiny pigment impressions to create the look of hair follicles on the scalp.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The goal is to make thinning areas look denser, help the hairline look more defined, and create a natural-looking result that blends with your existing hair and skin tone.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "kicker",
+      "text": "Benefits",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why clients choose scalp micropigmentation",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Clients choose scalp micropigmentation when they want the look of more hair density without daily powders, fibers, or temporary scalp coverage products.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Fuller-looking hair",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Create the visual effect of more density in thinning areas.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Defined hairline",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Improve the look of the hairline with custom placement and shape.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Natural blending",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Match the pigment effect to your hair color, skin tone, and desired softness.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Low-maintenance look",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Reduce reliance on temporary products used to hide sparse areas.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Your appointment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Scalp coverage designed around your hair pattern",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Your appointment starts with a consultation. Pomi reviews your hairline, thinning pattern, scalp tone, existing hair color, and desired density before treatment begins.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Consultation and goals",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Talk through your thinning areas, hairline goals, and the look you want.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Hairline and density planning",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The treatment area, softness, and density are planned before pigment is applied.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "SMP session and aftercare",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Tiny pigment impressions are placed on the scalp, then you receive aftercare guidance.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "kicker",
+      "text": "Pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Scalp Micropigmentation pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp Micropigmentation",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "p",
+      "text": "Pricing listed on the current Pomi B. Brow Studio website. Rates are subject to change and are non-negotiable.",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "text",
+      "text": "$500 per hour",
+      "cls": "pomi-pricing"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Ask a Question",
+      "cls": "pomi-actions",
+      "href": "mailto:pomibstudio@gmail.com"
+    },
+    {
+      "tag": "kicker",
+      "text": "Location",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "h2",
+      "text": "Scalp micropigmentation near Irvine and Orange County",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, close to Irvine and central Orange County. Clients visit the studio for permanent makeup and cosmetic tattoo services, including scalp micropigmentation, microblading, powder brows, lip tint, eyeliner, and lash enhancement.",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "p",
+      "text": "**Pomi B. Brow Studio**  2801 El Camino Real, Ste 13  Tustin, CA 92782",
+      "cls": "pomi-location"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Scalp Micropigmentation FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "What is scalp micropigmentation?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation is a cosmetic tattoo service that places tiny pigment impressions on the scalp to create the look of fuller hair density.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who is scalp micropigmentation best for?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "SMP is a strong fit if you want to improve the appearance of thinning areas, scalp visibility, hairline definition, or overall hair density.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does scalp micropigmentation look natural?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. The goal is to use small pigment impressions that blend with your existing hair, skin tone, and desired density level.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How many SMP sessions do I need?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The number of sessions depends on the size of the treatment area, the amount of density needed, and the final result you want. A consultation helps estimate the best plan.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How much does scalp micropigmentation cost?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The current price for Scalp Micropigmentation is $500 per hour. Confirm current pricing when booking, since rates are subject to change.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The studio is located at 2801 El Camino Real, Ste 13 in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking scalp micropigmentation?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active scalp irritation, or have a skin condition in the treatment area.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Ready for fuller-looking hair density?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book your Scalp Micropigmentation consultation at Pomi B. Brow Studio in Tustin and get a treatment plan designed around your hairline, scalp, and goals.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/contact-form?from=microblading#top",
+    "mailto:pomibstudio@gmail.com"
+  ],
+  "images": [],
+  "wordCount": 751,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-scalp-micropigmentation-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-scalp-micropigmentation-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-scalp-micropigmentation-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-scalp-micropigmentation-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-scalp-micropigmentation-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-scalp-micropigmentation-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-scalp-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-scalp-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-scalp-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-scalp-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-pricing {\n      background: #2b211d;\n      color: #ffffff;\n      border-radius: 30px;\n      padding: 34px;\n      display: grid;\n      grid-template-columns: 1fr auto;\n      gap: 24px;\n      align-items: center;\n      margin-top: 24px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-pricing h3,\n    #pomi-scalp-micropigmentation-page .pomi-pricing p {\n      color: #ffffff;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-price {\n      font-size: clamp(30px, 4vw, 50px);\n      line-height: 1;\n      font-weight: 800;\n      color: #ffffff;\n      white-space: nowrap;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-scalp-micropigmentation-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-scalp-micropigmentation-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-scalp-micropigmentation-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-location {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-final h2,\n    #pomi-scalp-micropigmentation-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-scalp-micropigmentation-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-scalp-micropigmentation-page .pomi-hero-grid,\n      #pomi-scalp-micropigmentation-page .pomi-two-col {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-process,\n      #pomi-scalp-micropigmentation-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-pricing {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-scalp-micropigmentation-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-hero-art {\n        min-height: 280px;\n      }\n\n      #pomi-scalp-micropigmentation-page .pomi-price {\n        white-space: normal;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 8,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 2,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 2,
+      "#8f5a47": 4,
+      "#ffffff": 12,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 5,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 1
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "1fr auto",
+      "1fr",
+      "repeat(2, 1fr)"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-scalp-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-pricing",
+      "pomi-price",
+      "pomi-faq",
+      "pomi-location",
+      "pomi-final"
+    ]
+  },
+  "slug": "scalp-micropigmentation",
+  "url": "https://pomibrow.com/scalp-micropigmentation",
+  "capturedAt": "2026-09-11"
+}

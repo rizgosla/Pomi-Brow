@@ -4,10 +4,11 @@
 //   - learn.json     body (portable text) + seoTitle, for the pages that actually had prose
 //   - services.json  seoTitle
 //
-// Only two live Learn pages carried real copy; the other 19 pages are empty shells on the
-// live site (verified: /microblading renders 113 words, all of it nav, footer and cookie
-// notice). Nothing is written for those - their bodies stay absent and the pages fall back
-// to the summary, which is real copy written for this rebuild.
+// Only two live Learn pages carried copy in the outer DOM, which is all import-live-content.mjs
+// reads. That "empty shell" finding was wrong: every live page has a full body inside an
+// <iframe> srcDoc embed. scripts/import-live-embeds.mjs captures those to
+// .impeccable/live-content/embeds/<slug>.json in the same block shape; this script has not
+// been pointed at them yet, so the other bodies stay absent and fall back to the summary.
 //
 // Usage: node scripts/seed-from-live.mjs
 import { readFileSync, writeFileSync, existsSync } from "node:fs";

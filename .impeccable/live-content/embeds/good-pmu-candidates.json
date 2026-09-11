@@ -1,0 +1,811 @@
+{
+  "title": "Who Is a Good Candidate for Permanent Makeup? | Pomi B. Brow Studio",
+  "embedId": "pomi-candidate-learn-page",
+  "kicker": "Learn Before Booking",
+  "h1": "Who Is a Good Candidate for Permanent Makeup?",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Learn Before Booking",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Who Is a Good Candidate for Permanent Makeup?",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "A good candidate for permanent makeup is someone who wants to save time, likes a natural polished look, and understands that every service heals in stages. I always want clients to feel informed before booking, especially if they have sensitive skin, health concerns, or questions about healing.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Ask Before Booking",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Brows, eyes, lips, and scalp",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Personal service guidance",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-candidate-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Good Candidate Guide**",
+      "cls": "pomi-candidate-card"
+    },
+    {
+      "tag": "text",
+      "text": "The right service depends on your goals, skin, lifestyle, and healing.",
+      "cls": "pomi-candidate-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "You may be a good candidate if you want natural-looking results and understand the healing process",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is a good fit for many clients who want to simplify their morning routine, improve shape or definition, and feel more put together with less daily makeup.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The best candidates are honest about their skin, health, lifestyle, and expectations. This helps choose the right service and avoid booking at the wrong time.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "How I think about candidacy",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "I look at three things: your goal, your skin, and your lifestyle. A service should fit how you naturally like to look. Brows, eyeliner, lash enhancement, lip tint, and scalp micropigmentation all have different healing needs, so the right choice should feel practical for you.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Brows",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Good candidates for brow services",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Brow services are a good fit if you want better shape, more fullness, or less time filling in your brows.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Sparse brows",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If your brows look thin or patchy, permanent brow services may help create a fuller look.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Uneven brows",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If your brows do not match well, brow mapping helps create better balance before the service begins.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Daily brow makeup",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If you fill in your brows every morning, permanent brows may save time.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Soft or defined style",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Your brow service should match whether you want hair-like detail, soft shading, or a fuller makeup look.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Eyes",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Good candidates for eyeliner and lash enhancement",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Eye services are a good fit if you want your eyes to look more defined with less daily makeup.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Lash enhancement may fit you if...",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "You want the base of your lashes to look darker and fuller, but you do not want a visible eyeliner look. This is the softer, more natural eye option.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You like a no-makeup look.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You want subtle eye definition.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You want fuller-looking lashes.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You rarely wear eyeliner.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Permanent eyeliner may fit you if...",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "You already wear eyeliner often and want a more defined eye shape without applying liner every day.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You like a more polished eye look.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Your eyeliner smudges or transfers.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You want more definition than lash enhancement.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You want your liner to look more even.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Lips",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Good candidates for lip tint",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is best for clients who want soft color, better definition, and a fresher natural lip tone.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Pale lips",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint may help add soft color so your lips look more awake.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Uneven tone",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If your lips have uneven color, a custom tint may help the tone look more balanced.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Soft definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint helps the lip shape look more defined without a harsh liner look.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Less lipstick",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If you want a little color without applying lipstick all the time, lip tint may fit your routine.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Important for lips",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you have ever had a cold sore, please ask before booking lip tint. Lip tattooing may trigger a cold sore for some clients, so it is better to talk about it ahead of time.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Hair",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Good candidates for scalp micropigmentation",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation is a good fit for clients who want the look of more hair density or a more defined hairline.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Thinning areas",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "SMP may help reduce the look of visible scalp through thinning hair.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Hairline definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If your hairline looks less defined, SMP may help create a cleaner-looking shape.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp contrast",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Small pigment impressions help reduce contrast between hair and scalp.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Low-maintenance density",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "SMP may reduce the need for temporary powders or hair fibers.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Ask first",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Who should ask before booking?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Some clients are still good candidates, but timing matters. Please ask first if any of these apply to you.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Health and healing",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are pregnant or nursing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You take blood thinners.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are prone to keloids.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have a medical condition that affects healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have allergies or past reactions to cosmetic products.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Skin or treatment area concerns",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have irritation, sunburn, cuts, breakouts, or open skin near the area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You recently had filler, Botox, chemical peels, laser, or other cosmetic treatments.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have active cold sores or a cold sore history for lip tint.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have eye irritation or recent eye treatments for eyeliner or lash enhancement.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have scalp irritation for scalp micropigmentation.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "My advice",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you are unsure, ask before booking. It is better to check first than to arrive and find out we need to wait. For medical questions, speak with your healthcare provider before scheduling.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Skin type",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Skin type considerations",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Your skin affects how permanent makeup heals and how long the color holds.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Oily skin",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Oily skin may heal softer or fade faster with certain brow techniques. Powder or shading may be a better fit for some clients.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Dry skin",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Dry skin may hold fine detail well, but aftercare still matters during healing.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Mature skin",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Mature skin needs a gentle, realistic approach. Softer designs often heal better than harsh shapes.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Sensitive skin",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Sensitive skin may need extra care, slower timing, or a conversation before booking.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Lifestyle",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Lifestyle considerations before booking",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup works best when the service fits your daily life and you are able to follow aftercare.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Your daily makeup style",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "If you like soft makeup, choose a softer service. If you like more definition, choose a service that matches that look.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Your healing schedule",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Plan around events, photos, travel, workouts, pools, saunas, and sun exposure while healing.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Your maintenance plan",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup softens over time. Touch-ups help maintain color, shape, and definition.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "kicker",
+      "text": "Choosing a service",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "How to choose the right permanent makeup service",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Start with the result you want, then choose the service that matches your features, skin, and routine.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "If you want better brows",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask about the difference between natural hair-like strokes, soft powder brows, and a fuller combination brow look.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "If you want eye definition",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask whether lash enhancement or permanent eyeliner fits your eye shape, makeup style, and comfort level.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "If you want lip color",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask about lip tint if your lips look pale, uneven, or undefined and you want a soft natural color.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "If you want fuller-looking hair density",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask about scalp micropigmentation if you want the look of more coverage in thinning areas or a cleaner hairline shape.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Before you book",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Review safety and FAQ information",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Before scheduling, review the [FAQ page](https://pomibrow.com/faq) and [Safety page](https://pomibrow.com/safety). These pages explain important preparation, healing, and safety details.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup Candidate FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Who is a good candidate for permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "A good candidate wants natural-looking enhancement, understands the healing process, follows aftercare, and does not have active skin or health concerns that would make timing unsafe.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active irritation, have a cold sore history for lip tint, or recently had cosmetic treatments near the area.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Am I a good candidate for brow services?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "You may be a good candidate if you want better brow shape, more fullness, or less daily brow makeup. The best brow technique depends on your skin and preferred style.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Am I a good candidate for lip tint?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "You may be a good candidate if you want soft lip color, better tone, and natural definition. Ask first if you have a cold sore history or active irritation.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Am I a good candidate for permanent eyeliner or lash enhancement?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "You may be a good candidate if you want more eye definition and do not have active eye irritation or recent eye procedures. Ask first if you use eye medications or have recent eye treatments.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does skin type matter?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Oily, dry, mature, sensitive, or textured skin may heal differently. Your skin type helps guide the best service and technique.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Not sure if you are a good candidate?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Contact Pomi B. Brow Studio in Tustin before booking. I can help you choose the service that fits your goals, skin, lifestyle, and comfort level.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Ask Before Booking",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/faq",
+    "https://pomibrow.com/safety"
+  ],
+  "images": [],
+  "wordCount": 1413,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-candidate-learn-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-candidate-learn-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-candidate-learn-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-candidate-learn-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-candidate-learn-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-candidate-learn-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-candidate-learn-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-candidate-learn-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-candidate-learn-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-candidate-learn-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-candidate-learn-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-candidate-learn-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-candidate-learn-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-candidate-learn-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-candidate-learn-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-candidate-learn-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-candidate-learn-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-candidate-learn-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-candidate-learn-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-candidate-learn-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-candidate-learn-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-candidate-learn-page .pomi-candidate-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-candidate-learn-page .pomi-candidate-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-candidate-learn-page .pomi-candidate-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-candidate-learn-page .pomi-candidate-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-candidate-learn-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-candidate-learn-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-candidate-learn-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-candidate-learn-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-candidate-learn-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-candidate-learn-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-candidate-learn-page .pomi-answer-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 26px;\n    }\n\n    #pomi-candidate-learn-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-candidate-learn-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-candidate-learn-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-candidate-learn-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-candidate-learn-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-candidate-learn-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-candidate-learn-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-candidate-learn-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-candidate-learn-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-candidate-learn-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-candidate-learn-page .pomi-note-box a {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-candidate-learn-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-candidate-learn-page .pomi-final h2,\n    #pomi-candidate-learn-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-candidate-learn-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-candidate-learn-page .pomi-hero-grid,\n      #pomi-candidate-learn-page .pomi-two-col,\n      #pomi-candidate-learn-page .pomi-wide-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-candidate-learn-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-candidate-learn-page .pomi-process,\n      #pomi-candidate-learn-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-candidate-learn-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-candidate-learn-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-candidate-learn-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-candidate-learn-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-candidate-learn-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 3,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 4,
+      "#ffffff": 10,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 7,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 2
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(2, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-candidate-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-answer-box",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-faq",
+      "pomi-note-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "good-pmu-candidates",
+  "url": "https://pomibrow.com/good-pmu-candidates",
+  "capturedAt": "2026-09-11"
+}

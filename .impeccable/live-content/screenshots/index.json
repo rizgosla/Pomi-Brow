@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "home",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/home.html",
+    "height_d": 1232,
+    "iframe_d": null,
+    "height_m": 2613,
+    "iframe_m": null
+  },
+  {
+    "slug": "about-pomi",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/about-pomi.html",
+    "height_d": 7733,
+    "iframe_d": null,
+    "height_m": 13633,
+    "iframe_m": null
+  },
+  {
+    "slug": "faqs",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/faqs.html",
+    "height_d": 6781,
+    "iframe_d": null,
+    "height_m": 9506,
+    "iframe_m": null
+  },
+  {
+    "slug": "safety",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/safety.html",
+    "height_d": 8485,
+    "iframe_d": null,
+    "height_m": 14532,
+    "iframe_m": null
+  },
+  {
+    "slug": "aftercare",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/aftercare.html",
+    "height_d": 8741,
+    "iframe_d": null,
+    "height_m": 15056,
+    "iframe_m": null
+  },
+  {
+    "slug": "microblading",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/microblading.html",
+    "height_d": 4816,
+    "iframe_d": null,
+    "height_m": 8133,
+    "iframe_m": null
+  },
+  {
+    "slug": "microblading-shading",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/microblading-shading.html",
+    "height_d": 5059,
+    "iframe_d": null,
+    "height_m": 8418,
+    "iframe_m": null
+  },
+  {
+    "slug": "ombre-powder-brows",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/ombre-powder-brows.html",
+    "height_d": 5082,
+    "iframe_d": null,
+    "height_m": 8283,
+    "iframe_m": null
+  },
+  {
+    "slug": "eyeliner",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/eyeliner.html",
+    "height_d": 4895,
+    "iframe_d": null,
+    "height_m": 8128,
+    "iframe_m": null
+  },
+  {
+    "slug": "lash-enhancement",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/lash-enhancement.html",
+    "height_d": 4974,
+    "iframe_d": null,
+    "height_m": 8356,
+    "iframe_m": null
+  },
+  {
+    "slug": "lip-tint",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/lip-tint.html",
+    "height_d": 4790,
+    "iframe_d": null,
+    "height_m": 7874,
+    "iframe_m": null
+  },
+  {
+    "slug": "scalp-micropigmentation",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/scalp-micropigmentation.html",
+    "height_d": 5167,
+    "iframe_d": null,
+    "height_m": 8498,
+    "iframe_m": null
+  },
+  {
+    "slug": "good-pmu-candidates",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/good-pmu-candidates.html",
+    "height_d": 7949,
+    "iframe_d": null,
+    "height_m": 13562,
+    "iframe_m": null
+  },
+  {
+    "slug": "how-long-it-lasts",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/how-long-it-lasts.html",
+    "height_d": 7577,
+    "iframe_d": null,
+    "height_m": 13036,
+    "iframe_m": null
+  },
+  {
+    "slug": "pmu-healing-timeline",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/pmu-healing-timeline.html",
+    "height_d": 7445,
+    "iframe_d": null,
+    "height_m": 12943,
+    "iframe_m": null
+  },
+  {
+    "slug": "prepare-for-appointment",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/prepare-for-appointment.html",
+    "height_d": 7449,
+    "iframe_d": null,
+    "height_m": 12446,
+    "iframe_m": null
+  },
+  {
+    "slug": "lip-tint-vs-lip-blush",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/lip-tint-vs-lip-blush.html",
+    "height_d": 6779,
+    "iframe_d": null,
+    "height_m": 11324,
+    "iframe_m": null
+  },
+  {
+    "slug": "importance-of-touch-up",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/importance-of-touch-up.html",
+    "height_d": 7996,
+    "iframe_d": null,
+    "height_m": 13969,
+    "iframe_m": null
+  },
+  {
+    "slug": "are-powder-brows-for-me",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/are-powder-brows-for-me.html",
+    "height_d": 6505,
+    "iframe_d": null,
+    "height_m": 11558,
+    "iframe_m": null
+  },
+  {
+    "slug": "is-permanent-makeup-safe",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/is-permanent-makeup-safe.html",
+    "height_d": 8156,
+    "iframe_d": null,
+    "height_m": 15212,
+    "iframe_m": null
+  },
+  {
+    "slug": "eyeliner-vs-lash-enhancement",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/eyeliner-vs-lash-enhancement.html",
+    "height_d": 7211,
+    "iframe_d": null,
+    "height_m": 12483,
+    "iframe_m": null
+  },
+  {
+    "slug": "learn-scalp-micropigmentation",
+    "mode": "local",
+    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/learn-scalp-micropigmentation.html",
+    "height_d": 7928,
+    "iframe_d": null,
+    "height_m": 13503,
+    "iframe_m": null
+  }
+]

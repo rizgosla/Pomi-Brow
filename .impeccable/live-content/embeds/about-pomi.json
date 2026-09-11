@@ -1,0 +1,764 @@
+{
+  "title": "Why Your Permanent Makeup Artist Matters | Pomi B. Brow Studio",
+  "embedId": "pomi-artist-matters-page",
+  "kicker": "Choosing a Permanent Makeup Artist",
+  "h1": "Why Your Permanent Makeup Artist Matters",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Choosing a Permanent Makeup Artist",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Why Your Permanent Makeup Artist Matters",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is not only a service. It is design, skin knowledge, color choice, technique, comfort, and trust all working together. The artist you choose affects how natural the result looks, how it heals, and how confident you feel during the process.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "At Pomi B. Brow Studio in Tustin, Pomi brings nearly 10 years of permanent makeup experience, 250+ five-star Yelp reviews, and a personal design approach to every client.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "**Artistry, experience, and skin-aware technique.**",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "Every brow, eye, lip, and scalp design should fit the person wearing it.",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "h3",
+      "text": "Nearly 10 years",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Experience matters when designing permanent makeup for different faces, skin types, and goals.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "250+ five-star Yelp reviews",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Clients choose Pomi for her care, detail, and natural-looking results.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Custom design",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Every service is planned around your features, skin, and comfort level.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Quality materials",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Pigment, tools, setup, and aftercare all affect the client experience.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "The difference",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent makeup is not the same from one artist to another",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Two artists may offer the same service names, but the experience and result may feel completely different. Permanent makeup depends on mapping, pressure, pigment choice, skin reading, comfort, sanitation, and the artist’s eye for balance.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "A good artist does not copy the same look onto every client. The shape, color, softness, density, and placement should match your face and how you want to look after healing.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "How Pomi approaches each appointment",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi looks at your natural features first. She considers your brow growth, eye shape, lip tone, skin type, skin condition, lifestyle, and how much definition you want before starting the design.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Artist style",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Different artists bring different artistry to permanent makeup",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup has technique, but it also has style. The artist’s taste, patience, and design eye shape the final result.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "The natural artist",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "A natural-style artist focuses on soft edges, gentle color, and results that look good without heavy makeup. This approach is best for clients who want to look fresh, not overdone.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "The bold artist",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "A bold-style artist may create more dramatic brows, stronger eyeliner, or more noticeable color. This may fit some clients, but it may not fit someone who wants a softer healed result.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "The technical artist",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "A technical artist focuses on symmetry, pigment placement, needle control, and how the design heals. This matters because fresh work and healed work do not look the same.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "The client-focused artist",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "A client-focused artist listens first. Pomi loves learning what each client wants, then designing a result that fits the person, not a trend.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Pomi’s experience",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Nearly 10 years of experience in the Tustin and Irvine area",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is one of the longest-running permanent makeup studios in the area, serving clients near Tustin, Irvine, and Orange County for nearly 10 years.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Experience with real skin",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "After years of working with different clients, Pomi understands that skin does not heal the same for everyone.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Experience with real goals",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Some clients want natural and soft. Others want more definition. The design should match the client’s daily life.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Experience with healed results",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup should be planned with the healed result in mind, not only how it looks on the first day.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Client trust matters",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi has received 250+ five-star Yelp reviews from clients who appreciate her care, patience, artistry, and attention to detail.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Custom design",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Every design should be made for your face",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup sits on your face every day. That is why mapping, shape, softness, and color should never feel rushed.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Brows",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Brow shape should work with your natural brow growth, bone structure, eye spacing, and preferred makeup style.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyes",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Eyeliner and lash enhancement should match your eye shape, lash line, and how much definition feels right.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Lips",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint should work with your natural lip color, undertone, border, and healed color goal.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation should match your hairline, hair color, scalp tone, and density goal.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Skin knowledge",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Skin type changes the technique",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is not only about drawing a nice shape. The skin decides how pigment holds, how soft the result becomes, and how the healed color looks.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi adjusts her approach based on skin tone, oily or non-oily skin, sensitive skin, mature skin, texture, prior work, and the condition of the treatment area. This helps the service look better after healing.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "Oily skin",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Oily skin may soften fine strokes faster. Powder brows or shading may be a better fit for some clients because the healed result often needs more structure.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Dry skin",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Dry skin may hold detail well, but aftercare still matters. Overworking dry or delicate skin is not the goal.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Mature skin",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Mature skin often needs a gentle design with softer edges. A harsh shape may not heal as naturally.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Skin tone and undertone",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Pigment choice should be based on the client’s natural coloring and the healed result, not only the color in the bottle.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Comfort",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Numbing and comfort should be part of the experience",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Comfort matters. A thoughtful artist pays attention to the client, not only the service.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Before the service",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "The appointment should include time to talk through your goals, the design, the expected healing, and any concerns. Rushing this step may lead to a result that does not feel personal.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "During the service",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Numbing, pacing, and communication matter. Pomi pays attention to comfort and adjusts the appointment experience as needed.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "What clients often notice",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Many clients care about more than the final photo. They remember feeling heard, comfortable, safe, and confident during the appointment.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Materials",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "The materials and setup matter",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup results are affected by more than the artist’s hand. Tools, pigment, sanitation, barriers, and aftercare guidance all matter.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Pigment choice",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Color should be chosen for the client’s undertone, service, and healed result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Needle choice",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Different services and skin types may need different tools and technique.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Clean setup",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "A clean, private setup helps protect the client and the work area.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Aftercare guidance",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Clear aftercare helps protect the treated area and supports the healed result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Helpful safety information",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Review the [Safety page](https://pomibrow.com/safety) and [Aftercare page](https://pomibrow.com/aftercare) before booking so you understand preparation, sanitation, and healing.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Why clients choose Pomi",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What separates Pomi from a basic permanent makeup appointment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "A basic appointment may focus only on getting the service done. Pomi’s approach focuses on the person, the design, the skin, and the healed result.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "She loves the design process",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi enjoys making each design feel personal. She looks at the face as a whole, not only the treatment area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "She cares about each client",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Every client brings a different story, comfort level, and goal. Pomi takes time to listen and guide the choice.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "She thinks about the healed result",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh pigment is only the first stage. The real goal is a healed result that still looks soft, balanced, and wearable.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "She works with the skin in front of her",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Skin tone, skin type, oiliness, texture, age, sensitivity, and prior work all affect the plan.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Choosing a Permanent Makeup Artist FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Why does the permanent makeup artist matter?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The artist affects the design, pigment choice, technique, comfort, sanitation, and healed result. Permanent makeup should be customized to the client, not copied from a template.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What should I look for in a permanent makeup artist?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Look for experience, healed results, client reviews, clean practices, clear communication, and an artist who understands different skin types and tones.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why is skin type important for permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Skin type affects how pigment holds and heals. Oily, dry, mature, sensitive, textured, or previously tattooed skin may need different technique or service recommendations.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why are materials important in permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pigment, needles, single-use tools, barriers, and aftercare products all affect the appointment experience and healed result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does Pomi customize every design?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Pomi designs around the client’s natural features, skin, lifestyle, and comfort level so the final result feels personal.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located at 2801 El Camino Real in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Want permanent makeup designed for you?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book a consultation with Pomi B. Brow Studio in Tustin. Pomi will help you choose the service, shape, color, and approach that fits your skin, features, and everyday routine.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form#top"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/safety",
+    "https://pomibrow.com/aftercare",
+    "https://pomibrow.com/contact-form#top"
+  ],
+  "images": [],
+  "wordCount": 1379,
+  "faqSchema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does the permanent makeup artist matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The artist affects the design, pigment choice, technique, comfort, sanitation, and healed result. Permanent makeup should be customized to the client, not copied from a template."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I look for in a permanent makeup artist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Look for experience, healed results, client reviews, clean practices, clear communication, and an artist who understands different skin types and tones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is skin type important for permanent makeup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Skin type affects how pigment holds and heals. Oily, dry, mature, sensitive, textured, or previously tattooed skin may need different technique or service recommendations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are materials important in permanent makeup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pigment, needles, single-use tools, barriers, and aftercare products all affect the appointment experience and healed result."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Pomi customize every design?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pomi designs around the client’s natural features, skin, lifestyle, and comfort level so the final result feels personal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Pomi B. Brow Studio located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pomi B. Brow Studio is located at 2801 El Camino Real in Tustin, CA, near Irvine and central Orange County."
+        }
+      }
+    ]
+  },
+  "styleCss": "\n    #pomi-artist-matters-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-artist-matters-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-artist-matters-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-artist-matters-page .pomi-hero {\n      padding: 76px 0 56px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-artist-matters-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.08fr 0.92fr;\n      gap: 38px;\n      align-items: center;\n    }\n\n    #pomi-artist-matters-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-artist-matters-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-artist-matters-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-artist-matters-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-artist-matters-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-artist-matters-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-artist-matters-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-artist-matters-page .pomi-lead {\n      font-size: 20px;\n      max-width: 720px;\n      color: #4b3c36;\n    }\n\n    #pomi-artist-matters-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-artist-matters-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-artist-matters-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-artist-matters-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-artist-matters-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-artist-matters-page .pomi-hero-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n    }\n\n    #pomi-artist-matters-page .pomi-hero-card-inner {\n      border-radius: 24px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.14), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 28px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-artist-matters-page .pomi-hero-card svg {\n      width: 100%;\n      max-width: 330px;\n      height: auto;\n      margin: 0 auto 20px;\n      display: block;\n    }\n\n    #pomi-artist-matters-page .pomi-hero-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-artist-matters-page .pomi-section {\n      padding: 64px 0;\n    }\n\n    #pomi-artist-matters-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-artist-matters-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 38px;\n      align-items: start;\n    }\n\n    #pomi-artist-matters-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 28px;\n    }\n\n    #pomi-artist-matters-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-artist-matters-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-artist-matters-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 28px;\n    }\n\n    #pomi-artist-matters-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-artist-matters-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 28px;\n    }\n\n    #pomi-artist-matters-page .pomi-note-box a,\n    #pomi-artist-matters-page .pomi-text-link {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-artist-matters-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 28px;\n    }\n\n    #pomi-artist-matters-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-artist-matters-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-artist-matters-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-artist-matters-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n      box-shadow: 0 8px 22px rgba(74, 50, 40, 0.06);\n    }\n\n    #pomi-artist-matters-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-artist-matters-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-artist-matters-page .pomi-final {\n      text-align: center;\n      padding: 72px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-artist-matters-page .pomi-final h2,\n    #pomi-artist-matters-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-artist-matters-page .pomi-final p {\n      max-width: 760px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-artist-matters-page .pomi-hero-grid,\n      #pomi-artist-matters-page .pomi-two-col,\n      #pomi-artist-matters-page .pomi-wide-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-artist-matters-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-artist-matters-page .pomi-process {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-artist-matters-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-artist-matters-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-artist-matters-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-artist-matters-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 2,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 4,
+      "#ffffff": 10,
+      "#d5b6a8": 1,
+      "#efd9cf": 6,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.14)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "rgba(74, 50, 40, 0.08)": 2,
+      "rgba(74, 50, 40, 0.06)": 1
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "30px",
+      "24px",
+      "50%",
+      "18px"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)",
+      "0 8px 22px rgba(74, 50, 40, 0.06)"
+    ],
+    "grids": [
+      "1.08fr 0.92fr",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(2, 1fr)",
+      "repeat(3, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-hero-card",
+      "pomi-hero-card-inner",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-note-box",
+      "pomi-text-link",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-faq",
+      "pomi-final"
+    ]
+  },
+  "slug": "about-pomi",
+  "url": "https://pomibrow.com/about-pomi",
+  "capturedAt": "2026-09-11"
+}

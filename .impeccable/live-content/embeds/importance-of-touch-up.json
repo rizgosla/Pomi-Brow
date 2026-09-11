@@ -1,0 +1,799 @@
+{
+  "title": "Learn why permanent makeup touch-ups matter, when to book them, what gets adjusted, and how touch-ups help refresh color, shape, softness, and healed results at Pomi B. Brow Studio in Tustin, CA.",
+  "embedId": "pomi-touchups-learn-page",
+  "kicker": "Permanent Makeup Touch-Ups",
+  "h1": "Permanent Makeup Touch-Ups: Why They Matter",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Permanent Makeup Touch-Ups",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Permanent Makeup Touch-Ups: Why They Matter",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "A touch-up is not a sign that something went wrong. It is part of the permanent makeup process. After your skin heals, we can see what color stayed, what softened, and what needs a little refinement.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Touch-Up",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Color refresh",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Shape refinement",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Healed result review",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-touch-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Touch-Ups Complete the Result**",
+      "cls": "pomi-touch-card"
+    },
+    {
+      "tag": "text",
+      "text": "Healed color, shape, and softness can be refined after healing.",
+      "cls": "pomi-touch-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Touch-ups help finish, refresh, and maintain permanent makeup",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup heals differently for every client. Some people hold color well. Some heal lighter. Some areas soften more than others. A touch-up gives us the chance to work with your healed skin, not only the fresh result from the first day.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "I always want clients to understand that permanent makeup is a process. The first appointment creates the foundation. The touch-up helps polish the final look.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "How I explain touch-ups to clients",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "On the first day, the color can look darker, sharper, or brighter. After healing, it usually softens. The touch-up lets me see what your skin kept and what needs a little more color, shape, or balance.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Why they matter",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why permanent makeup touch-ups matter",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-ups help improve the healed result. They are especially important because color and shape can change as the skin heals.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Color can heal lighter",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "A touch-up can add back color where the healed result looks too soft or uneven.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Shape can soften",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Brows, lips, eyeliner, and SMP can all soften as the skin settles.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Details can be refined",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Small adjustments can make the result look more balanced and finished.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Results last better",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Maintenance touch-ups help keep color and definition from fading too far.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Timing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "When do touch-ups happen?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-up timing depends on the service, your healing, and the type of touch-up you need.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Initial touch-up",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The first touch-up is usually planned after the area has healed enough to see the settled color and shape.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Additional touch-ups",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Some clients need extra work if their skin healed very light or if they want more color, density, or definition.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Yearly touch-ups",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Yearly or maintenance touch-ups help refresh color after the result has faded over time.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Do not judge too early",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup can look dark at first, then flaky, then light, then softer as it settles. It is best to wait until the healing period is complete before deciding what needs to be adjusted.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "What gets adjusted",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What can be adjusted during a touch-up?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "A touch-up is not always a full redo. Often, it is small, careful refining based on the healed result.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Color",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "If the healed color is too light, uneven, or softer than expected, more pigment can be added. The goal is to improve color without making the result too heavy.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Shape",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "If the healed shape needs a little more balance, the touch-up can help refine the outline, arch, tail, lip border, eyeliner line, or SMP hairline.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Density",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Shading, powder brows, lash enhancement, eyeliner, lip tint, and scalp micropigmentation may need more density in certain areas after healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Softness",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "The goal is not always to make permanent makeup darker. Sometimes the goal is to make it look more blended, balanced, and natural.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Color softening",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Why color softens after the first appointment",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh pigment sits in newly treated skin, so it often looks stronger at first. As the skin heals, the color softens. This is normal and expected.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Some clients keep a lot of color. Others heal lighter. Skin type, aftercare, lifestyle, sun exposure, skincare products, and natural healing all play a role.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "Brows",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Brows can look dark at first, then lighter or patchy before the final healed result shows.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyes",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Eyeliner and lash enhancement can soften as swelling and fresh pigment settle.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Lips",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint often looks bright at first, then heals into a softer color.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "SMP can look stronger at first, then blend more naturally as it heals.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Shape refinement",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why shape refinement matters",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is designed carefully at the first appointment, but healed skin tells us what the final result truly needs.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Brows",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up can refine brow tails, arches, fronts, and areas that healed lighter. This is helpful for microblading, powder brows, and microblading / shading.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyeliner and lash enhancement",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up can help even out softness, strengthen color, or improve the finished look after the lash line has healed.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip tint",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up can refine color, softness, and border definition after the lips settle into their healed shade.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp micropigmentation",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up or additional session can build density, improve blending, and adjust the hairline or sparse areas.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Maintenance",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Yearly touch-ups and additional touch-ups",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Not every touch-up is the same. Some touch-ups are part of the initial healing process. Others are for long-term maintenance.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Yearly touch-ups",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "A yearly touch-up helps refresh permanent makeup after it has faded over time. This is common for clients who want their color and shape to stay fresh instead of waiting until the result fades too much.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Refreshes color",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Maintains shape",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Helps avoid heavy correction later",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Keeps the result closer to your preferred look",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Additional touch-ups",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Additional touch-ups may be needed if the skin healed lighter than expected, if more density is wanted, or if the client wants a stronger result after seeing the healed color.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Helpful for lighter healed areas",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Useful when more density is desired",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "May be needed for certain skin types",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Should be discussed after healing",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "My approach",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "I prefer to build permanent makeup carefully. It is easier to add more at a touch-up than to start too dark or too heavy at the first appointment.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Touch-up pricing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-up pricing depends on the service and the type of touch-up needed. Confirm current pricing when booking.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Common touch-up pricing",
+      "cls": "pomi-price-box"
+    },
+    {
+      "tag": "p",
+      "text": "Many service listings include an initial service price plus a touch-up price. Yearly and additional touch-ups may be listed separately. Pricing can change, so always confirm before scheduling.",
+      "cls": "pomi-price-box"
+    },
+    {
+      "tag": "text",
+      "text": "Ask when booking",
+      "cls": "pomi-price-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "How to book",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "How to book your permanent makeup touch-up",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "The easiest way to book is to contact the studio with your service, appointment history, and what you are noticing after healing.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Share your service",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Tell us whether you had brows, eyeliner, lash enhancement, lip tint, or scalp micropigmentation.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Share your timing",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Let us know when your original appointment was and whether the area has fully healed.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Share your goal",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Mention whether you want more color, better shape, more density, or a maintenance refresh.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "kicker",
+      "text": "Helpful links",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Learn more before your touch-up",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "p",
+      "text": "Review the [aftercare page](https://pomibrow.com/aftercare) and [healing timeline](https://pomibrow.com/learn/permanent-makeup-healing-timeline) before booking so you know what is normal and when your result is ready to be evaluated.",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup Touch-Up FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Why do I need a permanent makeup touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "A touch-up helps refine the healed result. It can improve color, shape, softness, density, and balance after the skin has healed.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Is a touch-up normal?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Touch-ups are a normal part of the permanent makeup process. The first appointment creates the foundation, and the touch-up helps finish the result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What gets fixed during a touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "A touch-up can adjust color, shape, density, symmetry, softness, and any areas that healed lighter than expected.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "When should I book my touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Book after the treated area has healed enough to evaluate the final color and shape. Contact the studio for timing based on your service.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What is a yearly touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "A yearly touch-up is a maintenance appointment that refreshes color and definition after the result has faded over time.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Will my touch-up make the result too dark?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "The goal is to refine the healed result, not make it too heavy. The amount of color added depends on how your skin healed and the look you want.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Need to book a touch-up?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Contact Pomi B. Brow Studio in Tustin. I can help you decide whether your healed result is ready for a touch-up, yearly refresh, or additional appointment.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Touch-Up",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/aftercare",
+    "https://pomibrow.com/learn/permanent-makeup-healing-timeline"
+  ],
+  "images": [],
+  "wordCount": 1336,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-touchups-learn-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-touchups-learn-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-touchups-learn-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-touchups-learn-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-touchups-learn-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-touchups-learn-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-touchups-learn-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-touchups-learn-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-touchups-learn-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-touchups-learn-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-touchups-learn-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-touchups-learn-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-touchups-learn-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-touchups-learn-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-touchups-learn-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-touchups-learn-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-touchups-learn-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-touchups-learn-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-touchups-learn-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-touchups-learn-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-touchups-learn-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-touchups-learn-page .pomi-touch-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-touchups-learn-page .pomi-touch-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-touchups-learn-page .pomi-touch-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-touchups-learn-page .pomi-touch-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-touchups-learn-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-touchups-learn-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-touchups-learn-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-touchups-learn-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-touchups-learn-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-touchups-learn-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-touchups-learn-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-touchups-learn-page .pomi-answer-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 26px;\n    }\n\n    #pomi-touchups-learn-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-touchups-learn-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-touchups-learn-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-touchups-learn-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-touchups-learn-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-touchups-learn-page .pomi-price-box {\n      background: #2b211d;\n      color: #ffffff;\n      border-radius: 30px;\n      padding: 34px;\n      display: grid;\n      grid-template-columns: 1fr auto;\n      gap: 24px;\n      align-items: center;\n      margin-top: 26px;\n    }\n\n    #pomi-touchups-learn-page .pomi-price-box h3,\n    #pomi-touchups-learn-page .pomi-price-box p {\n      color: #ffffff;\n    }\n\n    #pomi-touchups-learn-page .pomi-price {\n      font-size: clamp(30px, 4vw, 50px);\n      line-height: 1;\n      font-weight: 800;\n      color: #ffffff;\n      white-space: nowrap;\n    }\n\n    #pomi-touchups-learn-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-touchups-learn-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-touchups-learn-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-touchups-learn-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-touchups-learn-page .pomi-link-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n\n    #pomi-touchups-learn-page .pomi-link-box a {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-touchups-learn-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-touchups-learn-page .pomi-final h2,\n    #pomi-touchups-learn-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-touchups-learn-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-touchups-learn-page .pomi-hero-grid,\n      #pomi-touchups-learn-page .pomi-two-col,\n      #pomi-touchups-learn-page .pomi-wide-grid,\n      #pomi-touchups-learn-page .pomi-price-box {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-touchups-learn-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-touchups-learn-page .pomi-process,\n      #pomi-touchups-learn-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-touchups-learn-page .pomi-price {\n        white-space: normal;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-touchups-learn-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-touchups-learn-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-touchups-learn-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-touchups-learn-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-touchups-learn-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 8,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 3,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 5,
+      "#ffffff": 13,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 7,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 2
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(2, 1fr)",
+      "1fr auto",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-touch-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-answer-box",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-price-box",
+      "pomi-price",
+      "pomi-faq",
+      "pomi-link-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "importance-of-touch-up",
+  "url": "https://pomibrow.com/importance-of-touch-up",
+  "capturedAt": "2026-09-11"
+}

@@ -1,0 +1,698 @@
+{
+  "title": "Permanent Eyeliner vs Lash Enhancement | Pomi B. Brow Studio",
+  "embedId": "pomi-eyeliner-lash-learn-page",
+  "kicker": "Learn About Eye Services",
+  "h1": "Permanent Eyeliner vs Lash Enhancement: What Is the Difference?",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Learn About Eye Services",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Permanent Eyeliner vs Lash Enhancement: What Is the Difference?",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "If you want your eyes to look more awake without putting on liner every morning, you might be deciding between permanent eyeliner and lash enhancement. I explain it this way to clients: lash enhancement is the soft, natural option, and eyeliner gives you more visible definition.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book an Eye Service Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Soft lash-line options",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Custom eye design",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-eye-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Eyeliner or Lash Enhancement?**",
+      "cls": "pomi-eye-card"
+    },
+    {
+      "tag": "text",
+      "text": "Lash enhancement is softer. Eyeliner gives more visible definition.",
+      "cls": "pomi-eye-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Choose lash enhancement for subtle. Choose eyeliner for more definition.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement sits close to the lash line and makes the base of your lashes look fuller. Most people will notice your eyes look more defined, but they may not know you had permanent makeup done.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner is more visible. It gives your eyes a lined look, similar to soft pencil or liquid liner, depending on the style you choose.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "How I help clients choose",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you say, “I want to look like I have naturally darker lashes,” I usually guide you toward lash enhancement. If you say, “I wear eyeliner every day and want to stop drawing it on,” permanent eyeliner is usually closer to your goal.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "The difference",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent eyeliner and lash enhancement are not the same service",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Both services add pigment near the eyes, but they create different looks. The right choice depends on how much makeup you like to wear and how natural you want the result to look.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Lash Enhancement",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement is placed through the lash line to make the lashes look darker and fuller at the base. It is best when you want your eyes to look a little more awake without a clear eyeliner shape.",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Softest eye service",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Most natural-looking option",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Great for “no makeup” days",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Good if you do not usually wear eyeliner",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Permanent Eyeliner",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner creates a more noticeable line along the eyes. It can still look soft, but it is meant for clients who like the look of eyeliner and want less daily effort.",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "More visible definition",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Closer to a makeup look",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Good if you wear liner often",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Can make the eyes look more polished",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Natural look",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Which one looks more natural?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement looks more natural for most clients because it blends into the lash line instead of sitting above it like traditional eyeliner.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Choose lash enhancement if you want people to notice your eyes, not your eyeliner",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "This is the option I recommend when someone wants a soft boost. It gives the lashes more depth at the base and helps the eyes look fresh without a strong makeup line.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Choose eyeliner if you want a more finished makeup look",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Eyeliner is still customized to your eye shape, but it is meant to show more. If you feel unfinished without eyeliner, this may fit your daily routine better.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Definition",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Which one gives more definition?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner gives more definition. Lash enhancement gives softer definition.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Softest",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement adds depth at the lash line while keeping the look natural.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Medium definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "A slightly stronger lash enhancement can make the lash line look fuller without looking like liner.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "More polished",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner creates a visible line for clients who like a makeup look.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Custom choice",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The final style should match your eye shape, skin, and comfort level.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Best choice",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Who should choose lash enhancement?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement is best if you like a natural look and want your lashes to appear fuller without a visible eyeliner style.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "I like this service for clients who say they want to look more awake, but they do not want friends or family to immediately notice permanent makeup.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "You like a natural look",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "This service keeps the focus on your eyes and lashes, not a liner shape.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You rarely wear eyeliner",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If eyeliner feels too heavy for you, lash enhancement is usually a better fit.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You want fuller-looking lashes",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "It makes the lash base look darker and more defined.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You want easy mornings",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "It gives your eyes a soft boost before you apply any makeup.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Best choice",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Who should choose permanent eyeliner?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner is best if you already like wearing eyeliner and want to save time applying it. It is also a good choice if your liner smudges, transfers, or never looks even.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The goal is not to make every client look the same. The line should be designed around your eye shape and the type of makeup you already feel comfortable wearing.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "You wear liner often",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "This is a strong choice if eyeliner is part of your everyday look.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Your liner smudges",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner helps reduce the need to fix makeup during the day.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You want more definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "It gives a more noticeable eye shape than lash enhancement.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You want symmetry help",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "A planned eyeliner design helps create a cleaner, more balanced look.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Touch-ups",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "How touch-ups work for eyeliner and lash enhancement",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "The first appointment builds the foundation. The touch-up helps refine the healed result.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "We let it heal first",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The color and softness change while the skin heals. It is normal for the result to look different during the healing stage.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "We review the healed result",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "At the touch-up, the healed color, symmetry, and softness can be reviewed.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "We refine if needed",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up can strengthen color, soften uneven areas, or adjust the final look.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "My advice",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "Do not judge your final eyeliner or lash enhancement during the first few days. Fresh pigment can look darker, and the area can feel more sensitive at first. The healed result is what we use to decide what is needed at the touch-up.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Safety",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Eye services need careful planning",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Because eyeliner and lash enhancement are done close to the eyes, safety and preparation matter. Ask questions before booking if you have eye irritation, recent eye surgery, certain eye medications, or recent cosmetic eye treatments.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Before booking",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Share any eye concerns, medical history, medications, allergies, or recent treatments. This helps decide whether you should book now or wait.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Before the appointment",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Follow the pre-care instructions given by the studio. Arrive with clean skin around the eyes and ask if you are unsure about contacts, lash extensions, or eye makeup.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Before you book",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Compare your eye service options",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you are not sure which one to choose, start with the result you want. Natural and subtle usually means lash enhancement. More visible and makeup-like usually means permanent eyeliner. You can also review the [Safety page](https://pomibrow.com/safety) before scheduling.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Eyeliner vs Lash Enhancement FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "What is the main difference between permanent eyeliner and lash enhancement?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement is placed close to the lash line for a soft, natural look. Permanent eyeliner creates a more visible line and gives more definition.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Which one looks more natural?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement usually looks more natural because it blends into the lash line instead of looking like drawn-on eyeliner.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Which one gives more definition?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner gives more definition. Lash enhancement gives a softer, more natural kind of definition.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Should I choose lash enhancement if I do not wear eyeliner?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes, lash enhancement is often the better choice if you do not usually wear eyeliner but want your eyes to look a little more awake.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Should I choose permanent eyeliner if I wear liner every day?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes, permanent eyeliner is often a better fit if eyeliner is part of your daily look and you want to save time applying it.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Do eyeliner and lash enhancement need touch-ups?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Most permanent makeup services need a touch-up to review the healed result and refine color, shape, or softness if needed.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Still deciding between eyeliner and lash enhancement?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book a consultation with Pomi B. Brow Studio in Tustin. I can help you choose the eye service that fits your routine, your eye shape, and the amount of definition you want.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/safety"
+  ],
+  "images": [],
+  "wordCount": 1338,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-eyeliner-lash-learn-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-eyeliner-lash-learn-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-eyeliner-lash-learn-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-eyeliner-lash-learn-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-eyeliner-lash-learn-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-eyeliner-lash-learn-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-eyeliner-lash-learn-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-eyeliner-lash-learn-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-eye-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-eye-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-eye-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-eye-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-answer-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 26px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-compare {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-compare-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-eyeliner-lash-learn-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-eyeliner-lash-learn-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-eyeliner-lash-learn-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-link-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-note-box a {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-final h2,\n    #pomi-eyeliner-lash-learn-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-eyeliner-lash-learn-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-eyeliner-lash-learn-page .pomi-hero-grid,\n      #pomi-eyeliner-lash-learn-page .pomi-two-col,\n      #pomi-eyeliner-lash-learn-page .pomi-compare,\n      #pomi-eyeliner-lash-learn-page .pomi-wide-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-eyeliner-lash-learn-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-eyeliner-lash-learn-page .pomi-process,\n      #pomi-eyeliner-lash-learn-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-eyeliner-lash-learn-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-eyeliner-lash-learn-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-eyeliner-lash-learn-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-eyeliner-lash-learn-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-eyeliner-lash-learn-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 4,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 5,
+      "#ffffff": 11,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 9,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 3
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(2, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-eye-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-answer-box",
+      "pomi-compare",
+      "pomi-compare-card",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-faq",
+      "pomi-link-box",
+      "pomi-note-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "eyeliner-vs-lash-enhancement",
+  "url": "https://pomibrow.com/eyeliner-lash-enhancement",
+  "capturedAt": "2026-09-11"
+}
