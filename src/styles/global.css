@@ -273,6 +273,16 @@ table {
   text-decoration-color: currentColor;
 }
 
+/* A link the launch gate switched off (src/lib/launch.ts): nav and list labels stay as plain
+   text; an inline "read more" prompt with nowhere to go is hidden rather than left dangling. */
+a[aria-disabled="true"]:not([href]) {
+  text-decoration: none;
+  cursor: default;
+}
+.link[aria-disabled="true"]:not([href]) {
+  display: none;
+}
+
 .link .icon {
   width: 1em;
   height: 1em;

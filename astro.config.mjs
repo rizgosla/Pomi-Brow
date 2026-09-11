@@ -6,6 +6,7 @@ import sanity from "@sanity/astro";
 import { loadEnv } from "vite";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { HOME_ONLY } from "./src/lib/launch.ts";
 
 const env = loadEnv(process.env.NODE_ENV ?? "production", process.cwd(), "");
 
@@ -74,7 +75,8 @@ export default defineConfig({
       studioBasePath: "/admin",
     }),
     react(),
-    sitemap({ filter: (page) => !page.includes("/admin") }),
+    // Under the home-only launch gate the sitemap lists the home page alone.
+    sitemap({ filter: (page) => !page.includes("/admin") && (!HOME_ONLY || new URL(page).pathname === "/") }),
     instagramDevRoute(),
   ],
   image: {

@@ -177,6 +177,10 @@ function priceLabel(s: Service) {
     color: var(--ink);
     text-decoration-color: currentColor;
   }
+  /* Under the home-only launch gate the title link has no href, so there is nothing to detail. */
+  .service:has(.service__title a[aria-disabled="true"]) .service__cta {
+    display: none;
+  }
   .service :global(.service__arrow) {
     width: 1rem;
     height: 1rem;
