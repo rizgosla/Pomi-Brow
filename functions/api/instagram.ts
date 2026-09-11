@@ -29,7 +29,7 @@ const json = (body: unknown, status = 200, cacheControl = "no-store") =>
   });
 
 export const onRequestGet: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
-  const cache = (caches as any).default;
+  const cache = await caches.open("instagram");
   const cacheKey = new Request(new URL(request.url).toString(), { method: "GET" });
   const hit = await cache.match(cacheKey);
   if (hit) return hit;
