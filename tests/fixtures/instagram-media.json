@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "id": "17900000000000001",
+      "caption": "Healed microblading, six weeks after the touch-up #microblading #tustin",
+      "media_type": "IMAGE",
+      "media_url": "/src/assets/gallery/microblading/06.jpg",
+      "permalink": "https://www.instagram.com/p/fixture-one/",
+      "timestamp": "2026-09-04T18:12:00+0000"
+    },
+    {
+      "id": "17900000000000002",
+      "caption": "Powder brows, before and after\nBooked out through October",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "/src/assets/gallery/ombre-powder-brows/04.jpg",
+      "permalink": "https://www.instagram.com/p/fixture-two/",
+      "timestamp": "2026-08-29T16:40:00+0000"
+    },
+    {
+      "id": "17900000000000003",
+      "caption": "Lash enhancement, healed",
+      "media_type": "VIDEO",
+      "media_url": "https://example.invalid/not-used.mp4",
+      "thumbnail_url": "/src/assets/gallery/lash-enhancement/01.jpg",
+      "permalink": "https://www.instagram.com/p/fixture-three/",
+      "timestamp": "2026-08-22T15:05:00+0000"
+    },
+    {
+      "id": "17900000000000004",
+      "caption": "",
+      "media_type": "IMAGE",
+      "media_url": "/src/assets/gallery/lip-tint/01.jpg",
+      "permalink": "https://www.instagram.com/p/fixture-four/",
+      "timestamp": "2026-08-15T19:30:00+0000"
+    },
+    {
+      "id": "17900000000000005",
+      "caption": "A fifth post that the four-tile grid must not show",
+      "media_type": "IMAGE",
+      "media_url": "/src/assets/gallery/eyeliner/02.jpg",
+      "permalink": "https://www.instagram.com/p/fixture-five/",
+      "timestamp": "2026-08-10T12:00:00+0000"
+    }
+  ]
+}
