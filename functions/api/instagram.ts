@@ -4,13 +4,7 @@
 // 60-day expiry. Successful answers sit in the edge cache for an hour, which is also what keeps
 // Instagram's short-lived CDN image URLs fresh. Only onRequestGet is exported: a catch-all
 // onRequest beside a method handler is ambiguous in Pages routing.
-import {
-  loadPosts,
-  refreshToken,
-  needsRefresh,
-  type TokenRecord,
-  type FeedResponse,
-} from "../../src/lib/instagram";
+import { loadPosts, resolveToken, type KvLike, type FeedResponse } from "../../src/lib/instagram";
 
 interface Env {
   INSTAGRAM_ACCESS_TOKEN?: string;
@@ -18,7 +12,6 @@ interface Env {
   INSTAGRAM_KV?: KVNamespace;
 }
 
-const KV_KEY = "token";
 const COUNT = 4;
 const OK_CACHE = "public, max-age=300, s-maxage=3600";
 
@@ -28,16 +21,28 @@ const json = (body: unknown, status = 200, cacheControl = "no-store") =>
     headers: { "Content-Type": "application/json", "Cache-Control": cacheControl },
   });
 
+/** KVNamespace.get has an overloaded return type resolveToken's KvLike doesn't need; adapt it. */
+function asKvLike(kv: KVNamespace): KvLike {
+  return { get: (key) => kv.get(key), put: (key, value) => kv.put(key, value) };
+}
+
 export const onRequestGet: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   const cache = await caches.open("instagram");
-  const cacheKey = new Request(new URL(request.url).toString(), { method: "GET" });
+  const url = new URL(request.url);
+  url.search = "";
+  const cacheKey = new Request(url.toString(), { method: "GET" });
   const hit = await cache.match(cacheKey);
   if (hit) return hit;
 
   const envToken = env.INSTAGRAM_ACCESS_TOKEN?.trim();
   if (!envToken) return json({ ok: false, error: "not-configured" }, 503);
 
-  const { token, refresh } = await resolveToken(env, envToken);
+  const { token, refresh } = await resolveToken({
+    envToken,
+    kv: env.INSTAGRAM_KV ? asKvLike(env.INSTAGRAM_KV) : undefined,
+    fetch,
+    log: (m) => console.error("instagram token refresh:", m),
+  });
   const handle = env.INSTAGRAM_HANDLE?.trim() || "pomib.browstudio";
   try {
     const posts = await loadPosts({ token, limit: COUNT, handle, fetch });
@@ -50,22 +55,3 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env, waitUntil
     return json({ ok: false, error: "upstream" }, 502);
   }
 };
-
-/** KV record if fresh; otherwise refresh and store. Any failure keeps whatever token we have. */
-async function resolveToken(env: Env, envToken: string): Promise<{ token: string; refresh: "auto" | "manual" }> {
-  const kv = env.INSTAGRAM_KV;
-  if (!kv) return { token: envToken, refresh: "manual" };
-
-  const record = await kv.get<TokenRecord>(KV_KEY, "json");
-  if (record && !needsRefresh(record)) return { token: record.token, refresh: "auto" };
-
-  const current = record?.token ?? envToken;
-  try {
-    const fresh = await refreshToken({ token: current, fetch });
-    await kv.put(KV_KEY, JSON.stringify(fresh));
-    return { token: fresh.token, refresh: "auto" };
-  } catch (err) {
-    console.error("instagram token refresh:", err instanceof Error ? err.message : err);
-    return { token: current, refresh: "auto" };
-  }
-}

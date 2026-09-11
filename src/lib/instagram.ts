@@ -41,6 +41,8 @@ export interface TokenRecord {
   token: string;
   expiresAt: string;
   refreshedAt: string;
+  /** The env token that seeded this record. A later env token change makes the record stale. */
+  seed?: string;
 }
 
 /** Body of a successful GET /api/instagram. */
@@ -72,9 +74,9 @@ const ALT_MAX = 140;
 /** Long-lived tokens last 60 days and cannot be refreshed in their first 24 hours. Weekly is safe. */
 export const REFRESH_AFTER_MS = 7 * 24 * 60 * 60 * 1000;
 
-/** First line of the caption without hashtags or mentions, trimmed for an alt attribute. */
+/** First non-empty line of the caption without hashtags or mentions, trimmed for an alt attribute. */
 export function altFromCaption(caption: string | undefined, handle: string): string {
-  const firstLine = (caption ?? "").split(/\r?\n/)[0] ?? "";
+  const firstLine = (caption ?? "").split(/\r?\n/).map((s) => s.trim()).find(Boolean) ?? "";
   const text = firstLine.replace(/[#@][\w.]+/g, "").replace(/\s+/g, " ").trim();
   if (!text) return `New post from @${handle}`;
   return text.length > ALT_MAX ? `${text.slice(0, ALT_MAX - 1).trimEnd()}…` : text;
@@ -98,6 +100,7 @@ export function normalizePosts(json: MediaResponse, limit: number, handle: strin
   const items = Array.isArray(json?.data) ? json.data : [];
   const posts: InstagramPost[] = [];
   for (const m of items) {
+    if (!m) continue;
     const kind = kindOf(m.media_type);
     if (!kind) continue;
     const image = kind === "video" ? m.thumbnail_url : m.media_url;
@@ -133,7 +136,9 @@ export async function loadPosts(opts: {
 }): Promise<InstagramPost[]> {
   const url = new URL(`${GRAPH}/me/media`);
   url.searchParams.set("fields", MEDIA_FIELDS);
-  url.searchParams.set("limit", String(opts.limit));
+  // Meta omits media_url for copyright-flagged media, which normalizePosts then drops. Ask for
+  // headroom so the grid still fills to opts.limit after that filtering.
+  url.searchParams.set("limit", String(Math.max(opts.limit * 2, 8)));
   url.searchParams.set("access_token", opts.token);
   const json = (await getJson(opts.fetch, url.toString())) as MediaResponse;
   return normalizePosts(json, opts.limit, opts.handle);
@@ -160,4 +165,53 @@ export function needsRefresh(record: TokenRecord | null | undefined, now: Date =
   const refreshed = Date.parse(record.refreshedAt);
   if (Number.isNaN(refreshed)) return true;
   return now.getTime() - refreshed > REFRESH_AFTER_MS;
+}
+
+/** The minimal KV surface resolveToken needs. A Cloudflare KVNamespace satisfies this. */
+export interface KvLike {
+  get(key: string): Promise<string | null>;
+  put(key: string, value: string): Promise<void>;
+}
+
+export const TOKEN_KEY = "token";
+
+/**
+ * The token to use for this request, and whether refresh is automatic (KV-backed) or manual
+ * (env only). A KV record is trusted only while its `seed` matches the current env token: if an
+ * operator pastes a fresh INSTAGRAM_ACCESS_TOKEN, the record's seed no longer matches and the env
+ * token is used instead, so a hand-rotated token always takes effect.
+ */
+export async function resolveToken(opts: {
+  envToken: string;
+  kv: KvLike | undefined;
+  fetch: FetchLike;
+  now?: Date;
+  log?: (message: string) => void;
+}): Promise<{ token: string; refresh: "auto" | "manual" }> {
+  const { envToken, kv, fetch, now, log } = opts;
+  if (!kv) return { token: envToken, refresh: "manual" };
+
+  const raw = await kv.get(TOKEN_KEY);
+  let record: TokenRecord | null = null;
+  if (raw) {
+    try {
+      record = JSON.parse(raw) as TokenRecord;
+    } catch {
+      record = null;
+    }
+  }
+  const sameSeed = record != null && (record.seed === undefined || record.seed === envToken);
+  const usable = sameSeed ? record : null;
+
+  if (usable && !needsRefresh(usable, now)) return { token: usable.token, refresh: "auto" };
+
+  const current = usable?.token ?? envToken;
+  try {
+    const fresh = await refreshToken({ token: current, fetch, now });
+    await kv.put(TOKEN_KEY, JSON.stringify({ ...fresh, seed: envToken }));
+    return { token: fresh.token, refresh: "auto" };
+  } catch (err) {
+    log?.(err instanceof Error ? err.message : String(err));
+    return { token: current, refresh: "auto" };
+  }
 }
