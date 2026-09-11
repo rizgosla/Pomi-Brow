@@ -103,6 +103,7 @@ export interface SiteSettings {
   yelpReviewCount: number;
   instagramHandle: string;
   instagramUrl: string;
+  instagramLiveFeed: boolean;
   instagramPicks: Photo[];
   aboutHeading: string;
   bio: string[];
@@ -189,6 +190,7 @@ function normalizeSeedSettings(): SiteSettings {
     ...s,
     hours: s.hours ?? [],
     bookingHref: s.bookingUrl || `tel:${s.phoneTel}`,
+    instagramLiveFeed: s.instagramLiveFeed !== false,
     instagramPicks: (s.instagramPicks as SeedPick[])
       .map((pick) => {
         const { ref, detail, alt } = typeof pick === "string" ? { ref: pick } : pick;
@@ -247,6 +249,7 @@ export async function getSiteSettings(): Promise<SiteSettings> {
     ...s,
     hours: s.hours ?? [],
     bookingHref: s.bookingUrl || `tel:${s.phoneTel ?? seed.phoneTel}`,
+    instagramLiveFeed: s.instagramLiveFeed ?? seed.instagramLiveFeed,
     instagramPicks: (s.instagramPicks ?? [])
       .map((img: any) => {
         const photo = remotePhoto(img, img.alt ?? `@${s.instagramHandle} on Instagram`);

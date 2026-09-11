@@ -44,11 +44,19 @@ export const siteSettings = defineType({
     defineField({ name: "instagramHandle", type: "string", description: "Without the @" }),
     defineField({ name: "instagramUrl", type: "url" }),
     defineField({
+      name: "instagramLiveFeed",
+      title: "Show the newest Instagram posts automatically",
+      type: "boolean",
+      initialValue: true,
+      description:
+        "Needs the Instagram token set in Cloudflare. When this is off, or the feed can't load, the photos below are shown instead.",
+    }),
+    defineField({
       name: "instagramPicks",
       title: "Instagram grid on the home page",
       type: "array",
       of: [{ type: "image", options: { hotspot: true }, fields: [defineField({ name: "alt", type: "string" })] }],
-      description: "Six to nine of your favorite recent posts.",
+      description: "Four photos shown until the live feed loads, and whenever it can't.",
     }),
     defineField({ name: "aboutHeading", type: "string" }),
     defineField({ name: "bio", title: "About Pomi", type: "array", of: [{ type: "block" }] }),

@@ -17,6 +17,7 @@
   "yelpReviewCount": 200,
   "instagramHandle": "pomib.browstudio",
   "instagramUrl": "https://www.instagram.com/pomib.browstudio/",
+  "instagramLiveFeed": true,
   "instagramPicks": [
     {
       "ref": "microblading/06",
