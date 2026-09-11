@@ -89,9 +89,10 @@ Instagram Graph API ──> functions/api/instagram.ts ──(JSON, edge-cached 
    - Copy: the lede becomes "Pomi posts new results most weeks. The newest are here; the feed
      is the whole portfolio." It is true in both the live and fallback states.
 
-**`src/components/Photo.astro`**: its `<style>` becomes `<style is:global>`. Every selector
-is already namespaced under `.photo`, and this lets the client-built `.photo` frames share
-the border, radius, warm grade and grain instead of duplicating them.
+The `<template>` is rendered on the server with the existing `Photo` (given a blank remote
+photo: empty `src`, 640×640) and `Caption` components, so their scoped styles, the warm
+grade and the grain all apply to cloned tiles with no CSS duplication. The script fills in
+`src`, `alt`, `href` and the caption detail, and removes the blank `srcset` and `sizes`.
 
 ## Sanity integration
 
