@@ -97,7 +97,7 @@ export const sectionGrid = defineType({
   fields: [
     heading,
     lede,
-    defineField({ name: "columns", type: "number", options: { list: [2, 4] } }),
+    defineField({ name: "columns", type: "number", options: { list: [2, 3, 4] } }),
     defineField({
       name: "items",
       type: "array",
@@ -110,6 +110,8 @@ export const sectionGrid = defineType({
             defineField({ name: "text", type: "text", rows: 2 }),
             bullets,
             defineField({ name: "image", type: "imageSlot" }),
+            defineField({ name: "href", type: "string", description: "Makes this a link card. Needs a link label too." }),
+            defineField({ name: "linkLabel", type: "string", description: 'The visible link text, e.g. "Read".' }),
           ],
         }),
       ],

@@ -49,6 +49,9 @@ export interface GridItem {
   text?: string;
   bullets?: string[];
   image?: ImageSlot;
+  /** A link card: the whole tile points here, with `linkLabel` as its visible link text. */
+  href?: string;
+  linkLabel?: string;
 }
 
 export interface SequenceItem {
@@ -72,7 +75,7 @@ export interface FaqItem {
 export type Section =
   | { type: "facts"; items: FactItem[] }
   | { type: "statement"; heading: string; lede?: string; paragraphs: string[]; image?: ImageSlot; callout?: Callout }
-  | { type: "grid"; heading: string; lede?: string; columns?: 2 | 4; items: GridItem[]; callout?: Callout }
+  | { type: "grid"; heading: string; lede?: string; columns?: 2 | 3 | 4; items: GridItem[]; callout?: Callout }
   | {
       type: "sequence";
       heading: string;
@@ -139,6 +142,9 @@ export function validateSections(sections: Section[]): Problem[] {
         break;
       case "grid":
         if (!Array.isArray(s.items) || s.items.length < 2 || s.items.length > 4) add("grid needs 2 to 4 items");
+        if (s.columns !== undefined && ![2, 3, 4].includes(s.columns)) add("grid columns must be 2, 3 or 4");
+        if (Array.isArray(s.items) && s.items.some((i: any) => (i?.href && !i?.linkLabel) || (!i?.href && i?.linkLabel)))
+          add("a link card needs both href and linkLabel");
         break;
       case "sequence":
         if (s.kind !== "steps" && s.kind !== "timeline") add('sequence kind must be "steps" or "timeline"');
@@ -162,7 +168,7 @@ export function validateSections(sections: Section[]): Problem[] {
   return problems;
 }
 
-/** Site-relative hrefs (starting with "/") across callouts and cta links, in page order. */
+/** Site-relative hrefs (starting with "/") across callouts, link cards and cta links, in page order. */
 export function internalHrefs(sections: Section[]): string[] {
   const out: string[] = [];
   const walk = (v: any) => {

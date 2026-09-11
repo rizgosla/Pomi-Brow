@@ -6,7 +6,7 @@
 // (.impeccable/live-content/embeds/aftercare.md) to roughly half its length: every section and
 // every fact kept, paragraphs shortened, repeated calls to action dropped. Medical wording
 // (infection signs, the cold-sore warning) is verbatim. Photographs are still to come; each
-// slot names the shot it is waiting for.
+// slot names the shot it is waiting for. The lead photograph sits beside the title.
 import Base from "../layouts/Base.astro";
 import PageHeader from "../components/PageHeader.astro";
 import ImageSlot from "../components/sections/ImageSlot.astro";
@@ -32,25 +32,11 @@ const faqs = learn.filter((a) => a.showAsFaq);
   faqs={faqs}
   canonicalPath="/aftercare"
 >
-  <PageHeader title={page.title} lede={page.lede} meta={page.meta} />
-
-  {
-    page.lead && (
-      <section class="lead">
-        <div class="page">
-          <ImageSlot image={page.lead} sizes="(min-width: 60rem) 100rem, 100vw" widths={[900, 1320]} loading="eager" fetchpriority="high" />
-        </div>
-      </section>
-    )
-  }
+  <PageHeader title={page.title} lede={page.lede} meta={page.meta}>
+    {page.lead && <ImageSlot slot="aside" image={page.lead} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />}
+  </PageHeader>
 
   <Sections sections={page.sections} settings={settings} />
 
   <ContactForm settings={settings} services={services} />
 </Base>
-
-<style>
-  .lead {
-    padding-bottom: var(--space-8);
-  }
-</style>

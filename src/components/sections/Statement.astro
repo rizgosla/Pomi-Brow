@@ -1,6 +1,6 @@
 ---
-// One idea in two or three short paragraphs, with a photograph or an aside beside it.
-// Sides alternate down the page so the eye zig-zags rather than reading a column.
+// One idea in two or three short paragraphs, with a photograph beside it and a callout band
+// under the copy at full width. Sides alternate down the page so the eye zig-zags.
 import type { Section } from "../../lib/sections";
 import ImageSlot from "./ImageSlot.astro";
 import Callout from "./Callout.astro";
@@ -12,28 +12,15 @@ interface Props {
   flip?: boolean;
 }
 const { section, flip = false } = Astro.props;
-const side = section.image ? "image" : section.callout ? "callout" : "none";
+const side = section.image ? "image" : "none";
 ---
 
 <div class:list={["statement", { "statement--flip": flip, "statement--solo": side === "none", "statement--image": side === "image" }]}>
   <div class="statement__copy reveal">
     {section.paragraphs.map((p) => <p>{p}</p>)}
   </div>
-  {
-    side === "image" && section.image && (
-      <ImageSlot image={section.image} class="statement__side reveal" />
-    )
-  }
-  {
-    side === "callout" && section.callout && (
-      <Callout callout={section.callout} class="statement__side reveal" />
-    )
-  }
-  {
-    side === "image" && section.callout && (
-      <Callout callout={section.callout} class="statement__below reveal" />
-    )
-  }
+  {section.image && <ImageSlot image={section.image} class="statement__side reveal" />}
+  {section.callout && <Callout callout={section.callout} class="statement__below reveal" />}
 </div>
 
 <style>
@@ -68,7 +55,7 @@ const side = section.image ? "image" : section.callout ? "callout" : "none";
       align-items: center;
     }
     .statement--solo {
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      grid-template-columns: minmax(0, 1fr);
     }
     .statement--flip .statement__copy {
       order: 2;
@@ -78,7 +65,6 @@ const side = section.image ? "image" : section.callout ? "callout" : "none";
     }
     .statement :global(.statement__below) {
       grid-column: 1 / -1;
-      max-width: 56rem;
     }
   }
 </style>

@@ -300,8 +300,8 @@
     "lede": "Permanent makeup can look darker, brighter, sharper, dry, flaky or uneven while it heals. That is normal for many clients, so do not judge the final color too early.",
     "meta": "What to expect after brows, eyeliner, lash enhancement, lip tint and scalp micropigmentation.",
     "lead": {
-      "ratio": "5 / 2",
-      "shot": "Aftercare kit on a white towel: sealed cotton swabs, the recommended balm, a printed instruction card"
+      "ratio": "4 / 5",
+      "shot": "Aftercare kit on a white towel: sealed cotton swabs, the recommended balm, a printed instruction card, shot from above"
     },
     "sections": [
       {
@@ -388,7 +388,11 @@
               "No rubbing, scratching, picking or peeling",
               "Let flakes release naturally",
               "A clean cotton swab for any recommended product"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin"
+            }
           },
           {
             "title": "Water, heat and sweat",
@@ -397,7 +401,11 @@
               "No sauna, steam or heavy sweating",
               "No soaking the treated area",
               "Protect the area before bathing if instructed"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Shower cap and folded towel on a bathroom shelf, the treated area kept dry"
+            }
           },
           {
             "title": "Makeup and cosmetic treatments",
@@ -405,7 +413,11 @@
               "No makeup directly on the area",
               "No tinting, lashes, brow or lip products until cleared",
               "No peels, laser, waxing or exfoliation too soon"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Makeup brushes and a brow pencil set aside in a closed pouch, unused"
+            }
           },
           {
             "title": "Sun and strong skincare",
@@ -414,7 +426,11 @@
               "Sun protection afterwards helps prevent fading",
               "No AHAs, acids, retinoids or exfoliants nearby",
               "Check labels on active skincare"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Wide-brim hat and mineral sunscreen tube on a bright windowsill"
+            }
           }
         ],
         "callout": {
@@ -469,7 +485,11 @@
               "Sensitive, tight or slightly tender",
               "Color softens as healing continues",
               "The touch-up refines it if needed"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Fresh eyeliner tattoo on day one, a dark defined line along the lash line, eye closed"
+            }
           },
           {
             "title": "What to avoid",
@@ -478,7 +498,11 @@
               "Rubbing your eyes",
               "Lash serums, extensions or eye treatments without asking",
               "Unsure about contacts or eye products? Ask"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healed eyeliner at week four, the line soft and even, eye open in daylight"
+            }
           }
         ],
         "callout": {
@@ -500,7 +524,11 @@
               "Dryness, tightness or light flaking",
               "Lighter before it settles",
               "Final tone depends on natural lip color, healing and touch-up"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Lip tint the day after, bright and bold with a slight sheen, lips at rest"
+            }
           },
           {
             "title": "What to avoid",
@@ -509,7 +537,11 @@
               "Lip products not approved during healing",
               "Spicy, irritating or messy foods that bother the area",
               "Sun exposure; follow the instructions given"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healed lip tint, day 5, light flaking at the border"
+            }
           }
         ],
         "callout": {
@@ -531,7 +563,11 @@
               "Pigment softens as the scalp heals",
               "More sessions may be needed for density",
               "Sun exposure fades pigment faster over time"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Scalp micropigmentation right after the first session, impressions dark and distinct"
+            }
           },
           {
             "title": "What to avoid",
@@ -540,7 +576,11 @@
               "Sunburn before and after the appointment",
               "Heavy sweating, soaking, sauna or swimming",
               "Scalp products too soon, without asking"
-            ]
+            ],
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "The same scalp healed at week three, impressions blended into the surrounding hair"
+            }
           }
         ],
         "callout": {
@@ -570,25 +610,33 @@
             "title": "Maintenance",
             "text": "Yearly touch-ups refresh pigment after natural fading."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before you book",
-          "links": [
-            {
-              "label": "Safety",
-              "href": "/safety"
-            },
-            {
-              "label": "Frequently asked questions",
-              "href": "/faqs"
-            },
-            {
-              "label": "Why the touch-up matters",
-              "href": "/learn/importance-of-touch-up"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how the studio stays safe, the questions clients ask most, and why the touch-up completes the work.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Safety",
+            "text": "A private studio, single-use tools, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Why the touch-up matters",
+            "text": "What the second appointment reviews, and when to book it.",
+            "href": "/learn/importance-of-touch-up",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",

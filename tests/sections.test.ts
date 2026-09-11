@@ -8,6 +8,7 @@ const ok: Section[] = [
   { type: "facts", items: [{ title: "Private studio", text: "One client at a time." }, { title: "Clean setup", text: "Fresh barriers." }, { title: "Single-use tools", text: "Opened in front of you." }] },
   { type: "statement", heading: "What makes it safer?", paragraphs: ["A clean studio and single-use tools."], callout: { tone: "voice", title: "My approach", text: "Nothing rushed." } },
   { type: "grid", heading: "Before you book", items: [{ title: "Arrive clean", text: "No makeup." }, { title: "Share health details", bullets: ["Medications", "Pregnancy"] }] },
+  { type: "grid", heading: "Read next", columns: 3, items: [{ title: "Safety", text: "The studio.", href: "/safety", linkLabel: "Read" }, { title: "FAQs", text: "Short answers.", href: "/faqs", linkLabel: "Read" }, { title: "Touch-ups", text: "Why they matter.", href: "/learn/importance-of-touch-up", linkLabel: "Read" }] },
   { type: "sequence", heading: "The first week", kind: "timeline", items: [{ label: "Day 1", title: "Bold" }, { label: "Days 2 to 7", title: "Flaking" }, { label: "Week 2", title: "Settling" }] },
   { type: "compare", heading: "Tint or blush?", sides: [{ title: "Lip tint", bullets: ["Sheer"] }, { title: "Lip blush", bullets: ["Same technique"] }] },
   { type: "faq", items: [{ q: "Is it safe?", a: "With a careful artist, yes." }] },
@@ -27,11 +28,12 @@ test("validateSections names the section index and the rule for each problem", (
     { type: "faq", items: [{ q: "Only a question" }] },
     { type: "statement", paragraphs: ["No heading"] },
     { type: "grid", heading: "Wording", items: [{ title: "Photo", text: "This is a placeholder card." }, { title: "b" }] },
+    { type: "grid", heading: "Half a link", columns: 5, items: [{ title: "a", href: "/safety" }, { title: "b" }] },
   ] as unknown as Section[];
   const problems = validateSections(bad);
   assert.deepEqual(
     problems.map((p) => p.index),
-    [0, 1, 2, 3, 4, 5, 6]
+    [0, 1, 2, 3, 4, 5, 6, 7, 7]
   );
   assert.match(problems[0].message, /unknown type "hero"/);
   assert.match(problems[1].message, /2 to 4 items/);
@@ -40,14 +42,17 @@ test("validateSections names the section index and the rule for each problem", (
   assert.match(problems[4].message, /q and a/);
   assert.match(problems[5].message, /heading/);
   assert.match(problems[6].message, /placeholder/i);
+  assert.match(problems[7].message, /columns must be 2, 3 or 4/);
+  assert.match(problems[8].message, /href and linkLabel/);
 });
 
-test("internalHrefs lists every site-relative link across sections, callouts and cta", () => {
+test("internalHrefs lists every site-relative link across sections, callouts, link cards and cta", () => {
   const withLinks: Section[] = [
+    { type: "grid", heading: "h", items: [{ title: "Safety", href: "/safety", linkLabel: "Read" }, { title: "b" }] },
     { type: "statement", heading: "h", paragraphs: ["p"], callout: { tone: "links", title: "Read next", links: [{ label: "FAQs", href: "/faqs" }, { label: "Call", href: "tel:+19494277664" }] } },
     { type: "cta", heading: "h", text: "t", links: [{ label: "Aftercare", href: "/aftercare" }, { label: "Site", href: "https://example.com" }] },
   ];
-  assert.deepEqual(internalHrefs(withLinks), ["/faqs", "/aftercare"]);
+  assert.deepEqual(internalHrefs(withLinks), ["/safety", "/faqs", "/aftercare"]);
 });
 
 /** Routes that exist on the site, derived from the seed content, for the link check below. */

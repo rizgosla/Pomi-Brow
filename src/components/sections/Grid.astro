@@ -1,23 +1,26 @@
 ---
-// Two or four cards, each one point: a title and a sentence, or a title and a few bullets,
-// with a photograph above it when the point has one.
+// Two, three or four tiles, each one point: a title and a sentence, or a title and a few
+// bullets, with a photograph above it when the point has one, and a link when the tile is a
+// door to another page. Bullet-card grids run four across so the section stays short; only a
+// two-item grid keeps two columns. The section's callout spans the full width beneath.
 import type { Section } from "../../lib/sections";
 import ImageSlot from "./ImageSlot.astro";
 import Callout from "./Callout.astro";
+import Icon from "../Icon.astro";
 
 type Grid = Extract<Section, { type: "grid" }>;
 interface Props {
   section: Grid;
 }
 const { section } = Astro.props;
-const columns = section.columns ?? (section.items.length <= 2 ? 2 : 4);
+const columns = section.items.length <= 2 ? 2 : section.columns === 3 ? 3 : 4;
 ---
 
 <div class="cards-wrap">
   <ul class:list={["cards", `cards--${columns}`]}>
     {
       section.items.map((item, i) => (
-        <li class="card cards__item reveal" style={`--i: ${i}`}>
+        <li class:list={["cards__item", "reveal", { "cards__item--link": Boolean(item.href) }]} style={`--i: ${i}`}>
           {item.image && <ImageSlot image={item.image} class="cards__image" sizes="(min-width: 60rem) 25vw, (min-width: 40rem) 50vw, 100vw" widths={[480, 800]} />}
           <h3 class="cards__title">{item.title}</h3>
           {item.text && <p class="cards__text">{item.text}</p>}
@@ -30,6 +33,14 @@ const columns = section.columns ?? (section.items.length <= 2 ? 2 : 4);
               </ul>
             )
           }
+          {
+            item.href && item.linkLabel && (
+              <a class="link cards__link" href={item.href}>
+                {item.linkLabel}
+                <Icon name="arrow" />
+              </a>
+            )
+          }
         </li>
       ))
     }
@@ -40,21 +51,28 @@ const columns = section.columns ?? (section.items.length <= 2 ? 2 : 4);
 <style>
   .cards-wrap {
     display: grid;
-    gap: var(--space-7);
+    gap: var(--space-5);
   }
   .cards {
     display: grid;
     gap: var(--space-5);
   }
   .cards__item {
+    position: relative;
     display: grid;
     gap: var(--space-3);
     align-content: start;
     justify-items: start;
+    padding: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--bone);
+  }
+  .cards__item--link {
+    background: var(--pale-pink);
   }
   .cards__item :global(.cards__image) {
     width: 100%;
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-2);
   }
   .cards__text {
     color: var(--ink-body);
@@ -71,8 +89,16 @@ const columns = section.columns ?? (section.items.length <= 2 ? 2 : 4);
   .cards__list li::marker {
     color: var(--ink-muted);
   }
-  .cards-wrap :global(.cards__callout) {
-    max-width: 56rem;
+  /* The whole tile is the target; the link text is where the eye lands. */
+  .cards__link {
+    margin-top: auto;
+    padding-top: var(--space-2);
+  }
+  .cards__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
   }
   @media (min-width: 40rem) {
     .cards {
@@ -80,6 +106,9 @@ const columns = section.columns ?? (section.items.length <= 2 ? 2 : 4);
     }
   }
   @media (min-width: 60rem) {
+    .cards--3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
     .cards--4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }

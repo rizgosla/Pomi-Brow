@@ -2,6 +2,10 @@
 // The subpage counterpart to Hero.astro, which hard-codes the home headline and cannot be reused.
 // Title, one lede, an optional meta line on a hairline, and an optional tag above nothing --
 // the tag sits beside the meta, never above the heading, because a kicker over a heading is banned.
+//
+// An optional `aside` slot puts something beside the copy (a lead photograph, on the slide
+// pages): text left, aside right at 60rem and up, stacked below. Pages that pass no aside are
+// unchanged.
 import Icon from "./Icon.astro";
 
 interface Props {
@@ -13,25 +17,35 @@ interface Props {
   class?: string;
 }
 const { title, lede, meta, parent, class: className } = Astro.props;
+const hasAside = Astro.slots.has("aside");
 ---
 
-<header class:list={["pagehead", className]}>
-  <div class="page pagehead__inner">
+<header class:list={["pagehead", { "pagehead--aside": hasAside }, className]}>
+  <div class:list={["page", "pagehead__inner", { "pagehead__inner--aside": hasAside }]}>
+    <div class="pagehead__copy">
+      {
+        parent && (
+          <a class="pagehead__parent link" href={parent.href}>
+            <Icon name="arrow" class="pagehead__back" />
+            {parent.label}
+          </a>
+        )
+      }
+      <h1>{title}</h1>
+      {lede && <p class="lede">{lede}</p>}
+      {
+        meta && (
+          <p class="pagehead__meta">
+            <span>{meta}</span>
+          </p>
+        )
+      }
+    </div>
     {
-      parent && (
-        <a class="pagehead__parent link" href={parent.href}>
-          <Icon name="arrow" class="pagehead__back" />
-          {parent.label}
-        </a>
-      )
-    }
-    <h1>{title}</h1>
-    {lede && <p class="lede">{lede}</p>}
-    {
-      meta && (
-        <p class="pagehead__meta">
-          <span>{meta}</span>
-        </p>
+      hasAside && (
+        <div class="pagehead__aside">
+          <slot name="aside" />
+        </div>
       )
     }
   </div>
@@ -42,6 +56,10 @@ const { title, lede, meta, parent, class: className } = Astro.props;
     padding-block: var(--space-7) var(--space-8);
   }
   .pagehead__inner {
+    display: grid;
+    gap: var(--space-7);
+  }
+  .pagehead__copy {
     display: grid;
     gap: var(--space-5);
     justify-items: start;
@@ -71,9 +89,17 @@ const { title, lede, meta, parent, class: className } = Astro.props;
     display: block;
     max-width: 60ch;
   }
+  .pagehead__aside {
+    min-width: 0;
+  }
   @media (min-width: 60rem) {
     .pagehead {
       padding-block: var(--space-8) var(--space-9);
+    }
+    .pagehead__inner--aside {
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      column-gap: var(--space-9);
+      align-items: center;
     }
   }
 </style>
