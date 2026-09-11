@@ -9,6 +9,7 @@
     "build:nocheck": "astro build",
     "preview": "astro preview --port 4400",
     "check": "astro check",
+    "test": "node --test \"tests/**/*.test.ts\"",
     "media:import": "node scripts/import-media.mjs",
     "logo:export": "powershell -ExecutionPolicy Bypass -File scripts/export-logo.ps1"
   },
