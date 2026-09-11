@@ -1,5 +1,8 @@
 ---
-// A small curated sample chosen in the CMS. Every tile links to the live profile, which is the real portfolio.
+// Server-renders the CMS picks, which is the whole section when there is no token, no
+// JavaScript, or Instagram is down. When the live feed is on, a script asks /api/instagram for
+// the newest posts and swaps them in, cloning the <template> below so Photo's and Caption's
+// scoped styles apply to tiles the server never saw.
 import type { SiteSettings, Service } from "../lib/content";
 import { photoCaption } from "../lib/content";
 import Photo from "./Photo.astro";
@@ -12,6 +15,9 @@ interface Props {
 }
 const { settings, services } = Astro.props;
 const picks = settings.instagramPicks.slice(0, 4);
+const live = settings.instagramLiveFeed;
+// A blank remote photo for the template. Inside <template> nothing is fetched; the script fills it in.
+const blank = { kind: "remote", src: "", srcset: "", width: 640, height: 640, alt: "" } as const;
 ---
 
 {
@@ -21,7 +27,7 @@ const picks = settings.instagramPicks.slice(0, 4);
         <div class="ig__head reveal">
           <div class="section-head" style="margin-bottom: 0">
             <h2 id="ig-heading">Recent work, as it heals.</h2>
-            <p class="lede">Pomi posts new results most weeks. The feed is the portfolio; this is a sample.</p>
+            <p class="lede">Pomi posts new results most weeks. The newest are here; the feed is the whole portfolio.</p>
           </div>
           <a class="btn btn--quiet" href={settings.instagramUrl} rel="noopener">
             <Icon name="instagram" />
@@ -29,7 +35,7 @@ const picks = settings.instagramPicks.slice(0, 4);
           </a>
         </div>
 
-        <ul class="ig__grid">
+        <ul class="ig__grid" data-ig-feed={live ? "" : undefined} data-ig-count="4">
           {picks.map((p, i) => {
             const c = photoCaption(p, services);
             return (
@@ -42,10 +48,61 @@ const picks = settings.instagramPicks.slice(0, 4);
             );
           })}
         </ul>
+
+        {live && (
+          <template data-ig-tile>
+            <li class="reveal is-in">
+              <a class="ig__tile" target="_blank" rel="noopener">
+                <Photo photo={blank} sizes="(min-width: 60rem) 24vw, 50vw" ratio="1 / 1" />
+                <Caption service="Instagram" detail="New" />
+              </a>
+            </li>
+          </template>
+        )}
       </div>
     </section>
   )
 }
+
+<script>
+  // Live feed. Anything short of a good answer leaves the CMS picks exactly as rendered.
+  const grid = document.querySelector<HTMLUListElement>("[data-ig-feed]");
+  const template = document.querySelector<HTMLTemplateElement>("template[data-ig-tile]");
+
+  function postDate(iso: string): string {
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return "On Instagram";
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  }
+
+  if (grid && template) {
+    const count = Number(grid.dataset.igCount) || 4;
+    fetch("/api/instagram", { headers: { Accept: "application/json" } })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((body) => {
+        const posts: Array<{ permalink: string; image: string; alt: string; timestamp: string }> =
+          body?.ok && Array.isArray(body.posts) ? body.posts.slice(0, count) : [];
+        if (posts.length === 0) return;
+        const tiles = posts.map((post, i) => {
+          const li = template.content.firstElementChild!.cloneNode(true) as HTMLLIElement;
+          li.style.setProperty("--i", String(i));
+          const a = li.querySelector("a")!;
+          a.href = post.permalink;
+          const img = li.querySelector("img")!;
+          img.removeAttribute("srcset");
+          img.removeAttribute("sizes");
+          img.setAttribute("referrerpolicy", "no-referrer");
+          img.src = post.image;
+          img.alt = post.alt;
+          const detail = li.querySelector(".caption__detail");
+          if (detail) detail.textContent = postDate(post.timestamp);
+          return li;
+        });
+        grid.replaceChildren(...tiles);
+      })
+      .catch(() => {});
+  }
+</script>
 
 <style>
   .ig__head {
