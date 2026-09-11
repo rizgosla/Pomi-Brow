@@ -70,17 +70,17 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
     gap: var(--space-8);
     align-items: center;
   }
-  /* Two equal columns, and the copy sits against the photograph rather than at the far
-     left of a wide column. Snug rhythm: one statement, not a stack of blocks. */
+  /* The copy starts at the page edge like every other section's, and each text block
+     carries its own measure; the column itself is not capped. Snug rhythm: one statement,
+     not a stack of blocks. */
   .about__copy {
     display: grid;
     gap: var(--space-4);
     align-content: center;
-    max-width: 32rem;
   }
   .about__bio {
     color: var(--ink-body);
-    max-width: 46ch;
+    max-width: 52ch;
     font-size: var(--fs-lede);
     line-height: 1.5;
   }
@@ -117,12 +117,11 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
     margin: 0;
   }
   @media (min-width: 60rem) {
+    /* Same split as the hero: text leads, 1.1fr / 1fr, so the heading and the
+       Instagram grid above share one left edge. */
     .about__grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.1fr 1fr;
       column-gap: var(--space-8);
-    }
-    .about__copy {
-      justify-self: end;
     }
   }
 </style>
