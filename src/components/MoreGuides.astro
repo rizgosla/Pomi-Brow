@@ -1,0 +1,88 @@
+---
+// The other Learn guides, as a ruled list at the end of a guide. Replaces the sticky side
+// column on pages whose sections run the full width.
+import type { LearnArticle } from "../lib/content";
+import Icon from "./Icon.astro";
+
+interface Props {
+  articles: LearnArticle[];
+  current?: string;
+}
+const { articles, current } = Astro.props;
+const others = articles.filter((a) => a.slug !== current);
+---
+
+<section class="section guides" aria-labelledby="guides-heading">
+  <div class="page">
+    <div class="section-head reveal">
+      <h2 id="guides-heading">More guides.</h2>
+      <p class="lede">The other questions people ask before they book, answered the same way.</p>
+    </div>
+    <ul class="guides__list">
+      {
+        others.map((a, i) => (
+          <li class="guides__item reveal" style={`--i: ${i % 3}`}>
+            <a class="guides__link" href={`/learn/${a.slug}`}>
+              <span class="guides__title">{a.title}</span>
+              <span class="guides__summary">{a.summary}</span>
+              <span class="link guides__more">
+                Read
+                <Icon name="arrow" />
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .guides__list {
+    display: grid;
+    border-top: 1px solid var(--border);
+  }
+  .guides__item {
+    border-bottom: 1px solid var(--border);
+  }
+  .guides__link {
+    display: grid;
+    gap: var(--space-2);
+    padding-block: var(--space-5);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .guides__title {
+    font-size: var(--fs-h3);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+  .guides__summary {
+    max-width: 52ch;
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  .guides__more {
+    min-height: 0;
+    margin-top: var(--space-2);
+  }
+  .guides__link:hover .guides__more {
+    text-decoration-color: currentColor;
+  }
+  .guides__link:hover .guides__more :global(.icon) {
+    transform: translateX(3px);
+  }
+  @media (min-width: 40rem) {
+    .guides__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: var(--space-7);
+    }
+  }
+  @media (min-width: 60rem) {
+    .guides__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: var(--space-8);
+    }
+  }
+</style>

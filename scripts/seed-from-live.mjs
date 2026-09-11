@@ -7,8 +7,10 @@
 // Only two live Learn pages carried copy in the outer DOM, which is all import-live-content.mjs
 // reads. That "empty shell" finding was wrong: every live page has a full body inside an
 // <iframe> srcDoc embed. scripts/import-live-embeds.mjs captures those to
-// .impeccable/live-content/embeds/<slug>.json in the same block shape; this script has not
-// been pointed at them yet, so the other bodies stay absent and fall back to the summary.
+// .impeccable/live-content/embeds/<slug>.json in the same block shape. The Learn guides were
+// then hand-authored from those embeds as `sections` (see src/lib/sections.ts and
+// scripts/merge-sections.mjs), which render instead of `body`; this script still only fills
+// the two portable-text bodies and the SEO titles.
 //
 // Usage: node scripts/seed-from-live.mjs
 import { readFileSync, writeFileSync, existsSync } from "node:fs";

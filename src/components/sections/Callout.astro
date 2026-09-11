@@ -1,0 +1,87 @@
+---
+// An aside docked to a slide: a note, a line in Pomi's voice, a medical caution, or where to
+// read next. One hairline card on the canvas; the tone lives in the tag, never in a fill.
+import type { Callout as CalloutType } from "../../lib/sections";
+import Icon from "../Icon.astro";
+
+interface Props {
+  callout: CalloutType;
+  class?: string;
+}
+const { callout, class: className } = Astro.props;
+
+const tag = { note: "Note", voice: "From Pomi", caution: "Medical note", links: "" }[callout.tone];
+const tagClass = { note: "tag", voice: "tag tag--pink", caution: "tag tag--red", links: "tag" }[callout.tone];
+---
+
+<aside class:list={["callout", `callout--${callout.tone}`, className]}>
+  {tag && <span class={tagClass}>{tag}</span>}
+  <h3 class="callout__title">{callout.title}</h3>
+  {callout.text && <p class="callout__text">{callout.text}</p>}
+  {
+    callout.bullets && callout.bullets.length > 0 && (
+      <ul class="callout__list">
+        {callout.bullets.map((b) => (
+          <li>{b}</li>
+        ))}
+      </ul>
+    )
+  }
+  {
+    callout.links && callout.links.length > 0 && (
+      <ul class="callout__links">
+        {callout.links.map((l) => (
+          <li>
+            <a class="link" href={l.href}>
+              {l.label}
+              <Icon name="arrow" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</aside>
+
+<style>
+  .callout {
+    display: grid;
+    gap: var(--space-4);
+    justify-items: start;
+    align-content: start;
+    padding: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--canvas);
+  }
+  .callout__title {
+    max-width: 30ch;
+  }
+  .callout__text {
+    max-width: 48ch;
+    color: var(--ink-body);
+  }
+  /* Pomi's own words are set in the serif, the way a quote is set elsewhere on the site. */
+  .callout--voice .callout__text {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 24;
+    font-size: var(--fs-quote);
+    line-height: 1.35;
+    color: var(--ink);
+    max-width: 34ch;
+  }
+  .callout__list {
+    display: grid;
+    gap: var(--space-2);
+    padding-left: 1.1rem;
+    list-style: disc;
+    max-width: 48ch;
+    color: var(--ink-body);
+  }
+  .callout__list li::marker {
+    color: var(--ink-muted);
+  }
+  .callout__links {
+    display: grid;
+  }
+</style>

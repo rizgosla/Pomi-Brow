@@ -9,6 +9,8 @@ import seedSettings from "../content/seed/siteSettings.json";
 import seedServices from "../content/seed/services.json";
 import seedReviews from "../content/seed/reviews.json";
 import seedLearn from "../content/seed/learn.json";
+import seedPages from "../content/seed/pages.json";
+import type { ImageSlot, Section, SectionPage, SeedPhotoRef } from "./sections";
 
 /** What the ruled caption under a photo says beyond its alt text. */
 interface PhotoCaption {
@@ -68,6 +70,10 @@ export interface LearnArticle {
   summary: string;
   /** Long-form body. Defined in the CMS schema and, until now, never requested. */
   body?: PortableBlock[];
+  /** The slide-style page: when present it renders instead of `body`. See lib/sections.ts. */
+  sections?: Section[];
+  /** The lead image slot when the article has no real cover yet. */
+  lead?: ImageSlot;
   /** SEO title carried over from the previous site. */
   seoTitle?: string;
   /** Chosen per article, not per service: three articles share one service and
@@ -204,6 +210,11 @@ function normalizeSeedSettings(): SiteSettings {
   };
 }
 
+/** A section's image slot photo, by gallery ref. */
+export function resolveSeedPhoto(pick: SeedPhotoRef): Photo | undefined {
+  return seedCover(pick);
+}
+
 /** Resolve a seed { ref, focus, alt, detail } pick to a Photo carrying its crop point. */
 function seedCover(pick: SeedPick | undefined): Photo | undefined {
   if (!pick) return undefined;
@@ -290,11 +301,20 @@ export async function getReviews(): Promise<Review[]> {
   return rows.map((r: any) => ({ ...r, isPlaceholder: false }));
 }
 
+/**
+ * A slide-style page that is not a Learn article (Safety, Aftercare). Seed only for now: the
+ * copy lives in src/content/seed/pages.json until a `page` document type exists in the CMS.
+ */
+export async function getPage(slug: string): Promise<SectionPage | null> {
+  const page = (seedPages as SectionPage[]).find((p) => p.slug === slug);
+  return page ?? null;
+}
+
 export async function getLearnArticles(): Promise<LearnArticle[]> {
   if (!usingSanity) return normalizeSeedLearn();
   const c = await client();
   const rows = await c.fetch(`*[_type == "learnArticle"]{
-    title, "slug": slug.current, summary, body, seoTitle, showAsFaq,
+    title, "slug": slug.current, summary, body, sections, lead, seoTitle, showAsFaq,
     cover{..., asset->{url, metadata{dimensions}}},
     "relatedService": relatedService->slug.current
   }`);

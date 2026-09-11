@@ -9,7 +9,10 @@ import type { LearnArticle } from "../lib/content";
 import Icon from "./Icon.astro";
 
 interface Props {
-  faqs: LearnArticle[];
+  /** Learn articles: the title is the question, the summary the short answer, with a link on. */
+  faqs?: LearnArticle[];
+  /** Or plain questions and answers, as a slide page's own FAQ section carries them. */
+  items?: { q: string; a: string; href?: string }[];
   /** Overridable so /faqs, /safety and /aftercare reuse this without forking it. */
   heading?: string;
   lede?: string;
@@ -18,20 +21,26 @@ interface Props {
   showLearnLink?: boolean;
 }
 const {
-  faqs,
+  faqs = [],
+  items,
   heading = "The questions everyone asks first.",
   lede = "Short answers here. Longer ones, with photos, in Learn.",
   id = "questions",
   showLearnLink = true,
 } = Astro.props;
+
+// One shape for both sources. The heading id follows the section id so two FAQ blocks on one
+// page (a section's own and the site-wide one) never share an id.
+const entries = items ?? faqs.map((f) => ({ q: f.title, a: f.summary, href: `/learn/${f.slug}` }));
+const headingId = `${id}-heading`;
 ---
 
 {
-  faqs.length > 0 && (
-    <section class="faq section" id={id} aria-labelledby="faq-heading">
+  entries.length > 0 && (
+    <section class="faq section" id={id} aria-labelledby={headingId}>
       <div class="page">
         <div class="section-head faq__head reveal">
-          <h2 id="faq-heading">{heading}</h2>
+          <h2 id={headingId}>{heading}</h2>
           <p class="lede">{lede}</p>
           {showLearnLink && (
             <a class="link" href="/learn">
@@ -42,21 +51,23 @@ const {
         </div>
 
         <div class="faq__grid">
-          {faqs.map((f, i) => (
+          {entries.map((f, i) => (
             <details class="faq__item reveal" open={i === 0} style={`--i: ${i % 4}`}>
               <summary class="faq__summary">
-                <span class="faq__q">{f.title}</span>
+                <span class="faq__q">{f.q}</span>
                 <span class="faq__mark" aria-hidden="true">
                   <Icon name="plus" class="faq__plus" />
                   <Icon name="minus" class="faq__minus" />
                 </span>
               </summary>
               <div class="faq__answer">
-                <p>{f.summary}</p>
-                <a class="link" href={`/learn/${f.slug}`}>
-                  Full answer
-                  <Icon name="arrow" />
-                </a>
+                <p>{f.a}</p>
+                {f.href && (
+                  <a class="link" href={f.href}>
+                    Full answer
+                    <Icon name="arrow" />
+                  </a>
+                )}
               </div>
             </details>
           ))}

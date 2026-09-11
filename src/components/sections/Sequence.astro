@@ -1,0 +1,187 @@
+---
+// Things in order: numbered steps, or a timeline on the same pigment rail the healing axis
+// uses. A photograph can sit beside the rail and stay put while the steps scroll past it.
+import type { Section } from "../../lib/sections";
+import ImageSlot from "./ImageSlot.astro";
+import Callout from "./Callout.astro";
+
+type Sequence = Extract<Section, { type: "sequence" }>;
+interface Props {
+  section: Sequence;
+}
+const { section } = Astro.props;
+const timeline = section.kind === "timeline";
+const rail = ["var(--heal-0)", "var(--heal-1)", "var(--heal-2)", "var(--heal-3)", "var(--heal-4)", "var(--heal-5)"];
+---
+
+<div class:list={["seq", { "seq--with-image": Boolean(section.image) }]}>
+  {section.image && <ImageSlot image={section.image} class="seq__figure reveal" />}
+
+  <ol class:list={["axis", { "axis--timeline": timeline, "axis--steps": !timeline }]}>
+    {
+      section.items.map((s, i) => {
+        const last = i === section.items.length - 1;
+        const dot = last ? "var(--pink-ink)" : rail[Math.min(i, rail.length - 2)];
+        return (
+          <li class:list={["axis__step", "reveal", { "axis__step--last": last }]} style={`--i: ${i}; --dot: ${dot}`}>
+            {timeline ? (
+              <span class:list={["tag", { "tag--pink": last }]}>{s.label}</span>
+            ) : (
+              <span class="axis__num" aria-hidden="true">
+                {i + 1}
+              </span>
+            )}
+            <h3 class="axis__title">
+              {!timeline && <span class="visually-hidden">Step {i + 1}: </span>}
+              {s.title}
+            </h3>
+            {s.text && <p class="axis__body">{s.text}</p>}
+            {s.bullets && s.bullets.length > 0 && (
+              <ul class="axis__list">
+                {s.bullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+            )}
+          </li>
+        );
+      })
+    }
+  </ol>
+
+  {section.callout && <Callout callout={section.callout} class="seq__callout reveal" />}
+</div>
+
+<style>
+  .seq {
+    display: grid;
+    gap: var(--space-8);
+    align-items: start;
+  }
+  .seq :global(.seq__figure) {
+    margin: 0;
+  }
+  .axis {
+    position: relative;
+  }
+  .axis--timeline {
+    padding-left: 2rem;
+  }
+  /* The rail: the pigment across the weeks, the same argument the healing axis makes. */
+  .axis--timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 5px;
+    border-radius: 3px;
+    background: linear-gradient(
+      to bottom,
+      var(--heal-0) 0%,
+      var(--heal-1) 14%,
+      var(--heal-2) 34%,
+      var(--heal-3) 55%,
+      var(--heal-4) 78%,
+      var(--heal-5) 100%
+    );
+  }
+  .axis__step {
+    position: relative;
+    display: grid;
+    gap: var(--space-2);
+    justify-items: start;
+    padding-bottom: var(--space-7);
+  }
+  .axis--timeline .axis__step::before {
+    content: "";
+    position: absolute;
+    left: calc(-2rem + 0.4rem - 4px);
+    top: 0.45rem;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--dot, var(--canvas));
+    border: 1px solid var(--dot, var(--ink-muted));
+    box-shadow: 0 0 0 3px var(--canvas);
+  }
+  .axis__step--last {
+    padding-bottom: 0;
+  }
+  /* Steps count in the serif numeral, the way the review count does. */
+  .axis--steps .axis__step {
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+    grid-template-areas:
+      "num title"
+      "num body"
+      "num list";
+    column-gap: var(--space-4);
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--border);
+    padding-top: var(--space-6);
+  }
+  .axis--steps .axis__step:first-child {
+    padding-top: 0;
+  }
+  .axis--steps .axis__step--last {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .axis__num {
+    grid-area: num;
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-size: var(--fs-numeral-sm);
+    line-height: 0.85;
+    letter-spacing: var(--track-display);
+    color: var(--ink);
+  }
+  .axis--steps .axis__title {
+    grid-area: title;
+  }
+  .axis--steps .axis__body {
+    grid-area: body;
+  }
+  .axis--steps .axis__list {
+    grid-area: list;
+  }
+  .axis__body {
+    color: var(--ink-body);
+    max-width: 52ch;
+  }
+  .axis__list {
+    display: grid;
+    gap: var(--space-2);
+    padding-left: 1.1rem;
+    list-style: disc;
+    color: var(--ink-body);
+    max-width: 48ch;
+  }
+  .axis__list li::marker {
+    color: var(--ink-muted);
+  }
+  .seq :global(.seq__callout) {
+    max-width: 56rem;
+  }
+  @media (min-width: 60rem) {
+    .seq--with-image {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+      column-gap: var(--space-9);
+    }
+    /* The figure spans both rows so the callout sits under the steps, not under the figure. */
+    .seq--with-image :global(.seq__figure) {
+      position: sticky;
+      top: calc(var(--header-h) + var(--space-6));
+      grid-row: 1 / span 2;
+    }
+    .seq--with-image :global(.seq__callout) {
+      grid-column: 2;
+    }
+    .axis--timeline {
+      padding-left: 2.5rem;
+    }
+    .axis--timeline .axis__step::before {
+      left: calc(-2.5rem + 0.4rem - 4px);
+    }
+  }
+</style>

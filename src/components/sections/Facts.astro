@@ -1,0 +1,52 @@
+---
+// The strip under a page header: three or four things worth knowing before anything else.
+// No heading of its own; it reads as the header's last line, ruled off above and below.
+import type { FactItem } from "../../lib/sections";
+
+interface Props {
+  items: FactItem[];
+}
+const { items } = Astro.props;
+---
+
+<ul class="facts">
+  {
+    items.map((f, i) => (
+      <li class="facts__item reveal" style={`--i: ${i}`}>
+        <h3 class="facts__title">{f.title}</h3>
+        <p class="facts__text">{f.text}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .facts {
+    display: grid;
+    gap: var(--space-5) var(--space-7);
+    padding-block: var(--space-6);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .facts__item {
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+  }
+  .facts__text {
+    max-width: 30ch;
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  @media (min-width: 40rem) {
+    .facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 60rem) {
+    .facts {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      padding-block: var(--space-7);
+    }
+  }
+</style>

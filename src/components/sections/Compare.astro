@@ -1,0 +1,59 @@
+---
+// Two things side by side, each with its own photograph, title and a few points.
+import type { Section } from "../../lib/sections";
+import ImageSlot from "./ImageSlot.astro";
+
+type Compare = Extract<Section, { type: "compare" }>;
+interface Props {
+  section: Compare;
+}
+const { section } = Astro.props;
+---
+
+<div class="compare">
+  {
+    section.sides.map((side, i) => (
+      <div class="card compare__side reveal" style={`--i: ${i}`}>
+        {side.image && <ImageSlot image={side.image} class="compare__image" sizes="(min-width: 60rem) 45vw, 100vw" widths={[640, 960, 1320]} />}
+        <h3>{side.title}</h3>
+        <ul class="compare__list">
+          {side.bullets.map((b) => (
+            <li>{b}</li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .compare {
+    display: grid;
+    gap: var(--space-5);
+  }
+  .compare__side {
+    display: grid;
+    gap: var(--space-4);
+    align-content: start;
+  }
+  .compare__side :global(.compare__image) {
+    width: 100%;
+  }
+  .compare__list {
+    display: grid;
+    gap: var(--space-2);
+    padding-left: 1.1rem;
+    list-style: disc;
+    color: var(--ink-body);
+    max-width: 48ch;
+  }
+  .compare__list li::marker {
+    color: var(--ink-muted);
+  }
+  @media (min-width: 60rem) {
+    .compare {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-6);
+    }
+  }
+</style>

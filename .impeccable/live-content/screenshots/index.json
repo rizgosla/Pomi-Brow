@@ -1,200 +1,164 @@
 [
   {
     "slug": "home",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/home.html",
-    "height_d": 1232,
-    "iframe_d": null,
-    "height_m": 2613,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/home",
+    "height_d": 6577,
+    "iframe_d": 1274,
+    "error_m": "Error: Execution context was destroyed, most likely because of a navigation."
   },
   {
     "slug": "about-pomi",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/about-pomi.html",
-    "height_d": 7733,
-    "iframe_d": null,
-    "height_m": 13633,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/about-pomi",
+    "error_d": "Error: Execution context was destroyed, most likely because of a navigation.",
+    "error_m": "Error: Execution context was destroyed, most likely because of a navigation."
   },
   {
     "slug": "faqs",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/faqs.html",
-    "height_d": 6781,
-    "iframe_d": null,
-    "height_m": 9506,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/faqs",
+    "error_d": "Error: Execution context was destroyed, most likely because of a navigation.",
+    "error_m": "Error: Execution context was destroyed, most likely because of a navigation."
   },
   {
     "slug": "safety",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/safety.html",
-    "height_d": 8485,
-    "iframe_d": null,
-    "height_m": 14532,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/safety",
+    "error_d": "Error: Execution context was destroyed, most likely because of a navigation.",
+    "error_m": "TimeoutError: Navigation timeout of 90000 ms exceeded"
   },
   {
     "slug": "aftercare",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/aftercare.html",
-    "height_d": 8741,
-    "iframe_d": null,
-    "height_m": 15056,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/aftercare",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/aftercare",
+    "error_m": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/aftercare"
+  },
+  {
+    "slug": "contact-form",
+    "mode": "live",
+    "target": "https://pomibrow.com/contact-form",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/contact-form",
+    "error_m": "Error: net::ERR_DNS_NO_MATCHING_SUPPORTED_ALPN at https://pomibrow.com/contact-form"
   },
   {
     "slug": "microblading",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/microblading.html",
-    "height_d": 4816,
-    "iframe_d": null,
-    "height_m": 8133,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/microblading",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/microblading",
+    "error_m": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/microblading"
   },
   {
     "slug": "microblading-shading",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/microblading-shading.html",
-    "height_d": 5059,
-    "iframe_d": null,
-    "height_m": 8418,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/microblading-shading",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/microblading-shading",
+    "error_m": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/microblading-shading"
   },
   {
     "slug": "ombre-powder-brows",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/ombre-powder-brows.html",
-    "height_d": 5082,
-    "iframe_d": null,
-    "height_m": 8283,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/ombre-powder-brows",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/ombre-powder-brows",
+    "error_m": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/ombre-powder-brows"
   },
   {
     "slug": "eyeliner",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/eyeliner.html",
-    "height_d": 4895,
-    "iframe_d": null,
-    "height_m": 8128,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/eyeliner",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/eyeliner",
+    "error_m": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/eyeliner"
   },
   {
     "slug": "lash-enhancement",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/lash-enhancement.html",
-    "height_d": 4974,
-    "iframe_d": null,
-    "height_m": 8356,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/lash-enhancement",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/lash-enhancement",
+    "error_m": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/lash-enhancement"
   },
   {
     "slug": "lip-tint",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/lip-tint.html",
-    "height_d": 4790,
-    "iframe_d": null,
-    "height_m": 7874,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/lip-tint",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/lip-tint",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/lip-tint"
   },
   {
     "slug": "scalp-micropigmentation",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/scalp-micropigmentation.html",
-    "height_d": 5167,
-    "iframe_d": null,
-    "height_m": 8498,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/scalp-micropigmentation",
+    "error_d": "Error: net::ERR_TIMED_OUT at https://pomibrow.com/scalp-micropigmentation",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/scalp-micropigmentation"
   },
   {
     "slug": "good-pmu-candidates",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/good-pmu-candidates.html",
-    "height_d": 7949,
-    "iframe_d": null,
-    "height_m": 13562,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/good-pmu-candidates",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/good-pmu-candidates",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/good-pmu-candidates"
   },
   {
     "slug": "how-long-it-lasts",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/how-long-it-lasts.html",
-    "height_d": 7577,
-    "iframe_d": null,
-    "height_m": 13036,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/how-long-it-lasts",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/how-long-it-lasts",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/how-long-it-lasts"
   },
   {
     "slug": "pmu-healing-timeline",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/pmu-healing-timeline.html",
-    "height_d": 7445,
-    "iframe_d": null,
-    "height_m": 12943,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/pmu-healing-timeline",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/pmu-healing-timeline",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/pmu-healing-timeline"
   },
   {
     "slug": "prepare-for-appointment",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/prepare-for-appointment.html",
-    "height_d": 7449,
-    "iframe_d": null,
-    "height_m": 12446,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/prepare-for-appointment",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/prepare-for-appointment",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/prepare-for-appointment"
   },
   {
     "slug": "lip-tint-vs-lip-blush",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/lip-tint-vs-lip-blush.html",
-    "height_d": 6779,
-    "iframe_d": null,
-    "height_m": 11324,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/lip-tint-vs-lip-blush",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/lip-tint-vs-lip-blush",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/lip-tint-vs-lip-blush"
   },
   {
     "slug": "importance-of-touch-up",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/importance-of-touch-up.html",
-    "height_d": 7996,
-    "iframe_d": null,
-    "height_m": 13969,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/importance-of-touch-up",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/importance-of-touch-up",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/importance-of-touch-up"
   },
   {
     "slug": "are-powder-brows-for-me",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/are-powder-brows-for-me.html",
-    "height_d": 6505,
-    "iframe_d": null,
-    "height_m": 11558,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/are-powder-brows-for-me%3F-1",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/are-powder-brows-for-me%3F-1",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/are-powder-brows-for-me%3F-1"
   },
   {
     "slug": "is-permanent-makeup-safe",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/is-permanent-makeup-safe.html",
-    "height_d": 8156,
-    "iframe_d": null,
-    "height_m": 15212,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/is-permanent-makeup-safe%3F",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/is-permanent-makeup-safe%3F",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/is-permanent-makeup-safe%3F"
   },
   {
     "slug": "eyeliner-vs-lash-enhancement",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/eyeliner-vs-lash-enhancement.html",
-    "height_d": 7211,
-    "iframe_d": null,
-    "height_m": 12483,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/eyeliner-lash-enhancement",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/eyeliner-lash-enhancement",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/eyeliner-lash-enhancement"
   },
   {
     "slug": "learn-scalp-micropigmentation",
-    "mode": "local",
-    "target": "file:///C:/Users/rizgo/Documents/GITHUB_REPOS/PomiBrow/.impeccable/live-content/embeds/learn-scalp-micropigmentation.html",
-    "height_d": 7928,
-    "iframe_d": null,
-    "height_m": 13503,
-    "iframe_m": null
+    "mode": "live",
+    "target": "https://pomibrow.com/scalp-micropigmentation-1",
+    "error_d": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/scalp-micropigmentation-1",
+    "error_m": "Error: net::ERR_CONNECTION_TIMED_OUT at https://pomibrow.com/scalp-micropigmentation-1"
   }
 ]

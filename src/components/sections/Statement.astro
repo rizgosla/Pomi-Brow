@@ -1,0 +1,84 @@
+---
+// One idea in two or three short paragraphs, with a photograph or an aside beside it.
+// Sides alternate down the page so the eye zig-zags rather than reading a column.
+import type { Section } from "../../lib/sections";
+import ImageSlot from "./ImageSlot.astro";
+import Callout from "./Callout.astro";
+
+type Statement = Extract<Section, { type: "statement" }>;
+interface Props {
+  section: Statement;
+  /** Position among the page's statements; odd ones put the side element first. */
+  flip?: boolean;
+}
+const { section, flip = false } = Astro.props;
+const side = section.image ? "image" : section.callout ? "callout" : "none";
+---
+
+<div class:list={["statement", { "statement--flip": flip, "statement--solo": side === "none", "statement--image": side === "image" }]}>
+  <div class="statement__copy reveal">
+    {section.paragraphs.map((p) => <p>{p}</p>)}
+  </div>
+  {
+    side === "image" && section.image && (
+      <ImageSlot image={section.image} class="statement__side reveal" />
+    )
+  }
+  {
+    side === "callout" && section.callout && (
+      <Callout callout={section.callout} class="statement__side reveal" />
+    )
+  }
+  {
+    side === "image" && section.callout && (
+      <Callout callout={section.callout} class="statement__below reveal" />
+    )
+  }
+</div>
+
+<style>
+  .statement {
+    display: grid;
+    gap: var(--space-7);
+    align-items: start;
+  }
+  .statement__copy {
+    max-width: 58ch;
+    color: var(--ink-body);
+  }
+  .statement__copy :global(p) {
+    font-size: var(--fs-body);
+  }
+  .statement__copy :global(p:first-child) {
+    font-size: var(--fs-lede);
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .statement :global(.statement__side),
+  .statement :global(.statement__below) {
+    --i: 1;
+  }
+  @media (min-width: 60rem) {
+    .statement {
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      column-gap: var(--space-9);
+    }
+    /* Short copy beside a tall photograph sits level with its middle, not stranded at the top. */
+    .statement--image {
+      align-items: center;
+    }
+    .statement--solo {
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    }
+    .statement--flip .statement__copy {
+      order: 2;
+    }
+    .statement--flip :global(.statement__side) {
+      order: 1;
+    }
+    .statement :global(.statement__below) {
+      grid-column: 1 / -1;
+      max-width: 56rem;
+    }
+  }
+</style>
