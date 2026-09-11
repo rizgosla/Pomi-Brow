@@ -1,0 +1,193 @@
+---
+// Renders Sanity portable text: block styles, lists, marks and inline images.
+//
+// The existing portableToParagraphs() in content.ts flattens everything to plain strings, which
+// is fine for a two-line bio and useless for an article. This keeps headings, lists and links.
+//
+// Inline HTML is built here rather than as nested JSX: this project has @astrojs/react installed,
+// so a locally-defined JSX component inside a .map() is handed to React and throws. Every string
+// that reaches the output is escaped first -- the body content comes from a CMS and, for two
+// articles, from a scrape of the old site, so none of it is trusted markup.
+import type { PortableBlock } from "../lib/content";
+
+interface Props {
+  blocks?: PortableBlock[];
+  class?: string;
+  /** Magazine opener: the first paragraph gets a drop cap. */
+  dropcap?: boolean;
+}
+const { blocks = [], class: className, dropcap = false } = Astro.props;
+
+const esc = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+/** Children spans -> escaped HTML, applying strong/em/link marks. */
+function inline(b: any): string {
+  const defs: any[] = b.markDefs ?? [];
+  return (b.children ?? [])
+    .filter((c: any) => typeof c?.text === "string")
+    .map((c: any) => {
+      let html = esc(c.text);
+      const marks: string[] = c.marks ?? [];
+      if (marks.includes("strong")) html = `<strong>${html}</strong>`;
+      if (marks.includes("em")) html = `<em>${html}</em>`;
+      for (const m of marks) {
+        const def = defs.find((d) => d?._key === m);
+        const href = def?.href;
+        if (typeof href !== "string") continue;
+        // Only http(s), mailto and tel; never javascript: from a CMS field.
+        if (!/^(https?:|mailto:|tel:|\/|#)/i.test(href)) continue;
+        const external = /^https?:/i.test(href);
+        html = `<a href="${esc(href)}"${external ? ' rel="noopener" target="_blank"' : ""}>${html}</a>`;
+      }
+      return html;
+    })
+    .join("");
+}
+
+type Item = { kind: "html"; html: string } | { kind: "image"; url: string; alt: string };
+
+const items: Item[] = [];
+let listBuf: { ordered: boolean; rows: string[] } | null = null;
+
+const flush = () => {
+  if (!listBuf) return;
+  const tag = listBuf.ordered ? "ol" : "ul";
+  items.push({
+    kind: "html",
+    html: `<${tag} class="prose__list">${listBuf.rows.map((r) => `<li>${r}</li>`).join("")}</${tag}>`,
+  });
+  listBuf = null;
+};
+
+for (const b of blocks as any[]) {
+  if (!b || typeof b !== "object") continue;
+
+  if (b._type === "image" && (b.url || b.asset?.url)) {
+    flush();
+    items.push({ kind: "image", url: b.url ?? b.asset.url, alt: b.alt ?? "" });
+    continue;
+  }
+  if (b._type !== "block") continue;
+
+  const html = inline(b);
+  if (!html.trim()) continue;
+
+  // Portable text stores each bullet as its own top-level block, so consecutive
+  // listItem blocks have to be folded back into one list.
+  if (b.listItem) {
+    const ordered = b.listItem === "number";
+    if (listBuf && listBuf.ordered !== ordered) flush();
+    listBuf ??= { ordered, rows: [] };
+    listBuf.rows.push(html);
+    continue;
+  }
+  flush();
+
+  const style = b.style || "normal";
+  // h4 folds to h3: this type scale has no fourth heading level.
+  const tag = style === "h2" ? "h2" : style === "h3" || style === "h4" ? "h3" : style === "blockquote" ? "blockquote" : "p";
+  const cls = tag === "blockquote" ? ' class="prose__quote"' : "";
+  items.push({ kind: "html", html: `<${tag}${cls}>${html}</${tag}>` });
+}
+flush();
+---
+
+<div class:list={["prose", { "prose--dropcap": dropcap }, className]}>
+  {
+    items.map((item) =>
+      item.kind === "image" ? (
+        <figure class="prose__figure">
+          <img src={item.url} alt={item.alt} loading="lazy" decoding="async" />
+        </figure>
+      ) : (
+        <Fragment set:html={item.html} />
+      )
+    )
+  }
+</div>
+
+<style>
+  .prose {
+    display: grid;
+    gap: var(--space-5);
+  }
+  .prose :global(p),
+  .prose :global(li) {
+    color: var(--ink-body);
+    max-width: var(--measure);
+  }
+  /* More space above a heading than below it, so a heading belongs to what follows. */
+  .prose :global(h2) {
+    margin-top: var(--space-4);
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-size: var(--fs-h2);
+    font-weight: 400;
+    line-height: var(--lh-display);
+    letter-spacing: var(--track-display);
+    max-width: 24ch;
+  }
+  .prose :global(h3) {
+    margin-top: var(--space-4);
+    font-size: var(--fs-h3);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    max-width: 44ch;
+  }
+  .prose :global(h2:first-child),
+  .prose :global(h3:first-child) {
+    margin-top: 0;
+  }
+  .prose :global(.prose__list) {
+    display: grid;
+    gap: var(--space-2);
+    padding-left: 1.1rem;
+    list-style: disc;
+  }
+  .prose :global(ol.prose__list) {
+    list-style: decimal;
+  }
+  .prose :global(.prose__list li::marker) {
+    color: var(--ink-muted);
+  }
+  .prose :global(.prose__quote) {
+    margin: 0;
+    padding-left: var(--space-5);
+    border-left: 1px solid var(--border);
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 24;
+    font-size: var(--fs-quote);
+    line-height: 1.35;
+    color: var(--ink);
+  }
+  .prose :global(a) {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-color var(--dur-base) ease;
+  }
+  .prose :global(a:hover) {
+    text-decoration-color: currentColor;
+  }
+  .prose--dropcap :global(p:first-child::first-letter) {
+    float: left;
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-size: 4.2em;
+    line-height: 0.8;
+    padding: 0.08em 0.12em 0 0;
+    color: var(--ink);
+  }
+  .prose__figure {
+    margin: 0;
+  }
+  .prose__figure img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+</style>

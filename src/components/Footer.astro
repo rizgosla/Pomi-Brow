@@ -1,5 +1,6 @@
 ---
 import type { SiteSettings, Service } from "../lib/content";
+import { getLearnArticles } from "../lib/content";
 import Icon from "./Icon.astro";
 import logo from "../assets/brand/logo-mark-black.svg?raw";
 
@@ -10,13 +11,10 @@ interface Props {
 const { settings, services } = Astro.props;
 const year = new Date().getFullYear();
 const servicePages = services.filter((s) => ["Eyebrows", "Eyes", "Lips", "Hair"].includes(s.category));
-const learn = [
-  { label: "Are powder brows for me?", href: "/learn/are-powder-brows-for-me" },
-  { label: "How long it lasts", href: "/learn/how-long-it-lasts" },
-  { label: "Healing timeline", href: "/learn/pmu-healing-timeline" },
-  { label: "Is permanent makeup safe?", href: "/learn/is-permanent-makeup-safe" },
-  { label: "Preparing for your appointment", href: "/learn/prepare-for-appointment" },
-];
+// Driven from the content layer rather than a hard-coded list, so a new article in
+// Sanity appears here without a code change.
+const articles = await getLearnArticles();
+const learn = articles.slice(0, 5).map((a) => ({ label: a.title, href: `/learn/${a.slug}` }));
 ---
 
 <footer class="footer">
@@ -97,7 +95,9 @@ const learn = [
     gap: var(--space-7) var(--space-6);
   }
   .footer__brand {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     margin-bottom: var(--space-5);
   }
   .footer__logo :global(svg) {
@@ -112,6 +112,9 @@ const learn = [
     margin-top: var(--space-2);
   }
   .footer__meta a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     color: var(--pink-ink);
     text-decoration: none;
     font-variant-numeric: tabular-nums;
@@ -128,6 +131,7 @@ const learn = [
   .footer__social a {
     display: inline-flex;
     align-items: center;
+    min-height: 44px;
     gap: 0.4rem;
     text-decoration: none;
     color: var(--ink);
@@ -144,9 +148,11 @@ const learn = [
   }
   .footer__list {
     display: grid;
-    gap: 0.4rem;
   }
   .footer__list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     text-decoration: none;
   }
   .footer__list a:hover {

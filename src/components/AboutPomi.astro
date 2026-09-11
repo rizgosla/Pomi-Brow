@@ -1,17 +1,21 @@
 ---
-import type { SiteSettings, Photo as PhotoType } from "../lib/content";
+import type { SiteSettings, Service, Photo as PhotoType } from "../lib/content";
+import { photoCaption } from "../lib/content";
 import Photo from "./Photo.astro";
 import Caption from "./Caption.astro";
 import Icon from "./Icon.astro";
 
 interface Props {
   settings: SiteSettings;
+  services: Service[];
   /** Shown until a real headshot is supplied in Site settings. */
   fallbackPhoto: PhotoType | null;
 }
-const { settings, fallbackPhoto } = Astro.props;
+const { settings, services, fallbackPhoto } = Astro.props;
 const photo = settings.headshot ?? fallbackPhoto;
 const isHeadshot = Boolean(settings.headshot);
+// Caption comes from the photograph, so swapping the fallback image cannot leave a stale label.
+const cap = photo && !isHeadshot ? photoCaption(photo, services) : null;
 // Until a real bio is supplied the section degrades to the photograph and the
 // link, rather than printing scaffolding where the page asks for trust.
 const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
@@ -19,10 +23,21 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
 
 <section class="about section" id="about" aria-labelledby="about-heading">
   <div class="page about__grid">
+    {/* Heading, the bio at lede size, then the Yelp count folded into one sentence on a
+        hairline, then one row of links. Chosen in live mode over a proof-first stack and a
+        framed proof card: one compact statement reads faster beside the photograph. */}
     <div class="about__copy reveal">
       <h2 id="about-heading">{settings.aboutHeading}</h2>
       {bio.length > 0 && <div class="about__bio">{bio.map((p) => <p>{p}</p>)}</div>}
+      <p class="about__proof">
+        <span class="about__num">{settings.yelpReviewCount}+</span>
+        five-star reviews on Yelp, every one written by a client of one artist. Read them before you call.
+      </p>
       <div class="about__links">
+        <a class="link" href={settings.yelpUrl} rel="noopener">
+          Read the reviews
+          <Icon name="external" />
+        </a>
         <a class="link" href="/about">
           More about Pomi
           <Icon name="arrow" />
@@ -39,8 +54,8 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
           <Photo photo={photo} sizes="(min-width: 60rem) 36vw, 100vw" widths={[640, 960]} ratio="4 / 5" />
           <figcaption>
             <Caption
-              service={isHeadshot ? "Pomi" : "Ombre powder brows"}
-              detail={isHeadshot ? "Permanent makeup artist" : "Healed, by Pomi"}
+              service={isHeadshot ? "Pomi" : (cap?.service ?? "Pomi B. Brow Studio")}
+              detail={isHeadshot ? "Permanent makeup artist" : (cap?.detail ?? "Healed, by Pomi")}
             />
           </figcaption>
         </figure>
@@ -53,31 +68,61 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
   .about__grid {
     display: grid;
     gap: var(--space-8);
+    align-items: center;
   }
+  /* Two equal columns, and the copy sits against the photograph rather than at the far
+     left of a wide column. Snug rhythm: one statement, not a stack of blocks. */
   .about__copy {
     display: grid;
-    gap: var(--space-5);
+    gap: var(--space-4);
     align-content: center;
+    max-width: 32rem;
   }
   .about__bio {
-    color: var(--ink-muted);
+    color: var(--ink-body);
+    max-width: 46ch;
+    font-size: var(--fs-lede);
+    line-height: 1.5;
+  }
+  .about__proof {
+    margin: 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+    color: var(--ink-body);
     max-width: 52ch;
   }
-  .about__bio p:first-child {
-    color: var(--ink-body);
+  /* The count set large in the line, in the brow pigment: the number is about the work,
+     so it carries the work's colour rather than the neutral ink. */
+  .about__num {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--pigment-brow);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.15em;
   }
   .about__links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-5);
+    align-items: center;
+    gap: var(--space-2) var(--space-5);
+  }
+  .about__links .link {
+    min-height: 44px;
   }
   .about__figure {
     margin: 0;
   }
   @media (min-width: 60rem) {
     .about__grid {
-      grid-template-columns: 1.1fr 1fr;
-      gap: var(--space-9);
+      grid-template-columns: 1fr 1fr;
+      column-gap: var(--space-8);
+    }
+    .about__copy {
+      justify-self: end;
     }
   }
 </style>

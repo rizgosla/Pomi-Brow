@@ -1,8 +1,49 @@
 # Cloudflare Pages redirects. One rule per line: from  to  status
+#
+# Complete map of the previous GoDaddy site, taken from its own sitemap
+# (https://pomibrow.com/sitemap.website.xml, 23 URLs). Every address that site
+# served either keeps working or 301s to its replacement here.
 
 # The GoDaddy site served the home page at two addresses. Keep one.
 /home  /  301
 /home/  /  301
+
+# Core pages
+/about-pomi  /about  301
+/about-pomi/  /about  301
+/contact-form  /contact  301
+/contact-form/  /contact  301
+# /faqs, /safety and /aftercare keep their addresses.
+
+# Services move under /services/.
+/microblading  /services/microblading  301
+/microblading/  /services/microblading  301
+/microblading-shading  /services/microblading-shading  301
+/microblading-shading/  /services/microblading-shading  301
+/ombre-powder-brows  /services/ombre-powder-brows  301
+/ombre-powder-brows/  /services/ombre-powder-brows  301
+/eyeliner  /services/eyeliner  301
+/eyeliner/  /services/eyeliner  301
+/lash-enhancement  /services/lash-enhancement  301
+/lash-enhancement/  /services/lash-enhancement  301
+/lip-tint  /services/lip-tint  301
+/lip-tint/  /services/lip-tint  301
+/scalp-micropigmentation  /services/scalp-micropigmentation  301
+/scalp-micropigmentation/  /services/scalp-micropigmentation  301
+
+# Learn articles move under /learn/.
+/good-pmu-candidates  /learn/good-pmu-candidates  301
+/good-pmu-candidates/  /learn/good-pmu-candidates  301
+/how-long-it-lasts  /learn/how-long-it-lasts  301
+/how-long-it-lasts/  /learn/how-long-it-lasts  301
+/pmu-healing-timeline  /learn/pmu-healing-timeline  301
+/pmu-healing-timeline/  /learn/pmu-healing-timeline  301
+/prepare-for-appointment  /learn/prepare-for-appointment  301
+/prepare-for-appointment/  /learn/prepare-for-appointment  301
+/lip-tint-vs-lip-blush  /learn/lip-tint-vs-lip-blush  301
+/lip-tint-vs-lip-blush/  /learn/lip-tint-vs-lip-blush  301
+/importance-of-touch-up  /learn/importance-of-touch-up  301
+/importance-of-touch-up/  /learn/importance-of-touch-up  301
 
 # Two Learn URLs carried an encoded "?" in the slug. Clean addresses take over.
 /are-powder-brows-for-me%3F-1  /learn/are-powder-brows-for-me  301
@@ -10,7 +51,10 @@
 /is-permanent-makeup-safe%3F  /learn/is-permanent-makeup-safe  301
 /is-permanent-makeup-safe%3F/  /learn/is-permanent-makeup-safe  301
 
-# TODO before launch: export the full URL list from the live GoDaddy site and map every
-# legacy service and Learn address here (e.g. /microblading -> /services/microblading,
-# /pmu-healing-timeline -> /learn/pmu-healing-timeline). Every existing address must
-# either keep working or 301 to its replacement.
+# Two slugs collided on the old site and are renamed here:
+#   the SMP article carried a "-1" suffix because the service page took the base slug,
+#   and the eyeliner comparison dropped the "vs".
+/scalp-micropigmentation-1  /learn/scalp-micropigmentation  301
+/scalp-micropigmentation-1/  /learn/scalp-micropigmentation  301
+/eyeliner-lash-enhancement  /learn/eyeliner-vs-lash-enhancement  301
+/eyeliner-lash-enhancement/  /learn/eyeliner-vs-lash-enhancement  301

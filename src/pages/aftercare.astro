@@ -1,0 +1,169 @@
+---
+// Aftercare, read like a feature: standfirst, lead photograph, the healing timeline as the
+// spine, then the client's own guidance on making the result last.
+//
+// The live /aftercare page holds no information -- re-probed unfiltered it is the H1 and one
+// iStock stock photo. The only aftercare instruction Pomi has published anywhere is the
+// "how to help your microblading last longer" section of her longevity article, so that list
+// is here verbatim and credited, with a link to the full piece.
+//
+// GAP, deliberately not filled: her day-by-day sheet (what to apply, what to avoid, for how
+// long). That is the closest thing on this site to a medical instruction and is not invented.
+// When she supplies it, it belongs as its own block directly under the timeline.
+import Base from "../layouts/Base.astro";
+import PageHeader from "../components/PageHeader.astro";
+import Photo from "../components/Photo.astro";
+import Caption from "../components/Caption.astro";
+import HealingAxis from "../components/HealingAxis.astro";
+import Faq from "../components/Faq.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Icon from "../components/Icon.astro";
+import { getSiteSettings, getServices, getLearnArticles, localPhoto } from "../lib/content";
+
+const [settings, services, learn] = await Promise.all([getSiteSettings(), getServices(), getLearnArticles()]);
+const faqs = learn.filter((a) => a.showAsFaq);
+
+// Two different photographs: the lead and the one the timeline carries.
+const leadPhoto = localPhoto("ombre-powder-brows/01", "Healed ombre powder brows, soft at the front and deeper at the tail");
+if (leadPhoto) leadPhoto.focus = "50% 45%";
+const railPhoto = localPhoto("microblading-shading/07", "Healed combination brows six weeks on");
+
+const CARE_SLUGS = ["prepare-for-appointment", "importance-of-touch-up", "how-long-it-lasts"];
+const careArticles = CARE_SLUGS.map((s) => learn.find((a) => a.slug === s)).filter(
+  (a): a is NonNullable<typeof a> => Boolean(a)
+);
+
+// Verbatim from the longevity article's "How to help your microblading last longer".
+const LAST_LONGER = [
+  "Follow Pomi’s aftercare instructions",
+  "Avoid picking or scratching while healing",
+  "Keep your brows protected from heavy sun exposure",
+  "Avoid tanning beds",
+  "Refrain from applying retinol, tretinoin, or exfoliating acids directly over healed brows",
+  "Use sunscreen around the brow area after healing",
+  "Be cautious with harsh facial treatments directly over the brows",
+  "Book refresh appointments before the pigment fades too much",
+];
+---
+
+<Base
+  title={`Permanent makeup aftercare | ${settings.businessName}`}
+  description="What the six weeks after permanent makeup look like, day one to the perfecting touch-up, and how to make the result last."
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath="/aftercare"
+>
+  <PageHeader
+    title="Aftercare."
+    lede="Six weeks of patience, then years of not thinking about your brows. What happens in between, and how to protect the result."
+    meta="The hardest day is around day ten, when the colour looks like it has gone. It has not. Read the timeline before you panic."
+  />
+
+  {
+    leadPhoto && (
+      <section class="care-lead">
+        <figure class="page care-lead__figure">
+          <Photo
+            photo={leadPhoto}
+            ratio="5 / 2"
+            loading="eager"
+            fetchpriority="high"
+            widths={[900, 1320]}
+            sizes="(min-width: 60rem) 100rem, 100vw"
+          />
+          <figcaption>
+            <Caption service="Ombre powder brows" detail="Healed, by Pomi" />
+          </figcaption>
+        </figure>
+      </section>
+    )
+  }
+
+  <HealingAxis photo={railPhoto} />
+
+  <section class="section care-last" id="last" aria-labelledby="last-heading">
+    <div class="page care-last__grid">
+      <div class="section-head reveal">
+        <h2 id="last-heading">How to help it last.</h2>
+        <p class="lede">Pomi’s own guidance, from her article on how long microblading lasts.</p>
+      </div>
+      <div class="care-last__body reveal" style="--i: 1">
+        <ul class="care-last__list">
+          {LAST_LONGER.map((t) => <li>{t}</li>)}
+        </ul>
+        <blockquote class="care-last__quote">
+          Small habits make a difference in the microblading duration; sun exposure and exfoliating skincare are two of
+          the biggest reasons brows fade sooner.
+        </blockquote>
+        <a class="link" href="/learn/how-long-it-lasts">
+          Read the full article
+          <Icon name="arrow" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {
+    careArticles.length > 0 && (
+      <Faq
+        faqs={careArticles}
+        id="care-questions"
+        heading="Before and after the appointment."
+        lede="How to prepare, why the touch-up matters, and how long the result holds."
+      />
+    )
+  }
+
+  <ContactForm settings={settings} services={services} />
+</Base>
+
+<style>
+  .care-lead {
+    padding-bottom: var(--space-8);
+  }
+  .care-lead__figure {
+    margin-block: 0;
+  }
+  .care-last__grid {
+    display: grid;
+    gap: var(--space-7);
+    align-items: start;
+  }
+  .care-last__grid :global(.section-head) {
+    margin-bottom: 0;
+  }
+  .care-last__body {
+    display: grid;
+    gap: var(--space-6);
+    justify-items: start;
+  }
+  .care-last__list {
+    display: grid;
+    gap: var(--space-3);
+    padding-left: 1.1rem;
+    list-style: disc;
+    max-width: 58ch;
+    color: var(--ink-body);
+  }
+  .care-last__list li::marker {
+    color: var(--pink-ink);
+  }
+  .care-last__quote {
+    margin: 0;
+    padding-left: var(--space-5);
+    border-left: 1px solid var(--border);
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 24;
+    font-size: var(--fs-quote);
+    line-height: 1.35;
+    color: var(--ink);
+    max-width: 40ch;
+  }
+  @media (min-width: 60rem) {
+    .care-last__grid {
+      grid-template-columns: 2fr 3fr;
+      column-gap: var(--space-9);
+    }
+  }
+</style>

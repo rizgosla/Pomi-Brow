@@ -8,7 +8,14 @@
     "touchUpPrice": 100,
     "summary": "Individual hair strokes drawn into the skin, one by one, to follow the way your own brow grows.",
     "galleryFolder": "microblading",
-    "showOnHome": true
+    "showOnHome": true,
+    "seoTitle": "MICROBLADING IN TUSTIN, CA | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "microblading/04",
+      "focus": "50% 85%",
+      "alt": "Healed microblading, soft natural hair strokes",
+      "detail": "Before and after"
+    }
   },
   {
     "title": "Microblading + Shading",
@@ -19,7 +26,14 @@
     "touchUpPrice": 100,
     "summary": "Hair strokes at the front, soft shading through the body and tail. Fuller than microblading alone, still natural.",
     "galleryFolder": "microblading-shading",
-    "showOnHome": true
+    "showOnHome": true,
+    "seoTitle": "MICROBLADING / SHADING IN TUSTIN, CA | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "microblading-shading/03",
+      "focus": "50% 45%",
+      "alt": "Healed microblading with shading through the body of the brow",
+      "detail": "Healed"
+    }
   },
   {
     "title": "Ombre Powder Brows",
@@ -30,7 +44,14 @@
     "touchUpPrice": 100,
     "summary": "A soft powdered finish, lighter at the front and deeper at the tail, like a well-blended brow pencil.",
     "galleryFolder": "ombre-powder-brows",
-    "showOnHome": true
+    "showOnHome": true,
+    "seoTitle": "OMBRE POWDER BROWS IN TUSTIN, CA | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "ombre-powder-brows/01",
+      "focus": "50% 45%",
+      "alt": "Healed ombre powder brows, soft at the front and deeper at the tail",
+      "detail": "Healed"
+    }
   },
   {
     "title": "Eyeliner",
@@ -41,7 +62,14 @@
     "touchUpPrice": 100,
     "summary": "A fine line along the lash line that stays put through swimming, sleep, and sweat.",
     "galleryFolder": "eyeliner",
-    "showOnHome": true
+    "showOnHome": true,
+    "seoTitle": "EYELINER + TOUCH UP IN TUSTIN, CA | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "eyeliner/02",
+      "focus": "50% 82%",
+      "alt": "Healed permanent eyeliner along the upper lash line",
+      "detail": "Before and after"
+    }
   },
   {
     "title": "Lash Enhancement",
@@ -52,7 +80,14 @@
     "touchUpPrice": 100,
     "summary": "Pigment placed between the lashes only. Lashes look fuller; nobody sees a line.",
     "galleryFolder": "lash-enhancement",
-    "showOnHome": true
+    "showOnHome": true,
+    "seoTitle": "LASH ENHANCEMENT IN TUSTIN, CA | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "lash-enhancement/01",
+      "focus": "50% 82%",
+      "alt": "Healed lash enhancement, a fine line set between the lashes",
+      "detail": "Before and after"
+    }
   },
   {
     "title": "Lip Tint",
@@ -63,7 +98,14 @@
     "touchUpPrice": 100,
     "summary": "Evens lip tone and gives back the color that fades with time. Your lips, a shade warmer.",
     "galleryFolder": "lip-tint",
-    "showOnHome": true
+    "showOnHome": true,
+    "seoTitle": "LIP TINT + TOUCH UP IN TUSTIN, CA | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "lip-tint/01",
+      "focus": "50% 82%",
+      "alt": "Healed lip tint in a soft natural colour",
+      "detail": "Before and after"
+    }
   },
   {
     "title": "Scalp Micropigmentation",
@@ -74,7 +116,14 @@
     "priceUnit": "hr",
     "summary": "Tiny pigment dots that read as closely shaved hair, filling thinning areas and hairlines.",
     "galleryFolder": "scalp-micropigmentation",
-    "showOnHome": true
+    "showOnHome": true,
+    "seoTitle": "SCALP MICROPIGMENTATION IN TUSTIN, CA | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "scalp-micropigmentation/02",
+      "focus": "50% 50%",
+      "alt": "Healed scalp micropigmentation through a thinning crown",
+      "detail": "Before and after"
+    }
   },
   {
     "title": "Yearly touch-up",
@@ -84,7 +133,13 @@
     "price": 300,
     "priceNote": "existing clients",
     "summary": "A color refresh once a year keeps healed work crisp.",
-    "showOnHome": true
+    "showOnHome": true,
+    "cover": {
+      "ref": "ombre-powder-brows/05",
+      "focus": "50% 85%",
+      "detail": "Before and after",
+      "alt": "Powder brows before and after a yearly refresh"
+    }
   },
   {
     "title": "Additional touch-up",

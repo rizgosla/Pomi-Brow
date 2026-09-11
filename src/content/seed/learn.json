@@ -1,72 +1,1787 @@
 [
   {
+    "title": "How long does permanent makeup last?",
+    "slug": "how-long-it-lasts",
+    "summary": "Most work holds its shape for one to three years, softening gradually. Sun, oily skin, and skincare acids fade it faster. A yearly touch-up keeps it crisp.",
+    "relatedService": "microblading",
+    "showAsFaq": true,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "m0",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1",
+            "text": "Microblading usually lasts between 1 to 3 years, but the microblading duration can vary based on factors like your skin type, lifestyle, skincare routine, sun exposure, and especially your microblading aftercare. Some clients may notice they need a color refresh after 12 to 18 months, while others can maintain good color for a longer period, particularly if they have normal to dry skin, protect their brows from sun exposure, and diligently follow aftercare instructions. Since microblading is considered semi-permanent, the pigment will fade over time, meaning your brows won’t retain the same color and shape indefinitely. Scheduling a touch-up or annual refresh is essential to help maintain the desired results.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m3",
+            "text": "Why microblading fades over time",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m4",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m5",
+            "text": "Microblading places pigment into the upper layers of the skin, and understanding how long does microblading last is important for your expectations. As your skin naturally renews itself, the pigment slowly softens and fades, which is a normal process and does not indicate that something went wrong. Factors influencing microblading duration include your skin type, natural brow hair, immune system, skincare products, sun exposure, sweating and lifestyle, aftercare, the color used, and how your skin holds pigment. Some clients retain pigment longer, while others may experience faster fading. During your appointment, Pomi will explain what to expect based on your unique skin and brow goals, including insights on microblading aftercare to help maintain your results.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m6",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m7",
+            "text": "Skin type makes a big difference",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m8",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m9",
+            "text": "Your skin type significantly influences how long does microblading last.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ma",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mb",
+            "text": "Normal to dry skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mc",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "md",
+            "text": "Microblading often heals with cleaner hair strokes and longer-lasting definition on normal to dry skin. This skin type usually holds microblading well, contributing to an extended microblading duration.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "me",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mf",
+            "text": "Oily skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mg",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mh",
+            "text": "For those with oily skin, the microblading aftercare becomes crucial, as oily skin often fades microblading faster. Hair strokes may heal softer, blur sooner, or lose crisp detail over time. If you have oily skin, Pomi might recommend ombre powder brows or combo brows as alternatives.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mi",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mj",
+            "text": "Combination skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mk",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "ml",
+            "text": "Combination skin presents variability; some areas hold pigment well, while the oilier zones may fade faster, impacting how long does microblading last.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mm",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mn",
+            "text": "Mature skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mo",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mp",
+            "text": "Mature skin requires a gentle approach. Soft color, careful shaping, and realistic expectations are essential for effective microblading aftercare. Pomi will recommend the best brow technique based on your skin texture and desired look.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mq",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mr",
+            "text": "How long before you need a touch-up?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ms",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mt",
+            "text": "Microblading is typically a two-step process that leads to beautiful, lasting brows. The first appointment is focused on creating the shape, color, and foundation for your brows. After this initial session, many clients wonder how long does microblading last and how to ensure the best results. That’s where the perfecting touch-up comes in. This follow-up appointment helps refine the healed result after your skin has recovered. It's crucial for microblading aftercare, as some areas might heal lighter than others. The perfecting touch-up helps improve balance, color, and shape, ensuring your brows look their best for the duration of the microblading effects.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mu",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mv",
+            "text": "When should you book an annual brow refresh?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "mw",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mx",
+            "text": "Many clients book an annual brow refresh around 12 to 18 months after their original microblading service, as they may wonder how long does microblading last. You might be ready for a refresh if:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "my",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "mz",
+            "text": "Your brows look lighter than you want",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m10",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m11",
+            "text": "The shape looks less defined",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m12",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m13",
+            "text": "You fill in your brows more often",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m14",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m15",
+            "text": "The tails have faded",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m16",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m17",
+            "text": "One brow faded more than the other",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m18",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m19",
+            "text": "The color looks too soft",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1a",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1b",
+            "text": "You want your brows cleaned up before a trip, event, or new season",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1d",
+            "text": "For existing clients, an annual brow refresh not only helps keep the brows soft, balanced, and natural, but it also aligns with proper microblading aftercare practices, ensuring the longevity of your results throughout the microblading duration.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1e",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1f",
+            "text": "What makes microblading fade faster?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1g",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1h",
+            "text": "Microblading duration can be affected by how quickly the skin renews or how soon the pigment breaks down. Understanding how long does microblading last is essential for maintaining your brows. Common reasons that lead to faster fading include:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1i",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1j",
+            "text": "Oily skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1k",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1l",
+            "text": "Frequent sun exposure",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1m",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1n",
+            "text": "Tanning",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1o",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1p",
+            "text": "Swimming",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1q",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1r",
+            "text": "Heavy sweating",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1s",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1t",
+            "text": "Chemical peels",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1u",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1v",
+            "text": "Retinol or tretinoin use near the brow area",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1w",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1x",
+            "text": "Exfoliating acids close to the brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m1y",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m1z",
+            "text": "Laser treatments",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m20",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m21",
+            "text": "Not adhering to microblading aftercare",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m22",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m23",
+            "text": "Picking or scratching during the healing process",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m24",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m25",
+            "text": "Additionally, certain medications or health conditions can impact the longevity of your microblading results. While you don’t need to abandon your regular skincare routine forever, it’s advisable to avoid strong exfoliating products directly on the brow area to help ensure your results last longer.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m26",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m27",
+            "text": "How to help your microblading last longer",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m28",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m29",
+            "text": "Good care helps protect your results and can significantly influence how long microblading lasts. To help your brows last longer and ensure optimal microblading aftercare, consider the following tips:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2a",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2b",
+            "text": "Follow Pomi’s aftercare instructions",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2c",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2d",
+            "text": "Avoid picking or scratching while healing",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2e",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2f",
+            "text": "Keep your brows protected from heavy sun exposure",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2g",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2h",
+            "text": "Avoid tanning beds",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2i",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2j",
+            "text": "Refrain from applying retinol, tretinoin, or exfoliating acids directly over healed brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2k",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2l",
+            "text": "Use sunscreen around the brow area after healing",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2m",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2n",
+            "text": "Be cautious with harsh facial treatments directly over the brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2o",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2p",
+            "text": "Book refresh appointments before the pigment fades too much",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2q",
+        "style": "blockquote",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2r",
+            "text": "Small habits make a difference in the microblading duration; sun exposure and exfoliating skincare are two of the biggest reasons brows fade sooner.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2s",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2t",
+            "text": "What happens if you wait too long?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2u",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2v",
+            "text": "If you wait too long, you may wonder how long does microblading last, as the brows might fade enough that a simple refresh is no longer the best option. When pigment fades excessively, Pomi might need to rebuild more of the brow shape. If old pigment has changed color, turning gray, red, or uneven, correction work may be necessary. This is why annual refresh appointments are crucial for proper microblading aftercare. They help maintain the brows before the shape and color fade too much, ensuring you get the best results throughout the microblading duration.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2w",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2x",
+            "text": "Microblading vs powder brows: which lasts longer?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m2y",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m2z",
+            "text": "Powder brows often last longer than microblading, especially for those with oily skin. When considering how long does microblading last, it's important to note that microblading creates fine hair-like strokes that provide a natural appearance. However, the longevity of these strokes may diminish more quickly on oily or textured skin, making microblading aftercare crucial. On the other hand, powder brows create a soft shaded effect and tend to hold better for clients with oily skin, sparse brows, or those seeking more definition. Combo brows, which utilize both hair strokes and shading, are ideal for clients desiring a natural look with added fullness and enhanced color retention. A simple guide:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m30",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m31",
+            "text": "Choose microblading if you want the most natural hair-stroke look.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m32",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m33",
+            "text": "Opt for powder brows if you prefer a softly filled-in look or have oily skin.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m34",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m35",
+            "text": "Select combo brows if you want hair strokes combined with fuller definition.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "m36",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "m37",
+            "text": "Pomi will recommend the right brow service based on your skin type, natural brow hair, and desired result.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seoTitle": "Microblading Longevity: How Long Does Microblading Last?",
+    "cover": {
+      "ref": "microblading/08",
+      "focus": "50% 85%",
+      "alt": "Healed microblading a year on"
+    }
+  },
+  {
     "title": "Is permanent makeup safe?",
     "slug": "is-permanent-makeup-safe",
     "summary": "Permanent makeup is a cosmetic tattoo, so the questions to ask any artist are about needles, pigments, and hygiene. Ask Pomi at your consultation; nothing touches your skin before you have talked it through and agreed on the shape.",
     "relatedService": null,
-    "showAsFaq": true
+    "showAsFaq": true,
+    "cover": {
+      "ref": "microblading/03",
+      "focus": "50% 85%",
+      "alt": "Brow mapped and measured before any pigment"
+    }
   },
   {
     "title": "Are powder brows for me?",
     "slug": "are-powder-brows-for-me",
     "summary": "Powder brows suit oily or mature skin and anyone who fills in their brows daily with pencil or powder. Hair strokes suit drier skin and a sparser, more natural look.",
     "relatedService": "ombre-powder-brows",
-    "showAsFaq": true
-  },
-  {
-    "title": "How long does permanent makeup last?",
-    "slug": "how-long-it-lasts",
-    "summary": "Most work holds its shape for one to three years, softening gradually. Sun, oily skin, and skincare acids fade it faster. A yearly touch-up keeps it crisp.",
-    "relatedService": "microblading",
-    "showAsFaq": true
+    "showAsFaq": true,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k0",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1",
+            "text": "Microblading is a semi-permanent brow service that creates fine, hair-like strokes using pigment to enhance the appearance of your eyebrows. The goal of microblading is to make brows look fuller while maintaining a soft and natural finish. This method is particularly suited for clients seeking a subtle enhancement and who already have some natural brow hair.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3",
+            "text": "Microblading may be an ideal choice if:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5",
+            "text": "Your brows are sparse or uneven",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7",
+            "text": "You desire a natural hair-stroke look",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k8",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k9",
+            "text": "You have normal to dry skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ka",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kb",
+            "text": "You want to fill small gaps",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kc",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kd",
+            "text": "You prefer a look that avoids makeup-style brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ke",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kf",
+            "text": "You wish for soft, realistic-looking brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kg",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kh",
+            "text": "While microblading offers many benefits, it is usually not recommended for those with oily skin, as the strokes may heal softer, fade faster, or blur over time. For those seeking a different style, powder brows could be an alternative, as they provide a more filled-in appearance with a soft, powdered finish.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ki",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kj",
+            "text": "What Are Powder Brows?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kk",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kl",
+            "text": "Powder brows, also known as ombre powder brows, offer a beautifully soft shaded brow look. Unlike microblading, which focuses on individual hair strokes, this technique provides a gentle layer of color throughout the brow.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "km",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kn",
+            "text": "The outcome can range from soft and natural to more defined, based on your personal style preferences.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ko",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kp",
+            "text": "Choosing powder brows may be ideal if you:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kq",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kr",
+            "text": "Enjoy a softly filled-in brow appearance",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ks",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kt",
+            "text": "Have oily skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ku",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kv",
+            "text": "Struggle with sparse brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kw",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kx",
+            "text": "Seek improved color retention",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ky",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kz",
+            "text": "Desire added definition",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k10",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k11",
+            "text": "Regularly fill in your brows with makeup",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k12",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k13",
+            "text": "Want brows that appear polished yet still soft",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k14",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k15",
+            "text": "Additionally, powder brows often last longer than microblading, making them a great option for clients with oily skin or very sparse brows, especially when considering semi-permanent brow services.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k16",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k17",
+            "text": "Main Difference Between Microblading and Powder Brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k18",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k19",
+            "text": "The biggest difference in semi-permanent brow services is the final look. Microblading creates hair-like strokes that resemble natural brow hair, giving you a very authentic appearance. On the other hand, powder brows provide a soft shading effect that looks more like soft brow makeup.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1b",
+            "text": "Here's a simple guide to help you choose:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1c",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1d",
+            "text": "Opt for microblading if you desire the most natural hair-stroke look.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1e",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1f",
+            "text": "Choose powder brows if you prefer a softly filled-in appearance.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1g",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1h",
+            "text": "Consider combo brows if you want to enjoy both hair strokes and shading.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1i",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1j",
+            "text": "Which Looks More Natural?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1k",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1l",
+            "text": "Both microblading and powder brows can look natural when done well. Microblading often appears more natural on clients who have existing brow hair, as the strokes seamlessly blend into the natural brow. On the other hand, powder brows can achieve a natural look, especially when the color is soft and the shape is not overly harsh. This technique is an excellent choice for clients seeking more fullness or for those whose skin does not retain microblading strokes effectively. At Pomi B. Brow Studio, our goal with our semi-permanent brow services is always to create brows that complement your face, rather than brows that look stamped on.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1m",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1n",
+            "text": "Which Is Better for Oily Skin?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1o",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1p",
+            "text": "Powder brows are often the ideal choice for individuals with oily skin. Oily skin can lead to microblading strokes fading more quickly or not healing as sharply. In contrast, powder brows utilize a shading technique that tends to hold up better on oily skin. If you have oily skin and desire a natural outcome, Pomi may suggest opting for powder brows or combo brows instead of relying solely on microblading.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1q",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1r",
+            "text": "Which Lasts Longer?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1s",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1t",
+            "text": "Powder brows often last longer than microblading, especially for those with oily skin. While microblading typically lasts between 1 to 3 years, this duration can vary based on skin type, lifestyle, sun exposure, skincare routines, and aftercare. In contrast, powder brows can also last for 1 to 3 years, but many clients report that the shaded effect of powder brows tends to hold better over time. To maintain both semi-permanent brow services, annual refresh appointments are recommended.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1u",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1v",
+            "text": "What Are Combo Brows?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1w",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1x",
+            "text": "Combo brows utilize both microblading and powder brows techniques. This option is particularly beneficial for clients seeking natural hair strokes in the front of the brow while achieving more fullness throughout the body and tail. Combo brows may be an ideal selection if: You desire natural detail combined with definition, your brows are sparse in certain areas, you want a fuller result than what microblading alone can provide, you prefer a soft yet polished brow, or your skin requires better color retention. Overall, combo brows serve as an excellent middle ground between microblading and semi-permanent brow services like powder brows.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1y",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1z",
+            "text": "Which Brow Service Is Best for You?",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k20",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k21",
+            "text": "The best brow service, whether it be microblading, powder brows, or other semi-permanent brow services, depends on your skin type, natural brow hair, and the look you desire.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k22",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k23",
+            "text": "Microblading may be the best choice if:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k24",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k25",
+            "text": "You want hair-like strokes",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k26",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k27",
+            "text": "You already have some brow hair",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k28",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k29",
+            "text": "You want the softest, most natural enhancement",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2b",
+            "text": "Powder brows may be ideal if:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2c",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2d",
+            "text": "You have oily skin",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2e",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2f",
+            "text": "You desire a soft makeup look",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2g",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2h",
+            "text": "You want more definition",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2i",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2j",
+            "text": "You have sparse brow hair",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2k",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2l",
+            "text": "Combo brows might be the right fit if:",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2m",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2n",
+            "text": "You want both natural strokes and fullness",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2o",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2p",
+            "text": "You have uneven brows",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2q",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2r",
+            "text": "You seek more structure than microblading alone",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2s",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2t",
+            "text": "You still want a soft result",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2u",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2v",
+            "text": "During your consultation, Pomi will examine your natural brows, skin type, any old pigment present, and your desired result before recommending the right option for your semi-permanent brow services.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seoTitle": "What Is Microblading?",
+    "cover": {
+      "ref": "ombre-powder-brows/03",
+      "focus": "50% 85%",
+      "alt": "Healed ombre powder brows"
+    }
   },
   {
     "title": "PMU healing timeline",
     "slug": "pmu-healing-timeline",
     "summary": "Day 1 it looks bold and dark. Days 4 to 7 it flakes. Around day 10 it looks too light. By week 4 the true color returns, and at week 6 the perfecting touch-up finishes it.",
     "relatedService": "microblading",
-    "showAsFaq": false
+    "showAsFaq": false,
+    "seoTitle": "PERMANENT MAKEUP HEALING TIMELINE | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "microblading/02",
+      "focus": "50% 85%",
+      "alt": "Microblading before and after healing"
+    }
   },
   {
     "title": "Eyeliner vs lash enhancement",
     "slug": "eyeliner-vs-lash-enhancement",
     "summary": "Lash enhancement fills the gaps between lashes with no visible line. Eyeliner adds a defined line above them. Both are done in the same two-visit process.",
     "relatedService": "lash-enhancement",
-    "showAsFaq": false
+    "showAsFaq": false,
+    "seoTitle": "PERMANENT EYELINER VS LASH ENHANCEMENT | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "eyeliner/03",
+      "focus": "50% 45%",
+      "alt": "Healed permanent eyeliner, close up"
+    }
   },
   {
     "title": "Lip tint vs lip blush",
     "slug": "lip-tint-vs-lip-blush",
     "summary": "They are names for the same technique: a sheer wash of color through the whole lip, not a lip liner.",
     "relatedService": "lip-tint",
-    "showAsFaq": false
+    "showAsFaq": false,
+    "seoTitle": "LIP TINT VS LIP BLUSH | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "lip-tint/02",
+      "focus": "50% 85%",
+      "alt": "Healed lip tint"
+    }
   },
   {
     "title": "Who is a good candidate for permanent makeup?",
     "slug": "good-pmu-candidates",
     "summary": "Most healthy adults. Pregnancy, blood thinners, active skin conditions on the area, and recent retinol or chemical peels are reasons to wait. Ask before booking if unsure.",
     "relatedService": null,
-    "showAsFaq": true
+    "showAsFaq": true,
+    "seoTitle": "WHO IS A GOOD CANDIDATE FOR PERMANENT MAKEUP?",
+    "cover": {
+      "ref": "microblading-shading/06",
+      "focus": "50% 45%",
+      "alt": "Healed combination brows"
+    }
   },
   {
     "title": "How to prepare for your appointment",
     "slug": "prepare-for-appointment",
     "summary": "No alcohol, caffeine, or blood thinners for 24 hours. No retinol or exfoliants on the area for a week. Come in with your usual makeup so Pomi can see the shape you like.",
     "relatedService": null,
-    "showAsFaq": false
+    "showAsFaq": false,
+    "seoTitle": "HOW TO PREPARE FOR YOUR PERMANENT MAKEUP APPOINTMENT",
+    "cover": {
+      "ref": "microblading-shading/04",
+      "focus": "50% 25%",
+      "alt": "Brows before and after the first session"
+    }
   },
   {
     "title": "Scalp micropigmentation",
     "slug": "scalp-micropigmentation",
     "summary": "Thousands of tiny pigment dots that mimic shaved hair follicles, filling thinning crowns and softening hairlines.",
     "relatedService": "scalp-micropigmentation",
-    "showAsFaq": false
+    "showAsFaq": false,
+    "seoTitle": "WHAT IS SCALP MICROPIGMENTATION? | POMI B. BROW STUDIO",
+    "cover": {
+      "ref": "scalp-micropigmentation/01",
+      "focus": "50% 35%",
+      "alt": "Scalp micropigmentation along the hairline"
+    }
   },
   {
     "title": "Why the touch-up matters",
     "slug": "importance-of-touch-up",
     "summary": "Skin heals unevenly, and some strokes fade more than others. The six-week touch-up refines shape and color once healing is done. It is part of the service, not an extra.",
     "relatedService": "microblading",
-    "showAsFaq": false
+    "showAsFaq": false,
+    "seoTitle": "PERMANENT MAKEUP TOUCH-UPS: WHY THEY MATTER",
+    "cover": {
+      "ref": "ombre-powder-brows/05",
+      "focus": "50% 85%",
+      "alt": "Powder brows before and after the perfecting touch-up"
+    }
   }
 ]

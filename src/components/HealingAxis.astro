@@ -110,8 +110,8 @@ const steps = [
     left: 0.4rem;
     top: 0.5rem;
     bottom: 0.5rem;
-    width: 3px;
-    border-radius: 2px;
+    width: 5px;
+    border-radius: 3px;
     /* The pigment across six weeks: dense, flaking, washed out around day ten,
        returning, settled. The rail is the argument, made in colour. */
     background: linear-gradient(
@@ -134,7 +134,7 @@ const steps = [
   .axis__step::before {
     content: "";
     position: absolute;
-    left: calc(-2rem + 0.4rem - 5px);
+    left: calc(-2rem + 0.4rem - 4px);
     top: 0.45rem;
     width: 11px;
     height: 11px;
@@ -155,11 +155,22 @@ const steps = [
   }
   .axis__body {
     color: var(--ink-muted);
-    max-width: 46ch;
+    max-width: 58ch;
+  }
+  /* This section fills its width like the ones around it; the shared 56rem head cap left
+     the right third of the page empty here. */
+  .method :global(.section-head) {
+    max-width: none;
+  }
+  .method :global(.section-head h2) {
+    max-width: 30ch;
+  }
+  .method :global(.section-head .lede) {
+    max-width: 52ch;
   }
   @media (min-width: 60rem) {
     .method__grid {
-      grid-template-columns: 5fr 6fr;
+      grid-template-columns: 1fr 1fr;
       gap: var(--space-9);
     }
     .method__figure {

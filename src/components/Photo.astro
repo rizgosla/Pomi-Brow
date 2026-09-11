@@ -31,7 +31,11 @@ const {
   framed = true,
 } = Astro.props;
 
-const frameStyle = [style, ratio ? `aspect-ratio:${ratio}` : null].filter(Boolean).join(";");
+// Every source is square, so anything cropped to a non-square frame needs a crop point.
+// It travels on the photo itself rather than in each consumer stylesheet.
+const frameStyle = [style, ratio ? `aspect-ratio:${ratio}` : null, photo.focus ? `--focus:${photo.focus}` : null]
+  .filter(Boolean)
+  .join(";");
 ---
 
 <div class:list={["photo", { "photo--framed": framed }, className]} style={frameStyle || undefined}>
@@ -78,6 +82,7 @@ const frameStyle = [style, ratio ? `aspect-ratio:${ratio}` : null].filter(Boolea
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: var(--focus, 50% 50%);
     filter: saturate(0.88) contrast(1.02);
   }
   .photo::after {

@@ -19,24 +19,24 @@
   "instagramUrl": "https://www.instagram.com/pomib.browstudio/",
   "instagramPicks": [
     {
-      "ref": "microblading/05",
-      "detail": "Healed",
-      "alt": "Healed microblading, soft hair strokes"
-    },
-    {
-      "ref": "ombre-powder-brows/02",
-      "detail": "Healed",
-      "alt": "Healed ombre powder brows"
-    },
-    {
       "ref": "microblading/06",
       "detail": "Healed",
       "alt": "Healed microblading, fine hair strokes"
     },
     {
-      "ref": "microblading/01",
+      "ref": "microblading-shading/05",
+      "detail": "Healed",
+      "alt": "Healed microblading and shading"
+    },
+    {
+      "ref": "microblading-shading/07",
       "detail": "Healed six weeks",
-      "alt": "Healed microblading, close up"
+      "alt": "Healed combination brows six weeks on"
+    },
+    {
+      "ref": "ombre-powder-brows/04",
+      "detail": "Healed",
+      "alt": "Healed ombre powder brows"
     }
   ],
   "aboutHeading": "One artist. Every stroke.",

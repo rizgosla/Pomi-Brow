@@ -4,6 +4,7 @@
 import type { Service } from "../lib/content";
 import { formatPrice } from "../lib/content";
 import Icon from "./Icon.astro";
+import Photo from "./Photo.astro";
 
 interface Props {
   services: Service[];
@@ -37,7 +38,16 @@ function priceLabel(s: Service) {
     <ul class="bento">
       {
         main.map((s, i) => (
-          <li class:list={["card", "service", "reveal", { "service--wide": i === 0 }]} style={`--i: ${i % 4}`}>
+          <li class="card service reveal" style={`--i: ${i % 4}`}>
+            {s.cover && (
+              <div class="service__cover">
+                <Photo
+                  photo={s.cover}
+                  widths={[300, 500, 700]}
+                  sizes="(min-width: 90rem) 22vw, (min-width: 60rem) 30vw, (min-width: 40rem) 45vw, 92vw"
+                />
+              </div>
+            )}
             <h3 class="service__title">
               <a href={`/services/${s.slug}`}>{s.title}</a>
             </h3>
@@ -48,7 +58,10 @@ function priceLabel(s: Service) {
             </div>
             <div class="service__foot">
               <span class:list={["tag", tagTone[s.category]]}>{s.category}</span>
-              <Icon name="arrow" class="service__arrow" />
+              <span class="service__cta">
+                Details
+                <Icon name="arrow" class="service__arrow" />
+              </span>
             </div>
           </li>
         ))
@@ -56,6 +69,15 @@ function priceLabel(s: Service) {
       {
         extras.length > 0 && (
           <li class="card service service--extras reveal" style="--i: 2">
+            {extras[0]?.cover && (
+              <div class="service__cover">
+                <Photo
+                  photo={extras[0].cover}
+                  widths={[300, 500, 700]}
+                  sizes="(min-width: 90rem) 22vw, (min-width: 60rem) 30vw, (min-width: 40rem) 45vw, 92vw"
+                />
+              </div>
+            )}
             <h3 class="service__title">Touch-ups and correction</h3>
             <p class="service__summary">For clients whose work is already healed.</p>
             <ul class="extras">
@@ -89,6 +111,15 @@ function priceLabel(s: Service) {
     flex-direction: column;
     gap: var(--space-3);
   }
+  /* The cover bleeds to the card edge and takes the card radius on its top corners,
+     so it reads as the card wearing a photograph rather than a photo pasted inside a box.
+     5:2 is not a taste: four of these covers are stacked before/after composites, and
+     isolating one half of a square pair with object-fit needs a box wider than 2:1. */
+  /* Square, at the card's full width. A square frame on a square source crops nothing, so
+     the four before/after covers show as the pair they are, the same as the hero wall. */
+  .service__cover :global(.photo) {
+    aspect-ratio: 1 / 1;
+  }
   .service__foot {
     display: flex;
     align-items: center;
@@ -109,6 +140,7 @@ function priceLabel(s: Service) {
   .service__summary {
     color: var(--ink-muted);
     font-size: var(--fs-small);
+    max-width: 48ch;
   }
   .service__price {
     display: flex;
@@ -126,10 +158,28 @@ function priceLabel(s: Service) {
     font-weight: 500;
     font-size: 1.125rem;
   }
+  /* The card is fully clickable but nothing said so until an already-arrived
+     pointer nudged the arrow. This reads as a link at rest. */
+  .service__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--ink-muted);
+    font-size: var(--fs-small);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: color var(--dur-base) ease, text-decoration-color var(--dur-base) ease;
+  }
+  .service:hover .service__cta {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
   .service :global(.service__arrow) {
     width: 1rem;
     height: 1rem;
-    color: var(--ink-muted);
     transition: transform var(--dur-base) var(--ease-out);
   }
   .service:hover :global(.service__arrow) {
@@ -165,20 +215,17 @@ function priceLabel(s: Service) {
     .bento {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .service--wide,
-    .service--extras {
-      grid-column: span 2;
-    }
   }
   @media (min-width: 60rem) {
     .bento {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    .service--wide {
-      grid-column: span 2;
-    }
-    .service--extras {
-      grid-column: span 1;
+  }
+  /* Four across in the wide field: eight cards land as two clean rows, and each
+     photograph gets smaller rather than each card getting wider. */
+  @media (min-width: 90rem) {
+    .bento {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 </style>

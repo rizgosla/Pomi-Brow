@@ -1,0 +1,89 @@
+---
+// Safety.
+//
+// The live site's /safety page is an empty shell -- 112 rendered words, all of it nav, footer and
+// cookie notice. So this page is composed from the copy that IS real: the safety and candidacy
+// answers written for this rebuild.
+//
+// GAP, deliberately not filled: Pomi's own practice facts -- single-use needles, pigment brand,
+// bloodborne-pathogen certification, county health registration. Those are claims about a real
+// business and are not invented here. When she supplies them they belong in a "How this studio
+// works" block between the intro and the questions below.
+import Base from "../layouts/Base.astro";
+import PageHeader from "../components/PageHeader.astro";
+import Faq from "../components/Faq.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Icon from "../components/Icon.astro";
+import { getSiteSettings, getServices, getLearnArticles } from "../lib/content";
+
+const [settings, services, learn] = await Promise.all([getSiteSettings(), getServices(), getLearnArticles()]);
+const faqs = learn.filter((a) => a.showAsFaq);
+
+const SAFETY_SLUGS = ["is-permanent-makeup-safe", "good-pmu-candidates", "prepare-for-appointment"];
+const safetyArticles = SAFETY_SLUGS.map((s) => learn.find((a) => a.slug === s)).filter(
+  (a): a is NonNullable<typeof a> => Boolean(a)
+);
+---
+
+<Base
+  title={`Permanent makeup safety | ${settings.businessName}`}
+  description="Permanent makeup is a cosmetic tattoo. What that means, who it suits, and the questions worth asking any artist before you book."
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath="/safety"
+>
+  <PageHeader
+    title="Safety."
+    lede="Permanent makeup is a cosmetic tattoo. It is worth knowing what that means before you book."
+    meta="Nothing is permanent until you agree with the shape drawn on your face. Mapping comes first, every time."
+  />
+
+  {
+    safetyArticles.length > 0 && (
+      <Faq
+        faqs={safetyArticles}
+        id="safety-questions"
+        heading="The questions worth asking."
+        lede="Ask these of any artist you are considering, not only this one."
+      />
+    )
+  }
+
+  <section class="section safety-ask" aria-labelledby="ask-heading">
+    <div class="page safety-ask__grid">
+      <div class="reveal">
+        <h2 id="ask-heading">Ask before you book, not after.</h2>
+        <p class="lede">
+          A consultation costs nothing and commits you to nothing. Bring every question on this page to it.
+        </p>
+        <div class="safety-ask__actions">
+          <a class="btn" href={`tel:${settings.phoneTel}`}>
+            <Icon name="phone" />
+            Call {settings.phone}
+          </a>
+          <a class="link" href="/learn">
+            Read more in Learn
+            <Icon name="arrow" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ContactForm settings={settings} services={services} />
+</Base>
+
+<style>
+  .safety-ask__grid {
+    display: grid;
+    gap: var(--space-6);
+  }
+  .safety-ask__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+    margin-top: var(--space-6);
+  }
+</style>

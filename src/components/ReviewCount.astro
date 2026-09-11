@@ -1,22 +1,28 @@
 ---
-// The Yelp count as one line of editorial type.
+// The Yelp count. PRODUCT.md names this a first-class differentiator, so it gets a section --
+// but it is three lines of type, and it was spending a near-full desktop viewport on them.
+// Padding is cut to 60% of the section rhythm and the numeral now sits on the same baseline
+// as the heading, so the two read as one object instead of a flourish above a sentence.
 import type { SiteSettings } from "../lib/content";
 import Icon from "./Icon.astro";
 
 interface Props {
   settings: SiteSettings;
+  /** Render without the section wrapper, for placing inside another block. */
+  embedded?: boolean;
 }
-const { settings } = Astro.props;
+const { settings, embedded = false } = Astro.props;
 const count = settings.yelpReviewCount;
+const Wrap = embedded ? "div" : "section";
 ---
 
-<section class="count section" aria-labelledby="count-heading">
-  <div class="page count__row reveal">
-    <p class="count__numeral" aria-hidden="true">{count}+</p>
+<Wrap class:list={["count", { section: !embedded, "count--embedded": embedded }]} aria-labelledby="count-heading">
+  <div class:list={["count__row", { page: !embedded, reveal: !embedded }]}>
+    <h2 id="count-heading" class="count__line">
+      <span class="count__numeral">{count}+</span>
+      <span class="count__what"><span class="visually-hidden">{count} or more </span>Five-star reviews on Yelp.</span>
+    </h2>
     <div class="count__text">
-      <h2 id="count-heading" class="count__heading">
-        <span class="visually-hidden">{count} or more </span>Five-star reviews on Yelp.
-      </h2>
       <p class="muted">Every one written by a client of one artist. Read them before you call.</p>
       <a class="link" href={settings.yelpUrl} rel="noopener">
         Read the reviews
@@ -24,37 +30,55 @@ const count = settings.yelpReviewCount;
       </a>
     </div>
   </div>
-</section>
+</Wrap>
 
 <style>
+  /* Three lines of type do not need a full section's air on both sides. */
+  .count.section {
+    padding-block: calc(var(--section) * 0.6);
+  }
   .count__row {
     display: grid;
     gap: var(--space-5);
-    align-items: center;
+  }
+  /* Numeral and sentence on one baseline. The h2 is back in Newsreader: it was
+     the only h2 on the page set in Geist, a hole in the type rhythm. */
+  .count__line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 var(--space-5);
+    margin: 0;
   }
   .count__numeral {
-    font-family: var(--font-display);
-    font-variation-settings: "opsz" 72;
     font-size: var(--fs-numeral);
     line-height: 1;
     letter-spacing: -0.03em;
-    color: var(--ink);
+    /* The warmest near-black on the page, taken from the brow pigment rather
+       than the neutral ink -- the number is about the work, so it carries the
+       work's colour. Still 13:1 on white. */
+    color: var(--pigment-brow);
+  }
+  .count__what {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-display);
+  }
+  .count--embedded .count__row {
+    gap: var(--space-4);
+  }
+  .count--embedded .count__numeral {
+    font-size: var(--fs-numeral-sm);
+  }
+  .count--embedded .count__what {
+    font-size: var(--fs-h3);
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
   .count__text {
     display: grid;
     gap: var(--space-3);
-    max-width: 40ch;
-  }
-  .count__heading {
-    font-family: var(--font-body);
-    font-size: var(--fs-h3);
-    font-weight: 500;
-    letter-spacing: -0.01em;
-  }
-  @media (min-width: 48rem) {
-    .count__row {
-      grid-template-columns: auto 1fr;
-      gap: var(--space-8);
-    }
+    justify-items: start;
+    max-width: 46ch;
   }
 </style>

@@ -1,7 +1,7 @@
 ---
 import type { SiteSettings } from "../lib/content";
 import Icon from "./Icon.astro";
-import logo from "../assets/brand/logo-mark-black.svg?raw";
+import logo from "../assets/brand/logo-black.svg?raw";
 
 interface Props {
   settings: SiteSettings;
@@ -10,11 +10,10 @@ const { settings } = Astro.props;
 const bookIsCall = settings.bookingHref.startsWith("tel:");
 
 const nav = [
-  { label: "The method", href: "#method" },
-  { label: "Work", href: "#work" },
-  { label: "Prices", href: "#services" },
-  { label: "Questions", href: "#questions" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Learn", href: "/learn" },
+  { label: "Safety", href: "/safety" },
+  { label: "Aftercare", href: "/aftercare" },
 ];
 ---
 
@@ -37,10 +36,17 @@ const nav = [
     <div class="header__actions">
       {
         bookIsCall ? (
-          <a class="header__phone" href={`tel:${settings.phoneTel}`}>
-            <Icon name="phone" />
-            <span>{settings.phone}</span>
-          </a>
+          <>
+            <a class="header__phone" href={`tel:${settings.phoneTel}`}>
+              <Icon name="phone" />
+              <span>{settings.phone}</span>
+            </a>
+            {/* Points at the booking form at the foot of the home page, so it works from
+                every page and never needs a booking URL to exist. */}
+            <a class="btn header__cta" href="/#contact">
+              Contact
+            </a>
+          </>
         ) : (
           <>
             <a class="header__phone" href={`tel:${settings.phoneTel}`}>
@@ -69,7 +75,7 @@ const nav = [
           </li>
         ))}
         <li>
-          <a href="#about" data-nav-link>About Pomi</a>
+          <a href="/about" data-nav-link>About Pomi</a>
         </li>
       </ul>
     </nav>
@@ -95,15 +101,20 @@ const nav = [
     align-items: center;
     gap: var(--space-5);
     min-height: var(--header-h);
+    padding-block: var(--space-3);
   }
   .header__brand {
     display: block;
     text-decoration: none;
     flex: 0 0 auto;
   }
+  /* The mark-only wordmark was dropped for the full lockup: at 36px the
+     "A BROW STUDIO" subline was illegible, which is why it was cut. At 52px
+     and up it reads, and this is a practice people book by name. */
   .header__logo :global(svg) {
-    height: 2.25rem;
+    height: 3.25rem;
     width: auto;
+    display: block;
   }
   .header__nav {
     display: none;
@@ -152,8 +163,8 @@ const nav = [
   .header__menu {
     display: inline-grid;
     place-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border);
   }
@@ -207,6 +218,9 @@ const nav = [
   }
 
   @media (min-width: 60rem) {
+    .header__logo :global(svg) {
+      height: 4.25rem;
+    }
     .header__nav {
       display: block;
     }

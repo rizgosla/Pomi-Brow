@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHeader from "../components/PageHeader.astro";
+import ContactForm from "../components/ContactForm.astro";
+import ReviewCount from "../components/ReviewCount.astro";
+import { getSiteSettings, getServices, getLearnArticles } from "../lib/content";
+
+const [settings, services, learn] = await Promise.all([getSiteSettings(), getServices(), getLearnArticles()]);
+const faqs = learn.filter((a) => a.showAsFaq);
+---
+
+<Base
+  title={`Contact | ${settings.businessName}`}
+  description={`Book or ask a question. ${settings.businessName}, ${settings.street}, ${settings.city}, ${settings.state} ${settings.zip}. Call ${settings.phone}.`}
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath="/contact"
+>
+  <PageHeader
+    title="Get in touch."
+    lede="Call, or send a note and Pomi will get back to you."
+    meta={`${settings.street}, ${settings.city}, ${settings.state} ${settings.zip}. ${settings.hoursNote}.`}
+  />
+
+  {/* One ContactForm per page: its script uses a singular querySelector. */}
+  <ContactForm settings={settings} services={services} />
+
+  <ReviewCount settings={settings} />
+</Base>

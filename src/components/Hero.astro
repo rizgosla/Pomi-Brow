@@ -1,23 +1,62 @@
 ---
-// The first viewport. Editorial: a large serif line, a quiet lede, one action, and one honest photograph
-// of healed brows on a face. Nothing is drawn on top of the photo.
+// The first viewport. Left: one serif line, a quiet lede, one action. Right: a wall of the actual work.
+//
+// The grid replaces the single hero photograph deliberately. One photo answered "is this good?" and
+// left "what do they even do here?" unanswered until the price grid, ~4 screens down. Nine healed
+// results across all four categories answer both in the first viewport, and answer the range question
+// the four-tile Instagram sample was failing at (three of its four tiles read "Microblading").
+//
+// Ratios are authored, not found: every source image is square (0.90-1.29, all ~1320px), so the mix
+// comes from row spans over a 12-row grid with object-fit: cover. Spans are assigned by subject:
+// the studio's before/after images are stacked pairs, and a pair only survives in the squarest cell
+// (span 5), so those go there and single healed shots take the landscape cells. See index.astro.
 import type { SiteSettings, Photo as PhotoType } from "../lib/content";
 import Photo from "./Photo.astro";
-import Caption from "./Caption.astro";
 import Icon from "./Icon.astro";
+
+export interface HeroTile {
+  photo: PhotoType;
+  /** Desktop column, 1-3. */
+  col: 1 | 2 | 3;
+  /** Desktop start row on the 12-row grid. */
+  row: number;
+  /** Rows spanned. 5 ~ square, 4 ~ landscape, 3 ~ wide. */
+  span: 3 | 4 | 5;
+  /** Crop framing, e.g. "50% 35%". */
+  focus?: string;
+}
 
 interface Props {
   settings: SiteSettings;
-  photo: PhotoType;
+  tiles: HeroTile[];
 }
-const { settings, photo } = Astro.props;
+const { settings, tiles } = Astro.props;
+
+// The occasions the line cycles through. The first is the resting state, and the only
+// one prefers-reduced-motion users see.
+const OCCASIONS = ["meeting", "night out", "workout", "brunch", "errand", "pilates class", "drop off"];
+
+const categories = [
+  { label: "Brows", mod: "brow" },
+  { label: "Eyes", mod: "eye" },
+  { label: "Lips", mod: "lip" },
+  { label: "Hair", mod: "hair" },
+];
 ---
 
 {/* No .reveal here: the scroll-entry reveal is for blocks that arrive, and the hero is already there.
     Fading it in would hold the page's LCP element at zero opacity for the length of the transition. */}
 <section class="hero page" data-hero>
   <div class="hero__copy">
-    <h1>Natural enough that no one asks.</h1>
+    <h1>
+      Perfect brows for every{" "}
+      <span class="hero__cycle" aria-hidden="true" data-cycle>
+        {OCCASIONS.map((w, i) => (
+          <span class:list={["hero__word", { "is-on": i === 0 }]}>{w}</span>
+        ))}
+      </span>
+      <span class="visually-hidden">occasion.</span>
+    </h1>
     <p class="lede">
       Permanent makeup mapped, measured, and drawn by one artist, so the result looks like you on a good day.
     </p>
@@ -39,16 +78,34 @@ const { settings, photo } = Astro.props;
     </p>
   </div>
 
-  <figure class="hero__figure">
-    <Photo
-      photo={photo}
-      loading="eager"
-      fetchpriority="high"
-      widths={[640, 960, 1320]}
-      sizes="(min-width: 60rem) 44vw, (min-width: 34rem) 480px, 100vw"
-    />
-    <figcaption>
-      <Caption service="Microblading and shading" detail="Healed" />
+  <figure class="hero__work">
+    <div class="hero__grid">
+      {
+        tiles.map((tile, i) => (
+          <div
+            class="hero__tile"
+            style={`--col:${tile.col};--row:${tile.row};--span:${tile.span}${
+              tile.focus ? `;--focus:${tile.focus}` : ""
+            }`}
+          >
+            <Photo
+              photo={tile.photo}
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchpriority={i === 0 ? "high" : "auto"}
+              widths={[280, 420, 560]}
+              sizes="(min-width: 60rem) 17vw, 45vw"
+            />
+          </div>
+        ))
+      }
+    </div>
+    {/* Nothing is drawn over a photograph, so the categories are named beneath the wall
+        rather than pinned to the tiles. */}
+    <figcaption class="hero__legend">
+      <span>Healed results and before-and-afters. All of it Pomi's own work.</span>
+      <span class="hero__legend-tags">
+        {categories.map((c) => <span class={`tag tag--${c.mod}`}>{c.label}</span>)}
+      </span>
     </figcaption>
   </figure>
 </section>
@@ -57,22 +114,31 @@ const { settings, photo } = Astro.props;
   .hero {
     display: grid;
     gap: var(--space-7);
-    padding-block: var(--space-8) var(--section);
+    padding-block: var(--space-7) var(--section);
   }
   .hero__copy {
     display: grid;
     gap: var(--space-5);
     align-content: center;
   }
-  /* Stacked, copy and photograph are one document column. Without the cap the
-     figure runs the full 776px of a tablet and renders a metre of face, and the
-     meta rule outruns every line of type above it. */
-  .hero__copy,
-  .hero__figure {
-    max-width: 30rem;
-  }
   .hero__copy h1 {
-    max-width: 14ch;
+    max-width: 18ch;
+  }
+  /* The words are stacked in one grid cell, so the span is as wide as its longest word
+     and the line never reflows as they change. Pink is spent here on purpose: it is the
+     one place it appears outside a Call control, and DESIGN.md records the exception. */
+  .hero__cycle {
+    display: inline-grid;
+    color: var(--pink-ink);
+    vertical-align: baseline;
+  }
+  .hero__word {
+    grid-area: 1 / 1;
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  .hero__word.is-on {
+    opacity: 1;
   }
   .hero__actions {
     display: flex;
@@ -96,35 +162,104 @@ const { settings, photo } = Astro.props;
     display: block;
     max-width: 46ch;
   }
-  .hero__figure {
+  .hero__work {
     margin: 0;
+    display: grid;
+    gap: var(--space-4);
+    align-content: center;
   }
-  /* Phone: tall crop keeps both brows; desktop: a squarer crop so neither brow is lost to the frame. */
-  .hero__figure :global(.photo) {
-    aspect-ratio: 4 / 5;
+
+  /* Phone: one wide anchor tile, then a 2x2. Five tiles, not nine -- at 390px a
+     nine-tile wall renders each face at ~170px and proves nothing. */
+  .hero__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
   }
+  .hero__tile {
+    min-width: 0;
+  }
+  .hero__tile :global(.photo) {
+    aspect-ratio: 1 / 1;
+  }
+  .hero__tile :global(.photo img) {
+    object-position: var(--focus, 50% 45%);
+  }
+  .hero__tile:first-child {
+    grid-column: span 2;
+  }
+  .hero__tile:first-child :global(.photo) {
+    aspect-ratio: 3 / 2;
+  }
+  .hero__tile:nth-child(n + 6) {
+    display: none;
+  }
+
+  .hero__legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-4);
+    font-size: var(--fs-caption);
+    color: var(--ink-muted);
+  }
+  .hero__legend-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
   @media (min-width: 60rem) {
     .hero {
-      /* Capped so a tall viewport does not stretch a 650px composition over 1000px
-         of empty shell; the cream band below stays visible and invites the scroll. */
-      grid-template-columns: 1.05fr 1fr;
+      /* The grid earns more width than the single photograph did: it is now the
+         evidence, not an illustration beside the argument. */
+      grid-template-columns: 1fr 1.15fr;
       align-items: center;
       column-gap: var(--space-8);
-      padding-block: var(--space-9) var(--section);
-      min-height: min(calc(100svh - var(--header-h)), 46rem);
+      padding-block: var(--space-8) var(--section);
+      min-height: min(calc(100svh - var(--header-h)), 52rem);
     }
     .hero__call {
       display: inline-flex;
     }
-    .hero__copy,
-    .hero__figure {
-      max-width: none;
+
+    /* Three columns over twelve rows. Each column's spans sum to 12 but in a
+       different order (5-4-3 / 3-5-4 / 4-3-5), so no tile edge lines up with its
+       neighbour across the wall. That offset is the whole effect. Placement is
+       explicit rather than auto-flowed, so the wall is identical every build. */
+    .hero__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(12, 1fr);
+      height: min(calc(100svh - var(--header-h) - var(--space-9)), 42rem);
+      gap: var(--space-3);
     }
-    .hero__figure :global(.photo) {
-      aspect-ratio: 6 / 5;
+    .hero__tile,
+    .hero__tile:first-child,
+    .hero__tile:nth-child(n + 6) {
+      display: block;
+      min-height: 0;
+      grid-column: var(--col);
+      grid-row: var(--row) / span var(--span);
     }
-    .hero__figure :global(.photo img) {
-      object-position: 50% 40%;
+    /* Ratio comes from the cell now, so the frame fills it and the image covers. */
+    .hero__tile :global(.photo),
+    .hero__tile:first-child :global(.photo) {
+      aspect-ratio: auto;
+      height: 100%;
     }
   }
 </style>
+
+<script>
+  // Cycle the occasion. Not under reduced motion; the first word simply stays.
+  const cycle = document.querySelector<HTMLElement>("[data-cycle]");
+  if (cycle && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const words = Array.from(cycle.querySelectorAll<HTMLElement>(".hero__word"));
+    let i = 0;
+    window.setInterval(() => {
+      words[i].classList.remove("is-on");
+      i = (i + 1) % words.length;
+      words[i].classList.add("is-on");
+    }, 2200);
+  }
+</script>

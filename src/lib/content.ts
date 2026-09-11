@@ -16,6 +16,9 @@ interface PhotoCaption {
   serviceSlug?: string;
   /** What the photo shows: "Healed", "Mapped and healed", "Before and after". */
   detail?: string;
+  /** object-position for the crop, e.g. "50% 85%". Every source is square, so a
+      cropped placement travels with the photo rather than living in a stylesheet. */
+  focus?: string;
 }
 
 export type Photo = PhotoCaption &
@@ -25,7 +28,10 @@ export type Photo = PhotoCaption &
   );
 
 /** A seed Instagram pick: a gallery ref, optionally with its own detail and alt. */
-type SeedPick = string | { ref: string; detail?: string; alt?: string };
+type SeedPick = string | { ref: string; detail?: string; alt?: string; focus?: string };
+
+/** A Sanity portable-text block array. Rendered by PortableText.astro. */
+export type PortableBlock = Record<string, any>;
 
 export interface Service {
   title: string;
@@ -37,6 +43,12 @@ export interface Service {
   touchUpPrice?: number;
   priceNote?: string;
   summary?: string;
+  /** Long-form body. Present in the CMS schema as `description`; may be absent. */
+  description?: PortableBlock[];
+  /** SEO title carried over from the previous site, e.g. "MICROBLADING IN TUSTIN, CA | ...". */
+  seoTitle?: string;
+  /** The one photograph that represents this service in a card or a page header. */
+  cover?: Photo;
   gallery: Photo[];
   showOnHome: boolean;
 }
@@ -54,6 +66,13 @@ export interface LearnArticle {
   title: string;
   slug: string;
   summary: string;
+  /** Long-form body. Defined in the CMS schema and, until now, never requested. */
+  body?: PortableBlock[];
+  /** SEO title carried over from the previous site. */
+  seoTitle?: string;
+  /** Chosen per article, not per service: three articles share one service and
+      would otherwise show the same picture side by side on the index. */
+  cover?: Photo;
   relatedService?: string | null;
   showAsFaq: boolean;
 }
@@ -183,14 +202,27 @@ function normalizeSeedSettings(): SiteSettings {
   };
 }
 
+/** Resolve a seed { ref, focus, alt, detail } pick to a Photo carrying its crop point. */
+function seedCover(pick: SeedPick | undefined): Photo | undefined {
+  if (!pick) return undefined;
+  const { ref, detail, alt, focus } = typeof pick === "string" ? { ref: pick } : (pick as any);
+  const photo = localPhoto(ref, alt);
+  return photo ? { ...photo, detail, focus } : undefined;
+}
+
 function normalizeSeedServices(): Service[] {
   return (seedServices as any[])
     .map((s) => ({
       ...s,
+      cover: seedCover(s.cover),
       gallery: s.galleryFolder ? localGallery(s.galleryFolder) : [],
       showOnHome: s.showOnHome !== false,
     }))
     .sort((a, b) => a.order - b.order);
+}
+
+function normalizeSeedLearn(): LearnArticle[] {
+  return (seedLearn as any[]).map((a) => ({ ...a, cover: seedCover(a.cover) }));
 }
 
 function normalizeSeedReviews(): Review[] {
@@ -231,7 +263,9 @@ export async function getServices(): Promise<Service[]> {
   if (!usingSanity) return normalizeSeedServices();
   const c = await client();
   const rows = await c.fetch(`*[_type == "service"] | order(order asc){
-    ..., "slug": slug.current, gallery[]{..., asset->{url, metadata{dimensions}}}
+    ..., "slug": slug.current,
+    cover{..., asset->{url, metadata{dimensions}}},
+    gallery[]{..., asset->{url, metadata{dimensions}}}
   }`);
   if (!rows?.length) return normalizeSeedServices();
   return rows.map((s: any) => ({
@@ -254,12 +288,14 @@ export async function getReviews(): Promise<Review[]> {
 }
 
 export async function getLearnArticles(): Promise<LearnArticle[]> {
-  if (!usingSanity) return seedLearn as LearnArticle[];
+  if (!usingSanity) return normalizeSeedLearn();
   const c = await client();
   const rows = await c.fetch(`*[_type == "learnArticle"]{
-    title, "slug": slug.current, summary, showAsFaq, "relatedService": relatedService->slug.current
+    title, "slug": slug.current, summary, body, seoTitle, showAsFaq,
+    cover{..., asset->{url, metadata{dimensions}}},
+    "relatedService": relatedService->slug.current
   }`);
-  return rows?.length ? rows : (seedLearn as LearnArticle[]);
+  return rows?.length ? rows : normalizeSeedLearn();
 }
 
 export function formatPrice(n: number): string {

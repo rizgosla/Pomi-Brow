@@ -1,30 +1,51 @@
 ---
+// Questions, as a grid of cards.
+//
+// The earlier version put a very large heading and a lede in a sticky left column beside one
+// long accordion, which left most of that column empty at every width. The heading now sits
+// above, and the questions fill the page two across. The open card takes the studio's pale
+// pink with a Pink Ink mark, so the one you are reading is the one thing on the block in colour.
 import type { LearnArticle } from "../lib/content";
 import Icon from "./Icon.astro";
 
 interface Props {
   faqs: LearnArticle[];
+  /** Overridable so /faqs, /safety and /aftercare reuse this without forking it. */
+  heading?: string;
+  lede?: string;
+  id?: string;
+  /** Hide the "Read the Learn articles" link when the page already is Learn. */
+  showLearnLink?: boolean;
 }
-const { faqs } = Astro.props;
+const {
+  faqs,
+  heading = "The questions everyone asks first.",
+  lede = "Short answers here. Longer ones, with photos, in Learn.",
+  id = "questions",
+  showLearnLink = true,
+} = Astro.props;
 ---
 
 {
   faqs.length > 0 && (
-    <section class="faq section" id="questions" aria-labelledby="faq-heading">
-      <div class="page faq__grid">
-        <div class="faq__intro reveal">
-          <h2 id="faq-heading">The questions everyone asks first.</h2>
-          <p class="lede">Short answers here. Longer ones, with photos, in Learn.</p>
-          <a class="link" href="/learn">
-            Read the Learn articles
-            <Icon name="arrow" />
-          </a>
+    <section class="faq section" id={id} aria-labelledby="faq-heading">
+      <div class="page">
+        <div class="section-head faq__head reveal">
+          <h2 id="faq-heading">{heading}</h2>
+          <p class="lede">{lede}</p>
+          {showLearnLink && (
+            <a class="link" href="/learn">
+              Read the Learn articles
+              <Icon name="arrow" />
+            </a>
+          )}
         </div>
-        <div class="faq__list reveal" style="--i: 1">
+
+        <div class="faq__grid">
           {faqs.map((f, i) => (
-            <details class="faq__item" open={i === 0}>
-              <summary>
-                <span>{f.title}</span>
+            <details class="faq__item reveal" open={i === 0} style={`--i: ${i % 4}`}>
+              <summary class="faq__summary">
+                <span class="faq__q">{f.title}</span>
                 <span class="faq__mark" aria-hidden="true">
                   <Icon name="plus" class="faq__plus" />
                   <Icon name="minus" class="faq__minus" />
@@ -46,69 +67,75 @@ const { faqs } = Astro.props;
 }
 
 <style>
+  .faq__head {
+    justify-items: start;
+  }
   .faq__grid {
     display: grid;
-    gap: var(--space-8);
-  }
-  .faq__intro {
-    display: grid;
     gap: var(--space-4);
-    align-content: start;
   }
   .faq__item {
-    border-bottom: 1px solid var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--canvas);
+    transition: background-color var(--dur-base) ease, border-color var(--dur-base) ease;
   }
-  .faq__item summary {
-    list-style: none;
-    cursor: pointer;
+  /* The open one is the one in colour. */
+  .faq__item[open] {
+    background: var(--pale-pink);
+    border-color: transparent;
+  }
+  .faq__summary {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: var(--space-4);
-    padding: 1.1rem 0;
-    font-size: 1.0625rem;
+    min-height: 44px;
+    padding: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+    cursor: pointer;
+    list-style: none;
     font-weight: 500;
     color: var(--ink);
-    line-height: 1.35;
   }
-  .faq__item summary::-webkit-details-marker {
+  .faq__summary::-webkit-details-marker {
     display: none;
+  }
+  .faq__q {
+    font-size: var(--fs-body);
+    line-height: 1.4;
   }
   .faq__mark {
-    display: inline-grid;
-    place-items: center;
     flex: 0 0 auto;
+    display: inline-flex;
+    margin-top: 0.15em;
     color: var(--ink-muted);
   }
-  .faq__mark :global(.icon) {
-    width: 1rem;
-    height: 1rem;
-    grid-area: 1 / 1;
+  .faq__item[open] .faq__mark {
+    color: var(--pink-ink);
   }
-  .faq__mark :global(.faq__minus) {
+  .faq :global(.faq__plus),
+  .faq :global(.faq__minus) {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .faq__item[open] :global(.faq__plus),
+  .faq__item:not([open]) :global(.faq__minus) {
     display: none;
-  }
-  .faq__item[open] .faq__mark :global(.faq__plus) {
-    display: none;
-  }
-  .faq__item[open] .faq__mark :global(.faq__minus) {
-    display: block;
   }
   .faq__answer {
-    padding: 0 0 1.4rem;
     display: grid;
-    gap: var(--space-4);
-    color: var(--ink-muted);
+    gap: var(--space-3);
+    justify-items: start;
+    padding: 0 clamp(1.25rem, 1rem + 1vw, 1.75rem) clamp(1.25rem, 1rem + 1vw, 1.75rem);
+    color: var(--ink-body);
+  }
+  .faq__answer p {
     max-width: 58ch;
   }
   @media (min-width: 60rem) {
     .faq__grid {
-      grid-template-columns: 2fr 3fr;
-      gap: var(--space-9);
-    }
-    .faq__intro {
-      position: sticky;
-      top: calc(var(--header-h) + var(--space-6));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
     }
   }
 </style>
