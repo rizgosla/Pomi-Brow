@@ -1,0 +1,25 @@
+---
+// /learn opens on the first article rather than a list, so clicking Learn lands on something
+// to read. The first article is "How long does permanent makeup last?" -- it is the one with
+// the most to say, and it is first in learn.json for that reason.
+//
+// The canonical points at the article's own URL so search engines see one page, not two.
+import Base from "../../layouts/Base.astro";
+import LearnReader from "../../components/LearnReader.astro";
+import { getSiteSettings, getServices, getLearnArticles } from "../../lib/content";
+
+const [settings, services, learn] = await Promise.all([getSiteSettings(), getServices(), getLearnArticles()]);
+const faqs = learn.filter((a) => a.showAsFaq);
+const article = learn[0];
+---
+
+<Base
+  title={article.seoTitle || `${article.title} | ${settings.businessName}`}
+  description={article.summary}
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath={`/learn/${article.slug}`}
+>
+  <LearnReader article={article} learn={learn} services={services} settings={settings} />
+</Base>

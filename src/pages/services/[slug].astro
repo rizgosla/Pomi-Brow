@@ -1,0 +1,369 @@
+---
+// One page per service, including the three Maintenance/Correction ones: Base.astro's JSON-LD
+// emits /services/<slug> for every service, so skipping any would publish schema pointing at 404s.
+import Base from "../../layouts/Base.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import PortableText from "../../components/PortableText.astro";
+import Photo from "../../components/Photo.astro";
+import Caption from "../../components/Caption.astro";
+import HealingAxis from "../../components/HealingAxis.astro";
+import ContactForm from "../../components/ContactForm.astro";
+import Icon from "../../components/Icon.astro";
+import type { Photo as PhotoType } from "../../lib/content";
+import {
+  getSiteSettings,
+  getServices,
+  getLearnArticles,
+  localGallery,
+  localPhoto,
+  formatPrice,
+  servicePrice,
+} from "../../lib/content";
+
+export async function getStaticPaths() {
+  const services = await getServices();
+  return services.map((service) => ({ params: { slug: service.slug }, props: { service } }));
+}
+
+const { service } = Astro.props;
+const [settings, services, learn] = await Promise.all([getSiteSettings(), getServices(), getLearnArticles()]);
+
+// The cover already leads the page. Showing it again in the grid below put the same
+// photograph on the page twice. Local photos identify by source path, Sanity ones by src,
+// and an identity that resolves to undefined must never match or the whole grid vanishes.
+const photoKey = (p: PhotoType | undefined) =>
+  !p ? null : p.kind === "local" ? p.source : p.src;
+const methodPhoto = localPhoto("microblading/03", "Brow mapping with a ruler before microblading, and the healed result beneath");
+const allPhotos = service.gallery?.length ? service.gallery : localGallery(service.slug);
+// The cover leads the page and the healing rail carries its own photograph, so both are
+// held out of the grid below rather than appearing on the page a second time.
+const usedKeys = new Set([photoKey(service.cover), photoKey(methodPhoto)].filter(Boolean));
+const gallery = allPhotos.filter((p) => !usedKeys.has(photoKey(p)));
+const related = learn.filter((a) => a.relatedService === service.slug);
+const faqs = learn.filter((a) => a.showAsFaq);
+
+// Maintenance and Correction are follow-up work, not a first appointment, so they skip the
+// healing timeline and the gallery framing that assumes a before.
+const isFollowUp = ["Maintenance", "Correction"].includes(service.category);
+
+const title = service.seoTitle || `${service.title} in Tustin, near Irvine | ${settings.businessName}`;
+const description =
+  service.summary ??
+  `${service.title} by Pomi at ${settings.businessName}, ${settings.locationLine}.`;
+
+const tagTone: Record<string, string> = {
+  Eyebrows: "tag--brow",
+  Eyes: "tag--eye",
+  Lips: "tag--lip",
+  Hair: "tag--hair",
+};
+---
+
+<Base
+  title={title}
+  description={description}
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath={`/services/${service.slug}`}
+>
+{/* The work leads. Title, price and the call sit beside one photograph of this
+      service rather than above two screens of type. Follow-up services have no
+      photographs of their own, so they keep the plain page header. */}
+  {
+    service.cover ? (
+      <section class="svc-hero page">
+        <div class="svc-hero__copy">
+          <a class="svc-hero__parent link" href="/#services">
+            <Icon name="arrow" class="svc-hero__back" />
+            All services and prices
+          </a>
+          <h1>{service.title}</h1>
+          {service.summary && <p class="lede">{service.summary}</p>}
+          <p class="svc-hero__price">
+            <span class="svc-hero__amount">{servicePrice(service)}</span>
+            <span class="muted">
+              {service.touchUpPrice != null
+                ? `${formatPrice(service.price)} for the first session, ${formatPrice(service.touchUpPrice)} for the perfecting touch-up.`
+                : (service.priceNote ?? "Prices current as of May 2026 and subject to change.")}
+            </span>
+          </p>
+          <div class="svc-hero__actions">
+            <a class="btn" href={`tel:${settings.phoneTel}`}>
+              <Icon name="phone" />
+              Call {settings.phone}
+            </a>
+            <a class="link" href="#contact">
+              Ask a question
+              <Icon name="arrow" />
+            </a>
+          </div>
+          <p class="svc-hero__meta">
+            <span>
+              {settings.locationLine}. Two visits: the session, then a perfecting touch-up around six weeks later.
+            </span>
+          </p>
+        </div>
+
+        <figure class="svc-hero__figure">
+          <Photo
+            photo={service.cover}
+            ratio="1 / 1"
+            loading="eager"
+            fetchpriority="high"
+            widths={[640, 960, 1320]}
+            sizes="(min-width: 60rem) 32rem, 100vw"
+          />
+          <figcaption>
+            <Caption service={service.title} detail={service.cover.detail ?? "Healed"} />
+          </figcaption>
+        </figure>
+      </section>
+    ) : (
+      <>
+        <PageHeader
+          title={service.title}
+          lede={service.summary}
+          meta={`${settings.locationLine}. For clients whose work is already healed.`}
+          parent={{ href: "/#services", label: "All services and prices" }}
+        />
+        <section class="section svc-price" aria-labelledby="price-heading">
+          <div class="page svc-price__row reveal">
+            <h2 id="price-heading" class="visually-hidden">Price</h2>
+            <p class="svc-price__amount">{servicePrice(service)}</p>
+            <p class="svc-price__note muted">
+              {service.priceNote ?? "Prices current as of May 2026 and subject to change."}
+            </p>
+            <div class="svc-price__actions">
+              <a class="btn" href={`tel:${settings.phoneTel}`}>
+                <Icon name="phone" />
+                Call {settings.phone}
+              </a>
+              <a class="link" href="#contact">
+                Ask a question
+                <Icon name="arrow" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </>
+    )
+  }
+
+  {
+    service.description && service.description.length > 0 && (
+      <section class="section" aria-labelledby="about-heading">
+        <div class="page reveal">
+          <h2 id="about-heading" class="visually-hidden">About {service.title}</h2>
+          <PortableText blocks={service.description} />
+        </div>
+      </section>
+    )
+  }
+
+  {
+    gallery.length > 0 && (
+      <section class="section svc-work" id="work" aria-labelledby="work-heading">
+        <div class="page">
+          <div class="section-head reveal">
+            <h2 id="work-heading">{service.title}, healed.</h2>
+            <p class="lede">Every photograph is Pomi's own work on a real client. Some are before-and-after pairs.</p>
+          </div>
+          <ul class="svc-work__grid">
+            {gallery.map((photo, i) => (
+              <li class="reveal" style={`--i: ${i % 4}`}>
+                <Photo photo={photo} ratio="1 / 1" sizes="(min-width: 40rem) 18rem, 45vw" widths={[300, 560]} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  {!isFollowUp && <HealingAxis photo={methodPhoto} />}
+
+  {
+    related.length > 0 && (
+      <section class="section svc-read" aria-labelledby="read-heading">
+        <div class="page">
+          <div class="section-head reveal">
+            <h2 id="read-heading">Before you book.</h2>
+            <p class="lede">The questions people ask about this service most often.</p>
+          </div>
+          <ul class="svc-read__list">
+            {related.map((a, i) => (
+              <li class="card reveal" style={`--i: ${i % 3}`}>
+                <h3 class="svc-read__title">
+                  <a href={`/learn/${a.slug}`}>{a.title}</a>
+                </h3>
+                <p class="muted">{a.summary}</p>
+                <span class="svc-read__cta">
+                  Read it
+                  <Icon name="arrow" class="svc-read__arrow" />
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  <ContactForm settings={settings} services={services} />
+</Base>
+
+<style>
+  .svc-hero {
+    display: grid;
+    gap: var(--space-7);
+    padding-block: var(--space-7) var(--section);
+  }
+  .svc-hero__copy {
+    display: grid;
+    gap: var(--space-5);
+    align-content: center;
+    justify-items: start;
+  }
+  .svc-hero__copy h1 {
+    max-width: 16ch;
+  }
+  .svc-hero__copy .lede {
+    max-width: 44ch;
+  }
+  .svc-hero__parent {
+    color: var(--ink-muted);
+  }
+  .svc-hero__parent :global(.svc-hero__back) {
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(180deg);
+  }
+  .svc-hero__price {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .svc-hero__amount {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-size: var(--fs-h2);
+    line-height: var(--lh-display);
+    letter-spacing: var(--track-display);
+    font-variant-numeric: tabular-nums;
+  }
+  .svc-hero__price .muted {
+    font-size: var(--fs-small);
+    max-width: 46ch;
+  }
+  .svc-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+  }
+  .svc-hero__meta {
+    width: 100%;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+    font-size: var(--fs-caption);
+    color: var(--ink-muted);
+  }
+  .svc-hero__meta span {
+    display: block;
+    max-width: 52ch;
+  }
+  .svc-hero__figure {
+    margin: 0;
+  }
+  @media (min-width: 60rem) {
+    .svc-hero__figure {
+      max-width: 32rem;
+      margin-left: auto;
+    }
+  }
+  .svc-price__row {
+    display: grid;
+    gap: var(--space-6);
+    justify-items: start;
+  }
+  .svc-price__amount {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-size: var(--fs-h2);
+    line-height: var(--lh-display);
+    letter-spacing: var(--track-display);
+    font-variant-numeric: tabular-nums;
+  }
+  .svc-price__note {
+    margin-top: var(--space-2);
+    font-size: var(--fs-small);
+    max-width: 52ch;
+  }
+  .svc-price__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+  }
+  .svc-work__grid {
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (min-width: 40rem) {
+    .svc-work__grid {
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    }
+  }
+  .svc-read__list {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .svc-read__list li {
+    position: relative;
+    display: grid;
+    gap: var(--space-3);
+    align-content: start;
+  }
+  .svc-read__title a {
+    text-decoration: none;
+  }
+  .svc-read__title a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+  .svc-read__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    color: var(--ink-muted);
+    font-size: var(--fs-small);
+    font-weight: 500;
+  }
+  .svc-read__list li:hover .svc-read__cta {
+    color: var(--ink);
+  }
+  .svc-read__list :global(.svc-read__arrow) {
+    width: 1rem;
+    height: 1rem;
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+  .svc-read__list li:hover :global(.svc-read__arrow) {
+    transform: translateX(3px);
+  }
+  @media (min-width: 60rem) {
+    .svc-hero {
+      grid-template-columns: 1.05fr 1fr;
+      align-items: center;
+      column-gap: var(--space-8);
+      padding-block: var(--space-8) var(--section);
+      min-height: min(calc(100svh - var(--header-h)), 46rem);
+    }
+    .svc-read__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

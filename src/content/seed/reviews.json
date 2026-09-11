@@ -1,0 +1,32 @@
+[
+  {
+    "quote": "PLACEHOLDER. Replace with a real Yelp review, copied word for word, in Reviews inside the admin.",
+    "reviewer": "Placeholder",
+    "source": "Yelp",
+    "sourceUrl": "",
+    "serviceSlug": "microblading",
+    "showOnHome": true,
+    "order": 10,
+    "isPlaceholder": true
+  },
+  {
+    "quote": "PLACEHOLDER. Replace with a real Yelp review, copied word for word, in Reviews inside the admin.",
+    "reviewer": "Placeholder",
+    "source": "Yelp",
+    "sourceUrl": "",
+    "serviceSlug": "lip-tint",
+    "showOnHome": true,
+    "order": 20,
+    "isPlaceholder": true
+  },
+  {
+    "quote": "PLACEHOLDER. Replace with a real Yelp review, copied word for word, in Reviews inside the admin.",
+    "reviewer": "Placeholder",
+    "source": "Yelp",
+    "sourceUrl": "",
+    "serviceSlug": "eyeliner",
+    "showOnHome": true,
+    "order": 30,
+    "isPlaceholder": true
+  }
+]

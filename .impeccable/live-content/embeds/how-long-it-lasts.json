@@ -1,0 +1,933 @@
+{
+  "title": "Microblading Longevity: How Long Does It Last? | Pomi B. Brow Studio",
+  "embedId": "pomi-how-long-page",
+  "kicker": "Learn About Permanent Makeup",
+  "h1": "How Long Does Permanent Makeup Last?",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Learn About Permanent Makeup",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "How Long Does Permanent Makeup Last?",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is designed to soften over time. How long it lasts depends on the service, your skin, aftercare, sun exposure, lifestyle, and touch-up schedule.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book an Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Service-specific guidance",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Touch-up planning",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-clock-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Results soften over time**",
+      "cls": "pomi-clock-card"
+    },
+    {
+      "tag": "text",
+      "text": "Touch-ups help maintain color, shape, and definition.",
+      "cls": "pomi-clock-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent makeup can last for months to years, but it is not truly permanent forever",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup gradually fades because pigment softens as your skin heals, renews, and reacts to lifestyle factors. Brows, eyeliner, lash enhancement, lip tint, and scalp micropigmentation can all fade at different speeds.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "A touch-up helps refresh color, refine shape, and keep the result looking balanced. Your exact timeline depends on your skin type, aftercare, sun exposure, skincare products, and how your skin holds pigment.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "Quick answer by service",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "Brow services usually need regular maintenance because facial skin renews and brows are exposed to skincare and sun. Eyeliner and lash enhancement can soften over time but often fade more gradually. Lip tint can fade differently depending on natural lip color, lifestyle, and healing. Scalp micropigmentation maintenance depends on the treatment area, density, and sun exposure.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "button",
+      "text": "Read Healing Timeline",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/learn/permanent-makeup-healing-timeline"
+    },
+    {
+      "tag": "button",
+      "text": "Ask About Your Service",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "kicker",
+      "text": "By service",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "How long each permanent makeup service can last",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "These are general expectations. Your healed result and maintenance schedule can vary.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "Microblading",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Natural hair-stroke brows soften over time",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading creates fine hair-like strokes. Because the strokes are delicate, they can soften and fade over time, especially with oily skin, sun exposure, exfoliating skincare, or limited aftercare.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Best for clients who want a natural brow-hair look.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Touch-ups help refresh shape and color.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Results vary by skin type and lifestyle.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "button",
+      "text": "View Microblading",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/microblading-tustin-ca"
+    },
+    {
+      "tag": "text",
+      "text": "Powder Brows",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Soft shaded brows can keep a fuller look with proper maintenance",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Ombre Powder Brows create a soft shaded finish. The result can look fuller than microblading alone and can be a strong fit for clients who like a soft makeup look.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Best for soft filled-in brow definition.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Touch-ups help maintain density and balance.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Sun, skincare, and skin type affect fading.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "button",
+      "text": "View Ombre Powder Brows",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/ombre-powder-brows-tustin-ca"
+    },
+    {
+      "tag": "text",
+      "text": "Microblading / Shading",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Combination brows include hair strokes plus soft density",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading / Shading combines fine strokes with powder shading. This can help create a fuller look than microblading alone while keeping some natural hair-stroke detail.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Best for natural detail with added fullness.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Touch-ups help refine both strokes and shading.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Great for clients who want more definition than microblading alone.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "button",
+      "text": "View Microblading / Shading",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/microblading-shading-tustin-ca"
+    },
+    {
+      "tag": "text",
+      "text": "Eyeliner",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Permanent eyeliner softens but can keep eye definition",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent eyeliner adds pigment along the eyeliner area or lash line to create lasting eye definition. The color can soften over time and may need refreshing depending on your skin, lifestyle, and desired intensity.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Best for clients who want less daily eyeliner.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Touch-ups help maintain shape and color.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "A softer eyeliner look can fade more naturally.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "button",
+      "text": "View Eyeliner",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/permanent-eyeliner-tustin-ca"
+    },
+    {
+      "tag": "text",
+      "text": "Lash Enhancement",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Subtle lash-line color can fade softly",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Lash enhancement places pigment close to the lash line for a fuller-looking lash base. Because the result is subtle, some fading can be less noticeable than a more dramatic eyeliner style.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Best for natural-looking eye definition.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Great for clients who do not want a visible liner look.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Maintenance depends on desired softness and retention.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "button",
+      "text": "View Lash Enhancement",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/lash-enhancement-tustin-ca"
+    },
+    {
+      "tag": "text",
+      "text": "Lip Tint",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip color softens as it heals and fades over time",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint adds soft pigment to improve lip color and definition. Lips can heal lighter than they look at first, and the final color depends on natural lip tone, aftercare, lifestyle, and pigment retention.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Best for soft everyday lip color.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Touch-ups help refine color and shape.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Cold sore history and lip healing can affect timing and planning.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "button",
+      "text": "View Lip Tint",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/lip-tint-tustin-ca"
+    },
+    {
+      "tag": "text",
+      "text": "Scalp Micropigmentation",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "SMP density can be maintained with proper care",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation adds tiny pigment impressions to create the look of fuller hair density. Maintenance depends on treatment area, desired density, sun exposure, and how your scalp holds pigment.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Best for thinning areas, scalp contrast, and hairline definition.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Sun protection helps reduce fading.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Touch-ups can refresh density and softness.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "button",
+      "text": "View Scalp Micropigmentation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/scalp-micropigmentation-tustin-ca"
+    },
+    {
+      "tag": "kicker",
+      "text": "Why results vary",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What affects how long permanent makeup lasts?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Two clients can receive the same service and heal differently. These factors can affect pigment retention and fading.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Skin type",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Oily, dry, sensitive, mature, or textured skin can hold pigment differently.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Sun exposure",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Sun can fade pigment faster, especially for brows and scalp micropigmentation.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Skincare products",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Exfoliants, acids, retinoids, and strong treatments can fade pigment faster near brows.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Aftercare",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Following aftercare helps protect the healing area and supports the best healed result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Touch-ups",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why touch-ups matter",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-ups are part of maintaining permanent makeup. They help refresh pigment, improve balance, and keep the result closer to your goal.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Color refresh",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-ups can restore color that healed lighter or faded over time.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Shape refinement",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Brows, eyeliner, lips, and scalp density can be adjusted after healing.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Long-term maintenance",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Yearly or periodic touch-ups can help keep your result looking fresh.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "When should you book a touch-up?",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-up timing depends on the service, your healed result, and how much fading has happened. If your color looks light, your shape needs refinement, or your result no longer feels balanced, contact the studio for guidance.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Touch-Up",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Ask a Question",
+      "cls": "pomi-actions",
+      "href": "mailto:pomibstudio@gmail.com"
+    },
+    {
+      "tag": "kicker",
+      "text": "Make results last longer",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "How to help your permanent makeup last",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "You cannot stop fading completely, but good care helps protect your healed result.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Follow aftercare",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Use the instructions given after your appointment and avoid picking while healing.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Protect from sun",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Sun exposure can fade pigment faster, especially for brows and scalp services.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Be careful with skincare",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Keep strong exfoliants and active ingredients away from healed brow pigment when possible.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Plan maintenance",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Book touch-ups when the color, shape, or density needs refreshing.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Helpful links",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Learn more before your appointment",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "p",
+      "text": "Review healing, aftercare, and safety information before booking so you know what to expect and how to protect your result.",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "button",
+      "text": "Healing Timeline",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/learn/permanent-makeup-healing-timeline"
+    },
+    {
+      "tag": "button",
+      "text": "Aftercare",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/aftercare"
+    },
+    {
+      "tag": "button",
+      "text": "Safety",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/safety"
+    },
+    {
+      "tag": "button",
+      "text": "Book Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "How Long Permanent Makeup Lasts FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Is permanent makeup really permanent?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is long-lasting, but it fades over time. Most clients need touch-ups to maintain color, shape, and definition.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why does permanent makeup fade?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pigment can fade because of skin renewal, sun exposure, skincare products, lifestyle habits, and how your skin holds pigment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Which permanent makeup service fades fastest?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "I do not know which service will fade fastest for your skin without seeing your skin type and healed results. Brows often need regular maintenance because they are exposed to sun and skincare products.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Do touch-ups make permanent makeup last longer?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-ups help refresh faded color, refine shape, and improve balance. They are an important part of long-term maintenance.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can skincare fade my brows?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Strong exfoliants, acids, retinoids, and some skin treatments can fade brow pigment faster if used too close to the area.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How do I know when I need a touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "You may need a touch-up when the color looks too light, the shape looks less defined, or the result no longer matches your preferred look.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Want help choosing the right service?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book an appointment with Pomi B. Brow Studio in Tustin to discuss your goals, skin type, healing expectations, and long-term maintenance plan.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/learn/permanent-makeup-healing-timeline",
+    "https://pomibrow.com/microblading-tustin-ca",
+    "https://pomibrow.com/ombre-powder-brows-tustin-ca",
+    "https://pomibrow.com/microblading-shading-tustin-ca",
+    "https://pomibrow.com/permanent-eyeliner-tustin-ca",
+    "https://pomibrow.com/lash-enhancement-tustin-ca",
+    "https://pomibrow.com/lip-tint-tustin-ca",
+    "https://pomibrow.com/scalp-micropigmentation-tustin-ca",
+    "mailto:pomibstudio@gmail.com",
+    "https://pomibrow.com/aftercare",
+    "https://pomibrow.com/safety"
+  ],
+  "images": [],
+  "wordCount": 1231,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-how-long-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-how-long-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-how-long-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-how-long-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-how-long-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-how-long-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-how-long-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-how-long-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-how-long-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-how-long-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-how-long-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-how-long-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-how-long-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-how-long-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-how-long-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-how-long-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-how-long-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-how-long-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-how-long-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-how-long-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-how-long-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-how-long-page .pomi-clock-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-how-long-page .pomi-clock-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-how-long-page .pomi-clock-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-how-long-page .pomi-clock-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-how-long-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-how-long-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-how-long-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-how-long-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-how-long-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-how-long-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-how-long-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-how-long-page .pomi-answer-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 26px;\n    }\n\n    #pomi-how-long-page .pomi-timeline {\n      display: grid;\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-how-long-page .pomi-time-item {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n      display: grid;\n      grid-template-columns: 190px 1fr;\n      gap: 20px;\n      align-items: start;\n    }\n\n    #pomi-how-long-page .pomi-time-label {\n      background: #8f5a47;\n      color: #ffffff;\n      padding: 12px 14px;\n      border-radius: 18px;\n      font-weight: 800;\n      text-align: center;\n    }\n\n    #pomi-how-long-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-how-long-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-how-long-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-how-long-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-how-long-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-how-long-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-how-long-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-how-long-page .pomi-link-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-how-long-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-how-long-page .pomi-final h2,\n    #pomi-how-long-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-how-long-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-how-long-page .pomi-hero-grid,\n      #pomi-how-long-page .pomi-two-col,\n      #pomi-how-long-page .pomi-time-item {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-how-long-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-how-long-page .pomi-process,\n      #pomi-how-long-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-how-long-page .pomi-time-label {\n        text-align: left;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-how-long-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-how-long-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-how-long-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-how-long-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-how-long-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [
+    {
+      "tag": "p",
+      "text": "Microblading usually lasts between 1 to 3 years, but the microblading duration can vary based on factors like your skin type, lifestyle, skincare routine, sun exposure, and especially your microblading aftercare. Some clients may notice they need a color refresh after 12 to 18 months, while others can maintain good color for a longer period, particularly if they have normal to dry skin, protect their brows from sun exposure, and diligently follow aftercare instructions. Since microblading is considered semi-permanent, the pigment will fade over time, meaning your brows won’t retain the same color and shape indefinitely. Scheduling a touch-up or annual refresh is essential to help maintain the desired results."
+    },
+    {
+      "tag": "h4",
+      "text": "Why Microblading Fades Over Time"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading places pigment into the upper layers of the skin, and understanding how long does microblading last is important for your expectations. As your skin naturally renews itself, the pigment slowly softens and fades, which is a normal process and does not indicate that something went wrong. Factors influencing microblading duration include your skin type, natural brow hair, immune system, skincare products, sun exposure, sweating and lifestyle, aftercare, the color used, and how your skin holds pigment. Some clients retain pigment longer, while others may experience faster fading. During your appointment, Pomi will explain what to expect based on your unique skin and brow goals, including insights on microblading aftercare to help maintain your results."
+    },
+    {
+      "tag": "h4",
+      "text": "Skin Type Makes a Big Difference"
+    },
+    {
+      "tag": "p",
+      "text": "Your skin type significantly influences how long does microblading last."
+    },
+    {
+      "tag": "p",
+      "text": "Normal to dry skin:"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading often heals with cleaner hair strokes and longer-lasting definition on normal to dry skin. This skin type usually holds microblading well, contributing to an extended microblading duration."
+    },
+    {
+      "tag": "p",
+      "text": "Oily skin:"
+    },
+    {
+      "tag": "p",
+      "text": "For those with oily skin, the microblading aftercare becomes crucial, as oily skin often fades microblading faster. Hair strokes may heal softer, blur sooner, or lose crisp detail over time. If you have oily skin, Pomi might recommend ombre powder brows or combo brows as alternatives."
+    },
+    {
+      "tag": "p",
+      "text": "Combination skin:"
+    },
+    {
+      "tag": "p",
+      "text": "Combination skin presents variability; some areas hold pigment well, while the oilier zones may fade faster, impacting how long does microblading last."
+    },
+    {
+      "tag": "p",
+      "text": "Mature skin:"
+    },
+    {
+      "tag": "p",
+      "text": "Mature skin requires a gentle approach. Soft color, careful shaping, and realistic expectations are essential for effective microblading aftercare. Pomi will recommend the best brow technique based on your skin texture and desired look."
+    },
+    {
+      "tag": "h4",
+      "text": "How Long Before You Need a Touch-Up?"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading is typically a two-step process that leads to beautiful, lasting brows. The first appointment is focused on creating the shape, color, and foundation for your brows. After this initial session, many clients wonder how long does microblading last and how to ensure the best results. That’s where the perfecting touch-up comes in. This follow-up appointment helps refine the healed result after your skin has recovered. It's crucial for microblading aftercare, as some areas might heal lighter than others. The perfecting touch-up helps improve balance, color, and shape, ensuring your brows look their best for the duration of the microblading effects."
+    },
+    {
+      "tag": "h4",
+      "text": "When Should You Book an Annual Brow Refresh?"
+    },
+    {
+      "tag": "p",
+      "text": "Many clients book an annual brow refresh around 12 to 18 months after their original microblading service, as they may wonder how long does microblading last. You might be ready for a refresh if: Your brows look lighter than you want, the shape looks less defined, you fill in your brows more often, the tails have faded, one brow faded more than the other, the color looks too soft, or you want your brows cleaned up before a trip, event, or new season. For existing clients, an annual brow refresh not only helps keep the brows soft, balanced, and natural, but it also aligns with proper microblading aftercare practices, ensuring the longevity of your results throughout the microblading duration."
+    },
+    {
+      "tag": "h4",
+      "text": "What Makes Microblading Fade Faster?"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading duration can be affected by how quickly the skin renews or how soon the pigment breaks down. Understanding how long does microblading last is essential for maintaining your brows. Common reasons that lead to faster fading include: oily skin, frequent sun exposure, tanning, swimming, heavy sweating, chemical peels, retinol or tretinoin use near the brow area, exfoliating acids close to the brows, laser treatments, not adhering to microblading aftercare, and picking or scratching during the healing process. Additionally, certain medications or health conditions can impact the longevity of your microblading results. While you don’t need to abandon your regular skincare routine forever, it’s advisable to avoid strong exfoliating products directly on the brow area to help ensure your results last longer."
+    },
+    {
+      "tag": "h4",
+      "text": "How to Help Your Microblading Last Longer"
+    },
+    {
+      "tag": "p",
+      "text": "Good care helps protect your results and can significantly influence how long microblading lasts. To help your brows last longer and ensure optimal microblading aftercare, consider the following tips: Follow Pomi’s aftercare instructions, avoid picking or scratching while healing, and keep your brows protected from heavy sun exposure. Additionally, it’s best to avoid tanning beds, refrain from applying retinol, tretinoin, or exfoliating acids directly over healed brows, and use sunscreen around the brow area after healing. Be cautious with harsh facial treatments directly over the brows and remember to book refresh appointments before the pigment fades too much. Small habits make a difference in the microblading duration; sun exposure and exfoliating skincare are two of the biggest reasons brows fade sooner."
+    },
+    {
+      "tag": "h4",
+      "text": "What Happens If You Wait Too Long?"
+    },
+    {
+      "tag": "p",
+      "text": "If you wait too long, you may wonder how long does microblading last, as the brows might fade enough that a simple refresh is no longer the best option. When pigment fades excessively, Pomi might need to rebuild more of the brow shape. If old pigment has changed color, turning gray, red, or uneven, correction work may be necessary. This is why annual refresh appointments are crucial for proper microblading aftercare. They help maintain the brows before the shape and color fade too much, ensuring you get the best results throughout the microblading duration."
+    },
+    {
+      "tag": "h4",
+      "text": "Microblading vs Powder Brows: Which Lasts Longer?"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows often last longer than microblading, especially for those with oily skin. When considering how long does microblading last, it's important to note that microblading creates fine hair-like strokes that provide a natural appearance. However, the longevity of these strokes may diminish more quickly on oily or textured skin, making microblading aftercare crucial. On the other hand, powder brows create a soft shaded effect and tend to hold better for clients with oily skin, sparse brows, or those seeking more definition. Combo brows, which utilize both hair strokes and shading, are ideal for clients desiring a natural look with added fullness and enhanced color retention. A simple guide: Choose microblading if you want the most natural hair-stroke look. Opt for powder brows if you prefer a softly filled-in look or have oily skin. Select combo brows if you want hair strokes combined with fuller definition. Pomi will recommend the right brow service based on your skin type, natural brow hair, and desired result."
+    }
+  ],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 3,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 5,
+      "#ffffff": 11,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 7,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 2
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "190px 1fr",
+      "1fr",
+      "repeat(2, 1fr)"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-clock-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-answer-box",
+      "pomi-timeline",
+      "pomi-time-item",
+      "pomi-time-label",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-faq",
+      "pomi-link-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "how-long-it-lasts",
+  "url": "https://pomibrow.com/how-long-it-lasts",
+  "capturedAt": "2026-09-11"
+}

@@ -1,0 +1,119 @@
+---
+// About Pomi.
+//
+// Does NOT use AboutPomi.astro -- that component links to this page.
+//
+// The live /about-pomi page is an empty shell carrying only the heading "Why your permanent
+// makeup artist matters", which is kept as this page's SEO title. The bio in site settings is
+// still one real sentence plus a placeholder, so the placeholder is filtered exactly as the home
+// page filters it, and the page leans on what is real: one artist, the work, and the reviews.
+//
+// GAP, deliberately not filled: Pomi's bio and headshot. Both are CMS fields (siteSettings.bio,
+// siteSettings.headshot) and both render here the moment she fills them.
+import Base from "../layouts/Base.astro";
+import PageHeader from "../components/PageHeader.astro";
+import Photo from "../components/Photo.astro";
+import Caption from "../components/Caption.astro";
+import ReviewCount from "../components/ReviewCount.astro";
+import InstagramGrid from "../components/InstagramGrid.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Icon from "../components/Icon.astro";
+import { getSiteSettings, getServices, getLearnArticles, localPhoto } from "../lib/content";
+
+const [settings, services, learn] = await Promise.all([getSiteSettings(), getServices(), getLearnArticles()]);
+const faqs = learn.filter((a) => a.showAsFaq);
+
+// The seed bio's first paragraph is scaffolding; the build fails if it ever reaches the page.
+const bio = (settings.bio ?? []).filter((p) => !/placeholder/i.test(p));
+// ombre-powder-brows/04 moved to the Instagram grid; this keeps one image per slot.
+const portrait = settings.headshot ?? localPhoto("microblading-shading/02", "Healed microblading and shading, by Pomi");
+const isPortrait = Boolean(settings.headshot);
+---
+
+<Base
+  title={`Why your permanent makeup artist matters | ${settings.businessName}`}
+  description="Pomi B. Brow Studio is one artist. Every appointment, from the first mapping to the six-week touch-up, is with Pomi herself."
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath="/about"
+>
+  <PageHeader
+    title={settings.aboutHeading}
+    lede="Permanent makeup is not a product you buy. It is a person's judgement about your face."
+    meta={`${settings.locationLine}. ${settings.hoursNote}.`}
+  />
+
+  <section class="section about" aria-labelledby="about-heading">
+    <div class="page about__grid">
+      <div class="about__copy reveal">
+        <h2 id="about-heading">Why your artist matters.</h2>
+        <p class="lede">
+          The shape is drawn by hand, on your face, by whoever is holding the tool. There is no template.
+        </p>
+        {bio.map((p) => <p class="about__para">{p}</p>)}
+        <div class="about__actions">
+          <a class="btn" href={`tel:${settings.phoneTel}`}>
+            <Icon name="phone" />
+            Call {settings.phone}
+          </a>
+          <a class="link" href={settings.instagramUrl} rel="noopener">
+            <Icon name="instagram" />
+            @{settings.instagramHandle}
+          </a>
+        </div>
+      </div>
+
+      {
+        portrait && (
+          <figure class="about__figure reveal" style="--i: 1">
+            <Photo photo={portrait} ratio="4 / 5" sizes="(min-width: 60rem) 36vw, 100vw" widths={[640, 960]} />
+            <figcaption>
+              {isPortrait ? (
+                <Caption service="Pomi" detail="Pomi B. Brow Studio" />
+              ) : (
+                <Caption service="Microblading and shading" detail="Healed, by Pomi" />
+              )}
+            </figcaption>
+          </figure>
+        )
+      }
+    </div>
+  </section>
+
+  <ReviewCount settings={settings} />
+  <InstagramGrid settings={settings} services={services} />
+  <ContactForm settings={settings} services={services} />
+</Base>
+
+<style>
+  .about__grid {
+    display: grid;
+    gap: var(--space-8);
+    align-items: start;
+  }
+  .about__copy {
+    display: grid;
+    gap: var(--space-4);
+    align-content: start;
+  }
+  .about__para {
+    max-width: 52ch;
+  }
+  .about__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+    margin-top: var(--space-4);
+  }
+  .about__figure {
+    margin: 0;
+  }
+  @media (min-width: 60rem) {
+    .about__grid {
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-9);
+    }
+  }
+</style>

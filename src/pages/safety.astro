@@ -1,0 +1,54 @@
+---
+// Safety, as a slide page: one idea per section, read top to bottom.
+//
+// The copy is Pomi's own, condensed from the previous site's /safety embed
+// (.impeccable/live-content/embeds/safety.md) to roughly half its length: every section and
+// every fact kept, paragraphs shortened, repeated calls to action dropped. The medical-clearance
+// note is verbatim. Photographs are still to come; each slot names the shot it is waiting for.
+import Base from "../layouts/Base.astro";
+import PageHeader from "../components/PageHeader.astro";
+import ImageSlot from "../components/sections/ImageSlot.astro";
+import Sections from "../components/sections/Sections.astro";
+import ContactForm from "../components/ContactForm.astro";
+import { getSiteSettings, getServices, getLearnArticles, getPage } from "../lib/content";
+
+const [settings, services, learn, page] = await Promise.all([
+  getSiteSettings(),
+  getServices(),
+  getLearnArticles(),
+  getPage("safety"),
+]);
+if (!page) throw new Error("pages.json has no 'safety' page");
+const faqs = learn.filter((a) => a.showAsFaq);
+---
+
+<Base
+  title={`Permanent makeup safety | ${settings.businessName}`}
+  description="How the studio stays clean and private, why every tool is single-use, who should ask before booking, and how safety continues into aftercare."
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath="/safety"
+>
+  <PageHeader title={page.title} lede={page.lede} meta={page.meta} />
+
+  {
+    page.lead && (
+      <section class="lead">
+        <div class="page">
+          <ImageSlot image={page.lead} class="lead__figure" sizes="(min-width: 60rem) 100rem, 100vw" widths={[900, 1320]} loading="eager" fetchpriority="high" />
+        </div>
+      </section>
+    )
+  }
+
+  <Sections sections={page.sections} settings={settings} />
+
+  <ContactForm settings={settings} services={services} />
+</Base>
+
+<style>
+  .lead {
+    padding-bottom: var(--space-8);
+  }
+</style>

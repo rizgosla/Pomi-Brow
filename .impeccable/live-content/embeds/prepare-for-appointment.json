@@ -1,0 +1,792 @@
+{
+  "title": "How to Prepare for Your Permanent Makeup Appointment | Pomi B. Brow Studio",
+  "embedId": "pomi-prepare-learn-page",
+  "kicker": "Before Your Appointment",
+  "h1": "How to Prepare for Your Permanent Makeup Appointment",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Before Your Appointment",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "How to Prepare for Your Permanent Makeup Appointment",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Good preparation helps your appointment go smoothly and helps your skin start healing the right way. I like clients to know what to avoid, what to bring, and when to ask questions before coming in.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book an Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Simple prep checklist",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Service-specific guidance",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-prep-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Appointment Prep**",
+      "cls": "pomi-prep-card"
+    },
+    {
+      "tag": "text",
+      "text": "A little planning helps your service and healing feel easier.",
+      "cls": "pomi-prep-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Come in with clean skin, clear expectations, and no last-minute surprises",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The best way to prepare is to avoid anything that irritates the skin, thins the blood, or makes the treatment area sensitive before your appointment. You should also share health details, recent cosmetic treatments, and any concerns before booking.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Each service has different prep needs. Brows, eyes, lips, and scalp micropigmentation are not the same appointment, so use the checklist below for the service you plan to book.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "My advice before booking",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you are unsure about a medication, skin condition, cold sore history, eye concern, recent filler, Botox, laser, peel, or any health issue, ask first. It is better to check before scheduling than to arrive and find out we need to wait.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Brows",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to do before brows",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "This applies to microblading, ombre powder brows, and microblading / shading.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Before your brow appointment",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Come in with clean skin around the brows.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid tanning or sunburn before your appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid strong exfoliating products near the brows before your visit.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Share any recent Botox, filler, laser, chemical peel, or brow treatment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Bring photos of brow styles you like if you have a clear preference.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Ask first if...",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have irritation, cuts, breakouts, sunburn, or open skin near the brows.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You recently had cosmetic treatments near the forehead or brow area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are pregnant, nursing, taking blood thinners, or prone to keloids.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are not sure whether microblading, powder brows, or shading fits your skin.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Eyes",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to do before eyeliner or lash enhancement",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Eye services need extra care because the work is done close to the lash line.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Before your eye appointment",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Arrive with clean skin around the eyes.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Ask ahead of time about contacts, lash extensions, eye makeup, or lash serums.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Share any eye sensitivity, allergies, or recent eye treatments.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Plan your appointment when your eyes are calm and not irritated.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Decide whether you want a soft lash-line look or more visible eyeliner.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Ask first if...",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have eye irritation, redness, infection, or sensitivity.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You recently had eye surgery or cosmetic eye treatments.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You use eye medications or have a medical eye condition.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are unsure whether lash enhancement or eyeliner fits your routine.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Lips",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to do before lip tint",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint preparation is important because lips are sensitive and color healing varies from client to client.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Before your lip tint appointment",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Keep lips moisturized before your appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Drink water and avoid arriving with cracked or irritated lips.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Share your natural lip color goals and any shade preferences.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Bring a favorite lip color photo if you have one.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Plan around healing, since lips often look brighter at first.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Ask first if...",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have ever had a cold sore, even one time.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have an active cold sore, cracked lips, irritation, or open skin.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You recently had lip filler or other cosmetic treatments around the mouth.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are unsure what color will heal best with your natural lip tone.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Cold sore reminder",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you have a cold sore history, please ask before booking lip tint. Lip tattooing may trigger a cold sore for some clients, so it is important to plan ahead.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Hair",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to do before scalp micropigmentation",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation preparation depends on your hair, scalp, and treatment area.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Before your SMP appointment",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Arrive with a clean scalp.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid sunburn before your appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Share any scalp irritation, skin conditions, or recent scalp treatments.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Bring photos of your preferred hairline or density goal if helpful.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Be ready to talk about hairline shape, coverage, and softness.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Ask first if...",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have scalp irritation, open skin, sunburn, or active flaking.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You recently had scalp treatments, hair transplant work, or injections.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have a skin condition in the treatment area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are unsure how much density or hairline definition you want.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Avoid these",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to avoid before your appointment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "These are common pre-appointment reminders. Your exact instructions may depend on your service.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Sunburn or tanning",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Do not arrive with sunburned or irritated skin in the treatment area.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Skin irritation",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Do not book over open skin, active breakouts, cuts, cold sores, or irritation.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Strong skincare",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask about retinol, acids, exfoliants, peels, and active skincare before your appointment.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Last-minute treatments",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you recently had filler, Botox, laser, peels, waxing, or other treatments.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Medication and health questions",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you take blood thinners, have a medical condition, are pregnant or nursing, are prone to keloids, or have concerns about healing, ask before booking. For medical guidance, speak with your healthcare provider.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Bring this",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to bring to your appointment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "You do not need much, but a few small things help make the appointment easier.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Inspiration photos",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Bring photos of brows, eyeliner, lips, or hairlines you like. They help explain your style.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Your questions",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Write down anything you want to ask about shape, color, healing, or touch-ups.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Health details",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Be ready to share medications, allergies, skin concerns, and recent treatments.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "kicker",
+      "text": "Ask first",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "When should you ask questions before booking?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Please ask before booking if there is anything about your health, skin, or schedule that might affect your appointment.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Ask before booking if you have health or skin concerns",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are pregnant or nursing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You take blood thinners.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are prone to keloids.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have active irritation in the treatment area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have a history of cold sores and want lip tint.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Ask before booking if your timing is tight",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have a wedding, vacation, photo shoot, or event coming up.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You recently had filler, Botox, laser, peels, or other cosmetic treatments.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You work out heavily, swim often, or have lots of sun exposure planned.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are not sure whether you have enough time to heal before an event.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Before you book",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Review aftercare and safety information",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Before scheduling, review the [Aftercare page](https://pomibrow.com/aftercare) and [Safety page](https://pomibrow.com/safety). These pages explain important preparation, healing, and safety details.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup Preparation FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "How should I prepare for my permanent makeup appointment?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Arrive with clean skin, avoid irritation or sunburn, share health details, and follow the pre-care instructions for your specific service.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Should I bring inspiration photos?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Inspiration photos help explain the style you like, especially for brows, eyeliner, lip color, or scalp hairline goals.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What should I avoid before permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid tanning, sunburn, active irritation, and last-minute cosmetic treatments near the area. Ask about retinol, acids, exfoliants, blood thinners, alcohol, and caffeine before your appointment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Should I ask before booking if I had recent Botox or filler?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Share any recent Botox, filler, laser, peel, or cosmetic treatment before booking so timing is handled correctly.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What if I get cold sores and want lip tint?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking. Lip tattooing may trigger a cold sore for some clients, so it is important to plan ahead.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Should I book before a big event?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Plan ahead. Permanent makeup goes through visible healing stages, so avoid booking too close to weddings, vacations, photo shoots, or major events.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Have questions before your appointment?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Contact Pomi B. Brow Studio in Tustin before booking. I can help you choose the right service, prepare for your appointment, and understand what to expect while healing.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/aftercare",
+    "https://pomibrow.com/safety"
+  ],
+  "images": [],
+  "wordCount": 1287,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-prepare-learn-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-prepare-learn-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-prepare-learn-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-prepare-learn-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-prepare-learn-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-prepare-learn-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-prepare-learn-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-prepare-learn-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-prepare-learn-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-prepare-learn-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-prepare-learn-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-prepare-learn-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-prepare-learn-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-prepare-learn-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-prepare-learn-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-prepare-learn-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-prepare-learn-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-prepare-learn-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-prepare-learn-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-prepare-learn-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-prepare-learn-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-prepare-learn-page .pomi-prep-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-prepare-learn-page .pomi-prep-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-prepare-learn-page .pomi-prep-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-prepare-learn-page .pomi-prep-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-prepare-learn-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-prepare-learn-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-prepare-learn-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-prepare-learn-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-prepare-learn-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-prepare-learn-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-prepare-learn-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-prepare-learn-page .pomi-answer-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 26px;\n    }\n\n    #pomi-prepare-learn-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-prepare-learn-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-prepare-learn-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-prepare-learn-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-prepare-learn-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-prepare-learn-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-prepare-learn-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-prepare-learn-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-prepare-learn-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-prepare-learn-page .pomi-link-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-prepare-learn-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-prepare-learn-page .pomi-note-box a {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-prepare-learn-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-prepare-learn-page .pomi-final h2,\n    #pomi-prepare-learn-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-prepare-learn-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-prepare-learn-page .pomi-hero-grid,\n      #pomi-prepare-learn-page .pomi-two-col,\n      #pomi-prepare-learn-page .pomi-wide-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-prepare-learn-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-prepare-learn-page .pomi-process,\n      #pomi-prepare-learn-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-prepare-learn-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-prepare-learn-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-prepare-learn-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-prepare-learn-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-prepare-learn-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 4,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 5,
+      "#ffffff": 10,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 8,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 2
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(2, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-prep-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-answer-box",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-faq",
+      "pomi-link-box",
+      "pomi-note-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "prepare-for-appointment",
+  "url": "https://pomibrow.com/prepare-for-appointment",
+  "capturedAt": "2026-09-11"
+}

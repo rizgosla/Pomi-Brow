@@ -1,0 +1,59 @@
+---
+// The close of a content page: one line, the call, and where to read next. Extracted from the
+// Safety page's "ask before you book" block so every slide page ends the same way.
+import type { SiteSettings } from "../lib/content";
+import type { Link } from "../lib/sections";
+import Icon from "./Icon.astro";
+
+interface Props {
+  heading: string;
+  text: string;
+  links?: Link[];
+  settings: SiteSettings;
+  id?: string;
+}
+const { heading, text, links = [], settings, id = "ask" } = Astro.props;
+---
+
+<section class="section cta" aria-labelledby={`${id}-heading`}>
+  <div class="page cta__grid">
+    <div class="reveal">
+      <h2 id={`${id}-heading`}>{heading}</h2>
+      <p class="lede">{text}</p>
+      <div class="cta__actions">
+        <a class="btn" href={`tel:${settings.phoneTel}`}>
+          <Icon name="phone" />
+          Call {settings.phone}
+        </a>
+        {
+          links.map((l) => (
+            <a class="link" href={l.href}>
+              {l.label}
+              <Icon name="arrow" />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta__grid {
+    display: grid;
+    gap: var(--space-6);
+  }
+  .cta__grid h2 {
+    max-width: 24ch;
+  }
+  .cta__grid .lede {
+    margin-top: var(--space-4);
+  }
+  .cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+    margin-top: var(--space-6);
+  }
+</style>

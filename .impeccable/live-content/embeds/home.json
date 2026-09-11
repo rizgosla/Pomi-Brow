@@ -1,0 +1,154 @@
+{
+  "title": "Home",
+  "embedId": "pomi-home-intro-block",
+  "kicker": null,
+  "h1": null,
+  "blocks": [
+    {
+      "tag": "text",
+      "text": "Permanent Makeup in Tustin, CA",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Wake Up with Soft, Natural-Looking Brows, Eyes, Lips, and Scalp Definition",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "At Pomi B. Brow Studio, I create permanent makeup that looks clean, balanced, and natural on your face. My goal is to help you save time while keeping your results soft enough for everyday life.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Meet Pomi B.",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is personal. Your brows, eyes, lips, and hairline should still feel like you. I focus on soft shaping, careful color choices, and results that fit your features.",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Private studio appointments",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Natural-looking permanent makeup",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Located in Tustin, near Irvine",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "h3",
+      "text": "Brow Services",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "p",
+      "text": "If you fill in your brows every morning, permanent brows may help you feel more ready when you wake up. I offer microblading, ombre powder brows, and microblading with shading.",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Microblading for hair-like strokes",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Ombre powder brows for soft shading",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Combination brows for added fullness",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyes, Lips, and Scalp",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is not only for brows. I also offer eyeliner, lash enhancement, lip tint, and scalp micropigmentation for clients who want subtle definition with less daily effort.",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Lash enhancement for soft eye definition",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Lip tint for natural-looking color",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "li",
+      "text": "Scalp micropigmentation for fuller-looking density",
+      "cls": "pomi-card-body"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located at 2801 El Camino Real, Ste 13 in Tustin, CA, close to Irvine and central Orange County. Services include microblading, ombre powder brows, microblading with shading, permanent eyeliner, lash enhancement, lip tint, scalp micropigmentation, touch-ups, and tattoo removal.",
+      "cls": "pomi-note-box"
+    }
+  ],
+  "links": [],
+  "images": [
+    "https://img1.wsimg.com/isteam/stock/82401/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365:/rs=w:600,h:450,cg:true,m/cr=w:600,h:450",
+    "https://img1.wsimg.com/isteam/stock/25016/:/cr=t:0%25,l:16.62%25,w:66.76%25,h:100%25/rs=w:365,h:365,cg:true:/rs=w:600,h:450,cg:true,m/cr=w:600,h:450",
+    "https://img1.wsimg.com/isteam/stock/82426/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365:/rs=w:600,h:450,cg:true,m/cr=w:600,h:450"
+  ],
+  "wordCount": 233,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-home-intro-block {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n      padding: 72px 0;\n    }\n\n    #pomi-home-intro-block * {\n      box-sizing: border-box;\n    }\n\n    #pomi-home-intro-block .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-home-intro-block .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-home-intro-block h2 {\n      font-size: clamp(30px, 4vw, 46px);\n      line-height: 1.12;\n      margin: 0 0 16px;\n      color: #2b211d;\n      text-align: center;\n    }\n\n    #pomi-home-intro-block .pomi-intro {\n      max-width: 820px;\n      margin: 0 auto 34px;\n      text-align: center;\n      font-size: 19px;\n      color: #4b3c36;\n    }\n\n    #pomi-home-intro-block .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 22px;\n      margin-top: 34px;\n    }\n\n    #pomi-home-intro-block .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 28px;\n      overflow: hidden;\n      box-shadow: 0 12px 30px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-home-intro-block .pomi-card-image {\n      width: 100%;\n      height: 255px;\n      overflow: hidden;\n      background: #f1d8cc;\n    }\n\n    #pomi-home-intro-block .pomi-card-image img {\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n      display: block;\n    }\n\n    #pomi-home-intro-block .pomi-card-body {\n      padding: 26px 24px 28px;\n      text-align: left;\n    }\n\n    #pomi-home-intro-block h3 {\n      font-size: 23px;\n      line-height: 1.2;\n      margin: 0 0 12px;\n      color: #2b211d;\n      text-align: left;\n    }\n\n    #pomi-home-intro-block p {\n      margin: 0 0 14px;\n      font-size: 16px;\n      color: #4b3c36;\n    }\n\n    #pomi-home-intro-block ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 15px;\n    }\n\n    #pomi-home-intro-block li {\n      margin-bottom: 7px;\n    }\n\n    #pomi-home-intro-block .pomi-note-box {\n      margin-top: 34px;\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      text-align: center;\n    }\n\n    #pomi-home-intro-block .pomi-note-box p {\n      max-width: 850px;\n      margin: 0 auto;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-home-intro-block .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-home-intro-block .pomi-card-image {\n        height: 320px;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-home-intro-block {\n        padding: 52px 0;\n      }\n\n      #pomi-home-intro-block .pomi-card-image {\n        height: 245px;\n      }\n\n      #pomi-home-intro-block .pomi-card-body {\n        padding: 22px 20px 24px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 3,
+      "#fffaf7": 1,
+      "#f1d8cc": 2,
+      "#6e3f31": 1,
+      "#4b3c36": 4,
+      "#ffffff": 1,
+      "#efd9cf": 2,
+      "rgba(74, 50, 40, 0.08)": 1,
+      "#fff4ed": 1
+    },
+    "radii": [
+      "999px",
+      "28px",
+      "30px"
+    ],
+    "shadows": [
+      "0 12px 30px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "repeat(3, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-kicker",
+      "pomi-intro",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-card-image",
+      "pomi-card-body",
+      "pomi-note-box"
+    ]
+  },
+  "slug": "home",
+  "url": "https://pomibrow.com/home",
+  "capturedAt": "2026-09-11"
+}

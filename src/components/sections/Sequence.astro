@@ -1,0 +1,148 @@
+---
+// Things in order, across the width: a strip of rounded tiles, one per step or date, under a
+// single hairline with one small ink dot per tile. Timelines carry a label tag; steps count in
+// the serif numeral. A photograph, when the section has one, is the first tile of the strip.
+// The home page's HealingAxis keeps its own pigment rail; this one stays single-colour.
+import type { Section } from "../../lib/sections";
+import ImageSlot from "./ImageSlot.astro";
+import Callout from "./Callout.astro";
+
+type Sequence = Extract<Section, { type: "sequence" }>;
+interface Props {
+  section: Sequence;
+}
+const { section } = Astro.props;
+const timeline = section.kind === "timeline";
+const offset = section.image ? 1 : 0;
+const columns = Math.min(Math.max(section.items.length + offset, 3), 5);
+---
+
+<div class="seq">
+  <ol class:list={["strip", `strip--${columns}`, { "strip--timeline": timeline, "strip--steps": !timeline }]}>
+    {
+      section.image && (
+        <li class="strip__tile strip__tile--figure reveal" style="--i: 0">
+          <ImageSlot image={{ ...section.image, ratio: "4 / 5" }} class="strip__figure" sizes="(min-width: 60rem) 25vw, (min-width: 40rem) 50vw, 100vw" widths={[480, 800]} />
+        </li>
+      )
+    }
+    {
+      section.items.map((s, i) => (
+        <li class="strip__tile reveal" style={`--i: ${i + offset}`}>
+          {timeline ? (
+            <span class="tag tag--brow">{s.label}</span>
+          ) : (
+            <span class="strip__num" aria-hidden="true">
+              {i + 1}
+            </span>
+          )}
+          <h3 class="strip__title">
+            {!timeline && <span class="visually-hidden">Step {i + 1}: </span>}
+            {s.title}
+          </h3>
+          {s.text && <p class="strip__body">{s.text}</p>}
+          {s.bullets && s.bullets.length > 0 && (
+            <ul class="strip__list">
+              {s.bullets.map((b) => (
+                <li>{b}</li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+
+  {section.callout && <Callout callout={section.callout} class="seq__callout reveal" />}
+</div>
+
+<style>
+  .seq {
+    display: grid;
+    gap: var(--space-6);
+  }
+  /* One hairline across the top of the row; each tile hangs a dot from it. */
+  .strip {
+    display: grid;
+    gap: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--border);
+  }
+  .strip__tile {
+    position: relative;
+    display: grid;
+    gap: var(--space-3);
+    align-content: start;
+    justify-items: start;
+    padding: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--tag-brow);
+  }
+  /* The dots only make sense when the tiles share one row; stacked, they collide. */
+  .strip__tile::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: var(--space-5);
+    top: calc(-1 * var(--space-5) - 5px);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+  .strip__tile--figure {
+    display: block;
+    padding: 0;
+    background: none;
+  }
+  .strip__tile--figure::before {
+    left: 0;
+  }
+  .strip :global(.strip__figure) {
+    width: 100%;
+    margin: 0;
+  }
+  /* Steps count in the serif numeral, the way the review count does. */
+  .strip__num {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 72;
+    font-size: var(--fs-numeral-sm);
+    line-height: 0.85;
+    letter-spacing: var(--track-display);
+    color: var(--ink);
+  }
+  .strip__body {
+    color: var(--ink-body);
+    max-width: 34ch;
+  }
+  .strip__list {
+    display: grid;
+    gap: var(--space-2);
+    padding-left: 1.1rem;
+    list-style: disc;
+    color: var(--ink-body);
+    max-width: 34ch;
+  }
+  .strip__list li::marker {
+    color: var(--ink-muted);
+  }
+  @media (min-width: 40rem) {
+    .strip {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 60rem) {
+    .strip__tile::before {
+      display: block;
+    }
+    .strip--3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .strip--4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .strip--5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+</style>

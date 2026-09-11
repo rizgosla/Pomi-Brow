@@ -1,0 +1,160 @@
+---
+import "../styles/global.css";
+import type { SiteSettings, Service, LearnArticle } from "../lib/content";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import CallBar from "../components/CallBar.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  settings: SiteSettings;
+  services?: Service[];
+  faqs?: LearnArticle[];
+  canonicalPath?: string;
+  ogImage?: string;
+}
+
+const { title, description, settings, services = [], faqs = [], canonicalPath = "/", ogImage } = Astro.props;
+const site = Astro.site ?? new URL("https://pomibbrowstudio.com");
+const canonical = new URL(canonicalPath, site).toString();
+const analyticsToken = import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
+
+const sameAs = [settings.instagramUrl, settings.yelpUrl].filter(Boolean);
+
+const business = {
+  "@context": "https://schema.org",
+  "@type": ["HealthAndBeautyBusiness", "LocalBusiness"],
+  "@id": `${site.origin}/#business`,
+  name: settings.businessName,
+  url: site.origin,
+  telephone: settings.phoneTel,
+  image: ogImage ? new URL(ogImage, site).toString() : undefined,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: settings.street,
+    addressLocality: settings.city,
+    addressRegion: settings.state,
+    postalCode: settings.zip,
+    addressCountry: "US",
+  },
+  areaServed: ["Tustin", "Irvine", "Orange County"],
+  sameAs,
+  openingHoursSpecification: settings.hours.map((h) => ({
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: h.days,
+    opens: h.opens,
+    closes: h.closes,
+  })),
+  makesOffer: services.map((s) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: s.title,
+      url: `${site.origin}/services/${s.slug}`,
+      description: s.summary,
+      provider: { "@id": `${site.origin}/#business` },
+    },
+    price: s.price,
+    priceCurrency: "USD",
+  })),
+};
+
+const faqSchema =
+  faqs.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.title,
+          acceptedAnswer: { "@type": "Answer", text: f.summary },
+        })),
+      }
+    : null;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={settings.businessName} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={new URL(ogImage, site).toString()} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(business)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <Header settings={settings} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer settings={settings} services={services} />
+    <CallBar settings={settings} />
+    {
+      analyticsToken && (
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: analyticsToken })}
+        />
+      )
+    }
+  <!-- impeccable-live-start -->
+<script is:inline src="http://localhost:8400/live.js?token=2a207d92-1eed-460c-985e-c18f50916401"></script>
+<!-- impeccable-live-end -->
+</body>
+</html>
+
+<style>
+  .skip {
+    position: absolute;
+    left: var(--gutter);
+    top: -100%;
+    z-index: 100;
+    padding: 0.6rem 1rem;
+    background: var(--pink-ink);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+  }
+  .skip:focus-visible {
+    top: 0.75rem;
+  }
+</style>
+
+<script>
+  // Scroll-entry reveal: gentle fade and lift as blocks enter the viewport.
+  const blocks = document.querySelectorAll<HTMLElement>(".reveal");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce || !("IntersectionObserver" in window)) {
+    blocks.forEach((b) => b.classList.add("is-in"));
+  } else {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            (e.target as HTMLElement).classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        }
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
+    );
+    blocks.forEach((b) => io.observe(b));
+  }
+</script>

@@ -1,0 +1,61 @@
+---
+// One photograph's place on a slide page. With a photo it is a framed Photo and its caption;
+// without one it is the same frame, empty, with the shot it is waiting for written beneath, so
+// the shot list is visible on the page and filling a slot later is a one-line content change.
+import type { ImageSlot as Slot } from "../../lib/sections";
+import { resolveSeedPhoto } from "../../lib/content";
+import Photo from "../Photo.astro";
+import Caption from "../Caption.astro";
+
+interface Props {
+  image: Slot;
+  /** What the caption names when a real photo is present. */
+  service?: string;
+  sizes?: string;
+  widths?: number[];
+  loading?: "eager" | "lazy";
+  fetchpriority?: "high" | "low" | "auto";
+  class?: string;
+}
+const {
+  image: slot,
+  service = "Pomi B. Brow Studio",
+  sizes = "(min-width: 60rem) 40vw, 100vw",
+  widths = [640, 960, 1320],
+  loading = "lazy",
+  fetchpriority = "auto",
+  class: className,
+} = Astro.props;
+
+// Only gallery refs resolve today; a CMS-uploaded image (no ref) keeps the empty frame until the
+// content layer learns to build remote photos for slots.
+const photo = slot.photo?.ref ? resolveSeedPhoto(slot.photo) : undefined;
+---
+
+<figure class:list={["slot", className]}>
+  {
+    photo ? (
+      <Photo photo={photo} ratio={slot.ratio} sizes={sizes} widths={widths} loading={loading} fetchpriority={fetchpriority} />
+    ) : (
+      <div class="slot__frame" style={`aspect-ratio: ${slot.ratio}`} role="img" aria-label={`Photo to come: ${slot.shot}`} />
+    )
+  }
+  <figcaption>
+    {photo ? <Caption service={service} detail={photo.detail ?? slot.shot} /> : <Caption service="Photo to come" detail={slot.shot} />}
+  </figcaption>
+</figure>
+
+<style>
+  .slot {
+    margin: 0;
+    min-width: 0;
+  }
+  /* The same frame a photograph gets, holding its place. Surface is the one fill the
+     system allows for an empty image, and the only thing drawn in it is the hairline. */
+  .slot__frame {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+</style>

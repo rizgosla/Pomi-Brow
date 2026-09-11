@@ -1,0 +1,51 @@
+{
+  "businessName": "Pomi B. Brow Studio",
+  "phone": "(949) 427-7664",
+  "phoneTel": "+19494277664",
+  "email": "",
+  "street": "2801 El Camino Real, Ste 13",
+  "city": "Tustin",
+  "state": "CA",
+  "zip": "92782",
+  "locationLine": "Tustin, across from Irvine",
+  "mapEmbedUrl": "https://www.google.com/maps?q=2801+El+Camino+Real+Ste+13,+Tustin,+CA+92782&output=embed",
+  "mapLinkUrl": "https://www.google.com/maps/dir/?api=1&destination=2801+El+Camino+Real+Ste+13,+Tustin,+CA+92782",
+  "hours": [],
+  "hoursNote": "By appointment",
+  "bookingUrl": "",
+  "yelpUrl": "https://www.yelp.com/search?find_desc=Pomi+B+Brow+Studio&find_loc=Tustin%2C+CA",
+  "yelpReviewCount": 200,
+  "instagramHandle": "pomib.browstudio",
+  "instagramUrl": "https://www.instagram.com/pomib.browstudio/",
+  "instagramLiveFeed": true,
+  "instagramPicks": [
+    {
+      "ref": "microblading/06",
+      "detail": "Healed",
+      "alt": "Healed microblading, fine hair strokes"
+    },
+    {
+      "ref": "microblading-shading/05",
+      "detail": "Healed",
+      "alt": "Healed microblading and shading"
+    },
+    {
+      "ref": "microblading-shading/07",
+      "detail": "Healed six weeks",
+      "alt": "Healed combination brows six weeks on"
+    },
+    {
+      "ref": "ombre-powder-brows/04",
+      "detail": "Healed",
+      "alt": "Healed ombre powder brows"
+    }
+  ],
+  "aboutHeading": "One artist. Every stroke.",
+  "bio": [
+    "PLACEHOLDER: Pomi's bio goes here. Replace this paragraph in Site settings with her own words: how long she has done permanent makeup, her training, and why she works alone.",
+    "Every appointment at the studio is with Pomi herself, from the first mapping to the six-week perfecting touch-up."
+  ],
+  "bioIsPlaceholder": true,
+  "headshot": null,
+  "metaDescription": "Natural-looking permanent makeup in Tustin, across from Irvine. Microblading, powder brows, eyeliner, lash enhancement and lip tint by Pomi, one artist with 200+ five-star Yelp reviews."
+}

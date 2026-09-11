@@ -1,0 +1,31 @@
+---
+// One page per Learn article, in the shared reader shell.
+//
+// Two of the ten have a real body carried over from the live site. The other eight have only
+// their summary, which is real copy written for this rebuild -- those pages lead with the
+// summary and the photograph rather than padding with invented prose. The body renders the
+// moment Pomi writes one in Sanity; nothing here needs changing.
+import Base from "../../layouts/Base.astro";
+import LearnReader from "../../components/LearnReader.astro";
+import { getSiteSettings, getServices, getLearnArticles } from "../../lib/content";
+
+export async function getStaticPaths() {
+  const learn = await getLearnArticles();
+  return learn.map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+const { article } = Astro.props;
+const [settings, services, learn] = await Promise.all([getSiteSettings(), getServices(), getLearnArticles()]);
+const faqs = learn.filter((a) => a.showAsFaq);
+---
+
+<Base
+  title={article.seoTitle || `${article.title} | ${settings.businessName}`}
+  description={article.summary}
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath={`/learn/${article.slug}`}
+>
+  <LearnReader article={article} learn={learn} services={services} settings={settings} />
+</Base>

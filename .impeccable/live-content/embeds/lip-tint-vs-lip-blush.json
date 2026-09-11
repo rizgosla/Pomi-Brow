@@ -1,0 +1,685 @@
+{
+  "title": "Lip Tint vs Lip Blush",
+  "embedId": "pomi-lip-tint-blush-learn-page",
+  "kicker": "Learn About Lip Color",
+  "h1": "Lip Tint vs Lip Blush: What Should You Know Before Booking?",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Learn About Lip Color",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Lip Tint vs Lip Blush: What Should You Know Before Booking?",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Clients ask me this all the time: “Is lip tint the same as lip blush?” The names are often used in a similar way, but what matters most is the result you want. At Pomi B. Brow Studio, lip tint is designed to give your lips soft color, better shape, and a fresh natural look.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Lip Tint Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Soft natural color",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Custom shade guidance",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-lip-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Lip Tint / Lip Blush**",
+      "cls": "pomi-lip-card"
+    },
+    {
+      "tag": "text",
+      "text": "Soft color, natural definition, and a fresher lip tone.",
+      "cls": "pomi-lip-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip tint and lip blush usually mean a soft cosmetic tattoo for the lips",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Many people use “lip tint” and “lip blush” to describe the same type of service: soft pigment placed into the lips to improve color, shape, and definition.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "I use the term lip tint because I want the result to sound the way it should look: soft, wearable, and natural. This is not meant to look like heavy lipstick. It is meant to bring life back to your lips.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "How I explain it to clients",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you want your lips to look a little more even, a little fresher, and a little more defined without applying lipstick every day, lip tint may be a good fit. If you are looking for a strong lipstick effect, we should talk first so your expectations match what heals best.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "The difference",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip tint vs lip blush: what is the difference?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "The names can be confusing, but both usually refer to a permanent makeup lip service that adds soft color to the lips.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip Tint",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is the name I use for a soft, natural-looking lip color service. The goal is to improve the color you already have, not cover your lips with a heavy makeup look.",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Soft everyday color",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Natural-looking definition",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Better lip balance",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Fresh, healthy-looking tone",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip Blush",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip blush is another common name people search for when they want a soft cosmetic tattoo for the lips. Some artists use this term to describe a similar service with a sheer, blushed color finish.",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Common search term",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Usually a soft color effect",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Can improve lip tone",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "li",
+      "text": "Can help define the border softly",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Best fit",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Who is lip tint best for?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is best for someone who wants their lips to look softer, fresher, and more even without needing lipstick every day.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Pale lips",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Soft pigment can bring back a fresher lip tone.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Uneven color",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint can help the lips look more balanced from edge to center.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Soft definition",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The lip shape can look cleaner without a harsh lip liner effect.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Less daily makeup",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Wake up with lips that already have a little color.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Color expectations",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What color should you expect?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint color is chosen around your natural lip tone, skin tone, and the result you want after healing.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Fresh color looks brighter at first",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Right after the appointment, lip color usually looks brighter and more intense than the healed result. This is normal. The color softens as the lips heal.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Healed color is softer",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "The healed result is usually more natural than the fresh color. I want clients to understand this before booking so they do not panic during the first few days.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Your natural lip color matters",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Everyone’s lips hold color differently. Natural lip tone, undertone, lifestyle, and healing all affect the final shade.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "The goal is enhancement",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "My goal is not to give every client the same shade. The goal is a color that makes your lips look healthy, balanced, and natural on your face.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Healing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What happens while lip tint heals?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lips go through stages while healing. The color can look bright, then softer, then lighter, then it settles.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Fresh color",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The lips can look bright, bold, or more colorful right after the appointment.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Softening stage",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The color starts to soften as the lips heal. Dryness or flaking can happen.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Settled result",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The final color looks softer and more natural after healing. The touch-up helps refine it.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "My advice during healing",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "Do not judge your lip color too early. The first few days can feel dramatic because the color is fresh. Give your lips time to heal before deciding if the color is too light, too bright, or needs a touch-up.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Cold sores",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Cold sore considerations before lip tint",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "This is an important part of lip appointments. If you have ever had a cold sore, even once, please mention it before booking.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Tell the studio before your appointment",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tattooing can trigger a cold sore for some clients with a history of them. If this applies to you, ask what steps you should take before booking.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Do not book over an active cold sore",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "If you have an active cold sore, irritation, open skin, or a lip injury, wait until the area is fully healed before scheduling.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "When in doubt, ask first",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you have a cold sore history, take medication, have sensitive lips, or recently had filler, ask before booking. For medical advice, speak with your healthcare provider.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Touch-ups",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why the touch-up matters for lip tint",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lip color can heal lighter than it looks on the first day. The touch-up gives us a chance to see how your lips healed and make adjustments.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Color check",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "We review how much pigment your lips kept after healing.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Softness check",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "We look at whether the color healed soft, even, and balanced.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Shape refinement",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The border and definition can be reviewed after healing.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Final polish",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up helps complete the result so it feels more finished.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Before you book",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Review lip tint, aftercare, and healing information",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you are thinking about lip tint, review the [Lip Tint service page](https://pomibrow.com/lip-tint-tustin-ca), [Aftercare page](https://pomibrow.com/aftercare), and [Healing Timeline](https://pomibrow.com/learn/permanent-makeup-healing-timeline) so you know what to expect before scheduling.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Lip Tint vs Lip Blush FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Is lip tint the same as lip blush?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Many people use the terms in a similar way. Both usually refer to a cosmetic tattoo service that adds soft color to the lips. At Pomi B. Brow Studio, lip tint is focused on a natural-looking, wearable result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does lip tint look like lipstick?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is not meant to look like heavy lipstick. The healed result is usually softer and more natural. It gives the lips color and definition without looking overdone.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who is lip tint best for?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint is best for clients who want softer color, more even tone, better definition, and less daily lipstick or liner.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Will my lips look too bright at first?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh lip tint often looks brighter at first. The color softens as the lips heal, so it is important not to judge the final color too early.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can I get lip tint if I get cold sores?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "If you have ever had a cold sore, mention it before booking. Lip tattooing can trigger cold sores for some clients. For medical guidance, speak with your healthcare provider.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Do I need a lip tint touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Most clients need a touch-up to review healed color, improve softness, and refine the final result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Thinking about lip tint?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book a consultation with Pomi B. Brow Studio in Tustin. I can help you choose a soft lip color that works with your natural tone, your skin, and the look you want after healing.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/lip-tint-tustin-ca",
+    "https://pomibrow.com/aftercare",
+    "https://pomibrow.com/learn/permanent-makeup-healing-timeline"
+  ],
+  "images": [],
+  "wordCount": 1250,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-lip-tint-blush-learn-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-lip-tint-blush-learn-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-lip-tint-blush-learn-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-lip-tint-blush-learn-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-lip-tint-blush-learn-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-lip-tint-blush-learn-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-lip-tint-blush-learn-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-lip-tint-blush-learn-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-lip-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-lip-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-lip-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-lip-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-answer-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-compare {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-compare-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-lip-tint-blush-learn-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-lip-tint-blush-learn-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-lip-tint-blush-learn-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-link-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-note-box a {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-final h2,\n    #pomi-lip-tint-blush-learn-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-lip-tint-blush-learn-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-lip-tint-blush-learn-page .pomi-hero-grid,\n      #pomi-lip-tint-blush-learn-page .pomi-two-col,\n      #pomi-lip-tint-blush-learn-page .pomi-compare,\n      #pomi-lip-tint-blush-learn-page .pomi-wide-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-lip-tint-blush-learn-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-lip-tint-blush-learn-page .pomi-process,\n      #pomi-lip-tint-blush-learn-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-lip-tint-blush-learn-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-lip-tint-blush-learn-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-lip-tint-blush-learn-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-lip-tint-blush-learn-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-lip-tint-blush-learn-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 4,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 5,
+      "#ffffff": 11,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 9,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 3
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(2, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-lip-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-answer-box",
+      "pomi-compare",
+      "pomi-compare-card",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-faq",
+      "pomi-link-box",
+      "pomi-note-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "lip-tint-vs-lip-blush",
+  "url": "https://pomibrow.com/lip-tint-vs-lip-blush",
+  "capturedAt": "2026-09-11"
+}

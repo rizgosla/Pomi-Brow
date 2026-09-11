@@ -1,0 +1,44 @@
+---
+// A quiet caption under a photograph: what it is, what it shows, what it costs. Sentence case, muted.
+interface Props {
+  service: string;
+  detail?: string;
+  price?: string;
+  href?: string;
+  class?: string;
+}
+const { service, detail, price, href, class: className } = Astro.props;
+const Tag = href ? "a" : "div";
+---
+
+<Tag class:list={["caption", className]} href={href}>
+  <span class="caption__service">{service}</span>
+  {detail && <span class="caption__detail">{detail}</span>}
+  {price && <span class="caption__price meta">{price}</span>}
+</Tag>
+
+<style>
+  .caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.75rem;
+    padding-top: 0.75rem;
+    font-size: var(--fs-caption);
+    line-height: 1.4;
+    color: var(--ink-muted);
+    text-decoration: none;
+  }
+  .caption__service {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .caption__price {
+    margin-left: auto;
+  }
+  a.caption:hover .caption__service {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+</style>

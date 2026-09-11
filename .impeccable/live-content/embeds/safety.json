@@ -1,0 +1,891 @@
+{
+  "title": "Permanent Makeup Safety | Pomi B. Brow Studio",
+  "embedId": "pomi-safety-page",
+  "kicker": "Permanent Makeup Safety",
+  "h1": "Clean, Private, and Careful Permanent Makeup Appointments",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Permanent Makeup Safety",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Clean, Private, and Careful Permanent Makeup Appointments",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Your safety matters before, during, and after your appointment. At Pomi B. Brow Studio, I work in a private, controlled studio setting with careful sanitation, single-use tools, disposable barriers, and clear preparation guidance.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "This page explains how I prepare the space, handle tools, reduce cross-contamination risk, and help clients know when to ask questions before booking.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Ask Before Booking",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "**Safety starts with the setup.**",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "Private appointments, clean surfaces, fresh barriers, and single-use tools.",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "h3",
+      "text": "Private studio",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Appointments are focused on one client at a time.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Clean setup",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Surfaces are cleaned and prepared before each session.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Single-use tools",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Needles, tools, supplies, and pigment containers are used for one client.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Clear guidance",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Preparation and aftercare help protect your healed result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Start here",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What makes permanent makeup safer?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup involves the skin, so safety starts with the full appointment process. A safer appointment includes a clean studio, fresh disposable barriers, single-use tools, careful pigment handling, gloves, masks, and clear aftercare instructions.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "I want clients to feel comfortable asking questions. You should know how the space is prepared, what tools are used, and what to do before and after your appointment.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "My approach",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "I do not want permanent makeup to feel rushed or unclear. Before we begin, the space is prepared, the service is reviewed, and the tools used for your appointment are handled with care.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Private environment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "A controlled, one-client appointment setting",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup requires focus, detail, and trust. A private appointment setting helps keep the visit calm and controlled.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Why privacy matters",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "I work with one client at a time so the appointment does not feel crowded or distracting. This helps keep attention on your service, your comfort, and your safety.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "No crowded appointment space.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "No unnecessary traffic around the work area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "More focus during detailed cosmetic work.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "A calmer experience for personal services.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Why control matters",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "A controlled setup helps keep the work area clean and organized. Permanent makeup is detailed work, so the appointment space should support focus and cleanliness from start to finish.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Fresh setup for each appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Clean work area before the service begins.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Organized tools and supplies.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Clear steps during the session.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Sanitation",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Clean studio practices before each client",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Clean surfaces, fresh barriers, and careful setup all help reduce unnecessary contact with the treatment area and tools.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Clean surfaces",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Surfaces are disinfected and prepared between clients so the appointment starts with a clean work area.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Fresh barriers",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Disposable barriers help protect surfaces and are replaced for each session.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Protective setup",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Gloves, masks, and protective coverings are used as part of a clean appointment process.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "What this means for you",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "You should not have to wonder whether the space is ready for your appointment. Clean setup and fresh barriers are part of the service process.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Single-use tools",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why single-use permanent makeup tools matter",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Single-use tools help reduce cross-contamination risk because they are used for one client and then safely discarded.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Needles and cartridges",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Needles and cartridges should be new for the appointment. I open these items in front of you so you know they are fresh and have not been used on anyone else.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Pigment containers",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Pigment containers are used for one client only. This helps keep the pigment handling clean and prevents shared-use contamination.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Disposable supplies",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Disposable tools and supplies are used during the appointment and discarded after the session. This keeps the process clean from client to client.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "No reuse of single-use items",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Items designed for single use should never be cleaned and reused. They should be disposed of after the appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Client preparation",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Your preparation also affects safety",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "A safe appointment is not only about the studio. Your skin, timing, health history, and aftercare also matter.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Arrive with healthy skin",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Do not book over sunburn, cuts, irritation, breakouts, cold sores, or open skin.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Share health details",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Tell the studio about medications, allergies, healing concerns, or medical conditions.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Plan your timing",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid booking too close to weddings, vacations, photo shoots, or major events.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Follow aftercare",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Aftercare helps protect the treated area and supports the best healed result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Before your appointment",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you recently had filler, Botox, laser, chemical peels, waxing, brow treatments, lip treatments, eye procedures, scalp treatments, or other cosmetic work near the treatment area.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Who should ask first",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Who should ask before booking permanent makeup?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Some clients may still be good candidates, but timing matters. Please ask before booking if any of these apply to you.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Health and healing concerns",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are pregnant or nursing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You take blood thinners.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You are prone to keloids.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have a medical condition that affects healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have allergies or past reactions to cosmetic products.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Treatment area concerns",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have irritation, cuts, sunburn, or open skin near the area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have active breakouts near the treatment area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have a cold sore history and want lip tint.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have eye irritation and want eyeliner or lash enhancement.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "You have scalp irritation and want scalp micropigmentation.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Medical questions",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "p",
+      "text": "I can answer questions about the appointment process, but I cannot give medical clearance. For medical questions, medications, infections, skin conditions, or healing concerns, speak with your healthcare provider before scheduling.",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "By service",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Safety considerations by service",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Each service has different timing and preparation needs. Ask first if you are unsure.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Brows",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking microblading, powder brows, or shading if you have irritation, breakouts, sunburn, recent brow treatments, recent Botox, filler, laser, chemical peels, or sensitive skin near the brows.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyeliner and lash enhancement",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you have eye irritation, recent eye surgery, certain eye medications, recent cosmetic eye treatments, lash extensions, or sensitivity around the eyes.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Lip tint",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you have a cold sore history, active cold sore, cracked lips, irritation, recent filler, or recent treatments around the mouth.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp micropigmentation",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you have scalp irritation, open skin, sunburn, active flaking, recent scalp treatments, or recent hair transplant work.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Aftercare",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Safety continues after the appointment",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Aftercare protects the treated area while it heals. Fresh pigment can look darker or brighter at first, then soften as the skin heals.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Protect the healing area",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not pick, scratch, rub, or peel the treated area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid makeup directly on the healing area until cleared.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid soaking, sauna, steam, swimming, and heavy sweating while healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid sun exposure and harsh skincare near the area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Know when to ask",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Ask if you are unsure about aftercare products.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Ask if healing looks different than expected.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Ask before using active skincare near healed pigment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Contact a physician for signs of infection or medical concerns.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Helpful aftercare page",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Review the [Aftercare page](https://pomibrow.com/aftercare#top) before and after your appointment so you know what to avoid while healing.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup Safety FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Is permanent makeup safe?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup is safest when done in a clean, controlled studio with proper sanitation, single-use tools, careful setup, and clear aftercare instructions.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What should I look for in a permanent makeup studio?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Look for a private, clean appointment setting, disinfected surfaces, fresh disposable barriers, single-use tools, pigment containers used for one client, gloves, masks, and clear aftercare instructions.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Are needles and tools reused?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "No. Needles, cartridges, disposable tools, and single-use supplies are used for one client and then safely discarded.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why are single-use tools important?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Single-use tools help reduce cross-contamination risk because they are not shared between clients or reused after the appointment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Do you open needles in front of the client?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Needles and cartridges are opened in front of the client so you know they are new for your appointment.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should ask before booking?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active irritation, have a cold sore history for lip tint, have eye irritation for eye services, or recently had cosmetic treatments near the area.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can I book if I have irritated skin?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Do not book over active irritation, cuts, sunburn, breakouts, cold sores, open skin, or scalp irritation. Ask first so timing can be handled safely.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located at 2801 El Camino Real, Ste 13 in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "kicker",
+      "text": "Before you book",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Review FAQ and aftercare information",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Before scheduling, review the [FAQ page](https://pomibrow.com/faqs#top) and [Aftercare page](https://pomibrow.com/aftercare#top). These pages explain important preparation, healing, safety, and touch-up details.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Have a safety question before booking?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Contact Pomi B. Brow Studio in Tustin before scheduling. I can help you understand preparation, timing, aftercare, and whether you should ask additional questions before booking.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Your Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/aftercare#top",
+    "https://pomibrow.com/faqs#top",
+    "https://pomibrow.com/contact-form?from=microblading#top"
+  ],
+  "images": [],
+  "wordCount": 1436,
+  "faqSchema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is permanent makeup safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Permanent makeup is safest when done in a clean, controlled studio with proper sanitation, single-use tools, careful setup, and clear aftercare instructions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I look for in a permanent makeup studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Look for a private, clean appointment setting, disinfected surfaces, fresh disposable barriers, single-use tools, pigment containers used for one client, gloves, masks, and clear aftercare instructions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are needles and tools reused?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Needles, cartridges, disposable tools, and single-use supplies are used for one client and then safely discarded."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are single-use tools important?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Single-use tools help reduce cross-contamination risk because they are not shared between clients or reused after the appointment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you open needles in front of the client?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Needles and cartridges are opened in front of the client so you know they are new for your appointment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should ask before booking permanent makeup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active irritation, have a cold sore history for lip tint, have eye irritation for eye services, or recently had cosmetic treatments near the area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I book if I have irritated skin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Do not book over active irritation, cuts, sunburn, breakouts, cold sores, open skin, or scalp irritation. Ask first so timing can be handled safely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Pomi B. Brow Studio located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pomi B. Brow Studio is located at 2801 El Camino Real in Tustin, CA, near Irvine and central Orange County."
+        }
+      }
+    ]
+  },
+  "styleCss": "\n    #pomi-safety-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-safety-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-safety-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-safety-page .pomi-hero {\n      padding: 76px 0 56px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-safety-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.08fr 0.92fr;\n      gap: 38px;\n      align-items: center;\n    }\n\n    #pomi-safety-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-safety-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-safety-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-safety-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-safety-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-safety-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-safety-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-safety-page .pomi-lead {\n      font-size: 20px;\n      max-width: 720px;\n      color: #4b3c36;\n    }\n\n    #pomi-safety-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-safety-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-safety-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-safety-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-safety-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-safety-page .pomi-hero-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n    }\n\n    #pomi-safety-page .pomi-hero-card-inner {\n      border-radius: 24px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.14), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 28px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-safety-page .pomi-hero-card svg {\n      width: 100%;\n      max-width: 320px;\n      height: auto;\n      margin: 0 auto 20px;\n      display: block;\n    }\n\n    #pomi-safety-page .pomi-hero-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-safety-page .pomi-section {\n      padding: 64px 0;\n    }\n\n    #pomi-safety-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-safety-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 38px;\n      align-items: start;\n    }\n\n    #pomi-safety-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 28px;\n    }\n\n    #pomi-safety-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-safety-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-safety-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 28px;\n    }\n\n    #pomi-safety-page .pomi-warning-box {\n      background: #2b211d;\n      color: #ffffff;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 28px;\n    }\n\n    #pomi-safety-page .pomi-warning-box h3,\n    #pomi-safety-page .pomi-warning-box p,\n    #pomi-safety-page .pomi-warning-box li {\n      color: #ffffff;\n    }\n\n    #pomi-safety-page .pomi-note-box a,\n    #pomi-safety-page .pomi-text-link {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-safety-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 28px;\n    }\n\n    #pomi-safety-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-safety-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-safety-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 28px;\n    }\n\n    #pomi-safety-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-safety-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-safety-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n      box-shadow: 0 8px 22px rgba(74, 50, 40, 0.06);\n    }\n\n    #pomi-safety-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-safety-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-safety-page .pomi-final {\n      text-align: center;\n      padding: 72px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-safety-page .pomi-final h2,\n    #pomi-safety-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-safety-page .pomi-final p {\n      max-width: 760px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-safety-page .pomi-hero-grid,\n      #pomi-safety-page .pomi-two-col,\n      #pomi-safety-page .pomi-wide-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-safety-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-safety-page .pomi-process {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-safety-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-safety-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-safety-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-safety-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 8,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 2,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 4,
+      "#ffffff": 12,
+      "#d5b6a8": 1,
+      "#efd9cf": 6,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.14)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "rgba(74, 50, 40, 0.08)": 2,
+      "rgba(74, 50, 40, 0.06)": 1
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "30px",
+      "24px",
+      "50%",
+      "18px"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)",
+      "0 8px 22px rgba(74, 50, 40, 0.06)"
+    ],
+    "grids": [
+      "1.08fr 0.92fr",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(3, 1fr)",
+      "repeat(2, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-hero-card",
+      "pomi-hero-card-inner",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-note-box",
+      "pomi-warning-box",
+      "pomi-text-link",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-faq",
+      "pomi-final"
+    ]
+  },
+  "slug": "safety",
+  "url": "https://pomibrow.com/safety",
+  "capturedAt": "2026-09-11"
+}

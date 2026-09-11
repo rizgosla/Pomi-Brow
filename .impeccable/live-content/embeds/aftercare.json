@@ -1,0 +1,961 @@
+{
+  "title": "Permanent Makeup Aftercare | Pomi B. Brow Studio",
+  "embedId": "pomi-aftercare-page",
+  "kicker": "Permanent Makeup Aftercare",
+  "h1": "How to Care for Your Permanent Makeup After Your Appointment",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Permanent Makeup Aftercare",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "How to Care for Your Permanent Makeup After Your Appointment",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Aftercare helps protect your healed result. Permanent makeup can look darker, brighter, sharper, dry, flaky, or uneven while healing. This is normal for many clients, and the final color should not be judged too early.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "These instructions help you understand what to expect after brows, eyeliner, lash enhancement, lip tint, and scalp micropigmentation.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Ask an Aftercare Question",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "**Healing happens in stages.**",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "text",
+      "text": "Follow aftercare, avoid irritation, and wait for the healed result.",
+      "cls": "pomi-hero-card-inner"
+    },
+    {
+      "tag": "h3",
+      "text": "Do not pick",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Let dryness or flaking release on its own.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Keep it clean",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Use clean hands, clean cotton swabs, and follow the instructions given.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Avoid irritation",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Skip makeup, heavy sweating, soaking, and strong skincare while healing.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Wait for healing",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Color can change before the final result settles.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Start here",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What is normal after permanent makeup?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh pigment usually looks darker, sharper, or brighter right after the appointment. This is because the pigment has not fully settled into the healed skin yet.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "As the skin starts to heal, the area can look dry, flaky, lighter, or patchy. This can make the color look like it is fading too quickly, but much of what you see early on is part of the surface healing stage.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Final healed results can take several weeks to show. Touch-ups help review the healed color, shape, softness, and any areas that need more pigment.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "My advice",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Do not judge your final result during the first few days. Permanent makeup often looks darker at first, then lighter, then softer as healing continues.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Healing timeline",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "General permanent makeup healing timeline",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Every client heals differently, but this gives you a simple guide for what many clients experience.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Day 1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The color can look darker, sharper, brighter, or more intense than the final healed result.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Days 2 to 7",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Dryness, tightness, light flaking, or temporary patchiness can happen while the skin heals.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Weeks 2 to 6",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "The color softens and settles. The touch-up helps refine the healed result if needed.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Permanent makeup is usually a two-step process",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "The first appointment creates the foundation. The touch-up lets me review pigment retention and refine color, shape, softness, or density after healing.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "First 7 days",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to avoid while permanent makeup heals",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Follow the aftercare instructions for your specific service. In general, avoid anything that can irritate, soak, contaminate, or fade the treated area too soon.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Avoid touching and picking",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not touch the healing area with your fingers.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not rub, scratch, pick, or peel the treated area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Let flakes or dryness release naturally.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Use a clean cotton swab if aftercare product is recommended.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Avoid water, heat, and sweat",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid swimming pools, Jacuzzi use, and recreational bodies of water.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid sauna, steam, and heavy sweating while the area heals.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid soaking the treated area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Protect the area before bathing if instructed.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Avoid makeup and cosmetic treatments",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not apply makeup directly on the healing area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid tinting, lashes, brow treatments, or lip products near the treated area until cleared.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not schedule peels, laser, waxing, or exfoliating treatments too soon after the appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Avoid sun and strong skincare",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid sun exposure while healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "After healing, use sun protection to help prevent fading.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid AHA products, acids, retinoids, and exfoliants near the treated area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Always check product labels if you use active skincare.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "When to contact a physician",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you experience excessive redness, swelling, tenderness, elevated temperature, purulent drainage, or signs of infection, contact your physician. If itching, swelling, blistering, or a reaction happens after using an aftercare product, stop using it and ask for guidance.",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Brows",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Aftercare for microblading, powder brows, and shading",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Brow healing can look dramatic at first. The brows may look dark, crisp, dry, flaky, light, or patchy before the final healed result appears.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "What is normal for brows",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Brows can look darker and sharper right after the appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Dry skin or flaking can make the color look like it is fading.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Color may look very light before it settles.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The healed result can take several weeks to show.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "What to avoid",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not pick flakes or dry skin.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not apply brow makeup on the healing area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid sun, sweat, sauna, swimming, and harsh skincare while healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Keep AHA products, acids, retinoids, and exfoliants away from healed brow pigment when possible.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "About brow touch-ups",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up is where I can review pigment retention, fill lighter areas, adjust softness, and refine the final brow result.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Eyes",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Aftercare for eyeliner and lash enhancement",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Eye services are close to the lash line, so gentle care is important. The result can look more defined at first, then soften as the area calms and heals.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "What is normal for eye services",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The lash line or eyeliner can look darker at first.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The area can feel sensitive, tight, or slightly tender.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The color may soften as healing continues.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The touch-up helps refine the healed result if needed.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "What to avoid",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not apply eye makeup directly on the healing area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid rubbing your eyes.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Ask before using lash serums, lash extensions, or eye treatments near the appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Contact the studio if you are unsure about contacts, makeup, or eye products after your visit.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Ask before booking eye services",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you have active eye irritation, recent eye surgery, certain eye medications, recent cosmetic eye treatments, or sensitivity around the eyes.",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Lips",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Aftercare for lip tint",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint often looks brighter at first. The healed color is usually softer and more natural than the fresh result.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "What is normal for lips",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Lips can look bright or bold right after the appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Dryness, tightness, or light flaking can happen.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The color may look lighter before it settles.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The final tone depends on your natural lip color, healing, and touch-up.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "What to avoid",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Do not pick or peel dry lips.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid lipstick or lip products that are not approved during healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid spicy, irritating, or messy foods if they bother the area.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid sun exposure and follow the care instructions given after your appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Cold sore reminder",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "p",
+      "text": "If you have ever had a cold sore, tell the studio before booking lip tint. Lip tattooing may trigger a cold sore for some clients. For medical guidance, speak with your healthcare provider.",
+      "cls": "pomi-warning-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Scalp",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Aftercare for scalp micropigmentation",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation creates the look of fuller hair density with tiny pigment impressions. The scalp may look darker at first, then soften and blend as it heals.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "What is normal for SMP",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The treated area may look more noticeable right after the session.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "The pigment can soften as the scalp heals.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Additional sessions may be needed to build density.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Sun exposure can fade pigment faster over time.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "What to avoid",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid scratching or picking the scalp.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid sunburn before and after the appointment.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Avoid heavy sweating, soaking, sauna, or swimming while healing.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "li",
+      "text": "Ask before applying scalp products too soon after the session.",
+      "cls": "pomi-wide-card"
+    },
+    {
+      "tag": "h3",
+      "text": "About SMP sessions",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "SMP often builds in layers. A consultation helps decide the treatment area, density goal, hairline plan, and how many sessions may be needed.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "kicker",
+      "text": "Touch-ups",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Why touch-ups matter after healing",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-ups help complete the permanent makeup process. They are used to review what your skin kept after healing and make careful refinements.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Color refresh",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-ups can add color where the healed result looks too soft or light.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Shape refinement",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Brows, eyeliner, lips, and SMP can be refined after the healed result shows.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Softness check",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The healed result should look balanced, not too harsh or too heavy.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Maintenance",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Yearly touch-ups can help refresh pigment after natural fading.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup Aftercare FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Why does my permanent makeup look dark at first?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh pigment often looks darker, sharper, or brighter right after the appointment. As the skin heals, the color usually softens.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Is flaking normal after permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Light flaking or dryness can be normal for some services. Do not pick, peel, or scratch the treated area. Let dry skin release on its own.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why does the color look like it disappeared?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Permanent makeup can look lighter during healing. This does not always mean the pigment is gone. The color can soften, settle, and sometimes return more visibly as healing continues.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "How long does permanent makeup take to heal?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Visible healing often happens during the first 1 to 2 weeks, but the final healed color can take several weeks to show. Brows may take around 4 to 6 weeks before the result can be fully evaluated.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can I wear makeup while permanent makeup heals?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid applying makeup directly on or near the treated area until you are cleared. This helps protect the healing skin and the final result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "What should I avoid after permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid touching, picking, rubbing, makeup on the treated area, sun, sauna, Jacuzzi, swimming, heavy sweating, harsh skincare, AHA products, acids, retinoids, and exfoliants while healing.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "When should I contact the studio?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Contact the studio if you are unsure about aftercare, products, healing, or touch-up timing. For signs of infection or medical concerns, contact your physician.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Do I need a touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Most permanent makeup services are a two-step process. The touch-up helps review retention and refine color, shape, softness, or density after healing.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "kicker",
+      "text": "Before you book",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Review safety information before your appointment",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "p",
+      "text": "Before scheduling, review the [Safety page](https://pomibrow.com/safety#top) and [FAQ page](https://pomibrow.com/faqs#top). These pages explain important preparation, healing, and safety details.",
+      "cls": "pomi-note-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Have an aftercare question?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Contact Pomi B. Brow Studio in Tustin if you are unsure about healing, aftercare, touch-up timing, or whether something you are experiencing is normal.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Ask an Aftercare Question",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form?from=microblading#top"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/safety#top",
+    "https://pomibrow.com/faqs#top",
+    "https://pomibrow.com/contact-form?from=microblading#top"
+  ],
+  "images": [],
+  "wordCount": 1591,
+  "faqSchema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does my permanent makeup look dark at first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fresh pigment often looks darker, sharper, or brighter right after the appointment. As the skin heals, the color usually softens."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is flaking normal after permanent makeup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Light flaking or dryness can be normal for some services. Do not pick, peel, or scratch the treated area. Let dry skin release on its own."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does the color look like it disappeared?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Permanent makeup can look lighter during healing. This does not always mean the pigment is gone. The color can soften, settle, and sometimes return more visibly as healing continues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does permanent makeup take to heal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Visible healing often happens during the first 1 to 2 weeks, but the final healed color can take several weeks to show. Brows may take around 4 to 6 weeks before the result can be fully evaluated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I wear makeup while permanent makeup heals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Avoid applying makeup directly on or near the treated area until you are cleared. This helps protect the healing skin and the final result."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I avoid after permanent makeup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Avoid touching, picking, rubbing, makeup on the treated area, sun, sauna, Jacuzzi, swimming, heavy sweating, harsh skincare, AHA products, acids, retinoids, and exfoliants while healing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I contact the studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Contact the studio if you are unsure about aftercare, products, healing, or touch-up timing. For signs of infection or medical concerns, contact your physician."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a touch-up?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most permanent makeup services are a two-step process. The touch-up helps review retention and refine color, shape, softness, or density after healing."
+        }
+      }
+    ]
+  },
+  "styleCss": "\n    #pomi-aftercare-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-aftercare-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-aftercare-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-aftercare-page .pomi-hero {\n      padding: 76px 0 56px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-aftercare-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.08fr 0.92fr;\n      gap: 38px;\n      align-items: center;\n    }\n\n    #pomi-aftercare-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-aftercare-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-aftercare-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-aftercare-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-aftercare-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-aftercare-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-aftercare-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-aftercare-page .pomi-lead {\n      font-size: 20px;\n      max-width: 720px;\n      color: #4b3c36;\n    }\n\n    #pomi-aftercare-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-aftercare-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-aftercare-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-aftercare-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-aftercare-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-aftercare-page .pomi-hero-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n    }\n\n    #pomi-aftercare-page .pomi-hero-card-inner {\n      border-radius: 24px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.14), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 28px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-aftercare-page .pomi-hero-card svg {\n      width: 100%;\n      max-width: 320px;\n      height: auto;\n      margin: 0 auto 20px;\n      display: block;\n    }\n\n    #pomi-aftercare-page .pomi-hero-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-aftercare-page .pomi-section {\n      padding: 64px 0;\n    }\n\n    #pomi-aftercare-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-aftercare-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 38px;\n      align-items: start;\n    }\n\n    #pomi-aftercare-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 28px;\n    }\n\n    #pomi-aftercare-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-aftercare-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-aftercare-page .pomi-note-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 28px;\n    }\n\n    #pomi-aftercare-page .pomi-warning-box {\n      background: #2b211d;\n      color: #ffffff;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 28px;\n    }\n\n    #pomi-aftercare-page .pomi-warning-box h3,\n    #pomi-aftercare-page .pomi-warning-box p,\n    #pomi-aftercare-page .pomi-warning-box li {\n      color: #ffffff;\n    }\n\n    #pomi-aftercare-page .pomi-note-box a,\n    #pomi-aftercare-page .pomi-text-link {\n      color: #8f5a47;\n      font-weight: 700;\n      text-decoration: underline;\n    }\n\n    #pomi-aftercare-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 28px;\n    }\n\n    #pomi-aftercare-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-aftercare-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-aftercare-page .pomi-wide-grid {\n      display: grid;\n      grid-template-columns: repeat(2, 1fr);\n      gap: 18px;\n      margin-top: 28px;\n    }\n\n    #pomi-aftercare-page .pomi-wide-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-aftercare-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-aftercare-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n      box-shadow: 0 8px 22px rgba(74, 50, 40, 0.06);\n    }\n\n    #pomi-aftercare-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-aftercare-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-aftercare-page .pomi-final {\n      text-align: center;\n      padding: 72px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-aftercare-page .pomi-final h2,\n    #pomi-aftercare-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-aftercare-page .pomi-final p {\n      max-width: 760px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-aftercare-page .pomi-hero-grid,\n      #pomi-aftercare-page .pomi-two-col,\n      #pomi-aftercare-page .pomi-wide-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-aftercare-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-aftercare-page .pomi-process {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-aftercare-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-aftercare-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-aftercare-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-aftercare-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 8,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 2,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 4,
+      "#ffffff": 12,
+      "#d5b6a8": 1,
+      "#efd9cf": 6,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.14)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "rgba(74, 50, 40, 0.08)": 2,
+      "rgba(74, 50, 40, 0.06)": 1
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "30px",
+      "24px",
+      "50%",
+      "18px"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)",
+      "0 8px 22px rgba(74, 50, 40, 0.06)"
+    ],
+    "grids": [
+      "1.08fr 0.92fr",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "repeat(3, 1fr)",
+      "repeat(2, 1fr)",
+      "1fr"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-hero-card",
+      "pomi-hero-card-inner",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-note-box",
+      "pomi-warning-box",
+      "pomi-text-link",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-wide-grid",
+      "pomi-wide-card",
+      "pomi-faq",
+      "pomi-final"
+    ]
+  },
+  "slug": "aftercare",
+  "url": "https://pomibrow.com/aftercare",
+  "capturedAt": "2026-09-11"
+}

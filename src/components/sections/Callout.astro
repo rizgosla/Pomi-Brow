@@ -1,0 +1,114 @@
+---
+// An aside docked to a slide: a note, a line in Pomi's voice, a medical caution, or where to
+// read next. A rounded band with a pastel fill by tone: pale pink for a caution or Pomi's
+// voice, bone for a note or a set of links. At 60rem and up the tag and title sit in a narrow
+// left column with the text beside them, so a little text does not need a big card.
+import type { Callout as CalloutType } from "../../lib/sections";
+import Icon from "../Icon.astro";
+
+interface Props {
+  callout: CalloutType;
+  class?: string;
+}
+const { callout, class: className } = Astro.props;
+
+const tag = { note: "Note", voice: "From Pomi", caution: "Medical note", links: "" }[callout.tone];
+const tagClass = { note: "tag", voice: "tag tag--pink", caution: "tag tag--red", links: "tag" }[callout.tone];
+---
+
+<aside class:list={["callout", `callout--${callout.tone}`, className]}>
+  <div class="callout__head">
+    {tag && <span class={tagClass}>{tag}</span>}
+    <h3 class="callout__title">{callout.title}</h3>
+  </div>
+  <div class="callout__body">
+    {callout.text && <p class="callout__text">{callout.text}</p>}
+    {
+      callout.bullets && callout.bullets.length > 0 && (
+        <ul class="callout__list">
+          {callout.bullets.map((b) => (
+            <li>{b}</li>
+          ))}
+        </ul>
+      )
+    }
+    {
+      callout.links && callout.links.length > 0 && (
+        <ul class="callout__links">
+          {callout.links.map((l) => (
+            <li>
+              <a class="link" href={l.href}>
+                {l.label}
+                <Icon name="arrow" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</aside>
+
+<style>
+  .callout {
+    display: grid;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--bone);
+  }
+  .callout--caution,
+  .callout--voice {
+    background: var(--pale-pink);
+  }
+  .callout__head {
+    display: grid;
+    gap: var(--space-3);
+    justify-items: start;
+    align-content: start;
+  }
+  .callout__title {
+    max-width: 30ch;
+  }
+  .callout__body {
+    display: grid;
+    gap: var(--space-3);
+    min-width: 0;
+  }
+  .callout__text {
+    max-width: 64ch;
+    color: var(--ink-body);
+  }
+  /* Pomi's own words are set in the serif, the way a quote is set elsewhere on the site. */
+  .callout--voice .callout__text {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 24;
+    font-size: var(--fs-quote);
+    line-height: 1.35;
+    color: var(--ink);
+    max-width: 44ch;
+  }
+  .callout__list {
+    display: grid;
+    gap: var(--space-2);
+    padding-left: 1.1rem;
+    list-style: disc;
+    max-width: 64ch;
+    color: var(--ink-body);
+  }
+  .callout__list li::marker {
+    color: var(--ink-muted);
+  }
+  .callout__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-6);
+  }
+  @media (min-width: 60rem) {
+    .callout {
+      grid-template-columns: 16rem minmax(0, 1fr);
+      column-gap: var(--space-7);
+      align-items: start;
+    }
+  }
+</style>

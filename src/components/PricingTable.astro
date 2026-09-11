@@ -1,0 +1,235 @@
+---
+// Services and prices as a bento grid: one card per service, an extras card for maintenance and correction.
+// Everything here is editable from the CMS.
+import type { Service } from "../lib/content";
+import { formatPrice } from "../lib/content";
+import Icon from "./Icon.astro";
+import Photo from "./Photo.astro";
+
+interface Props {
+  services: Service[];
+}
+const { services } = Astro.props;
+
+const main = services.filter((s) => s.showOnHome && ["Eyebrows", "Eyes", "Lips", "Hair"].includes(s.category));
+const extras = services.filter((s) => s.showOnHome && ["Maintenance", "Correction"].includes(s.category));
+
+const tagTone: Record<string, string> = {
+  Eyebrows: "tag--brow",
+  Eyes: "tag--eye",
+  Lips: "tag--lip",
+  Hair: "tag--hair",
+};
+
+function priceLabel(s: Service) {
+  return formatPrice(s.price) + (s.priceUnit ? ` / ${s.priceUnit}` : "");
+}
+---
+
+<section class="prices section" id="services" aria-labelledby="services-heading">
+  <div class="page">
+    <div class="section-head reveal">
+      <h2 id="services-heading">Services and prices</h2>
+      <p class="lede">
+        Every service is two appointments: the first session, then a perfecting touch-up around six weeks later, once it has healed.
+      </p>
+    </div>
+
+    <ul class="bento">
+      {
+        main.map((s, i) => (
+          <li class="card service reveal" style={`--i: ${i % 4}`}>
+            {s.cover && (
+              <div class="service__cover">
+                <Photo
+                  photo={s.cover}
+                  widths={[300, 500, 700]}
+                  sizes="(min-width: 90rem) 22vw, (min-width: 60rem) 30vw, (min-width: 40rem) 45vw, 92vw"
+                />
+              </div>
+            )}
+            <h3 class="service__title">
+              <a href={`/services/${s.slug}`}>{s.title}</a>
+            </h3>
+            {s.summary && <p class="service__summary">{s.summary}</p>}
+            <div class="service__price">
+              <span class="service__amount">{priceLabel(s)}</span>
+              {s.touchUpPrice != null && <span class="muted">+ {formatPrice(s.touchUpPrice)} touch-up</span>}
+            </div>
+            <div class="service__foot">
+              <span class:list={["tag", tagTone[s.category]]}>{s.category}</span>
+              <span class="service__cta">
+                Details
+                <Icon name="arrow" class="service__arrow" />
+              </span>
+            </div>
+          </li>
+        ))
+      }
+      {
+        extras.length > 0 && (
+          <li class="card service service--extras reveal" style="--i: 2">
+            {extras[0]?.cover && (
+              <div class="service__cover">
+                <Photo
+                  photo={extras[0].cover}
+                  widths={[300, 500, 700]}
+                  sizes="(min-width: 90rem) 22vw, (min-width: 60rem) 30vw, (min-width: 40rem) 45vw, 92vw"
+                />
+              </div>
+            )}
+            <h3 class="service__title">Touch-ups and correction</h3>
+            <p class="service__summary">For clients whose work is already healed.</p>
+            <ul class="extras">
+              {extras.map((s) => (
+                <li>
+                  <span>
+                    {s.title}
+                    {s.priceNote && <span class="muted"> · {s.priceNote}</span>}
+                  </span>
+                  <span class="service__amount">{priceLabel(s)}</span>
+                </li>
+              ))}
+            </ul>
+          </li>
+        )
+      }
+    </ul>
+
+    <p class="prices__foot">Prices current as of May 2026 and subject to change.</p>
+  </div>
+</section>
+
+<style>
+  .bento {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .service {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  /* The cover bleeds to the card edge and takes the card radius on its top corners,
+     so it reads as the card wearing a photograph rather than a photo pasted inside a box.
+     5:2 is not a taste: four of these covers are stacked before/after composites, and
+     isolating one half of a square pair with object-fit needs a box wider than 2:1. */
+  /* Square, at the card's full width. A square frame on a square source crops nothing, so
+     the four before/after covers show as the pair they are, the same as the hero wall. */
+  .service__cover :global(.photo) {
+    aspect-ratio: 1 / 1;
+  }
+  .service__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-top: auto;
+    padding-top: var(--space-2);
+  }
+  .service__title a {
+    text-decoration: none;
+  }
+  .service__title a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+  .service__summary {
+    color: var(--ink-muted);
+    font-size: var(--fs-small);
+    max-width: 48ch;
+  }
+  .service__price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-top: var(--space-3);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+    font-size: var(--fs-small);
+    font-variant-numeric: tabular-nums;
+  }
+  .service__amount {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+  /* The card is fully clickable but nothing said so until an already-arrived
+     pointer nudged the arrow. This reads as a link at rest. */
+  .service__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--ink-muted);
+    font-size: var(--fs-small);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: color var(--dur-base) ease, text-decoration-color var(--dur-base) ease;
+  }
+  .service:hover .service__cta {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+  /* Under the home-only launch gate the title link has no href, so there is nothing to detail. */
+  .service:has(.service__title a[aria-disabled="true"]) .service__cta {
+    display: none;
+  }
+  .service :global(.service__arrow) {
+    width: 1rem;
+    height: 1rem;
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+  .service:hover :global(.service__arrow) {
+    transform: translateX(3px);
+    color: var(--ink);
+  }
+  .extras {
+    display: grid;
+  }
+  .extras li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--space-4);
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border);
+    font-size: var(--fs-small);
+  }
+  .extras .service__amount {
+    white-space: nowrap;
+    font-size: var(--fs-body);
+  }
+  .extras li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .prices__foot {
+    margin-top: var(--space-5);
+    font-size: var(--fs-caption);
+    color: var(--ink-muted);
+  }
+  @media (min-width: 40rem) {
+    .bento {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 60rem) {
+    .bento {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  /* Four across in the wide field: eight cards land as two clean rows, and each
+     photograph gets smaller rather than each card getting wider. */
+  @media (min-width: 90rem) {
+    .bento {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+</style>

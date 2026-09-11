@@ -1,0 +1,107 @@
+---
+// Curated reviews, copied word for word from Yelp, as three quiet cards.
+import type { Review, SiteSettings } from "../lib/content";
+import Icon from "./Icon.astro";
+
+interface Props {
+  reviews: Review[];
+  settings: SiteSettings;
+}
+const { reviews, settings } = Astro.props;
+const isPlaceholder = (s: string | undefined | null) => /placeholder/i.test(s ?? "");
+// A placeholder review is not a review. The block promises words copied from
+// Yelp, so it ships only when every card can keep that promise.
+const real = reviews.filter((r) => !isPlaceholder(r.quote) && !isPlaceholder(r.reviewer));
+const shown = real.slice(0, 3);
+const LONG_QUOTE = 220;
+---
+
+{
+  shown.length > 0 && (
+    <section class="reviews section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="page">
+        <div class="section-head reveal">
+          <h2 id="reviews-heading">In their words.</h2>
+          <p class="lede">Copied word for word from Yelp. Nothing here was written for this page.</p>
+        </div>
+
+        <ul class="reviews__list">
+          {shown.map((r, i) => (
+            <li class="card reviews__item reveal" style={`--i: ${i}`}>
+              <blockquote>
+                <p class:list={["reviews__quote", { "reviews__quote--long": r.quote.length > LONG_QUOTE }]}>{r.quote}</p>
+                <footer class="reviews__meta">
+                  <span class="reviews__name">{r.reviewer}</span>
+                  {r.sourceUrl ? (
+                    <a class="tag" href={r.sourceUrl} rel="noopener">
+                      {r.source}
+                    </a>
+                  ) : (
+                    <span class="tag">{r.source}</span>
+                  )}
+                </footer>
+              </blockquote>
+            </li>
+          ))}
+        </ul>
+
+        <div class="reviews__foot reveal">
+          <a class="btn btn--quiet" href={settings.yelpUrl} rel="noopener">
+            <Icon name="yelp" />
+            All {settings.yelpReviewCount}+ reviews on Yelp
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .reviews__list {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .reviews__item blockquote {
+    margin: 0;
+    display: grid;
+    gap: var(--space-5);
+    height: 100%;
+    align-content: space-between;
+  }
+  .reviews__quote {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 24;
+    font-size: var(--fs-quote);
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-wrap: pretty;
+  }
+  .reviews__quote--long {
+    font-family: var(--font-body);
+    font-variation-settings: normal;
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    letter-spacing: 0;
+    color: var(--ink-body);
+  }
+  .reviews__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  .reviews__meta .tag {
+    text-decoration: none;
+  }
+  .reviews__foot {
+    margin-top: var(--space-6);
+  }
+  @media (min-width: 60rem) {
+    .reviews__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

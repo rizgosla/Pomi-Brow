@@ -1,0 +1,42 @@
+---
+// Aftercare, as a slide page: what is normal, the healing timeline, what to avoid, and the
+// care for each area, one idea per section.
+//
+// The copy is Pomi's own, condensed from the previous site's /aftercare embed
+// (.impeccable/live-content/embeds/aftercare.md) to roughly half its length: every section and
+// every fact kept, paragraphs shortened, repeated calls to action dropped. Medical wording
+// (infection signs, the cold-sore warning) is verbatim. Photographs are still to come; each
+// slot names the shot it is waiting for. The lead photograph sits beside the title.
+import Base from "../layouts/Base.astro";
+import PageHeader from "../components/PageHeader.astro";
+import ImageSlot from "../components/sections/ImageSlot.astro";
+import Sections from "../components/sections/Sections.astro";
+import ContactForm from "../components/ContactForm.astro";
+import { getSiteSettings, getServices, getLearnArticles, getPage } from "../lib/content";
+
+const [settings, services, learn, page] = await Promise.all([
+  getSiteSettings(),
+  getServices(),
+  getLearnArticles(),
+  getPage("aftercare"),
+]);
+if (!page) throw new Error("pages.json has no 'aftercare' page");
+const faqs = learn.filter((a) => a.showAsFaq);
+---
+
+<Base
+  title={`Permanent makeup aftercare | ${settings.businessName}`}
+  description="What is normal while permanent makeup heals, the day-by-day timeline, what to avoid in the first week, and the care for brows, eyes, lips and scalp."
+  settings={settings}
+  services={services}
+  faqs={faqs}
+  canonicalPath="/aftercare"
+>
+  <PageHeader title={page.title} lede={page.lede} meta={page.meta}>
+    {page.lead && <ImageSlot slot="aside" image={page.lead} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />}
+  </PageHeader>
+
+  <Sections sections={page.sections} settings={settings} />
+
+  <ContactForm settings={settings} services={services} />
+</Base>

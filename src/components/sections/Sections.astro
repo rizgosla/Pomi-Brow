@@ -1,0 +1,85 @@
+---
+// A page's sections, one after another, each on its own hairline: the slide-deck rhythm the
+// previous site had, kept, with its kickers, tints and dark bands left behind. Every section
+// opens with h2 then lede and nothing above the heading.
+import type { Section } from "../../lib/sections";
+import type { SiteSettings } from "../../lib/content";
+import Facts from "./Facts.astro";
+import Statement from "./Statement.astro";
+import Grid from "./Grid.astro";
+import Sequence from "./Sequence.astro";
+import Compare from "./Compare.astro";
+import Faq from "../Faq.astro";
+import CtaBand from "../CtaBand.astro";
+
+interface Props {
+  sections: Section[];
+  settings: SiteSettings;
+}
+const { sections, settings } = Astro.props;
+
+const slug = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+let statements = 0;
+---
+
+{
+  sections.map((s, i) => {
+    if (s.type === "facts") {
+      return (
+        <section class="slide slide--facts">
+          <div class="page">
+            <Facts items={s.items} />
+          </div>
+        </section>
+      );
+    }
+    if (s.type === "cta") {
+      return <CtaBand heading={s.heading} text={s.text} links={s.links} settings={settings} id={`cta-${i}`} />;
+    }
+    if (s.type === "faq") {
+      return (
+        <Faq
+          items={s.items}
+          heading={s.heading ?? "Questions people ask first."}
+          lede={s.lede ?? "Short answers. Ask the rest before you book."}
+          id={s.heading ? slug(s.heading) : `questions-${i}`}
+          showLearnLink={false}
+        />
+      );
+    }
+    const id = slug(s.heading);
+    const flip = s.type === "statement" ? statements++ % 2 === 1 : false;
+    return (
+      <section class:list={["section", "slide", `slide--${s.type}`]} id={id} aria-labelledby={`${id}-heading`}>
+        <div class="page">
+          <div class="section-head slide__head reveal">
+            <h2 id={`${id}-heading`}>{s.heading}</h2>
+            {s.lede && <p class="lede">{s.lede}</p>}
+          </div>
+          {s.type === "statement" && <Statement section={s} flip={flip} />}
+          {s.type === "grid" && <Grid section={s} />}
+          {s.type === "sequence" && <Sequence section={s} />}
+          {s.type === "compare" && <Compare section={s} />}
+        </div>
+      </section>
+    );
+  })
+}
+
+<style>
+  /* The facts strip is the header's last line, not a section: no section pad, no hairline. */
+  .slide--facts {
+    padding-bottom: var(--space-6);
+  }
+  .slide :global(.slide__head h2) {
+    max-width: 24ch;
+  }
+  .slide :global(.slide__head .lede) {
+    max-width: 52ch;
+  }
+</style>

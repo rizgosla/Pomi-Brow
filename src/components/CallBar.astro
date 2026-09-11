@@ -1,0 +1,92 @@
+---
+// Bottom-pinned action on phones. One control when booking is by phone; Call + Book when a booking link exists.
+import type { SiteSettings } from "../lib/content";
+import Icon from "./Icon.astro";
+
+interface Props {
+  settings: SiteSettings;
+}
+const { settings } = Astro.props;
+const bookIsCall = settings.bookingHref.startsWith("tel:");
+---
+
+<div class:list={["callbar", { "callbar--solo": bookIsCall }]} data-callbar>
+  {
+    bookIsCall ? (
+      <a class="btn callbar__btn" href={`tel:${settings.phoneTel}`}>
+        <Icon name="phone" />
+        <span>Call {settings.phone}</span>
+      </a>
+    ) : (
+      <>
+        <a class="btn btn--quiet callbar__btn" href={`tel:${settings.phoneTel}`}>
+          <Icon name="phone" />
+          <span>Call</span>
+        </a>
+        <a class="btn callbar__btn" href={settings.bookingHref}>
+          <span>Book</span>
+          <Icon name="arrow" />
+        </a>
+      </>
+    )
+  }
+</div>
+
+<style>
+  .callbar {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 60;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+    padding: 0.75rem var(--gutter) calc(0.75rem + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+  .callbar--solo {
+    grid-template-columns: 1fr;
+  }
+  .callbar[data-hidden] {
+    transform: translateY(100%);
+  }
+  .callbar__btn {
+    min-height: 2.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .callbar {
+      transition: none;
+    }
+  }
+  @media (min-width: 60rem) {
+    .callbar {
+      display: none;
+    }
+  }
+  :global(body) {
+    padding-bottom: calc(var(--callbar-h) + env(safe-area-inset-bottom));
+  }
+  @media (min-width: 60rem) {
+    :global(body) {
+      padding-bottom: 0;
+    }
+  }
+</style>
+
+<script>
+  // Slide the bar away while the contact form has focus so it never covers a field or the submit.
+  const bar = document.querySelector<HTMLElement>("[data-callbar]");
+  const form = document.querySelector<HTMLFormElement>("[data-contact-form]");
+  if (bar && form) {
+    form.addEventListener("focusin", () => bar.setAttribute("data-hidden", ""));
+    form.addEventListener("focusout", (e) => {
+      const next = (e as FocusEvent).relatedTarget as Node | null;
+      if (!next || !form.contains(next)) bar.removeAttribute("data-hidden");
+    });
+  }
+</script>

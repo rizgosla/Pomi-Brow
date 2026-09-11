@@ -1,0 +1,923 @@
+{
+  "title": "Microblading vs Powder Brows | Pomi B. Brow Studio Guide",
+  "embedId": "pomi-powder-brows-learn-page",
+  "kicker": "Learn About Powder Brows",
+  "h1": "Are Powder Brows Right for Me?",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Learn About Powder Brows",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "Are Powder Brows Right for Me?",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows are a soft shaded brow service for people who want fuller, more defined brows with a polished makeup-like finish. This guide explains who powder brows are best for, how they compare to microblading, and what to expect before booking.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Brow Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Soft shaded brow look",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Helpful for many skin types",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-brow-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Powder Brows**",
+      "cls": "pomi-brow-card"
+    },
+    {
+      "tag": "text",
+      "text": "Soft at the front, fuller through the arch and tail.",
+      "cls": "pomi-brow-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Powder brows are a strong choice if you want soft, filled-in brows",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows are best for clients who like the look of softly filled-in brows and want more definition than bare natural brows. They are often a good fit for sparse brows, uneven brows, patchy areas, and clients who want less daily brow makeup.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "If you prefer individual hair-like strokes, microblading may be a better fit. If you want both hair-stroke detail and extra fullness, microblading / shading may be the best option.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "Quick guide",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "p",
+      "text": "Choose powder brows if you want a soft makeup finish, more density, better shape, and a brow look that stays polished. Choose microblading if you want a more hair-stroke look. Choose microblading / shading if you want natural strokes with added fullness.",
+      "cls": "pomi-answer-box"
+    },
+    {
+      "tag": "button",
+      "text": "View Ombre Powder Brows",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/ombre-powder-brows-tustin-ca"
+    },
+    {
+      "tag": "button",
+      "text": "Compare Microblading",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/microblading-tustin-ca"
+    },
+    {
+      "tag": "kicker",
+      "text": "Best fit",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Powder brows may be right for you if...",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows work well for clients who want brows that look softly filled in, balanced, and more defined.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You fill in your brows daily",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows help create a soft filled-in look without daily pencil or powder.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Your brows look uneven",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Custom brow mapping helps improve balance between both brows.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You want more fullness",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Soft shading helps reduce the look of patchy or sparse areas.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You want less maintenance",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows help you spend less time shaping and filling your brows.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "About the service",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What are powder brows?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows, also called ombre powder brows, use a soft shading technique to create the look of fuller brows. The front of the brow usually stays softer, while the arch and tail look more defined.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The healed result often looks similar to a soft brow powder or pencil finish. The goal is to enhance your natural features, improve shape, and create a brow look that fits your face.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "kicker",
+      "text": "Compare brow services",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Powder brows vs microblading vs microblading / shading",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "The right brow service depends on your skin, natural brow hair, preferred style, and how much definition you want.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Powder Brows",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "p",
+      "text": "Best if you want a soft shaded brow look with more fullness and definition. This is a good option if you like the look of brow powder or pencil.",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "button",
+      "text": "View Powder Brows",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/ombre-powder-brows-tustin-ca"
+    },
+    {
+      "tag": "h3",
+      "text": "Microblading",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "p",
+      "text": "Best if you want fine hair-like strokes and a natural brow-hair look. This is a good option if you want a soft result with realistic detail.",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "button",
+      "text": "View Microblading",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/microblading-tustin-ca"
+    },
+    {
+      "tag": "h3",
+      "text": "Microblading / Shading",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "p",
+      "text": "Best if you want the look of hair-like strokes with extra fullness from soft shading. This option adds more density than microblading alone.",
+      "cls": "pomi-compare-card"
+    },
+    {
+      "tag": "button",
+      "text": "View Combination Brows",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/microblading-shading-tustin-ca"
+    },
+    {
+      "tag": "kicker",
+      "text": "Skin and style",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "How to know if powder brows fit your skin and style",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows are often chosen by clients who want a more polished brow finish. The final recommendation should come from a consultation, because every client’s skin and brow goals are different.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Your current brows",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "If your brows are sparse, patchy, or uneven, powder brows help build a fuller-looking shape.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Your makeup style",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "If you usually fill your brows with pencil or powder, powder brows may match your everyday look.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Your healed goal",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "If you want soft definition instead of individual strokes, powder brows may fit your goal better.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "kicker",
+      "text": "Not sure yet?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Powder brows may not be your best option if...",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows are not the only brow option. Another brow service may fit better depending on the look you want.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "You want only hair strokes",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading may fit better if you want the look of individual brow hairs.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You want the softest finish",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "A consultation helps decide how light or defined your powder brow result should be.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You are unsure about shape",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Custom mapping helps you review the shape before the service begins.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "You have skin concerns",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before booking if you have irritation, recent treatments, or healing concerns near the brow area.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Healing expectations",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "What should you expect after powder brows?",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows usually look darker and more defined at first. As the skin heals, the color softens and the brows begin to look more natural.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "During healing, brows may look dry, flaky, lighter, or uneven before the final color settles. The touch-up appointment helps refine the color, shape, and softness.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "button",
+      "text": "Read Healing Timeline",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/learn/permanent-makeup-healing-timeline"
+    },
+    {
+      "tag": "button",
+      "text": "Read Aftercare",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/aftercare"
+    },
+    {
+      "tag": "kicker",
+      "text": "Before you book",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Questions to ask before choosing powder brows",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "These questions help you decide whether powder brows are the right brow service for your goals.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Do I want a makeup look?",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If you like a soft filled-in brow, powder brows may be a good match.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Do I want more shape?",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If your brows need better structure, powder brows help define the arch and tail.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Do I want more density?",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If your brows look thin or patchy, shading helps create the look of fullness.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Do I want less daily makeup?",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "If you fill your brows every day, powder brows help reduce that step.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Helpful links",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Learn more before your brow appointment",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "p",
+      "text": "Review related brow services, aftercare, and safety information before booking. These pages help you compare your options and understand the process.",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "button",
+      "text": "Ombre Powder Brows",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/ombre-powder-brows-tustin-ca"
+    },
+    {
+      "tag": "button",
+      "text": "Microblading",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/microblading-tustin-ca"
+    },
+    {
+      "tag": "button",
+      "text": "Safety",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/safety"
+    },
+    {
+      "tag": "button",
+      "text": "Book Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Are Powder Brows For Me? FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Are powder brows good for sparse brows?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Yes. Powder brows are often a strong option for sparse or patchy brows because the shading helps create the look of more fullness and structure.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Do powder brows look natural?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows can look soft and natural when the shape, color, and density are customized. The result is usually more filled-in than microblading, but it does not need to look heavy.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Are powder brows better than microblading?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "One is not better for everyone. Powder brows are better if you want a shaded makeup-like finish. Microblading is better if you want fine hair-like strokes. Microblading / shading combines both effects.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Who should choose powder brows?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows may fit you if you want more brow definition, a soft filled-in look, better symmetry, and less daily brow makeup.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Will powder brows look too dark at first?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh powder brows often look darker and more defined at first. The color usually softens as the brows heal.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Do powder brows need a touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Most clients need a touch-up to refine the healed color, shape, and softness. The touch-up helps complete the final result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Where is Pomi B. Brow Studio located?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio is located in Tustin, CA, near Irvine and central Orange County.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Still wondering if powder brows are right for you?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Book a brow consultation with Pomi B. Brow Studio in Tustin. We will help you compare powder brows, microblading, and microblading / shading so you can choose the right brow service for your goals.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book a Consultation",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/ombre-powder-brows-tustin-ca",
+    "https://pomibrow.com/microblading-tustin-ca",
+    "https://pomibrow.com/microblading-shading-tustin-ca",
+    "https://pomibrow.com/learn/permanent-makeup-healing-timeline",
+    "https://pomibrow.com/aftercare",
+    "https://pomibrow.com/safety"
+  ],
+  "images": [],
+  "wordCount": 1183,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-powder-brows-learn-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-powder-brows-learn-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-powder-brows-learn-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-powder-brows-learn-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-powder-brows-learn-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-powder-brows-learn-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-powder-brows-learn-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-powder-brows-learn-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-brow-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 40%, rgba(143, 90, 71, 0.18), transparent 32%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-brow-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-brow-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-brow-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-powder-brows-learn-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-answer-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n      margin-top: 26px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-compare {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-compare-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-powder-brows-learn-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-powder-brows-learn-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-powder-brows-learn-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-powder-brows-learn-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-link-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-final h2,\n    #pomi-powder-brows-learn-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-powder-brows-learn-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-powder-brows-learn-page .pomi-hero-grid,\n      #pomi-powder-brows-learn-page .pomi-two-col {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-powder-brows-learn-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-powder-brows-learn-page .pomi-process,\n      #pomi-powder-brows-learn-page .pomi-trust,\n      #pomi-powder-brows-learn-page .pomi-compare {\n        grid-template-columns: 1fr;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-powder-brows-learn-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-powder-brows-learn-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-powder-brows-learn-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-powder-brows-learn-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-powder-brows-learn-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [
+    {
+      "tag": "h1",
+      "text": "What Is Microblading?"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading is a semi-permanent brow service that creates fine, hair-like strokes using pigment to enhance the appearance of your eyebrows. The goal of microblading is to make brows look fuller while maintaining a soft and natural finish. This method is particularly suited for clients seeking a subtle enhancement and who already have some natural brow hair."
+    },
+    {
+      "tag": "p",
+      "text": "Microblading may be an ideal choice if:"
+    },
+    {
+      "tag": "p",
+      "text": "- Your brows are sparse or uneven"
+    },
+    {
+      "tag": "p",
+      "text": "- You desire a natural hair-stroke look"
+    },
+    {
+      "tag": "p",
+      "text": "- You have normal to dry skin"
+    },
+    {
+      "tag": "p",
+      "text": "- You want to fill small gaps"
+    },
+    {
+      "tag": "p",
+      "text": "- You prefer a look that avoids makeup-style brows"
+    },
+    {
+      "tag": "p",
+      "text": "- You wish for soft, realistic-looking brows"
+    },
+    {
+      "tag": "p",
+      "text": "While microblading offers many benefits, it is usually not recommended for those with oily skin, as the strokes may heal softer, fade faster, or blur over time. For those seeking a different style, powder brows could be an alternative, as they provide a more filled-in appearance with a soft, powdered finish."
+    },
+    {
+      "tag": "h4",
+      "text": "What Are Powder Brows?"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows, also known as ombre powder brows, offer a beautifully soft shaded brow look. Unlike microblading, which focuses on individual hair strokes, this technique provides a gentle layer of color throughout the brow."
+    },
+    {
+      "tag": "p",
+      "text": "The outcome can range from soft and natural to more defined, based on your personal style preferences."
+    },
+    {
+      "tag": "p",
+      "text": "Choosing powder brows may be ideal if you:"
+    },
+    {
+      "tag": "p",
+      "text": "- Enjoy a softly filled-in brow appearance"
+    },
+    {
+      "tag": "p",
+      "text": "- Have oily skin"
+    },
+    {
+      "tag": "p",
+      "text": "- Struggle with sparse brows"
+    },
+    {
+      "tag": "p",
+      "text": "- Seek improved color retention"
+    },
+    {
+      "tag": "p",
+      "text": "- Desire added definition"
+    },
+    {
+      "tag": "p",
+      "text": "- Regularly fill in your brows with makeup"
+    },
+    {
+      "tag": "p",
+      "text": "- Want brows that appear polished yet still soft"
+    },
+    {
+      "tag": "p",
+      "text": "Additionally, powder brows often last longer than microblading, making them a great option for clients with oily skin or very sparse brows, especially when considering semi-permanent brow services."
+    },
+    {
+      "tag": "h4",
+      "text": "Main Difference Between Microblading and Powder Brows"
+    },
+    {
+      "tag": "p",
+      "text": "The biggest difference in semi-permanent brow services is the final look. Microblading creates hair-like strokes that resemble natural brow hair, giving you a very authentic appearance. On the other hand, powder brows provide a soft shading effect that looks more like soft brow makeup."
+    },
+    {
+      "tag": "p",
+      "text": "Here's a simple guide to help you choose:"
+    },
+    {
+      "tag": "p",
+      "text": "- Opt for microblading if you desire the most natural hair-stroke look."
+    },
+    {
+      "tag": "p",
+      "text": "- Choose powder brows if you prefer a softly filled-in appearance."
+    },
+    {
+      "tag": "p",
+      "text": "- Consider combo brows if you want to enjoy both hair strokes and shading."
+    },
+    {
+      "tag": "h4",
+      "text": "Which Looks More Natural?"
+    },
+    {
+      "tag": "p",
+      "text": "Both microblading and powder brows can look natural when done well. Microblading often appears more natural on clients who have existing brow hair, as the strokes seamlessly blend into the natural brow. On the other hand, powder brows can achieve a natural look, especially when the color is soft and the shape is not overly harsh. This technique is an excellent choice for clients seeking more fullness or for those whose skin does not retain microblading strokes effectively. At Pomi B. Brow Studio, our goal with our semi-permanent brow services is always to create brows that complement your face, rather than brows that look stamped on."
+    },
+    {
+      "tag": "h4",
+      "text": "Which Is Better for Oily Skin?"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows are often the ideal choice for individuals with oily skin. Oily skin can lead to microblading strokes fading more quickly or not healing as sharply. In contrast, powder brows utilize a shading technique that tends to hold up better on oily skin. If you have oily skin and desire a natural outcome, Pomi may suggest opting for powder brows or combo brows instead of relying solely on microblading."
+    },
+    {
+      "tag": "h4",
+      "text": "Which Lasts Longer?"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows often last longer than microblading, especially for those with oily skin. While microblading typically lasts between 1 to 3 years, this duration can vary based on skin type, lifestyle, sun exposure, skincare routines, and aftercare. In contrast, powder brows can also last for 1 to 3 years, but many clients report that the shaded effect of powder brows tends to hold better over time. To maintain both semi-permanent brow services, annual refresh appointments are recommended."
+    },
+    {
+      "tag": "h4",
+      "text": "What Are Combo Brows?"
+    },
+    {
+      "tag": "p",
+      "text": "Combo brows utilize both microblading and powder brows techniques. This option is particularly beneficial for clients seeking natural hair strokes in the front of the brow while achieving more fullness throughout the body and tail. Combo brows may be an ideal selection if: You desire natural detail combined with definition, your brows are sparse in certain areas, you want a fuller result than what microblading alone can provide, you prefer a soft yet polished brow, or your skin requires better color retention. Overall, combo brows serve as an excellent middle ground between microblading and semi-permanent brow services like powder brows."
+    },
+    {
+      "tag": "h4",
+      "text": "Which Brow Service Is Best for You?"
+    },
+    {
+      "tag": "p",
+      "text": "The best brow service, whether it be microblading, powder brows, or other semi-permanent brow services, depends on your skin type, natural brow hair, and the look you desire."
+    },
+    {
+      "tag": "p",
+      "text": "Microblading may be the best choice if:"
+    },
+    {
+      "tag": "p",
+      "text": "- You want hair-like strokes"
+    },
+    {
+      "tag": "p",
+      "text": "- You have normal to dry skin"
+    },
+    {
+      "tag": "p",
+      "text": "- You already have some brow hair"
+    },
+    {
+      "tag": "p",
+      "text": "- You want the softest, most natural enhancement"
+    },
+    {
+      "tag": "p",
+      "text": "Powder brows may be ideal if:"
+    },
+    {
+      "tag": "p",
+      "text": "- You have oily skin"
+    },
+    {
+      "tag": "p",
+      "text": "- You desire a soft makeup look"
+    },
+    {
+      "tag": "p",
+      "text": "- You want more definition"
+    },
+    {
+      "tag": "p",
+      "text": "- You have sparse brow hair"
+    },
+    {
+      "tag": "p",
+      "text": "Combo brows might be the right fit if:"
+    },
+    {
+      "tag": "p",
+      "text": "- You want both natural strokes and fullness"
+    },
+    {
+      "tag": "p",
+      "text": "- You have uneven brows"
+    },
+    {
+      "tag": "p",
+      "text": "- You seek more structure than microblading alone"
+    },
+    {
+      "tag": "p",
+      "text": "- You still want a soft result"
+    },
+    {
+      "tag": "p",
+      "text": "During your consultation, Pomi will examine your natural brows, skin type, any old pigment present, and your desired result before recommending the right option for your semi-permanent brow services."
+    }
+  ],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 3,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 4,
+      "#ffffff": 10,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 7,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.18)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 2
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "1fr",
+      "repeat(2, 1fr)"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-brow-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-answer-box",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-compare",
+      "pomi-compare-card",
+      "pomi-faq",
+      "pomi-link-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "are-powder-brows-for-me",
+  "url": "https://pomibrow.com/are-powder-brows-for-me%3F-1",
+  "capturedAt": "2026-09-11"
+}

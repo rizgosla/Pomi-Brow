@@ -1,0 +1,141 @@
+:root {
+  /* Premium utilitarian minimalism. Warm monochrome, one hairline, pastel spot accents only. */
+  --canvas: #ffffff;
+  --bone: #f7f6f3;
+  --surface: #f9f9f8;
+  --ink: #111111;
+  --ink-body: #2f3437;
+  /* Muted was #787774 (4.75:1). Deepened to #665b5d (6.52:1) deliberately:
+     the audience is 30-60 reading captions and ledes on a phone at night. */
+  --ink-muted: #665b5d;
+  --border: #eaeaea;
+  --border-soft: rgba(0, 0, 0, 0.06);
+
+  /* Muted pastels: tags and small semantic accents only */
+  --pale-red: #fdebec;
+  --pale-red-ink: #9f2f2d;
+  --pale-blue: #e1f3fe;
+  --pale-blue-ink: #1f6c9f;
+  --pale-green: #edf3ec;
+  --pale-green-ink: #346538;
+  --pale-yellow: #fbf3db;
+  --pale-yellow-ink: #956400;
+
+  /* Brand accent: the studio's pink, carried over from the original site.
+     --pink is the brief's #F26193 exactly -- kept as the documented source of the
+     ramp, but not applied directly: at 3.0:1 on white it washes out under
+     Newsreader's thin strokes and cannot carry text. --pink-ink is the same hue
+     (337deg vs 339deg) deepened to 5.4:1, and it is the accent that ships.
+     It is spent only on the Call controls and the Week 6 resolution; an accent
+     that appears everywhere signals nothing. */
+  --pink: #f26193;
+  --pink-ink: #c42a66;
+  --pink-ink-hover: #a82255;
+  --pale-pink: #fdebf1;
+
+  /* Pigment. Sampled from the studio's own healed photographs: the mean of the
+     darkest 5% of pixels across three images per category, which is the
+     deposited pigment rather than the skin around it. Brows and Eyes come back
+     almost identical (#3d2a23 / #3e2b24) because the pigment genuinely is the
+     same brown; the tags separate on hue direction and lightness, not on
+     invented colour. Category is carried by the label text as well as the
+     chip, so colour is never the only code. */
+  --pigment-brow: #3d2a23;
+  --pigment-eye: #3e2b24;
+  --pigment-lip: #6a2524;
+  --pigment-hair: #281712;
+
+  /* Each tag is a 12% tint of its own pigment over the canvas, and its text is
+     that pigment undiluted. Previously these were eight free-standing literals
+     with no relationship to the pigment they claimed to represent; now a chip is
+     visibly the same colour as its group heading, just lighter. */
+  --tag-brow: color-mix(in oklab, var(--pigment-brow) 12%, var(--canvas));
+  --tag-brow-ink: var(--pigment-brow);
+  --tag-eye: color-mix(in oklab, var(--pigment-eye) 12%, var(--canvas));
+  --tag-eye-ink: var(--pigment-eye);
+  --tag-lip: color-mix(in oklab, var(--pigment-lip) 12%, var(--canvas));
+  --tag-lip-ink: var(--pigment-lip);
+  --tag-hair: color-mix(in oklab, var(--pigment-hair) 12%, var(--canvas));
+  --tag-hair-ink: var(--pigment-hair);
+
+  /* The healing rail. The same pigment across six weeks: dense on day one,
+     flaking, washed out around day ten, returning, settled at the touch-up.
+     This is the argument the page makes in prose, made in colour. */
+  --heal-0: #d8cfc9;
+  --heal-1: #33221b;
+  --heal-2: #4a342a;
+  --heal-3: #b7a399;
+  --heal-4: #6b4e3f;
+  --heal-5: #5a4133;
+
+
+  --font-display: "Newsreader Variable", "Newsreader", "Lyon Text", Georgia, serif;
+  --font-body: "Geist Variable", "Geist Sans", "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "Geist Mono", "SF Mono", ui-monospace, Menlo, monospace;
+
+  /* Type scale */
+  --fs-display: clamp(2.5rem, 1.9rem + 2.6vw, 4.125rem);
+  --fs-h2: clamp(1.75rem, 1.4rem + 1.4vw, 2.75rem);
+  --fs-h3: 1.25rem;
+  --fs-numeral: clamp(4rem, 3rem + 5vw, 7rem);
+  /* The review count when it sits inside another block (the About column) rather than
+     carrying a section of its own. */
+  --fs-numeral-sm: clamp(3rem, 2.4rem + 2.4vw, 4.5rem);
+  --fs-quote: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+  --fs-lede: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9375rem;
+  --fs-caption: 0.8125rem;
+  --fs-tag: 0.6875rem;
+
+  --lh-display: 1.1;
+  --lh-body: 1.6;
+  --track-display: -0.025em;
+  --track-tag: 0.06em;
+
+  /* Rhythm: macro whitespace first */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --section: clamp(6rem, 4rem + 5vw, 8rem);
+
+  /* Width. The old 64rem column left ~208px of margin per side at 1440 and 448px
+     at 1920. These land the margin at roughly a quarter of that -- ~47px at 1440,
+     112px at 1920 -- and then stop: past ~2000px the cap holds, because a
+     2400px-wide content field is not the goal. Every text measure is capped per
+     component (.lede 40ch, .faq__answer 58ch, .about__bio 52ch), so widening the
+     container never widens a line of running copy. */
+  --gutter: clamp(1.25rem, 0.6rem + 2.6vw, 3.25rem);
+  --page-max: 106rem;
+  --measure: 62ch;
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-pill: 9999px;
+
+  --header-h: 5rem;
+  /* Measured: the call bar renders 69px, not the 64px the body used to reserve,
+     so the last 5px of content sat under it. */
+  --callbar-h: 4.375rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur-base: 200ms;
+  --dur-reveal: 600ms;
+
+  --shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* The bar earns its height once there is a nav in it. Hero min-height and the
+   two sticky offsets all read --header-h, so they follow on their own. */
+@media (min-width: 60rem) {
+  :root {
+    --header-h: 6.5rem;
+  }
+}

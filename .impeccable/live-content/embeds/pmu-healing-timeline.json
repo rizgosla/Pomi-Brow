@@ -1,0 +1,806 @@
+{
+  "title": "Permanent Makeup Healing Timeline | Pomi B. Brow Studio",
+  "embedId": "pomi-healing-timeline-page",
+  "kicker": "Permanent Makeup Healing Timeline",
+  "h1": "What to Expect After Your Permanent Makeup Appointment",
+  "blocks": [
+    {
+      "tag": "kicker",
+      "text": "Permanent Makeup Healing Timeline",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "h1",
+      "text": "What to Expect After Your Permanent Makeup Appointment",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "p",
+      "text": "Healing is part of every permanent makeup result. This guide explains what to expect after brows, eyeliner, lash enhancement, lip tint, and scalp micropigmentation so you feel prepared before your appointment.",
+      "cls": "pomi-hero-grid"
+    },
+    {
+      "tag": "button",
+      "text": "Book an Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "text",
+      "text": "Clear healing expectations",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Service-specific guidance",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "text",
+      "text": "Located near Irvine",
+      "cls": "pomi-trust"
+    },
+    {
+      "tag": "svg",
+      "text": "[inline SVG illustration]",
+      "cls": "pomi-timeline-card"
+    },
+    {
+      "tag": "text",
+      "text": "**Healing happens in stages**",
+      "cls": "pomi-timeline-card"
+    },
+    {
+      "tag": "text",
+      "text": "Color, texture, softness, and shape settle over the first few weeks.",
+      "cls": "pomi-timeline-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Short answer",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent makeup usually looks bold at first, then softens as it heals",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "Most permanent makeup looks darker, sharper, or more intense on Day 1. Over the next several days, the treated area can feel dry, tight, flaky, or patchy. This is part of the normal healing process.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "p",
+      "text": "The final color and softness develop over the next few weeks. A touch-up appointment helps refine the shape, color, and any areas that healed lighter than expected.",
+      "cls": "pomi-two-col"
+    },
+    {
+      "tag": "h3",
+      "text": "Day 1",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh color often looks darker and more defined than the healed result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Days 2 to 5",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Dryness, tightness, and slight flaking can begin as the skin heals.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Days 6 to 10",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The color can look lighter, patchy, or uneven before it settles.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Weeks 2 to 4",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The healed color becomes softer, and the final result starts to show.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Timeline",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent makeup healing timeline",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Healing varies by service, skin type, lifestyle, and aftercare. This timeline gives a general guide for what many clients experience after permanent makeup.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "Day 1",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Fresh, bold, and more defined",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Right after your appointment, the treated area may look darker, warmer, or more intense than the final healed result. Brows can look sharper, eyeliner can look more defined, lips can look brighter, and scalp micropigmentation can look more noticeable.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Mild redness or tenderness can happen.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "The color can look stronger than expected.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "The shape may look more precise before it softens.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Follow the aftercare instructions given after your appointment.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "text",
+      "text": "Days 2 to 5",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Dryness, tightness, and early flaking",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "During this stage, the skin starts to heal. Some clients notice dryness, tightness, light flaking, or a slight textured look. The color can still look strong during this stage.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Brows can start to flake or look dry.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Eyeliner and lash enhancement can feel slightly tight.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Lip tint can look brighter before softening.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Scalp micropigmentation can look slightly darker before settling.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "text",
+      "text": "Days 6 to 10",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Color can look lighter, patchy, or uneven",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "This is the stage where many clients worry, but it is often normal. As the surface skin flakes or renews, the color can look lighter, uneven, or temporarily faded.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Do not pick flakes or dry skin.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Do not judge the final color during this stage.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Some areas can appear lighter before the color settles.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Keep following the aftercare instructions for your service.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "text",
+      "text": "Weeks 2 to 4",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "The result starts to soften and settle",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "Over the next few weeks, the treated area becomes softer and more natural-looking. The color can return slightly after looking light during the early healing stage.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Brows look softer and more blended.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Eyeliner and lash enhancement look less intense.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Lip tint becomes softer and more natural.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Scalp micropigmentation blends more naturally with the scalp and hair.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "text",
+      "text": "Touch-up timing",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Your touch-up helps refine the healed result",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "p",
+      "text": "The touch-up appointment is used to review how your skin healed, adjust color if needed, and refine the shape or density. This is especially helpful if any areas healed lighter than expected.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Color can be adjusted.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Shape can be refined.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "Light areas can be filled in.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "li",
+      "text": "The final result can be balanced after healing.",
+      "cls": "pomi-time-item"
+    },
+    {
+      "tag": "h3",
+      "text": "Healing is not the same for everyone",
+      "cls": "pomi-note"
+    },
+    {
+      "tag": "p",
+      "text": "Skin type, service type, pigment retention, aftercare, lifestyle, sun exposure, skincare products, and natural healing response can all affect the final result. Your healed result should be judged after the full healing period, not during the first few days.",
+      "cls": "pomi-note"
+    },
+    {
+      "tag": "kicker",
+      "text": "Normal healing signs",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What is normal after permanent makeup?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Mild changes in color, texture, and softness are common during healing. These changes do not always mean something is wrong.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Darker color at first",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh pigment often looks bolder before it heals into a softer result.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Dry or tight feeling",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "The treated area can feel dry or tight while the skin renews.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Light flaking",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Some flaking can happen. Do not pick, peel, or scratch the area.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Temporary patchiness",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Color can look uneven before it fully settles and before the touch-up.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Avoid these",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "What to avoid while permanent makeup heals",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Good aftercare helps protect your results. Follow the instructions given after your appointment, and avoid anything that can irritate the treated area too soon.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "text",
+      "text": "1",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Do not pick or scratch",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Let flakes release on their own. Picking can affect color retention and healing.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "2",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Avoid heavy moisture",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid soaking, steam, pools, saunas, and heavy sweating until you are cleared.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "text",
+      "text": "3",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Avoid strong products",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "p",
+      "text": "Keep exfoliants, acids, retinoids, and harsh skincare away from the treated area while healing.",
+      "cls": "pomi-step"
+    },
+    {
+      "tag": "h3",
+      "text": "Service-specific aftercare matters",
+      "cls": "pomi-note"
+    },
+    {
+      "tag": "p",
+      "text": "Brows, eyeliner, lash enhancement, lip tint, and scalp micropigmentation can have different aftercare needs. Review your specific instructions and contact the studio if you are unsure.",
+      "cls": "pomi-note"
+    },
+    {
+      "tag": "button",
+      "text": "View Aftercare Instructions",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/aftercare"
+    },
+    {
+      "tag": "button",
+      "text": "Ask a Question",
+      "cls": "pomi-actions",
+      "href": "mailto:pomibstudio@gmail.com"
+    },
+    {
+      "tag": "kicker",
+      "text": "Service differences",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Healing can look different by service",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Each permanent makeup service heals a little differently. Here is what to keep in mind.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Brows",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Microblading, shading, and powder brows can look darker first, then flaky, lighter, and softer.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Eyes",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Eyeliner and lash enhancement can look more defined at first, then soften as the area calms.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Lips",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Lip tint can look bright at first, then soften and settle into a more natural color.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Scalp",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Scalp micropigmentation can look darker at first, then blend more naturally as it settles.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "kicker",
+      "text": "Helpful links",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "h2",
+      "text": "Learn more before your appointment",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "p",
+      "text": "Review the aftercare and safety information before booking so you know how to prepare, what to expect, and how to support your healed result.",
+      "cls": "pomi-link-box"
+    },
+    {
+      "tag": "button",
+      "text": "Read Aftercare",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/aftercare"
+    },
+    {
+      "tag": "button",
+      "text": "Read Safety Information",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/safety"
+    },
+    {
+      "tag": "button",
+      "text": "Book Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "kicker",
+      "text": "When to reach out",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "When should you contact the studio?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Contact Pomi B. Brow Studio if you are unsure about healing, aftercare, touch-up timing, or whether something you are experiencing is normal.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h3",
+      "text": "Aftercare questions",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask before applying products or changing your aftercare routine.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Unexpected irritation",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Reach out if you notice irritation that concerns you or does not improve.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Touch-up timing",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask when to schedule your touch-up based on your service and healing.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "h3",
+      "text": "Before booking",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "p",
+      "text": "Ask questions if you have medical, skin, or healing concerns before booking.",
+      "cls": "pomi-card"
+    },
+    {
+      "tag": "button",
+      "text": "Contact the Studio",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    },
+    {
+      "tag": "kicker",
+      "text": "FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "h2",
+      "text": "Permanent Makeup Healing Timeline FAQ",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "summary",
+      "text": "Why does permanent makeup look darker at first?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Fresh pigment often looks darker and sharper right after the appointment. As the skin heals, the color usually softens and looks more natural.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Is flaking normal after permanent makeup?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Light flaking can be normal for some services. Do not pick, peel, or scratch the treated area. Let dry skin release on its own.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Why does the color look patchy while healing?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Color can look uneven during the healing stage because the surface skin is renewing. The result should be judged after the full healing period and reviewed at the touch-up.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "When should I book my touch-up?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Touch-up timing depends on the service and your healing. Contact the studio for guidance based on your appointment and aftercare instructions.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Can I wear makeup while permanent makeup heals?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "Avoid applying makeup directly on or near the treated area until you are cleared. This helps protect the healing skin and the final result.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "summary",
+      "text": "Does every permanent makeup service heal the same way?",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "p",
+      "text": "No. Brows, eyeliner, lash enhancement, lip tint, and scalp micropigmentation can each heal differently. Follow the instructions for your specific service.",
+      "cls": "pomi-faq"
+    },
+    {
+      "tag": "h2",
+      "text": "Have questions before booking?",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "p",
+      "text": "Pomi B. Brow Studio can help you understand the healing process, choose the right service, and prepare for your permanent makeup appointment in Tustin.",
+      "cls": "pomi-wrap"
+    },
+    {
+      "tag": "button",
+      "text": "Book Appointment",
+      "cls": "pomi-actions",
+      "href": "https://pomibrow.com/contact-form"
+    },
+    {
+      "tag": "button",
+      "text": "Call (949) 427-7664",
+      "cls": "pomi-actions",
+      "href": "tel:+19494277664"
+    }
+  ],
+  "links": [
+    "https://pomibrow.com/contact-form",
+    "tel:+19494277664",
+    "https://pomibrow.com/aftercare",
+    "mailto:pomibstudio@gmail.com",
+    "https://pomibrow.com/safety"
+  ],
+  "images": [],
+  "wordCount": 1283,
+  "faqSchema": null,
+  "styleCss": "\n    #pomi-healing-timeline-page {\n      font-family: Arial, Helvetica, sans-serif;\n      color: #2b211d;\n      background: #fffaf7;\n      line-height: 1.6;\n    }\n\n    #pomi-healing-timeline-page * {\n      box-sizing: border-box;\n    }\n\n    #pomi-healing-timeline-page .pomi-wrap {\n      width: min(1120px, 92%);\n      margin: 0 auto;\n    }\n\n    #pomi-healing-timeline-page .pomi-hero {\n      padding: 70px 0 50px;\n      background:\n        radial-gradient(circle at top right, rgba(196, 142, 117, 0.25), transparent 35%),\n        linear-gradient(135deg, #fff4ed 0%, #fffaf7 52%, #f3ded2 100%);\n      border-radius: 0 0 34px 34px;\n    }\n\n    #pomi-healing-timeline-page .pomi-hero-grid {\n      display: grid;\n      grid-template-columns: 1.1fr 0.9fr;\n      gap: 36px;\n      align-items: center;\n    }\n\n    #pomi-healing-timeline-page .pomi-kicker {\n      display: inline-block;\n      padding: 8px 14px;\n      background: #f1d8cc;\n      color: #6e3f31;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.03em;\n      text-transform: uppercase;\n      margin-bottom: 18px;\n    }\n\n    #pomi-healing-timeline-page h1 {\n      font-size: clamp(38px, 5vw, 64px);\n      line-height: 1.05;\n      margin: 0 0 18px;\n      color: #2b211d;\n    }\n\n    #pomi-healing-timeline-page h2 {\n      font-size: clamp(28px, 4vw, 42px);\n      line-height: 1.15;\n      margin: 0 0 16px;\n      color: #2b211d;\n    }\n\n    #pomi-healing-timeline-page h3 {\n      font-size: 22px;\n      line-height: 1.25;\n      margin: 0 0 10px;\n      color: #2b211d;\n    }\n\n    #pomi-healing-timeline-page p {\n      margin: 0 0 16px;\n      font-size: 17px;\n      color: #4b3c36;\n    }\n\n    #pomi-healing-timeline-page ul {\n      margin: 0;\n      padding-left: 20px;\n      color: #4b3c36;\n      font-size: 16px;\n    }\n\n    #pomi-healing-timeline-page li {\n      margin-bottom: 8px;\n    }\n\n    #pomi-healing-timeline-page .pomi-lead {\n      font-size: 20px;\n      max-width: 650px;\n      color: #4b3c36;\n    }\n\n    #pomi-healing-timeline-page .pomi-actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-healing-timeline-page .pomi-btn {\n      display: inline-block;\n      padding: 14px 22px;\n      border-radius: 999px;\n      text-decoration: none;\n      font-weight: 700;\n      font-size: 16px;\n      transition: transform 0.2s ease, opacity 0.2s ease;\n    }\n\n    #pomi-healing-timeline-page .pomi-btn:hover {\n      transform: translateY(-2px);\n      opacity: 0.92;\n    }\n\n    #pomi-healing-timeline-page .pomi-btn-primary {\n      background: #8f5a47;\n      color: #ffffff;\n    }\n\n    #pomi-healing-timeline-page .pomi-btn-secondary {\n      background: #ffffff;\n      color: #8f5a47;\n      border: 1px solid #d5b6a8;\n    }\n\n    #pomi-healing-timeline-page .pomi-trust {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 16px;\n      margin-top: 34px;\n    }\n\n    #pomi-healing-timeline-page .pomi-trust-item {\n      background: rgba(255, 255, 255, 0.78);\n      border: 1px solid #ecd4c8;\n      padding: 16px;\n      border-radius: 18px;\n      font-weight: 700;\n      color: #5b3b31;\n    }\n\n    #pomi-healing-timeline-page .pomi-hero-art {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 28px;\n      box-shadow: 0 18px 45px rgba(74, 50, 40, 0.12);\n      min-height: 360px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    #pomi-healing-timeline-page .pomi-timeline-card {\n      width: 100%;\n      max-width: 420px;\n      border-radius: 26px;\n      background:\n        radial-gradient(circle at 50% 42%, rgba(143, 90, 71, 0.16), transparent 34%),\n        linear-gradient(135deg, #fff7f2, #f0d7cc);\n      padding: 34px;\n      text-align: center;\n      border: 1px solid #e8cfc3;\n    }\n\n    #pomi-healing-timeline-page .pomi-timeline-card svg {\n      width: 100%;\n      max-width: 310px;\n      height: auto;\n      margin-bottom: 20px;\n    }\n\n    #pomi-healing-timeline-page .pomi-timeline-card strong {\n      display: block;\n      font-size: 24px;\n      color: #2b211d;\n      margin-bottom: 8px;\n    }\n\n    #pomi-healing-timeline-page .pomi-timeline-card span {\n      display: block;\n      font-size: 15px;\n      color: #5d4a43;\n    }\n\n    #pomi-healing-timeline-page .pomi-section {\n      padding: 62px 0;\n    }\n\n    #pomi-healing-timeline-page .pomi-section-light {\n      background: #ffffff;\n    }\n\n    #pomi-healing-timeline-page .pomi-two-col {\n      display: grid;\n      grid-template-columns: 0.9fr 1.1fr;\n      gap: 36px;\n      align-items: start;\n    }\n\n    #pomi-healing-timeline-page .pomi-card-grid {\n      display: grid;\n      grid-template-columns: repeat(4, 1fr);\n      gap: 16px;\n      margin-top: 26px;\n    }\n\n    #pomi-healing-timeline-page .pomi-card {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 22px;\n      padding: 22px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n    }\n\n    #pomi-healing-timeline-page .pomi-card svg {\n      width: 34px;\n      height: 34px;\n      margin-bottom: 14px;\n      color: #8f5a47;\n    }\n\n    #pomi-healing-timeline-page .pomi-card p {\n      font-size: 15px;\n      margin-bottom: 0;\n    }\n\n    #pomi-healing-timeline-page .pomi-timeline {\n      display: grid;\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-healing-timeline-page .pomi-time-item {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      box-shadow: 0 10px 28px rgba(74, 50, 40, 0.08);\n      display: grid;\n      grid-template-columns: 150px 1fr;\n      gap: 20px;\n      align-items: start;\n    }\n\n    #pomi-healing-timeline-page .pomi-time-label {\n      background: #8f5a47;\n      color: #ffffff;\n      padding: 12px 14px;\n      border-radius: 18px;\n      font-weight: 800;\n      text-align: center;\n    }\n\n    #pomi-healing-timeline-page .pomi-note {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n      margin-top: 26px;\n    }\n\n    #pomi-healing-timeline-page .pomi-process {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      gap: 18px;\n      margin-top: 26px;\n    }\n\n    #pomi-healing-timeline-page .pomi-step {\n      background: #fffaf7;\n      border: 1px solid #efd9cf;\n      border-radius: 24px;\n      padding: 24px;\n    }\n\n    #pomi-healing-timeline-page .pomi-step-number {\n      width: 42px;\n      height: 42px;\n      border-radius: 50%;\n      background: #8f5a47;\n      color: #ffffff;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      font-weight: 800;\n      margin-bottom: 16px;\n    }\n\n    #pomi-healing-timeline-page .pomi-faq {\n      display: grid;\n      gap: 14px;\n      margin-top: 26px;\n    }\n\n    #pomi-healing-timeline-page details {\n      background: #ffffff;\n      border: 1px solid #efd9cf;\n      border-radius: 18px;\n      padding: 18px 20px;\n    }\n\n    #pomi-healing-timeline-page summary {\n      cursor: pointer;\n      font-weight: 800;\n      color: #2b211d;\n      font-size: 18px;\n    }\n\n    #pomi-healing-timeline-page details p {\n      margin-top: 12px;\n      margin-bottom: 0;\n    }\n\n    #pomi-healing-timeline-page .pomi-link-box {\n      background: #fff4ed;\n      border: 1px solid #efd9cf;\n      border-radius: 30px;\n      padding: 30px;\n    }\n\n    #pomi-healing-timeline-page .pomi-final {\n      text-align: center;\n      padding: 70px 0;\n      background: #2b211d;\n      color: #ffffff;\n    }\n\n    #pomi-healing-timeline-page .pomi-final h2,\n    #pomi-healing-timeline-page .pomi-final p {\n      color: #ffffff;\n    }\n\n    #pomi-healing-timeline-page .pomi-final p {\n      max-width: 720px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n\n    @media (max-width: 900px) {\n      #pomi-healing-timeline-page .pomi-hero-grid,\n      #pomi-healing-timeline-page .pomi-two-col,\n      #pomi-healing-timeline-page .pomi-time-item {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-healing-timeline-page .pomi-card-grid {\n        grid-template-columns: repeat(2, 1fr);\n      }\n\n      #pomi-healing-timeline-page .pomi-process,\n      #pomi-healing-timeline-page .pomi-trust {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-healing-timeline-page .pomi-time-label {\n        text-align: left;\n      }\n    }\n\n    @media (max-width: 560px) {\n      #pomi-healing-timeline-page .pomi-card-grid {\n        grid-template-columns: 1fr;\n      }\n\n      #pomi-healing-timeline-page .pomi-actions {\n        flex-direction: column;\n      }\n\n      #pomi-healing-timeline-page .pomi-btn {\n        text-align: center;\n        width: 100%;\n      }\n\n      #pomi-healing-timeline-page .pomi-hero {\n        padding-top: 46px;\n      }\n\n      #pomi-healing-timeline-page .pomi-hero-art {\n        min-height: 280px;\n      }\n    }\n  ",
+  "nativeBlocks": [],
+  "style": {
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "colors": {
+      "#2b211d": 7,
+      "#fffaf7": 3,
+      "rgba(196, 142, 117, 0.25)": 1,
+      "#fff4ed": 3,
+      "#f3ded2": 1,
+      "#f1d8cc": 1,
+      "#6e3f31": 1,
+      "#4b3c36": 3,
+      "#8f5a47": 5,
+      "#ffffff": 11,
+      "#d5b6a8": 1,
+      "rgba(255, 255, 255, 0.78)": 1,
+      "#ecd4c8": 1,
+      "#5b3b31": 1,
+      "#efd9cf": 7,
+      "rgba(74, 50, 40, 0.12)": 1,
+      "rgba(143, 90, 71, 0.16)": 1,
+      "#fff7f2": 1,
+      "#f0d7cc": 1,
+      "#e8cfc3": 1,
+      "#5d4a43": 1,
+      "rgba(74, 50, 40, 0.08)": 2
+    },
+    "radii": [
+      "0 0 34px 34px",
+      "999px",
+      "18px",
+      "30px",
+      "26px",
+      "22px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 18px 45px rgba(74, 50, 40, 0.12)",
+      "0 10px 28px rgba(74, 50, 40, 0.08)"
+    ],
+    "grids": [
+      "1.1fr 0.9fr",
+      "repeat(3, 1fr)",
+      "0.9fr 1.1fr",
+      "repeat(4, 1fr)",
+      "150px 1fr",
+      "1fr",
+      "repeat(2, 1fr)"
+    ],
+    "classes": [
+      "pomi-wrap",
+      "pomi-hero",
+      "pomi-hero-grid",
+      "pomi-kicker",
+      "pomi-lead",
+      "pomi-actions",
+      "pomi-btn",
+      "pomi-btn-primary",
+      "pomi-btn-secondary",
+      "pomi-trust",
+      "pomi-trust-item",
+      "pomi-hero-art",
+      "pomi-timeline-card",
+      "pomi-section",
+      "pomi-section-light",
+      "pomi-two-col",
+      "pomi-card-grid",
+      "pomi-card",
+      "pomi-timeline",
+      "pomi-time-item",
+      "pomi-time-label",
+      "pomi-note",
+      "pomi-process",
+      "pomi-step",
+      "pomi-step-number",
+      "pomi-faq",
+      "pomi-link-box",
+      "pomi-final"
+    ]
+  },
+  "slug": "pmu-healing-timeline",
+  "url": "https://pomibrow.com/pmu-healing-timeline",
+  "capturedAt": "2026-09-11"
+}

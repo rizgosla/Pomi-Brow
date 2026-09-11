@@ -1,0 +1,157 @@
+---
+// One article in the Learn shell. Two layouts:
+//
+// - Slide pages (article.sections): header, lead photograph, the sections full width, the
+//   related service, then the other guides as a ruled list above the contact form.
+// - Prose pages (article.body only): the list of titles on the left, the article on the right.
+//   Kept as the fallback for any article that has not been given sections.
+//
+// Used by /learn (which shows the first article) and by /learn/[slug], so the section has one
+// layout and one set of decisions. No buttons mid-page; Learn informs, and the sections' own
+// close plus the header and the pinned mobile bar carry the call.
+import type { LearnArticle, Service, SiteSettings } from "../lib/content";
+import LearnNav from "./LearnNav.astro";
+import MoreGuides from "./MoreGuides.astro";
+import PageHeader from "./PageHeader.astro";
+import PortableText from "./PortableText.astro";
+import Photo from "./Photo.astro";
+import Caption from "./Caption.astro";
+import ImageSlot from "./sections/ImageSlot.astro";
+import Sections from "./sections/Sections.astro";
+
+interface Props {
+  article: LearnArticle;
+  learn: LearnArticle[];
+  services: Service[];
+  settings: SiteSettings;
+}
+const { article, learn, services, settings } = Astro.props;
+
+const service = services.find((s) => s.slug === article.relatedService);
+const hasBody = Boolean(article.body && article.body.length > 0);
+const hasSections = Boolean(article.sections && article.sections.length > 0);
+const captionService = service ? service.title : "Pomi B. Brow Studio";
+---
+
+<PageHeader title={article.title} lede={article.summary} parent={{ href: "/learn", label: "Learn" }} />
+
+{
+  hasSections ? (
+    <>
+      <section class="lead">
+        <div class="page">
+          {article.cover ? (
+            <figure class="lead__figure">
+              <Photo photo={article.cover} ratio="5 / 2" loading="eager" fetchpriority="high" widths={[900, 1320]} sizes="(min-width: 60rem) 100rem, 100vw" />
+              <figcaption>
+                <Caption service={captionService} detail={article.cover.detail ?? "Healed"} />
+              </figcaption>
+            </figure>
+          ) : (
+            article.lead && (
+              <ImageSlot image={article.lead} service={captionService} sizes="(min-width: 60rem) 100rem, 100vw" widths={[900, 1320]} loading="eager" fetchpriority="high" />
+            )
+          )}
+        </div>
+      </section>
+
+      <Sections sections={article.sections!} settings={settings} />
+
+      {service && (
+        <section class="related">
+          <p class="page related__line">
+            Related service: <a href={`/services/${service.slug}`}>{service.title}</a>
+          </p>
+        </section>
+      )}
+
+      <MoreGuides articles={learn} current={article.slug} />
+    </>
+  ) : (
+    <section class="section reader">
+      <div class="page reader__grid">
+        <aside class="reader__aside">
+          <LearnNav articles={learn} current={article.slug} heading="All articles" />
+        </aside>
+
+        <div class="reader__body">
+          {article.cover && (
+            <figure class="reader__lead">
+              <Photo photo={article.cover} ratio="5 / 2" loading="eager" fetchpriority="high" widths={[700, 1100, 1320]} sizes="(min-width: 60rem) 70vw, 100vw" />
+              <figcaption>
+                <Caption service={captionService} detail={article.cover.detail ?? "Healed"} />
+              </figcaption>
+            </figure>
+          )}
+
+          {hasBody && (
+            <div class="reader__article reveal">
+              <h2 class="visually-hidden">{article.title}</h2>
+              <PortableText blocks={article.body} dropcap />
+            </div>
+          )}
+
+          {service && (
+            <p class="reader__related">
+              Related service: <a href={`/services/${service.slug}`}>{service.title}</a>
+            </p>
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .lead {
+    padding-bottom: var(--space-8);
+  }
+  .lead__figure {
+    margin: 0;
+  }
+  .related {
+    padding-block: var(--space-6);
+    border-top: 1px solid var(--border);
+  }
+  .related__line,
+  .reader__related {
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  .reader__grid {
+    display: grid;
+    gap: var(--space-7);
+    align-items: start;
+  }
+  .reader__body {
+    display: grid;
+    gap: var(--space-8);
+    min-width: 0;
+  }
+  .reader__lead {
+    margin: 0;
+  }
+  .reader__related {
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--border);
+  }
+  .related__line a,
+  .reader__related a {
+    color: var(--ink);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+  }
+  .related__line a:hover,
+  .reader__related a:hover {
+    text-decoration-color: currentColor;
+  }
+  @media (min-width: 60rem) {
+    .reader__grid {
+      grid-template-columns: 18rem 1fr;
+      column-gap: var(--space-9);
+    }
+  }
+</style>

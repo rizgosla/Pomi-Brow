@@ -1,0 +1,52 @@
+---
+// The strip under a page header: three or four things worth knowing before anything else.
+// No heading of its own; it reads as the header's last line, one rounded bone tile per fact.
+import type { FactItem } from "../../lib/sections";
+
+interface Props {
+  items: FactItem[];
+}
+const { items } = Astro.props;
+---
+
+<ul class="facts">
+  {
+    items.map((f, i) => (
+      <li class="facts__item reveal" style={`--i: ${i}`}>
+        <h3 class="facts__title">{f.title}</h3>
+        <p class="facts__text">{f.text}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .facts {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .facts__item {
+    display: grid;
+    gap: var(--space-2);
+    align-content: start;
+    padding: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--bone);
+  }
+  .facts__text {
+    max-width: 30ch;
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  @media (min-width: 40rem) {
+    .facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 60rem) {
+    .facts {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-5);
+    }
+  }
+</style>
