@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Astro (static output) + Sanity CMS, Sanity Studio hosted at `/admin` on the same deploy. Hosting: Cloudflare Pages (user-confirmed). Redirects via a `_redirects` file; Sanity publish webhook triggers a Cloudflare Pages deploy hook. Sanity Free plan (verify current limits at sanity.io/pricing before quoting).
+Astro (static output) + Sanity CMS, Sanity Studio hosted at `/admin` on the same deploy. Hosting: Cloudflare Pages (user-confirmed). Redirects via a `_redirects` file; Sanity publish webhook triggers a Cloudflare Pages deploy hook. One Pages Function (`/api/instagram`) proxies the Instagram feed for the home page: token as a Pages secret, `INSTAGRAM_KV` namespace for weekly token refresh, one-hour edge cache. Sanity Free plan (verify current limits at sanity.io/pricing before quoting).
 
 ## Users
 
