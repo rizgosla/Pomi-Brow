@@ -1,8 +1,8 @@
 ---
 // One article in the Learn shell. Two layouts:
 //
-// - Slide pages (article.sections): header, lead photograph, the sections full width, the
-//   related service, then the other guides as a ruled list above the contact form.
+// - Slide pages (article.sections): header with the cover beside the title, the sections full
+//   width, the related service, then the other guides as link tiles above the contact form.
 // - Prose pages (article.body only): the list of titles on the left, the article on the right.
 //   Kept as the fallback for any article that has not been given sections.
 //
@@ -33,28 +33,29 @@ const hasSections = Boolean(article.sections && article.sections.length > 0);
 const captionService = service ? service.title : "Pomi B. Brow Studio";
 ---
 
-<PageHeader title={article.title} lede={article.summary} parent={{ href: "/learn", label: "Learn" }} />
+{
+  hasSections ? (
+    <PageHeader title={article.title} lede={article.summary} parent={{ href: "/learn", label: "Learn" }}>
+      {article.cover && (
+        <figure slot="aside" class="slot">
+          <Photo photo={article.cover} ratio="4 / 5" sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />
+          <figcaption>
+            <Caption service={captionService} detail={article.cover.detail ?? article.title} />
+          </figcaption>
+        </figure>
+      )}
+      {!article.cover && article.lead && (
+        <ImageSlot slot="aside" image={{ ...article.lead, ratio: "4 / 5" }} service={captionService} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />
+      )}
+    </PageHeader>
+  ) : (
+    <PageHeader title={article.title} lede={article.summary} parent={{ href: "/learn", label: "Learn" }} />
+  )
+}
 
 {
   hasSections ? (
     <>
-      <section class="lead">
-        <div class="page">
-          {article.cover ? (
-            <figure class="lead__figure">
-              <Photo photo={article.cover} ratio="5 / 2" loading="eager" fetchpriority="high" widths={[900, 1320]} sizes="(min-width: 60rem) 100rem, 100vw" />
-              <figcaption>
-                <Caption service={captionService} detail={article.cover.detail ?? "Healed"} />
-              </figcaption>
-            </figure>
-          ) : (
-            article.lead && (
-              <ImageSlot image={article.lead} service={captionService} sizes="(min-width: 60rem) 100rem, 100vw" widths={[900, 1320]} loading="eager" fetchpriority="high" />
-            )
-          )}
-        </div>
-      </section>
-
       <Sections sections={article.sections!} settings={settings} />
 
       {service && (
@@ -103,11 +104,9 @@ const captionService = service ? service.title : "Pomi B. Brow Studio";
 }
 
 <style>
-  .lead {
-    padding-bottom: var(--space-8);
-  }
-  .lead__figure {
+  .slot {
     margin: 0;
+    min-width: 0;
   }
   .related {
     padding-block: var(--space-6);
