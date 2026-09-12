@@ -5,8 +5,8 @@
     "lede": "A private studio, a clean setup, and single-use tools opened in front of you. What happens before, during and after, and when to ask first.",
     "meta": "I can answer questions about the appointment. Medical clearance comes from your healthcare provider.",
     "lead": {
-      "ratio": "5 / 2",
-      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools"
+      "ratio": "4 / 5",
+      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway"
     },
     "sections": [
       {
@@ -51,6 +51,10 @@
         "items": [
           {
             "title": "Why privacy matters",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "The studio door closed, one chair, one client's setup on the tray, no one else in frame"
+            },
             "bullets": [
               "No crowded appointment space",
               "No traffic around the work area",
@@ -60,6 +64,10 @@
           },
           {
             "title": "Why control matters",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Tray laid out for one appointment: gloves, sealed tools, pigment cup, in order"
+            },
             "bullets": [
               "Fresh setup for every appointment",
               "Work area cleaned before the service begins",
@@ -160,6 +168,10 @@
         "items": [
           {
             "title": "Health and healing",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -169,6 +181,10 @@
           },
           {
             "title": "The treatment area",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Close, even-light shot of a brow area with clear, calm skin, ready for treatment"
+            },
             "bullets": [
               "Irritation, cuts, sunburn or open skin nearby",
               "Active breakouts near the area",
@@ -214,6 +230,10 @@
         "items": [
           {
             "title": "Protect the healing area",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
+            },
             "bullets": [
               "No picking, scratching, rubbing or peeling",
               "No makeup on the area until cleared",
@@ -223,6 +243,10 @@
           },
           {
             "title": "Know when to ask",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Phone on the studio counter beside the printed aftercare card"
+            },
             "bullets": [
               "Unsure about an aftercare product",
               "Healing looks different than expected",
@@ -230,21 +254,33 @@
               "For signs of infection, contact a physician"
             ]
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Read next",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "How to prepare for your appointment",
-              "href": "/learn/prepare-for-appointment"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to prepare, what healing looks like, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "How to prepare",
+            "text": "Skin, timing and what to tell me before we start.",
+            "href": "/learn/prepare-for-appointment",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
