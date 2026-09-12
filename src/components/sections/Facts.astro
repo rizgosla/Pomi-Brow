@@ -1,6 +1,6 @@
 ---
 // The strip under a page header: three or four things worth knowing before anything else.
-// No heading of its own; it reads as the header's last line, one rounded bone tile per fact.
+// No heading of its own; it reads as the header's last line, one white pink-outlined tile per fact.
 import type { FactItem } from "../../lib/sections";
 
 interface Props {
@@ -30,8 +30,9 @@ const { items } = Astro.props;
     gap: var(--space-2);
     align-content: start;
     padding: var(--space-5);
+    border: 1px solid var(--outline-pink);
     border-radius: var(--radius);
-    background: var(--bone);
+    background: var(--canvas);
   }
   .facts__text {
     max-width: 30ch;

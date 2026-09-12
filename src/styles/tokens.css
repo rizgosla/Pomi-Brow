@@ -32,6 +32,8 @@
   --pink-ink: #c42a66;
   --pink-ink-hover: #a82255;
   --pale-pink: #fdebf1;
+  /* The outline on a white content tile on the slide pages: the box line, with its value as fallback. */
+  --outline-pink: var(--line-pink, #f8a8c4);
 
   /* Pigment. Sampled from the studio's own healed photographs: the mean of the
      darkest 5% of pixels across three images per category, which is the

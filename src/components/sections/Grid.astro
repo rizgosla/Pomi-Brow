@@ -2,7 +2,8 @@
 // Two, three or four tiles, each one point: a title and a sentence, or a title and a few
 // bullets, with a photograph above it when the point has one, and a link when the tile is a
 // door to another page. Bullet-card grids run four across so the section stays short; only a
-// two-item grid keeps two columns. The section's callout spans the full width beneath.
+// two-item grid keeps two columns. Tiles are white with a pink outline; the section's callout
+// spans the full width beneath.
 import type { Section } from "../../lib/sections";
 import ImageSlot from "./ImageSlot.astro";
 import Callout from "./Callout.astro";
@@ -64,11 +65,13 @@ const columns = section.items.length <= 2 ? 2 : section.columns === 3 ? 3 : 4;
     align-content: start;
     justify-items: start;
     padding: var(--space-5);
+    border: 1px solid var(--outline-pink);
     border-radius: var(--radius);
-    background: var(--bone);
+    background: var(--canvas);
   }
   .cards__item--link {
     background: var(--pale-pink);
+    border-color: transparent;
   }
   .cards__item :global(.cards__image) {
     width: 100%;

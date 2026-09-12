@@ -75,8 +75,9 @@ const columns = Math.min(Math.max(section.items.length + offset, 3), 5);
     align-content: start;
     justify-items: start;
     padding: var(--space-5);
+    border: 1px solid var(--outline-pink);
     border-radius: var(--radius);
-    background: var(--tag-brow);
+    background: var(--canvas);
   }
   /* The dots only make sense when the tiles share one row; stacked, they collide. */
   .strip__tile::before {
@@ -93,6 +94,7 @@ const columns = Math.min(Math.max(section.items.length + offset, 3), 5);
   .strip__tile--figure {
     display: block;
     padding: 0;
+    border: 0;
     background: none;
   }
   .strip__tile--figure::before {
