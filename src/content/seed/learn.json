@@ -3064,22 +3064,7 @@
             "title": "Custom choice",
             "text": "Matched to your eye shape, skin and comfort level."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Not sure which?",
-          "text": "Subtle means lash enhancement; makeup-like means permanent eyeliner.",
-          "links": [
-            {
-              "label": "Lash enhancement",
-              "href": "/services/lash-enhancement"
-            },
-            {
-              "label": "Permanent eyeliner",
-              "href": "/services/eyeliner"
-            }
-          ]
-        }
+        ]
       },
       {
         "type": "grid",
@@ -3185,6 +3170,32 @@
             }
           ]
         }
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the two eye services in detail, and what healing around the eyes looks like.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Lash enhancement",
+            "text": "Pigment between the lashes only. Fuller lashes, no visible line.",
+            "href": "/services/lash-enhancement",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Eyeliner",
+            "text": "A fine line along the lash line that stays put.",
+            "href": "/services/eyeliner",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
