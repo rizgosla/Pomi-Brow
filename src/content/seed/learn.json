@@ -3441,25 +3441,33 @@
             "title": "Final polish",
             "text": "The result completed so it feels finished."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before you book",
-          "links": [
-            {
-              "label": "Lip tint",
-              "href": "/services/lip-tint"
-            },
-            {
-              "label": "Aftercare",
-              "href": "/aftercare"
-            },
-            {
-              "label": "The healing timeline",
-              "href": "/learn/pmu-healing-timeline"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the lip tint service, how to care for it, and what healing looks like day by day.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Lip tint",
+            "text": "Evens lip tone and gives back the color that fades with time.",
+            "href": "/services/lip-tint",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "The healing timeline",
+            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "href": "/learn/pmu-healing-timeline",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
