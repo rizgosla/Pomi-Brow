@@ -2844,21 +2844,7 @@
               "shot": "Healed scalp micropigmentation blending into the hairline"
             }
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before your appointment",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
       },
       {
         "type": "grid",
@@ -2880,6 +2866,32 @@
           {
             "title": "Before booking",
             "text": "Medical, skin or healing concerns before you book."
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to care for it while it heals, how the studio stays safe, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
           }
         ]
       },
