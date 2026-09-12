@@ -1321,6 +1321,10 @@
           },
           {
             "title": "Disinfected surfaces and barriers",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Disinfectant wipe passing over the treatment bed, a roll of fresh barrier film beside it"
+            },
             "bullets": [
               "Surfaces cleaned before and after appointments",
               "Fresh disposable barriers for each session",
@@ -1341,6 +1345,10 @@
           },
           {
             "title": "Clear aftercare instructions",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Printed aftercare card handed across the counter at the end of an appointment"
+            },
             "bullets": [
               "Know what to avoid while healing",
               "Do not pick, scratch or peel",
@@ -1473,21 +1481,27 @@
             "title": "What should I avoid?",
             "text": "Before and after, for your service."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before booking",
-          "links": [
-            {
-              "label": "Frequently asked questions",
-              "href": "/faqs"
-            },
-            {
-              "label": "How to prepare for your appointment",
-              "href": "/learn/prepare-for-appointment"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Two things worth reading first: the questions clients ask most, and how to arrive ready.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "How to prepare",
+            "text": "Skin, timing and what to tell me before we start.",
+            "href": "/learn/prepare-for-appointment",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
