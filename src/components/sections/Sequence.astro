@@ -85,6 +85,10 @@ const along = (n: number) => (count > 1 ? n / (count - 1) : 0);
     border-radius: var(--radius);
     background: var(--tile);
   }
+  /* A pink photo frame inside a pink-outlined tile reads as a double rule; keep it grey. */
+  .strip__tile :global(.slot__frame) {
+    border-color: var(--frame-in-card, var(--border));
+  }
   /* The dots only make sense when the tiles share one row; stacked, they collide. */
   .strip__tile::before {
     content: "";

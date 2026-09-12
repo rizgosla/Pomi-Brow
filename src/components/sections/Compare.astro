@@ -41,6 +41,10 @@ const { section } = Astro.props;
     border-radius: var(--radius);
     background: var(--tile);
   }
+  /* A pink photo frame inside a pink-outlined tile reads as a double rule; keep it grey. */
+  .compare__side :global(.slot__frame) {
+    border-color: var(--frame-in-card, var(--border));
+  }
   .compare__side :global(.compare__image) {
     width: 100%;
   }

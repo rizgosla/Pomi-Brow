@@ -69,6 +69,10 @@ const columns = section.items.length <= 2 ? 2 : section.columns === 3 ? 3 : 4;
     border-radius: var(--radius);
     background: var(--tile);
   }
+  /* A pink photo frame inside a pink-outlined tile reads as a double rule; keep it grey. */
+  .cards__item :global(.slot__frame) {
+    border-color: var(--frame-in-card, var(--border));
+  }
   .cards__item--link {
     background: var(--pale-pink);
     border-color: transparent;
