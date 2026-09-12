@@ -4428,25 +4428,7 @@
             "title": "Natural softness",
             "text": "Softened and layered, not harsh or too dark."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before booking",
-          "links": [
-            {
-              "label": "Scalp micropigmentation",
-              "href": "/services/scalp-micropigmentation"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            },
-            {
-              "label": "Frequently asked questions",
-              "href": "/faqs"
-            }
-          ]
-        }
+        ]
       },
       {
         "type": "grid",
@@ -4456,6 +4438,10 @@
         "items": [
           {
             "title": "Scalp concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Crown of a scalp in even light, checked for flaking and open skin before booking"
+            },
             "bullets": [
               "Active scalp irritation",
               "Open skin, sores, or sunburn on the scalp",
@@ -4465,6 +4451,10 @@
           },
           {
             "title": "Health and healing concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Consultation form for SMP on the desk, the health questions page open"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -4494,6 +4484,32 @@
           "title": "Scalp micropigmentation",
           "text": "$500 per hour. Confirm current pricing when booking, since rates are subject to change."
         }
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the service in detail, how the studio stays safe, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Scalp micropigmentation",
+            "text": "Tiny pigment dots that read as closely shaved hair.",
+            "href": "/services/scalp-micropigmentation",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
