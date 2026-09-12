@@ -1,6 +1,7 @@
 ---
-// The other Learn guides, as a ruled list at the end of a guide. Replaces the sticky side
-// column on pages whose sections run the full width.
+// The other Learn guides, as pale-pink link tiles at the end of a guide. Replaces the sticky
+// side column on pages whose sections run the full width. Each tile is one door: title,
+// summary, and a "Read" link whose hit area covers the whole tile, the way Grid.astro does it.
 import type { LearnArticle } from "../lib/content";
 import Icon from "./Icon.astro";
 
@@ -22,13 +23,11 @@ const others = articles.filter((a) => a.slug !== current);
       {
         others.map((a, i) => (
           <li class="guides__item reveal" style={`--i: ${i % 3}`}>
-            <a class="guides__link" href={`/learn/${a.slug}`}>
-              <span class="guides__title">{a.title}</span>
-              <span class="guides__summary">{a.summary}</span>
-              <span class="link guides__more">
-                Read
-                <Icon name="arrow" />
-              </span>
+            <h3 class="guides__title">{a.title}</h3>
+            <p class="guides__summary">{a.summary}</p>
+            <a class="link guides__more" href={`/learn/${a.slug}`}>
+              Read
+              <Icon name="arrow" />
             </a>
           </li>
         ))
@@ -40,17 +39,17 @@ const others = articles.filter((a) => a.slug !== current);
 <style>
   .guides__list {
     display: grid;
-    border-top: 1px solid var(--border);
+    gap: var(--space-5);
   }
   .guides__item {
-    border-bottom: 1px solid var(--border);
-  }
-  .guides__link {
+    position: relative;
     display: grid;
-    gap: var(--space-2);
-    padding-block: var(--space-5);
-    text-decoration: none;
-    color: var(--ink);
+    gap: var(--space-3);
+    align-content: start;
+    justify-items: start;
+    padding: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--pale-pink);
   }
   .guides__title {
     font-size: var(--fs-h3);
@@ -63,26 +62,32 @@ const others = articles.filter((a) => a.slug !== current);
     font-size: var(--fs-small);
     color: var(--ink-muted);
   }
+  /* The whole tile is the target; the link text is where the eye lands. */
   .guides__more {
     min-height: 0;
-    margin-top: var(--space-2);
+    margin-top: auto;
+    padding-top: var(--space-2);
   }
-  .guides__link:hover .guides__more {
+  .guides__more::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+  .guides__item:hover .guides__more {
     text-decoration-color: currentColor;
   }
-  .guides__link:hover .guides__more :global(.icon) {
+  .guides__item:hover .guides__more :global(.icon) {
     transform: translateX(3px);
   }
   @media (min-width: 40rem) {
     .guides__list {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      column-gap: var(--space-7);
     }
   }
   @media (min-width: 60rem) {
     .guides__list {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      column-gap: var(--space-8);
     }
   }
 </style>
