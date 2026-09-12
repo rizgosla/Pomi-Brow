@@ -2560,29 +2560,39 @@
             "title": "Do I want less daily makeup?",
             "text": "If you fill your brows every day, powder brows reduce that step."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before your brow appointment",
-          "links": [
-            {
-              "label": "Ombre powder brows",
-              "href": "/services/ombre-powder-brows"
-            },
-            {
-              "label": "Microblading",
-              "href": "/services/microblading"
-            },
-            {
-              "label": "Microblading / shading",
-              "href": "/services/microblading-shading"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Worth reading first: the three brow services side by side, and how the studio stays safe.",
+        "columns": 4,
+        "items": [
+          {
+            "title": "Ombre powder brows",
+            "text": "A soft powdered finish, lighter at the front and deeper at the tail.",
+            "href": "/services/ombre-powder-brows",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Microblading",
+            "text": "Hair strokes drawn one by one, following your own brow.",
+            "href": "/services/microblading",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Microblading and shading",
+            "text": "Hair strokes at the front, soft shading through the body and tail.",
+            "href": "/services/microblading-shading",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
