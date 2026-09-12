@@ -40,10 +40,12 @@ colors:
   pink-ink: "#c42a66"
   pink-ink-hover: "#a82255"
   pale-pink: "#fdebf1"
+  line-pink: "#f8a8c4"
+  line-pink-strong: "#f26193"
 typography:
   display:
     fontFamily: "Newsreader Variable, Newsreader, Lyon Text, Georgia, serif"
-    fontSize: "clamp(2.5rem, 1.9rem + 2.6vw, 4.125rem)"
+    fontSize: "clamp(2.75rem, 1.9rem + 3.4vw, 4.75rem)"
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: "-0.025em"
@@ -64,7 +66,7 @@ typography:
     fontVariation: "'opsz' 72"
   headline:
     fontFamily: "Newsreader Variable, Newsreader, Lyon Text, Georgia, serif"
-    fontSize: "clamp(1.75rem, 1.4rem + 1.4vw, 2.75rem)"
+    fontSize: "clamp(2rem, 1.55rem + 1.8vw, 3.25rem)"
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: "-0.025em"
@@ -78,28 +80,28 @@ typography:
     fontVariation: "'opsz' 24"
   title:
     fontFamily: "Geist Variable, Geist Sans, SF Pro Display, Helvetica Neue, system-ui, sans-serif"
-    fontSize: "1.25rem"
+    fontSize: "1.375rem"
     fontWeight: 500
     lineHeight: 1.3
     letterSpacing: "-0.01em"
   lede:
     fontFamily: "Geist Variable, Geist Sans, SF Pro Display, Helvetica Neue, system-ui, sans-serif"
-    fontSize: "clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem)"
+    fontSize: "clamp(1.1875rem, 1.1rem + 0.45vw, 1.4375rem)"
     fontWeight: 400
     lineHeight: 1.5
   body:
     fontFamily: "Geist Variable, Geist Sans, SF Pro Display, Helvetica Neue, system-ui, sans-serif"
-    fontSize: "1.0625rem"
+    fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.6
   small:
     fontFamily: "Geist Variable, Geist Sans, SF Pro Display, Helvetica Neue, system-ui, sans-serif"
-    fontSize: "0.9375rem"
+    fontSize: "1rem"
     fontWeight: 500
     lineHeight: 1.4
   caption:
     fontFamily: "Geist Variable, Geist Sans, SF Pro Display, Helvetica Neue, system-ui, sans-serif"
-    fontSize: "0.8125rem"
+    fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.4
   label:
@@ -213,14 +215,14 @@ This world replaced the earlier "Brow Map" system on 2026-09-07 after the client
 
 **Key Characteristics:**
 - White canvas only; surfaces differ by a hairline, never by a colored slab.
-- One border color (`#EAEAEA`) at one weight (1px) does all structural work: section rules, card edges, photo frames, dividers, the timeline axis.
+- Every line is pink at one weight (1px): pale `#FBD0DF` for structure (section rules, dividers, header and footer edges, link underlines), blush `#F8A8C4` for every box and control (cards, FAQ cards, fields, quiet buttons, the menu toggle, the map), deepening to `#F26193` on hover and open. Photo frames alone stay grey `#EAEAEA`.
 - Newsreader at optical size 72 for h1, h2, and the review numeral; Geist for body and every control.
 - Four muted pastels appear only inside tags and form status, always with a semantic meaning.
 - Every photograph is framed at 12px with a 1px border, receives the same mild grade and 4% warm grain, and carries a caption.
 - Buttons are solid `#C42A66`, 6px radius, no shadow. Tags are the only pill shape.
-- The studio's pink marks two things only: a Call control, and the Week 6 resolution. Everything else that used to be pink is back in ink.
+- The studio's pink fills and colours text in two places only: a Call control, and the Week 6 resolution. Since 2026-09-11 it also outlines every box, as a blush line.
 - The colour that is not pink is sampled from the work: four category tags and a six-step healing rail built on pigment values taken from the studio's own healed photographs.
-- Motion is one gesture: the scroll-entry reveal. Nothing else animates beyond 200ms color and arrow-nudge transitions.
+- Motion is two gestures: the scroll-entry reveal, and the hero's occasion swap. Nothing else animates beyond 200ms color and arrow-nudge transitions.
 
 ## Colors
 
@@ -249,14 +251,16 @@ The quiet button's hover fill is Pale Pink; Bone remains the neutral tag fill.
 - **Surface** (`#F9F9F8`): the placeholder fill behind a photograph before it loads and behind the map embed. Not a card color.
 - **Ink Body** (`#2F3437`): default body text. Body is never pure black.
 - **Ink Muted** (`#787774`): ledes, captions, secondary copy, nav links at rest, timeline dots, placeholders.
-- **Border** (`#EAEAEA`): the single hairline. Section rules, card and photo edges, input strokes, dividers, the FAQ item rule, the timeline axis, the link underline at rest.
+- **Border** (`#FBD0DF`, `--border`): the structural hairline, a pale print of the studio pink (`#F26193` at ~30% over white). Section rules, dividers inside a card, header, footer and call bar edges, the link underline at rest. Grey until 2026-09-11.
+- **Frame** (`#EAEAEA`, `--frame`): photo frames only. The one grey line left, so the pigment in a photograph is the only colour touching it.
+- **Line Pink** (`#F8A8C4`, `--line-pink`): the box line -- `#F26193` at about 55% over white. Cards, FAQ cards, form fields, the form status box, quiet buttons, the menu toggle, the map. It is decoration and grouping, not a control boundary that must hit 3:1 (the grey it replaced was 1.2:1). **Line Pink Strong** (`#F26193`, `--line-pink-strong`) is the same line on hover and on the open FAQ card.
 
 ### Named Rules
-**The One Hairline Rule.** Every border, rule, divider, and frame is `1px solid #EAEAEA`. There is no second border color and no second weight; the timeline dot's outline (`#787774`) is the sole exception because it must read at 9px.
+**The Pink Line Rule.** Every border is 1px, and every line is pink except a photo frame. Structure (section rules, dividers inside a box, header and footer edges, link underlines) is pale pink `#FBD0DF`. Boxes and controls are blush `#F8A8C4`, one step deeper so a box still reads against the rules around it, stepping up to `#F26193` on hover or open. Photographs never take a pink line -- their frame stays grey `#EAEAEA` so the pigment in the image is the only colour near it. Added 2026-09-11 at the client's request for more pink (boxes first, then the structural lines the same day); it replaced the One Hairline Rule. The timeline dot's outline is the one other stroke, because it must read at 11px.
 
 **The Tag-Only Color Rule.** Pastel fills appear only in tags (24px tall pills), the form status line, and the quiet button's hover. Never as a section field, card fill, icon background, or heading color.
 
-**The Accent-Means-Action Rule.** Pink appears in three places only: a Call or Contact control, the Week 6 resolution, and one recorded exception -- the cycling word in the hero line ("Perfect brows for every *meeting*"), which is the client's own device and is spent there on purpose. The open FAQ card's Pale Pink fill and Pink Ink mark are the same family: the one question you are reading is the one thing on that block in colour. Not links, not arrows, not the numeral, not nav hover. It never colors a heading, a paragraph, a caption, a section field, a hairline, or the logo. Every word of running copy stays in ink.
+**The Accent-Means-Action Rule.** Pink as a fill or as text appears in three places only: a Call or Contact control, the Week 6 resolution, and one recorded exception -- the cycling word in the hero line ("Perfect brows for every *meeting*"), which is the client's own device and is spent there on purpose. The blush box line (see the Two-Line Rule) is the one ambient use of the hue, and it is always a 1px outline, never a fill or a type colour. The open FAQ card's Pale Pink fill and Pink Ink mark are the same family: the one question you are reading is the one thing on that block in colour. Not links, not arrows, not the numeral, not nav hover. It never colors a heading, a paragraph, a caption, a section field, a hairline, or the logo. Every word of running copy stays in ink.
 
 **The Pigment Rule.** Colour that is not the accent comes from the work itself. The four category tags and the six-step healing rail are built on values sampled from the studio's own healed photographs, never on abstract semantic hues. If a new colour is needed, it is sampled, not chosen. Category is always carried by the tag's label text as well as its colour, so colour is never the only code.
 
@@ -271,16 +275,16 @@ The quiet button's hover fill is Pale Pink; Bone remains the neutral tag fill.
 **Character:** A high-contrast editorial pairing. Newsreader at opsz 72 is tight (-0.025em) and low (1.1) and appears only where a sentence carries the argument. Geist does everything functional at a generous 1.6 line-height. The contrast between the two, not size alone, builds hierarchy. Headings sit directly on the canvas with no label above them.
 
 ### Hierarchy
-- **Display** (400, `clamp(2.5rem, 1.9rem + 2.6vw, 4.125rem)`, 1.1, -0.025em, opsz 72): the hero h1 only, max-width 14ch, balanced wrapping; the cap was lowered from 4.5rem so the line holds two lines at 1440.
+- **Display** (400, `clamp(2.75rem, 1.9rem + 3.4vw, 4.75rem)`, 1.1, -0.025em, opsz 72): the hero h1 and subpage h1s, balanced wrapping. Raised on 2026-09-11 with the rest of the scale when the client read the page as too small. The hero h1 is capped at 18ch and fills its column up to the work wall.
 - **Numeral** (400, `clamp(4rem, 3rem + 5vw, 7rem)`, 1, -0.03em, opsz 72): the Yelp review count as one object beside a sans title.
 - **Numeral, small** (400, `clamp(3rem, 2.4rem + 2.4vw, 4.5rem)`, 1, -0.03em, opsz 72): the same count when it sits inside the home About column under the bio, where 7rem would swamp a 32rem block.
-- **Headline** (400, `clamp(1.75rem, 1.4rem + 1.4vw, 2.75rem)`, 1.1, -0.025em, opsz 72): every section h2, inside a `.section-head` capped at 56rem (64rem above 90rem). The review count's h2 is set here too: it was the only h2 on the page in Geist, a hole in the type rhythm and a quiet break of the Two-Voice Rule.
+- **Headline** (400, `clamp(2rem, 1.55rem + 1.8vw, 3.25rem)`, 1.1, -0.025em, opsz 72): every section h2, inside a `.section-head` capped at 56rem. The review count's h2 is set here too: it was the only h2 on the page in Geist, a hole in the type rhythm and a quiet break of the Two-Voice Rule.
 - **Quote** (400, `clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem)`, 1.35, -0.01em, opsz 24): short review quotes. Quotes over 220 characters fall back to Body in Geist.
-- **Title** (500, 1.25rem, 1.3, -0.01em, Geist): h3s (service names, timeline step titles, the review-count sentence).
-- **Lede** (400, `clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem)`, 1.5, Ink Muted): the one deck under each h2, max 40ch.
-- **Body** (400, 1.0625rem, 1.6, Ink Body): paragraphs, FAQ answers, inputs. Measure 62ch; secondary paragraphs drop to Ink Muted.
-- **Small** (500, 0.9375rem): buttons, nav links, text links, price rows, footer. Numbers tabular.
-- **Caption** (400, 0.8125rem, 1.4, Ink Muted): photo captions, form labels, hero meta line, price footnote. Sentence case, with the service name in Ink at 500.
+- **Title** (500, 1.375rem, 1.3, -0.01em, Geist): h3s (service names, timeline step titles, the review-count sentence).
+- **Lede** (400, `clamp(1.1875rem, 1.1rem + 0.45vw, 1.4375rem)`, 1.5, Ink Muted): the one deck under each h2, max 40ch. The hero lede runs one step larger (`clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem)`, 34ch).
+- **Body** (400, 1.125rem, 1.6, Ink Body): paragraphs, FAQ answers, inputs. Measure 62ch; secondary paragraphs drop to Ink Muted.
+- **Small** (500, 1rem): buttons, nav links, text links, price rows, footer, the hero meta line, timeline step bodies on desktop. Numbers tabular.
+- **Caption** (400, 0.875rem, 1.4, Ink Muted): photo captions, form labels, price footnote. Sentence case, with the service name in Ink at 500.
 - **Label** (500, 0.6875rem, 0.06em, uppercase): tag text only.
 - **Meta** (mono, 0.8125rem, Ink Muted): the optional price in a caption.
 
@@ -293,9 +297,9 @@ The quiet button's hover fill is Pale Pink; Bone remains the neutral tag fill.
 
 ## Layout
 
-A single centered column: `min(100% - 2 * gutter, 106rem)` with a fluid gutter of `clamp(1.25rem, 0.6rem + 2.6vw, 3.25rem)`. The column was widened from 64rem on 2026-09-08: at 1440 it had left 208px of margin per side and at 1920 it left 448px, and the page read narrow and under-committed. It now measures 1346px at 1440 (47px margins) and 1696px at 1920 (112px margins) -- about a quarter of the old margin at both -- and then stops, because a content field wider than 1696px is not the goal. Widening the container is safe only because every text measure is capped per component and not by the container: `.lede` 40ch, `.service__summary` 48ch, `.axis__body` 46ch, `.about__bio` 52ch, `.faq__answer` 58ch. Section padding is `clamp(6rem, 4rem + 5vw, 8rem)` on both sides, and each section after the first opens with a 1px hairline across the full viewport width. Section heads (h2 + lede) are capped at 56rem with a 4rem gap before content. The hero is the only section without a top rule; it pads 3rem top on phones and 4rem on desktop, filling `100svh` minus the header.
+A single centered column: `min(100% - 2 * gutter, 82rem)` with a fluid gutter of `clamp(1.25rem, 0.6rem + 2.6vw, 3.25rem)`. History: 64rem until 2026-09-08 (read narrow), then 106rem (47px margins at 1440), which the client read on 2026-09-11 as text too small and too far apart with oversized photographs; 76rem was tried the same day, then settled at 82rem. The width is **sized to the price grid**: eight cards as two rows of four at ~316px each (1312px). It is also exactly what the hero's work wall needs, so every section, hero included, shares one edge. That leaves ~64px of margin per side at 1440 and ~304px at 1920, and it moved together with a one-step increase across the type scale. Every text measure is still capped per component: `.lede` 40ch, `.service__summary` 48ch, `.about__bio` 52ch, `.faq__answer` 58ch. Section padding is `clamp(6rem, 4rem + 5vw, 8rem)` on both sides, and each section after the first opens with a 1px hairline across the full viewport width. Section heads (h2 + lede) are capped at 56rem with a 4rem gap before content. The hero is the only section without a top rule. It is exactly one screen: `min-height: calc(100svh - header)` with its content centred, so on first load nothing below it is visible and the next section starts at the fold. The wall's height is derived from the same screen (less header, 2rem padding each side and ~4rem for the caption row, capped at 42rem), so it fits on a 768px laptop as well as at 1080.
 
-Two-column sections split unevenly and always favor the text: hero and About at 1.1fr / 1fr, method at 5fr / 6fr (photo left), FAQ at 2fr / 3fr, contact at 3fr / 2fr. Column gaps are 6rem on desktop. The method photo and the FAQ intro are sticky at `header + 2rem` on desktop.
+Two-column sections split unevenly: the hero at 36fr / 43fr with a 3rem gap (copy tight against the wall), About at `1fr / 26rem` (the photograph capped so it supports the bio), contact at 3fr / 2fr. The method section is no longer two columns: it is the section head over a horizontal timeline, with no photograph.
 
 The bento price grid is the one asymmetrical grid: three columns at 60rem with the first service spanning two, two columns at 40rem with the first and the extras card spanning both, one column below. Grid gaps are 1rem. The Instagram sample is two-up on phones and four-up on desktop with a 1.5rem row gap.
 
@@ -320,7 +324,7 @@ The system is flat. Depth comes from the hairline and from whitespace, not from 
 
 Two radii and one pill. Small controls (buttons, inputs, the menu toggle, the skip link, the map, the form status) use 6px. Containers (cards, every photo frame) use 12px. Tags alone use 9999px. There is no radius larger than 12px on anything with area; the protocol's ban on pill containers and pill buttons holds throughout.
 
-Borders are always 1px `#EAEAEA`, never doubled or darkened for emphasis. Photographs are clipped to their 12px frame with `object-fit: cover` at a declared ratio: 4:5 for method and About; 1:1 for Instagram tiles. Icons are a hand-drawn 24-unit set at a uniform 2px round-capped stroke in `currentColor`, sized 1rem to 1.15rem inline; the set is phone, arrow, instagram, yelp, pin, menu, close, external, plus, minus. The timeline is the one place a rule is not a hairline: a 5px rail at 3px radius carrying a pigment gradient, with 11px dots each filled at that moment's value. The hero is the one place a photograph has no declared ratio: its nine tiles take their proportions from the grid cell they land in (see Hero work wall).
+Borders are always 1px, grey for structure and blush pink for boxes (the Two-Line Rule), never doubled. Photographs are clipped to their 12px frame with `object-fit: cover` at a declared ratio: 4:5 for About; 1:1 for Instagram tiles and price covers. Icons are a hand-drawn 24-unit set at a uniform 2px round-capped stroke in `currentColor`, sized 1rem to 1.15rem inline; the set is phone, arrow, instagram, yelp, pin, menu, close, external, plus, minus. The timeline is the one place a rule is not a hairline: a 5px rail at 3px radius carrying a pigment gradient, with 11px dots each filled at that moment's value. The hero is the one place a photograph has no declared ratio: its nine tiles take their proportions from the grid cell they land in (see Hero work wall).
 
 ## Components
 
@@ -330,7 +334,7 @@ Restrained and functional: everything is a white rectangle with one line around 
 - **Shape:** slightly rounded (6px), 2.875rem tall, 1.25rem horizontal padding, inline-flex with a 0.55em gap for an optional 2px-stroke icon. Text is Small (0.9375rem, 500), tabular numerals when it carries the phone number.
 - **Primary:** Pink Ink fill (`#C42A66`), white text at 5.4:1, no border, no shadow. The hero Call, form submit, mobile call bar, and the skip link.
 - **Hover / Focus / Active:** hover to `#A82255` over 200ms; active `scale(0.98)` with the `cubic-bezier(0.16, 1, 0.3, 1)` ease; focus-visible is the global 2px **Ink** outline at 3px offset, except on a pink-filled button, where it is **white** drawn inside the button at -5px offset. Ink on the pink fill measured 2.89:1, under the 3:1 an indicator needs; white on the same fill is 5.4:1. Everywhere else the ring stays ink.
-- **Quiet:** transparent with the hairline border and Ink text; hover fills Bone. Used for outbound proof links (the Instagram handle, "All 200+ reviews on Yelp"). It is not a Call control, so it carries no pink.
+- **Quiet:** transparent with the blush Line Pink border and Ink text; hover fills Pale Pink and the line goes to `#F26193`. Used for outbound proof links (the Instagram handle, "All 200+ reviews on Yelp"). It is not a Call control, so it carries no pink.
 - **Text link (`.link`):** Small 500 in Ink with a 1px `#EAEAEA` underline at 0.25em offset that goes to `currentColor` on hover, plus the arrow icon that nudges 3px right. Links read as links from the underline, not from the accent -- the accent is reserved for Call.
 
 ### Chips (tags)
@@ -341,11 +345,11 @@ Restrained and functional: everything is a white rectangle with one line around 
 - **Corner Style:** 12px.
 - **Background:** Canvas.
 - **Shadow Strategy:** none at rest; 4% hover lift (see Elevation).
-- **Border:** 1px `#EAEAEA`.
+- **Border:** 1px Line Pink `#F8A8C4`, to `#F26193` on hover. Dividers inside the card stay grey.
 - **Internal Padding:** `clamp(1.5rem, 1.2rem + 1.2vw, 2.5rem)`, a 0.75rem internal grid gap. Service cards stack h3, muted summary, then a hairline-topped price row (1.125rem 500 amount, muted touch-up note, then a footer row with the category tag left and the arrow right, pinned to the card bottom so every card shares one rhythm). Tags never sit above a heading. Review cards stack a quote and a name / source-tag footer. The studio card stacks address, hours, a 4:3 map at 6px, and a directions link.
 
 ### Inputs / Fields
-- **Style:** Canvas fill, hairline stroke, 6px radius, `0.7rem 0.85rem` padding, Body type in Ink. Labels are Caption size at 500 above the field, with "optional" in Ink Muted. Selects hide the native chevron and draw a 1.5px Ink Muted corner.
+- **Style:** Canvas fill, 1px Line Pink stroke, 6px radius, `0.7rem 0.85rem` padding, Body type in Ink. Labels are Caption size at 500 above the field, with "optional" in Ink Muted. Selects hide the native chevron and draw a 1.5px Ink Muted corner.
 - **Focus:** border to Ink plus a 3px `rgba(17,17,17,0.06)` ring; native outline removed.
 - **Error / Status:** invalid fields take the Pale Red ink border. The status line is a 6px hairline box in Pale Green (success) or Pale Red (error). Submitting dims the button to 60%.
 
@@ -375,7 +379,7 @@ Price-card covers are **1:1** at the card's full width -- a square frame on a sq
 
 Seams are not all in the same place: `microblading-shading/04` has its seam at 66%, where nothing below it fits, so that one crops **above** the seam at `50% 25%`. Any new cover gets its focus computed from its own seam, not copied.
 
-Every price card is the same size. Microblading used to span two columns purely because it is first in the array, which read as a claim about importance that nothing supported; the grid is now a plain 1 → 2 → 3 → **4 at 90rem** progression, so at wide viewports the photographs get smaller rather than the cards getting wider. Covers are **framed** — the standard 1px `#EAEAEA` hairline and 12px radius, inside the card padding — because an edge-to-edge cover ran the cards together down the grid and was the one photograph on the site not obeying the frame rule.
+Every price card is the same size. Microblading used to span two columns purely because it is first in the array, which read as a claim about importance that nothing supported; the grid is a plain 1 → 2 (40rem) → 3 (60rem) → **4 (80rem)** progression, so the eight cards land as two rows of four on a laptop or wider. At four across the card padding tightens to 1.5rem so the longer service names hold one line in a ~316px card. Covers are **framed** — the standard 1px `#EAEAEA` hairline and 12px radius, inside the card padding — because an edge-to-edge cover ran the cards together down the grid and was the one photograph on the site not obeying the frame rule.
 
 A photograph shown whole because it cannot be cropped is captioned **"Before and after"**, never "Healed".
 
@@ -414,21 +418,24 @@ The **Learn index** is where the pigment `.group-head` lives now that the price 
 Article pages with no body are not padded out. They render the summary as the lede and hand off to the related service and a call. Eight of the ten Learn articles are in that state, because the previous site never had bodies for them.
 
 ### Healing timeline (signature)
-An ordered list along a **5px pigment rail** (2rem inset, 2.5rem on desktop), each step a neutral tag for the moment, a Title h3, and a muted 46ch body, with 3rem between steps.
+An ordered list along a **5px pigment rail**, each step a neutral tag for the moment, a Title h3, and a muted body. From 60rem it is **horizontal**: six equal columns with a 1.5rem gap, the rail running left to right above them and stopping at the Week 6 dot, each dot at the head of its column, bodies in Small. Below 60rem it is the vertical rail down a 2rem inset with 1.5rem between steps. There is no photograph beside it: on 2026-09-11 the client found the vertical list next to a 4:5 method photo far too big (well over a screen), and the six weeks now read in one glance.
 
-The rail is the signature. It runs a vertical gradient through the real thing the page is describing: `#D8CFC9` before pigment, `#33221B` dense on day one, `#4A342A` flaking, `#B7A399` washed out around day ten, `#6B4E3F` returning at week four, `#5A4133` settled -- then the Week 6 dot resolves to Pink Ink. Each 11px dot is filled at its own moment's value and carries a 1px ring plus a 3px canvas halo, because the day-ten dot is deliberately the palest object on the page (2.4:1) and the ring is what keeps it perceivable. The page argues in prose that "the color looks like it disappeared -- it has not"; the rail makes that argument in colour, and no other business could use it.
+The rail is the signature. It runs a gradient through the real thing the page is describing, with its stops landing on the dots (step n at n/5 of the rail on desktop): `#D8CFC9` before pigment, `#33221B` dense on day one, `#4A342A` flaking, `#B7A399` washed out around day ten, `#6B4E3F` returning at week four, `#5A4133` settled -- then the Week 6 dot resolves to Pink Ink. Each 11px dot is filled at its own moment's value and carries a 1px ring plus a 3px canvas halo, because the day-ten dot is deliberately the palest object on the page (2.4:1) and the ring is what keeps it perceivable. The page argues in prose that "the color looks like it disappeared -- it has not"; the rail makes that argument in colour, and no other business could use it.
 
 ### FAQ
-Heading and lede on top, then the questions as a **two-column grid of hairline cards**; the open card fills Pale Pink with a Pink Ink minus, the first is open by default. The earlier sticky two-column layout left most of a wide left column empty at every width. Native `<details>` items, no container inside the card. Summary is Body-size 500 in Ink at 1.1rem vertical padding with a plus / minus icon that swaps on open. Answers are Ink Muted at 58ch with a "Full answer" text link. First item open by default.
+Heading and lede on top, then the questions as a **two-column grid of Line Pink cards**; hover and the open card take the `#F26193` line, and the open card fills Pale Pink with a Pink Ink minus. The first is open by default. The earlier sticky two-column layout left most of a wide left column empty at every width. Native `<details>` items, no container inside the card. Summary is Body-size 500 in Ink at 1.1rem vertical padding with a plus / minus icon that swaps on open. Answers are Ink Muted at 58ch with a "Full answer" text link. First item open by default.
 
 ### Scroll-entry reveal
 Any block with `.reveal` starts at `opacity: 0; translateY(12px)` and resolves over 600ms with `cubic-bezier(0.16, 1, 0.3, 1)` when an IntersectionObserver (threshold 0.05, bottom margin -8%) sees it. Siblings in grids and lists stagger by `--i * 80ms`. Under `prefers-reduced-motion` the class is inert and blocks render in place.
+
+### Hero occasion swap
+The pink word in "Perfect brows for every *meeting*" cycles through seven occasions. The technique is taken from the Oasis Dental hero (`Oasis-Demo/src/styles/global.css`, `.hero-swap`). Every word is stacked in one inline-grid cell, so the line never reflows. Each word runs the same 16.8s CSS keyframe loop, delayed by `index * 2.4s`: it rises 0.35em out of a 4px blur, holds, then lifts out upward into blur exactly as the next one arrives. It uses no JavaScript. Under `prefers-reduced-motion` the animation is removed and only the first word shows. This is the page's one authored motion; the reveal is the other gesture.
 
 ## Do's and Don'ts
 
 ### Do:
 - **Do** keep the canvas white and separate sections with one full-width `1px solid #EAEAEA` rule and `clamp(6rem, 4rem + 5vw, 8rem)` of padding.
-- **Do** use `1px solid #EAEAEA` for every border, frame, divider, and axis at exactly one weight.
+- **Do** use `1px solid #EAEAEA` for structure (section rules, photo frames, inner dividers) and `1px solid #F8A8C4` for every box and control, stepping to `#F26193` on hover and open.
 - **Do** set h1 and h2 in Newsreader at opsz 72, weight 400, -0.025em, line-height 1.1, and everything else in Geist at line-height 1.6.
 - **Do** make every button `#C42A66` with white text, 6px radius, 2.875rem tall, hover `#A82255`, active `scale(0.98)`, and no shadow.
 - **Do** reserve the pastels for tags and form status, each with a fixed meaning (yellow Eyebrows, blue Eyes, red Lips, green Hair, pink Week 6; green success, red error).
@@ -438,10 +445,10 @@ Any block with `.reveal` starts at `opacity: 0; translateY(12px)` and resolves o
 - **Do** open every subpage with PageHeader, and let the section after it use the tightened top pad.
 - **Do** give any new cover a focus computed from that image's own seam, and caption an uncroppable pair "Before and after".
 - **Do** keep one photograph to one slot per page; run `node scripts/check-image-reuse.mjs` after the build rather than checking by eye.
-- **Do** hold content to the 106rem column and section heads to 56rem; ledes to 40ch, body to 62ch, and give every paragraph its own ch cap rather than trusting the container.
+- **Do** hold content to the 82rem column and section heads to 56rem; ledes to 40ch, body to 62ch, and give every paragraph its own ch cap rather than trusting the container.
 - **Do** group the price grid by the four categories, each under its own pigment heading and 2px pigment rule, with the touch-up convention restated once per group beneath that rule.
 - **Do** keep every touch target at least 44x44 at 390px, growing the hit area rather than the mark.
-- **Do** enter content with the scroll-entry reveal (12px, 600ms, 80ms stagger) and nothing else.
+- **Do** enter content with the scroll-entry reveal (12px, 600ms, 80ms stagger); the hero occasion swap is the only other motion.
 - **Do** draw icons from the hand-drawn 2px-stroke set in `currentColor`, sized 1rem to 1.15rem.
 - **Do** show one pink Call button in the first viewport (the hero on desktop, the pinned bar on phones); the header carries the number as a Pink Ink text link while booking is by phone.
 
@@ -452,9 +459,9 @@ Any block with `.reveal` starts at `opacity: 0; translateY(12px)` and resolves o
 - **Don't** add a shadow at rest anywhere, or exceed `0 2px 8px rgba(0,0,0,0.04)` on hover.
 - **Don't** draw lines, maps, or overlays on a photograph, or push the grade past the mild uniform grade.
 - **Don't** introduce a third typeface, uppercase anything outside a tag, or use pure `#000000` for text.
-- **Don't** put pink on a heading, a paragraph, a caption, a link, an arrow, a section background, a hairline, the logo, or the focus ring; and don't apply `#F26193` directly to anything, since it cannot hold contrast.
+- **Don't** put pink on a heading, a paragraph, a caption, a link, an arrow, a section background, a structural rule, a photo frame, the logo, or the focus ring; and don't use `#F26193` for text or fills, since it cannot hold contrast. As a 1px box line it is fine.
 - **Don't** tint a section ground. This was tried on 2026-09-08 -- a warm shell with blush and sand bands -- and reverted the same day: it read as the med-spa template the brief exists to refuse, and `#ECDCC7` was a skin-tone section field, which the client had already rejected. Colour belongs on the work, not behind it.
 - **Don't** give a service category an abstract semantic colour. The tags are pigment or they are nothing.
-- **Don't** use a second border color, a thicker rule, or any gradient.
-- **Don't** animate on scroll position, use `top`/`left`/`width` transitions, or add ambient motion; the reveal is the only entrance.
+- **Don't** use a third border colour, a thicker rule, or any gradient outside the healing rail.
+- **Don't** animate on scroll position, use `top`/`left`/`width` transitions, or add ambient motion beyond the hero occasion swap; the reveal is the only entrance.
 - **Don't** add a dark mode or a Book control until a booking target exists; neither is built.

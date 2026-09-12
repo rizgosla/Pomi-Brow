@@ -41,7 +41,7 @@ const blank = { kind: "remote", src: "", srcset: "", width: 640, height: 640, al
             return (
               <li class="reveal" style={`--i: ${i}`}>
                 <a class="ig__tile" href={settings.instagramUrl} rel="noopener">
-                  <Photo photo={p} sizes="(min-width: 60rem) 24vw, 50vw" widths={[400, 700]} ratio="1 / 1" />
+                  <Photo photo={p} sizes="(min-width: 60rem) 18rem, 50vw" widths={[400, 700]} ratio="1 / 1" />
                   <Caption service={c.service} detail={c.detail} />
                 </a>
               </li>
@@ -53,7 +53,7 @@ const blank = { kind: "remote", src: "", srcset: "", width: 640, height: 640, al
           <template data-ig-tile>
             <li class="reveal is-in">
               <a class="ig__tile" target="_blank" rel="noopener">
-                <Photo photo={blank} sizes="(min-width: 60rem) 24vw, 50vw" ratio="1 / 1" />
+                <Photo photo={blank} sizes="(min-width: 60rem) 18rem, 50vw" ratio="1 / 1" />
                 <Caption service="Instagram" detail="New" />
               </a>
             </li>

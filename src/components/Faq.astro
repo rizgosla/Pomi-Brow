@@ -86,15 +86,18 @@ const headingId = `${id}-heading`;
     gap: var(--space-4);
   }
   .faq__item {
-    border: 1px solid var(--border);
+    border: 1px solid var(--line-pink);
     border-radius: var(--radius);
     background: var(--canvas);
     transition: background-color var(--dur-base) ease, border-color var(--dur-base) ease;
   }
-  /* The open one is the one in colour. */
+  .faq__item:hover {
+    border-color: var(--line-pink-strong);
+  }
+  /* The open one is the one filled in colour. */
   .faq__item[open] {
     background: var(--pale-pink);
-    border-color: transparent;
+    border-color: var(--line-pink-strong);
   }
   .faq__summary {
     display: flex;

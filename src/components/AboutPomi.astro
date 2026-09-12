@@ -51,7 +51,7 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
     {
       photo && (
         <figure class="about__figure reveal" style="--i: 1">
-          <Photo photo={photo} sizes="(min-width: 60rem) 36vw, 100vw" widths={[640, 960]} ratio="4 / 5" />
+          <Photo photo={photo} sizes="(min-width: 60rem) 26rem, 100vw" widths={[640, 960]} ratio="4 / 5" />
           <figcaption>
             <Caption
               service={isHeadshot ? "Pomi" : (cap?.service ?? "Pomi B. Brow Studio")}
@@ -117,10 +117,10 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
     margin: 0;
   }
   @media (min-width: 60rem) {
-    /* Same split as the hero: text leads, 1.1fr / 1fr, so the heading and the
-       Instagram grid above share one left edge. */
+    /* Text leads; the photograph is capped at 26rem so it supports the bio instead of
+       outweighing it. */
     .about__grid {
-      grid-template-columns: 1.1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 26rem);
       column-gap: var(--space-8);
     }
   }

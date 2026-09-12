@@ -20,7 +20,7 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  scrollbar-color: #d4d2ce var(--canvas);
+  scrollbar-color: var(--line-pink) var(--canvas);
   scrollbar-width: thin;
   caret-color: var(--pink-ink);
   accent-color: var(--pink-ink);
@@ -58,7 +58,7 @@ body {
   background: var(--canvas);
 }
 ::-webkit-scrollbar-thumb {
-  background: #d4d2ce;
+  background: var(--line-pink);
   border: 3px solid var(--canvas);
   border-radius: 999px;
 }
@@ -240,11 +240,16 @@ table {
 .btn--quiet {
   background: transparent;
   color: var(--ink);
-  border: 1px solid var(--border);
+  border: 1px solid var(--line-pink);
+  transition:
+    background-color var(--dur-base) ease,
+    border-color var(--dur-base) ease,
+    transform var(--dur-base) var(--ease-out);
 }
 
 .btn--quiet:hover {
-  background: var(--bone);
+  background: var(--pale-pink);
+  border-color: var(--line-pink-strong);
 }
 
 .btn .icon {
@@ -341,16 +346,20 @@ a[aria-disabled="true"]:not([href]) {
   color: var(--pale-green-ink);
 }
 
-/* Cards: exactly one hairline, crisp radius, generous padding */
+/* Cards: one blush-pink line, crisp radius, generous padding. The line deepens to
+   the full studio pink on hover. */
 .card {
   background: var(--canvas);
-  border: 1px solid var(--border);
+  border: 1px solid var(--line-pink);
   border-radius: var(--radius);
   padding: clamp(1.5rem, 1.2rem + 1.2vw, 2.5rem);
-  transition: box-shadow var(--dur-base) ease;
+  transition:
+    box-shadow var(--dur-base) ease,
+    border-color var(--dur-base) ease;
 }
 
 .card:hover {
+  border-color: var(--line-pink-strong);
   box-shadow: var(--shadow-hover);
 }
 
@@ -429,14 +438,6 @@ a[aria-disabled="true"]:not([href]) {
 }
 .group--hair {
   --group-ink: var(--pigment-hair);
-}
-
-/* Wide field. Above 90rem the grids would otherwise stretch a price card to
-   ~565px and an Instagram tile past its 1320px source. */
-@media (min-width: 90rem) {
-  .section-head {
-    max-width: 64rem;
-  }
 }
 
 /* A page header already ends in generous space. Letting the next section add a full
