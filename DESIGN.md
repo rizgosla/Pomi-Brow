@@ -40,6 +40,7 @@ colors:
   pink-ink: "#c42a66"
   pink-ink-hover: "#a82255"
   pale-pink: "#fdebf1"
+  tile: "#fcfcfb"
 typography:
   display:
     fontFamily: "Newsreader Variable, Newsreader, Lyon Text, Georgia, serif"
@@ -418,6 +419,20 @@ An ordered list along a **5px pigment rail** (2rem inset, 2.5rem on desktop), ea
 
 The rail is the signature. It runs a vertical gradient through the real thing the page is describing: `#D8CFC9` before pigment, `#33221B` dense on day one, `#4A342A` flaking, `#B7A399` washed out around day ten, `#6B4E3F` returning at week four, `#5A4133` settled -- then the Week 6 dot resolves to Pink Ink. Each 11px dot is filled at its own moment's value and carries a 1px ring plus a 3px canvas halo, because the day-ten dot is deliberately the palest object on the page (2.4:1) and the ring is what keeps it perceivable. The page argues in prose that "the color looks like it disappeared -- it has not"; the rail makes that argument in colour, and no other business could use it.
 
+### Slide pages (Safety, Aftercare, the Learn guides)
+1. **Header.** `PageHeader` with title, lede, meta on the left and the lead photo in the `aside` slot on the right, ratio `4 / 5`, vertically centred. Stacked below 60rem.
+2. **Facts strip.** Four tiles directly under the header, no heading.
+3. **Tile.** Fill `var(--tile)` (#fcfcfb), `1px solid var(--outline-pink)` (the studio's box-line pink), 12px radius, padding `--space-5`. Used by grid cards, compare sides, facts, timeline tiles. Link cards are `var(--pale-pink)` fill with no outline.
+4. **Statement.** Heading and lede sit in the copy column beside a `4 / 5` photo, vertically centred with it. The callout is a full-width band beneath.
+5. **Sequence.** A horizontal row of tiles under one hairline. One pink dot per tile, spread so the first starts the line and the last ends it. A section `image` becomes the first tile at `4 / 5`. Steps show the serif numeral; timelines show a label tag.
+6. **Grid.** Bullet-list grids run four across (a 2-item grid stays two columns). Every bullet-list tile carries a `3 / 2` image slot with a specific shot. Text-only 4-grids (like "Why touch-ups matter") carry no images. The callout is a full-width band beneath.
+7. **Callouts.** `note` and `links` are bone bands; `voice` is a pale-pink band in the serif; `caution` is a margin note (left hairline, stacked label, title, text, 60ch).
+8. **Before you book.** A `grid` with `columns: 3` of link cards (title, one line, `href`, `linkLabel: "Read"`) placed after the last content section and before the FAQ. It replaces the page's final `links` callout.
+9. **No ruled strips.** Containers are tiles, not lines. Section rules between slides stay.
+10. **Shot labels** are distinct and specific: subject, moment, framing, light. Aftercare examples: "Healed lip tint, day 5, light flaking at the border"; "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin". Never reuse a label on a page.
+
+Content lives in `src/content/seed/pages.json` and `learn.json`; components in `src/components/sections/`.
+
 ### FAQ
 Heading and lede on top, then the questions as a **two-column grid of hairline cards**; the open card fills Pale Pink with a Pink Ink minus, the first is open by default. The earlier sticky two-column layout left most of a wide left column empty at every width. Native `<details>` items, no container inside the card. Summary is Body-size 500 in Ink at 1.1rem vertical padding with a plus / minus icon that swaps on open. Answers are Ink Muted at 58ch with a "Full answer" text link. First item open by default.
 
@@ -446,14 +461,13 @@ Any block with `.reveal` starts at `opacity: 0; translateY(12px)` and resolves o
 - **Do** show one pink Call button in the first viewport (the hero on desktop, the pinned bar on phones); the header carries the number as a Pink Ink text link while booking is by phone.
 
 ### Don't:
-- **Don't** give any section, hero, or card a colored or tinted background; Bone and Surface are for tag fills and image placeholders only.
+- **Don't** tint a section ground. Tiles on the slide pages are the one filled container: Tile (#FCFCFB) inside the pink box line; link cards are Pale Pink. Nothing else carries a fill. (A warm shell with blush and sand bands was tried on 2026-09-08 and reverted the same day.)
 - **Don't** put a kicker, eyebrow, or tag above a heading; h2 then lede is the whole section head.
 - **Don't** use a pill radius on anything except a tag; buttons and cards top out at 6px and 12px.
 - **Don't** add a shadow at rest anywhere, or exceed `0 2px 8px rgba(0,0,0,0.04)` on hover.
 - **Don't** draw lines, maps, or overlays on a photograph, or push the grade past the mild uniform grade.
 - **Don't** introduce a third typeface, uppercase anything outside a tag, or use pure `#000000` for text.
 - **Don't** put pink on a heading, a paragraph, a caption, a link, an arrow, a section background, a hairline, the logo, or the focus ring; and don't apply `#F26193` directly to anything, since it cannot hold contrast.
-- **Don't** tint a section ground. This was tried on 2026-09-08 -- a warm shell with blush and sand bands -- and reverted the same day: it read as the med-spa template the brief exists to refuse, and `#ECDCC7` was a skin-tone section field, which the client had already rejected. Colour belongs on the work, not behind it.
 - **Don't** give a service category an abstract semantic colour. The tags are pigment or they are nothing.
 - **Don't** use a second border color, a thicker rule, or any gradient.
 - **Don't** animate on scroll position, use `top`/`left`/`width` transitions, or add ambient motion; the reveal is the only entrance.
