@@ -3682,6 +3682,10 @@
         "items": [
           {
             "title": "Health and healing",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Health history form open on the consultation desk, reading glasses resting beside it"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -3691,6 +3695,10 @@
           },
           {
             "title": "Skin or treatment area concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Bare brow area in soft daylight, checked for irritation before any mapping"
+            },
             "bullets": [
               "Irritation, sunburn, cuts, breakouts or open skin nearby",
               "Recent filler, Botox, chemical peels, laser or cosmetic treatments",
@@ -3778,25 +3786,33 @@
             "title": "Fuller-looking hair",
             "text": "Scalp micropigmentation, for thinning areas or a cleaner hairline."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before you book",
-          "links": [
-            {
-              "label": "Frequently asked questions",
-              "href": "/faqs"
-            },
-            {
-              "label": "Safety at the studio",
-              "href": "/safety"
-            },
-            {
-              "label": "Are powder brows for me?",
-              "href": "/learn/are-powder-brows-for-me"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the questions clients ask most, how the studio stays safe, and whether powder brows suit you.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Are powder brows for me?",
+            "text": "Who suits a soft, filled-in brow, and who does not.",
+            "href": "/learn/are-powder-brows-for-me",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
