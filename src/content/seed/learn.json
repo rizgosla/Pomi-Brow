@@ -1125,25 +1125,33 @@
             "title": "Plan maintenance",
             "text": "Book touch-ups when color, shape or density needs refreshing."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Read next",
-          "links": [
-            {
-              "label": "The healing timeline",
-              "href": "/learn/pmu-healing-timeline"
-            },
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: what healing looks like week by week, how to care for it, and how the studio stays safe.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "The healing timeline",
+            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "href": "/learn/pmu-healing-timeline",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
