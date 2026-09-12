@@ -3938,6 +3938,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "A brow with a small healing scratch beside it, the kind of thing to mention before booking"
+            },
             "bullets": [
               "Irritation, cuts, breakouts, sunburn or open skin nearby",
               "Recent cosmetic treatments near the forehead or brows",
@@ -3955,6 +3959,10 @@
         "items": [
           {
             "title": "Before your eye appointment",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Bare, calm eyelid with no mascara or extensions, ready for mapping"
+            },
             "bullets": [
               "Clean skin, eyes calm and not irritated",
               "Ask ahead about contacts, lash extensions, eye makeup or serums",
@@ -3964,6 +3972,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Contact lens case and eye drops set aside on the studio counter"
+            },
             "bullets": [
               "Eye irritation, redness, infection or sensitivity",
               "Recent eye surgery or cosmetic eye treatments",
@@ -3994,6 +4006,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Phone open to a message to the studio, asking about timing after lip filler"
+            },
             "bullets": [
               "You have ever had a cold sore, even once",
               "An active cold sore, cracked lips, irritation or open skin",
@@ -4029,6 +4045,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Hairline in hard side light showing flaking at the part, the reason to ask before booking"
+            },
             "bullets": [
               "Scalp irritation, open skin, sunburn or active flaking",
               "Recent scalp treatments, hair transplant work or injections",
@@ -4101,6 +4121,10 @@
         "items": [
           {
             "title": "Health or skin concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Consultation form on the desk, the medications question circled in pencil"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -4110,6 +4134,10 @@
           },
           {
             "title": "Tight timing",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Wall calendar with a wedding date marked, six weeks counted back to the appointment"
+            },
             "bullets": [
               "A wedding, vacation, photo shoot or event ahead",
               "Recent filler, Botox, laser, peels or cosmetic treatments",
@@ -4117,21 +4145,33 @@
               "Not enough time to heal before an event"
             ]
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before you book",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "Safety in the studio",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to care for it afterwards, how the studio stays safe, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
