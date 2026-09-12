@@ -1,13 +1,8 @@
 ---
-// The method and the healing timeline, one quiet vertical rule from mapping to the six-week touch-up.
-import type { Photo as PhotoType } from "../lib/content";
-import Photo from "./Photo.astro";
-import Caption from "./Caption.astro";
-
-interface Props {
-  photo: PhotoType | null;
-}
-const { photo } = Astro.props;
+// The method and the healing timeline: six moments along one pigment rail, from mapping to the
+// six-week touch-up. Horizontal on desktop so the whole six weeks reads in one glance; it was a
+// tall vertical list beside a large photograph and cost more than a screen. Phones keep the
+// vertical rail, since six columns do not fit 390px.
 
 const steps = [
   {
@@ -65,41 +60,22 @@ const steps = [
       </p>
     </div>
 
-    <div class="method__grid">
+    <ol class="axis">
       {
-        photo && (
-          <figure class="method__figure reveal">
-            <Photo photo={photo} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960, 1320]} ratio="4 / 5" />
-            <figcaption>
-              <Caption service="Microblading" detail="Mapped, then healed" />
-            </figcaption>
-          </figure>
-        )
+        steps.map((s, i) => (
+          <li class:list={["axis__step", "reveal", { "axis__step--last": s.last }]} style={`--i: ${i}; --dot: ${s.dot}; --dot-ring: ${s.ring}`}>
+            <span class:list={["tag", { "tag--pink": s.last }]}>{s.when}</span>
+            <h3 class="axis__title">{s.title}</h3>
+            <p class="axis__body">{s.body}</p>
+          </li>
+        ))
       }
-
-      <ol class="axis">
-        {
-          steps.map((s, i) => (
-            <li class:list={["axis__step", "reveal", { "axis__step--last": s.last }]} style={`--i: ${i}; --dot: ${s.dot}; --dot-ring: ${s.ring}`}>
-              <span class:list={["tag", { "tag--pink": s.last }]}>{s.when}</span>
-              <h3 class="axis__title">{s.title}</h3>
-              <p class="axis__body">{s.body}</p>
-            </li>
-          ))
-        }
-      </ol>
-    </div>
+    </ol>
   </div>
 </section>
 
 <style>
-  .method__grid {
-    display: grid;
-    gap: var(--space-8);
-  }
-  .method__figure {
-    margin: 0;
-  }
+  /* Phone: a vertical rail down the left edge. */
   .axis {
     position: relative;
     padding-left: 2rem;
@@ -129,12 +105,13 @@ const steps = [
     display: grid;
     gap: var(--space-2);
     justify-items: start;
-    padding-bottom: var(--space-7);
+    align-content: start;
+    padding-bottom: var(--space-5);
   }
   .axis__step::before {
     content: "";
     position: absolute;
-    left: calc(-2rem + 0.4rem - 4px);
+    left: calc(-2rem + 0.4rem - 3px);
     top: 0.45rem;
     width: 11px;
     height: 11px;
@@ -157,32 +134,52 @@ const steps = [
     color: var(--ink-muted);
     max-width: 58ch;
   }
-  /* This section fills its width like the ones around it; the shared 56rem head cap left
-     the right third of the page empty here. */
-  .method :global(.section-head) {
-    max-width: none;
-  }
   .method :global(.section-head h2) {
     max-width: 30ch;
   }
   .method :global(.section-head .lede) {
     max-width: 52ch;
   }
+
+  /* Desktop: the rail runs left to right across six columns, each dot sitting on it at
+     the head of its step. The rail stops at the Week 6 dot rather than running on under
+     the last column, and its stops land on the dots: step n sits at n/5 of the rail. */
   @media (min-width: 60rem) {
-    .method__grid {
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-9);
-    }
-    .method__figure {
-      position: sticky;
-      top: calc(var(--header-h) + var(--space-6));
-      align-self: start;
-    }
     .axis {
-      padding-left: 2.5rem;
+      --rail-gap: var(--space-5);
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      column-gap: var(--rail-gap);
+      padding-left: 0;
+      padding-top: 2.25rem;
+    }
+    .axis::before {
+      top: 0.4rem;
+      bottom: auto;
+      left: 3px;
+      right: calc((100% - 5 * var(--rail-gap)) / 6 - 8px);
+      width: auto;
+      height: 5px;
+      background: linear-gradient(
+        to right,
+        var(--heal-0) 0%,
+        var(--heal-1) 20%,
+        var(--heal-2) 40%,
+        var(--heal-3) 60%,
+        var(--heal-4) 80%,
+        var(--heal-5) 100%
+      );
+    }
+    .axis__step {
+      padding-bottom: 0;
     }
     .axis__step::before {
-      left: calc(-2.5rem + 0.4rem - 4px);
+      left: 0;
+      top: calc(0.4rem - 3px - 2.25rem);
+    }
+    .axis__body {
+      font-size: var(--fs-small);
+      max-width: none;
     }
   }
 </style>

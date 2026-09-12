@@ -52,7 +52,7 @@ const categories = [
       Perfect brows for every{" "}
       <span class="hero__cycle" aria-hidden="true" data-cycle>
         {OCCASIONS.map((w, i) => (
-          <span class:list={["hero__word", { "is-on": i === 0 }]}>{w}</span>
+          <span class="hero__word" style={`--i:${i}`}>{w}</span>
         ))}
       </span>
       <span class="visually-hidden">occasion.</span>
@@ -111,10 +111,14 @@ const categories = [
 </section>
 
 <style>
+  /* The first load is the hero and nothing else: it is exactly one screen under the
+     header, so the next section starts at the fold rather than peeking into it. */
   .hero {
     display: grid;
     gap: var(--space-7);
-    padding-block: var(--space-7) var(--section);
+    align-content: center;
+    min-height: calc(100svh - var(--header-h));
+    padding-block: var(--space-7);
   }
   .hero__copy {
     display: grid;
@@ -124,21 +128,64 @@ const categories = [
   .hero__copy h1 {
     max-width: 18ch;
   }
-  /* The words are stacked in one grid cell, so the span is as wide as its longest word
-     and the line never reflows as they change. Pink is spent here on purpose: it is the
-     one place it appears outside a Call control, and DESIGN.md records the exception. */
+  .hero__copy .lede {
+    font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+    max-width: 34ch;
+  }
+  /* The occasion swap, after the Oasis Dental hero. Every word sits in one grid cell,
+     so the span is as wide as its longest word and the line never reflows. Each word
+     runs the same loop, offset by its index: it rises in out of a slight blur, holds,
+     then lifts out as the next arrives. Seven words at 2.4s each is a 16.8s loop, so
+     one word owns 1/7 (14.29%) of it. CSS only: nothing to wait for, nothing to fail.
+     Pink is spent here on purpose; DESIGN.md records the exception. */
   .hero__cycle {
     display: inline-grid;
+    align-items: start;
+    vertical-align: top;
     color: var(--pink-ink);
-    vertical-align: baseline;
   }
   .hero__word {
     grid-area: 1 / 1;
+    justify-self: start;
     opacity: 0;
-    transition: opacity 300ms ease;
+    animation: hero-word-swap 16.8s var(--ease-out) infinite;
+    animation-delay: calc(var(--i) * 2.4s);
   }
-  .hero__word.is-on {
-    opacity: 1;
+  @keyframes hero-word-swap {
+    0% {
+      opacity: 0;
+      transform: translateY(0.35em);
+      filter: blur(4px);
+    }
+    2.5% {
+      opacity: 1;
+      transform: none;
+      filter: blur(0);
+    }
+    12% {
+      opacity: 1;
+      transform: none;
+      filter: blur(0);
+    }
+    14.29% {
+      opacity: 0;
+      transform: translateY(-0.35em);
+      filter: blur(4px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0.35em);
+      filter: blur(4px);
+    }
+  }
+  /* Reduced motion: the first word simply stays. */
+  @media (prefers-reduced-motion: reduce) {
+    .hero__word {
+      animation: none;
+    }
+    .hero__word:first-child {
+      opacity: 1;
+    }
   }
   .hero__actions {
     display: flex;
@@ -153,7 +200,7 @@ const categories = [
   /* The rule spans the copy column so it lands on the same edge as the heading;
      the sentence keeps its own measure inside it. */
   .hero__meta {
-    font-size: var(--fs-caption);
+    font-size: var(--fs-small);
     color: var(--ink-muted);
     padding-top: var(--space-4);
     border-top: 1px solid var(--border);
@@ -211,13 +258,13 @@ const categories = [
 
   @media (min-width: 60rem) {
     .hero {
-      /* The grid earns more width than the single photograph did: it is now the
-         evidence, not an illustration beside the argument. */
-      grid-template-columns: 1fr 1.15fr;
+      /* 36 : 43 inside the 82rem column keeps the wall at the ~43rem it has always
+         rendered at 1440, while the larger headline fills its column up to a 3rem gap
+         instead of stopping short and leaving white between the words and the work. */
+      grid-template-columns: minmax(0, 36fr) minmax(0, 43fr);
       align-items: center;
-      column-gap: var(--space-8);
-      padding-block: var(--space-8) var(--section);
-      min-height: min(calc(100svh - var(--header-h)), 52rem);
+      column-gap: var(--space-7);
+      padding-block: var(--space-6);
     }
     .hero__call {
       display: inline-flex;
@@ -230,7 +277,9 @@ const categories = [
     .hero__grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
       grid-template-rows: repeat(12, 1fr);
-      height: min(calc(100svh - var(--header-h) - var(--space-9)), 42rem);
+      /* Fits inside the one-screen hero: the screen, less the header, the hero's own
+         padding, and ~4rem for the caption row beneath the wall. */
+      height: min(calc(100svh - var(--header-h) - 2 * var(--space-6) - 4rem), 42rem);
       gap: var(--space-3);
     }
     .hero__tile,
@@ -249,17 +298,3 @@ const categories = [
     }
   }
 </style>
-
-<script>
-  // Cycle the occasion. Not under reduced motion; the first word simply stays.
-  const cycle = document.querySelector<HTMLElement>("[data-cycle]");
-  if (cycle && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    const words = Array.from(cycle.querySelectorAll<HTMLElement>(".hero__word"));
-    let i = 0;
-    window.setInterval(() => {
-      words[i].classList.remove("is-on");
-      i = (i + 1) % words.length;
-      words[i].classList.add("is-on");
-    }, 2200);
-  }
-</script>

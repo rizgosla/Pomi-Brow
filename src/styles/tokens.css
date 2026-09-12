@@ -8,7 +8,14 @@
   /* Muted was #787774 (4.75:1). Deepened to #665b5d (6.52:1) deliberately:
      the audience is 30-60 reading captions and ledes on a phone at night. */
   --ink-muted: #665b5d;
-  --border: #eaeaea;
+  /* The structural hairline -- section rules, header/footer edges, dividers inside a
+     card, link underlines at rest. Was grey #eaeaea; since 2026-09-11 a pale print of
+     the studio pink (#f26193 at ~30% over white), lighter than --line-pink so a box
+     still reads as a box against the rules around it. */
+  --border: #fbd0df;
+  /* Photo frames alone stay neutral: the pigment inside the photograph is the only
+     colour that should sit next to it. */
+  --frame: #eaeaea;
   --border-soft: rgba(0, 0, 0, 0.06);
 
   /* Muted pastels: tags and small semantic accents only */
@@ -25,13 +32,19 @@
      --pink is the brief's #F26193 exactly -- kept as the documented source of the
      ramp, but not applied directly: at 3.0:1 on white it washes out under
      Newsreader's thin strokes and cannot carry text. --pink-ink is the same hue
-     (337deg vs 339deg) deepened to 5.4:1, and it is the accent that ships.
-     It is spent only on the Call controls and the Week 6 resolution; an accent
-     that appears everywhere signals nothing. */
+     (337deg vs 339deg) deepened to 5.4:1, and it is the accent that ships as
+     fill and text: Call controls and the Week 6 resolution. */
   --pink: #f26193;
   --pink-ink: #c42a66;
   --pink-ink-hover: #a82255;
   --pale-pink: #fdebf1;
+  /* The box line. Cards, FAQ cards, fields, quiet buttons, the menu toggle and the map
+     are outlined in a blush of the studio pink (#f26193 at ~55% over white) so the
+     colour runs through the page and not only through the buttons. Structure -- section
+     rules, photo frames, dividers inside a card -- stays on the grey --border. Hover
+     and open states step up to the full --pink. */
+  --line-pink: #f8a8c4;
+  --line-pink-strong: var(--pink);
 
   /* Pigment. Sampled from the studio's own healed photographs: the mean of the
      darkest 5% of pixels across three images per category, which is the
@@ -73,19 +86,20 @@
   --font-body: "Geist Variable", "Geist Sans", "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
   --font-mono: "Geist Mono", "SF Mono", ui-monospace, Menlo, monospace;
 
-  /* Type scale */
-  --fs-display: clamp(2.5rem, 1.9rem + 2.6vw, 4.125rem);
-  --fs-h2: clamp(1.75rem, 1.4rem + 1.4vw, 2.75rem);
-  --fs-h3: 1.25rem;
+  /* Type scale. Stepped up on 2026-09-11: the client read the page as too small
+     and too spread out, so the column narrowed and the type grew together. */
+  --fs-display: clamp(2.75rem, 1.9rem + 3.4vw, 4.75rem);
+  --fs-h2: clamp(2rem, 1.55rem + 1.8vw, 3.25rem);
+  --fs-h3: 1.375rem;
   --fs-numeral: clamp(4rem, 3rem + 5vw, 7rem);
   /* The review count when it sits inside another block (the About column) rather than
      carrying a section of its own. */
   --fs-numeral-sm: clamp(3rem, 2.4rem + 2.4vw, 4.5rem);
   --fs-quote: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
-  --fs-lede: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
-  --fs-body: 1.0625rem;
-  --fs-small: 0.9375rem;
-  --fs-caption: 0.8125rem;
+  --fs-lede: clamp(1.1875rem, 1.1rem + 0.45vw, 1.4375rem);
+  --fs-body: 1.125rem;
+  --fs-small: 1rem;
+  --fs-caption: 0.875rem;
   --fs-tag: 0.6875rem;
 
   --lh-display: 1.1;
@@ -105,14 +119,13 @@
   --space-9: 6rem;
   --section: clamp(6rem, 4rem + 5vw, 8rem);
 
-  /* Width. The old 64rem column left ~208px of margin per side at 1440 and 448px
-     at 1920. These land the margin at roughly a quarter of that -- ~47px at 1440,
-     112px at 1920 -- and then stop: past ~2000px the cap holds, because a
-     2400px-wide content field is not the goal. Every text measure is capped per
-     component (.lede 40ch, .faq__answer 58ch, .about__bio 52ch), so widening the
-     container never widens a line of running copy. */
+  /* Width. 106rem (47px margins at 1440) read as spread thin: text small and far
+     apart, photographs oversized. 82rem (1312px) is sized to the price grid: eight
+     cards as two rows of four at ~316px each. It is also the width the hero wall
+     needs, so every section, hero included, shares one edge -- ~64px of margin per
+     side at 1440, ~304px at 1920. */
   --gutter: clamp(1.25rem, 0.6rem + 2.6vw, 3.25rem);
-  --page-max: 106rem;
+  --page-max: 82rem;
   --measure: 62ch;
 
   --radius-sm: 6px;

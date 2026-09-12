@@ -50,6 +50,15 @@ Signature element: the **healing rail** — a 3px vertical gradient running #D8C
 
 Signature interaction: scroll-entry reveal (12px lift, 600ms, 80ms stagger on grids) via IntersectionObserver; nothing else moves.
 
+## 2026-09-11 changes (client feedback: "not enough pink", "text too small and too far")
+
+These supersede anything above that contradicts them. DESIGN.md is updated to match.
+
+- **Pink box line.** Cards, FAQ cards, form fields, the form status, quiet buttons, the menu toggle and the map are outlined in blush `#F8A8C4`, stepping to `#F26193` on hover and open. Photo frames and structural rules stay grey. This is the Two-Line Rule; it replaces "everything is a 1px #EAEAEA line".
+- **Narrower column, bigger type.** Site-wide `--page-max` is 82rem (was 106rem), sized so the price grid lands as two rows of four. Every text step is one size up (body 1.125rem). The hero shares the column at 36fr / 43fr with a 3rem gap, so the work wall is unchanged and the headline sits tight against it. About's photo is capped at 26rem.
+- **Hero word swap.** A CSS keyframe loop ported from the Oasis Dental hero: each word rises out of a blur, holds, and lifts out. It replaced the JS opacity crossfade. This is now the surface's one authored motion, next to the reveal.
+- **Horizontal healing rail.** From 60rem the timeline is six columns under a left-to-right rail, with no method photograph. Phones keep the vertical rail. The signature element is unchanged in meaning.
+
 ## Rejected, do not retry
 
 - **Tinted section grounds.** Tried 2026-09-08 (warm shell #FAF2EE with blush #F2D3DC and sand #ECDCC7 bands) and reverted the same day. Two reasons: white cards on beige and blush bands read as the med-spa template this brief exists to refuse, and #ECDCC7 is a skin-tone section field, which DESIGN.md already recorded as a confirmed client rejection carried from the Brow Map decision. Colour belongs on the work, not behind it.
