@@ -346,21 +346,30 @@ a[aria-disabled="true"]:not([href]) {
   color: var(--pale-green-ink);
 }
 
-/* Cards: one blush-pink line, crisp radius, generous padding. The line deepens to
-   the full studio pink on hover. */
+/* Cards: one blush-pink line, crisp radius, generous padding. */
 .card {
   background: var(--canvas);
   border: 1px solid var(--line-pink);
   border-radius: var(--radius);
   padding: clamp(1.5rem, 1.2rem + 1.2vw, 2.5rem);
   transition:
-    box-shadow var(--dur-base) ease,
+    background-color var(--dur-base) ease,
     border-color var(--dur-base) ease;
 }
 
-.card:hover {
-  border-color: var(--line-pink-strong);
-  box-shadow: var(--shadow-hover);
+/* Hovering any container turns it the colour of the open FAQ question: pale pink
+   fill, full pink line. Only where a pointer can hover, so a tap on a phone never
+   leaves a card stuck pink. */
+@media (hover: hover) {
+  .card:hover {
+    background: var(--pale-pink);
+    border-color: var(--line-pink-strong);
+  }
+}
+
+/* A photograph inside a card keeps a grey frame; the card already carries the pink. */
+.card .photo.photo--framed {
+  border-color: var(--frame-in-card);
 }
 
 /* Meta text (prices, phone numbers) */

@@ -58,6 +58,9 @@ These supersede anything above that contradicts them. DESIGN.md is updated to ma
 - **Narrower column, bigger type.** Site-wide `--page-max` is 82rem (was 106rem), sized so the price grid lands as two rows of four. Every text step is one size up (body 1.125rem). The hero shares the column at 36fr / 43fr with a 3rem gap, so the work wall is unchanged and the headline sits tight against it. About's photo is capped at 26rem.
 - **Hero word swap.** A CSS keyframe loop ported from the Oasis Dental hero: each word rises out of a blur, holds, and lifts out. It replaced the JS opacity crossfade. This is now the surface's one authored motion, next to the reveal.
 - **Horizontal healing rail.** From 60rem the timeline is six columns under a left-to-right rail, with no method photograph. Phones keep the vertical rail. The signature element is unchanged in meaning.
+- **Hover is open.** Hovering any card or FAQ question gives it the open FAQ look (Pale Pink fill, #F26193 line), on pointer devices only. It replaced the hover shadow.
+- **Pink photo frames.** Photographs standing on the page (hero wall, Instagram, About) are framed in the blush line; photographs inside cards keep a grey frame.
+- **Hero rule.** The timeline section opens with the full-width structural rule, so the one-screen hero is closed off exactly at the fold.
 
 ## Rejected, do not retry
 
