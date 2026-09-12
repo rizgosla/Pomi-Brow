@@ -1,6 +1,7 @@
 ---
 // Things in order, across the width: a strip of rounded tiles, one per step or date, under a
-// single hairline with one small ink dot per tile. Timelines carry a label tag; steps count in
+// single hairline with one pink dot per tile, spread so the first dot starts the line and the
+// last one ends it. Timelines carry a label tag; steps count in
 // the serif numeral. A photograph, when the section has one, is the first tile of the strip.
 // The home page's HealingAxis keeps its own pigment rail; this one stays single-colour.
 import type { Section } from "../../lib/sections";
@@ -14,21 +15,24 @@ interface Props {
 const { section } = Astro.props;
 const timeline = section.kind === "timeline";
 const offset = section.image ? 1 : 0;
-const columns = Math.min(Math.max(section.items.length + offset, 3), 5);
+const count = section.items.length + offset;
+const columns = Math.min(Math.max(count, 3), 5);
+/** Where tile n's dot sits along the hairline: 0 at the start, 1 at the end. */
+const along = (n: number) => (count > 1 ? n / (count - 1) : 0);
 ---
 
 <div class="seq">
   <ol class:list={["strip", `strip--${columns}`, { "strip--timeline": timeline, "strip--steps": !timeline }]}>
     {
       section.image && (
-        <li class="strip__tile strip__tile--figure reveal" style="--i: 0">
+        <li class="strip__tile strip__tile--figure reveal" style={`--i: 0; --along: ${along(0)}`}>
           <ImageSlot image={{ ...section.image, ratio: "4 / 5" }} class="strip__figure" sizes="(min-width: 60rem) 25vw, (min-width: 40rem) 50vw, 100vw" widths={[480, 800]} />
         </li>
       )
     }
     {
       section.items.map((s, i) => (
-        <li class="strip__tile reveal" style={`--i: ${i + offset}`}>
+        <li class="strip__tile reveal" style={`--i: ${i + offset}; --along: ${along(i + offset)}`}>
           {timeline ? (
             <span class="tag tag--brow">{s.label}</span>
           ) : (
@@ -61,7 +65,9 @@ const columns = Math.min(Math.max(section.items.length + offset, 3), 5);
     display: grid;
     gap: var(--space-6);
   }
-  /* One hairline across the top of the row; each tile hangs a dot from it. */
+  /* One hairline across the top of the row; one pink dot per tile, spread from the line's
+     start to its end. Tiles are equal width, so a dot placed at fraction n/(count-1) of its
+     own tile lands at the same fraction of the whole line. */
   .strip {
     display: grid;
     gap: var(--space-5);
@@ -77,28 +83,25 @@ const columns = Math.min(Math.max(section.items.length + offset, 3), 5);
     padding: var(--space-5);
     border: 1px solid var(--outline-pink);
     border-radius: var(--radius);
-    background: var(--canvas);
+    background: var(--tile);
   }
   /* The dots only make sense when the tiles share one row; stacked, they collide. */
   .strip__tile::before {
     content: "";
     display: none;
     position: absolute;
-    left: var(--space-5);
+    left: calc(var(--along, 0) * (100% - 9px));
     top: calc(-1 * var(--space-5) - 5px);
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: var(--ink);
+    background: var(--pink-ink);
   }
   .strip__tile--figure {
     display: block;
     padding: 0;
     border: 0;
     background: none;
-  }
-  .strip__tile--figure::before {
-    left: 0;
   }
   .strip :global(.strip__figure) {
     width: 100%;

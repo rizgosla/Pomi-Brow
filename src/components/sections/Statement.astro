@@ -1,6 +1,7 @@
 ---
 // One idea in two or three short paragraphs, with a photograph beside it and a callout band
-// under the copy at full width. Sides alternate down the page so the eye zig-zags.
+// under the copy at full width. The section heading comes in through the "head" slot so the
+// title, lede and copy stand together beside the photograph. Sides alternate down the page.
 import type { Section } from "../../lib/sections";
 import ImageSlot from "./ImageSlot.astro";
 import Callout from "./Callout.astro";
@@ -17,6 +18,7 @@ const side = section.image ? "image" : "none";
 
 <div class:list={["statement", { "statement--flip": flip, "statement--solo": side === "none", "statement--image": side === "image" }]}>
   <div class="statement__copy reveal">
+    <slot name="head" />
     {section.paragraphs.map((p) => <p>{p}</p>)}
   </div>
   {section.image && <ImageSlot image={section.image} class="statement__side reveal" />}
@@ -36,10 +38,15 @@ const side = section.image ? "image" : "none";
   .statement__copy :global(p) {
     font-size: var(--fs-body);
   }
+  .statement__copy :global(.slide__head + p),
   .statement__copy :global(p:first-child) {
     font-size: var(--fs-lede);
     line-height: 1.5;
     color: var(--ink);
+  }
+  /* The heading sits in the column with the copy, a step above the opening line. */
+  .statement__copy :global(.slide__head) {
+    margin-bottom: var(--space-6);
   }
   .statement :global(.statement__side),
   .statement :global(.statement__below) {

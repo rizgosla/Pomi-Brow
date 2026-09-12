@@ -54,14 +54,22 @@ let statements = 0;
     }
     const id = slug(s.heading);
     const flip = s.type === "statement" ? statements++ % 2 === 1 : false;
+    const head = (
+      <div class="section-head slide__head reveal">
+        <h2 id={`${id}-heading`}>{s.heading}</h2>
+        {s.lede && <p class="lede">{s.lede}</p>}
+      </div>
+    );
     return (
       <section class:list={["section", "slide", `slide--${s.type}`]} id={id} aria-labelledby={`${id}-heading`}>
         <div class="page">
-          <div class="section-head slide__head reveal">
-            <h2 id={`${id}-heading`}>{s.heading}</h2>
-            {s.lede && <p class="lede">{s.lede}</p>}
-          </div>
-          {s.type === "statement" && <Statement section={s} flip={flip} />}
+          {/* A statement keeps its heading in the copy column, level with its photograph. */}
+          {s.type !== "statement" && head}
+          {s.type === "statement" && (
+            <Statement section={s} flip={flip}>
+              <Fragment slot="head">{head}</Fragment>
+            </Statement>
+          )}
           {s.type === "grid" && <Grid section={s} />}
           {s.type === "sequence" && <Sequence section={s} />}
           {s.type === "compare" && <Compare section={s} />}
