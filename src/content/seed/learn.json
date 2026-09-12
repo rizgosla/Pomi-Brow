@@ -4757,6 +4757,10 @@
         "items": [
           {
             "title": "Yearly touch-ups",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healed brows at the one-year mark, color softened, before the refresh"
+            },
             "text": "For color and shape that stay fresh, instead of waiting until the result fades too much.",
             "bullets": [
               "Refreshes color",
@@ -4767,6 +4771,10 @@
           },
           {
             "title": "Additional touch-ups",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healed brow with one lighter patch at the tail, mapped for extra density"
+            },
             "text": "When skin healed lighter than expected, or you want a stronger result after seeing the healed color.",
             "bullets": [
               "Helpful for lighter healed areas",
@@ -4807,22 +4815,33 @@
             "title": "Share your goal",
             "text": "More color, better shape, more density, or a maintenance refresh."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before your touch-up",
-          "text": "What is normal, and when your result is ready to be evaluated.",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "The healing timeline",
-              "href": "/learn/pmu-healing-timeline"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to care for it afterwards, what healing looks like, and how the studio stays safe.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "The healing timeline",
+            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "href": "/learn/pmu-healing-timeline",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
