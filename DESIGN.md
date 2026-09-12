@@ -215,7 +215,7 @@ This world replaced the earlier "Brow Map" system on 2026-09-07 after the client
 
 **Key Characteristics:**
 - White canvas only; surfaces differ by a hairline, never by a colored slab.
-- Every line is pink at one weight (1px): pale `#FBD0DF` for structure (section rules, dividers, header and footer edges, link underlines), blush `#F8A8C4` for every box and control (cards, FAQ cards, fields, quiet buttons, the menu toggle, the map), deepening to `#F26193` on hover and open. Photo frames alone stay grey `#EAEAEA`.
+- Every line is pink at one weight (1px): pale `#FBD0DF` for structure (section rules, dividers, header and footer edges, link underlines), blush `#F8A8C4` for every box and control (cards, FAQ cards, fields, quiet buttons, the menu toggle, the map), deepening to `#F26193` on hover and open. Photographs standing on the page are framed in the blush line too; a photograph inside a card keeps a grey `#EAEAEA` frame. Hovering any container fills it Pale Pink, the look of the open FAQ question.
 - Newsreader at optical size 72 for h1, h2, and the review numeral; Geist for body and every control.
 - Four muted pastels appear only inside tags and form status, always with a semantic meaning.
 - Every photograph is framed at 12px with a 1px border, receives the same mild grade and 4% warm grain, and carries a caption.
@@ -252,13 +252,16 @@ The quiet button's hover fill is Pale Pink; Bone remains the neutral tag fill.
 - **Ink Body** (`#2F3437`): default body text. Body is never pure black.
 - **Ink Muted** (`#787774`): ledes, captions, secondary copy, nav links at rest, timeline dots, placeholders.
 - **Border** (`#FBD0DF`, `--border`): the structural hairline, a pale print of the studio pink (`#F26193` at ~30% over white). Section rules, dividers inside a card, header, footer and call bar edges, the link underline at rest. Grey until 2026-09-11.
-- **Frame** (`#EAEAEA`, `--frame`): photo frames only. The one grey line left, so the pigment in a photograph is the only colour touching it.
+- **Frame** (`--frame`, = Line Pink `#F8A8C4`): the frame of every photograph standing on the page -- the hero wall, Instagram tiles (deepening to `#F26193` on hover), About, service and Learn photographs, image placeholders.
+- **Frame in card** (`#EAEAEA`, `--frame-in-card`): a photograph inside a card, such as a price cover. The card already carries the pink, and a pink frame inside a pink box reads as a double rule. The one grey line left.
 - **Line Pink** (`#F8A8C4`, `--line-pink`): the box line -- `#F26193` at about 55% over white. Cards, FAQ cards, form fields, the form status box, quiet buttons, the menu toggle, the map. It is decoration and grouping, not a control boundary that must hit 3:1 (the grey it replaced was 1.2:1). **Line Pink Strong** (`#F26193`, `--line-pink-strong`) is the same line on hover and on the open FAQ card.
 
 ### Named Rules
-**The Pink Line Rule.** Every border is 1px, and every line is pink except a photo frame. Structure (section rules, dividers inside a box, header and footer edges, link underlines) is pale pink `#FBD0DF`. Boxes and controls are blush `#F8A8C4`, one step deeper so a box still reads against the rules around it, stepping up to `#F26193` on hover or open. Photographs never take a pink line -- their frame stays grey `#EAEAEA` so the pigment in the image is the only colour near it. Added 2026-09-11 at the client's request for more pink (boxes first, then the structural lines the same day); it replaced the One Hairline Rule. The timeline dot's outline is the one other stroke, because it must read at 11px.
+**The Pink Line Rule.** Every border is 1px, and every line is pink except a photo frame. Structure (section rules, dividers inside a box, header and footer edges, link underlines) is pale pink `#FBD0DF`. Boxes and controls are blush `#F8A8C4`, one step deeper so a box still reads against the rules around it, stepping up to `#F26193` on hover or open. A photograph standing on the page takes the blush line as its frame; a photograph inside a card keeps a grey `#EAEAEA` frame so the card's pink is not doubled. Added 2026-09-11 at the client's request for more pink (boxes first, then the structural lines, then the free-standing photo frames, all the same day); it replaced the One Hairline Rule.
 
-**The Tag-Only Color Rule.** Pastel fills appear only in tags (24px tall pills), the form status line, and the quiet button's hover. Never as a section field, card fill, icon background, or heading color.
+**The Hover-Is-Open Rule.** Hovering any container -- a card or an FAQ question -- gives it the open FAQ question's look: Pale Pink fill, `#F26193` line. Applied only under `(hover: hover)`, so a tap on a phone never leaves a card stuck pink. It replaced the 4% hover shadow on cards. The timeline dot's outline is the one other stroke, because it must read at 11px.
+
+**The Tag-Only Color Rule.** Pastel fills appear only in tags (24px tall pills), the form status line, and hover and open states (the quiet button, a hovered container, the open FAQ question -- all Pale Pink). Never as a resting section field, card fill, icon background, or heading color.
 
 **The Accent-Means-Action Rule.** Pink as a fill or as text appears in three places only: a Call or Contact control, the Week 6 resolution, and one recorded exception -- the cycling word in the hero line ("Perfect brows for every *meeting*"), which is the client's own device and is spent there on purpose. The blush box line (see the Two-Line Rule) is the one ambient use of the hue, and it is always a 1px outline, never a fill or a type colour. The open FAQ card's Pale Pink fill and Pink Ink mark are the same family: the one question you are reading is the one thing on that block in colour. Not links, not arrows, not the numeral, not nav hover. It never colors a heading, a paragraph, a caption, a section field, a hairline, or the logo. Every word of running copy stays in ink.
 
@@ -297,7 +300,7 @@ The quiet button's hover fill is Pale Pink; Bone remains the neutral tag fill.
 
 ## Layout
 
-A single centered column: `min(100% - 2 * gutter, 82rem)` with a fluid gutter of `clamp(1.25rem, 0.6rem + 2.6vw, 3.25rem)`. History: 64rem until 2026-09-08 (read narrow), then 106rem (47px margins at 1440), which the client read on 2026-09-11 as text too small and too far apart with oversized photographs; 76rem was tried the same day, then settled at 82rem. The width is **sized to the price grid**: eight cards as two rows of four at ~316px each (1312px). It is also exactly what the hero's work wall needs, so every section, hero included, shares one edge. That leaves ~64px of margin per side at 1440 and ~304px at 1920, and it moved together with a one-step increase across the type scale. Every text measure is still capped per component: `.lede` 40ch, `.service__summary` 48ch, `.about__bio` 52ch, `.faq__answer` 58ch. Section padding is `clamp(6rem, 4rem + 5vw, 8rem)` on both sides, and each section after the first opens with a 1px hairline across the full viewport width. Section heads (h2 + lede) are capped at 56rem with a 4rem gap before content. The hero is the only section without a top rule. It is exactly one screen: `min-height: calc(100svh - header)` with its content centred, so on first load nothing below it is visible and the next section starts at the fold. The wall's height is derived from the same screen (less header, 2rem padding each side and ~4rem for the caption row, capped at 42rem), so it fits on a 768px laptop as well as at 1080.
+A single centered column: `min(100% - 2 * gutter, 82rem)` with a fluid gutter of `clamp(1.25rem, 0.6rem + 2.6vw, 3.25rem)`. History: 64rem until 2026-09-08 (read narrow), then 106rem (47px margins at 1440), which the client read on 2026-09-11 as text too small and too far apart with oversized photographs; 76rem was tried the same day, then settled at 82rem. The width is **sized to the price grid**: eight cards as two rows of four at ~316px each (1312px). It is also exactly what the hero's work wall needs, so every section, hero included, shares one edge. That leaves ~64px of margin per side at 1440 and ~304px at 1920, and it moved together with a one-step increase across the type scale. Every text measure is still capped per component: `.lede` 40ch, `.service__summary` 48ch, `.about__bio` 52ch, `.faq__answer` 58ch. Section padding is `clamp(6rem, 4rem + 5vw, 8rem)` on both sides, and each section after the first opens with a 1px hairline across the full viewport width. Section heads (h2 + lede) are capped at 56rem with a 4rem gap before content. The hero has no top rule of its own; the timeline section after it opens with the full-width rule, which lands exactly on the fold. The hero is exactly one screen: `min-height: calc(100svh - header)` with its content centred, so on first load nothing below it is visible and the next section starts at the fold. The wall's height is derived from the same screen (less header, 2rem padding each side and ~4rem for the caption row, capped at 42rem), so it fits on a 768px laptop as well as at 1080.
 
 Two-column sections split unevenly: the hero at 36fr / 43fr with a 3rem gap (copy tight against the wall), About at `1fr / 26rem` (the photograph capped so it supports the bio), contact at 3fr / 2fr. The method section is no longer two columns: it is the section head over a horizontal timeline, with no photograph.
 
@@ -312,7 +315,7 @@ On phones, the body reserves 4rem plus the safe-area inset for the fixed call ba
 The system is flat. Depth comes from the hairline and from whitespace, not from shadow or tone. Cards and photographs are white on white, distinguished only by their 1px `#EAEAEA` edge. The sole atmospheric device is one fixed, non-scrolling radial light spot behind the top of the page (`radial-gradient(60% 45% at 70% 0%, rgba(214,178,140,0.12), transparent 70%)`), visible as a faint warmth behind the hero and gone by the second section. The header and mobile call bar float over content with a 12px backdrop blur on near-white, never with a shadow.
 
 ### Shadow Vocabulary
-- **Hover lift** (`box-shadow: 0 2px 8px rgba(0,0,0,0.04)`): the only shadow. Appears on `.card` and Instagram tiles on hover over 200ms; absent at rest.
+- **Hover lift** (`box-shadow: 0 2px 8px rgba(0,0,0,0.04)`): kept as a token but no longer applied. Cards and Instagram tiles now answer hover with pink (see the Hover-Is-Open Rule), not with a shadow.
 - **Input focus ring** (`box-shadow: 0 0 0 3px rgba(196,42,102,0.12)`): a spread ring with the border turned to Pink Ink; not a shadow in intent.
 
 ### Named Rules
@@ -344,8 +347,9 @@ Restrained and functional: everything is a white rectangle with one line around 
 ### Cards / Containers
 - **Corner Style:** 12px.
 - **Background:** Canvas.
-- **Shadow Strategy:** none at rest; 4% hover lift (see Elevation).
-- **Border:** 1px Line Pink `#F8A8C4`, to `#F26193` on hover. Dividers inside the card stay grey.
+- **Shadow Strategy:** none, at rest or on hover.
+- **Border:** 1px Line Pink `#F8A8C4`. Dividers inside the card are the pale structural pink; a photograph inside keeps a grey frame.
+- **Hover:** Pale Pink fill and a `#F26193` line, the open FAQ question's look, on pointer devices only.
 - **Internal Padding:** `clamp(1.5rem, 1.2rem + 1.2vw, 2.5rem)`, a 0.75rem internal grid gap. Service cards stack h3, muted summary, then a hairline-topped price row (1.125rem 500 amount, muted touch-up note, then a footer row with the category tag left and the arrow right, pinned to the card bottom so every card shares one rhythm). Tags never sit above a heading. Review cards stack a quote and a name / source-tag footer. The studio card stacks address, hours, a 4:3 map at 6px, and a directions link.
 
 ### Inputs / Fields
@@ -359,7 +363,7 @@ Restrained and functional: everything is a white rectangle with one line around 
 - **Footer:** hairline top, 6rem top padding, Small in Ink Muted; mark-only wordmark at 2.5rem, address in Ink Body, social links with 1rem icons, two link columns under 500 Ink heads, then a hairline-topped Caption-size bottom row.
 
 ### Photograph and caption (signature)
-Every image on the site is the same object: a 12px-rounded, hairline-bordered frame over a Surface placeholder, `filter: saturate(0.88) contrast(1.02)` on the image, and a 4% multiply-blended warm fractal-noise grain on top. The grade is deliberately mild because the pigment color is the evidence and must not be misrepresented. Beneath sits a Caption row at 0.75rem top padding: service name in Ink 500, detail in Ink Muted, optional mono price pushed right. Nothing is ever drawn over the photograph.
+Every image on the site is the same object: a 12px-rounded, 1px-framed box over a Surface placeholder (the frame blush pink on the page, grey inside a card), `filter: saturate(0.88) contrast(1.02)` on the image, and a 4% multiply-blended warm fractal-noise grain on top. The grade is deliberately mild because the pigment color is the evidence and must not be misrepresented. Beneath sits a Caption row at 0.75rem top padding: service name in Ink 500, detail in Ink Muted, optional mono price pushed right. Nothing is ever drawn over the photograph.
 
 ### Hero work wall (signature)
 
@@ -459,7 +463,7 @@ The pink word in "Perfect brows for every *meeting*" cycles through seven occasi
 - **Don't** add a shadow at rest anywhere, or exceed `0 2px 8px rgba(0,0,0,0.04)` on hover.
 - **Don't** draw lines, maps, or overlays on a photograph, or push the grade past the mild uniform grade.
 - **Don't** introduce a third typeface, uppercase anything outside a tag, or use pure `#000000` for text.
-- **Don't** put pink on a heading, a paragraph, a caption, a link, an arrow, a section background, a structural rule, a photo frame, the logo, or the focus ring; and don't use `#F26193` for text or fills, since it cannot hold contrast. As a 1px box line it is fine.
+- **Don't** put pink on a heading, a paragraph, a caption, a link's text, an arrow, a resting section background, the logo, or the focus ring; and don't use `#F26193` for text or fills, since it cannot hold contrast. As a 1px line it is fine.
 - **Don't** tint a section ground. This was tried on 2026-09-08 -- a warm shell with blush and sand bands -- and reverted the same day: it read as the med-spa template the brief exists to refuse, and `#ECDCC7` was a skin-tone section field, which the client had already rejected. Colour belongs on the work, not behind it.
 - **Don't** give a service category an abstract semantic colour. The tags are pigment or they are nothing.
 - **Don't** use a third border colour, a thicker rule, or any gradient outside the healing rail.

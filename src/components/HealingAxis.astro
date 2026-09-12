@@ -75,6 +75,13 @@ const steps = [
 </section>
 
 <style>
+  /* The hero is not a .section, so the shared section rule never fires above this one.
+     It is drawn here instead: full width, and -- because the hero is exactly one screen
+     -- exactly on the fold, closing the first screen without showing on first load. */
+  .method {
+    border-top: 1px solid var(--border);
+  }
+
   /* Phone: a vertical rail down the left edge. */
   .axis {
     position: relative;

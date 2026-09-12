@@ -125,10 +125,11 @@ const blank = { kind: "remote", src: "", srcset: "", width: 640, height: 640, al
     text-decoration: none;
   }
   .ig__tile :global(.photo) {
-    transition: box-shadow var(--dur-base) ease;
+    transition: border-color var(--dur-base) ease;
   }
+  /* The tile's pink frame deepens on hover, the same step a container takes. */
   .ig__tile:hover :global(.photo) {
-    box-shadow: var(--shadow-hover);
+    border-color: var(--line-pink-strong);
   }
   @media (min-width: 60rem) {
     .ig__grid {
