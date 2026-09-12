@@ -6,16 +6,14 @@
  * is switched off (the anchor stays in the markup, without its href). Nothing about the
  * pages themselves changes, so lifting the gate is a one-line change here.
  *
- * On by default in Cloudflare builds (Workers Builds sets WORKERS_CI=1, Pages sets CF_PAGES=1),
- * off everywhere else so `astro dev`, local builds and the screenshot workflow still show the
- * whole site. HOME_ONLY=true or HOME_ONLY=false overrides either way. Applied by src/middleware.ts.
+ * Off unless HOME_ONLY=true (or 1) is set in the build environment. It was on for the first
+ * launch and is kept so the home-only state is one variable away; see docs/home-only-launch.md.
+ * Applied by src/middleware.ts.
  */
 
 export function homeOnlyFromEnv(env: Record<string, string | undefined> = process.env): boolean {
   const flag = env.HOME_ONLY?.trim().toLowerCase();
-  if (flag === "true" || flag === "1") return true;
-  if (flag === "false" || flag === "0") return false;
-  return env.WORKERS_CI === "1" || env.CF_PAGES === "1";
+  return flag === "true" || flag === "1";
 }
 
 export const HOME_ONLY = homeOnlyFromEnv();
