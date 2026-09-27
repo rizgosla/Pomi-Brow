@@ -12,18 +12,25 @@ interface Props {
   embedded?: boolean;
 }
 const { settings, embedded = false } = Astro.props;
+// The listing's own two numbers: the average, and how many reviews it is an average of.
 const count = settings.yelpReviewCount;
+const rating = settings.yelpRating;
+const other = settings.yelpOtherReviewCount;
+// Same candour as the home page's proof block: the listing is not spotless and the site
+// does not pretend it is. Silent at zero, where the sentence would only be a boast.
+const candour =
+  other === 1 ? "All but one of them five stars." : other > 1 ? `All but ${other} of them five stars.` : null;
 const Wrap = embedded ? "div" : "section";
 ---
 
 <Wrap class:list={["count", { section: !embedded, "count--embedded": embedded }]} aria-labelledby="count-heading">
   <div class:list={["count__row", { page: !embedded, reveal: !embedded }]}>
     <h2 id="count-heading" class="count__line">
-      <span class="count__numeral">{count}+</span>
-      <span class="count__what"><span class="visually-hidden">{count} or more </span>Five-star reviews on Yelp.</span>
+      <span class="count__numeral">{rating}.0</span>
+      <span class="count__what">on Yelp, across {count} reviews.</span>
     </h2>
     <div class="count__text">
-      <p class="muted">Every one written by a client of one artist. Read them before you call.</p>
+      <p class="muted">{candour} Every one written by a client of one artist. Read them before you call.</p>
       <a class="link" href={settings.yelpUrl} rel="noopener">
         Read the reviews
         <Icon name="external" />

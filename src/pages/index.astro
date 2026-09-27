@@ -2,13 +2,12 @@
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
 import PricingTable from "../components/PricingTable.astro";
-import HealingAxis from "../components/HealingAxis.astro";
 import AboutPomi from "../components/AboutPomi.astro";
 import Reviews from "../components/Reviews.astro";
 import InstagramGrid from "../components/InstagramGrid.astro";
 import Faq from "../components/Faq.astro";
 import ContactForm from "../components/ContactForm.astro";
-import { getSiteSettings, getServices, getReviews, getLearnArticles, localPhoto } from "../lib/content";
+import { getSiteSettings, getServices, getReviews, getLearnArticles, localPhoto, localGallery, visibleReviews } from "../lib/content";
 
 const [settings, services, reviews, learn] = await Promise.all([
   getSiteSettings(),
@@ -18,6 +17,15 @@ const [settings, services, reviews, learn] = await Promise.all([
 ]);
 
 const faqs = learn.filter((l) => l.showAsFaq).slice(0, 5);
+
+// A photograph beside each review, so the proof block shows the work it is about rather
+// than three columns of type. It is Pomi's own work, never the reviewer -- the caption says
+// the service and "Healed, by Pomi", the same wording every other photograph on the site
+// carries. Where a review names its service the photograph matches it; otherwise it comes
+// from the brow pool. Nothing here may repeat a photograph already standing on this page,
+// which scripts/check-image-reuse.mjs enforces.
+const shownReviews = visibleReviews(reviews);
+const REVIEW_POOL = ["microblading", "microblading-shading", "ombre-powder-brows"];
 // The hero wall. Nine healed results, all four categories, ordered so the three
 // columns read 5-4-3 / 3-5-4 / 4-3-5 down the 12-row grid -- no tile edge meets
 // its neighbour's. Wide cells (span 3) go to eyeliner, lash and lip work, which
@@ -105,14 +113,54 @@ const heroTiles = heroTileSpecs.flatMap((t) => {
   const photo = localPhoto(t.ref, t.alt);
   return photo ? [{ photo, col: t.col, row: t.row, span: t.span, focus: t.focus }] : [];
 });
-const methodPhoto = localPhoto(
-  "microblading/03",
-  "Brow mapping with a ruler before microblading, and the healed result beneath"
-);
 // One image per slot on this page. Not ombre-powder-brows/04 (an Instagram pick) and not
 // microblading-shading/02, which is byte-identical to ombre-powder-brows/02 in the hero --
 // the client supplied the same photograph under both service names.
 const aboutPhoto = localPhoto("microblading-shading/06", "Healed microblading and shading on a client in her forties, by Pomi");
+
+// Everything already standing on this page, by gallery ref, so the review photographs can
+// take from what is left. microblading-shading/02 is excluded for the reason above: it is
+// byte-identical to the ombre-powder-brows/02 tile in the hero.
+const refOf = (p: { kind: string; source?: string } | null | undefined) =>
+  p && p.kind === "local" && p.source
+    ? p.source.replace("/src/assets/gallery/", "").replace(/\.jpg$/, "")
+    : null;
+const takenRefs = new Set<string>(
+  [
+    ...heroTileSpecs.map((t) => t.ref as string),
+    ...(settings.instagramPicks ?? []).map(refOf),
+    // The price grid shows a cover per service further down the same page.
+    ...services.map((svc) => refOf(svc.cover)),
+    refOf(aboutPhoto),
+    "microblading-shading/02",
+  ].filter((r): r is string => Boolean(r))
+);
+// Two passes. A review that names its service gets that service, always -- Anne P. says she
+// was microbladed, so hers is microblading. The rest then take services nobody has used yet,
+// so the row shows Pomi's range instead of the same caption three times.
+const usedFolders = new Set<string>();
+const takeFrom = (folders: string[]) => {
+  for (const folder of folders) {
+    for (const photo of localGallery(folder)) {
+      const ref = refOf(photo);
+      if (ref && !takenRefs.has(ref)) {
+        takenRefs.add(ref);
+        usedFolders.add(folder);
+        return photo;
+      }
+    }
+  }
+  return null;
+};
+const reviewPhotos: (ReturnType<typeof localPhoto>)[] = shownReviews.map(() => null);
+shownReviews.forEach((r, i) => {
+  if (r.serviceSlug) reviewPhotos[i] = takeFrom([r.serviceSlug]);
+});
+shownReviews.forEach((r, i) => {
+  if (reviewPhotos[i]) return;
+  const fresh = REVIEW_POOL.filter((f) => !usedFolders.has(f));
+  reviewPhotos[i] = takeFrom([...fresh, ...REVIEW_POOL]);
+});
 
 const title = `${settings.businessName} | Natural permanent makeup in Tustin, near Irvine`;
 ---
@@ -126,12 +174,14 @@ const title = `${settings.businessName} | Natural permanent makeup in Tustin, ne
   canonicalPath="/"
   ogImage="/og.jpg"
 >
-  {/* Reassure first: the result, the method, the work, then the proof, then who and what it costs. */}
+  {/* Reassure first: the result, the artist, the work, then the proof, then who and what it costs.
+      The six-week healing timeline moved to /aftercare and the service pages on 2026-09-19 --
+      a calendar that early made the process read as complex. Since 2026-09-27 its slot is
+      Pomi herself -- a face, her words and four facts -- the way solo PMU studios open. */}
   {heroTiles.length > 0 && <Hero settings={settings} tiles={heroTiles} />}
-  <HealingAxis photo={methodPhoto} />
-  <InstagramGrid settings={settings} services={services} />
-  <Reviews reviews={reviews} settings={settings} />
   <AboutPomi settings={settings} services={services} fallbackPhoto={aboutPhoto} />
+  <InstagramGrid settings={settings} services={services} />
+  <Reviews reviews={reviews} settings={settings} photos={reviewPhotos} services={services} />
   <PricingTable services={services} />
   <Faq faqs={faqs} />
   <ContactForm settings={settings} services={services} />

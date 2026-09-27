@@ -13,8 +13,10 @@
   "hours": [],
   "hoursNote": "By appointment",
   "bookingUrl": "",
-  "yelpUrl": "https://www.yelp.com/search?find_desc=Pomi+B+Brow+Studio&find_loc=Tustin%2C+CA",
-  "yelpReviewCount": 200,
+  "yelpUrl": "https://www.yelp.com/biz/pomi-b-brow-studio-tustin",
+  "yelpRating": 5,
+  "yelpReviewCount": 235,
+  "yelpOtherReviewCount": 1,
   "instagramHandle": "pomib.browstudio",
   "instagramUrl": "https://www.instagram.com/pomib.browstudio/",
   "instagramLiveFeed": true,
@@ -40,12 +42,12 @@
       "alt": "Healed ombre powder brows"
     }
   ],
-  "aboutHeading": "One artist. Every stroke.",
+  "aboutHeading": "Pomi.",
   "bio": [
     "PLACEHOLDER: Pomi's bio goes here. Replace this paragraph in Site settings with her own words: how long she has done permanent makeup, her training, and why she works alone.",
     "Every appointment at the studio is with Pomi herself, from the first mapping to the six-week perfecting touch-up."
   ],
   "bioIsPlaceholder": true,
-  "headshot": null,
-  "metaDescription": "Natural-looking permanent makeup in Tustin, across from Irvine. Microblading, powder brows, eyeliner, lash enhancement and lip tint by Pomi, one artist with 200+ five-star Yelp reviews."
+  "headshot": "pomi/portrait",
+  "metaDescription": "Natural-looking permanent makeup in Tustin, across from Irvine. Microblading, powder brows, eyeliner, lash enhancement and lip tint by Pomi, one artist, 5.0 on Yelp across 235 reviews."
 }

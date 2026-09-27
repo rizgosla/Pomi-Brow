@@ -392,17 +392,27 @@
           {
             "label": "Day 1",
             "title": "Darker than the finish",
-            "text": "The color looks darker, sharper, brighter or more intense than the healed result."
+            "text": "The color looks darker, sharper, brighter or more intense than the healed result. This is normal and it is temporary."
           },
           {
-            "label": "Days 2 to 7",
+            "label": "Days 4 to 7",
             "title": "Dry and flaky",
-            "text": "Dryness, tightness, light flaking or temporary patchiness while the skin heals."
+            "text": "Dryness, tightness, light flaking or temporary patchiness. Keep it dry and leave it alone; the color underneath is setting."
           },
           {
-            "label": "Weeks 2 to 6",
-            "title": "Settled",
-            "text": "The color softens and settles. The touch-up refines the result if needed."
+            "label": "Around day 10",
+            "title": "Too light",
+            "text": "The color looks like it disappeared. It has not. It is under a new layer of skin and will come back."
+          },
+          {
+            "label": "Week 4",
+            "title": "The true color",
+            "text": "Healed skin turns clear and the real shade shows, softer and more natural than day one."
+          },
+          {
+            "label": "Week 6",
+            "title": "The perfecting touch-up",
+            "text": "Skin heals unevenly, so some strokes need a second pass. This appointment refines shape and color and finishes the work."
           }
         ],
         "callout": {

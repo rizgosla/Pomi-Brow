@@ -44,7 +44,7 @@ function priceLabel(s: Service) {
                 <Photo
                   photo={s.cover}
                   widths={[300, 500, 700]}
-                  sizes="(min-width: 90rem) 22vw, (min-width: 60rem) 30vw, (min-width: 40rem) 45vw, 92vw"
+                  sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 92vw"
                 />
               </div>
             )}
@@ -74,7 +74,7 @@ function priceLabel(s: Service) {
                 <Photo
                   photo={extras[0].cover}
                   widths={[300, 500, 700]}
-                  sizes="(min-width: 90rem) 22vw, (min-width: 60rem) 30vw, (min-width: 40rem) 45vw, 92vw"
+                  sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 92vw"
                 />
               </div>
             )}
@@ -85,7 +85,7 @@ function priceLabel(s: Service) {
                 <li>
                   <span>
                     {s.title}
-                    {s.priceNote && <span class="muted"> · {s.priceNote}</span>}
+                    {s.priceNote && <span class="extras__note">{s.priceNote}</span>}
                   </span>
                   <span class="service__amount">{priceLabel(s)}</span>
                 </li>
@@ -206,6 +206,13 @@ function priceLabel(s: Service) {
     white-space: nowrap;
     font-size: var(--fs-body);
   }
+  /* The note sits under its item rather than trailing it after a dot: in a four-across
+     card the trailing version broke mid-phrase ("existing / clients"). */
+  .extras__note {
+    display: block;
+    font-size: var(--fs-caption);
+    color: var(--ink-muted);
+  }
   .extras li:first-child {
     border-top: 0;
     padding-top: 0;
@@ -225,11 +232,15 @@ function priceLabel(s: Service) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
-  /* Four across in the wide field: eight cards land as two clean rows, and each
-     photograph gets smaller rather than each card getting wider. */
-  @media (min-width: 90rem) {
+  /* Four across once the 82rem column has room: the eight cards (seven services and
+     the touch-ups card) land as two clean rows. Padding tightens a step so a two-word
+     name like "Microblading + Shading" holds one line in a ~316px card. */
+  @media (min-width: 80rem) {
     .bento {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .service {
+      padding: var(--space-5);
     }
   }
 </style>

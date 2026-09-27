@@ -1,37 +1,100 @@
 ---
-// Curated reviews, copied word for word from Yelp, as three quiet cards.
-import type { Review, SiteSettings } from "../lib/content";
+// The proof block: the Yelp standing, then the words themselves.
+//
+// 2026-09-19. Two changes, one section. The count used to live as a sentence inside
+// AboutPomi while the quotes sat here, so the page made its strongest claim in one place
+// and evidenced it in another; the open critique on this surface asked for them merged
+// under one heading, and the client asked for reviews to be readable without leaving the
+// site. They are the same fix. The count is now the heading and the quotes are the body.
+//
+// The second change is accuracy. "200+ five-star reviews" quietly implied a spotless
+// listing. The real shape is a five-star studio with one review that is not five stars,
+// and the section now says so. A perfect record invites suspicion; a near-perfect one you
+// volunteer yourself is the reason to believe the rest of the page.
+import type { Review, Service, SiteSettings, Photo as PhotoType } from "../lib/content";
+import { visibleReviews, photoCaption } from "../lib/content";
 import Icon from "./Icon.astro";
+import Photo from "./Photo.astro";
+import Caption from "./Caption.astro";
 
 interface Props {
   reviews: Review[];
   settings: SiteSettings;
+  /** One of Pomi's own photographs per card, positionally aligned to the shown reviews. */
+  photos?: (PhotoType | null)[];
+  /** Only to title the photo captions by service, the same way About does. */
+  services?: Service[];
 }
-const { reviews, settings } = Astro.props;
-const isPlaceholder = (s: string | undefined | null) => /placeholder/i.test(s ?? "");
-// A placeholder review is not a review. The block promises words copied from
-// Yelp, so it ships only when every card can keep that promise.
-const real = reviews.filter((r) => !isPlaceholder(r.quote) && !isPlaceholder(r.reviewer));
-const shown = real.slice(0, 3);
+const { reviews, settings, photos = [], services = [] } = Astro.props;
+// Placeholders never ship -- the block promises words copied from Yelp. Shared with
+// index.astro so the photographs it prepares line up with the reviews that actually render.
+const shown = visibleReviews(reviews);
 const LONG_QUOTE = 220;
+// The standing and the words are two different promises. The words are quoted, so they ship
+// only when they are real -- that guard stays. The rating and the count are facts about the
+// listing and hold whether or not a quote has been pasted in yet, so the section now leads
+// with them and simply omits the cards until there are three to show. Without this split the
+// home page lost its Yelp proof entirely the moment the count moved into this block.
+
+// Read off the listing on 2026-09-19: 5.0 across 235 reviews. The count is every review,
+// not the five-star subset -- that subset is derived below rather than claimed directly,
+// because the listing publishes the total and the average, not the breakdown.
+const { yelpRating: rating, yelpReviewCount: total, yelpOtherReviewCount: other } = settings;
+const stars = Array.from({ length: 5 });
+// Said out loud only when there is something to say. At zero the sentence would be a boast.
+const candour =
+  other === 1 ? "All but one of them five stars." : other > 1 ? `All but ${other} of them five stars.` : null;
+const monthYear = (iso?: string) => {
+  if (!iso) return null;
+  const d = new Date(`${iso}T00:00:00`);
+  return Number.isNaN(d.valueOf())
+    ? null
+    : d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+};
 ---
 
 {
-  shown.length > 0 && (
+  settings.yelpReviewCount > 0 && (
     <section class="reviews section" id="reviews" aria-labelledby="reviews-heading">
       <div class="page">
         <div class="section-head reveal">
-          <h2 id="reviews-heading">In their words.</h2>
-          <p class="lede">Copied word for word from Yelp. Nothing here was written for this page.</p>
+          {/* Numeral and sentence share one baseline so the claim reads as a single object
+              rather than a flourish above a line of type. */}
+          <h2 id="reviews-heading" class="reviews__line">
+            <span class="reviews__numeral">{rating}.0</span>
+            <span class="reviews__what">on Yelp, across {total} reviews.</span>
+          </h2>
+          {/* The word-for-word promise is only made when there are words on the page to keep
+              it. With no quotes yet, the lede is just the standing, said plainly. */}
+          <p class="lede">
+            {candour}
+            {shown.length > 0
+              ? " Copied word for word. Nothing here was written for this page, and nothing has been left out."
+              : " Every one written by a client of one artist. Read them before you call."}
+          </p>
         </div>
 
+        {shown.length > 0 && (
         <ul class="reviews__list">
           {shown.map((r, i) => (
             <li class="card reviews__item reveal" style={`--i: ${i}`}>
+              {photos[i] && (
+                <figure class="reviews__figure">
+                  <Photo photo={photos[i]!} sizes="(min-width: 60rem) 24rem, 100vw" widths={[480, 720]} ratio="4 / 3" />
+                  <figcaption>
+                    {/* Names the service and the artist, never the reviewer: this is Pomi's
+                        work, not a photograph of the person quoted below it. */}
+                    <Caption service={photoCaption(photos[i]!, services).service} detail="Healed, by Pomi" />
+                  </figcaption>
+                </figure>
+              )}
               <blockquote>
                 <p class:list={["reviews__quote", { "reviews__quote--long": r.quote.length > LONG_QUOTE }]}>{r.quote}</p>
                 <footer class="reviews__meta">
-                  <span class="reviews__name">{r.reviewer}</span>
+                  <span class="reviews__who">
+                    <span class="reviews__name">{r.reviewer}</span>
+                    {monthYear(r.date) && <span class="reviews__date">{monthYear(r.date)}</span>}
+                  </span>
                   {r.sourceUrl ? (
                     <a class="tag" href={r.sourceUrl} rel="noopener">
                       {r.source}
@@ -44,11 +107,24 @@ const LONG_QUOTE = 220;
             </li>
           ))}
         </ul>
+        )}
 
         <div class="reviews__foot reveal">
+          {/* The stars are attribution, so they sit with the source link rather than over the
+              heading -- nothing sits above a heading on this site. */}
+          <p class="reviews__rating">
+            <span class="reviews__stars" role="img" aria-label={`Rated ${rating} out of 5 on Yelp`}>
+              {stars.map(() => (
+                <Icon name="star" />
+              ))}
+            </span>
+            {/* The heading already says 5.0; repeating it here was two numerals saying one
+                thing. The stars carry it, and the foot names the source instead. */}
+            <span>Rated by {total} clients</span>
+          </p>
           <a class="btn btn--quiet" href={settings.yelpUrl} rel="noopener">
             <Icon name="yelp" />
-            All {settings.yelpReviewCount}+ reviews on Yelp
+            Read every review on Yelp
           </a>
         </div>
       </div>
@@ -57,15 +133,51 @@ const LONG_QUOTE = 220;
 }
 
 <style>
+  .reviews__line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 var(--space-5);
+    margin: 0;
+  }
+  /* The warmest near-black on the page, taken from the brow pigment rather than the neutral
+     ink -- the number is about the work, so it carries the work's colour. */
+  .reviews__numeral {
+    font-size: var(--fs-numeral);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--pigment-brow);
+  }
+  .reviews__what {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-display);
+  }
   .reviews__list {
     display: grid;
     gap: var(--space-4);
   }
+  /* The photograph is Pomi's work, not the reviewer's face -- see the note in index.astro.
+     Inside a card it takes the grey frame, per the Pink Line Rule. */
+  .reviews__figure {
+    margin: 0 0 var(--space-5);
+    display: grid;
+    gap: var(--space-2);
+  }
+  /* The card is a column: figure, then the quote taking whatever height is left, so the
+     name/date footer still lands on the card floor. height:100% on the blockquote did that
+     job before the photograph arrived, and overflowed the card once it had a sibling. */
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__figure {
+    flex: none;
+  }
   .reviews__item blockquote {
     margin: 0;
+    flex: 1;
     display: grid;
     gap: var(--space-5);
-    height: 100%;
     align-content: space-between;
   }
   .reviews__quote {
@@ -93,11 +205,44 @@ const LONG_QUOTE = 220;
     font-size: var(--fs-small);
     color: var(--ink-muted);
   }
+  .reviews__who {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 var(--space-3);
+  }
+  .reviews__date {
+    font-size: var(--fs-caption);
+  }
   .reviews__meta .tag {
     text-decoration: none;
   }
   .reviews__foot {
     margin-top: var(--space-6);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-4) var(--space-6);
+  }
+  .reviews__rating {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  /* Ink, not gold: a rating is information, and colour on this page is reserved for the
+     work and for the one control that asks to be pressed. */
+  .reviews__stars {
+    display: inline-flex;
+    gap: 2px;
+    color: var(--pigment-brow);
+  }
+  /* The icon set is only given a size inside .btn and .link, so a star sitting in a
+     paragraph renders 0x0. Sized here, through :global because .icon belongs to Icon.astro. */
+  .reviews__stars :global(.icon) {
+    width: 1.05em;
+    height: 1.05em;
   }
   @media (min-width: 60rem) {
     .reviews__list {
