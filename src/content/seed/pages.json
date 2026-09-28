@@ -603,8 +603,7 @@
           "tone": "caution",
           "title": "Ask before booking eye services",
           "text": "Ask before booking if you have active eye irritation, recent eye surgery, certain eye medications, recent cosmetic eye treatments, or sensitivity around the eyes."
-        },
-        "side": "right"
+        }
       },
       {
         "type": "compare",
@@ -707,7 +706,8 @@
           "tone": "note",
           "title": "Usually a two-step process",
           "text": "The first appointment creates the foundation. The touch-up lets me review retention and refine color, shape, softness or density after healing."
-        }
+        },
+        "side": "left"
       },
       {
         "type": "grid",

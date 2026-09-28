@@ -98,11 +98,14 @@ const doors =
     ? blocks.map((b) => ({ title: b.title, text: b.text, href: b.links![0].href, label: b.links![0].label }))
     : undefined;
 
+// A feature of two blocks is a spread from 60rem (layouts.css): the head moves beside the large
+// block's photograph and the second block sits under it, so no column stands half empty.
+
 // Rendered once: the rail puts the head inside its wrapper, every other layout straight in the shell.
 const head = Astro.slots.has("head") ? await Astro.slots.render("head") : "";
 ---
 
-<div class:list={["l", `l--${layout}`]} data-side={dataSide} style={`--n: ${n}`}>
+<div class:list={["l", `l--${layout}`, { "l--spread": layout === "feature" && n === 2 }]} data-side={dataSide} style={`--n: ${n}`}>
   {
     layout === "rail" ? (
       <div class="l__rail">

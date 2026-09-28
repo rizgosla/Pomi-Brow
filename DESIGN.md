@@ -450,7 +450,7 @@ Rebuilt on 2026-09-28 from the client's critique of 21 sections. Their complaint
      - **`tiles`**: head on top, then 2–4 equal boxes in one row, each optionally with its own 1:1 photograph. Only for parallel items of 25 words or fewer. Four boxes run 2×2 until 80rem.
      - **`split`**: the photograph at 5/12 beside the head, rows and note at 7/12. The photograph is sticky where the screen is at least 45rem tall. The rows share one tile under dividers: serif numerals for steps, a 1px line with hollow markers for a timeline, link rows for "Before you book".
      - **`rail`**: the Guardian's hanging head. The h2, lede and a small 4:5 photograph sit in a sticky left rail (5/12, then 4/12 from 80rem). Counted rows (01, 02…) sit in one tile on the right. From 80rem, four or more rows run down two columns. The rail's photograph is sticky like the split's.
-     - **`feature`**: 1 + N. The first block is large (7/12) with the photograph at its head; the rest are compact beside it.
+     - **`feature`**: 1 + N. The first block is large (7/12) with the photograph at its head; the rest are compact beside it. With two blocks it becomes a spread: the head moves into the other column, level with the photograph's top, and the second block sits at that column's foot, level with the first block's words. One companion beside a tall photograph used to leave that column standing empty for most of its height.
      - **`bento`**: a square photograph spanning both rows of a 2×2 of short blocks (about 15 words each).
      - **`center`**: block, 4:5 photograph, block. Exactly two blocks of similar length.
      - **`ledger`**: the h2 and lede (7/12) beside a 5:2 strip (5/12), then one tile split into 2–4 columns by hairlines.
