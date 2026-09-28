@@ -250,6 +250,21 @@
   align-items: stretch;
 }
 
+/* Image cards share their rows too: photograph with caption, then the words. A long service
+   name wraps its caption to two lines ("Scalp Micropigmentation, Before and after"), and
+   without the shared row that card's title sat a line below its neighbours'. */
+@supports (grid-template-rows: subgrid) {
+  .l-tiles > .l-tile:has(> .l-block__photo) {
+    display: grid;
+    grid-row: span 2;
+    grid-template-rows: subgrid;
+    row-gap: calc(var(--space-3) + var(--space-2));
+  }
+  .l-tiles > .l-tile:has(> .l-block__photo) > .l-block__photo + * {
+    margin-top: 0;
+  }
+}
+
 /* ------------------------------------------------------------------------------------------ */
 /* Rows: one tile of rows under dividers (split, rail)                                         */
 /* ------------------------------------------------------------------------------------------ */

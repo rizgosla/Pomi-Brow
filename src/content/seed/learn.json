@@ -1239,11 +1239,11 @@
         "items": [
           {
             "title": "Private setting",
-            "text": "One client at a time."
+            "text": "One client at a time, with no unnecessary traffic."
           },
           {
             "title": "Single-use tools",
-            "text": "Opened in front of you, then discarded."
+            "text": "Opened in front of you, then safely discarded."
           },
           {
             "title": "Clean studio practices",
@@ -1257,14 +1257,15 @@
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "Safety depends on the artist, the tools, the studio and your preparation.",
         "paragraphs": [
           "Permanent makeup involves the skin, so safety matters before, during and after the appointment. A safer one starts with a clean studio, single-use tools, proper barriers, careful pigment handling and clear aftercare.",
-          "At Pomi B. Brow Studio that means a private room, disinfected surfaces, fresh barriers, single-use needles, supplies and pigment containers, gloves, masks and coverings. The Safety page has the detail."
+          "Your part is preparation: share your health details, follow the pre-care instructions for your service, and plan around the healing period."
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Sealed single-use needle cartridge held up to the client before it is opened"
+          "shot": "Sealed needle cartridge held up for the client to see before it is opened, close-up, window light"
         },
         "callout": {
           "tone": "note",
@@ -1273,130 +1274,42 @@
         }
       },
       {
-        "type": "grid",
-        "heading": "What makes permanent makeup safe?",
-        "columns": 4,
-        "items": [
-          {
-            "title": "Clean studio setup",
-            "text": "Cleaned, prepared and controlled before each client."
-          },
-          {
-            "title": "Single-use supplies",
-            "text": "Needles, cartridges, pigment containers and disposable tools, never reused."
-          },
-          {
-            "title": "Careful technique",
-            "text": "Focus, precision and proper handling of tools and pigment."
-          },
-          {
-            "title": "Aftercare",
-            "text": "Protects the treated area and supports the best healed result."
-          }
-        ]
-      },
-      {
         "type": "sequence",
+        "layout": "ledger",
+        "kind": "timeline",
         "heading": "Why disposable tools matter.",
         "lede": "Single-use tools cut cross-contamination risk: they touch one client and are then safely discarded.",
-        "kind": "steps",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "Used cartridges and disposable supplies going into the sharps bin after a session"
+          "ratio": "5 / 2",
+          "shot": "Gloved hand dropping a used cartridge into the sharps bin after the session, side view, soft light"
         },
         "items": [
           {
             "label": "Before",
             "title": "New tools",
-            "text": "New for the appointment: needles, cartridges and disposable supplies."
+            "text": "Needles, cartridges and disposable supplies are new for your appointment, and pigment containers are single-use only."
           },
           {
             "label": "During",
-            "title": "Opened for the client",
-            "text": "Opened during the appointment, so you can see they are brand new."
+            "title": "Opened in front of you",
+            "text": "Needles and cartridges are opened during the appointment, so you can see they are brand new."
           },
           {
             "label": "After",
-            "title": "Disposed after use",
-            "text": "Discarded safely after the session."
+            "title": "Discarded after use",
+            "text": "Used tools and supplies are discarded safely after the session and never reused."
           }
         ]
       },
       {
         "type": "grid",
-        "heading": "Clean studio practices to look for.",
-        "lede": "Not rushed, crowded or unclear. A clean process protects you and lets the artist focus.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Private appointment setting",
-            "bullets": [
-              "One client at a time, no unnecessary traffic",
-              "More control over the environment",
-              "More focus during detailed work"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "The empty private treatment room, door closed, one bed and one tray ready"
-            }
-          },
-          {
-            "title": "Disinfected surfaces and barriers",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Disinfectant wipe passing over the treatment bed, a roll of fresh barrier film beside it"
-            },
-            "bullets": [
-              "Surfaces cleaned before and after appointments",
-              "Fresh disposable barriers for each session",
-              "Protective coverings during the service"
-            ]
-          },
-          {
-            "title": "Gloves, masks and protective coverings",
-            "bullets": [
-              "Gloves throughout the procedure",
-              "Masks and coverings as studio practice",
-              "Less contact with the area and tools"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Gloved hands and mask on, laying out the tray before the client sits down"
-            }
-          },
-          {
-            "title": "Clear aftercare instructions",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Printed aftercare card handed across the counter at the end of an appointment"
-            },
-            "bullets": [
-              "Know what to avoid while healing",
-              "Do not pick, scratch or peel",
-              "Ask the studio if unsure"
-            ]
-          }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "The studio's own practices",
-          "links": [
-            {
-              "label": "Safety at Pomi B. Brow Studio",
-              "href": "/safety"
-            },
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            }
-          ]
-        }
-      },
-      {
-        "type": "grid",
+        "layout": "bento",
         "heading": "Skin and health considerations.",
         "lede": "Most healthy clients are good candidates, but some should ask questions before booking or speak with their doctor first.",
-        "columns": 4,
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Close look at the skin near a client's brow under the lamp, checking for irritation first"
+        },
         "items": [
           {
             "title": "Pregnant or nursing",
@@ -1423,68 +1336,13 @@
       },
       {
         "type": "grid",
-        "heading": "Who should ask first, by service.",
-        "columns": 4,
-        "items": [
-          {
-            "title": "Brows",
-            "text": "Recent brow treatments, active breakouts, irritation, cuts, sunburn, or skin conditions near the brows."
-          },
-          {
-            "title": "Eyes",
-            "text": "Current eye irritation, recent eye surgery, certain eye medications, or recent cosmetic eye treatments."
-          },
-          {
-            "title": "Lips",
-            "text": "Active cold sores, frequent cold sore history, lip irritation, recent filler, or healing concerns around the mouth."
-          },
-          {
-            "title": "Scalp",
-            "text": "Active scalp irritation, open areas, recent scalp procedures, or a skin condition in the treatment area."
-          }
-        ]
-      },
-      {
-        "type": "sequence",
-        "heading": "Prepare for a safer appointment.",
-        "lede": "Follow the instructions for your specific service.",
-        "kind": "steps",
+        "layout": "rail",
+        "heading": "What to ask any artist.",
+        "lede": "Asking the right questions helps you feel informed before booking and helps the artist understand your goals.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "Consultation notes and the pre-care sheet on the desk before an appointment"
+          "ratio": "4 / 5",
+          "shot": "Client asking a question at the consultation, Pomi listening, both seated, soft window light"
         },
-        "items": [
-          {
-            "label": "Share",
-            "title": "Share health details",
-            "text": "Medications, medical conditions, skin concerns, allergies, or recent treatments."
-          },
-          {
-            "label": "Avoid",
-            "title": "Avoid common irritants",
-            "text": "Follow pre-care instructions about alcohol, caffeine, blood thinners, retinol, exfoliants, tanning, and sunburn."
-          },
-          {
-            "label": "Arrive",
-            "title": "Arrive prepared",
-            "text": "Rested, hydrated, and ready to review goals, shape, color and aftercare."
-          }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "Preparation checklist",
-          "bullets": [
-            "Review your service and its pre-care instructions",
-            "Ask about medical or skin concerns first",
-            "No tanning or sunburn before treatment",
-            "Plan around the healing period"
-          ]
-        }
-      },
-      {
-        "type": "grid",
-        "heading": "Questions to ask before your appointment.",
-        "columns": 4,
         "items": [
           {
             "title": "What tools are single-use?",
@@ -1500,20 +1358,30 @@
           },
           {
             "title": "What should I avoid?",
-            "text": "Before and after, for your service."
+            "text": "Before and after your appointment, for your service."
           }
         ]
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Two things worth reading first: the questions clients ask most, and how to arrive ready.",
-        "columns": 3,
+        "lede": "Worth reading before you schedule: how the studio stays safe, how to prepare, and what to expect while it heals.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Microblading before and after",
+          "photo": {
+            "ref": "microblading/02",
+            "alt": "Microblading before and after: sparse, fine brow hairs, then a fuller, darker brow of hair strokes",
+            "focus": "45% 50%",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
-            "title": "Frequently asked questions",
-            "text": "Short answers to the questions clients ask most.",
-            "href": "/faqs",
+            "title": "Safety at the studio",
+            "text": "The private room, the clean setup and the single-use tools, in detail.",
+            "href": "/safety",
             "linkLabel": "Read"
           },
           {
@@ -1521,13 +1389,29 @@
             "text": "Skin, timing and what to tell me before we start.",
             "href": "/learn/prepare-for-appointment",
             "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
           }
         ]
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Safety questions.",
         "lede": "Asked most, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Lip tint before and after",
+          "photo": {
+            "ref": "lip-tint/04",
+            "alt": "Lip tint before and after: pale mauve lips, then soft rosy pink",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
             "q": "Is permanent makeup safe?",
@@ -1551,11 +1435,7 @@
           },
           {
             "q": "Is there downtime?",
-            "a": "Plan for visible healing signs for 1 to 2 weeks, then follow the aftercare for your service."
-          },
-          {
-            "q": "Where is the studio?",
-            "a": "Tustin, CA, near Irvine and central Orange County."
+            "a": "Most clients should plan for visible healing signs for 1 to 2 weeks, then follow the aftercare for your service."
           }
         ]
       },
@@ -1572,7 +1452,16 @@
             "label": "Are you a good candidate?",
             "href": "/learn/good-pmu-candidates"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },
@@ -2378,7 +2267,7 @@
         "items": [
           {
             "title": "Soft shaded look",
-            "text": "Soft at the front, fuller through the arch and tail."
+            "text": "A soft front, fuller through the arch and tail."
           },
           {
             "title": "Many skin types",
@@ -2390,20 +2279,27 @@
           },
           {
             "title": "Near Irvine",
-            "text": "Tustin, CA, in central Orange County."
+            "text": "A private studio in Tustin, central Orange County."
           }
         ]
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "Powder brows are a strong choice if you want soft, filled-in brows.",
         "paragraphs": [
           "Powder brows suit clients who like softly filled-in brows and want more definition than bare natural brows. They are often a good fit for sparse, uneven or patchy brows, and for anyone who wants less daily brow makeup.",
-          "If you prefer individual hair-like strokes, microblading may be a better fit. If you want hair-stroke detail and extra fullness, microblading / shading may be the best option."
+          "Also called ombre powder brows, they use a soft shading technique: the front stays softer while the arch and tail look more defined. Healed, the result often looks like a soft brow powder or pencil finish."
         ],
         "image": {
-          "ratio": "4 / 5",
-          "shot": "Healed ombre powder brows, soft at the front and defined through the arch and tail"
+          "ratio": "1 / 1",
+          "shot": "Powder brows with a softer front on a client looking up",
+          "photo": {
+            "ref": "ombre-powder-brows/01",
+            "alt": "Dark powder brows with a softer front on a client lying back and looking up",
+            "focus": "50% 0%",
+            "detail": "Close-up"
+          }
         },
         "callout": {
           "tone": "note",
@@ -2412,120 +2308,76 @@
         }
       },
       {
-        "type": "grid",
-        "heading": "Powder brows may be right for you if...",
-        "lede": "For clients who want brows that look softly filled in, balanced and more defined.",
-        "items": [
-          {
-            "title": "You fill in your brows daily",
-            "text": "A soft filled-in look without daily pencil or powder."
-          },
-          {
-            "title": "Your brows look uneven",
-            "text": "Custom brow mapping improves the balance between both brows."
-          },
-          {
-            "title": "You want more fullness",
-            "text": "Soft shading reduces the look of patchy or sparse areas."
-          },
-          {
-            "title": "You want less maintenance",
-            "text": "Less time spent shaping and filling your brows."
-          }
-        ]
-      },
-      {
-        "type": "statement",
-        "heading": "What are powder brows?",
-        "paragraphs": [
-          "Powder brows, also called ombre powder brows, use a soft shading technique to create the look of fuller brows. The front usually stays softer, while the arch and tail look more defined.",
-          "The healed result often looks like a soft brow powder or pencil finish. The goal is to enhance your natural features, improve shape, and create a brow that fits your face."
-        ],
-        "image": {
-          "ratio": "3 / 2",
-          "shot": "Brow mapping in progress: the shape drawn and measured before any shading begins"
-        }
-      },
-      {
         "type": "compare",
+        "layout": "tiles",
         "heading": "Powder brows vs microblading.",
-        "lede": "It depends on your skin, natural brow hair, preferred style, and how much definition you want. Microblading / shading sits between the two: hair-like strokes with extra fullness from soft shading.",
+        "lede": "It depends on your skin, your natural brow hair, the style you prefer and how much definition you want.",
         "sides": [
           {
             "title": "Powder brows",
             "bullets": [
-              "Soft shaded look with more fullness",
+              "Soft shading with more fullness",
               "Definition through the arch and tail",
-              "For those who like brow powder or pencil",
-              "A polished, makeup-like finish"
+              "A good fit for very sparse brows",
+              "Often holds up better on oily skin"
             ],
             "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed powder brows up close, showing the soft shaded gradient"
+              "ratio": "3 / 2",
+              "shot": "Powder brows up close: a soft front, a defined arch and tail",
+              "photo": {
+                "ref": "ombre-powder-brows/04",
+                "alt": "Dark powder brows with a soft front on a client lying with her eyes closed",
+                "focus": "50% 40%",
+                "detail": "Close-up"
+              }
             }
           },
           {
             "title": "Microblading",
             "bullets": [
               "Fine hair-like strokes",
-              "A natural brow-hair look",
-              "A soft result with realistic detail",
-              "For those who want strokes, not shading"
+              "A natural brow-hair look with realistic detail",
+              "Best if you already have some brow hair",
+              "Suits normal to dry skin"
             ],
             "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed microblading up close, individual hair-like strokes through the brow"
+              "ratio": "3 / 2",
+              "shot": "Microblading up close: fine hair strokes through the whole brow",
+              "photo": {
+                "ref": "microblading/05",
+                "alt": "A brow of fine hair strokes beside a closed eye",
+                "focus": "50% 80%",
+                "detail": "Close-up"
+              }
             }
           }
         ]
       },
       {
-        "type": "sequence",
-        "heading": "How to know if powder brows fit your skin and style.",
-        "lede": "The final recommendation comes from a consultation, because every client's skin and brow goals are different.",
-        "kind": "steps",
+        "type": "grid",
+        "layout": "rail",
+        "heading": "How to know if powder brows fit you.",
+        "lede": "Every client's skin and brow goals are different, so the final recommendation comes from a consultation.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "A consultation: a client's natural brows beside reference photos of healed work"
+          "ratio": "4 / 5",
+          "shot": "Brow mapping on bare brows, the shape measured and drawn before shading, close-up in soft daylight"
         },
         "items": [
           {
-            "label": "One",
             "title": "Your current brows",
-            "text": "If your brows are sparse, patchy or uneven, powder brows help build a fuller-looking shape."
+            "text": "If your brows are sparse, patchy or uneven, powder brows help build a fuller-looking, more balanced shape."
           },
           {
-            "label": "Two",
             "title": "Your makeup style",
-            "text": "If you usually fill your brows with pencil or powder, powder brows may match your everyday look."
+            "text": "If you usually fill in your brows with pencil or powder, powder brows give that soft filled-in look without the daily step."
           },
           {
-            "label": "Three",
             "title": "Your healed goal",
-            "text": "If you want soft definition instead of individual strokes, powder brows may fit better."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Powder brows may not be your best option if...",
-        "lede": "Another brow service may fit better, depending on the look you want.",
-        "items": [
-          {
-            "title": "You want only hair strokes",
-            "text": "Microblading may fit better if you want the look of individual brow hairs."
+            "text": "If you want soft definition instead of individual strokes, powder brows may fit your goal better. If you want only hair strokes, microblading may suit you more."
           },
           {
-            "title": "You want the softest finish",
-            "text": "A consultation decides how light or defined your result should be."
-          },
-          {
-            "title": "You are unsure about shape",
-            "text": "Custom mapping lets you review the shape before the service begins."
-          },
-          {
-            "title": "You have skin concerns",
-            "text": "Irritation, recent treatments or healing concerns near the brows: ask first."
+            "title": "Your consultation",
+            "text": "I look at your natural brows, skin type, any old pigment and the result you want before recommending an option. With custom mapping, you review the shape before we begin."
           }
         ],
         "callout": {
@@ -2535,59 +2387,46 @@
         }
       },
       {
-        "type": "statement",
+        "type": "grid",
+        "layout": "center",
         "heading": "What should you expect after powder brows?",
-        "paragraphs": [
-          "Powder brows usually look darker and more defined at first. As the skin heals, the color softens and the brows begin to look more natural.",
-          "During healing, brows may look dry, flaky, lighter, or uneven before the final color settles. The touch-up appointment refines the color, shape and softness."
-        ],
+        "lede": "Fresh powder brows are not the final result.",
         "image": {
           "ratio": "4 / 5",
-          "shot": "Powder brows on day one beside the same brows healed at six weeks"
+          "shot": "A freshly done brow, darker than it will heal, balm on the brow head",
+          "photo": {
+            "ref": "ombre-powder-brows/02",
+            "alt": "A freshly done dark brow with glossy balm at the front, above a closed eye",
+            "focus": "50% 50%",
+            "detail": "Fresh"
+          }
         },
-        "callout": {
-          "tone": "links",
-          "title": "Read next",
-          "links": [
-            {
-              "label": "The healing timeline",
-              "href": "/learn/pmu-healing-timeline"
-            },
-            {
-              "label": "Aftercare",
-              "href": "/aftercare"
-            }
-          ]
-        }
-      },
-      {
-        "type": "grid",
-        "heading": "Questions to ask before choosing powder brows.",
-        "lede": "Four questions that settle it.",
         "items": [
           {
-            "title": "Do I want a makeup look?",
-            "text": "If you like a soft filled-in brow, powder brows may be a good match."
+            "title": "At first",
+            "text": "Powder brows usually look darker and more defined. While the skin heals, they may look dry, flaky, lighter or uneven before the final color settles."
           },
           {
-            "title": "Do I want more shape?",
-            "text": "If your brows need better structure, powder brows define the arch and tail."
-          },
-          {
-            "title": "Do I want more density?",
-            "text": "If your brows look thin or patchy, shading creates the look of fullness."
-          },
-          {
-            "title": "Do I want less daily makeup?",
-            "text": "If you fill your brows every day, powder brows reduce that step."
+            "title": "After healing",
+            "text": "The color softens and the brows begin to look more natural. The touch-up appointment then refines the color, shape and softness."
           }
         ]
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Worth reading first: the three brow services side by side, and how the studio stays safe.",
-        "columns": 4,
+        "lede": "Worth reading first: the three brow services, each in detail.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Combination brows: fine strokes at the front, shading through the tail",
+          "photo": {
+            "ref": "microblading-shading/05",
+            "alt": "Soft brows with fine strokes at the front and shading through the tail, client lying with eyes closed",
+            "focus": "55% 50%",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "title": "Ombre powder brows",
@@ -2606,43 +2445,43 @@
             "text": "Hair strokes at the front, soft shading through the body and tail.",
             "href": "/services/microblading-shading",
             "linkLabel": "Read"
-          },
-          {
-            "title": "Safety",
-            "text": "How the studio stays clean and private, and who should ask first.",
-            "href": "/safety",
-            "linkLabel": "Read"
           }
         ]
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Powder brow questions.",
         "lede": "The ones asked most, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Both powder brows of one client, one view per side",
+          "photo": {
+            "ref": "ombre-powder-brows/05",
+            "alt": "Two views of one client's powder brows, one brow in each, eyes closed",
+            "detail": "Two views"
+          }
+        },
         "items": [
+          {
+            "q": "Do powder brows look natural?",
+            "a": "They can look soft and natural when shape, color and density are customized. They are usually more filled-in than microblading but do not need to look heavy: the goal is brows that complement your face, not brows that look stamped on."
+          },
           {
             "q": "Are powder brows good for sparse brows?",
             "a": "Yes. The shading creates the look of more fullness and structure, so they are often a strong option for sparse or patchy brows."
           },
           {
-            "q": "Do powder brows look natural?",
-            "a": "They can look soft and natural when shape, color and density are customized. Usually more filled-in than microblading, but never heavy."
+            "q": "Are powder brows better for oily skin?",
+            "a": "Often, yes. Oily skin can make microblading strokes fade faster or heal less sharply, while shading tends to hold up better."
           },
           {
-            "q": "Are powder brows better than microblading?",
-            "a": "One is not better for everyone. Powder brows give a shaded makeup-like finish, microblading gives fine hair-like strokes, and microblading / shading combines both."
-          },
-          {
-            "q": "Who should choose powder brows?",
-            "a": "Anyone who wants more definition, a soft filled-in look, better symmetry, and less daily brow makeup."
-          },
-          {
-            "q": "Will powder brows look too dark at first?",
-            "a": "Fresh powder brows often look darker and more defined. The color usually softens as the brows heal."
+            "q": "Do powder brows last longer than microblading?",
+            "a": "They often do, as the shaded effect tends to hold better over time. How long depends on your skin type, lifestyle, sun, skincare and aftercare; yearly refresh appointments are recommended for both."
           },
           {
             "q": "Do powder brows need a touch-up?",
-            "a": "Most clients need one to refine the healed color, shape and softness. It completes the final result."
+            "a": "Most clients need one to refine the healed color, shape and softness. The touch-up helps complete the final result."
           }
         ]
       },
@@ -2656,10 +2495,19 @@
             "href": "/contact"
           },
           {
-            "label": "Ombre powder brows",
-            "href": "/services/ombre-powder-brows"
+            "label": "The healing timeline",
+            "href": "/learn/pmu-healing-timeline"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },
@@ -2681,269 +2529,283 @@
         "items": [
           {
             "title": "Four stages",
-            "text": "Bold, then dry, then lighter, then settled, over about four weeks."
+            "text": "Bold, dry, lighter, then settled, over about four weeks."
           },
           {
-            "title": "Clear expectations",
-            "text": "What each stage looks like, so nothing surprises you."
+            "title": "Then a touch-up",
+            "text": "It refines shape, color and anything that healed lighter."
           },
           {
             "title": "Every service",
-            "text": "Brows, eyes, lips and scalp each heal a little differently."
+            "text": "Brows, eyes, lips and scalp heal a little differently."
           },
           {
             "title": "Near Irvine",
-            "text": "A private studio in Tustin, a short drive from Irvine."
+            "text": "A private Tustin studio, a short drive from Irvine."
           }
         ]
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "Bold at first, then softer as it heals.",
         "paragraphs": [
-          "Most permanent makeup looks darker, sharper or more intense on Day 1. Over the next several days it can feel dry, tight, flaky or patchy. That is normal.",
-          "The final color and softness develop over the next few weeks. A touch-up then refines shape, color, and any areas that healed lighter than expected."
+          "Most permanent makeup looks darker, sharper or more intense on Day 1. Over the next several days the area can feel dry, tight, flaky or patchy. This is part of normal healing.",
+          "The final color and softness develop over the next few weeks. A touch-up then helps refine the shape, the color, and any areas that healed lighter than expected."
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Day 1 brows, fresh pigment darker and sharper than it will heal"
+          "shot": "Freshly done brow with balm on the front, above a closed eye",
+          "photo": {
+            "ref": "microblading-shading/02",
+            "alt": "A freshly done brow with fine strokes at the front and shading through the tail, balm still on the front",
+            "focus": "50% 50%",
+            "detail": "Fresh"
+          }
         },
         "callout": {
           "tone": "note",
-          "title": "Healing happens in stages",
-          "text": "Color, texture, softness and shape settle over the first few weeks. Judge the result after that, not on day three."
+          "title": "Healing is not the same for everyone",
+          "text": "Skin type, service, pigment retention, aftercare, lifestyle, sun, skincare and your natural healing response can all affect the final result. Judge it after the full healing period, not during the first few days."
         }
       },
       {
+        "type": "grid",
+        "layout": "tiles",
+        "heading": "Different by service.",
+        "lede": "Each service heals a little differently. Here is what to keep in mind.",
+        "items": [
+          {
+            "title": "Brows",
+            "text": "Microblading, shading and powder brows can look sharper at first, then dry, flaky and lighter, before settling softer and more blended.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Powder brows with a soft front, eyes closed",
+              "photo": {
+                "ref": "ombre-powder-brows/04",
+                "alt": "Dark powder brows with a soft front on a client lying back with eyes closed",
+                "detail": "Close-up"
+              }
+            },
+            "links": [
+              {
+                "label": "Microblading",
+                "href": "/services/microblading"
+              },
+              {
+                "label": "Powder brows",
+                "href": "/services/ombre-powder-brows"
+              },
+              {
+                "label": "Microblading and shading",
+                "href": "/services/microblading-shading"
+              }
+            ]
+          },
+          {
+            "title": "Eyes",
+            "text": "Eyeliner and lash enhancement can look more defined at first and feel slightly tight, then look less intense.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lash enhancement before and after along the upper lashes",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after: bare upper lashes, then a dark line along them",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Eyeliner",
+                "href": "/services/eyeliner"
+              },
+              {
+                "label": "Lash enhancement",
+                "href": "/services/lash-enhancement"
+              }
+            ]
+          },
+          {
+            "title": "Lips",
+            "text": "Lip tint can look bright at first, then soften and settle into a more natural color.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lip tint before and after: pale mauve, then soft rosy pink",
+              "photo": {
+                "ref": "lip-tint/04",
+                "alt": "Lip tint before and after: pale mauve lips, then soft rosy-pink lips",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Lip tint",
+                "href": "/services/lip-tint"
+              }
+            ]
+          },
+          {
+            "title": "Scalp",
+            "text": "Scalp micropigmentation can look darker at first, then blend more naturally with the scalp and hair as it settles.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Scalp micropigmentation before and after, seen from above",
+              "photo": {
+                "ref": "scalp-micropigmentation/02",
+                "alt": "Scalp micropigmentation before and after: pale scalp along a thinning part, then shaded darker",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Scalp micropigmentation",
+                "href": "/services/scalp-micropigmentation"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "type": "sequence",
-        "heading": "Healing, stage by stage.",
-        "lede": "Healing varies by service, skin type, lifestyle and aftercare.",
+        "layout": "rail",
         "kind": "timeline",
+        "heading": "Healing, stage by stage.",
+        "lede": "Mild changes in color, texture and softness are common, and do not always mean something is wrong.",
         "image": {
           "ratio": "4 / 5",
-          "shot": "Day 7 brows mid-flake, color looking lighter before it returns"
+          "shot": "Freshly done winged eyeliner, a cotton swab at the edge",
+          "photo": {
+            "ref": "eyeliner/01",
+            "alt": "Freshly done winged eyeliner on a closed eye, a cotton swab at the edge of the frame",
+            "focus": "70% 50%",
+            "detail": "Fresh"
+          }
         },
         "items": [
           {
             "label": "Day 1",
             "title": "Fresh, bold and more defined",
-            "text": "The area can look darker, warmer or more intense than it will heal: brows sharper, eyeliner more defined, lips brighter, scalp micropigmentation more noticeable.",
-            "bullets": [
-              "Mild redness or tenderness can happen",
-              "The shape looks more precise before it softens"
-            ]
+            "text": "Right after your appointment the area can look darker, warmer or more intense than the healed result, and the shape more precise before it softens. Mild redness or tenderness can happen."
           },
           {
             "label": "Days 2 to 5",
             "title": "Dryness, tightness and early flaking",
-            "text": "The skin starts to heal. Dryness, tightness, light flaking or a slightly textured look are common, and the color can still look strong.",
-            "bullets": [
-              "Brows flake or look dry",
-              "Eyeliner and lash enhancement can feel tight"
-            ]
+            "text": "The skin starts to heal. You may notice dryness, tightness, light flaking or a slightly textured look, and the color can still look strong."
           },
           {
             "label": "Days 6 to 10",
             "title": "Lighter, patchy or uneven",
-            "text": "Many clients worry here, and it is often normal. As the surface skin renews, color can look lighter, uneven or temporarily faded.",
-            "bullets": [
-              "Do not pick flakes or dry skin",
-              "Do not judge the final color yet"
-            ]
+            "text": "This is when many clients worry, but it is often normal. As the surface skin flakes or renews, color can look lighter, uneven or temporarily faded. Do not pick, and do not judge the final color yet."
           },
           {
             "label": "Weeks 2 to 4",
-            "title": "Softer, and settling",
-            "text": "The area becomes softer and more natural-looking. Color that looked light in early healing can return slightly.",
-            "bullets": [
-              "Brows softer and blended, eyes and lips less intense",
-              "Scalp micropigmentation blends with scalp and hair"
-            ]
+            "title": "Softening and settling",
+            "text": "The area becomes softer and more natural-looking, and color that looked light early on can return slightly. The final result starts to show."
           },
           {
             "label": "Touch-up",
-            "title": "The touch-up refines the healed result",
-            "text": "I review how your skin healed, adjust color if needed, and refine shape or density, especially where it healed lighter.",
+            "title": "Your touch-up refines the result",
+            "text": "I review how your skin healed, adjust color if needed, and refine shape or density. Areas that healed lighter can be filled in and the result balanced."
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "layout": "center",
+        "heading": "While it heals.",
+        "lede": "Good aftercare helps protect your result. Follow the instructions for your service, and ask if you are unsure.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Brows on day four, dry and lightly flaking, left untouched, close-up in soft window light"
+        },
+        "items": [
+          {
+            "title": "Leave it to heal",
             "bullets": [
-              "Color adjusted, shape refined",
-              "Light areas filled in, the result balanced"
+              "No picking, peeling or scratching; let flakes release on their own",
+              "No soaking, steam, pools, saunas or heavy sweating until you are cleared",
+              "No exfoliants, acids, retinoids or harsh skincare near the area"
+            ]
+          },
+          {
+            "title": "Ask me",
+            "bullets": [
+              "Before applying a product or changing your aftercare routine",
+              "About irritation that concerns you or does not improve",
+              "When to schedule your touch-up, based on your service and healing"
             ]
           }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "Not the same for everyone",
-          "text": "Skin type, service, pigment retention, aftercare, lifestyle, sun, skincare products and your natural healing response all affect the final result."
-        }
-      },
-      {
-        "type": "grid",
-        "heading": "What is normal.",
-        "lede": "Mild changes in color, texture and softness are common, and do not always mean something is wrong.",
-        "items": [
-          {
-            "title": "Darker color at first",
-            "text": "Fresh pigment looks bolder before it heals softer."
-          },
-          {
-            "title": "Dry or tight feeling",
-            "text": "The area can feel dry or tight while the skin renews."
-          },
-          {
-            "title": "Light flaking",
-            "text": "Some flaking can happen. Do not pick, peel or scratch the area."
-          },
-          {
-            "title": "Temporary patchiness",
-            "text": "Color can look uneven before it settles, and before the touch-up."
-          }
-        ]
-      },
-      {
-        "type": "sequence",
-        "heading": "What to avoid while it heals.",
-        "lede": "Follow the instructions from your appointment, and avoid anything that can irritate the area too soon.",
-        "kind": "steps",
-        "items": [
-          {
-            "label": "Hands",
-            "title": "Do not pick or scratch",
-            "text": "Let flakes release on their own. Picking can affect color retention and healing."
-          },
-          {
-            "label": "Moisture",
-            "title": "Avoid heavy moisture",
-            "text": "No soaking, steam, pools, saunas or heavy sweating until you are cleared."
-          },
-          {
-            "label": "Products",
-            "title": "Avoid strong products",
-            "text": "Keep exfoliants, acids, retinoids and harsh skincare away from the area while it heals."
-          }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "Aftercare differs by service",
-          "text": "Each service has its own aftercare needs. Review your own instructions, and contact the studio if unsure."
-        }
-      },
-      {
-        "type": "grid",
-        "heading": "By service.",
-        "lede": "Each heals, and settles, a little differently.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Brows",
-            "text": "Microblading, shading and powder brows look darker first, then flaky, lighter, and finally softer.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed brows at week three, soft and blended"
-            }
-          },
-          {
-            "title": "Eyes",
-            "text": "Eyeliner and lash enhancement look more defined at first, then soften as the area calms.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed eyeliner, defined but calm, lashes at rest"
-            }
-          },
-          {
-            "title": "Lips",
-            "text": "Lip tint looks bright at first, then settles into a more natural color.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed lip tint, a soft natural color with no product on"
-            }
-          },
-          {
-            "title": "Scalp",
-            "text": "Scalp micropigmentation looks darker at first, then blends naturally as it settles.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed scalp micropigmentation blending into the hairline"
-            }
-          }
         ]
       },
       {
         "type": "grid",
-        "heading": "When to reach out.",
-        "lede": "Ask if you are unsure about healing, aftercare, touch-up timing, or whether something is normal.",
-        "items": [
-          {
-            "title": "Aftercare questions",
-            "text": "Before applying products or changing your routine."
-          },
-          {
-            "title": "Unexpected irritation",
-            "text": "Irritation that concerns you or does not improve."
-          },
-          {
-            "title": "Touch-up timing",
-            "text": "When to schedule it, based on your service and healing."
-          },
-          {
-            "title": "Before booking",
-            "text": "Medical, skin or healing concerns before you book."
-          }
-        ]
-      },
-      {
-        "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how to care for it while it heals, how the studio stays safe, and the questions clients ask most.",
-        "columns": 3,
+        "lede": "Three things worth reading first: how to prepare, how to care for it while it heals, and what the touch-up does.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Microblading before and after: a mapped sparse brow, then full hair strokes",
+          "photo": {
+            "ref": "microblading/03",
+            "alt": "Microblading before and after: a sparse brow under a mapping ruler, then a full brow of hair strokes",
+            "detail": "Before and after"
+          }
+        },
         "items": [
+          {
+            "title": "How to prepare",
+            "text": "Skin, timing and what to tell me before we start.",
+            "href": "/learn/prepare-for-appointment",
+            "linkLabel": "Read"
+          },
           {
             "title": "Aftercare",
-            "text": "What is normal while it heals, day by day.",
+            "text": "How to care for brows, eyes, lips and scalp while they heal.",
             "href": "/aftercare",
             "linkLabel": "Read"
           },
           {
-            "title": "Safety",
-            "text": "How the studio stays clean and private, and who should ask first.",
-            "href": "/safety",
-            "linkLabel": "Read"
-          },
-          {
-            "title": "Frequently asked questions",
-            "text": "Short answers to the questions clients ask most.",
-            "href": "/faqs",
+            "title": "Why the touch-up matters",
+            "text": "What the touch-up refines once healing is done.",
+            "href": "/learn/importance-of-touch-up",
             "linkLabel": "Read"
           }
         ]
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Healing questions.",
-        "lede": "Asked most often in the first two weeks, answered short.",
+        "lede": "Asked most in the first two weeks, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Smiling client lying back, soft brows with fine strokes at the front",
+          "photo": {
+            "ref": "microblading-shading/03",
+            "alt": "A smiling client lying back with eyes closed, soft brows with fine strokes at the front",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "q": "Why does it look darker at first?",
-            "a": "Fresh pigment looks darker and sharper at first. As the skin heals, it softens and looks more natural."
+            "a": "Fresh pigment often looks darker and sharper right after the appointment. As the skin heals, the color usually softens and looks more natural."
           },
           {
             "q": "Is flaking normal?",
-            "a": "It can be, for some services. Do not pick, peel or scratch; let dry skin release on its own."
+            "a": "Light flaking can be normal for some services. Do not pick, peel or scratch the area; let dry skin release on its own."
           },
           {
             "q": "Why does the color look patchy?",
-            "a": "The surface skin is renewing. Judge the result after full healing; we review it at the touch-up."
-          },
-          {
-            "q": "When should I book my touch-up?",
-            "a": "It depends on the service and how you heal. Contact the studio for timing."
+            "a": "The surface skin is renewing, so color can look uneven for a while. Judge the result after full healing; we review it at the touch-up."
           },
           {
             "q": "Can I wear makeup while it heals?",
-            "a": "Not on or near the area until you are cleared. It protects the healing skin and the result."
+            "a": "Not on or near the treated area until you are cleared. That protects the healing skin and the final result."
           },
           {
-            "q": "Does every service heal the same way?",
-            "a": "No. Each heals differently, so follow the instructions for your own service."
+            "q": "When should I book my touch-up?",
+            "a": "It depends on the service and how you heal. Contact the studio for timing based on your appointment and aftercare instructions."
           }
         ]
       },
@@ -2957,10 +2819,19 @@
             "href": "/contact"
           },
           {
-            "label": "Aftercare",
-            "href": "/aftercare"
+            "label": "How long it lasts",
+            "href": "/learn/how-long-it-lasts"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },
@@ -4590,125 +4461,48 @@
     "cover": {
       "ref": "ombre-powder-brows/05",
       "focus": "50% 85%",
-      "alt": "Powder brows before and after the perfecting touch-up"
+      "alt": "Finished powder brows, both sides, client resting with eyes closed"
     },
     "sections": [
       {
         "type": "facts",
         "items": [
           {
-            "title": "Color refresh",
-            "text": "Color added back where the healed result softened."
-          },
-          {
-            "title": "Shape refinement",
-            "text": "Outline, arch, tail, border or hairline, balanced after healing."
+            "title": "Part of the process",
+            "text": "The first appointment creates the foundation; the touch-up finishes."
           },
           {
             "title": "Healed result review",
-            "text": "We see what your skin kept, then refine."
+            "text": "Planned once the color and shape have settled."
           },
           {
-            "title": "Part of the process",
-            "text": "A touch-up completes the result. Nothing went wrong."
+            "title": "Careful refining",
+            "text": "Color, shape and density, adjusted to your healed result."
+          },
+          {
+            "title": "Yearly refresh",
+            "text": "Keeps color and definition from fading too far."
           }
         ]
       },
       {
         "type": "statement",
-        "heading": "Touch-ups help finish, refresh, and maintain permanent makeup.",
+        "layout": "split",
+        "heading": "Touch-ups complete the result.",
         "paragraphs": [
-          "A touch-up is not a sign that something went wrong; it is part of the process. After your skin heals, we can see what color stayed, what softened, and what needs a little refinement.",
-          "Every client heals differently: some hold color well, some heal lighter, some areas soften more. The first appointment creates the foundation. The touch-up works with your healed skin, not the fresh result from day one, to polish the final look."
+          "A touch-up is not a sign that something went wrong; it is part of the process. On the first day, color can look darker, sharper or brighter. After healing, it usually softens.",
+          "Every client heals differently: some hold color well, some heal lighter, some areas soften more. The touch-up lets me see what your skin kept and what needs a little more color, shape or balance."
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Brows at the touch-up, healed and softened, before the second pass"
+          "shot": "A freshly done brow, dark and crisp, balm on the brow head",
+          "photo": {
+            "ref": "microblading-shading/02",
+            "alt": "A freshly done brow with fine strokes at the front, shading through the tail and balm on the brow head",
+            "focus": "50% 50%",
+            "detail": "Fresh"
+          }
         },
-        "callout": {
-          "tone": "voice",
-          "title": "How I explain touch-ups to clients",
-          "text": "On the first day, the color can look darker, sharper, or brighter. After healing, it usually softens. The touch-up lets me see what your skin kept and what needs a little more color, shape, or balance."
-        }
-      },
-      {
-        "type": "grid",
-        "heading": "Why touch-ups matter.",
-        "lede": "Color and shape change as the skin heals.",
-        "items": [
-          {
-            "title": "Color can heal lighter",
-            "text": "A touch-up adds back color where the healed result looks soft or uneven."
-          },
-          {
-            "title": "Shape can soften",
-            "text": "Brows, lips, eyeliner and SMP all soften as the skin settles."
-          },
-          {
-            "title": "Details can be refined",
-            "text": "Small adjustments make the result more balanced and finished."
-          },
-          {
-            "title": "Results last better",
-            "text": "Maintenance touch-ups keep color and definition from fading too far."
-          }
-        ]
-      },
-      {
-        "type": "sequence",
-        "heading": "When touch-ups happen.",
-        "lede": "Depends on the service, your healing, and the type of touch-up.",
-        "kind": "timeline",
-        "image": {
-          "ratio": "3 / 2",
-          "shot": "Healed brows beside the first-day photo, compared at the touch-up"
-        },
-        "items": [
-          {
-            "label": "After healing",
-            "title": "Initial touch-up",
-            "text": "Once the area has healed enough to see the settled color and shape."
-          },
-          {
-            "label": "If needed",
-            "title": "Additional touch-ups",
-            "text": "If the skin healed very light, or you want more color, density, or definition."
-          },
-          {
-            "label": "Yearly",
-            "title": "Maintenance touch-ups",
-            "text": "A color refresh after the result has faded over time."
-          }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "Do not judge too early",
-          "text": "Permanent makeup can look dark at first, then flaky, then light, then softer as it settles. Wait until healing is complete before deciding what needs adjusting."
-        }
-      },
-      {
-        "type": "grid",
-        "heading": "What can be adjusted.",
-        "lede": "Not always a full redo. Often it is small, careful refining of the healed result.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Color",
-            "text": "Too light, uneven, or softer than expected: more pigment can be added, without making the result heavy."
-          },
-          {
-            "title": "Shape",
-            "text": "The outline, arch, tail, lip border, eyeliner line, or SMP hairline, refined for a little more balance."
-          },
-          {
-            "title": "Density",
-            "text": "Shading, powder brows, lash enhancement, eyeliner, lip tint, and SMP may need more density in certain areas."
-          },
-          {
-            "title": "Softness",
-            "text": "The goal is not always darker. Sometimes it is more blended, balanced, and natural."
-          }
-        ],
         "callout": {
           "tone": "voice",
           "title": "My approach",
@@ -4717,114 +4511,122 @@
       },
       {
         "type": "grid",
-        "heading": "Why color softens.",
-        "lede": "Fresh pigment in newly treated skin looks stronger at first, then softens as it heals. That is normal. Skin type, aftercare, lifestyle, sun exposure, skincare products, and natural healing all play a role.",
+        "layout": "tiles",
+        "heading": "What a touch-up can adjust.",
+        "lede": "Not always a full redo. Often it is small, careful refining of the healed result.",
         "items": [
           {
-            "title": "Brows",
-            "text": "Dark at first, then lighter or patchy, before the final healed result shows."
+            "title": "Color",
+            "text": "Too light, uneven or softer than expected: more pigment can be added, without making the result too heavy.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lip tint before and after, pale mauve to soft rosy pink",
+              "photo": {
+                "ref": "lip-tint/04",
+                "alt": "Lip tint before and after: pale mauve lips, then soft rosy pink",
+                "detail": "Before and after"
+              }
+            }
           },
           {
-            "title": "Eyes",
-            "text": "Eyeliner and lash enhancement soften as swelling and fresh pigment settle."
+            "title": "Shape",
+            "text": "The outline, arch, tail, lip border, eyeliner line or scalp hairline, refined for a little more balance.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Winged eyeliner on a closed eye, just finished",
+              "photo": {
+                "ref": "eyeliner/01",
+                "alt": "Winged eyeliner on a closed eye, a cotton swab resting above it",
+                "detail": "Fresh"
+              }
+            }
           },
           {
-            "title": "Lips",
-            "text": "Bright at first, then a softer healed color."
+            "title": "Density",
+            "text": "Shading, powder brows, lash enhancement, eyeliner, lip tint and scalp micropigmentation may need more density in certain areas.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Scalp micropigmentation before and after along a thinning part",
+              "photo": {
+                "ref": "scalp-micropigmentation/02",
+                "alt": "Scalp micropigmentation before and after: pale scalp along a thinning part, then denser shading",
+                "detail": "Before and after"
+              }
+            }
           },
           {
-            "title": "Scalp",
-            "text": "SMP looks stronger at first, then blends more naturally."
+            "title": "Softness",
+            "text": "The goal is not always darker. Sometimes it is more blended, balanced and natural.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Soft, blended brows on a relaxed client",
+              "photo": {
+                "ref": "microblading-shading/05",
+                "alt": "Soft brows with fine strokes at the front and shading through the tail",
+                "detail": "Close-up"
+              }
+            }
           }
         ]
       },
       {
-        "type": "grid",
-        "heading": "Why shape refinement matters.",
-        "lede": "Designed carefully at the first appointment, but healed skin tells us what the result truly needs.",
-        "columns": 2,
+        "type": "sequence",
+        "layout": "feature",
+        "kind": "timeline",
+        "heading": "When touch-ups happen.",
+        "lede": "It depends on the service, your healing and the type of touch-up you need.",
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "Phone showing a client's day-one brow photo, held beside the same brow healed at her touch-up, daylight"
+        },
         "items": [
           {
-            "title": "Brows",
-            "text": "Tails, arches, fronts, and areas that healed lighter, for microblading, powder brows, and microblading / shading.",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "A brow tail being refined at the touch-up, one side mapped in pencil"
-            }
+            "label": "After healing",
+            "title": "Initial touch-up",
+            "text": "Planned once the area has healed enough to show the settled color and shape. Do not judge too early: it can look dark, then flaky, then light, then softer as it settles."
           },
           {
-            "title": "Eyeliner and lash enhancement",
-            "text": "Evens out softness, strengthens color, or improves the finished look once the lash line has healed."
-          },
-          {
-            "title": "Lip tint",
-            "text": "Color, softness, and border definition, refined once the lips settle into their healed shade.",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed lip tint at the touch-up, the border checked before refining"
-            }
-          },
-          {
-            "title": "Scalp micropigmentation",
-            "text": "A touch-up or additional session builds density, improves blending, and adjusts the hairline or sparse areas."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Yearly and additional touch-ups.",
-        "lede": "Some belong to the initial healing process. Others are long-term maintenance.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Yearly touch-ups",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed brows at the one-year mark, color softened, before the refresh"
-            },
-            "text": "For color and shape that stay fresh, instead of waiting until the result fades too much.",
-            "bullets": [
-              "Refreshes color",
-              "Maintains shape",
-              "Helps avoid heavy correction later",
-              "Keeps the result closer to your preferred look"
-            ]
-          },
-          {
+            "label": "If needed",
             "title": "Additional touch-ups",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed brow with one lighter patch at the tail, mapped for extra density"
-            },
-            "text": "When skin healed lighter than expected, or you want a stronger result after seeing the healed color.",
-            "bullets": [
-              "Helpful for lighter healed areas",
-              "Useful when more density is desired",
-              "May be needed for certain skin types",
-              "Discussed after healing"
-            ]
+            "text": "If your skin healed lighter than expected, or you want more color, density or definition after seeing the healed result. It may be needed for certain skin types."
+          },
+          {
+            "label": "Yearly",
+            "title": "Yearly touch-ups",
+            "text": "A maintenance refresh after the result has faded over time. It keeps color and shape closer to your preferred look, and helps avoid heavy correction later."
           }
         ],
         "callout": {
           "tone": "note",
           "title": "Touch-up pricing",
-          "text": "Depends on the service and the type of touch-up. Service listings often include an initial price plus a touch-up price; yearly and additional touch-ups may be listed separately. Rates are subject to change, so ask when booking."
+          "text": "Depends on the service and the type of touch-up. Service listings often include an initial price plus a touch-up price; yearly and additional touch-ups may be listed separately. Rates are subject to change, so ask when booking.",
+          "links": [
+            {
+              "label": "Yearly touch-up",
+              "href": "/services/yearly-touch-up"
+            },
+            {
+              "label": "Additional touch-up",
+              "href": "/services/additional-touch-up"
+            }
+          ]
         }
       },
       {
         "type": "sequence",
-        "heading": "How to book a touch-up.",
-        "lede": "Contact the studio with your service, appointment history, and what you notice after healing.",
+        "layout": "rail",
         "kind": "steps",
+        "heading": "How to book a touch-up.",
+        "lede": "Contact the studio with your service, appointment history and what you notice after healing.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "Pomi reviewing a client's healed photos at the desk before booking the touch-up"
+          "ratio": "4 / 5",
+          "shot": "Pomi at the studio desk reading a client's touch-up message with a brow photo, over her shoulder, window light"
         },
         "items": [
           {
             "label": "First",
             "title": "Share your service",
-            "text": "Brows, eyeliner, lash enhancement, lip tint, or scalp micropigmentation."
+            "text": "Brows, eyeliner, lash enhancement, lip tint or scalp micropigmentation."
           },
           {
             "label": "Second",
@@ -4840,16 +4642,20 @@
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how to care for it afterwards, what healing looks like, and how the studio stays safe.",
-        "columns": 3,
+        "lede": "Worth reading before your touch-up, so you know what is normal and when your result is ready to be evaluated.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Powder brows with a soft front, client resting with eyes closed",
+          "photo": {
+            "ref": "ombre-powder-brows/04",
+            "alt": "Dark powder brows with a soft front on a client resting with her eyes closed",
+            "focus": "90% 50%",
+            "detail": "Close-up"
+          }
+        },
         "items": [
-          {
-            "title": "Aftercare",
-            "text": "What is normal while it heals, day by day.",
-            "href": "/aftercare",
-            "linkLabel": "Read"
-          },
           {
             "title": "The healing timeline",
             "text": "Day 1 to week 6: bold, flaking, too light, then true.",
@@ -4857,17 +4663,33 @@
             "linkLabel": "Read"
           },
           {
-            "title": "Safety",
-            "text": "How the studio stays clean and private, and who should ask first.",
-            "href": "/safety",
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "How long it lasts",
+            "text": "Why pigment fades, and how to help it last.",
+            "href": "/learn/how-long-it-lasts",
             "linkLabel": "Read"
           }
         ]
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Touch-up questions.",
         "lede": "The ones asked most, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Microblading before and after on one brow, close-up",
+          "photo": {
+            "ref": "microblading/07",
+            "alt": "Microblading before and after: sparse, light brow hairs, then dense, crisp hair strokes",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
             "q": "Why do I need a touch-up, and what gets fixed?",
@@ -4875,7 +4697,11 @@
           },
           {
             "q": "Is a touch-up normal?",
-            "a": "Yes. The first appointment creates the foundation; the touch-up finishes the result."
+            "a": "Yes. It is a normal part of the permanent makeup process, and it helps finish the result."
+          },
+          {
+            "q": "Will my touch-up make the result too dark?",
+            "a": "The goal is to refine, not make it heavy. The color added depends on how your skin healed and the look you want."
           },
           {
             "q": "When should I book my touch-up?",
@@ -4884,14 +4710,6 @@
           {
             "q": "What is a yearly touch-up?",
             "a": "A maintenance appointment that refreshes color and definition after the result has faded."
-          },
-          {
-            "q": "Will my touch-up make the result too dark?",
-            "a": "The goal is to refine, not make it heavy. The color added depends on how your skin healed and the look you want."
-          },
-          {
-            "q": "Where is the studio?",
-            "a": "Tustin, CA, near Irvine and central Orange County."
           }
         ]
       },
@@ -4903,12 +4721,17 @@
           {
             "label": "Get in touch",
             "href": "/contact"
-          },
-          {
-            "label": "How long it lasts",
-            "href": "/learn/how-long-it-lasts"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   }
