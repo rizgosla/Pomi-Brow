@@ -21,7 +21,13 @@ mkdirSync(out, { recursive: true });
 
 const PORT = 4402;
 const base = `http://localhost:${PORT}`;
-const preview = spawn("npx", ["astro", "preview", "--port", String(PORT)], { shell: true, stdio: "ignore" });
+// Detached on POSIX so the whole process group (the shell, npx and astro) can be stopped at the end;
+// killing only the shell leaves astro serving the port.
+const preview = spawn("npx", ["astro", "preview", "--port", String(PORT)], {
+  shell: true,
+  stdio: "ignore",
+  detached: process.platform !== "win32",
+});
 
 try {
   let up = false;
@@ -69,5 +75,11 @@ try {
 } finally {
   // Windows leaves the npx shell's children behind unless the tree is killed.
   if (process.platform === "win32") spawn("taskkill", ["/PID", String(preview.pid), "/T", "/F"], { stdio: "ignore" });
-  else preview.kill();
+  else {
+    try {
+      process.kill(-preview.pid);
+    } catch {
+      preview.kill();
+    }
+  }
 }
