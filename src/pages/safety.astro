@@ -12,7 +12,7 @@ import ImageSlot from "../components/sections/ImageSlot.astro";
 import Sections from "../components/sections/Sections.astro";
 import ContactForm from "../components/ContactForm.astro";
 import { getSiteSettings, getServices, getLearnArticles, getPage } from "../lib/content";
-import { effectiveRatio } from "../lib/sections";
+import { effectiveRatio, hasSlot } from "../lib/sections";
 
 const [settings, services, learn, page] = await Promise.all([
   getSiteSettings(),
@@ -33,7 +33,7 @@ const faqs = learn.filter((a) => a.showAsFaq);
   canonicalPath="/safety"
 >
   <PageHeader title={page.title} lede={page.lede} meta={page.meta} metaLabel={page.metaLabel} facts={page.facts}>
-    {page.lead && <ImageSlot slot="aside" image={{ ...page.lead, ratio: effectiveRatio("lead", page.lead.ratio) }} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />}
+    {hasSlot(page.lead) && <ImageSlot slot="aside" image={{ ...page.lead, ratio: effectiveRatio("lead", page.lead.ratio) }} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />}
   </PageHeader>
 
   <Sections sections={page.sections} settings={settings} />

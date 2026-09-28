@@ -18,7 +18,7 @@
 // once and in words; other counted rows are an <ol>, which already says the order.
 import type { Block, ImageSlot as Slot } from "../../lib/sections";
 import { effectiveRatio } from "../../lib/sections";
-import { keepHyphenated } from "../../lib/text";
+import Nobr from "./Nobr.astro";
 import ImageSlot from "./ImageSlot.astro";
 import Icon from "../Icon.astro";
 
@@ -62,7 +62,7 @@ const stepNumber = step && marker?.kind === "number" ? marker.n : undefined;
   {numeral !== undefined && <span class:list={["l-num", { "l-num--rank": rank }]} aria-hidden="true">{numeral}</span>}
   {marker?.kind === "tag" && <span class="tag">{marker.label}</span>}
   <div class="l-block__main">
-    <h3 class="l-block__title">{stepNumber !== undefined && <span class="visually-hidden">Step {stepNumber}: </span>}{keepHyphenated(block.title).map((p) => (p.keep ? <span class="nobr">{p.text}</span> : p.text))}</h3>
+    <h3 class="l-block__title">{stepNumber !== undefined && <span class="visually-hidden">Step {stepNumber}: </span>}<Nobr text={block.title} /></h3>
     {block.text && <p class="l-block__text">{block.text}</p>}
     {
       block.bullets && block.bullets.length > 0 && (

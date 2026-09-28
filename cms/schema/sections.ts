@@ -1,21 +1,29 @@
 // The slide-page section types, mirroring src/lib/sections.ts so a Learn article edited in the
 // Studio renders exactly like one from the seed. Keep the two in step.
 import { defineArrayMember, defineField, defineType } from "sanity";
+import { LAYOUTS as SITE_LAYOUTS, type BlockLayout } from "../../src/lib/sections";
 
 const RATIOS = ["5 / 2", "4 / 5", "3 / 2", "1 / 1"];
 
-// The compositions for a group of blocks (cards, steps, the two sides of a compare), mirroring
-// LAYOUTS in src/lib/sections.ts: how many blocks each holds, and whether it is built around the
-// section photo. Rail and ledger use the photo when there is one; tiles puts photos on the cards.
-const LAYOUTS: Record<string, { title: string; min: number; max: number; needsPhoto: boolean }> = {
-  tiles: { title: "Tiles — equal cards in a row", min: 2, max: 4, needsPhoto: false },
-  split: { title: "Split — one photo beside the list", min: 2, max: 6, needsPhoto: true },
-  rail: { title: "Rail — heading and photo in a left rail, numbered rows", min: 2, max: 6, needsPhoto: false },
-  feature: { title: "Feature — one large card plus smaller ones", min: 2, max: 4, needsPhoto: true },
-  bento: { title: "Bento — a large photo with a 2×2 of cards", min: 3, max: 4, needsPhoto: true },
-  center: { title: "Center — a photo between two cards", min: 2, max: 2, needsPhoto: true },
-  ledger: { title: "Ledger — a photo strip over one card split into columns", min: 2, max: 4, needsPhoto: false },
+// The compositions for a group of blocks (cards, steps, the two sides of a compare). How many
+// blocks each holds, and whether it is built around the section photo, come straight from
+// LAYOUTS in src/lib/sections.ts, so the Studio cannot drift from what the site renders. Only the
+// titles live here. Rail and ledger use the photo when there is one; tiles puts photos on the cards.
+const TITLES: Record<BlockLayout, string> = {
+  tiles: "Tiles — equal cards in a row",
+  split: "Split — one photo beside the list",
+  rail: "Rail — heading and photo in a left rail, numbered rows",
+  feature: "Feature — one large card plus smaller ones",
+  bento: "Bento — a large photo with a 2×2 of cards",
+  center: "Center — a photo between two cards",
+  ledger: "Ledger — a photo strip over one card split into columns",
 };
+const LAYOUTS = Object.fromEntries(
+  (Object.keys(SITE_LAYOUTS) as BlockLayout[]).map((k) => [
+    k,
+    { title: TITLES[k], min: SITE_LAYOUTS[k].min, max: SITE_LAYOUTS[k].max, needsPhoto: SITE_LAYOUTS[k].media === "required" },
+  ]),
+) as Record<BlockLayout, { title: string; min: number; max: number; needsPhoto: boolean }>;
 
 /** What the layout rules read from the section a field sits in. */
 type SectionValue = { items?: unknown[]; sides?: unknown[]; image?: unknown };
@@ -84,7 +92,7 @@ const blockLayout = defineField({
   description: "Leave empty to let the page choose. Split, feature, bento and center need a section photo.",
   validation: (r) =>
     r.custom((value, context) => {
-      const spec = value ? LAYOUTS[value] : undefined;
+      const spec = value && value in LAYOUTS ? LAYOUTS[value as BlockLayout] : undefined;
       if (!value || !spec) return true; // an unknown value is refused by the list itself
       const section = (context.parent ?? {}) as SectionValue;
       const n = (section.sides ?? section.items ?? []).length;
@@ -205,7 +213,7 @@ export const sectionGrid = defineType({
       name: "columns",
       type: "number",
       options: { list: [2, 3, 4] },
-      description: "Only used by old content. New sections choose a layout instead.",
+      description: "No longer used: the layout decides how many columns a group runs. Clear this.",
       hidden: ({ value }) => value === undefined,
     }),
   ],
@@ -232,6 +240,7 @@ export const sectionSequence = defineType({
             defineField({ name: "title", type: "string", validation: (r) => r.required() }),
             defineField({ name: "text", type: "text", rows: 2 }),
             bullets,
+            defineField({ name: "image", type: "imageSlot", description: "Shown only when the steps run side by side as tiles or ledger columns." }),
           ],
         }),
       ],

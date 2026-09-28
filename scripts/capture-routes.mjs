@@ -22,7 +22,7 @@ mkdirSync(out, { recursive: true });
 
 const PORT = 4402;
 // Tallest page shot in one piece; anything longer is shot in pieces of this height.
-const TALL = 12000;
+const TALL = 16000;
 const base = `http://localhost:${PORT}`;
 // Detached on POSIX so the whole process group (the shell, npx and astro) can be stopped at the end;
 // killing only the shell leaves astro serving the port.

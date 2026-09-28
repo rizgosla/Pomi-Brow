@@ -526,6 +526,22 @@
   :is(.l--ledger, .l--wide) > .l__media {
     margin-top: 0;
   }
+  /* The strip takes a side like any photograph, so it can answer the one before it: on the
+     left it leads the row and the head follows. A wide statement's paragraphs stay under its
+     heading; the ledger's tile still runs the full width. */
+  :is(.l--ledger, .l--wide)[data-side="left"] {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    grid-template-areas:
+      "media head"
+      "body body"
+      "note note";
+  }
+  .l--wide[data-side="left"] {
+    grid-template-areas:
+      "media head"
+      ". body"
+      "note note";
+  }
   .l-ledger.l-tile {
     grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr));
   }

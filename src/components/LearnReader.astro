@@ -11,6 +11,7 @@
 // close plus the header and the pinned mobile bar carry the call.
 import type { LearnArticle, Service, SiteSettings } from "../lib/content";
 import { serviceTitle } from "../lib/content";
+import { hasSlot } from "../lib/sections";
 import LearnNav from "./LearnNav.astro";
 import MoreGuides from "./MoreGuides.astro";
 import PageHeader from "./PageHeader.astro";
@@ -49,8 +50,8 @@ const coverService = serviceTitle(article.cover?.serviceSlug) ?? captionService;
           </figcaption>
         </figure>
       )}
-      {!article.cover && article.lead && (
-        <ImageSlot slot="aside" image={{ ...article.lead, ratio: "4 / 5" }} service={captionService} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />
+      {!article.cover && hasSlot(article.lead) && (
+        <ImageSlot slot="aside" image={{ ...article.lead, ratio: "4 / 5" }} sizes="(min-width: 60rem) 40vw, 100vw" widths={[640, 960]} loading="eager" fetchpriority="high" />
       )}
     </PageHeader>
   ) : (

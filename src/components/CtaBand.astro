@@ -25,7 +25,7 @@ const { heading, text, links = [], settings, id = "ask", image } = Astro.props;
 const signoff = Boolean(image);
 ---
 
-<section class:list={["section cta", { "cta--signoff": signoff }]} aria-labelledby={`${id}-heading`}>
+<section class="section cta" aria-labelledby={`${id}-heading`}>
   <div class="page cta__grid">
     <div class:list={[{ cta__signoff: signoff }, "reveal"]}>
       {

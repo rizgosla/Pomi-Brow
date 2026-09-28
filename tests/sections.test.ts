@@ -12,6 +12,7 @@ import {
   pageRhythmProblems,
   photoProblems,
   balanced,
+  withSlots,
   type Section,
   type ImageSlot,
   type Catalogue,
@@ -21,7 +22,7 @@ const ok: Section[] = [
   { type: "facts", items: [{ title: "Private studio", text: "One client at a time." }, { title: "Clean setup", text: "Fresh barriers." }, { title: "Single-use tools", text: "Opened in front of you." }] },
   { type: "statement", heading: "What makes it safer?", paragraphs: ["A clean studio and single-use tools."], callout: { tone: "voice", title: "My approach", text: "Nothing rushed." } },
   { type: "grid", heading: "Before you book", items: [{ title: "Arrive clean", text: "No makeup." }, { title: "Share health details", bullets: ["Medications", "Pregnancy"] }] },
-  { type: "grid", heading: "Read next", columns: 3, items: [{ title: "Safety", text: "The studio.", href: "/safety", linkLabel: "Read" }, { title: "FAQs", text: "Short answers.", href: "/faqs", linkLabel: "Read" }, { title: "Touch-ups", text: "Why they matter.", href: "/learn/importance-of-touch-up", linkLabel: "Read" }] },
+  { type: "grid", heading: "Read next", items: [{ title: "Safety", text: "The studio.", href: "/safety", linkLabel: "Read" }, { title: "FAQs", text: "Short answers.", href: "/faqs", linkLabel: "Read" }, { title: "Touch-ups", text: "Why they matter.", href: "/learn/importance-of-touch-up", linkLabel: "Read" }] },
   { type: "sequence", heading: "The first week", kind: "timeline", items: [{ label: "Day 1", title: "Bold" }, { label: "Days 2 to 7", title: "Flaking" }, { label: "Week 2", title: "Settling" }] },
   { type: "compare", heading: "Tint or blush?", sides: [{ title: "Lip tint", bullets: ["Sheer"] }, { title: "Lip blush", bullets: ["Same technique"] }] },
   { type: "faq", items: [{ q: "Is it safe?", a: "With a careful artist, yes." }] },
@@ -43,12 +44,12 @@ test("validateSections names the section index and the rule for each problem", (
     { type: "faq", items: [{ q: "Only a question" }] },
     { type: "statement", paragraphs: ["No heading"] },
     { type: "grid", heading: "Wording", items: [{ title: "Photo", text: "This is a placeholder card." }, { title: "b" }] },
-    { type: "grid", heading: "Half a link", columns: 5, items: [{ title: "a", href: "/safety" }, { title: "b" }] },
+    { type: "grid", heading: "Half a link", items: [{ title: "a", href: "/safety" }, { title: "b" }] },
   ] as unknown as Section[];
   const problems = validateSections(bad);
   assert.deepEqual(
     problems.map((p) => p.index),
-    [0, 1, 2, 3, 4, 5, 6, 7, 7]
+    [0, 1, 2, 3, 4, 5, 6, 7]
   );
   assert.match(problems[0].message, /unknown type "hero"/);
   assert.match(problems[1].message, /2 to 6 items/);
@@ -57,8 +58,7 @@ test("validateSections names the section index and the rule for each problem", (
   assert.match(problems[4].message, /q and a/);
   assert.match(problems[5].message, /heading/);
   assert.match(problems[6].message, /placeholder/i);
-  assert.match(problems[7].message, /columns must be 2, 3 or 4/);
-  assert.match(problems[8].message, /href and linkLabel/);
+  assert.match(problems[7].message, /href and linkLabel/);
 });
 
 test("validateSections checks layouts: known name, block count, the photo a layout is built on", () => {
@@ -71,9 +71,12 @@ test("validateSections checks layouts: known name, block count, the photo a layo
     { type: "grid", heading: "Both", items: [{ title: "a", href: "/safety", linkLabel: "Read", links: [{ label: "x", href: "/faqs" }] }, { title: "b" }] },
     { type: "statement", heading: "Odd", layout: "bento", paragraphs: ["p"] },
     { type: "grid", heading: "Sideways", side: "top", items: two },
+    { type: "grid", heading: "Tiles with a section photo", layout: "tiles", image: frame("s"), items: two },
+    { type: "grid", heading: "Card photos in rows", layout: "rail", items: two.map((i) => ({ ...i, image: frame("c") })) },
+    { type: "faq", image: frame("s"), items: [{ q: "q", a: "a" }] },
   ] as unknown as Section[];
   const problems = validateSections(bad);
-  assert.deepEqual(problems.map((p) => p.index), [0, 1, 2, 3, 4, 5, 6]);
+  assert.deepEqual(problems.map((p) => p.index), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
   assert.match(problems[0].message, /unknown layout "carousel"/);
   assert.match(problems[1].message, /bento holds 3 to 4 blocks, not 2/);
   assert.match(problems[2].message, /split needs a section image/);
@@ -81,6 +84,9 @@ test("validateSections checks layouts: known name, block count, the photo a layo
   assert.match(problems[4].message, /href or links, not both/);
   assert.match(problems[5].message, /"split" or "wide"/);
   assert.match(problems[6].message, /side must be/);
+  assert.match(problems[7].message, /tiles has no place for a section image/);
+  assert.match(problems[8].message, /rail does not show a block's own image/);
+  assert.match(problems[9].message, /faq image shows only with layout "split"/);
 });
 
 test("internalHrefs lists every site-relative link across sections, callouts, link cards and cta", () => {
@@ -108,6 +114,10 @@ test("resolveLayout keeps an authored layout that fits and falls back when its p
   const prefilled = { ratio: "3 / 2" } as unknown as ImageSlot;
   assert.equal(resolveLayout({ type: "cta", heading: "h", text: "t", image: prefilled }), "band");
   assert.equal(resolveLayout({ type: "grid", heading: "h", image: prefilled, items: four }), "tiles");
+  // A CMS section still carrying Sanity's _type has no type the site knows: nothing, not a crash.
+  const unmapped = { _type: "sectionStatement", heading: "h", paragraphs: ["p"] } as unknown as Section;
+  assert.equal(resolveLayout(unmapped), "none");
+  assert.deepEqual(assignSides([unmapped]), [null]);
 });
 
 test("assignSides alternates away from the header photo and respects an authored side", () => {
@@ -123,6 +133,14 @@ test("assignSides alternates away from the header photo and respects an authored
     { type: "faq", layout: "split", image: img, items: [{ q: "q", a: "a" }] },
   ];
   assert.deepEqual(assignSides(page, "right"), [null, "left", null, "right", "left", "left", "left"]);
+  // The strip beside a ledger's or a wide statement's head sits on a side like any photograph;
+  // a ledger without one has no side.
+  const strips: Section[] = [
+    { type: "statement", heading: "h", layout: "wide", image: frame("s", "5 / 2"), paragraphs: ["p"] },
+    { type: "grid", heading: "h", layout: "ledger", image: frame("s", "5 / 2"), items: four },
+    { type: "grid", heading: "h", layout: "ledger", items: four },
+  ];
+  assert.deepEqual(assignSides(strips, "right"), ["left", "right", null]);
 });
 
 test("toBlocks numbers steps, tags timeline moments and turns link cards into one-link blocks", () => {
@@ -134,8 +152,18 @@ test("toBlocks numbers steps, tags timeline moments and turns link cards into on
   assert.deepEqual(grid[0].links, [{ label: "Read", href: "/safety" }]);
   assert.equal(grid[1].links?.length, 1);
   assert.equal(grid[0].marker, undefined);
+  const emptied = toBlocks({ type: "grid", heading: "h", items: [{ title: "a", href: "/safety", linkLabel: "Read", links: [] }, { title: "b" }] });
+  assert.deepEqual(emptied[0].links, [{ label: "Read", href: "/safety" }]);
   const rail = toBlocks({ type: "grid", heading: "h", layout: "rail", items: [{ title: "a" }, { title: "b" }, { title: "c" }] });
   assert.deepEqual(rail[2].marker, { kind: "number", n: 3 });
+});
+
+test("withSlots removes image slots that are not really there, at section and block level", () => {
+  const prefilled = { ratio: "3 / 2" } as unknown as ImageSlot;
+  const s = withSlots({ type: "grid", heading: "h", image: prefilled, items: [{ title: "a", image: prefilled }, { title: "b", image: frame("b") }] });
+  assert.equal(s.image, undefined);
+  assert.equal(s.items[0].image, undefined);
+  assert.equal(s.items[1].image?.shot, "b");
 });
 
 test("effectiveRatio keeps an authored ratio the role allows and otherwise uses the role default", () => {
@@ -182,6 +210,17 @@ test("pageRhythmProblems flags each editorial rule at the section that breaks it
       { type: "statement", heading: "e", side: "right", image: img, paragraphs: ["p"] },
     ], /third split-style section in a row/],
     ["no image", [{ type: "grid", heading: "a", items: four }], /grid has no image/],
+    ["a strip beside the same side", [
+      { type: "grid", heading: "a", layout: "split", side: "right", image: img, items: four },
+      { type: "grid", heading: "b", layout: "ledger", side: "right", image: frame("s", "5 / 2"), items: four },
+    ], /photo on the right again/],
+    ["wide beside ledger", [
+      { type: "statement", heading: "a", layout: "wide", image: frame("s", "5 / 2"), paragraphs: ["p"] },
+      { type: "grid", heading: "b", layout: "ledger", items: four },
+    ], /same layout as the section before it \("ledger"\)/],
+    ["card photos a layout drops", [
+      { type: "grid", heading: "a", items: [...four, { title: "Item 5", text: "x" }].map((i) => ({ ...i, image: img })) },
+    ], /grid has no image/],
     ["uneven facts", [
       { type: "facts", items: [{ title: "a", text: "one two" }, { title: "b", text: "one two three four five six seven eight nine" }] },
     ], /facts are uneven/],

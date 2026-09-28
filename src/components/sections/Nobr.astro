@@ -1,0 +1,12 @@
+---
+// Text with its hyphenated words kept whole: a balanced heading otherwise breaks "touch-ups" at
+// the hyphen ("touch- / ups"). The one place the layout library's headings and titles get it.
+import { keepHyphenated } from "../../lib/text";
+
+interface Props {
+  text: string;
+}
+const { text } = Astro.props;
+---
+
+{keepHyphenated(text).map((p) => (p.keep ? <span class="nobr">{p.text}</span> : p.text))}

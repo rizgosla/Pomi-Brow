@@ -1056,6 +1056,35 @@
             "title": "Aftercare",
             "text": "Following aftercare protects the healing area and the healed result."
           }
+        ],
+        "side": "left"
+      },
+      {
+        "type": "grid",
+        "layout": "ledger",
+        "heading": "How to help it last.",
+        "lede": "You cannot stop fading, but good care protects your healed result.",
+        "image": {
+          "ratio": "5 / 2",
+          "shot": "A wide-brim hat and mineral sunscreen on a bright windowsill"
+        },
+        "items": [
+          {
+            "title": "Follow aftercare",
+            "text": "Follow your instructions, and do not pick while healing."
+          },
+          {
+            "title": "Protect from sun",
+            "text": "Sun fades pigment fastest on brows and scalp."
+          },
+          {
+            "title": "Be careful with skincare",
+            "text": "Keep strong exfoliants and active ingredients away from healed brow pigment."
+          },
+          {
+            "title": "Plan maintenance",
+            "text": "Book touch-ups when color, shape or density needs refreshing."
+          }
         ]
       },
       {
@@ -1090,34 +1119,6 @@
           "title": "When should you book a touch-up?",
           "text": "It depends on the service, your healed result and how much has faded. If the color looks light, the shape needs refining, or the result feels unbalanced, write to me."
         }
-      },
-      {
-        "type": "grid",
-        "layout": "ledger",
-        "heading": "How to help it last.",
-        "lede": "You cannot stop fading, but good care protects your healed result.",
-        "image": {
-          "ratio": "5 / 2",
-          "shot": "A wide-brim hat and mineral sunscreen on a bright windowsill"
-        },
-        "items": [
-          {
-            "title": "Follow aftercare",
-            "text": "Follow your instructions, and do not pick while healing."
-          },
-          {
-            "title": "Protect from sun",
-            "text": "Sun fades pigment fastest on brows and scalp."
-          },
-          {
-            "title": "Be careful with skincare",
-            "text": "Keep strong exfoliants and active ingredients away from healed brow pigment."
-          },
-          {
-            "title": "Plan maintenance",
-            "text": "Book touch-ups when color, shape or density needs refreshing."
-          }
-        ]
       },
       {
         "type": "grid",
@@ -1279,25 +1280,33 @@
         "kind": "timeline",
         "heading": "Why disposable tools matter.",
         "lede": "Single-use tools cut cross-contamination risk: they touch one client and are then safely discarded.",
-        "image": {
-          "ratio": "5 / 2",
-          "shot": "Gloved hand dropping a used cartridge into the sharps bin after the session, side view, soft light"
-        },
         "items": [
           {
             "label": "Before",
             "title": "New tools",
-            "text": "Needles, cartridges and disposable supplies are new for your appointment, and pigment containers are single-use only."
+            "text": "Needles, cartridges and disposable supplies are new for your appointment, and pigment containers are single-use only.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Unopened disposable supplies and single-use pigment cups set out on a fresh barrier, from above"
+            }
           },
           {
             "label": "During",
             "title": "Opened in front of you",
-            "text": "Needles and cartridges are opened during the appointment, so you can see they are brand new."
+            "text": "Needles and cartridges are opened during the appointment, so you can see they are brand new.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Gloved hands tearing open a sterile packet at the client's side, the packet in sharp focus"
+            }
           },
           {
             "label": "After",
             "title": "Discarded after use",
-            "text": "Used tools and supplies are discarded safely after the session and never reused."
+            "text": "Used tools and supplies are discarded safely after the session and never reused.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Gloved hand dropping a used cartridge into the sharps bin after the session, side view, soft light"
+            }
           }
         ]
       },
@@ -3222,11 +3231,11 @@
       },
       {
         "type": "grid",
-        "layout": "ledger",
+        "layout": "center",
         "heading": "Cold sores, before lip tint.",
         "lede": "If you have ever had a cold sore, even once, please mention it before booking.",
         "image": {
-          "ratio": "5 / 2",
+          "ratio": "4 / 5",
           "shot": "Smooth bare lips with no irritation or dryness, close-up in soft daylight, ready for lip tint"
         },
         "items": [

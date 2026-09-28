@@ -15,13 +15,7 @@
 
 const FINE_HOVER = "(hover: hover) and (pointer: fine)";
 
-let started = false;
-
 function start() {
-  // Once per page, however many tile groups render.
-  if (started) return;
-  started = true;
-
   const fine = window.matchMedia(FINE_HOVER);
 
   document.querySelectorAll<HTMLElement>("[data-spotlight]").forEach((group) => {

@@ -43,7 +43,8 @@ for (const file of files) {
     const used = article?.cover?.ref ? [article.cover.ref] : [];
     for (const p of photoProblems({ lead, sections: page.sections }, catalogue, used)) problems.push(`#${p.index} ${p.message}`);
     for (const href of internalHrefs(page.sections)) if (!routes.has(href.replace(/#.*$/, ""))) problems.push(`link to ${href} has no route`);
-    if (/placeholder/i.test(JSON.stringify(page.facts ?? []) + (page.lede ?? "") + (page.meta ?? ""))) problems.push('header text contains "placeholder"');
+    const header = [page.title, page.lede, page.meta, page.metaLabel, page.facts, lead?.shot, lead?.photo?.alt];
+    if (/placeholder/i.test(JSON.stringify(header))) problems.push('header text contains "placeholder"');
   }
   if (problems.length) {
     failed++;

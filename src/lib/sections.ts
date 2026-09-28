@@ -71,6 +71,8 @@ export interface SequenceItem {
   title: string;
   text?: string;
   bullets?: string[];
+  /** Shown only where steps stand side by side as boxes or columns (tiles, ledger). */
+  image?: ImageSlot;
 }
 
 export interface CompareSide {
@@ -106,7 +108,6 @@ export type Section =
       type: "grid";
       heading: string;
       lede?: string;
-      columns?: 2 | 3 | 4;
       items: GridItem[];
       image?: ImageSlot;
       callout?: Callout;
@@ -171,8 +172,8 @@ export interface Problem {
  */
 export const LAYOUTS: Record<BlockLayout, { min: number; max: number; media: "required" | "optional" | "none" }> = {
   tiles: { min: 2, max: 4, media: "none" },
-  split: { min: 2, max: 6, media: "required" },
-  rail: { min: 2, max: 6, media: "optional" },
+  split: { min: 2, max: 8, media: "required" },
+  rail: { min: 2, max: 8, media: "optional" },
   feature: { min: 2, max: 4, media: "required" },
   bento: { min: 3, max: 4, media: "required" },
   center: { min: 2, max: 2, media: "required" },
@@ -202,6 +203,12 @@ export const SLOT_RATIOS: Record<SlotRole, Ratio[]> = {
 export function effectiveRatio(role: SlotRole, authored?: Ratio): Ratio {
   const allowed = SLOT_RATIOS[role];
   return authored && allowed.includes(authored) ? authored : allowed[0];
+}
+
+/** A frame ratio as width over height ("4 / 5" is 0.8), for the sticky photograph's viewport cap. */
+export function ratioAspect(ratio: Ratio = "4 / 5"): number {
+  const [w, h] = ratio.split("/").map((v) => Number(v.trim()));
+  return Number((w / h).toFixed(4));
 }
 
 /**
@@ -235,6 +242,9 @@ export function resolveLayout(s: Section): string {
     case "cta":
       return hasSlot(s.image) ? "signoff" : "band";
     default: {
+      // A section of a type this site does not know (a CMS document never mapped to `type`)
+      // has no composition; Sections.astro renders nothing for it.
+      if (!isBlockSection(s)) return "none";
       const n = blockCount(s);
       const fits = (l: BlockLayout) => n >= LAYOUTS[l].min && n <= LAYOUTS[l].max && (LAYOUTS[l].media !== "required" || hasSlot(s.image));
       if (s.layout && BLOCK_LAYOUTS.includes(s.layout) && fits(s.layout)) return s.layout;
@@ -246,8 +256,9 @@ export function resolveLayout(s: Section): string {
   }
 }
 
-/** Layouts whose photo sits on a side the author (or assignSides) chooses. */
-const SIDED = new Set(["split", "feature", "bento"]);
+/** Layouts whose photo sits on a side the author (or assignSides) chooses. The ledger's and the
+ *  wide statement's strip sits beside the head, on a side too, whenever there is one. */
+const SIDED = new Set(["split", "feature", "bento", "ledger", "wide"]);
 
 /**
  * The media side of each section: "left", "right", "center" or null (no side photo).
@@ -264,7 +275,7 @@ export function assignSides(sections: Section[], headerSide: Side = "right"): (S
     else if (s.type === "cta") side = layout === "signoff" ? "center" : null;
     else if (layout === "rail") side = "left";
     else if (layout === "center") side = "center";
-    else if (SIDED.has(layout)) {
+    else if (SIDED.has(layout) && (layout !== "ledger" || hasSlot((s as BlockSection).image))) {
       const authored = "side" in s ? s.side : undefined;
       side = authored ?? (last === "left" ? "right" : "left");
     }
@@ -293,6 +304,7 @@ export function toBlocks(s: BlockSection, layout: string = resolveLayout(s)): Bl
       title: item.title,
       text: item.text,
       bullets: item.bullets,
+      image: item.image,
       marker: s.kind === "timeline" ? { kind: "tag", label: item.label } : { kind: "number", n: i + 1 },
     }));
   const numbered = layout === "rail";
@@ -301,7 +313,7 @@ export function toBlocks(s: BlockSection, layout: string = resolveLayout(s)): Bl
     text: item.text,
     bullets: item.bullets,
     image: item.image,
-    links: item.links ?? (item.href ? [{ label: item.linkLabel ?? "Read", href: item.href }] : undefined),
+    links: item.links?.length ? item.links : item.href ? [{ label: item.linkLabel ?? "Read", href: item.href }] : undefined,
     marker: numbered ? { kind: "number", n: i + 1 } : undefined,
   }));
 }
@@ -315,15 +327,49 @@ export function sectionImageRole(s: Section, layout: string = resolveLayout(s)):
   return "split";
 }
 
-/** Every image slot on a page with the role it renders in, in page order. */
+/** Layouts that draw a block's own photograph: blocks side by side as boxes or columns. */
+const ITEM_PHOTOS = new Set(["tiles", "ledger"]);
+
+/** Whether a section's own photograph is drawn under its resolved layout. */
+function drawsSectionImage(s: Section, layout: string): boolean {
+  if (s.type === "faq") return layout === "split";
+  if (s.type === "statement" || s.type === "cta") return layout !== "solo" && layout !== "band";
+  if (isBlockSection(s)) return LAYOUTS[layout as BlockLayout]?.media !== "none";
+  return false;
+}
+
+/** The image slots a section draws, with the role each renders in. Photos a layout has no place
+ *  for (a section photo under tiles, a card's photo in rows) are left out: they never render. */
+export function sectionSlots(s: Section, layout: string = resolveLayout(s)): { role: SlotRole; slot: ImageSlot }[] {
+  const out: { role: SlotRole; slot: ImageSlot }[] = [];
+  if ("image" in s && hasSlot(s.image) && drawsSectionImage(s, layout)) out.push({ role: sectionImageRole(s, layout), slot: s.image });
+  if (ITEM_PHOTOS.has(layout)) {
+    if (s.type === "grid" || s.type === "sequence")
+      (s.items as { image?: ImageSlot }[]).forEach((item) => hasSlot(item.image) && out.push({ role: "item", slot: item.image }));
+    if (s.type === "compare") s.sides.forEach((side) => hasSlot(side.image) && out.push({ role: "item", slot: side.image }));
+  }
+  return out;
+}
+
+/** Every image slot a page draws with the role it renders in, in page order. */
 export function pageSlots(page: Pick<SectionPage, "lead" | "sections">): { role: SlotRole; slot: ImageSlot; index: number }[] {
   const out: { role: SlotRole; slot: ImageSlot; index: number }[] = [];
-  if (page.lead) out.push({ role: "lead", slot: page.lead, index: -1 });
-  page.sections.forEach((s, index) => {
-    if ("image" in s && hasSlot(s.image)) out.push({ role: sectionImageRole(s), slot: s.image, index });
-    if (s.type === "grid") s.items.forEach((item) => hasSlot(item.image) && out.push({ role: "item", slot: item.image, index }));
-    if (s.type === "compare") s.sides.forEach((side) => hasSlot(side.image) && out.push({ role: "item", slot: side.image, index }));
-  });
+  if (hasSlot(page.lead)) out.push({ role: "lead", slot: page.lead, index: -1 });
+  page.sections.forEach((s, index) => sectionSlots(s).forEach((x) => out.push({ ...x, index })));
+  return out;
+}
+
+/**
+ * A section as the renderers should see it: image slots that are not really there (a ratio the
+ * Studio pre-filled, with no brief and no photo) removed, at section and block level, so every
+ * component can test for a photo by presence and agree with resolveLayout().
+ */
+export function withSlots<T extends Section>(s: T): T {
+  const clean = (slot?: ImageSlot) => (hasSlot(slot) ? slot : undefined);
+  const out: any = { ...s };
+  if ("image" in out) out.image = clean(out.image);
+  if (Array.isArray(out.items)) out.items = out.items.map((i: any) => ("image" in (i ?? {}) ? { ...i, image: clean(i.image) } : i));
+  if (Array.isArray(out.sides)) out.sides = out.sides.map((i: any) => ("image" in (i ?? {}) ? { ...i, image: clean(i.image) } : i));
   return out;
 }
 
@@ -370,7 +416,6 @@ export function validateSections(sections: Section[]): Problem[] {
         break;
       case "grid":
         if (!Array.isArray(s.items) || s.items.length < 2 || s.items.length > 6) add("grid needs 2 to 6 items");
-        if (s.columns !== undefined && ![2, 3, 4].includes(s.columns)) add("grid columns must be 2, 3 or 4");
         if (Array.isArray(s.items) && s.items.some((i: any) => (i?.href && !i?.linkLabel) || (!i?.href && i?.linkLabel)))
           add("a link card needs both href and linkLabel");
         if (Array.isArray(s.items) && s.items.some((i: any) => i?.href && i?.links)) add("a card takes href or links, not both");
@@ -402,6 +447,17 @@ export function validateSections(sections: Section[]): Problem[] {
         if (spec.media === "required" && !hasSlot(s.image)) add(`${s.layout} needs a section image`);
       }
     }
+
+    // A photograph the layout has no place for would be dropped without a word.
+    if (isBlockSection(s) && (s.type === "compare" ? Array.isArray(s.sides) : Array.isArray(s.items))) {
+      const layout = resolveLayout(s);
+      const blocks: any[] = s.type === "compare" ? s.sides : s.items;
+      if (hasSlot(s.image) && LAYOUTS[layout as BlockLayout]?.media === "none")
+        add(`${layout} has no place for a section image; give each block its own, or pick a layout with one`);
+      if (!ITEM_PHOTOS.has(layout) && blocks.some((b) => hasSlot(b?.image)))
+        add(`${layout} does not show a block's own image; only tiles and ledger do`);
+    }
+    if (s.type === "faq" && hasSlot(s.image) && s.layout !== "split") add('a faq image shows only with layout "split"');
 
     const banned = visibleStrings(s).find((t) => BANNED.test(t));
     if (banned) add(`visible text contains "placeholder": ${JSON.stringify(banned)}`);
@@ -437,17 +493,13 @@ export const words = (t?: string): number => (t ? t.trim().split(/\s+/).filter(B
 export function rhythmKey(s: Section): string {
   const layout = resolveLayout(s);
   if (s.type === "faq" || s.type === "cta") return `${s.type}:${layout}`;
-  return layout;
+  // A wide statement is a ledger's head row over paragraphs: the same composition.
+  return layout === "wide" ? "ledger" : layout;
 }
 
 const isSplitStyle = (key: string) => key === "split" || key === "faq:split";
 
-function hasImage(s: Section): boolean {
-  if ("image" in s && hasSlot(s.image)) return true;
-  if (s.type === "grid") return s.items.some((i) => hasSlot(i.image));
-  if (s.type === "compare") return s.sides.some((side) => hasSlot(side.image));
-  return false;
-}
+const hasImage = (s: Section): boolean => sectionSlots(s).length > 0;
 
 /** Word counts are close enough when the longest is within 1.5× the shortest or 3 words of it. */
 export function balanced(counts: number[]): boolean {

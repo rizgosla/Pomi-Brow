@@ -9,8 +9,8 @@
 // sides; Statement, Faq and CtaBand keep their own components but share the same layout CSS.
 import type { Section } from "../../lib/sections";
 import type { SiteSettings } from "../../lib/content";
-import { assignSides, effectiveRatio, isBlockSection, resolveLayout } from "../../lib/sections";
-import { keepHyphenated } from "../../lib/text";
+import { assignSides, effectiveRatio, isBlockSection, resolveLayout, withSlots } from "../../lib/sections";
+import Nobr from "./Nobr.astro";
 import Facts from "./Facts.astro";
 import Statement from "./Statement.astro";
 import Blocks from "./Blocks.astro";
@@ -23,7 +23,11 @@ interface Props {
   sections: Section[];
   settings: SiteSettings;
 }
-const { sections, settings } = Astro.props;
+// Image slots that are not really there (a ratio the Studio pre-filled, with no brief and no
+// photo) are dropped first, so every component agrees with resolveLayout() about which sections
+// have a photograph.
+const sections = Astro.props.sections.map(withSlots);
+const { settings } = Astro.props;
 
 const slug = (s: string) =>
   s
@@ -38,6 +42,8 @@ const sides = assignSides(sections, "right");
   sections.map((s, i) => {
     const layout = resolveLayout(s);
     const side = sides[i];
+    // A section of a type this site does not know (a CMS document never mapped) renders nothing.
+    if (layout === "none") return null;
     if (s.type === "facts") {
       return (
         <section class="slide slide--facts">
@@ -75,7 +81,7 @@ const sides = assignSides(sections, "right");
     const id = slug(s.heading);
     const head = (
       <div class="section-head slide__head reveal">
-        <h2 id={`${id}-heading`}>{keepHyphenated(s.heading).map((p) => (p.keep ? <span class="nobr">{p.text}</span> : p.text))}</h2>
+        <h2 id={`${id}-heading`}><Nobr text={s.heading} /></h2>
         {s.lede && <p class="lede">{s.lede}</p>}
       </div>
     );

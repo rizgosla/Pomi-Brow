@@ -298,7 +298,8 @@
               "For signs of infection, contact a physician"
             ]
           }
-        ]
+        ],
+        "side": "left"
       },
       {
         "type": "grid",
@@ -430,7 +431,7 @@
       },
       {
         "type": "sequence",
-        "layout": "rail",
+        "layout": "split",
         "kind": "timeline",
         "heading": "The healing timeline.",
         "lede": "Every client heals differently, but this is what many experience.",
@@ -474,7 +475,7 @@
       },
       {
         "type": "grid",
-        "layout": "split",
+        "layout": "rail",
         "heading": "What to avoid while it heals.",
         "lede": "Follow the instructions for your service. In general, avoid anything that can irritate, soak, contaminate or fade the area.",
         "image": {
@@ -603,7 +604,8 @@
           "tone": "caution",
           "title": "Ask before booking eye services",
           "text": "Ask before booking if you have active eye irritation, recent eye surgery, certain eye medications, recent cosmetic eye treatments, or sensitivity around the eyes."
-        }
+        },
+        "side": "left"
       },
       {
         "type": "compare",

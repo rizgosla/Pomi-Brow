@@ -5,13 +5,13 @@
 //   split  the copy beside a 4:5 photograph, which sticks while the copy scrolls on a tall enough
 //          screen. Top-aligned: the copy used to sit level with the photograph's middle, which
 //          left white space floating above and below it.
-//   wide   the heading beside a 5:2 strip, as a ledger's head row, the paragraphs under both.
+//   wide   the heading beside a 5:2 strip, as a ledger's head row, the paragraphs under the heading.
 //   solo   no photograph: heading, paragraphs, note.
 // Every paragraph is the body size. The first used to run at the lede size above body-size ones,
 // two paragraph sizes stacked in one block -- the client's first complaint. The statement's own
 // lede, in the head, is the page's one larger line and keeps the global .lede.
 import type { Section, Side } from "../../lib/sections";
-import { effectiveRatio, sectionImageRole } from "../../lib/sections";
+import { effectiveRatio, ratioAspect, sectionImageRole } from "../../lib/sections";
 import ImageSlot from "./ImageSlot.astro";
 import Callout from "./Callout.astro";
 
@@ -20,7 +20,7 @@ interface Props {
   section: Statement;
   /** resolveLayout(section): "split" or "wide" with a photograph, "solo" without one. */
   layout?: "split" | "wide" | "solo";
-  /** From assignSides(): the side a split puts its photograph. */
+  /** From assignSides(): the side a split puts its photograph, or a wide statement its strip. */
   side?: Side | null;
 }
 const { section, side } = Astro.props;
@@ -28,12 +28,11 @@ const { section, side } = Astro.props;
 const layout = section.image ? (Astro.props.layout === "wide" ? "wide" : "split") : "solo";
 const photo = section.image ? { ...section.image, ratio: effectiveRatio(sectionImageRole(section, layout), section.image.ratio) } : undefined;
 // Width over height, for the viewport cap on the sticky photograph (layouts.css).
-const [w, h] = (photo?.ratio ?? "4 / 5").split("/").map((v) => Number(v.trim()));
-const aspect = Number((w / h).toFixed(4));
+const aspect = ratioAspect(photo?.ratio);
 const sizes = layout === "wide" ? "(min-width: 60rem) 40vw, 100vw" : "(min-width: 60rem) 40vw, (min-width: 30rem) 28rem, 100vw";
 ---
 
-<div class:list={["l", `l--${layout}`, "l--statement"]} data-side={layout === "split" ? (side === "right" ? "right" : "left") : undefined}>
+<div class:list={["l", `l--${layout}`, "l--statement"]} data-side={layout === "solo" ? undefined : side === "right" ? "right" : "left"}>
   <div class="l__head"><slot name="head" /></div>
   {
     photo && (

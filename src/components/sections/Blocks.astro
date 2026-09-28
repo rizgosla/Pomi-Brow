@@ -27,7 +27,7 @@
 // Sequences and counted rows are an <ol>; everything else a <ul>. role="list" keeps the list
 // semantics Safari drops from a list with no bullets.
 import type { BlockLayout, BlockSection, Side } from "../../lib/sections";
-import { BLOCK_LAYOUTS, LAYOUTS, effectiveRatio, resolveLayout, sectionImageRole, toBlocks } from "../../lib/sections";
+import { BLOCK_LAYOUTS, LAYOUTS, effectiveRatio, ratioAspect, resolveLayout, sectionImageRole, toBlocks } from "../../lib/sections";
 import Block from "./Block.astro";
 import ImageSlot from "./ImageSlot.astro";
 import Callout from "./Callout.astro";
@@ -59,9 +59,6 @@ const rank = layout === "rail" && blocks.some((b) => b.marker?.kind === "number"
 const twoColumns = rank && n >= 4;
 const perColumn = Math.ceil(n / 2);
 
-const sided = layout === "split" || layout === "feature" || layout === "bento";
-const dataSide = sided ? (side === "right" ? "right" : "left") : layout === "rail" ? "left" : undefined;
-
 // The section's photograph, framed at the ratio its role here allows. tiles has no place for one;
 // its photographs are the blocks' own.
 const photo =
@@ -69,8 +66,12 @@ const photo =
     ? { ...section.image, ratio: effectiveRatio(sectionImageRole(section, layout), section.image.ratio) }
     : undefined;
 // Width over height, for the viewport cap on a sticky photograph (layouts.css).
-const [w, h] = (photo?.ratio ?? "4 / 5").split("/").map((v) => Number(v.trim()));
-const aspect = Number((w / h).toFixed(4));
+const aspect = ratioAspect(photo?.ratio);
+
+// The side the section's photograph takes. A ledger's strip sits beside its head on a side too;
+// a ledger whose photographs are its columns' own has none.
+const sided = layout === "split" || layout === "feature" || layout === "bento" || (layout === "ledger" && Boolean(photo));
+const dataSide = sided ? (side === "right" ? "right" : "left") : layout === "rail" ? "left" : undefined;
 
 /** How wide each photograph renders, for srcset. Below 60rem a portrait or square frame stops at
  *  28rem; four tiles or four ledger columns run two up until 80rem (layouts.css). */
@@ -133,7 +134,7 @@ const head = Astro.slots.has("head") ? await Astro.slots.render("head") : "";
       doors ? (
         <LinkTiles items={doors} variant={layout === "split" ? "stack" : "grid"} />
       ) : layout === "tiles" ? (
-        <List class:list={["l-tiles", { "l-tiles--even": blocks.every((b) => !b.image), "l-tiles--4": n === 4 }]} role="list">
+        <List class:list={["l-tiles", { "l-tiles--4": n === 4 }]} role="list">
           {blocks.map((b, i) => (
             <Block block={b} index={i} frame="tile" step={steps} ownPhoto sizes={SIZES.tiles} />
           ))}
