@@ -1349,7 +1349,7 @@
         "heading": "What to ask any artist.",
         "lede": "Asking the right questions helps you feel informed before booking and helps the artist understand your goals.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Client asking a question at the consultation, Pomi listening, both seated, soft window light"
         },
         "items": [
@@ -1375,7 +1375,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Worth reading before you schedule: how the studio stays safe, how to prepare, and what to expect while it heals.",
+        "lede": "The studio's safety steps, and your part before and after.",
         "image": {
           "ratio": "4 / 5",
           "shot": "Microblading before and after",
@@ -1410,33 +1410,29 @@
       {
         "type": "faq",
         "layout": "split",
-        "heading": "Safety questions.",
-        "lede": "Asked most, answered short.",
+        "heading": "Questions about your appointment.",
+        "lede": "What the studio does, and what you do.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Lip tint before and after",
+          "shot": "A shaded brow arching over an open eye, close-up",
           "photo": {
-            "ref": "lip-tint/04",
-            "alt": "Lip tint before and after: pale mauve lips, then soft rosy pink",
-            "detail": "Before and after"
+            "ref": "microblading-shading/07",
+            "alt": "A dark shaded brow arching over an open brown eye, close-up",
+            "detail": "Close-up"
           }
         },
         "items": [
           {
-            "q": "Is permanent makeup safe?",
-            "a": "Safest in a clean studio with a trained professional, disposable tools, careful sanitation and clear aftercare."
-          },
-          {
-            "q": "What should I look for in a studio?",
-            "a": "A clean private setting, single-use tools, fresh barriers, careful pigment handling, gloves, masks and clear aftercare."
+            "q": "What is the artist's part in safety?",
+            "a": "Careful technique. The artist should work with focus, precision and proper handling of tools and pigment."
           },
           {
             "q": "Why are single-use tools important?",
             "a": "They touch one client and are then safely discarded, which reduces cross-contamination."
           },
           {
-            "q": "Who should ask before booking?",
-            "a": "Ask before booking if you are pregnant, nursing, prone to keloids, taking blood thinners, have uncontrolled medical conditions, have skin irritation, or recently had treatments near the area."
+            "q": "Should the appointment feel rushed?",
+            "a": "No. Permanent makeup should not feel rushed, crowded or unclear. A clean studio process protects you and lets the artist focus."
           },
           {
             "q": "How should I prepare?",
@@ -1445,6 +1441,10 @@
           {
             "q": "Is there downtime?",
             "a": "Most clients should plan for visible healing signs for 1 to 2 weeks, then follow the aftercare for your service."
+          },
+          {
+            "q": "Does safety end with the appointment?",
+            "a": "No. Aftercare protects the treated area while it heals and supports the final result. Do not pick, scratch or peel the area, and ask the studio if you are unsure about healing."
           }
         ]
       },
@@ -2287,8 +2287,8 @@
             "text": "Healed, it resembles soft brow powder or pencil."
           },
           {
-            "title": "Near Irvine",
-            "text": "A private studio in Tustin, central Orange County."
+            "title": "Custom mapping",
+            "text": "You review the shape before the service begins."
           }
         ]
       },
@@ -2368,7 +2368,7 @@
         "heading": "How to know if powder brows fit you.",
         "lede": "Every client's skin and brow goals are different, so the final recommendation comes from a consultation.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Brow mapping on bare brows, the shape measured and drawn before shading, close-up in soft daylight"
         },
         "items": [
@@ -2391,7 +2391,7 @@
         ],
         "callout": {
           "tone": "caution",
-          "title": "Before you book",
+          "title": "Ask first",
           "text": "Ask before booking if you have irritation, recent treatments, or healing concerns near the brow area."
         }
       },
@@ -2401,12 +2401,11 @@
         "heading": "What should you expect after powder brows?",
         "lede": "Fresh powder brows are not the final result.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "A freshly done brow, darker than it will heal, balm on the brow head",
           "photo": {
             "ref": "ombre-powder-brows/02",
             "alt": "A freshly done dark brow with glossy balm at the front, above a closed eye",
-            "focus": "50% 50%",
             "detail": "Fresh"
           }
         },
@@ -2425,7 +2424,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Worth reading first: the three brow services, each in detail.",
+        "lede": "Powder brows, microblading, or the two combined: compare all three.",
         "image": {
           "ratio": "4 / 5",
           "shot": "Combination brows: fine strokes at the front, shading through the tail",
@@ -2461,7 +2460,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Powder brow questions.",
-        "lede": "The ones asked most, answered short.",
+        "lede": "The questions that usually decide shading or hair strokes.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Both powder brows of one client, one view per side",
@@ -2504,7 +2503,7 @@
             "href": "/contact"
           },
           {
-            "label": "The healing timeline",
+            "label": "PMU healing timeline",
             "href": "/learn/pmu-healing-timeline"
           }
         ],
@@ -2873,8 +2872,8 @@
             "text": "Designed around your eye shape and your makeup style."
           },
           {
-            "title": "Located near Irvine",
-            "text": "A private studio in Tustin, central Orange County."
+            "title": "Refined after healing",
+            "text": "Healed color, symmetry and softness, reviewed at the touch-up."
           }
         ]
       },
@@ -2893,13 +2892,13 @@
         "callout": {
           "tone": "voice",
           "title": "How I help clients choose",
-          "text": "\"I want to look like I have naturally darker lashes\" usually means lash enhancement. \"I wear eyeliner every day and want to stop drawing it on\" usually means permanent eyeliner."
+          "text": "“I want to look like I have naturally darker lashes” usually means lash enhancement. “I wear eyeliner every day and want to stop drawing it on” usually means permanent eyeliner."
         }
       },
       {
         "type": "compare",
-        "layout": "tiles",
-        "heading": "Not the same service.",
+        "layout": "ledger",
+        "heading": "Start with the result you want.",
         "lede": "Both add pigment near the eyes, but they create different looks.",
         "sides": [
           {
@@ -2916,7 +2915,8 @@
             "bullets": [
               "Placed through the lash line, darker at the base",
               "The softest, most natural eye service",
-              "A slightly stronger version: fuller, still not liner"
+              "Good if eyeliner feels too heavy for you",
+              "Good for easy mornings: a soft boost before makeup"
             ]
           },
           {
@@ -2931,39 +2931,10 @@
               }
             },
             "bullets": [
-              "A more noticeable line along the eyes",
-              "Closer to a makeup look, still soft",
-              "Customized to your eye shape, but meant to show"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "compare",
-        "layout": "center",
-        "heading": "Start with the result you want.",
-        "lede": "The final style should match your eye shape, skin and comfort level.",
-        "image": {
-          "ratio": "4 / 5",
-          "shot": "Consultation: Pomi and a client talking through eye styles, both seated, window light"
-        },
-        "sides": [
-          {
-            "title": "Choose lash enhancement",
-            "bullets": [
-              "You like a natural look: eyes and lashes, not a liner shape",
-              "You rarely wear eyeliner, or it feels too heavy",
-              "You want a darker, more defined lash base",
-              "You want easy mornings: a soft boost before makeup"
-            ]
-          },
-          {
-            "title": "Choose permanent eyeliner",
-            "bullets": [
-              "You wear liner often and want to save time applying it",
-              "Your liner smudges, transfers or never looks even",
-              "You want a more noticeable eye shape",
-              "You want symmetry help: a cleaner, more balanced look"
+              "A more noticeable line along the eyes, still soft",
+              "Closer to a makeup look, and meant to show",
+              "Good if your liner smudges, transfers or never looks even",
+              "Good for symmetry: a cleaner, more balanced look"
             ]
           }
         ]
@@ -2975,12 +2946,11 @@
         "heading": "Eye services need careful planning.",
         "lede": "Both are done close to the eyes, so safety and preparation matter. The first appointment builds the foundation; the touch-up refines the healed result.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Winged eyeliner on a closed eye, just done, cotton swab in frame",
           "photo": {
             "ref": "eyeliner/01",
             "alt": "Freshly done winged eyeliner on a closed eye, a cotton swab at the top of the frame",
-            "focus": "70% 50%",
             "detail": "Fresh"
           }
         },
@@ -3022,7 +2992,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: the two eye services in detail, and what healing around the eyes looks like.",
+        "lede": "Both eye services in detail, and the aftercare that follows.",
         "image": {
           "ratio": "4 / 5",
           "shot": "Healed lash enhancement, eyes open, no other eye makeup, natural light"
@@ -3052,7 +3022,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Eyeliner and lash enhancement questions.",
-        "lede": "The ones asked most before choosing, answered short.",
+        "lede": "What clients ask before choosing an eye service.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Close crop of healed permanent eyeliner, a soft pencil-style line"
@@ -3135,8 +3105,8 @@
             "text": "Two names, usually the same soft lip tattoo."
           },
           {
-            "title": "Located near Irvine",
-            "text": "A private studio in Tustin, central Orange County."
+            "title": "Brighter at first",
+            "text": "Fresh color usually softens into a more natural shade."
           }
         ]
       },
@@ -3167,7 +3137,7 @@
       {
         "type": "grid",
         "layout": "bento",
-        "heading": "Who is lip tint best for.",
+        "heading": "Who lip tint suits.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Lip tint before and after: pale pink lips, then a deeper rosy color with a defined edge",
@@ -3180,19 +3150,19 @@
         "items": [
           {
             "title": "Pale lips",
-            "text": "Soft pigment brings back a fresher lip tone."
+            "text": "If your lips look pale, soft pigment can bring back a fresher, healthy-looking tone."
           },
           {
             "title": "Uneven color",
-            "text": "Lips look more balanced from edge to center."
+            "text": "If your lip tone is uneven, lip tint can help it look more balanced from edge to center."
           },
           {
             "title": "Soft definition",
-            "text": "A cleaner shape without a harsh lip liner effect."
+            "text": "If you want more definition, the lip shape can look cleaner without a harsh lip liner effect."
           },
           {
             "title": "Less daily makeup",
-            "text": "Wake up with lips that already have a little color."
+            "text": "If you want less daily lipstick or liner, wake up with lips that already have a little color."
           }
         ]
       },
@@ -3203,7 +3173,7 @@
         "heading": "What color to expect.",
         "lede": "Lips go through stages while healing: bright, then softer, then lighter, then settled. Do not judge the color too early.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "The same lips fresh on day one and settled after healing, stacked, same light and angle"
         },
         "items": [
@@ -3235,7 +3205,7 @@
         "heading": "Cold sores, before lip tint.",
         "lede": "If you have ever had a cold sore, even once, please mention it before booking.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Smooth bare lips with no irritation or dryness, close-up in soft daylight, ready for lip tint"
         },
         "items": [
@@ -3258,15 +3228,10 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: the lip tint service, how to care for it, and what healing looks like week by week.",
+        "lede": "Lip tint in full, then how to care for it as it heals.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Lip tint before and after: pale mauve lips, then a soft rosy pink",
-          "photo": {
-            "ref": "lip-tint/04",
-            "alt": "Lip tint before and after: pale mauve lips, then a soft rosy pink",
-            "detail": "Before and after"
-          }
+          "shot": "Pomi matching a lip shade to the client's natural tone, pigment swatches on a palette"
         },
         "items": [
           {
@@ -3282,8 +3247,8 @@
             "linkLabel": "Read"
           },
           {
-            "title": "The healing timeline",
-            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "title": "PMU healing timeline",
+            "text": "Day 1 to week 4: darker, flaking, lighter, then settled.",
             "href": "/learn/pmu-healing-timeline",
             "linkLabel": "Read"
           }
@@ -3293,9 +3258,10 @@
         "type": "faq",
         "layout": "split",
         "heading": "Lip tint and lip blush questions.",
+        "lede": "From the name itself to the healed color.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Client at the consultation holding a hand mirror to her bare lips, choosing a soft shade, window light"
+          "shot": "Client smiling at her touch-up visit, healed lip color soft and even, side light"
         },
         "items": [
           {
