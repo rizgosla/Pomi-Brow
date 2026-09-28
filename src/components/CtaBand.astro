@@ -1,9 +1,16 @@
 ---
 // The close of a content page: one line, the call, and where to read next. Extracted from the
 // Safety page's "ask before you book" block so every slide page ends the same way.
+//
+// With an `image` it becomes a sign-off: Pomi's portrait over the line, the lede and the call,
+// all on one centre axis. It is the page's closing note in her own voice (Pomi answers herself),
+// so it stays calm, with no fill and no border, and its centred composition breaks the run of
+// left/right splits above it. The portrait is always square and at most 12rem wide (the source
+// is 1080px). Without an image the band renders exactly as before.
 import type { SiteSettings } from "../lib/content";
-import type { Link } from "../lib/sections";
+import type { ImageSlot as Slot, Link } from "../lib/sections";
 import Icon from "./Icon.astro";
+import ImageSlot from "./sections/ImageSlot.astro";
 
 interface Props {
   heading: string;
@@ -11,13 +18,17 @@ interface Props {
   links?: Link[];
   settings: SiteSettings;
   id?: string;
+  /** Pomi's portrait. Turns the band into the centred sign-off; framed 1:1 whatever it was authored at. */
+  image?: Slot;
 }
-const { heading, text, links = [], settings, id = "ask" } = Astro.props;
+const { heading, text, links = [], settings, id = "ask", image } = Astro.props;
+const signoff = Boolean(image);
 ---
 
-<section class="section cta" aria-labelledby={`${id}-heading`}>
+<section class:list={["section cta", { "cta--signoff": signoff }]} aria-labelledby={`${id}-heading`}>
   <div class="page cta__grid">
-    <div class="reveal">
+    <div class:list={[{ cta__signoff: signoff }, "reveal"]}>
+      {image && <ImageSlot image={{ ...image, ratio: "1 / 1" }} service="Pomi" class="cta__portrait" sizes="12rem" widths={[240, 480]} />}
       <h2 id={`${id}-heading`}>{heading}</h2>
       <p class="lede">{text}</p>
       <div class="cta__actions">
@@ -55,5 +66,24 @@ const { heading, text, links = [], settings, id = "ask" } = Astro.props;
     align-items: center;
     gap: var(--space-5);
     margin-top: var(--space-6);
+  }
+
+  /* Sign-off: portrait, line, lede and actions share the centre axis. */
+  .cta__signoff {
+    text-align: center;
+  }
+  .cta__signoff :global(.cta__portrait) {
+    width: min(100%, 12rem);
+    margin: 0 auto var(--space-6);
+  }
+  .cta__signoff :global(.cta__portrait .caption) {
+    justify-content: center;
+  }
+  .cta__signoff h2,
+  .cta__signoff .lede {
+    margin-inline: auto;
+  }
+  .cta__signoff .cta__actions {
+    justify-content: center;
   }
 </style>
