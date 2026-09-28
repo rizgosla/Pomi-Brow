@@ -13,9 +13,11 @@
      the studio pink (#f26193 at ~30% over white), lighter than --line-pink so a box
      still reads as a box against the rules around it. */
   --border: #fbd0df;
-  /* Photo frames alone stay neutral: the pigment inside the photograph is the only
-     colour that should sit next to it. */
-  --frame: #eaeaea;
+  /* Photo frames. A photograph standing on the page is framed in the blush box line;
+     one inside a card keeps a grey frame, because the card already carries the pink
+     and a pink frame inside a pink box reads as a double rule. */
+  --frame: var(--line-pink);
+  --frame-in-card: #eaeaea;
   --border-soft: rgba(0, 0, 0, 0.06);
 
   /* Muted pastels: tags and small semantic accents only */
@@ -38,6 +40,10 @@
   --pink-ink: #c42a66;
   --pink-ink-hover: #a82255;
   --pale-pink: #fdebf1;
+  /* The outline on a white content tile on the slide pages: the box line, with its value as fallback. */
+  --outline-pink: var(--line-pink, #f8a8c4);
+  /* The fill inside that outline: a breath off white, lighter than --surface. */
+  --tile: #fcfcfb;
   /* The box line. Cards, FAQ cards, fields, quiet buttons, the menu toggle and the map
      are outlined in a blush of the studio pink (#f26193 at ~55% over white) so the
      colour runs through the page and not only through the buttons. Structure -- section

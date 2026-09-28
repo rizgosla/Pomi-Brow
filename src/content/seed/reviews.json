@@ -1,32 +1,33 @@
 [
   {
-    "quote": "PLACEHOLDER. Replace with a real Yelp review, copied word for word, in Reviews inside the admin.",
-    "reviewer": "Placeholder",
+    "quote": "My brows look natural! I have no tattoos yet I trusted Pomi to tattoo my brows because I've seen her work. It didn't hurt - shes gentle, and she is an amazing artist. My brows look natural, soft, and the shape is beautiful. Pomi is perfection.",
+    "reviewer": "Amity T.",
     "source": "Yelp",
-    "sourceUrl": "",
-    "serviceSlug": "microblading",
+    "sourceUrl": "https://www.yelp.com/biz/pomi-b-brow-studio-tustin",
+    "date": "2026-05-16",
     "showOnHome": true,
     "order": 10,
-    "isPlaceholder": true
+    "isPlaceholder": false
   },
   {
-    "quote": "PLACEHOLDER. Replace with a real Yelp review, copied word for word, in Reviews inside the admin.",
-    "reviewer": "Placeholder",
+    "quote": "Pomi is a master at her craft with creating beautiful brows and all. I got my eyebrows microbladed yesterday and there's nothing like waking up or having beautiful eyebrows all the time (goodbye eyebrow pencils)! From start to finish, Pomi is very attentive and makes sure that you're comfortable. Plus, she wants you to be completely on-board with the design, color, and all of that important stuff. The pain wasn't bad and went away by evening. I've already gotten compliments and they're not even healed yet. Can't wait for the touch up appt or final results!",
+    "reviewer": "Anne P.",
     "source": "Yelp",
-    "sourceUrl": "",
-    "serviceSlug": "lip-tint",
+    "sourceUrl": "https://www.yelp.com/biz/pomi-b-brow-studio-tustin",
+    "date": "2025-11-07",
+    "serviceSlug": "microblading",
     "showOnHome": true,
     "order": 20,
-    "isPlaceholder": true
+    "isPlaceholder": false
   },
   {
-    "quote": "PLACEHOLDER. Replace with a real Yelp review, copied word for word, in Reviews inside the admin.",
-    "reviewer": "Placeholder",
+    "quote": "I have been going to Pomi for a few years now & she always does an amazing job. She is very professional but so sweet & easy to talk to. I have recommended her many times.",
+    "reviewer": "Jenn H.",
     "source": "Yelp",
-    "sourceUrl": "",
-    "serviceSlug": "eyeliner",
+    "sourceUrl": "https://www.yelp.com/biz/pomi-b-brow-studio-tustin",
+    "date": "2025-08-12",
     "showOnHome": true,
     "order": 30,
-    "isPlaceholder": true
+    "isPlaceholder": false
   }
 ]

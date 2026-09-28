@@ -40,7 +40,22 @@ export const siteSettings = defineType({
     defineField({ name: "hoursNote", type: "string", description: "e.g. “By appointment”" }),
     defineField({ name: "bookingUrl", title: "Booking link", type: "url", description: "Leave empty to make Book buttons call the studio." }),
     defineField({ name: "yelpUrl", type: "url" }),
+    defineField({
+      name: "yelpRating",
+      title: "Yelp overall star rating",
+      type: "number",
+      description: "The rating shown at the top of the Yelp listing, e.g. 5.",
+      validation: (r) => r.min(1).max(5),
+    }),
     defineField({ name: "yelpReviewCount", title: "Yelp five-star review count", type: "number" }),
+    defineField({
+      name: "yelpOtherReviewCount",
+      title: "Yelp reviews that are not five stars",
+      type: "number",
+      description:
+        "Counted honestly. The site says this number out loud: a perfect record invites doubt, a near-perfect one you volunteer yourself does the opposite.",
+      validation: (r) => r.min(0),
+    }),
     defineField({ name: "instagramHandle", type: "string", description: "Without the @" }),
     defineField({ name: "instagramUrl", type: "url" }),
     defineField({

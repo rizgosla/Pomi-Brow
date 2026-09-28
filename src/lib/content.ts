@@ -61,6 +61,10 @@ export interface Review {
   source: string;
   sourceUrl?: string;
   serviceSlug?: string;
+  /** Stars as the reviewer left them, 1-5. Drives the per-card rating row and the JSON-LD. */
+  rating?: number;
+  /** Date as shown on the listing, ISO (2026-01-14). Shown as month and year. */
+  date?: string;
   isPlaceholder: boolean;
 }
 
@@ -106,7 +110,12 @@ export interface SiteSettings {
   bookingUrl: string;
   bookingHref: string;
   yelpUrl: string;
+  /** The listing's overall star rating, e.g. 5. Distinct from the five-star count below. */
+  yelpRating: number;
+  /** How many of the reviews are five stars. Kept under its original name so existing CMS data survives. */
   yelpReviewCount: number;
+  /** Reviews that are not five stars. The site names this out loud rather than rounding it away. */
+  yelpOtherReviewCount: number;
   instagramHandle: string;
   instagramUrl: string;
   instagramLiveFeed: boolean;
@@ -206,7 +215,10 @@ function normalizeSeedSettings(): SiteSettings {
       .filter((p): p is Photo => Boolean(p)),
     bio: s.bio ?? [],
     bioIsPlaceholder: Boolean(s.bioIsPlaceholder),
-    headshot: null,
+    yelpRating: s.yelpRating ?? 5,
+    yelpOtherReviewCount: s.yelpOtherReviewCount ?? 0,
+    // A gallery ref, e.g. "pomi/portrait" -- her Instagram profile photo until she supplies one.
+    headshot: s.headshot ? localPhoto(s.headshot, "Pomi, permanent makeup artist") : null,
   };
 }
 
@@ -269,6 +281,9 @@ export async function getSiteSettings(): Promise<SiteSettings> {
       .filter(Boolean),
     bio: portableToParagraphs(s.bio),
     bioIsPlaceholder: false,
+    yelpRating: s.yelpRating ?? seed.yelpRating,
+    yelpReviewCount: s.yelpReviewCount ?? seed.yelpReviewCount,
+    yelpOtherReviewCount: s.yelpOtherReviewCount ?? seed.yelpOtherReviewCount,
     headshot: remotePhoto(s.headshot, `Pomi, permanent makeup artist`),
   };
 }
@@ -289,6 +304,17 @@ export async function getServices(): Promise<Service[]> {
       .filter(Boolean),
     showOnHome: s.showOnHome !== false,
   }));
+}
+
+/**
+ * The reviews that may ship. A placeholder review is not a review, and the home page
+ * promises words copied from Yelp, so scaffolding never reaches the page. Exported because
+ * index.astro has to know which reviews render in order to pair photographs with them
+ * without the two disagreeing.
+ */
+export function visibleReviews(reviews: Review[], limit = 3): Review[] {
+  const isPlaceholder = (v: string | undefined | null) => /placeholder/i.test(v ?? "");
+  return reviews.filter((r) => !isPlaceholder(r.quote) && !isPlaceholder(r.reviewer)).slice(0, limit);
 }
 
 export async function getReviews(): Promise<Review[]> {

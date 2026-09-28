@@ -19,25 +19,40 @@ const cap = photo && !isHeadshot ? photoCaption(photo, services) : null;
 // Until a real bio is supplied the section degrades to the photograph and the
 // link, rather than printing scaffolding where the page asks for trust.
 const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
+// Until there is a bio and a headshot this section was a heading, one sentence and two
+// links beside a 552px photograph -- a quarter filled, and the one place on the page that
+// asks you to trust a person. These four facts were read off the Yelp listing on
+// 2026-09-19 and the address; none of them is written copy waiting to be replaced.
+const facts = [
+  { value: "10 years", label: "in business" },
+  { value: "Free", label: "consultations" },
+  { value: "By appointment", label: "only" },
+  { value: "Tustin", label: "across from Irvine" },
+];
 ---
 
 <section class="about section" id="about" aria-labelledby="about-heading">
   <div class="page about__grid">
-    {/* Heading, the bio at lede size, then the Yelp count folded into one sentence on a
-        hairline, then one row of links. Chosen in live mode over a proof-first stack and a
-        framed proof card: one compact statement reads faster beside the photograph. */}
+    {/* Heading, the bio at lede size, then one row of links. The Yelp count used to sit
+        here as a sentence while the quotes it referred to lived in the reviews section; on
+        2026-09-19 it moved to become that section's heading, so the claim and its evidence
+        are one object. This section is now simply Pomi, and since 2026-09-27 it follows the
+        hero directly: it replaced the "One artist. Every stroke." block, which said the same
+        thing a second time without a face. */}
     <div class="about__copy reveal">
       <h2 id="about-heading">{settings.aboutHeading}</h2>
       {bio.length > 0 && <div class="about__bio">{bio.map((p) => <p>{p}</p>)}</div>}
-      <p class="about__proof">
-        <span class="about__num">{settings.yelpReviewCount}+</span>
-        five-star reviews on Yelp, every one written by a client of one artist. Read them before you call.
-      </p>
+      <dl class="about__facts">
+        {
+          facts.map((f) => (
+            <div class="about__fact">
+              <dt class="about__fact-value">{f.value}</dt>
+              <dd class="about__fact-label">{f.label}</dd>
+            </div>
+          ))
+        }
+      </dl>
       <div class="about__links">
-        <a class="link" href={settings.yelpUrl} rel="noopener">
-          Read the reviews
-          <Icon name="external" />
-        </a>
         <a class="link" href="/about">
           More about Pomi
           <Icon name="arrow" />
@@ -51,7 +66,7 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
     {
       photo && (
         <figure class="about__figure reveal" style="--i: 1">
-          <Photo photo={photo} sizes="(min-width: 60rem) 26rem, 100vw" widths={[640, 960]} ratio="4 / 5" />
+          <Photo photo={photo} sizes="(min-width: 60rem) 22rem, 100vw" widths={[640, 960]} ratio="4 / 5" />
           <figcaption>
             <Caption
               service={isHeadshot ? "Pomi" : (cap?.service ?? "Pomi B. Brow Studio")}
@@ -78,31 +93,36 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
     gap: var(--space-4);
     align-content: center;
   }
+  .about__facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-6);
+    margin: 0;
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--border);
+  }
+  .about__fact {
+    display: grid;
+    gap: 2px;
+  }
+  .about__fact-value {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 32;
+    font-size: var(--fs-h3);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--pigment-brow);
+  }
+  .about__fact-label {
+    margin: 0;
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
   .about__bio {
     color: var(--ink-body);
     max-width: 52ch;
     font-size: var(--fs-lede);
     line-height: 1.5;
-  }
-  .about__proof {
-    margin: 0;
-    padding-top: var(--space-4);
-    border-top: 1px solid var(--border);
-    color: var(--ink-body);
-    max-width: 52ch;
-  }
-  /* The count set large in the line, in the brow pigment: the number is about the work,
-     so it carries the work's colour rather than the neutral ink. */
-  .about__num {
-    font-family: var(--font-display);
-    font-variation-settings: "opsz" 72;
-    font-weight: 400;
-    font-size: 1.6em;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: var(--pigment-brow);
-    font-variant-numeric: tabular-nums;
-    margin-right: 0.15em;
   }
   .about__links {
     display: flex;
@@ -117,10 +137,10 @@ const bio = settings.bio.filter((p) => !/placeholder/i.test(p));
     margin: 0;
   }
   @media (min-width: 60rem) {
-    /* Text leads; the photograph is capped at 26rem so it supports the bio instead of
+    /* Text leads; the photograph is capped at 22rem so it supports the bio instead of
        outweighing it. */
     .about__grid {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 26rem);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 22rem);
       column-gap: var(--space-8);
     }
   }

@@ -5,8 +5,8 @@
     "lede": "A private studio, a clean setup, and single-use tools opened in front of you. What happens before, during and after, and when to ask first.",
     "meta": "I can answer questions about the appointment. Medical clearance comes from your healthcare provider.",
     "lead": {
-      "ratio": "5 / 2",
-      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools"
+      "ratio": "4 / 5",
+      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway"
     },
     "sections": [
       {
@@ -51,6 +51,10 @@
         "items": [
           {
             "title": "Why privacy matters",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "The studio door closed, one chair, one client's setup on the tray, no one else in frame"
+            },
             "bullets": [
               "No crowded appointment space",
               "No traffic around the work area",
@@ -60,6 +64,10 @@
           },
           {
             "title": "Why control matters",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Tray laid out for one appointment: gloves, sealed tools, pigment cup, in order"
+            },
             "bullets": [
               "Fresh setup for every appointment",
               "Work area cleaned before the service begins",
@@ -160,6 +168,10 @@
         "items": [
           {
             "title": "Health and healing",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -169,6 +181,10 @@
           },
           {
             "title": "The treatment area",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Close, even-light shot of a brow area with clear, calm skin, ready for treatment"
+            },
             "bullets": [
               "Irritation, cuts, sunburn or open skin nearby",
               "Active breakouts near the area",
@@ -214,6 +230,10 @@
         "items": [
           {
             "title": "Protect the healing area",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
+            },
             "bullets": [
               "No picking, scratching, rubbing or peeling",
               "No makeup on the area until cleared",
@@ -223,6 +243,10 @@
           },
           {
             "title": "Know when to ask",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Phone on the studio counter beside the printed aftercare card"
+            },
             "bullets": [
               "Unsure about an aftercare product",
               "Healing looks different than expected",
@@ -230,21 +254,33 @@
               "For signs of infection, contact a physician"
             ]
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Read next",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "How to prepare for your appointment",
-              "href": "/learn/prepare-for-appointment"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to prepare, what healing looks like, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "How to prepare",
+            "text": "Skin, timing and what to tell me before we start.",
+            "href": "/learn/prepare-for-appointment",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -356,17 +392,27 @@
           {
             "label": "Day 1",
             "title": "Darker than the finish",
-            "text": "The color looks darker, sharper, brighter or more intense than the healed result."
+            "text": "The color looks darker, sharper, brighter or more intense than the healed result. This is normal and it is temporary."
           },
           {
-            "label": "Days 2 to 7",
+            "label": "Days 4 to 7",
             "title": "Dry and flaky",
-            "text": "Dryness, tightness, light flaking or temporary patchiness while the skin heals."
+            "text": "Dryness, tightness, light flaking or temporary patchiness. Keep it dry and leave it alone; the color underneath is setting."
           },
           {
-            "label": "Weeks 2 to 6",
-            "title": "Settled",
-            "text": "The color softens and settles. The touch-up refines the result if needed."
+            "label": "Around day 10",
+            "title": "Too light",
+            "text": "The color looks like it disappeared. It has not. It is under a new layer of skin and will come back."
+          },
+          {
+            "label": "Week 4",
+            "title": "The true color",
+            "text": "Healed skin turns clear and the real shade shows, softer and more natural than day one."
+          },
+          {
+            "label": "Week 6",
+            "title": "The perfecting touch-up",
+            "text": "Skin heals unevenly, so some strokes need a second pass. This appointment refines shape and color and finishes the work."
           }
         ],
         "callout": {

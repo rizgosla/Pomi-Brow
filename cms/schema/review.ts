@@ -22,6 +22,20 @@ export const review = defineType({
     }),
     defineField({ name: "sourceUrl", title: "Link to the original review", type: "url" }),
     defineField({
+      name: "rating",
+      title: "Stars, as the reviewer left them",
+      type: "number",
+      description: "1 to 5. Copied, never rounded up.",
+      initialValue: 5,
+      validation: (r) => r.min(1).max(5),
+    }),
+    defineField({
+      name: "date",
+      title: "Date shown on the review",
+      type: "date",
+      options: { dateFormat: "YYYY-MM-DD" },
+    }),
+    defineField({
       name: "service",
       type: "reference",
       to: [{ type: "service" }],

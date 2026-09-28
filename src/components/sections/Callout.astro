@@ -1,8 +1,10 @@
 ---
 // An aside docked to a slide: a note, a line in Pomi's voice, a medical caution, or where to
-// read next. A rounded band with a pastel fill by tone: pale pink for a caution or Pomi's
-// voice, bone for a note or a set of links. At 60rem and up the tag and title sit in a narrow
-// left column with the text beside them, so a little text does not need a big card.
+// read next. Notes, voice and links are rounded bands with a pastel fill (pale pink for Pomi's
+// voice, bone otherwise); at 60rem and up the tag and title sit in a narrow left column with
+// the text beside them. A medical caution is set as a margin note instead: no fill, one
+// vertical hairline on the left, label, title and text stacked and held to 60 characters, so a
+// few lines of medical wording never get a big container.
 import type { Callout as CalloutType } from "../../lib/sections";
 import Icon from "../Icon.astro";
 
@@ -57,9 +59,25 @@ const tagClass = { note: "tag", voice: "tag tag--pink", caution: "tag tag--red",
     border-radius: var(--radius);
     background: var(--bone);
   }
-  .callout--caution,
   .callout--voice {
     background: var(--pale-pink);
+  }
+  /* The margin note. */
+  .callout--caution {
+    max-width: 60ch;
+    gap: var(--space-2);
+    padding: 0 0 0 var(--space-5);
+    border-left: 1px solid var(--border);
+    border-radius: 0;
+    background: none;
+  }
+  .callout--caution .callout__head {
+    gap: var(--space-3);
+  }
+  .callout--caution .callout__text,
+  .callout--caution .callout__list {
+    font-size: var(--fs-small);
+    line-height: 1.6;
   }
   .callout__head {
     display: grid;
@@ -109,6 +127,9 @@ const tagClass = { note: "tag", voice: "tag tag--pink", caution: "tag tag--red",
       grid-template-columns: 16rem minmax(0, 1fr);
       column-gap: var(--space-7);
       align-items: start;
+    }
+    .callout--caution {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

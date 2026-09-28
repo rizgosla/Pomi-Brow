@@ -31,14 +31,19 @@ const { section } = Astro.props;
     display: grid;
     gap: var(--space-5);
   }
-  /* A rounded bone tile, no hairline: the fill is the container. */
+  /* A light-gray tile with a pink outline. */
   .compare__side {
     display: grid;
     gap: var(--space-4);
     align-content: start;
     padding: var(--space-5);
+    border: 1px solid var(--outline-pink);
     border-radius: var(--radius);
-    background: var(--bone);
+    background: var(--tile);
+  }
+  /* A pink photo frame inside a pink-outlined tile reads as a double rule; keep it grey. */
+  .compare__side :global(.slot__frame) {
+    border-color: var(--frame-in-card, var(--border));
   }
   .compare__side :global(.compare__image) {
     width: 100%;

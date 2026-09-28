@@ -1,8 +1,13 @@
 ---
-// The method and the healing timeline: six moments along one pigment rail, from mapping to the
-// six-week touch-up. Horizontal on desktop so the whole six weeks reads in one glance; it was a
-// tall vertical list beside a large photograph and cost more than a screen. Phones keep the
+// The healing timeline: six moments along one pigment rail, from mapping to the six-week
+// touch-up. Horizontal on desktop so the whole six weeks reads in one glance; it was a tall
+// vertical list beside a large photograph and cost more than a screen. Phones keep the
 // vertical rail, since six columns do not fit 390px.
+//
+// This ran on the home page until 2026-09-19. A six-week calendar that early made the
+// process read as complex to a first-time visitor, so the home page now opens on Pomi
+// herself -- see AboutPomi.astro -- and the timeline lives on the service
+// pages, where someone is already deep enough in one service to want it, and on /aftercare.
 
 const steps = [
   {
@@ -75,6 +80,13 @@ const steps = [
 </section>
 
 <style>
+  /* The hero is not a .section, so the shared section rule never fires above this one.
+     It is drawn here instead: full width, and -- because the hero is exactly one screen
+     -- exactly on the fold, closing the first screen without showing on first load. */
+  .method {
+    border-top: 1px solid var(--border);
+  }
+
   /* Phone: a vertical rail down the left edge. */
   .axis {
     position: relative;

@@ -39,6 +39,17 @@ const business = {
     addressCountry: "US",
   },
   areaServed: ["Tustin", "Irvine", "Orange County"],
+  // The Yelp standing, declared so it can appear beside the listing in search results.
+  // yelpReviewCount is every review on the listing -- the number the average was computed
+  // from -- which is exactly what Google expects here. Read off the listing, not estimated.
+  aggregateRating: settings.yelpReviewCount
+    ? {
+        "@type": "AggregateRating",
+        ratingValue: settings.yelpRating,
+        bestRating: 5,
+        reviewCount: settings.yelpReviewCount,
+      }
+    : undefined,
   sameAs,
   openingHoursSpecification: settings.hours.map((h) => ({
     "@type": "OpeningHoursSpecification",

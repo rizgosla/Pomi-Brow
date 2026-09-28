@@ -15,7 +15,6 @@ import {
   getServices,
   getLearnArticles,
   localGallery,
-  localPhoto,
   formatPrice,
   servicePrice,
 } from "../../lib/content";
@@ -33,11 +32,11 @@ const [settings, services, learn] = await Promise.all([getSiteSettings(), getSer
 // and an identity that resolves to undefined must never match or the whole grid vanishes.
 const photoKey = (p: PhotoType | undefined) =>
   !p ? null : p.kind === "local" ? p.source : p.src;
-const methodPhoto = localPhoto("microblading/03", "Brow mapping with a ruler before microblading, and the healed result beneath");
 const allPhotos = service.gallery?.length ? service.gallery : localGallery(service.slug);
-// The cover leads the page and the healing rail carries its own photograph, so both are
-// held out of the grid below rather than appearing on the page a second time.
-const usedKeys = new Set([photoKey(service.cover), photoKey(methodPhoto)].filter(Boolean));
+// The cover leads the page, so it is held out of the grid below rather than appearing on
+// the page a second time. The healing rail used to reserve a photograph too, but it never
+// rendered one: HealingAxis declared no props and silently dropped what it was passed.
+const usedKeys = new Set([photoKey(service.cover)].filter(Boolean));
 const gallery = allPhotos.filter((p) => !usedKeys.has(photoKey(p)));
 const related = learn.filter((a) => a.relatedService === service.slug);
 const faqs = learn.filter((a) => a.showAsFaq);
@@ -181,7 +180,7 @@ const tagTone: Record<string, string> = {
     )
   }
 
-  {!isFollowUp && <HealingAxis photo={methodPhoto} />}
+  {!isFollowUp && <HealingAxis />}
 
   {
     related.length > 0 && (

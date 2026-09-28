@@ -1,6 +1,8 @@
 # The home-only launch gate
 
-While the inner pages are still being built, the deployed site is the home page alone.
+A switch that makes the deployed site the home page alone. It was used for the first launch
+on 2026-09-11 and is now off; it stays in the code so it can be turned back on with one
+variable.
 
 ## What it does
 
@@ -26,9 +28,9 @@ With the gate on:
 
 ## When it is on
 
-On in Cloudflare builds (Workers Builds sets `WORKERS_CI=1`, Pages sets `CF_PAGES=1`), off for
-`astro dev`, local builds and the screenshot workflow. Override either way with `HOME_ONLY=true` or `HOME_ONLY=false`,
-for example to check the gated site locally:
+Only when `HOME_ONLY=true` is set in the build environment. To turn it on in Cloudflare, add a
+build variable `HOME_ONLY` with the value `true` in the Worker's settings and redeploy; remove
+the variable to turn it off. To check the gated site locally:
 
 ```
 HOME_ONLY=true npm run build && npm run preview
@@ -44,8 +46,8 @@ In the Worker's build settings: build command `npm run build`, deploy command
 "auto-configure" the project on deploy, install the Astro Cloudflare adapter, rebuild into
 `dist/client` and fail the link check.
 
-## Lifting it
+## Removing it for good
 
-Set `HOME_ONLY=false` in the Worker's build variables, or delete
-`src/middleware.ts`, `src/lib/launch.ts`, `tests/launch.test.ts`, the two CSS rules and the
-sitemap filter. Nothing else references them.
+Delete `src/middleware.ts`, `src/lib/launch.ts`, `tests/launch.test.ts`, the two
+`aria-disabled` CSS rules in `global.css` and `PricingTable.astro`, and the sitemap filter in
+`astro.config.mjs`. Nothing else references them.

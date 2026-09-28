@@ -1125,25 +1125,33 @@
             "title": "Plan maintenance",
             "text": "Book touch-ups when color, shape or density needs refreshing."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Read next",
-          "links": [
-            {
-              "label": "The healing timeline",
-              "href": "/learn/pmu-healing-timeline"
-            },
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: what healing looks like week by week, how to care for it, and how the studio stays safe.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "The healing timeline",
+            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "href": "/learn/pmu-healing-timeline",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -1313,6 +1321,10 @@
           },
           {
             "title": "Disinfected surfaces and barriers",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Disinfectant wipe passing over the treatment bed, a roll of fresh barrier film beside it"
+            },
             "bullets": [
               "Surfaces cleaned before and after appointments",
               "Fresh disposable barriers for each session",
@@ -1333,6 +1345,10 @@
           },
           {
             "title": "Clear aftercare instructions",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Printed aftercare card handed across the counter at the end of an appointment"
+            },
             "bullets": [
               "Know what to avoid while healing",
               "Do not pick, scratch or peel",
@@ -1465,21 +1481,27 @@
             "title": "What should I avoid?",
             "text": "Before and after, for your service."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before booking",
-          "links": [
-            {
-              "label": "Frequently asked questions",
-              "href": "/faqs"
-            },
-            {
-              "label": "How to prepare for your appointment",
-              "href": "/learn/prepare-for-appointment"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Two things worth reading first: the questions clients ask most, and how to arrive ready.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "How to prepare",
+            "text": "Skin, timing and what to tell me before we start.",
+            "href": "/learn/prepare-for-appointment",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -2538,29 +2560,39 @@
             "title": "Do I want less daily makeup?",
             "text": "If you fill your brows every day, powder brows reduce that step."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before your brow appointment",
-          "links": [
-            {
-              "label": "Ombre powder brows",
-              "href": "/services/ombre-powder-brows"
-            },
-            {
-              "label": "Microblading",
-              "href": "/services/microblading"
-            },
-            {
-              "label": "Microblading / shading",
-              "href": "/services/microblading-shading"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Worth reading first: the three brow services side by side, and how the studio stays safe.",
+        "columns": 4,
+        "items": [
+          {
+            "title": "Ombre powder brows",
+            "text": "A soft powdered finish, lighter at the front and deeper at the tail.",
+            "href": "/services/ombre-powder-brows",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Microblading",
+            "text": "Hair strokes drawn one by one, following your own brow.",
+            "href": "/services/microblading",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Microblading and shading",
+            "text": "Hair strokes at the front, soft shading through the body and tail.",
+            "href": "/services/microblading-shading",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -2812,21 +2844,7 @@
               "shot": "Healed scalp micropigmentation blending into the hairline"
             }
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before your appointment",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
       },
       {
         "type": "grid",
@@ -2848,6 +2866,32 @@
           {
             "title": "Before booking",
             "text": "Medical, skin or healing concerns before you book."
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to care for it while it heals, how the studio stays safe, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
           }
         ]
       },
@@ -3020,22 +3064,7 @@
             "title": "Custom choice",
             "text": "Matched to your eye shape, skin and comfort level."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Not sure which?",
-          "text": "Subtle means lash enhancement; makeup-like means permanent eyeliner.",
-          "links": [
-            {
-              "label": "Lash enhancement",
-              "href": "/services/lash-enhancement"
-            },
-            {
-              "label": "Permanent eyeliner",
-              "href": "/services/eyeliner"
-            }
-          ]
-        }
+        ]
       },
       {
         "type": "grid",
@@ -3141,6 +3170,32 @@
             }
           ]
         }
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the two eye services in detail, and what healing around the eyes looks like.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Lash enhancement",
+            "text": "Pigment between the lashes only. Fuller lashes, no visible line.",
+            "href": "/services/lash-enhancement",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Eyeliner",
+            "text": "A fine line along the lash line that stays put.",
+            "href": "/services/eyeliner",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -3386,25 +3441,33 @@
             "title": "Final polish",
             "text": "The result completed so it feels finished."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before you book",
-          "links": [
-            {
-              "label": "Lip tint",
-              "href": "/services/lip-tint"
-            },
-            {
-              "label": "Aftercare",
-              "href": "/aftercare"
-            },
-            {
-              "label": "The healing timeline",
-              "href": "/learn/pmu-healing-timeline"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the lip tint service, how to care for it, and what healing looks like day by day.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Lip tint",
+            "text": "Evens lip tone and gives back the color that fades with time.",
+            "href": "/services/lip-tint",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "The healing timeline",
+            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "href": "/learn/pmu-healing-timeline",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -3619,6 +3682,10 @@
         "items": [
           {
             "title": "Health and healing",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Health history form open on the consultation desk, reading glasses resting beside it"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -3628,6 +3695,10 @@
           },
           {
             "title": "Skin or treatment area concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Bare brow area in soft daylight, checked for irritation before any mapping"
+            },
             "bullets": [
               "Irritation, sunburn, cuts, breakouts or open skin nearby",
               "Recent filler, Botox, chemical peels, laser or cosmetic treatments",
@@ -3715,25 +3786,33 @@
             "title": "Fuller-looking hair",
             "text": "Scalp micropigmentation, for thinning areas or a cleaner hairline."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before you book",
-          "links": [
-            {
-              "label": "Frequently asked questions",
-              "href": "/faqs"
-            },
-            {
-              "label": "Safety at the studio",
-              "href": "/safety"
-            },
-            {
-              "label": "Are powder brows for me?",
-              "href": "/learn/are-powder-brows-for-me"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the questions clients ask most, how the studio stays safe, and whether powder brows suit you.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Are powder brows for me?",
+            "text": "Who suits a soft, filled-in brow, and who does not.",
+            "href": "/learn/are-powder-brows-for-me",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -3859,6 +3938,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "A brow with a small healing scratch beside it, the kind of thing to mention before booking"
+            },
             "bullets": [
               "Irritation, cuts, breakouts, sunburn or open skin nearby",
               "Recent cosmetic treatments near the forehead or brows",
@@ -3876,6 +3959,10 @@
         "items": [
           {
             "title": "Before your eye appointment",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Bare, calm eyelid with no mascara or extensions, ready for mapping"
+            },
             "bullets": [
               "Clean skin, eyes calm and not irritated",
               "Ask ahead about contacts, lash extensions, eye makeup or serums",
@@ -3885,6 +3972,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Contact lens case and eye drops set aside on the studio counter"
+            },
             "bullets": [
               "Eye irritation, redness, infection or sensitivity",
               "Recent eye surgery or cosmetic eye treatments",
@@ -3915,6 +4006,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Phone open to a message to the studio, asking about timing after lip filler"
+            },
             "bullets": [
               "You have ever had a cold sore, even once",
               "An active cold sore, cracked lips, irritation or open skin",
@@ -3950,6 +4045,10 @@
           },
           {
             "title": "Ask first if",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Hairline in hard side light showing flaking at the part, the reason to ask before booking"
+            },
             "bullets": [
               "Scalp irritation, open skin, sunburn or active flaking",
               "Recent scalp treatments, hair transplant work or injections",
@@ -4022,6 +4121,10 @@
         "items": [
           {
             "title": "Health or skin concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Consultation form on the desk, the medications question circled in pencil"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -4031,6 +4134,10 @@
           },
           {
             "title": "Tight timing",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Wall calendar with a wedding date marked, six weeks counted back to the appointment"
+            },
             "bullets": [
               "A wedding, vacation, photo shoot or event ahead",
               "Recent filler, Botox, laser, peels or cosmetic treatments",
@@ -4038,21 +4145,33 @@
               "Not enough time to heal before an event"
             ]
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before you book",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "Safety in the studio",
-              "href": "/safety"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to care for it afterwards, how the studio stays safe, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -4309,25 +4428,7 @@
             "title": "Natural softness",
             "text": "Softened and layered, not harsh or too dark."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Learn more before booking",
-          "links": [
-            {
-              "label": "Scalp micropigmentation",
-              "href": "/services/scalp-micropigmentation"
-            },
-            {
-              "label": "Safety",
-              "href": "/safety"
-            },
-            {
-              "label": "Frequently asked questions",
-              "href": "/faqs"
-            }
-          ]
-        }
+        ]
       },
       {
         "type": "grid",
@@ -4337,6 +4438,10 @@
         "items": [
           {
             "title": "Scalp concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Crown of a scalp in even light, checked for flaking and open skin before booking"
+            },
             "bullets": [
               "Active scalp irritation",
               "Open skin, sores, or sunburn on the scalp",
@@ -4346,6 +4451,10 @@
           },
           {
             "title": "Health and healing concerns",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Consultation form for SMP on the desk, the health questions page open"
+            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -4375,6 +4484,32 @@
           "title": "Scalp micropigmentation",
           "text": "$500 per hour. Confirm current pricing when booking, since rates are subject to change."
         }
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: the service in detail, how the studio stays safe, and the questions clients ask most.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Scalp micropigmentation",
+            "text": "Tiny pigment dots that read as closely shaved hair.",
+            "href": "/services/scalp-micropigmentation",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -4622,6 +4757,10 @@
         "items": [
           {
             "title": "Yearly touch-ups",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healed brows at the one-year mark, color softened, before the refresh"
+            },
             "text": "For color and shape that stay fresh, instead of waiting until the result fades too much.",
             "bullets": [
               "Refreshes color",
@@ -4632,6 +4771,10 @@
           },
           {
             "title": "Additional touch-ups",
+            "image": {
+              "ratio": "3 / 2",
+              "shot": "Healed brow with one lighter patch at the tail, mapped for extra density"
+            },
             "text": "When skin healed lighter than expected, or you want a stronger result after seeing the healed color.",
             "bullets": [
               "Helpful for lighter healed areas",
@@ -4672,22 +4815,33 @@
             "title": "Share your goal",
             "text": "More color, better shape, more density, or a maintenance refresh."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Before your touch-up",
-          "text": "What is normal, and when your result is ready to be evaluated.",
-          "links": [
-            {
-              "label": "Aftercare, day by day",
-              "href": "/aftercare"
-            },
-            {
-              "label": "The healing timeline",
-              "href": "/learn/pmu-healing-timeline"
-            }
-          ]
-        }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how to care for it afterwards, what healing looks like, and how the studio stays safe.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "The healing timeline",
+            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "href": "/learn/pmu-healing-timeline",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
       },
       {
         "type": "faq",
