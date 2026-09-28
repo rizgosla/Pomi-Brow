@@ -922,22 +922,17 @@
             "focus": "55% 50%",
             "detail": "Close-up"
           }
-        },
-        "callout": {
-          "tone": "note",
-          "title": "Quick answer by service",
-          "text": "Brows usually need regular maintenance, since facial skin renews and meets skincare and sun. Eyeliner and lash enhancement fade more gradually. Lip tint and scalp micropigmentation vary with healing, lifestyle and sun."
         }
       },
       {
         "type": "grid",
         "layout": "tiles",
-        "heading": "How long each service can last.",
+        "heading": "How each service fades.",
         "lede": "General expectations. Your healed result and maintenance schedule can vary.",
         "items": [
           {
             "title": "Brows",
-            "text": "Strokes and shading soften over time, faster with oily skin, sun or strong skincare.",
+            "text": "Microblading usually lasts 1 to 3 years; many clients refresh it around 12 to 18 months.",
             "image": {
               "ratio": "1 / 1",
               "shot": "Fine hair strokes beside a closed eye",
@@ -1033,57 +1028,28 @@
       {
         "type": "grid",
         "layout": "bento",
-        "heading": "Why results vary.",
-        "lede": "Two clients can have the same service and heal differently.",
-        "image": {
-          "ratio": "1 / 1",
-          "shot": "Healed brow strokes on oily skin, the edges softened, close-up in even daylight"
-        },
-        "items": [
-          {
-            "title": "Skin type",
-            "text": "Oily, dry, sensitive, mature or textured skin holds pigment differently."
-          },
-          {
-            "title": "Sun exposure",
-            "text": "Sun fades pigment faster, especially brows and scalp micropigmentation."
-          },
-          {
-            "title": "Skincare products",
-            "text": "Exfoliants, acids, retinoids and strong treatments fade pigment faster near brows."
-          },
-          {
-            "title": "Aftercare",
-            "text": "Following aftercare protects the healing area and the healed result."
-          }
-        ],
-        "side": "left"
-      },
-      {
-        "type": "grid",
-        "layout": "ledger",
-        "heading": "How to help it last.",
+        "heading": "What fades it, and what helps.",
         "lede": "You cannot stop fading, but good care protects your healed result.",
         "image": {
-          "ratio": "5 / 2",
+          "ratio": "1 / 1",
           "shot": "A wide-brim hat and mineral sunscreen on a bright windowsill"
         },
         "items": [
           {
-            "title": "Follow aftercare",
-            "text": "Follow your instructions, and do not pick while healing."
+            "title": "Sun exposure",
+            "text": "Sun fades pigment faster, especially on brows and scalp. Use sunscreen around healed brows, and avoid tanning beds."
           },
           {
-            "title": "Protect from sun",
-            "text": "Sun fades pigment fastest on brows and scalp."
+            "title": "Skincare products",
+            "text": "Exfoliants, acids, retinoids and strong treatments fade pigment faster near brows. Keep them away from healed brows."
           },
           {
-            "title": "Be careful with skincare",
-            "text": "Keep strong exfoliants and active ingredients away from healed brow pigment."
+            "title": "Skin type",
+            "text": "Oily, dry, sensitive, mature or textured skin holds pigment differently. On oily skin, powder brows tend to hold better."
           },
           {
-            "title": "Plan maintenance",
-            "text": "Book touch-ups when color, shape or density needs refreshing."
+            "title": "Aftercare",
+            "text": "Picking can affect color retention while it heals. Follow your aftercare, and let flakes release on their own."
           }
         ]
       },
@@ -1094,8 +1060,8 @@
         "heading": "Why touch-ups matter.",
         "lede": "Touch-ups refresh pigment, improve balance, and keep the result closer to your goal.",
         "image": {
-          "ratio": "4 / 5",
-          "shot": "The same brow before and after its six-week touch-up: gaps filled, color evened"
+          "ratio": "1 / 1",
+          "shot": "The same brow before and after its touch-up: gaps filled, color evened"
         },
         "items": [
           {
@@ -1124,7 +1090,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: what healing looks like week by week, how to care for it, and how the studio stays safe.",
+        "lede": "Healing, aftercare and safety: what to expect, and how to protect your result.",
         "image": {
           "ratio": "4 / 5",
           "shot": "Microblading before and after",
@@ -1137,8 +1103,8 @@
         },
         "items": [
           {
-            "title": "The healing timeline",
-            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "title": "PMU healing timeline",
+            "text": "Bold on day 1, then flaking and lighter, and soft by weeks 2 to 4.",
             "href": "/learn/pmu-healing-timeline",
             "linkLabel": "Read"
           },
@@ -1160,7 +1126,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Questions about fading.",
-        "lede": "Asked most before a first appointment, answered short.",
+        "lede": "Why pigment fades, and how to tell when it needs a refresh.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Soft brows with shading through the tail",
@@ -2579,97 +2545,35 @@
       },
       {
         "type": "grid",
-        "layout": "tiles",
-        "heading": "Different by service.",
+        "layout": "ledger",
+        "heading": "How each service heals.",
         "lede": "Each service heals a little differently. Here is what to keep in mind.",
+        "image": {
+          "ratio": "5 / 2",
+          "shot": "A client lying back and looking up, powder brow above her open eye",
+          "photo": {
+            "ref": "ombre-powder-brows/01",
+            "alt": "A client lying back and looking up, a dark powder brow with a softer front above her open eye",
+            "focus": "50% 67%",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "title": "Brows",
-            "text": "Microblading, shading and powder brows can look sharper at first, then dry, flaky and lighter, before settling softer and more blended.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Powder brows with a soft front, eyes closed",
-              "photo": {
-                "ref": "ombre-powder-brows/04",
-                "alt": "Dark powder brows with a soft front on a client lying back with eyes closed",
-                "detail": "Close-up"
-              }
-            },
-            "links": [
-              {
-                "label": "Microblading",
-                "href": "/services/microblading"
-              },
-              {
-                "label": "Powder brows",
-                "href": "/services/ombre-powder-brows"
-              },
-              {
-                "label": "Microblading and shading",
-                "href": "/services/microblading-shading"
-              }
-            ]
+            "text": "Microblading, shading and powder brows can look sharper at first, then dry, flaky and lighter, before settling softer and more blended."
           },
           {
             "title": "Eyes",
-            "text": "Eyeliner and lash enhancement can look more defined at first and feel slightly tight, then look less intense.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Lash enhancement before and after along the upper lashes",
-              "photo": {
-                "ref": "lash-enhancement/01",
-                "alt": "Lash enhancement before and after: bare upper lashes, then a dark line along them",
-                "detail": "Before and after"
-              }
-            },
-            "links": [
-              {
-                "label": "Eyeliner",
-                "href": "/services/eyeliner"
-              },
-              {
-                "label": "Lash enhancement",
-                "href": "/services/lash-enhancement"
-              }
-            ]
+            "text": "Eyeliner and lash enhancement can look more defined at first and feel slightly tight, then look less intense."
           },
           {
             "title": "Lips",
-            "text": "Lip tint can look bright at first, then soften and settle into a more natural color.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Lip tint before and after: pale mauve, then soft rosy pink",
-              "photo": {
-                "ref": "lip-tint/04",
-                "alt": "Lip tint before and after: pale mauve lips, then soft rosy-pink lips",
-                "detail": "Before and after"
-              }
-            },
-            "links": [
-              {
-                "label": "Lip tint",
-                "href": "/services/lip-tint"
-              }
-            ]
+            "text": "Lip tint can look bright at first, then soften and settle into a more natural color."
           },
           {
             "title": "Scalp",
-            "text": "Scalp micropigmentation can look darker at first, then blend more naturally with the scalp and hair as it settles.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Scalp micropigmentation before and after, seen from above",
-              "photo": {
-                "ref": "scalp-micropigmentation/02",
-                "alt": "Scalp micropigmentation before and after: pale scalp along a thinning part, then shaded darker",
-                "detail": "Before and after"
-              }
-            },
-            "links": [
-              {
-                "label": "Scalp micropigmentation",
-                "href": "/services/scalp-micropigmentation"
-              }
-            ]
+            "text": "Scalp micropigmentation can look darker at first, then blend more naturally with the scalp and hair as it settles."
           }
         ]
       },
@@ -2680,13 +2584,12 @@
         "heading": "Healing, stage by stage.",
         "lede": "Mild changes in color, texture and softness are common, and do not always mean something is wrong.",
         "image": {
-          "ratio": "4 / 5",
-          "shot": "Freshly done winged eyeliner, a cotton swab at the edge",
+          "ratio": "1 / 1",
+          "shot": "Tight close-up of a dark shaded brow arching over an open eye",
           "photo": {
-            "ref": "eyeliner/01",
-            "alt": "Freshly done winged eyeliner on a closed eye, a cotton swab at the edge of the frame",
-            "focus": "70% 50%",
-            "detail": "Fresh"
+            "ref": "microblading-shading/07",
+            "alt": "Tight close-up of a dark shaded brow arching over an open brown eye",
+            "detail": "Close-up"
           }
         },
         "items": [
@@ -2723,7 +2626,7 @@
         "heading": "While it heals.",
         "lede": "Good aftercare helps protect your result. Follow the instructions for your service, and ask if you are unsure.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Brows on day four, dry and lightly flaking, left untouched, close-up in soft window light"
         },
         "items": [
@@ -2749,7 +2652,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how to prepare, how to care for it while it heals, and what the touch-up does.",
+        "lede": "What to do before your appointment, while it heals, and at the touch-up.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Microblading before and after: a mapped sparse brow, then full hair strokes",
@@ -2784,7 +2687,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Healing questions.",
-        "lede": "Asked most in the first two weeks, answered short.",
+        "lede": "What is normal in the first weeks, and when to book your touch-up.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Smiling client lying back, soft brows with fine strokes at the front",
@@ -4225,73 +4128,52 @@
       },
       {
         "type": "grid",
-        "layout": "tiles",
+        "layout": "center",
         "heading": "What a touch-up can adjust.",
         "lede": "Not always a full redo. Often it is small, careful refining of the healed result.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Two views of one client's brows, strokes at the front and shading through the tail",
+          "photo": {
+            "ref": "microblading-shading/08",
+            "alt": "Two close-ups of one client's brows with her eyes open, each with fine strokes at the front and shading through the tail",
+            "detail": "Two views"
+          }
+        },
         "items": [
           {
-            "title": "Color",
-            "text": "Too light, uneven or softer than expected: more pigment can be added, without making the result too heavy.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Lip tint before and after, pale mauve to soft rosy pink",
-              "photo": {
-                "ref": "lip-tint/04",
-                "alt": "Lip tint before and after: pale mauve lips, then soft rosy pink",
-                "detail": "Before and after"
-              }
-            }
+            "title": "Color and density",
+            "bullets": [
+              "More pigment where color healed too light, uneven or softer than expected",
+              "More density where shading, powder brows, lash enhancement, eyeliner, lip tint or SMP need it",
+              "Added carefully, without making the result too heavy"
+            ]
           },
           {
-            "title": "Shape",
-            "text": "The outline, arch, tail, lip border, eyeliner line or scalp hairline, refined for a little more balance.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Winged eyeliner on a closed eye, just finished",
-              "photo": {
-                "ref": "eyeliner/01",
-                "alt": "Winged eyeliner on a closed eye, a cotton swab resting above it",
-                "detail": "Fresh"
-              }
-            }
-          },
-          {
-            "title": "Density",
-            "text": "Shading, powder brows, lash enhancement, eyeliner, lip tint and scalp micropigmentation may need more density in certain areas.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Scalp micropigmentation before and after along a thinning part",
-              "photo": {
-                "ref": "scalp-micropigmentation/02",
-                "alt": "Scalp micropigmentation before and after: pale scalp along a thinning part, then denser shading",
-                "detail": "Before and after"
-              }
-            }
-          },
-          {
-            "title": "Softness",
-            "text": "The goal is not always darker. Sometimes it is more blended, balanced and natural.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Soft, blended brows on a relaxed client",
-              "photo": {
-                "ref": "microblading-shading/05",
-                "alt": "Soft brows with fine strokes at the front and shading through the tail",
-                "detail": "Close-up"
-              }
-            }
+            "title": "Shape and softness",
+            "bullets": [
+              "A refined outline, arch, tail, lip border, eyeliner line or SMP hairline",
+              "A little more balance where the healed shape needs it",
+              "Not always darker: sometimes more blended and natural"
+            ]
           }
         ]
       },
       {
         "type": "sequence",
-        "layout": "feature",
+        "layout": "ledger",
         "kind": "timeline",
         "heading": "When touch-ups happen.",
         "lede": "It depends on the service, your healing and the type of touch-up you need.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "Phone showing a client's day-one brow photo, held beside the same brow healed at her touch-up, daylight"
+          "ratio": "5 / 2",
+          "shot": "A client resting with her eyes closed, soft brows, nose and lips in frame",
+          "photo": {
+            "ref": "microblading-shading/05",
+            "alt": "A client resting with her eyes closed, a soft brow with fine strokes at the front and shading through the tail",
+            "focus": "50% 68%",
+            "detail": "Close-up"
+          }
         },
         "items": [
           {
@@ -4308,6 +4190,34 @@
             "label": "Yearly",
             "title": "Yearly touch-ups",
             "text": "A maintenance refresh after the result has faded over time. It keeps color and shape closer to your preferred look, and helps avoid heavy correction later."
+          }
+        ]
+      },
+      {
+        "type": "sequence",
+        "layout": "rail",
+        "kind": "steps",
+        "heading": "How to book a touch-up.",
+        "lede": "Contact the studio with your service, appointment history and what you notice after healing.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio desk reading a client's touch-up message with a brow photo, over her shoulder, window light"
+        },
+        "items": [
+          {
+            "label": "First",
+            "title": "Share your service",
+            "text": "Brows, eyeliner, lash enhancement, lip tint or scalp micropigmentation."
+          },
+          {
+            "label": "Second",
+            "title": "Share your timing",
+            "text": "When your original appointment was, and whether the area has fully healed."
+          },
+          {
+            "label": "Third",
+            "title": "Share your goal",
+            "text": "More color, better shape, more density, or a maintenance refresh."
           }
         ],
         "callout": {
@@ -4327,38 +4237,10 @@
         }
       },
       {
-        "type": "sequence",
-        "layout": "rail",
-        "kind": "steps",
-        "heading": "How to book a touch-up.",
-        "lede": "Contact the studio with your service, appointment history and what you notice after healing.",
-        "image": {
-          "ratio": "4 / 5",
-          "shot": "Pomi at the studio desk reading a client's touch-up message with a brow photo, over her shoulder, window light"
-        },
-        "items": [
-          {
-            "label": "First",
-            "title": "Share your service",
-            "text": "Brows, eyeliner, lash enhancement, lip tint or scalp micropigmentation."
-          },
-          {
-            "label": "Second",
-            "title": "Share your timing",
-            "text": "When your original appointment was, and whether the area has fully healed."
-          },
-          {
-            "label": "Third",
-            "title": "Share your goal",
-            "text": "More color, better shape, more density, or a maintenance refresh."
-          }
-        ]
-      },
-      {
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Worth reading before your touch-up, so you know what is normal and when your result is ready to be evaluated.",
+        "lede": "Know what is normal while it heals, and when your result is ready to be evaluated.",
         "image": {
           "ratio": "4 / 5",
           "shot": "Powder brows with a soft front, client resting with eyes closed",
@@ -4371,8 +4253,8 @@
         },
         "items": [
           {
-            "title": "The healing timeline",
-            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "title": "PMU healing timeline",
+            "text": "Bold on day 1, then flaking and lighter, and soft by weeks 2 to 4.",
             "href": "/learn/pmu-healing-timeline",
             "linkLabel": "Read"
           },
@@ -4394,7 +4276,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Touch-up questions.",
-        "lede": "The ones asked most, answered short.",
+        "lede": "What gets refined, when to book, and what a yearly touch-up is.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Microblading before and after on one brow, close-up",
