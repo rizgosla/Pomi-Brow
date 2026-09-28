@@ -1,77 +1,55 @@
 ---
-// One idea in two or three short paragraphs, with a photograph beside it and a callout band
-// under the copy at full width. The section heading comes in through the "head" slot so the
-// title, lede and copy stand together beside the photograph. Sides alternate down the page.
-import type { Section } from "../../lib/sections";
+// One idea in a paragraph or two, with the section's heading in the same column as the copy. It
+// shares the layout library's shell (src/styles/layouts.css) and its names, so a statement split
+// and a split of rows count as the same composition when a page checks it is not repeating itself:
+//   split  the copy beside a 4:5 photograph, which sticks while the copy scrolls on a tall enough
+//          screen. Top-aligned: the copy used to sit level with the photograph's middle, which
+//          left white space floating above and below it.
+//   wide   the heading beside a 5:2 strip, as a ledger's head row, the paragraphs under both.
+//   solo   no photograph: heading, paragraphs, note.
+// Every paragraph is the body size. The first used to run at the lede size above body-size ones,
+// two paragraph sizes stacked in one block -- the client's first complaint. The statement's own
+// lede, in the head, is the page's one larger line and keeps the global .lede.
+import type { Section, Side } from "../../lib/sections";
+import { effectiveRatio, sectionImageRole } from "../../lib/sections";
 import ImageSlot from "./ImageSlot.astro";
 import Callout from "./Callout.astro";
 
 type Statement = Extract<Section, { type: "statement" }>;
 interface Props {
   section: Statement;
-  /** Position among the page's statements; odd ones put the side element first. */
-  flip?: boolean;
+  /** resolveLayout(section): "split" or "wide" with a photograph, "solo" without one. */
+  layout?: "split" | "wide" | "solo";
+  /** From assignSides(): the side a split puts its photograph. */
+  side?: Side | null;
 }
-const { section, flip = false } = Astro.props;
-const side = section.image ? "image" : "none";
+const { section, side } = Astro.props;
+
+const layout = section.image ? (Astro.props.layout === "wide" ? "wide" : "split") : "solo";
+const photo = section.image ? { ...section.image, ratio: effectiveRatio(sectionImageRole(section, layout), section.image.ratio) } : undefined;
+// Width over height, for the viewport cap on the sticky photograph (layouts.css).
+const [w, h] = (photo?.ratio ?? "4 / 5").split("/").map((v) => Number(v.trim()));
+const aspect = Number((w / h).toFixed(4));
+const sizes = layout === "wide" ? "(min-width: 60rem) 40vw, 100vw" : "(min-width: 60rem) 40vw, (min-width: 30rem) 28rem, 100vw";
 ---
 
-<div class:list={["statement", { "statement--flip": flip, "statement--solo": side === "none", "statement--image": side === "image" }]}>
-  <div class="statement__copy reveal">
-    <slot name="head" />
+<div class:list={["l", `l--${layout}`, "l--statement"]} data-side={layout === "split" ? (side === "right" ? "right" : "left") : undefined}>
+  <div class="l__head"><slot name="head" /></div>
+  {
+    photo && (
+      <div class="l__media reveal" style={`--i: 1; --ar: ${aspect}`}>
+        <ImageSlot image={photo} class={layout === "wide" ? "l-photo l-strip" : "l-photo"} sizes={sizes} />
+      </div>
+    )
+  }
+  <div class="l__body l-prose reveal">
     {section.paragraphs.map((p) => <p>{p}</p>)}
   </div>
-  {section.image && <ImageSlot image={section.image} class="statement__side reveal" />}
-  {section.callout && <Callout callout={section.callout} class="statement__below reveal" />}
+  {
+    section.callout && (
+      <div class="l__note reveal">
+        <Callout callout={section.callout} />
+      </div>
+    )
+  }
 </div>
-
-<style>
-  .statement {
-    display: grid;
-    gap: var(--space-7);
-    align-items: start;
-  }
-  .statement__copy {
-    max-width: 58ch;
-    color: var(--ink-body);
-  }
-  .statement__copy :global(p) {
-    font-size: var(--fs-body);
-  }
-  .statement__copy :global(.slide__head + p),
-  .statement__copy :global(p:first-child) {
-    font-size: var(--fs-lede);
-    line-height: 1.5;
-    color: var(--ink);
-  }
-  /* The heading sits in the column with the copy, a step above the opening line. */
-  .statement__copy :global(.slide__head) {
-    margin-bottom: var(--space-6);
-  }
-  .statement :global(.statement__side),
-  .statement :global(.statement__below) {
-    --i: 1;
-  }
-  @media (min-width: 60rem) {
-    .statement {
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-      column-gap: var(--space-9);
-    }
-    /* Short copy beside a tall photograph sits level with its middle, not stranded at the top. */
-    .statement--image {
-      align-items: center;
-    }
-    .statement--solo {
-      grid-template-columns: minmax(0, 1fr);
-    }
-    .statement--flip .statement__copy {
-      order: 2;
-    }
-    .statement--flip :global(.statement__side) {
-      order: 1;
-    }
-    .statement :global(.statement__below) {
-      grid-column: 1 / -1;
-    }
-  }
-</style>

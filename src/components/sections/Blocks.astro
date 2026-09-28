@@ -1,0 +1,185 @@
+---
+// A group of blocks -- cards, steps, moments, two sides -- in one composition from the layout
+// library. resolveLayout() picks the layout and assignSides() the side its photograph takes, both
+// in src/lib/sections.ts beside the rules that stop a page repeating itself; the compositions
+// themselves are src/styles/layouts.css. This replaces Grid, Sequence and Compare, which each
+// drew one fixed arrangement, so every page read as the same strip again and again.
+//
+// Every layout shares one shell: head, media, body, note, in that document order, placed by grid
+// areas from 60rem. A screen reader and a phone meet heading, photograph, blocks, note whatever
+// side the photograph takes on a laptop, and the note always follows the blocks. The rail is the
+// one layout that wraps its head and photograph together, so the photograph can hang under the
+// head and the note can still follow the rows directly.
+//
+// Where photographs go:
+// - The section's photograph belongs to the composition: the sticky column of a split, the rail,
+//   the square of a bento, the middle of a center, the strip beside a ledger's head, the head of
+//   a feature's large block. Its ratio comes from effectiveRatio() for that role.
+// - A block's own photograph shows only where blocks stand side by side as boxes or columns
+//   (tiles, ledger): image cards. Rows are text -- a thumbnail fights the numeral and the section
+//   photograph -- and in feature, bento and center the section photograph is the one dominant
+//   image, so the blocks there stay words.
+//
+// A group that is only doors to other pages (every block one link, with no bullets and no photo)
+// renders as LinkTiles, the pale-pink tiles with the spotlight: stacked beside the photograph in
+// a split ("Before you book"), in a grid under tiles. Elsewhere such a block is a whole-block link.
+//
+// Sequences and counted rows are an <ol>; everything else a <ul>. role="list" keeps the list
+// semantics Safari drops from a list with no bullets.
+import type { BlockLayout, BlockSection, Side } from "../../lib/sections";
+import { BLOCK_LAYOUTS, LAYOUTS, effectiveRatio, resolveLayout, sectionImageRole, toBlocks } from "../../lib/sections";
+import Block from "./Block.astro";
+import ImageSlot from "./ImageSlot.astro";
+import Callout from "./Callout.astro";
+import LinkTiles from "../LinkTiles.astro";
+
+interface Props {
+  section: BlockSection;
+  /** resolveLayout(section). Anything that is not a block layout falls back to it. */
+  layout?: string;
+  /** From assignSides(): the side a split, feature or bento puts its photograph. */
+  side?: Side | "center" | null;
+}
+const { section, layout: requested, side } = Astro.props;
+
+// A layout built around a photograph never renders without one: it falls back the way
+// resolveLayout() would, so a half-filled section never shows an empty column.
+const chosen = (BLOCK_LAYOUTS as string[]).includes(requested ?? "") ? (requested as BlockLayout) : (resolveLayout(section) as BlockLayout);
+const layout: BlockLayout =
+  LAYOUTS[chosen].media === "required" && !section.image ? (resolveLayout({ ...section, layout: undefined }) as BlockLayout) : chosen;
+
+const blocks = toBlocks(section, layout);
+const n = blocks.length;
+const steps = section.type === "sequence" && section.kind === "steps";
+const timeline = section.type === "sequence" && section.kind === "timeline";
+const List = section.type === "sequence" || layout === "rail" ? "ol" : "ul";
+
+// The rail counts its rows in two digits, and runs four or more down two columns.
+const rank = layout === "rail" && blocks.some((b) => b.marker?.kind === "number");
+const twoColumns = rank && n >= 4;
+const perColumn = Math.ceil(n / 2);
+
+const sided = layout === "split" || layout === "feature" || layout === "bento";
+const dataSide = sided ? (side === "right" ? "right" : "left") : layout === "rail" ? "left" : undefined;
+
+// The section's photograph, framed at the ratio its role here allows. tiles has no place for one;
+// its photographs are the blocks' own.
+const photo =
+  section.image && LAYOUTS[layout].media !== "none"
+    ? { ...section.image, ratio: effectiveRatio(sectionImageRole(section, layout), section.image.ratio) }
+    : undefined;
+// Width over height, for the viewport cap on a sticky photograph (layouts.css).
+const [w, h] = (photo?.ratio ?? "4 / 5").split("/").map((v) => Number(v.trim()));
+const aspect = Number((w / h).toFixed(4));
+
+/** How wide each photograph renders, for srcset. Below 60rem a portrait or square frame stops at 28rem. */
+const SIZES: Record<BlockLayout, string> = {
+  tiles: `(min-width: 60rem) ${Math.round(100 / n)}vw, (min-width: 40rem) 50vw, 100vw`,
+  split: "(min-width: 60rem) 40vw, (min-width: 30rem) 28rem, 100vw",
+  rail: "(min-width: 60rem) 22rem, (min-width: 30rem) 28rem, 100vw",
+  feature: "(min-width: 60rem) 55vw, 100vw",
+  bento: "(min-width: 60rem) 33vw, (min-width: 30rem) 28rem, 100vw",
+  center: "(min-width: 60rem) 30vw, (min-width: 30rem) 28rem, 100vw",
+  ledger: "(min-width: 60rem) 40vw, 100vw",
+};
+const columnSizes = `(min-width: 60rem) ${Math.round(100 / n)}vw, 100vw`;
+
+// The feature's photograph heads its large block; everywhere else it is the shell's media part.
+const media =
+  photo && layout !== "feature" ? { image: photo, class: layout === "ledger" ? "l-photo l-strip" : "l-photo", sizes: SIZES[layout] } : undefined;
+const mediaStyle = `--i: 1; --ar: ${aspect}`;
+
+// Doors: a group of nothing but links, drawn as LinkTiles in the two layouts that have a place
+// for them.
+const doors =
+  (layout === "split" || layout === "tiles") && blocks.every((b) => b.links?.length === 1 && !b.bullets?.length && !b.image)
+    ? blocks.map((b) => ({ title: b.title, text: b.text, href: b.links![0].href, label: b.links![0].label }))
+    : undefined;
+
+// Rendered once: the rail puts the head inside its wrapper, every other layout straight in the shell.
+const head = Astro.slots.has("head") ? await Astro.slots.render("head") : "";
+---
+
+<div class:list={["l", `l--${layout}`]} data-side={dataSide} style={`--n: ${n}`}>
+  {
+    layout === "rail" ? (
+      <div class="l__rail">
+        <div class="l__head" set:html={head} />
+        {media && (
+          <div class="l__media reveal" style={mediaStyle}>
+            <ImageSlot {...media} />
+          </div>
+        )}
+      </div>
+    ) : (
+      <>
+        <div class="l__head" set:html={head} />
+        {media && (
+          <div class="l__media reveal" style={mediaStyle}>
+            <ImageSlot {...media} />
+          </div>
+        )}
+      </>
+    )
+  }
+
+  <div class="l__body">
+    {
+      doors ? (
+        <LinkTiles items={doors} variant={layout === "split" ? "stack" : "grid"} />
+      ) : layout === "tiles" ? (
+        <List class:list={["l-tiles", { "l-tiles--even": blocks.every((b) => !b.image) }]} role="list">
+          {blocks.map((b, i) => (
+            <Block block={b} index={i} frame="tile" step={steps} ownPhoto sizes={SIZES.tiles} />
+          ))}
+        </List>
+      ) : layout === "split" || layout === "rail" ? (
+        <List
+          class:list={["l-rows", "l-tile", { "l-rows--timeline": timeline, "l-rows--cols": twoColumns }]}
+          role="list"
+          style={twoColumns ? `--rows: ${perColumn}` : undefined}
+        >
+          {blocks.map((b, i) => (
+            <Block block={b} index={i} frame="row" step={steps} rank={rank} class={twoColumns && i === perColumn ? "l-row--col-top" : undefined} />
+          ))}
+        </List>
+      ) : layout === "feature" ? (
+        <List class="l-feature" role="list" style={`--rest: ${Math.max(n - 1, 1)}`}>
+          {blocks.map((b, i) =>
+            i === 0 ? (
+              <Block block={b} index={i} frame="tile" step={steps} photo={photo} sizes={SIZES.feature} />
+            ) : (
+              <Block block={b} index={i} frame="tile" step={steps} />
+            )
+          )}
+        </List>
+      ) : layout === "bento" ? (
+        <List class:list={["l-bento", { "l-bento--3": n === 3 }]} role="list">
+          {blocks.map((b, i) => (
+            <Block block={b} index={i} frame="tile" step={steps} />
+          ))}
+        </List>
+      ) : layout === "center" ? (
+        <List class="l-pair" role="list">
+          {blocks.map((b, i) => (
+            <Block block={b} index={i} frame="tile" step={steps} />
+          ))}
+        </List>
+      ) : (
+        <List class="l-ledger l-tile" role="list">
+          {blocks.map((b, i) => (
+            <Block block={b} index={i} frame="col" step={steps} ownPhoto sizes={columnSizes} />
+          ))}
+        </List>
+      )
+    }
+  </div>
+
+  {
+    section.callout && (
+      <div class="l__note reveal">
+        <Callout callout={section.callout} />
+      </div>
+    )
+  }
+</div>
