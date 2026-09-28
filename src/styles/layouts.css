@@ -281,9 +281,10 @@
 }
 
 /* The timeline: text only, down one 1px line with a hollow marker at each moment (Reuters
-   SimpleTimeline). The photograph stays outside it, beside the tile. The dividers start after
-   the line, so the line runs unbroken and never crosses them. --tl-y is the middle of the
-   moment's tag: the row's top padding plus half the tag's 1.5rem. */
+   SimpleTimeline). The line is the box line and the marker one step deeper, the hover line's
+   pink; Pink Ink stays on the Call controls. The photograph stays outside it, beside the tile.
+   The dividers start after the line, so the line runs unbroken and never crosses them. --tl-y
+   is the middle of the moment's tag: the row's top padding plus half the tag's 1.5rem. */
 .l-rows--timeline {
   --tl-inset: 1.75rem;
   --tl-y: calc(var(--space-5) + var(--space-3));
@@ -323,7 +324,7 @@
   left: calc(-1 * var(--tl-inset));
   width: 9px;
   height: 9px;
-  border: 1px solid var(--pink-ink);
+  border: 1px solid var(--line-pink-strong);
   border-radius: 50%;
   background: var(--canvas);
 }
