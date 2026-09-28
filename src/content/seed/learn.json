@@ -3158,7 +3158,7 @@
           },
           {
             "title": "Custom shade guidance",
-            "text": "Chosen around your lip tone, skin tone and the healed result."
+            "text": "Chosen around your natural lip tone and skin tone."
           },
           {
             "title": "Lip tint or lip blush",
@@ -3166,21 +3166,27 @@
           },
           {
             "title": "Located near Irvine",
-            "text": "Tustin, CA, in central Orange County."
+            "text": "A private studio in Tustin, central Orange County."
           }
         ]
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "Lip tint and lip blush usually mean the same soft lip tattoo.",
-        "lede": "Short answer: the names are used in a similar way. What matters is the result you want.",
         "paragraphs": [
-          "Many people use both names for the same service: soft pigment placed into the lips to improve color, shape and definition.",
-          "I say lip tint because I want the result to sound the way it should look: soft, wearable and natural. Not heavy lipstick. Life brought back to your lips."
+          "Many people use both names for the same service: soft pigment placed into the lips to improve color, shape and definition. Lip blush is the common search term, and some artists use it for a sheer, blushed finish.",
+          "I say lip tint because I want the result to sound the way it should look: soft, wearable and natural. It improves the color you already have and brings life back to your lips, without a heavy lipstick look."
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Healed lip tint in natural light, no lipstick, lips relaxed"
+          "shot": "Lip tint before and after: pale lips, then an even rosy pink",
+          "photo": {
+            "ref": "lip-tint/01",
+            "alt": "Lip tint before and after: pale, low-contrast lips, then an even rosy-pink color",
+            "focus": "50% 50%",
+            "detail": "Before and after"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -3189,40 +3195,18 @@
         }
       },
       {
-        "type": "compare",
-        "heading": "What is the difference?",
-        "sides": [
-          {
-            "title": "Lip tint",
-            "bullets": [
-              "The name I use for soft, natural lip color",
-              "Improves the color you already have",
-              "Natural definition and better lip balance",
-              "Fresh, healthy-looking tone"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Close crop of healed lip tint, soft border, natural finish"
-            }
-          },
-          {
-            "title": "Lip blush",
-            "bullets": [
-              "The common search term for the same service",
-              "Usually a sheer, blushed color effect",
-              "Can improve lip tone",
-              "Can define the border softly"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Sheer blushed lip color on a client, straight on, daylight"
-            }
-          }
-        ]
-      },
-      {
         "type": "grid",
+        "layout": "bento",
         "heading": "Who is lip tint best for.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Lip tint before and after: pale pink lips, then a deeper rosy color with a defined edge",
+          "photo": {
+            "ref": "lip-tint/03",
+            "alt": "Lip tint before and after: pale pink lips, then a deeper rosy red with a defined outline",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
             "title": "Pale lips",
@@ -3243,68 +3227,56 @@
         ]
       },
       {
-        "type": "grid",
-        "heading": "What color to expect.",
-        "lede": "Chosen around your natural lip tone, your skin tone and the result you want after healing.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Fresh color looks brighter at first",
-            "text": "Brighter and more intense than the healed result on the first day. This is normal; it softens as the lips heal."
-          },
-          {
-            "title": "Healed color is softer",
-            "text": "More natural than the fresh color. Know this before booking, so the first few days do not worry you."
-          },
-          {
-            "title": "Your natural lip color matters",
-            "text": "Everyone's lips hold color differently. Lip tone, undertone, lifestyle and healing all affect the final shade."
-          },
-          {
-            "title": "The goal is enhancement",
-            "text": "Not the same shade for everyone: a color that looks healthy, balanced and natural on your face."
-          }
-        ]
-      },
-      {
         "type": "sequence",
-        "heading": "What happens while lip tint heals.",
-        "lede": "Bright, then softer, then lighter, then settled.",
+        "layout": "rail",
         "kind": "steps",
+        "heading": "What color to expect.",
+        "lede": "Lips go through stages while healing: bright, then softer, then lighter, then settled. Do not judge the color too early.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "Lip tint on day one beside the same lips healed, same light and angle"
+          "ratio": "4 / 5",
+          "shot": "The same lips fresh on day one and settled after healing, stacked, same light and angle"
         },
         "items": [
           {
             "label": "1",
             "title": "Fresh color",
-            "text": "Bright, bold or more colorful right after the appointment."
+            "text": "Right after the appointment, color usually looks brighter and more intense than the healed result. This is normal."
           },
           {
             "label": "2",
             "title": "Softening stage",
-            "text": "The color softens as the lips heal. Dryness or flaking can happen."
+            "text": "The color starts to soften as the lips heal. Dryness or flaking can happen."
           },
           {
             "label": "3",
             "title": "Settled result",
-            "text": "Softer and more natural. The touch-up refines it."
+            "text": "Usually softer and more natural than the fresh color. Natural lip tone, undertone, lifestyle and healing all affect the final shade."
+          },
+          {
+            "label": "4",
+            "title": "Touch-up",
+            "text": "Color can heal lighter than it looks on the first day. We review how much pigment your lips kept and whether it healed soft and even, then refine the border and definition."
           }
-        ],
-        "callout": {
-          "tone": "voice",
-          "title": "My advice during healing",
-          "text": "Do not judge the color too early; fresh color feels dramatic for a few days. Let your lips heal before deciding if it is too light, too bright, or needs a touch-up."
-        }
+        ]
       },
       {
-        "type": "statement",
+        "type": "grid",
+        "layout": "ledger",
         "heading": "Cold sores, before lip tint.",
         "lede": "If you have ever had a cold sore, even once, please mention it before booking.",
-        "paragraphs": [
-          "Lip tattooing can trigger a cold sore for some clients with a history of them. If this applies to you, ask what steps you should take before booking.",
-          "If you have an active cold sore, irritation, open skin, or a lip injury, wait until the area is fully healed before scheduling."
+        "image": {
+          "ratio": "5 / 2",
+          "shot": "Smooth bare lips with no irritation or dryness, close-up in soft daylight, ready for lip tint"
+        },
+        "items": [
+          {
+            "title": "Tell the studio before your appointment",
+            "text": "Lip tattooing can trigger a cold sore for some clients with a history of them. If this applies to you, ask what steps you should take before booking."
+          },
+          {
+            "title": "Do not book over an active cold sore",
+            "text": "If you have an active cold sore, irritation, open skin, or a lip injury, wait until the area is fully healed before scheduling."
+          }
         ],
         "callout": {
           "tone": "caution",
@@ -3314,32 +3286,18 @@
       },
       {
         "type": "grid",
-        "heading": "Why the touch-up matters.",
-        "lede": "Color can heal lighter than it looks on day one. The touch-up is where we see how your lips healed and adjust.",
-        "items": [
-          {
-            "title": "Color check",
-            "text": "How much pigment your lips kept after healing."
-          },
-          {
-            "title": "Softness check",
-            "text": "Whether the color healed soft, even and balanced."
-          },
-          {
-            "title": "Shape refinement",
-            "text": "The border and definition, reviewed after healing."
-          },
-          {
-            "title": "Final polish",
-            "text": "The result completed so it feels finished."
-          }
-        ]
-      },
-      {
-        "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: the lip tint service, how to care for it, and what healing looks like day by day.",
-        "columns": 3,
+        "lede": "Three things worth reading first: the lip tint service, how to care for it, and what healing looks like week by week.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Lip tint before and after: pale mauve lips, then a soft rosy pink",
+          "photo": {
+            "ref": "lip-tint/04",
+            "alt": "Lip tint before and after: pale mauve lips, then a soft rosy pink",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
             "title": "Lip tint",
@@ -3363,19 +3321,24 @@
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Lip tint and lip blush questions.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Client at the consultation holding a hand mirror to her bare lips, choosing a soft shade, window light"
+        },
         "items": [
           {
             "q": "Is lip tint the same as lip blush?",
-            "a": "Usually. Both mean a cosmetic tattoo that adds soft color; here, lip tint means a natural, wearable result."
+            "a": "Usually. Both mean a cosmetic tattoo that adds soft color to the lips; here, lip tint means a natural, wearable result."
           },
           {
             "q": "Does lip tint look like lipstick?",
-            "a": "No. The healed result is softer and more natural, never overdone."
+            "a": "No. The healed result is usually softer and more natural: color and definition without looking overdone."
           },
           {
             "q": "Will my lips look too bright at first?",
-            "a": "Often, yes. It softens as the lips heal, so do not judge the final color too early."
+            "a": "Often, yes. The color softens as the lips heal, so do not judge the final color too early."
           },
           {
             "q": "Can I get lip tint if I get cold sores?",
@@ -3384,10 +3347,6 @@
           {
             "q": "Do I need a lip tint touch-up?",
             "a": "Most clients do, to review healed color, improve softness and refine the result."
-          },
-          {
-            "q": "Where is Pomi B. Brow Studio?",
-            "a": "In Tustin, CA, near Irvine and central Orange County."
           }
         ]
       },
@@ -3404,7 +3363,16 @@
             "label": "Lip tint",
             "href": "/services/lip-tint"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },
