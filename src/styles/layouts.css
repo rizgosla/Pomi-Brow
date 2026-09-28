@@ -536,10 +536,19 @@
       "body body"
       "note note";
   }
+  /* A wide statement's paragraphs follow its heading in the same column, beside the strip,
+     instead of waiting below the strip and its caption. */
+  .l--wide {
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "head media"
+      "body media"
+      "note note";
+  }
   .l--wide[data-side="left"] {
     grid-template-areas:
       "media head"
-      ". body"
+      "media body"
       "note note";
   }
   .l-ledger.l-tile {

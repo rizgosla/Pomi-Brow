@@ -454,7 +454,7 @@ Rebuilt on 2026-09-28 from the client's critique of 21 sections. Their complaint
      - **`bento`**: a square photograph spanning both rows of a 2×2 of short blocks (about 15 words each).
      - **`center`**: block, 4:5 photograph, block. Exactly two blocks of similar length.
      - **`ledger`**: the h2 and lede (7/12) beside a 5:2 strip (5/12), then one tile split into 2–4 columns by hairlines. The strip takes a side like any photograph; on the left it leads the head row. A ledger can instead give each column its own photograph, and then it has no strip and no side.
-     - **Statements**: `split` (copy beside a 4:5 photograph) or `wide` (the ledger's head row, with the paragraphs below at 62ch, always under the heading, whichever side the strip takes). Every paragraph is body size, at most two per statement. The lede is the one larger voice: the old statement set its first paragraph at lede size, and two sizes in one block read as a mistake.
+     - **Statements**: `split` (copy beside a 4:5 photograph) or `wide` (a ledger's head row: heading, lede and paragraphs stack in the 7/12 column beside the 5:2 strip, on whichever side the strip takes). Every paragraph is body size, at most two per statement. The lede is the one larger voice: the old statement set its first paragraph at lede size, and two sizes in one block read as a mistake.
    - Below 60rem every layout is one column in reading order: head, photograph, blocks, note. Strips go 4:3 so they don't turn into slivers. Nothing becomes a carousel.
 4. **Rhythm rules.** `pageRhythmProblems` enforces these, and the tests run it on every page:
    1. Neighbouring sections never share a layout. A wide statement and a ledger count as one composition.
