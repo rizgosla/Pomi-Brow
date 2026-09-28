@@ -2853,33 +2853,33 @@
         "items": [
           {
             "title": "Soft lash-line options",
-            "text": "Lash enhancement is the soft, natural choice."
+            "text": "Lash enhancement: darker, fuller-looking lashes at the base."
           },
           {
             "title": "More visible definition",
-            "text": "Permanent eyeliner: a lined look, soft pencil to liquid."
+            "text": "Permanent eyeliner adds a defined line above the lashes."
           },
           {
             "title": "Custom eye design",
-            "text": "Designed around your eye shape and the makeup you wear."
+            "text": "Designed around your eye shape and your makeup style."
           },
           {
             "title": "Located near Irvine",
-            "text": "Tustin, CA, in central Orange County."
+            "text": "A private studio in Tustin, central Orange County."
           }
         ]
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "Choose lash enhancement for subtle. Choose eyeliner for more definition.",
-        "lede": "Short answer, for eyes that look more awake without liner every morning.",
         "paragraphs": [
           "Lash enhancement sits close to the lash line and makes the lash base look fuller. People notice your eyes look more defined, but may not know you had permanent makeup done.",
           "Permanent eyeliner is more visible: a lined look, similar to soft pencil or liquid liner, depending on the style you choose."
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Healed lash enhancement, eyes open, no other eye makeup, natural light"
+          "shot": "Healed lash enhancement beside healed soft eyeliner, two eyes open, same light and framing"
         },
         "callout": {
           "tone": "voice",
@@ -2889,166 +2889,112 @@
       },
       {
         "type": "compare",
+        "layout": "tiles",
         "heading": "Not the same service.",
+        "lede": "Both add pigment near the eyes, but they create different looks.",
         "sides": [
           {
             "title": "Lash enhancement",
-            "bullets": [
-              "Through the lash line, no clear liner shape",
-              "Softest, most natural eye service",
-              "Great for no-makeup days",
-              "Good if you rarely wear eyeliner"
-            ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Close crop of a healed lash enhancement, lashes darker at the base"
-            }
+              "shot": "Lash enhancement before and after: a dark line along the upper lashes",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after: the same open eye, then a dark line along the upper lashes",
+                "detail": "Before and after"
+              }
+            },
+            "bullets": [
+              "Placed through the lash line, darker at the base",
+              "The softest, most natural eye service",
+              "A slightly stronger version: fuller, still not liner"
+            ]
           },
           {
             "title": "Permanent eyeliner",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Thin winged eyeliner on both eyes of one client, eyes open",
+              "photo": {
+                "ref": "eyeliner/02",
+                "alt": "Thin winged eyeliner on both of one client's open eyes, shown in two close-ups",
+                "detail": "Two views"
+              }
+            },
             "bullets": [
               "A more noticeable line along the eyes",
               "Closer to a makeup look, still soft",
-              "Good if you wear liner often",
-              "A more polished eye"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Close crop of healed permanent eyeliner, a soft pencil-style line"
-            }
+              "Customized to your eye shape, but meant to show"
+            ]
           }
         ]
       },
       {
-        "type": "grid",
-        "heading": "Which one looks more natural?",
-        "lede": "Lash enhancement, for most clients: it blends into the lash line instead of sitting above it.",
-        "columns": 2,
-        "items": [
+        "type": "compare",
+        "layout": "center",
+        "heading": "Start with the result you want.",
+        "lede": "The final style should match your eye shape, skin and comfort level.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Consultation: Pomi and a client talking through eye styles, both seated, window light"
+        },
+        "sides": [
           {
-            "title": "Notice your eyes, not your eyeliner",
-            "text": "Lash enhancement is my pick for a soft boost: depth at the lash base, fresher eyes, no strong makeup line."
+            "title": "Choose lash enhancement",
+            "bullets": [
+              "You like a natural look: eyes and lashes, not a liner shape",
+              "You rarely wear eyeliner, or it feels too heavy",
+              "You want a darker, more defined lash base",
+              "You want easy mornings: a soft boost before makeup"
+            ]
           },
           {
-            "title": "A more finished makeup look",
-            "text": "Eyeliner is customized to your eye shape but meant to show. If you feel unfinished without it, this fits better."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Which one gives more definition?",
-        "lede": "Permanent eyeliner gives more definition. Lash enhancement gives softer definition.",
-        "items": [
-          {
-            "title": "Softest",
-            "text": "Lash enhancement: depth at the lash line, look kept natural."
-          },
-          {
-            "title": "Medium definition",
-            "text": "A slightly stronger lash enhancement: fuller lash line, still not liner."
-          },
-          {
-            "title": "More polished",
-            "text": "Permanent eyeliner: a visible line for clients who like a makeup look."
-          },
-          {
-            "title": "Custom choice",
-            "text": "Matched to your eye shape, skin and comfort level."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Who should choose lash enhancement.",
-        "lede": "Clients who want to look more awake, but do not want friends or family to notice permanent makeup.",
-        "items": [
-          {
-            "title": "You like a natural look",
-            "text": "Focus on your eyes and lashes, not a liner shape."
-          },
-          {
-            "title": "You rarely wear eyeliner",
-            "text": "If eyeliner feels too heavy, this is usually the better fit."
-          },
-          {
-            "title": "You want fuller-looking lashes",
-            "text": "A darker, more defined lash base."
-          },
-          {
-            "title": "You want easy mornings",
-            "text": "A soft boost before you apply any makeup."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Who should choose permanent eyeliner.",
-        "lede": "Clients who like eyeliner and want to save time, or whose liner smudges, transfers or never looks even. Designed around your eye shape, never a template.",
-        "items": [
-          {
-            "title": "You wear liner often",
-            "text": "A strong choice if eyeliner is part of your everyday look."
-          },
-          {
-            "title": "Your liner smudges",
-            "text": "Less fixing makeup during the day."
-          },
-          {
-            "title": "You want more definition",
-            "text": "A more noticeable eye shape than lash enhancement."
-          },
-          {
-            "title": "You want symmetry help",
-            "text": "A planned design, cleaner and more balanced."
+            "title": "Choose permanent eyeliner",
+            "bullets": [
+              "You wear liner often and want to save time applying it",
+              "Your liner smudges, transfers or never looks even",
+              "You want a more noticeable eye shape",
+              "You want symmetry help: a cleaner, more balanced look"
+            ]
           }
         ]
       },
       {
         "type": "sequence",
-        "heading": "How the touch-up works.",
-        "lede": "The first appointment builds the foundation. The touch-up refines the healed result.",
+        "layout": "rail",
         "kind": "steps",
+        "heading": "Eye services need careful planning.",
+        "lede": "Both are done close to the eyes, so safety and preparation matter. The first appointment builds the foundation; the touch-up refines the healed result.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "Reviewing healed eyeliner at the touch-up, client seated, mirror in hand"
+          "ratio": "4 / 5",
+          "shot": "Winged eyeliner on a closed eye, just done, cotton swab in frame",
+          "photo": {
+            "ref": "eyeliner/01",
+            "alt": "Freshly done winged eyeliner on a closed eye, a cotton swab at the top of the frame",
+            "focus": "70% 50%",
+            "detail": "Fresh"
+          }
         },
         "items": [
           {
-            "label": "1",
-            "title": "We let it heal first",
-            "text": "Color and softness change while the skin heals; looking different for a while is normal."
-          },
-          {
-            "label": "2",
-            "title": "We review the healed result",
-            "text": "Healed color, symmetry and softness, reviewed together."
-          },
-          {
-            "label": "3",
-            "title": "We refine if needed",
-            "text": "Strengthen color, soften uneven areas, adjust the look."
-          }
-        ],
-        "callout": {
-          "tone": "voice",
-          "title": "My advice",
-          "text": "Do not judge the result in the first few days: fresh pigment can look darker and the area more sensitive. The healed result decides what the touch-up needs."
-        }
-      },
-      {
-        "type": "grid",
-        "heading": "Eye services need careful planning.",
-        "lede": "Because eyeliner and lash enhancement are done close to the eyes, safety and preparation matter.",
-        "columns": 2,
-        "items": [
-          {
+            "label": "Booking",
             "title": "Before booking",
             "text": "Share any eye concerns, medical history, medications, allergies or recent treatments, so we can decide whether to book now or wait."
           },
           {
+            "label": "Preparation",
             "title": "Before the appointment",
             "text": "Follow the pre-care instructions. Arrive with clean skin around the eyes, and ask if unsure about contacts, lash extensions or eye makeup."
+          },
+          {
+            "label": "Healing",
+            "title": "While it heals",
+            "text": "Color and softness change while the skin heals, so do not judge the first few days: fresh pigment can look darker, and the area can feel more sensitive."
+          },
+          {
+            "label": "Touch-up",
+            "title": "At the touch-up",
+            "text": "We review the healed color, symmetry and softness together. If needed, the touch-up strengthens color, softens uneven areas or adjusts the final look."
           }
         ],
         "callout": {
@@ -3065,9 +3011,13 @@
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
         "lede": "Three things worth reading first: the two eye services in detail, and what healing around the eyes looks like.",
-        "columns": 3,
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Healed lash enhancement, eyes open, no other eye makeup, natural light"
+        },
         "items": [
           {
             "title": "Lash enhancement",
@@ -3091,7 +3041,13 @@
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Eyeliner and lash enhancement questions.",
+        "lede": "The ones asked most before choosing, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Close crop of healed permanent eyeliner, a soft pencil-style line"
+        },
         "items": [
           {
             "q": "What is the main difference?",
@@ -3112,10 +3068,6 @@
           {
             "q": "Do they need touch-ups?",
             "a": "Most permanent makeup does, to review the healed result and refine color, shape or softness."
-          },
-          {
-            "q": "Where is Pomi B. Brow Studio?",
-            "a": "In Tustin, CA, near Irvine and central Orange County."
           }
         ]
       },
@@ -3132,7 +3084,16 @@
             "label": "Frequently asked questions",
             "href": "/faqs"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },
@@ -3393,33 +3354,39 @@
         "type": "facts",
         "items": [
           {
-            "title": "Brows, eyes, lips and scalp",
-            "text": "Each service heals on its own timeline."
+            "title": "By service",
+            "text": "Brows, eyes, lips and scalp, matched to your goal."
           },
           {
-            "title": "Personal guidance",
-            "text": "Your goal, skin and lifestyle decide the service."
+            "title": "Skin type",
+            "text": "Your skin affects healing and which technique fits."
+          },
+          {
+            "title": "Your routine",
+            "text": "Plan healing around events, travel, workouts and sun."
           },
           {
             "title": "Near Irvine",
-            "text": "In Tustin, central Orange County."
-          },
-          {
-            "title": "Good candidate guide",
-            "text": "Goals, skin, lifestyle and healing, considered together."
+            "text": "A private studio in Tustin, central Orange County."
           }
         ]
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "You may be a good candidate if you want natural results and understand healing.",
         "paragraphs": [
-          "Permanent makeup suits clients who want a simpler morning routine, better shape or definition, and less daily makeup.",
+          "Permanent makeup is a good fit for many clients who want a simpler morning routine, better shape or definition, and less daily makeup.",
           "The best candidates are honest about their skin, health, lifestyle and expectations. That helps choose the right service and avoid booking at the wrong time."
         ],
         "image": {
-          "ratio": "4 / 5",
-          "shot": "Pomi and a client looking at brow shapes together at the consultation mirror"
+          "ratio": "1 / 1",
+          "shot": "The same brows filled in, then bare, then finished",
+          "photo": {
+            "ref": "microblading-shading/04",
+            "alt": "The same brows three ways: filled in, bare and sparse, then finished with hair strokes and shading",
+            "detail": "Before and after"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -3429,80 +3396,97 @@
       },
       {
         "type": "grid",
-        "heading": "Good candidates for brow services.",
-        "columns": 4,
+        "layout": "tiles",
+        "heading": "How to choose the right service.",
+        "lede": "Start with the result you want, then match it to your features, skin and routine.",
         "items": [
           {
-            "title": "Sparse brows",
-            "text": "Thin or patchy brows can look fuller."
-          },
-          {
-            "title": "Uneven brows",
-            "text": "Brow mapping creates balance before the service begins."
-          },
-          {
-            "title": "Daily brow makeup",
-            "text": "If you fill them in every morning, permanent brows save time."
-          },
-          {
-            "title": "Soft or defined style",
-            "text": "Hair-like detail, soft shading, or a fuller makeup look."
-          }
-        ]
-      },
-      {
-        "type": "compare",
-        "heading": "Eyeliner or lash enhancement.",
-        "lede": "Lash enhancement darkens the lash base with no visible liner, the softer option. Eyeliner suits those who already wear liner often and want a defined shape without applying it daily.",
-        "sides": [
-          {
-            "title": "Lash enhancement may fit you if",
-            "bullets": [
-              "You like a no-makeup look",
-              "You want subtle eye definition",
-              "You want fuller-looking lashes",
-              "You rarely wear eyeliner"
-            ],
+            "title": "Better brows",
+            "text": "Hair-like strokes, soft powder or a fuller combination brow, if your brows are sparse, uneven or filled in every morning.",
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed lash enhancement: a darker lash base with no visible liner"
-            }
+              "ratio": "1 / 1",
+              "shot": "One brow before and after microblading, close-up",
+              "photo": {
+                "ref": "microblading/07",
+                "alt": "Microblading before and after: a sparse, light brow, then dense, crisp hair strokes",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Microblading",
+                "href": "/services/microblading"
+              },
+              {
+                "label": "Powder brows",
+                "href": "/services/ombre-powder-brows"
+              },
+              {
+                "label": "Microblading and shading",
+                "href": "/services/microblading-shading"
+              }
+            ]
           },
           {
-            "title": "Permanent eyeliner may fit you if",
-            "bullets": [
-              "You like a more polished eye look",
-              "Your eyeliner smudges or transfers",
-              "You want more definition than lash enhancement",
-              "You want your liner to look more even"
-            ],
+            "title": "Eye definition",
+            "text": "Lash enhancement for a darker lash base with no visible liner, or eyeliner if you want a more polished look.",
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed permanent eyeliner: an even, defined line along the upper lash line"
-            }
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Good candidates for lip tint.",
-        "columns": 4,
-        "items": [
-          {
-            "title": "Pale lips",
-            "text": "Soft color so your lips look more awake."
+              "ratio": "1 / 1",
+              "shot": "One open eye before and after lash enhancement",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after: the same open eye, then a darker line along the upper lashes",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Lash enhancement",
+                "href": "/services/lash-enhancement"
+              },
+              {
+                "label": "Eyeliner",
+                "href": "/services/eyeliner"
+              }
+            ]
           },
           {
-            "title": "Uneven tone",
-            "text": "A custom tint helps uneven color look balanced."
+            "title": "Lip color",
+            "text": "Lip tint if your lips look pale, uneven or undefined and you want a soft, natural color.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Pale lips before lip tint, even rosy pink after",
+              "photo": {
+                "ref": "lip-tint/01",
+                "alt": "Lip tint before and after: pale, low-contrast lips, then an even rosy pink",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Lip tint",
+                "href": "/services/lip-tint"
+              }
+            ]
           },
           {
-            "title": "Soft definition",
-            "text": "A defined lip shape without a harsh liner look."
-          },
-          {
-            "title": "Less lipstick",
-            "text": "A little color without applying lipstick all the time."
+            "title": "Fuller-looking hair",
+            "text": "Scalp micropigmentation if you want the look of more coverage in thinning areas, or a cleaner hairline.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "A thin crown before scalp micropigmentation, denser-looking after",
+              "photo": {
+                "ref": "scalp-micropigmentation/01",
+                "alt": "Scalp micropigmentation before and after: scalp showing through a thin crown, then a denser-looking crown",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Scalp micropigmentation",
+                "href": "/services/scalp-micropigmentation"
+              }
+            ]
           }
         ],
         "callout": {
@@ -3513,153 +3497,76 @@
       },
       {
         "type": "grid",
-        "heading": "Good candidates for scalp micropigmentation.",
-        "columns": 4,
-        "items": [
-          {
-            "title": "Thinning areas",
-            "text": "Less visible scalp through thinning hair."
-          },
-          {
-            "title": "Hairline definition",
-            "text": "A cleaner-looking shape where the hairline is less defined."
-          },
-          {
-            "title": "Scalp contrast",
-            "text": "Small pigment impressions reduce hair-to-scalp contrast."
-          },
-          {
-            "title": "Low-maintenance density",
-            "text": "Less need for temporary powders or hair fibers."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Who should ask before booking.",
-        "lede": "Some are still good candidates, but timing matters. Ask first if any apply, or if you have allergies or past reactions to cosmetic products.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Health and healing",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Health history form open on the consultation desk, reading glasses resting beside it"
-            },
-            "bullets": [
-              "You are pregnant or nursing",
-              "You take blood thinners",
-              "You are prone to keloids",
-              "You have a medical condition that affects healing"
-            ]
-          },
-          {
-            "title": "Skin or treatment area concerns",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Bare brow area in soft daylight, checked for irritation before any mapping"
-            },
-            "bullets": [
-              "Irritation, sunburn, cuts, breakouts or open skin nearby",
-              "Recent filler, Botox, chemical peels, laser or cosmetic treatments",
-              "Active cold sores or cold sore history, for lip tint",
-              "Eye or scalp irritation, recent eye treatments, for those services"
-            ]
-          }
-        ],
-        "callout": {
-          "tone": "caution",
-          "title": "My advice",
-          "text": "If you are unsure, ask before booking. It is better to check first than to arrive and find out we need to wait. For medical questions, speak with your healthcare provider before scheduling."
-        }
-      },
-      {
-        "type": "grid",
+        "layout": "bento",
         "heading": "Skin type considerations.",
-        "lede": "Skin affects how permanent makeup heals and how long color holds.",
-        "columns": 4,
+        "lede": "Your skin affects how permanent makeup heals and how long the color holds. Ask first if you have allergies or past reactions to cosmetic products.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Close-up of bare skin at the brow before mapping, pores and fine lines visible in soft daylight"
+        },
         "items": [
           {
             "title": "Oily skin",
-            "text": "May heal softer or fade faster with some brow techniques. Powder or shading may fit better."
+            "text": "May heal softer or fade faster with certain brow techniques. Powder or shading may fit some clients better."
           },
           {
             "title": "Dry skin",
-            "text": "Holds fine detail well, but aftercare still matters."
+            "text": "May hold fine detail well, but aftercare still matters during healing."
           },
           {
             "title": "Mature skin",
-            "text": "Needs a gentle, realistic approach. Softer designs heal better than harsh shapes."
+            "text": "Needs a gentle, realistic approach. Softer designs often heal better than harsh shapes."
           },
           {
             "title": "Sensitive skin",
-            "text": "May need extra care, slower timing, or a conversation first."
+            "text": "May need extra care, slower timing, or a conversation before booking."
           }
         ]
       },
       {
         "type": "sequence",
-        "heading": "Lifestyle considerations before booking.",
-        "lede": "Best when the service fits your daily life and you can follow aftercare.",
+        "layout": "rail",
         "kind": "steps",
+        "heading": "Lifestyle considerations before booking.",
+        "lede": "Permanent makeup works best when the service fits your daily life and you can follow aftercare.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "A client's calendar and aftercare kit laid out, planning the two healing weeks"
+          "ratio": "4 / 5",
+          "shot": "Planner open with the healing weeks marked, a sun hat and swim bag set aside, soft daylight"
         },
         "items": [
           {
             "label": "Style",
             "title": "Your daily makeup style",
-            "text": "Soft makeup, a softer service. More definition, a service that matches."
+            "text": "If you like soft makeup, choose a softer service. If you like more definition, choose one that matches that look."
           },
           {
             "label": "Schedule",
             "title": "Your healing schedule",
-            "text": "Plan around events, photos, travel, workouts, pools, saunas and sun while healing."
+            "text": "Plan around events, photos, travel, workouts, pools, saunas and sun exposure while healing."
           },
           {
             "label": "Upkeep",
             "title": "Your maintenance plan",
-            "text": "Permanent makeup softens over time. Touch-ups maintain color, shape and definition."
+            "text": "Permanent makeup softens over time. Touch-ups help maintain color, shape and definition."
           }
         ]
       },
       {
         "type": "grid",
-        "heading": "How to choose the right service.",
-        "lede": "Start with the result you want, then match it to your features, skin and routine.",
-        "columns": 4,
-        "items": [
-          {
-            "title": "Better brows",
-            "text": "Hair-like strokes, soft powder brows, or a fuller combination brow."
-          },
-          {
-            "title": "Eye definition",
-            "text": "Lash enhancement or eyeliner, for your eye shape, makeup style and comfort."
-          },
-          {
-            "title": "Lip color",
-            "text": "Lip tint, if your lips look pale, uneven or undefined."
-          },
-          {
-            "title": "Fuller-looking hair",
-            "text": "Scalp micropigmentation, for thinning areas or a cleaner hairline."
-          }
-        ]
-      },
-      {
-        "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: the questions clients ask most, how the studio stays safe, and whether powder brows suit you.",
-        "columns": 3,
+        "lede": "Three pages worth reading: who should ask first, whether powder brows suit you, and how to choose an eye service.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Thin eyeliner with a small wing on an open eye",
+          "photo": {
+            "ref": "eyeliner/03",
+            "alt": "An open hazel eye looking up, thin black liner ending in a small wing, a soft brow above",
+            "focus": "55% 50%",
+            "detail": "Close-up"
+          }
+        },
         "items": [
-          {
-            "title": "Frequently asked questions",
-            "text": "Short answers to the questions clients ask most.",
-            "href": "/faqs",
-            "linkLabel": "Read"
-          },
           {
             "title": "Safety",
             "text": "How the studio stays clean and private, and who should ask first.",
@@ -3671,41 +3578,58 @@
             "text": "Who suits a soft, filled-in brow, and who does not.",
             "href": "/learn/are-powder-brows-for-me",
             "linkLabel": "Read"
+          },
+          {
+            "title": "Eyeliner vs lash enhancement",
+            "text": "A defined line, or fuller-looking lashes with no visible line.",
+            "href": "/learn/eyeliner-vs-lash-enhancement",
+            "linkLabel": "Read"
           }
-        ]
+        ],
+        "callout": {
+          "tone": "caution",
+          "title": "My advice",
+          "text": "If you are unsure, ask before booking. It is better to check first than to arrive and find out we need to wait. For medical questions, speak with your healthcare provider before scheduling."
+        }
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Candidate questions.",
         "lede": "Asked most, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Finished brows from both sides, eyes open",
+          "photo": {
+            "ref": "microblading-shading/08",
+            "alt": "Two views of finished brows with fine strokes at the front and shading through the tail, eyes open",
+            "detail": "Two views"
+          }
+        },
         "items": [
           {
             "q": "Who is a good candidate?",
-            "a": "Someone who wants natural-looking enhancement, understands healing, follows aftercare, and has no skin or health concerns that make timing unsafe."
+            "a": "A good candidate wants natural-looking enhancement, understands the healing process, follows aftercare, and does not have active skin or health concerns that would make timing unsafe."
           },
           {
             "q": "Who should ask before booking?",
-            "a": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active irritation, have a cold sore history for lip tint, or recently had cosmetic treatments near the area."
+            "a": "Some clients are still good candidates, but timing matters. Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active irritation, have a cold sore history for lip tint, or recently had cosmetic treatments near the area."
           },
           {
-            "q": "Am I a candidate for brows?",
-            "a": "If you want better shape, more fullness, or less daily brow makeup. The technique depends on your skin and style."
+            "q": "Am I a good candidate for brows?",
+            "a": "You may be, if you want better shape, more fullness, or less daily brow makeup. The best technique depends on your skin and preferred style."
           },
           {
-            "q": "Am I a candidate for lip tint?",
-            "a": "If you want soft color, better tone and natural definition. Ask first with a cold sore history or active irritation."
+            "q": "Am I a good candidate for eyeliner or lash enhancement?",
+            "a": "You may be, if you want more eye definition and do not have active eye irritation or recent eye procedures. Ask first if you use eye medications or have recent eye treatments."
           },
           {
-            "q": "Eyeliner or lash enhancement?",
-            "a": "Either, if you want more definition and have no active eye irritation or recent eye procedures. Ask first if you use eye medications or had recent eye treatments."
+            "q": "Am I a good candidate for lip tint?",
+            "a": "You may be, if you want soft lip color, better tone and natural definition. Ask first if you have a cold sore history or active irritation."
           },
           {
             "q": "Does skin type matter?",
-            "a": "Yes. Oily, dry, mature, sensitive or textured skin heals differently, which guides the service and technique."
-          },
-          {
-            "q": "Where is the studio?",
-            "a": "Tustin, CA, near Irvine and central Orange County."
+            "a": "Yes. Oily, dry, mature, sensitive or textured skin may heal differently. Your skin type helps guide the best service and technique."
           }
         ]
       },
@@ -3722,14 +3646,23 @@
             "label": "How to prepare for your appointment",
             "href": "/learn/prepare-for-appointment"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },
   {
     "title": "How to prepare for your appointment",
     "slug": "prepare-for-appointment",
-    "summary": "No alcohol, caffeine, or blood thinners for 24 hours. No retinol or exfoliants on the area for a week. Come in with your usual makeup so Pomi can see the shape you like.",
+    "summary": "Arrive with clean skin, avoid irritation or sunburn, and share health details. Ask about retinol, acids, exfoliants, blood thinners, alcohol, and caffeine before your appointment.",
     "relatedService": null,
     "showAsFaq": false,
     "seoTitle": "HOW TO PREPARE FOR YOUR PERMANENT MAKEUP APPOINTMENT",
@@ -3762,6 +3695,7 @@
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "Come in with clean skin, clear expectations, and no last-minute surprises.",
         "paragraphs": [
           "Good preparation helps the appointment go smoothly and your skin heal the right way. Avoid anything that irritates the skin, thins the blood, or makes the treatment area sensitive.",
@@ -3769,7 +3703,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "The tray before a brow appointment: mapping pencil, ruler, and sealed single-use tools"
+          "shot": "Smiling client lying back with soft brows, fine strokes at the front",
+          "photo": {
+            "ref": "microblading-shading/03",
+            "alt": "Smiling client lying back with eyes closed and soft brows, fine strokes at the front",
+            "focus": "55% 50%",
+            "detail": "Close-up"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -3779,102 +3719,76 @@
       },
       {
         "type": "grid",
-        "heading": "Before brows.",
-        "lede": "For microblading, ombre powder brows, and microblading / shading.",
-        "columns": 2,
+        "layout": "ledger",
+        "heading": "Service by service.",
+        "lede": "The brow list is for microblading, ombre powder brows, and microblading + shading. The eye list is for eyeliner and lash enhancement.",
         "items": [
           {
-            "title": "Before your brow appointment",
+            "title": "Brows",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Microblading before and after on both brows, eyes open",
+              "photo": {
+                "ref": "microblading/04",
+                "alt": "Microblading before and after: thin, sparse brows, then fuller brows of hair strokes",
+                "detail": "Before and after"
+              }
+            },
             "bullets": [
               "Clean skin around the brows",
               "No tanning, sunburn or strong exfoliants beforehand",
-              "Share recent Botox, filler, laser, peels or brow treatments",
-              "Bring photos of brow styles you like"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Clean, product-free brows on the morning of a mapping appointment"
-            }
+              "Share recent Botox, filler, laser, peels or brow treatments"
+            ]
           },
           {
-            "title": "Ask first if",
+            "title": "Eyes",
             "image": {
-              "ratio": "3 / 2",
-              "shot": "A brow with a small healing scratch beside it, the kind of thing to mention before booking"
-            },
-            "bullets": [
-              "Irritation, cuts, breakouts, sunburn or open skin nearby",
-              "Recent cosmetic treatments near the forehead or brows",
-              "Pregnant, nursing, taking blood thinners, or prone to keloids",
-              "Unsure which brow service fits your skin"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Before eyeliner or lash enhancement.",
-        "lede": "The work is done close to the lash line, so eyes need extra care.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Before your eye appointment",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Bare, calm eyelid with no mascara or extensions, ready for mapping"
+              "ratio": "1 / 1",
+              "shot": "Lash enhancement before and after along the upper lash line",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after: a bare lash line, then a dark line along the upper lashes",
+                "detail": "Before and after"
+              }
             },
             "bullets": [
               "Clean skin, eyes calm and not irritated",
               "Ask ahead about contacts, lash extensions, eye makeup or serums",
-              "Share eye sensitivity, allergies or recent eye treatments",
-              "Decide: soft lash line, or more visible eyeliner"
+              "Share eye sensitivity, allergies or recent eye treatments"
             ]
           },
           {
-            "title": "Ask first if",
+            "title": "Lips",
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Contact lens case and eye drops set aside on the studio counter"
+              "ratio": "1 / 1",
+              "shot": "Lip tint before and after, closed lips face-on",
+              "photo": {
+                "ref": "lip-tint/01",
+                "alt": "Lip tint before and after: pale lips, then even rosy pink",
+                "detail": "Before and after"
+              }
             },
-            "bullets": [
-              "Eye irritation, redness, infection or sensitivity",
-              "Recent eye surgery or cosmetic eye treatments",
-              "You use eye medications or have a medical eye condition",
-              "Unsure which eye service fits your routine"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Before lip tint.",
-        "lede": "Lips are sensitive, color healing varies, and lips look brighter at first. Plan around healing.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Before your lip tint appointment",
             "bullets": [
               "Moisturized lips, plenty of water",
               "No cracked or irritated lips on the day",
-              "Share your natural lip color goals and shade preferences",
-              "Bring a favorite lip color photo"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Lips at the color consultation, natural tone beside the pigment swatch"
-            }
+              "Share your natural lip color goals and shade preferences"
+            ]
           },
           {
-            "title": "Ask first if",
+            "title": "Scalp",
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Phone open to a message to the studio, asking about timing after lip filler"
+              "ratio": "1 / 1",
+              "shot": "Scalp micropigmentation before and after at the crown",
+              "photo": {
+                "ref": "scalp-micropigmentation/01",
+                "alt": "Scalp micropigmentation before and after: a thin crown, then a denser one",
+                "detail": "Before and after"
+              }
             },
             "bullets": [
-              "You have ever had a cold sore, even once",
-              "An active cold sore, cracked lips, irritation or open skin",
-              "Recent lip filler or treatments around the mouth",
-              "Unsure what color heals best with your lip tone"
+              "A clean scalp, no sunburn",
+              "Share scalp irritation, skin conditions or recent scalp treatments",
+              "Be ready to talk hairline shape, coverage and softness"
             ]
           }
         ],
@@ -3886,42 +3800,37 @@
       },
       {
         "type": "grid",
-        "heading": "Before scalp micropigmentation.",
-        "lede": "Preparation depends on your hair, scalp, and treatment area.",
-        "columns": 2,
+        "layout": "bento",
+        "heading": "What to bring.",
+        "lede": "Not much. A few small things make the appointment easier.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "A phone of saved brow photos beside a handwritten list of questions on the consultation table, top-down, daylight"
+        },
         "items": [
           {
-            "title": "Before your SMP appointment",
-            "bullets": [
-              "A clean scalp, no sunburn",
-              "Share scalp irritation, skin conditions or recent scalp treatments",
-              "Bring photos of your preferred hairline or density",
-              "Be ready to talk hairline shape, coverage and softness"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "A clean scalp at the hairline consultation, before any mapping"
-            }
+            "title": "Inspiration photos",
+            "text": "Bring photos of brows, eyeliner, lips, or hairlines you like. They help explain your style."
           },
           {
-            "title": "Ask first if",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Hairline in hard side light showing flaking at the part, the reason to ask before booking"
-            },
-            "bullets": [
-              "Scalp irritation, open skin, sunburn or active flaking",
-              "Recent scalp treatments, hair transplant work or injections",
-              "A skin condition in the treatment area",
-              "Unsure how much density or hairline definition you want"
-            ]
+            "title": "Your questions",
+            "text": "Write down anything you want to ask about shape, color, healing, or touch-ups."
+          },
+          {
+            "title": "Health details",
+            "text": "Be ready to share medications, allergies, skin concerns, and recent treatments."
           }
         ]
       },
       {
         "type": "grid",
+        "layout": "rail",
         "heading": "What to avoid.",
         "lede": "Common reminders for every service. Exact instructions depend on yours.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Retinol serum, an acid toner and exfoliating pads set aside, capped, on a bathroom shelf, soft morning light"
+        },
         "items": [
           {
             "title": "Sunburn or tanning",
@@ -3947,78 +3856,20 @@
         }
       },
       {
-        "type": "sequence",
-        "heading": "What to bring.",
-        "lede": "Not much. A few small things make the appointment easier.",
-        "kind": "steps",
+        "type": "grid",
+        "layout": "split",
+        "heading": "Before you book.",
+        "lede": "Three things worth reading first: how the studio stays safe, what healing looks like week by week, and how to care for it.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "A client's reference photos and written questions laid out on the consultation table"
+          "ratio": "1 / 1",
+          "shot": "Microblading before and after, the brow mapped under a ruler first",
+          "photo": {
+            "ref": "microblading/03",
+            "alt": "Microblading before and after: a sparse brow under a brow-mapping ruler, then a full brow of hair strokes",
+            "detail": "Before and after"
+          }
         },
         "items": [
-          {
-            "label": "First",
-            "title": "Inspiration photos",
-            "text": "Brows, eyeliner, lips or hairlines you like. They explain your style."
-          },
-          {
-            "label": "Second",
-            "title": "Your questions",
-            "text": "Shape, color, healing, touch-ups: written down."
-          },
-          {
-            "label": "Third",
-            "title": "Health details",
-            "text": "Medications, allergies, skin concerns, and recent treatments."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "When to ask before booking.",
-        "lede": "If anything about your health, skin, or schedule might affect the appointment.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Health or skin concerns",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Consultation form on the desk, the medications question circled in pencil"
-            },
-            "bullets": [
-              "You are pregnant or nursing",
-              "You take blood thinners",
-              "You are prone to keloids",
-              "Active irritation, or a cold sore history for lip tint"
-            ]
-          },
-          {
-            "title": "Tight timing",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Wall calendar with a wedding date marked, six weeks counted back to the appointment"
-            },
-            "bullets": [
-              "A wedding, vacation, photo shoot or event ahead",
-              "Recent filler, Botox, laser, peels or cosmetic treatments",
-              "Heavy workouts, frequent swimming or planned sun exposure",
-              "Not enough time to heal before an event"
-            ]
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Before you book.",
-        "lede": "Three things worth reading first: how to care for it afterwards, how the studio stays safe, and the questions clients ask most.",
-        "columns": 3,
-        "items": [
-          {
-            "title": "Aftercare",
-            "text": "What is normal while it heals, day by day.",
-            "href": "/aftercare",
-            "linkLabel": "Read"
-          },
           {
             "title": "Safety",
             "text": "How the studio stays clean and private, and who should ask first.",
@@ -4026,17 +3877,33 @@
             "linkLabel": "Read"
           },
           {
-            "title": "Frequently asked questions",
-            "text": "Short answers to the questions clients ask most.",
-            "href": "/faqs",
+            "title": "The healing timeline",
+            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "href": "/learn/pmu-healing-timeline",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Aftercare",
+            "text": "What is normal while it heals, day by day.",
+            "href": "/aftercare",
             "linkLabel": "Read"
           }
         ]
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Preparation questions.",
         "lede": "The ones asked most, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Thin eyeliner with a small wing on an open eye",
+          "photo": {
+            "ref": "eyeliner/03",
+            "alt": "Thin eyeliner with a small wing on an open hazel eye",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "q": "How should I prepare?",
@@ -4056,11 +3923,7 @@
           },
           {
             "q": "Should I book before a big event?",
-            "a": "Plan ahead. Healing is visible, so avoid booking close to weddings, vacations, photo shoots, or major events."
-          },
-          {
-            "q": "Where is the studio?",
-            "a": "Tustin, CA, near Irvine and central Orange County."
+            "a": "Plan ahead. Healing is visible, so avoid booking close to weddings, vacations, photo shoots, or major events. Ask first if you work out heavily, swim often, or have lots of sun exposure planned."
           }
         ]
       },
@@ -4077,7 +3940,16 @@
             "label": "Frequently asked questions",
             "href": "/faqs"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },
@@ -4107,24 +3979,25 @@
           },
           {
             "title": "Non-surgical",
-            "text": "A cosmetic tattoo service. It does not grow or move hair."
+            "text": "A cosmetic tattoo service. It does not grow hair."
           },
           {
             "title": "Near Irvine",
-            "text": "Tustin, CA, in central Orange County."
+            "text": "A private studio in Tustin, central Orange County."
           }
         ]
       },
       {
         "type": "statement",
-        "heading": "Scalp micropigmentation helps create the look of fuller hair without surgery.",
+        "layout": "split",
+        "heading": "The look of fuller hair, without surgery.",
         "paragraphs": [
-          "Scalp micropigmentation, often called SMP, uses tiny pigment dots on the scalp to make thinning areas look denser. It does not grow new hair. It creates the appearance of more coverage by reducing the contrast between the scalp and existing hair.",
-          "It may help with thinning hair, visible scalp, soft hairline loss, sparse areas, or anywhere you want a more filled-in look."
+          "Scalp micropigmentation, often called SMP, is a cosmetic tattoo technique for the scalp. Tiny pigment dots mimic the look of natural follicles, so thinning or sparse areas look denser.",
+          "It does not grow new hair. It creates the appearance of more coverage by reducing the contrast between your scalp and existing hair."
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "A crown with diffuse thinning, healed SMP blended into the surrounding hair"
+          "shot": "Macro of healed SMP at the temple: tiny pigment dots between fine hairs, soft daylight"
         },
         "callout": {
           "tone": "voice",
@@ -4134,78 +4007,47 @@
       },
       {
         "type": "grid",
-        "heading": "What is scalp micropigmentation?",
-        "lede": "A cosmetic tattoo technique for the scalp, in four parts.",
-        "items": [
-          {
-            "title": "Tiny impressions",
-            "text": "Small pigment dots placed to mimic natural follicle density."
-          },
-          {
-            "title": "Density effect",
-            "text": "The scalp looks less visible through the hair."
-          },
-          {
-            "title": "Hairline planning",
-            "text": "The shape is planned around your features and hair pattern."
-          },
-          {
-            "title": "Custom softness",
-            "text": "Blended, not harsh or drawn on."
+        "layout": "bento",
+        "heading": "Who SMP can help.",
+        "lede": "For the look of more density, better scalp coverage or a cleaner hairline. The treatment area is planned in consultation.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Scalp micropigmentation before and after along a thinning part, from above",
+          "photo": {
+            "ref": "scalp-micropigmentation/02",
+            "alt": "Top of the head from above, before and after scalp micropigmentation: pale scalp along a thinning part, then shaded darker",
+            "detail": "Before and after"
           }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Who is scalp micropigmentation for?",
-        "lede": "Clients who want the appearance of more density, better scalp coverage, or a cleaner-looking hairline.",
-        "columns": 2,
+        },
         "items": [
           {
             "title": "Thinning hair",
-            "text": "If your scalp shows through, the impressions reduce the light contrast between scalp and hair."
+            "text": "Tiny impressions reduce the contrast where scalp shows through: at the crown, along a wide part or all over."
           },
           {
-            "title": "A softer or receding hairline",
-            "text": "If your hairline looks less defined than it used to, SMP can create a cleaner shape that stays believable."
+            "title": "A softer hairline",
+            "text": "If your hairline looks less defined than it used to, SMP may help create a cleaner shape that stays believable."
           },
           {
             "title": "Powders or hair fibers",
-            "text": "If you hide scalp visibility with temporary products, SMP may be a lower-maintenance option."
-          },
-          {
-            "title": "A non-surgical option",
-            "text": "SMP does not move or grow hair. It is a cosmetic density service."
+            "text": "If you use temporary products to hide your scalp, SMP may offer a lower-maintenance option."
           }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "What areas can SMP improve?",
-        "lede": "Every scalp is different. The treatment area is planned in consultation.",
-        "items": [
-          {
-            "title": "Hairline",
-            "text": "A cleaner-looking frame around the face."
-          },
-          {
-            "title": "Crown",
-            "text": "Less visible scalp through the crown."
-          },
-          {
-            "title": "Part line",
-            "text": "Softens a wide or sparse part line."
-          },
-          {
-            "title": "Diffuse thinning",
-            "text": "A more even density effect where the scalp shows through."
-          }
-        ]
+        ],
+        "callout": {
+          "tone": "caution",
+          "title": "My advice",
+          "text": "If you are not sure whether your scalp is ready, ask first. It is always better to wait and do the service at the right time than to work over irritated skin. If you are considering surgery, speak with a medical provider."
+        }
       },
       {
         "type": "compare",
-        "heading": "How is SMP different from hair transplant surgery?",
-        "lede": "Completely different things. SMP adds pigment for the look of density; it does not move hair, grow hair, or change the number of hair follicles. Surgery moves hair follicles from one area to another.",
+        "layout": "center",
+        "heading": "SMP is not a hair transplant.",
+        "lede": "Completely different things: SMP adds pigment for the look of density, while surgery moves hair follicles from one area to another.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Close-up: a gloved fingertip with soft brown pigment held against the client's hair to match the shade"
+        },
         "sides": [
           {
             "title": "Scalp micropigmentation",
@@ -4214,11 +4056,7 @@
               "Creates the look of hair density",
               "Does not grow new hair",
               "Non-surgical, custom pigment placement"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed SMP at the hairline, close enough to see the individual impressions"
-            }
+            ]
           },
           {
             "title": "Hair transplant surgery",
@@ -4227,38 +4065,35 @@
               "Moves hair follicles",
               "Healing and results vary by procedure",
               "Should be discussed with a licensed medical provider"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "An untreated scalp with diffuse thinning, photographed in daylight for planning"
-            }
+            ]
           }
         ]
       },
       {
         "type": "sequence",
-        "heading": "How many SMP sessions may be needed?",
-        "lede": "It depends on the area, density goal, hairline design, and how your scalp holds pigment.",
+        "layout": "rail",
         "kind": "steps",
+        "heading": "How many sessions you may need.",
+        "lede": "It depends on the area, density goal, hairline design and how your scalp holds pigment.",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "Hairline design drawn on the scalp before the first SMP session"
+          "ratio": "4 / 5",
+          "shot": "A hairline design drawn in soft pencil on the forehead before the first session, face-on"
         },
         "items": [
           {
             "label": "One",
             "title": "Consultation",
-            "text": "We review the treatment area, hairline, scalp tone, hair color, and density goal."
+            "text": "We review the treatment area, hairline, scalp tone, hair color and density goal."
           },
           {
             "label": "Two",
             "title": "First session",
-            "text": "Starts building the density effect and shows how the area responds."
+            "text": "Starts building the density effect and shows how your scalp responds."
           },
           {
             "label": "Three",
             "title": "Additional sessions",
-            "text": "May be needed to build depth, blend the area, and refine softness."
+            "text": "May be needed to build depth, blend the area and refine softness."
           }
         ],
         "callout": {
@@ -4269,153 +4104,89 @@
       },
       {
         "type": "grid",
-        "heading": "What can the results look like?",
-        "lede": "Soft and believable, never a flat block of color.",
-        "items": [
-          {
-            "title": "More density",
-            "text": "Less visible scalp through thinning areas."
-          },
-          {
-            "title": "Cleaner hairline",
-            "text": "More defined, while still matching your face."
-          },
-          {
-            "title": "Better blend",
-            "text": "Pigment chosen and placed to work with your hair and scalp tone."
-          },
-          {
-            "title": "Natural softness",
-            "text": "Softened and layered, not harsh or too dark."
-          }
-        ]
-      },
-      {
-        "type": "grid",
-        "heading": "Who should ask before booking SMP?",
-        "lede": "Ask first if anything about your scalp or health may affect the appointment.",
-        "columns": 2,
-        "items": [
-          {
-            "title": "Scalp concerns",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Crown of a scalp in even light, checked for flaking and open skin before booking"
-            },
-            "bullets": [
-              "Active scalp irritation",
-              "Open skin, sores, or sunburn on the scalp",
-              "Active flaking or a skin condition in the area",
-              "Recent scalp treatments, injections, or hair transplant work"
-            ]
-          },
-          {
-            "title": "Health and healing concerns",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Consultation form for SMP on the desk, the health questions page open"
-            },
-            "bullets": [
-              "You are pregnant or nursing",
-              "You take blood thinners",
-              "You are prone to keloids",
-              "A medical condition that affects healing"
-            ]
-          }
-        ],
-        "callout": {
-          "tone": "caution",
-          "title": "My advice",
-          "text": "If you are not sure whether your scalp is ready, ask first. It is always better to wait and do the service at the right time than to work over irritated skin. If you are considering surgery, speak with a medical provider."
-        }
-      },
-      {
-        "type": "statement",
-        "heading": "Pricing and consultation.",
-        "paragraphs": [
-          "Pricing depends on time, because SMP treatment areas vary. A consultation helps estimate the area, density goal, and session plan."
-        ],
-        "image": {
-          "ratio": "3 / 2",
-          "shot": "A consultation: examining the crown under daylight to plan the treatment area"
-        },
-        "callout": {
-          "tone": "note",
-          "title": "Scalp micropigmentation",
-          "text": "$500 per hour. Confirm current pricing when booking, since rates are subject to change."
-        }
-      },
-      {
-        "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: the service in detail, how the studio stays safe, and the questions clients ask most.",
-        "columns": 3,
+        "lede": "Three things worth reading before a consultation: the service itself, who should ask first, and how to care for your scalp as it heals.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "The treatment chair made up for an SMP client: fresh barrier on the headrest, lamp angled low"
+        },
         "items": [
           {
             "title": "Scalp micropigmentation",
-            "text": "Tiny pigment dots that read as closely shaved hair.",
+            "text": "Pricing and before-and-after photos of the service.",
             "href": "/services/scalp-micropigmentation",
             "linkLabel": "Read"
           },
           {
             "title": "Safety",
-            "text": "How the studio stays clean and private, and who should ask first.",
+            "text": "Who should ask first, and how the studio stays clean and private.",
             "href": "/safety",
             "linkLabel": "Read"
           },
           {
-            "title": "Frequently asked questions",
-            "text": "Short answers to the questions clients ask most.",
-            "href": "/faqs",
+            "title": "Aftercare",
+            "text": "What is normal while your scalp heals, and what to avoid.",
+            "href": "/aftercare",
             "linkLabel": "Read"
           }
         ]
       },
       {
         "type": "faq",
-        "heading": "Scalp micropigmentation questions.",
-        "lede": "The ones asked most, answered short.",
+        "layout": "split",
+        "heading": "SMP questions.",
+        "lede": "Asked most before a first consultation, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "A client smiling at her crown in a hand mirror, soft window light"
+        },
         "items": [
           {
-            "q": "What is scalp micropigmentation?",
-            "a": "A cosmetic tattoo service that places tiny pigment impressions on the scalp to create the look of fuller hair density."
-          },
-          {
-            "q": "Who is scalp micropigmentation for?",
-            "a": "Clients who want the look of more density in thinning areas, a cleaner hairline, or less visible scalp contrast."
+            "q": "Will SMP look natural?",
+            "a": "It should look soft and believable: small impressions that blend with your existing hair and skin tone, not a flat block of color."
           },
           {
             "q": "Does SMP grow hair?",
             "a": "No. It creates the cosmetic appearance of hair density by adding small pigment impressions to the scalp."
           },
           {
-            "q": "How is SMP different from hair transplant surgery?",
-            "a": "SMP is a cosmetic tattoo service; surgery is a medical procedure that moves hair follicles. Speak with a medical provider if you are considering surgery."
+            "q": "Does SMP fade?",
+            "a": "Yes, gradually. Maintenance depends on the treatment area, density, sun exposure and how your scalp holds pigment. Sun protection helps reduce fading, and touch-ups can refresh density and softness."
           },
           {
-            "q": "How many SMP sessions do I need?",
-            "a": "Not without seeing your scalp and goals. It depends on the size of the area, the density needed, and how your scalp holds pigment."
+            "q": "Who should ask before booking SMP?",
+            "a": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, have active scalp irritation, or have a skin condition in the treatment area. Also ask if you recently had scalp treatments, injections, or hair transplant work."
           },
           {
-            "q": "How much does scalp micropigmentation cost?",
-            "a": "It is listed at $500 per hour. Confirm current pricing when booking."
+            "q": "How much does SMP cost?",
+            "a": "It is listed at $500 per hour. Pricing depends on time, because treatment areas vary. Confirm current pricing when booking."
           }
         ]
       },
       {
         "type": "cta",
         "heading": "Thinking about scalp micropigmentation?",
-        "text": "Book a consultation in Tustin. I can look at your hairline, thinning areas and density goals, then help you decide whether SMP is the right fit.",
+        "text": "Book a consultation in Tustin. I can look at your hairline, thinning areas and density goals, help you decide whether SMP is the right fit, and estimate a session plan.",
         "links": [
           {
             "label": "Book a consultation",
             "href": "/contact"
           },
           {
-            "label": "Scalp micropigmentation",
-            "href": "/services/scalp-micropigmentation"
+            "label": "How long it lasts",
+            "href": "/learn/how-long-it-lasts"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },

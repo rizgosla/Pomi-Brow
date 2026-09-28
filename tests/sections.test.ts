@@ -261,9 +261,6 @@ function authoredPages(): AuthoredPage[] {
   ];
 }
 
-/** A page is in the new format once any of its sections names a layout. */
-const migrated = (p: AuthoredPage) => p.sections.some((s: any) => s.layout !== undefined);
-
 test("every authored page validates and links only to routes that exist", () => {
   const routes = knownRoutes();
   const authored = authoredPages();
@@ -277,14 +274,25 @@ test("every authored page validates and links only to routes that exist", () => 
   }
 });
 
-test("every page in the new format keeps the editorial rhythm and uses its photos correctly", () => {
+test("every authored page keeps the editorial rhythm and uses its photos correctly", () => {
   const catalogue: Catalogue = existsSync("src/assets/gallery/catalogue.json")
     ? JSON.parse(readFileSync("src/assets/gallery/catalogue.json", "utf8"))
     : {};
-  for (const page of authoredPages().filter(migrated)) {
+  for (const page of authoredPages()) {
     const rhythm = pageRhythmProblems(page.sections, { headerSide: "right", learn: page.learn });
     assert.deepEqual(rhythm, [], `${page.slug}: ${rhythm.map((p) => `#${p.index} ${p.message}`).join("; ")}`);
     const photos = photoProblems(page, catalogue, page.cover ? [page.cover] : []);
     assert.deepEqual(photos, [], `${page.slug}: ${photos.map((p) => `#${p.index} ${p.message}`).join("; ")}`);
+  }
+});
+
+test("every authored page names a layout for each section it composes", () => {
+  // resolveLayout() has fallbacks for a section written before the layout library, but an
+  // authored page chooses: a fallback on a finished page means a section nobody placed.
+  for (const page of authoredPages()) {
+    page.sections.forEach((s: any, i: number) => {
+      if (s.type === "facts" || s.type === "cta") return;
+      assert.ok(s.layout, `${page.slug} #${i} (${s.type} "${s.heading ?? ""}") names no layout`);
+    });
   }
 });
