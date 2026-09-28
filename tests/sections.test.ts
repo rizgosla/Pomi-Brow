@@ -104,6 +104,10 @@ test("resolveLayout keeps an authored layout that fits and falls back when its p
   assert.equal(resolveLayout({ type: "statement", heading: "h", layout: "wide", image: frame("s", "5 / 2"), paragraphs: ["p"] }), "wide");
   assert.equal(resolveLayout({ type: "faq", layout: "split", items: [{ q: "q", a: "a" }] }), "grid");
   assert.equal(resolveLayout({ type: "cta", heading: "h", text: "t", image: frame("s", "1 / 1") }), "signoff");
+  // The Studio pre-fills a new section's photo with only a ratio; that is not a photo yet.
+  const prefilled = { ratio: "3 / 2" } as unknown as ImageSlot;
+  assert.equal(resolveLayout({ type: "cta", heading: "h", text: "t", image: prefilled }), "band");
+  assert.equal(resolveLayout({ type: "grid", heading: "h", image: prefilled, items: four }), "tiles");
 });
 
 test("assignSides alternates away from the header photo and respects an authored side", () => {

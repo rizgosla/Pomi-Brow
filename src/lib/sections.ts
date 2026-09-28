@@ -204,6 +204,14 @@ export function effectiveRatio(role: SlotRole, authored?: Ratio): Ratio {
   return authored && allowed.includes(authored) ? authored : allowed[0];
 }
 
+/**
+ * Whether a slot is really there. The Studio pre-fills a new section's photo with only its
+ * default ratio; until it has a shot brief or a photo it must not count, or an empty section
+ * would switch to a photo layout.
+ */
+export const hasSlot = (slot?: Partial<ImageSlot> | null): slot is ImageSlot =>
+  Boolean(slot && (slot.shot || slot.photo?.ref));
+
 export const isBlockSection = (s: Section): s is BlockSection =>
   s.type === "grid" || s.type === "sequence" || s.type === "compare";
 
@@ -220,17 +228,17 @@ export function resolveLayout(s: Section): string {
     case "facts":
       return "facts";
     case "statement":
-      if (!s.image) return "solo";
+      if (!hasSlot(s.image)) return "solo";
       return s.layout === "wide" ? "wide" : "split";
     case "faq":
-      return s.layout === "split" && s.image ? "split" : "grid";
+      return s.layout === "split" && hasSlot(s.image) ? "split" : "grid";
     case "cta":
-      return s.image ? "signoff" : "band";
+      return hasSlot(s.image) ? "signoff" : "band";
     default: {
       const n = blockCount(s);
-      const fits = (l: BlockLayout) => n >= LAYOUTS[l].min && n <= LAYOUTS[l].max && (LAYOUTS[l].media !== "required" || Boolean(s.image));
+      const fits = (l: BlockLayout) => n >= LAYOUTS[l].min && n <= LAYOUTS[l].max && (LAYOUTS[l].media !== "required" || hasSlot(s.image));
       if (s.layout && BLOCK_LAYOUTS.includes(s.layout) && fits(s.layout)) return s.layout;
-      if (s.image && fits("split")) return "split";
+      if (hasSlot(s.image) && fits("split")) return "split";
       if (s.type === "sequence" && fits("rail")) return "rail";
       if (fits("tiles")) return "tiles";
       return "rail";
@@ -312,9 +320,9 @@ export function pageSlots(page: Pick<SectionPage, "lead" | "sections">): { role:
   const out: { role: SlotRole; slot: ImageSlot; index: number }[] = [];
   if (page.lead) out.push({ role: "lead", slot: page.lead, index: -1 });
   page.sections.forEach((s, index) => {
-    if ("image" in s && s.image) out.push({ role: sectionImageRole(s), slot: s.image, index });
-    if (s.type === "grid") s.items.forEach((item) => item.image && out.push({ role: "item", slot: item.image, index }));
-    if (s.type === "compare") s.sides.forEach((side) => side.image && out.push({ role: "item", slot: side.image, index }));
+    if ("image" in s && hasSlot(s.image)) out.push({ role: sectionImageRole(s), slot: s.image, index });
+    if (s.type === "grid") s.items.forEach((item) => hasSlot(item.image) && out.push({ role: "item", slot: item.image, index }));
+    if (s.type === "compare") s.sides.forEach((side) => hasSlot(side.image) && out.push({ role: "item", slot: side.image, index }));
   });
   return out;
 }
@@ -378,7 +386,7 @@ export function validateSections(sections: Section[]): Problem[] {
         if (!Array.isArray(s.items) || s.items.length === 0) add("faq needs items");
         else if (s.items.some((i: any) => !i?.q || !i?.a)) add("every faq item needs q and a");
         if (s.layout !== undefined && s.layout !== "grid" && s.layout !== "split") add('faq layout must be "grid" or "split"');
-        if (s.layout === "split" && !s.image) add("a split faq needs an image");
+        if (s.layout === "split" && !hasSlot(s.image)) add("a split faq needs an image");
         break;
       case "cta":
         if (!s.text) add("cta needs text");
@@ -391,7 +399,7 @@ export function validateSections(sections: Section[]): Problem[] {
       if (!spec) add(`unknown layout "${s.layout}"`);
       else {
         if (n < spec.min || n > spec.max) add(`${s.layout} holds ${spec.min} to ${spec.max} blocks, not ${n}`);
-        if (spec.media === "required" && !s.image) add(`${s.layout} needs a section image`);
+        if (spec.media === "required" && !hasSlot(s.image)) add(`${s.layout} needs a section image`);
       }
     }
 
@@ -435,9 +443,9 @@ export function rhythmKey(s: Section): string {
 const isSplitStyle = (key: string) => key === "split" || key === "faq:split";
 
 function hasImage(s: Section): boolean {
-  if ("image" in s && s.image) return true;
-  if (s.type === "grid") return s.items.some((i) => Boolean(i.image));
-  if (s.type === "compare") return s.sides.some((side) => Boolean(side.image));
+  if ("image" in s && hasSlot(s.image)) return true;
+  if (s.type === "grid") return s.items.some((i) => hasSlot(i.image));
+  if (s.type === "compare") return s.sides.some((side) => hasSlot(side.image));
   return false;
 }
 
