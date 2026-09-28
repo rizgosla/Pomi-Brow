@@ -3564,16 +3564,17 @@
       },
       {
         "type": "grid",
-        "layout": "bento",
+        "layout": "ledger",
         "heading": "Service by service.",
         "lede": "The brow list is for microblading, ombre powder brows, and microblading + shading. The eye list is for eyeliner and lash enhancement.",
         "image": {
-          "ratio": "1 / 1",
-          "shot": "A sparse brow mapped under a ruler, then the finished brow",
+          "ratio": "5 / 2",
+          "shot": "A finished brow close-up, soft strokes, even daylight",
           "photo": {
-            "ref": "microblading/03",
-            "alt": "Microblading before and after: a sparse brow under a brow-mapping ruler, then a full brow of hair strokes",
-            "detail": "Before and after"
+            "ref": "microblading/01",
+            "alt": "Microblading close-up: fine hair strokes through the brow",
+            "focus": "50% 50%",
+            "detail": "Close-up"
           }
         },
         "items": [
