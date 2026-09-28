@@ -4,7 +4,7 @@
     "title": "Safety.",
     "lede": "A private studio, a clean setup, and single-use tools opened in front of you. What happens before, during and after, and when to ask first.",
     "metaLabel": "Medical clearance",
-    "meta": "Your healthcare provider gives it. I can answer questions about the appointment itself.",
+    "meta": "From your healthcare provider.",
     "lead": {
       "ratio": "4 / 5",
       "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway"
@@ -87,7 +87,7 @@
         "heading": "Clean before every client.",
         "lede": "Clean surfaces, fresh barriers and a careful setup reduce contact with the treatment area and the tools.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Disposable barriers going onto the bed and tray before an appointment"
         },
         "items": [
@@ -143,21 +143,21 @@
       },
       {
         "type": "grid",
-        "layout": "ledger",
+        "layout": "feature",
         "heading": "Your preparation matters too.",
         "lede": "A safe appointment is not only the studio. Your skin, your timing, your health history and your aftercare all count.",
         "image": {
-          "ratio": "5 / 2",
+          "ratio": "3 / 2",
           "shot": "A health questionnaire, a pen and an open calendar on the studio desk, shot from above"
         },
         "items": [
           {
-            "title": "Arrive with healthy skin",
-            "text": "Do not book over sunburn, cuts, irritation, breakouts, cold sores or open skin."
-          },
-          {
             "title": "Share health details",
             "text": "Medications, allergies, healing concerns or medical conditions, before we start."
+          },
+          {
+            "title": "Arrive with healthy skin",
+            "text": "Do not book over sunburn, cuts, irritation, breakouts, cold sores or open skin."
           },
           {
             "title": "Plan your timing",
@@ -167,21 +167,16 @@
             "title": "Follow aftercare",
             "text": "It protects the treated area and gives the best healed result."
           }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "Before your appointment",
-          "text": "Ask first if you recently had filler, Botox, laser, a chemical peel, waxing, brow or lip treatments, an eye procedure, scalp treatments, or other cosmetic work near the area."
-        }
+        ]
       },
       {
         "type": "grid",
         "layout": "center",
         "heading": "Who should ask first.",
-        "lede": "Many of these clients are still good candidates. Timing is what matters, so ask before booking if any apply.",
+        "lede": "Some clients may still be good candidates, but timing matters.",
         "image": {
-          "ratio": "4 / 5",
-          "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it"
+          "ratio": "1 / 1",
+          "shot": "Pomi on a phone call at the studio, answering a question before a client books"
         },
         "items": [
           {
@@ -212,7 +207,7 @@
       {
         "type": "grid",
         "layout": "tiles",
-        "heading": "By service.",
+        "heading": "Safety by service.",
         "lede": "Each service has its own timing and preparation. Ask first if you are unsure.",
         "items": [
           {
@@ -230,7 +225,7 @@
             }
           },
           {
-            "title": "Eyeliner and lash enhancement",
+            "title": "Eyes",
             "text": "Eye irritation, recent eye surgery, certain eye medications, lash extensions or sensitivity around the eyes.",
             "image": {
               "ratio": "1 / 1",
@@ -243,7 +238,7 @@
             }
           },
           {
-            "title": "Lip tint",
+            "title": "Lips",
             "text": "A cold sore history or an active one, cracked lips, recent filler or treatments around the mouth.",
             "image": {
               "ratio": "1 / 1",
@@ -256,7 +251,7 @@
             }
           },
           {
-            "title": "Scalp micropigmentation",
+            "title": "Scalp",
             "text": "Scalp irritation, open skin, sunburn, flaking, recent scalp treatments or hair transplant work.",
             "image": {
               "ratio": "1 / 1",
@@ -294,7 +289,7 @@
             "bullets": [
               "Unsure about an aftercare product",
               "Healing looks different than expected",
-              "Before active skincare near healed pigment",
+              "Before using active skincare near healed pigment",
               "For signs of infection, contact a physician"
             ]
           }
@@ -305,7 +300,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how to prepare, what healing looks like, and the questions clients ask most.",
+        "lede": "How to prepare, how it heals, and the common questions.",
         "image": {
           "ratio": "4 / 5",
           "shot": "Brow with fine strokes at the front and shading through the tail",
@@ -341,7 +336,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Safety questions.",
-        "lede": "The ones asked most, answered short.",
+        "lede": "Needles, the studio, and who should ask first.",
         "image": {
           "ratio": "1 / 1",
           "shot": "The treatment room ready for one client: lamp on, the bed covered in a fresh barrier"
@@ -452,22 +447,22 @@
             "text": "The color looks darker, sharper, brighter or more intense than the healed result. This is normal, and it is temporary."
           },
           {
-            "label": "Days 4 to 7",
+            "label": "Days 2 to 5",
             "title": "Dry and flaky",
             "text": "Dryness, tightness, light flaking or temporary patchiness. Keep it dry and leave it alone; the color underneath is setting."
           },
           {
-            "label": "Around day 10",
+            "label": "Days 6 to 10",
             "title": "Too light",
             "text": "The color looks like it disappeared. It has not. It is under a new layer of skin and will come back."
           },
           {
-            "label": "Week 4",
+            "label": "Weeks 2 to 4",
             "title": "The true color",
             "text": "Healed skin turns clear and the real shade shows, softer and more natural than day one."
           },
           {
-            "label": "Week 6",
+            "label": "Touch-up",
             "title": "The perfecting touch-up",
             "text": "Skin heals unevenly, so some strokes need a second pass. This appointment refines shape and color and finishes the work."
           }
@@ -479,7 +474,7 @@
         "heading": "What to avoid while it heals.",
         "lede": "Follow the instructions for your service. In general, avoid anything that can irritate, soak, contaminate or fade the area.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin"
         },
         "items": [
@@ -535,12 +530,11 @@
             "title": "What is normal",
             "image": {
               "ratio": "1 / 1",
-              "shot": "A fresh dark brow beside an open eye, balm at the brow head",
+              "shot": "Soft brows shaded through the tail, client resting on white bedding, head turned",
               "photo": {
-                "ref": "microblading-shading/06",
-                "alt": "A freshly done dark brow with fine strokes at the front beside an open brown eye, balm at the brow head",
-                "focus": "0% 50%",
-                "detail": "Fresh"
+                "ref": "microblading-shading/05",
+                "alt": "Soft brows with fine strokes at the front and shading through the tail, client lying on white bedding with eyes closed",
+                "detail": "Close-up"
               }
             },
             "bullets": [
@@ -554,7 +548,7 @@
             "title": "What to avoid",
             "image": {
               "ratio": "1 / 1",
-              "shot": "A brow healed at week six, strokes soft and natural, close-up in even daylight"
+              "shot": "Brow pencil and an exfoliating toner set aside, capped, beside a mirror"
             },
             "bullets": [
               "Picking flakes or dry skin",
@@ -684,7 +678,7 @@
         "lede": "Touch-ups complete the process, and later keep the color fresh.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Pomi refining a healed brow at the six-week touch-up, shot close from above in soft light"
+          "shot": "Pomi refining a healed brow at the touch-up, shot close from above in soft light"
         },
         "items": [
           {
@@ -715,7 +709,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how the studio stays safe, the healing timeline in detail, and the questions clients ask most.",
+        "lede": "How the studio stays safe, and healing stage by stage.",
         "image": {
           "ratio": "4 / 5",
           "shot": "Microblading before and after: sparse natural hairs, then a fuller brow of strokes",
@@ -734,8 +728,8 @@
             "linkLabel": "Read"
           },
           {
-            "title": "The healing timeline",
-            "text": "Day 1 to week 6 in detail, and when to reach out.",
+            "title": "PMU healing timeline",
+            "text": "Day 1 to the touch-up in detail, and when to reach out.",
             "href": "/learn/pmu-healing-timeline",
             "linkLabel": "Read"
           },
@@ -751,7 +745,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Aftercare questions.",
-        "lede": "The ones asked most, answered short.",
+        "lede": "Color, flaking, makeup, and when to ask.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Smiling client lying down, eyes closed, soft brows with fine strokes at the front",

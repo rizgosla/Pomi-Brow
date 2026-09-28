@@ -708,22 +708,26 @@
     }
   }
 
-  /* center: block, photograph, block, level on the photograph's middle (ProPublica's
-     centre-anchored objects). The photograph is its own part, first in the document so a phone
-     shows it first; here it takes the middle track of the body's row, and the pair of blocks
-     runs the same three tracks around it. The pair is centred on the photograph as one piece and
-     its two tiles match heights, so their edges line up across the photograph instead of each
-     floating to its own middle. The pair's box passes pointer events through to the photograph
-     it overlaps. */
+  /* center: block, photograph, block (ProPublica's centre-anchored objects), the blocks level
+     with the photograph's top edge. The photograph is its own part, first in the document so a
+     phone shows it first; here it takes the middle track of the body's row, and the pair of
+     blocks runs the same three tracks around it. The two tiles match heights, so their edges
+     line up across the photograph. The pair's box passes pointer events through to the
+     photograph it overlaps. */
   .l--center {
     --l-center-cols: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 1fr);
+    /* A tighter head gap keeps a centre section with its note on one laptop screen (the
+       client's ask for "Who should ask first"). */
+    --l-head-gap: var(--space-6);
+    --l-gap: var(--space-5);
     column-gap: var(--space-6);
     grid-template-columns: var(--l-center-cols);
     grid-template-areas:
       "head head head"
       "body body body"
       "note note note";
-    align-items: center;
+    /* The pair hangs from the photograph's top edge rather than floating at its middle. */
+    align-items: start;
   }
   .l--center > .l__media {
     grid-area: body;
