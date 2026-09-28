@@ -10,6 +10,7 @@
 import type { Section } from "../../lib/sections";
 import type { SiteSettings } from "../../lib/content";
 import { assignSides, effectiveRatio, isBlockSection, resolveLayout } from "../../lib/sections";
+import { keepHyphenated } from "../../lib/text";
 import Facts from "./Facts.astro";
 import Statement from "./Statement.astro";
 import Blocks from "./Blocks.astro";
@@ -74,7 +75,7 @@ const sides = assignSides(sections, "right");
     const id = slug(s.heading);
     const head = (
       <div class="section-head slide__head reveal">
-        <h2 id={`${id}-heading`}>{s.heading}</h2>
+        <h2 id={`${id}-heading`}>{keepHyphenated(s.heading).map((p) => (p.keep ? <span class="nobr">{p.text}</span> : p.text))}</h2>
         {s.lede && <p class="lede">{s.lede}</p>}
       </div>
     );

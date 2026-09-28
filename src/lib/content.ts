@@ -136,6 +136,11 @@ const gallery = import.meta.glob<{ default: ImageMetadata }>("/src/assets/galler
   eager: true,
 });
 
+/** A service's display title from its slug (also a gallery folder name), for photo captions. */
+export function serviceTitle(slug?: string): string | undefined {
+  return slug ? serviceTitles[slug] : undefined;
+}
+
 const serviceTitles: Record<string, string> = Object.fromEntries(
   (seedServices as any[]).map((s) => [s.slug, s.title])
 );

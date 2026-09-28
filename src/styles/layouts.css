@@ -173,11 +173,19 @@
   letter-spacing: -0.03em;
 }
 
-/* Several links under one block: a short inline run, each at the full 44px touch height. */
+/* Several links under one block: a short inline run, each at the full 44px touch height, on the
+   block's floor like a single link. */
 .l-links {
   display: flex;
   flex-wrap: wrap;
   column-gap: var(--space-5);
+  margin-top: auto;
+}
+
+/* A hyphenated word stays whole: balanced headings otherwise break "touch-ups" at the hyphen in
+   a narrow column. See keepHyphenated() in src/lib/text.ts. */
+.nobr {
+  white-space: nowrap;
 }
 
 /* One link makes the whole block the target. Its ::after covers the block, so the hit area is
@@ -233,15 +241,12 @@
 /* tiles: equal boxes in a row (image cards, parallel points)                                  */
 /* ------------------------------------------------------------------------------------------ */
 
-/* Boxes size to their words. Only a text-only group (--even) matches its siblings' height:
-   photographs already line the row up, and stretching under them opens empty floors. */
+/* Boxes in one row share a height, so the row ends on one line; each box's links sit on its
+   floor, level with its neighbours'. Tiles only ever hold short parallel items (25 words or
+   fewer, balanced by the rhythm check), so the shared height never opens a large empty floor. */
 .l-tiles {
   display: grid;
   gap: var(--space-5);
-  align-items: start;
-}
-
-.l-tiles--even {
   align-items: stretch;
 }
 
@@ -518,14 +523,16 @@
      rectangle is the composition. */
   .l--bento {
     column-gap: var(--space-5);
-    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    /* The anchor photograph is square and sets the height of the two rows beside it; at a full
+       third it made each short box twice as tall as its words. */
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr);
     grid-template-areas:
       "head head"
       "media body"
       "note note";
   }
   .l--bento[data-side="right"] {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 2fr) minmax(0, 0.8fr);
     grid-template-areas:
       "head head"
       "body media"
@@ -552,6 +559,12 @@
   }
   .l-feature > :not(:first-child) {
     grid-column: 2;
+  }
+  /* With one companion, it settles on the lead's floor, level with the lead's words under its
+     photograph, rather than hanging at the top beside the picture. */
+  .l-feature > :nth-child(2):last-child {
+    grid-row: 1 / -1;
+    align-self: end;
   }
   .l--feature[data-side="right"] .l-feature {
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);

@@ -889,15 +889,15 @@
         "items": [
           {
             "title": "Softens over time",
-            "text": "Pigment fades gradually. Touch-ups keep color, shape and definition."
+            "text": "Pigment fades gradually. Touch-ups keep color and shape."
           },
           {
             "title": "By service",
-            "text": "Brows, eyes, lips and scalp each fade at their own speed."
+            "text": "Brows, eyes, lips and scalp fade at different speeds."
           },
           {
             "title": "Touch-up planning",
-            "text": "When to refresh, and what a touch-up can adjust."
+            "text": "When to refresh, and what a touch-up adjusts."
           },
           {
             "title": "Near Irvine",
@@ -907,92 +907,120 @@
       },
       {
         "type": "statement",
+        "layout": "split",
         "heading": "Months to years, but not forever.",
         "paragraphs": [
-          "Permanent makeup fades gradually because pigment softens as your skin heals, renews and reacts to daily life. Each service fades at its own speed.",
-          "A touch-up refreshes color, refines shape and keeps the result balanced. Your timeline depends on skin type, aftercare, sun exposure, skincare products, and how your skin holds pigment."
+          "Permanent makeup fades gradually: pigment softens as your skin heals, renews and meets daily life, and each service fades at its own speed.",
+          "A touch-up refreshes color, refines shape and keeps the result balanced. Your timeline depends on skin type, aftercare, sun, skincare and how your skin holds pigment."
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Brows a year on, softened and ready for a refresh"
+          "shot": "Soft brows with fine strokes at the front, client smiling",
+          "photo": {
+            "ref": "microblading-shading/03",
+            "alt": "Soft brows with fine strokes at the front on a smiling client",
+            "focus": "55% 50%",
+            "detail": "Close-up"
+          }
         },
         "callout": {
           "tone": "note",
           "title": "Quick answer by service",
-          "text": "Brows usually need regular maintenance: facial skin renews, and brows meet skincare and sun. Eyeliner and lash enhancement fade more gradually. Lip tint depends on natural lip color, lifestyle and healing. Scalp micropigmentation depends on area, density and sun."
+          "text": "Brows usually need regular maintenance, since facial skin renews and meets skincare and sun. Eyeliner and lash enhancement fade more gradually. Lip tint and scalp micropigmentation vary with healing, lifestyle and sun."
         }
       },
       {
-        "type": "sequence",
+        "type": "grid",
+        "layout": "tiles",
         "heading": "How long each service can last.",
         "lede": "General expectations. Your healed result and maintenance schedule can vary.",
-        "kind": "timeline",
-        "image": {
-          "ratio": "4 / 5",
-          "shot": "Hair strokes at the touch-up, fresh beside the softened originals"
-        },
         "items": [
           {
-            "label": "Microblading",
-            "title": "Hair strokes soften over time",
-            "text": "Fine hair-like strokes are delicate and soften over time, especially with oily skin, sun, exfoliating skincare or limited aftercare.",
-            "bullets": [
-              "Best for a natural brow-hair look",
-              "Touch-ups refresh shape and color"
+            "title": "Brows",
+            "text": "Strokes and shading soften over time, faster with oily skin, sun or strong skincare.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Fine hair strokes beside a closed eye",
+              "photo": {
+                "ref": "microblading/05",
+                "alt": "Fine microblading hair strokes beside a closed eye",
+                "detail": "Close-up"
+              }
+            },
+            "links": [
+              {
+                "label": "Microblading",
+                "href": "/services/microblading"
+              },
+              {
+                "label": "Powder brows",
+                "href": "/services/ombre-powder-brows"
+              },
+              {
+                "label": "Microblading and shading",
+                "href": "/services/microblading-shading"
+              }
             ]
           },
           {
-            "label": "Powder brows",
-            "title": "Soft shading holds a fuller look",
-            "text": "A soft shaded finish that can look fuller than microblading alone. A fit for a soft makeup look.",
-            "bullets": [
-              "Best for soft, filled-in definition",
-              "Touch-ups maintain density and balance"
+            "title": "Eyes",
+            "text": "Eyeliner softens but keeps its definition. Lash enhancement starts subtle, so fading shows less.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Thin liner with a small wing on an open eye",
+              "photo": {
+                "ref": "eyeliner/03",
+                "alt": "Thin eyeliner with a small wing on an open hazel eye",
+                "detail": "Close-up"
+              }
+            },
+            "links": [
+              {
+                "label": "Eyeliner",
+                "href": "/services/eyeliner"
+              },
+              {
+                "label": "Lash enhancement",
+                "href": "/services/lash-enhancement"
+              }
             ]
           },
           {
-            "label": "Microblading and shading",
-            "title": "Hair strokes plus soft density",
-            "text": "Fine strokes with powder shading, fuller than microblading alone.",
-            "bullets": [
-              "Best for natural detail with added fullness",
-              "Touch-ups refine both strokes and shading"
+            "title": "Lips",
+            "text": "Lips can heal lighter than they first look. The final color depends on lip tone and aftercare.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lip tint before and after",
+              "photo": {
+                "ref": "lip-tint/01",
+                "alt": "Lip tint before and after: pale lips, then even rosy pink",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Lip tint",
+                "href": "/services/lip-tint"
+              }
             ]
           },
           {
-            "label": "Eyeliner",
-            "title": "Softens, but keeps definition",
-            "text": "Pigment along the lash line gives lasting definition. It softens over time and may need refreshing, depending on the intensity you want.",
-            "bullets": [
-              "Best if you want less daily eyeliner",
-              "A softer liner fades more naturally"
-            ]
-          },
-          {
-            "label": "Lash enhancement",
-            "title": "Subtle color, soft fading",
-            "text": "Pigment close to the lash line for a fuller-looking lash base. Subtle to begin with, so fading is less noticeable than a dramatic liner.",
-            "bullets": [
-              "Best for natural definition without a visible liner",
-              "Maintenance depends on softness and retention"
-            ]
-          },
-          {
-            "label": "Lip tint",
-            "title": "Softens as it heals, fades over time",
-            "text": "Soft pigment improves lip color and definition. Lips can heal lighter than they first look; the final color depends on lip tone, aftercare, lifestyle and retention.",
-            "bullets": [
-              "Best for soft everyday lip color",
-              "Touch-ups refine color and shape"
-            ]
-          },
-          {
-            "label": "Scalp micropigmentation",
-            "title": "Density maintained with care",
-            "text": "Tiny pigment impressions give the look of fuller density. Upkeep depends on area, density, sun, and how your scalp holds pigment.",
-            "bullets": [
-              "Best for thinning, contrast and hairline definition",
-              "Sun protection reduces fading; touch-ups refresh density"
+            "title": "Scalp",
+            "text": "Upkeep depends on area, density and sun. Sun protection slows fading; touch-ups refresh density.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Scalp micropigmentation before and after at the crown",
+              "photo": {
+                "ref": "scalp-micropigmentation/01",
+                "alt": "Scalp micropigmentation before and after: a thin crown, then a denser one",
+                "detail": "Before and after"
+              }
+            },
+            "links": [
+              {
+                "label": "Scalp micropigmentation",
+                "href": "/services/scalp-micropigmentation"
+              }
             ]
           }
         ],
@@ -1004,83 +1032,42 @@
       },
       {
         "type": "grid",
+        "layout": "bento",
         "heading": "Why results vary.",
         "lede": "Two clients can have the same service and heal differently.",
-        "columns": 2,
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Healed brow strokes on oily skin, the edges softened, close-up in even daylight"
+        },
         "items": [
           {
             "title": "Skin type",
-            "text": "Oily, dry, sensitive, mature or textured skin holds pigment differently.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Brow close-up on oily skin, hair strokes softened at the edges"
-            }
+            "text": "Oily, dry, sensitive, mature or textured skin holds pigment differently."
           },
           {
             "title": "Sun exposure",
-            "text": "Sun fades pigment faster, especially brows and scalp micropigmentation.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Sunscreen dotted around healed brows, hat brim in frame"
-            }
+            "text": "Sun fades pigment faster, especially brows and scalp micropigmentation."
           },
           {
             "title": "Skincare products",
-            "text": "Exfoliants, acids, retinoids and strong treatments fade pigment faster near brows.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "A retinol dropper held well away from the brow line"
-            }
+            "text": "Exfoliants, acids, retinoids and strong treatments fade pigment faster near brows."
           },
           {
             "title": "Aftercare",
-            "text": "Following aftercare protects the healing area and the healed result.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Aftercare balm on a clean cotton swab, brows freshly healed"
-            }
+            "text": "Following aftercare protects the healing area and the healed result."
           }
-        ],
-        "callout": {
-          "tone": "links",
-          "title": "Each service, in detail",
-          "links": [
-            {
-              "label": "Microblading",
-              "href": "/services/microblading"
-            },
-            {
-              "label": "Ombre powder brows",
-              "href": "/services/ombre-powder-brows"
-            },
-            {
-              "label": "Microblading and shading",
-              "href": "/services/microblading-shading"
-            },
-            {
-              "label": "Eyeliner",
-              "href": "/services/eyeliner"
-            },
-            {
-              "label": "Lash enhancement",
-              "href": "/services/lash-enhancement"
-            },
-            {
-              "label": "Lip tint",
-              "href": "/services/lip-tint"
-            },
-            {
-              "label": "Scalp micropigmentation",
-              "href": "/services/scalp-micropigmentation"
-            }
-          ]
-        }
+        ]
       },
       {
         "type": "sequence",
+        "layout": "rail",
+        "kind": "steps",
         "heading": "Why touch-ups matter.",
         "lede": "Touch-ups refresh pigment, improve balance, and keep the result closer to your goal.",
-        "kind": "steps",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "The same brow before and after its six-week touch-up: gaps filled, color evened"
+        },
         "items": [
           {
             "label": "Color",
@@ -1106,8 +1093,13 @@
       },
       {
         "type": "grid",
+        "layout": "ledger",
         "heading": "How to help it last.",
         "lede": "You cannot stop fading, but good care protects your healed result.",
+        "image": {
+          "ratio": "5 / 2",
+          "shot": "A wide-brim hat and mineral sunscreen on a bright windowsill"
+        },
         "items": [
           {
             "title": "Follow aftercare",
@@ -1129,9 +1121,19 @@
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
         "lede": "Three things worth reading first: what healing looks like week by week, how to care for it, and how the studio stays safe.",
-        "columns": 3,
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Microblading before and after",
+          "photo": {
+            "ref": "microblading/04",
+            "alt": "Microblading before and after: thin, sparse brows, then fuller hair strokes",
+            "focus": "85% 50%",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
             "title": "The healing timeline",
@@ -1155,8 +1157,18 @@
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Questions about fading.",
         "lede": "Asked most before a first appointment, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Soft brows with shading through the tail",
+          "photo": {
+            "ref": "microblading-shading/05",
+            "alt": "Soft brows with fine strokes at the front and shading through the tail",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "q": "Is permanent makeup really permanent?",
@@ -1197,7 +1209,16 @@
             "label": "Why the touch-up matters",
             "href": "/learn/importance-of-touch-up"
           }
-        ]
+        ],
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi at the studio",
+          "photo": {
+            "ref": "pomi/portrait",
+            "alt": "Pomi, permanent makeup artist",
+            "detail": "Permanent makeup artist"
+          }
+        }
       }
     ]
   },

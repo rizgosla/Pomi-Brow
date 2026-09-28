@@ -12,13 +12,14 @@
 // four-up tile near 60rem), the shot gives way a whole line at a time; "Photo to come" and the
 // ratio always show, and nothing is cut through the middle of a line.
 import type { ImageSlot as Slot } from "../../lib/sections";
-import { resolveSeedPhoto } from "../../lib/content";
+import { resolveSeedPhoto, serviceTitle } from "../../lib/content";
 import Photo from "../Photo.astro";
 import Caption from "../Caption.astro";
 
 interface Props {
   image: Slot;
-  /** What the caption names when a real photo is present. */
+  /** What the caption names when a real photo is present. Defaults to the service the photo
+      was filed under (its gallery folder), then the studio. */
   service?: string;
   sizes?: string;
   widths?: number[];
@@ -28,7 +29,7 @@ interface Props {
 }
 const {
   image: slot,
-  service = "Pomi B. Brow Studio",
+  service,
   sizes = "(min-width: 60rem) 40vw, 100vw",
   widths = [640, 960, 1320],
   loading = "lazy",
@@ -39,6 +40,7 @@ const {
 // Only gallery refs resolve today; a CMS-uploaded image (no ref) keeps the empty frame until the
 // content layer learns to build remote photos for slots.
 const photo = slot.photo?.ref ? resolveSeedPhoto(slot.photo) : undefined;
+const captionService = service ?? (photo?.serviceSlug ? serviceTitle(photo.serviceSlug) : undefined) ?? "Pomi B. Brow Studio";
 // "4 / 5" the way a photographer writes a crop: 4:5.
 const ratioLabel = slot.ratio?.replace(/\s*\/\s*/g, ":");
 ---
@@ -49,7 +51,7 @@ const ratioLabel = slot.ratio?.replace(/\s*\/\s*/g, ":");
       <>
         <Photo photo={photo} ratio={slot.ratio} sizes={sizes} widths={widths} loading={loading} fetchpriority={fetchpriority} />
         <figcaption>
-          <Caption service={service} detail={photo.detail ?? slot.shot} />
+          <Caption service={captionService} detail={photo.detail ?? slot.shot} />
         </figcaption>
       </>
     ) : (

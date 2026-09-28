@@ -17,6 +17,7 @@
 // the text's whatever the text is: body copy, the taller serif quote, or 44px link rows.
 import type { Callout as CalloutType } from "../../lib/sections";
 import Icon from "../Icon.astro";
+import { keepHyphenated } from "../../lib/text";
 
 interface Props {
   callout: CalloutType;
@@ -39,7 +40,7 @@ const spoken = title.trim().toLowerCase().startsWith(tone.name.toLowerCase()) ? 
 
 <aside class:list={["callout", `callout--${callout.tone}`, className]} role="note">
   <div class="callout__head">
-    <h3 class="callout__title">{spoken && <span class="visually-hidden">{spoken}</span>}{title}</h3>
+    <h3 class="callout__title">{spoken && <span class="visually-hidden">{spoken}</span>}{keepHyphenated(title).map((p) => (p.keep ? <span class="nobr">{p.text}</span> : p.text))}</h3>
     {
       tone.label && (
         <span class:list={[tone.tag, "callout__label"]} aria-hidden="true">

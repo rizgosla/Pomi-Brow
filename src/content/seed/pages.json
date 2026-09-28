@@ -3,40 +3,43 @@
     "slug": "safety",
     "title": "Safety.",
     "lede": "A private studio, a clean setup, and single-use tools opened in front of you. What happens before, during and after, and when to ask first.",
-    "meta": "I can answer questions about the appointment. Medical clearance comes from your healthcare provider.",
+    "metaLabel": "Medical clearance",
+    "meta": "Your healthcare provider gives it. I can answer questions about the appointment itself.",
     "lead": {
       "ratio": "4 / 5",
       "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway"
     },
-    "sections": [
+    "facts": [
       {
-        "type": "facts",
-        "items": [
-          {
-            "title": "Private studio",
-            "text": "One client at a time, nobody else in the room."
-          },
-          {
-            "title": "Clean setup",
-            "text": "Surfaces disinfected and prepared before each session."
-          },
-          {
-            "title": "Single-use tools",
-            "text": "Needles, supplies and pigment cups used once, then discarded."
-          },
-          {
-            "title": "Clear guidance",
-            "text": "Preparation and aftercare that protect the healed result."
-          }
-        ]
+        "title": "Private studio",
+        "text": "One client at a time, no one else there."
       },
       {
+        "title": "Clean setup",
+        "text": "Surfaces disinfected and prepared before each session."
+      },
+      {
+        "title": "Single-use tools",
+        "text": "Needles, supplies and pigment cups used once, then discarded."
+      },
+      {
+        "title": "Clear guidance",
+        "text": "Preparation and aftercare that protect the healed result."
+      }
+    ],
+    "sections": [
+      {
         "type": "statement",
+        "layout": "split",
         "heading": "What makes permanent makeup safer?",
         "paragraphs": [
-          "Permanent makeup involves the skin, so safety is the whole appointment, not one step of it: a clean studio, fresh disposable barriers, single-use tools, careful pigment handling, gloves, masks, and clear aftercare.",
-          "You should know how the space is prepared, what tools are used, and what to do before and after. Ask anything. A question before booking is always welcome."
+          "Permanent makeup involves the skin, so safety is the whole appointment, not one step of it: a clean studio, fresh barriers, single-use tools, careful pigment handling, gloves, masks and clear aftercare.",
+          "You should know how the space is prepared, what tools are used, and what to do before and after. A question before booking is always welcome."
         ],
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Gloved hands laying sealed single-use tools on a fresh barrier, before the client arrives"
+        },
         "callout": {
           "tone": "voice",
           "title": "My approach",
@@ -45,9 +48,9 @@
       },
       {
         "type": "grid",
+        "layout": "tiles",
         "heading": "One client at a time.",
         "lede": "Detailed work needs a calm, controlled room. A private appointment keeps the focus on your service, your comfort and your safety.",
-        "columns": 2,
         "items": [
           {
             "title": "Why privacy matters",
@@ -79,11 +82,12 @@
       },
       {
         "type": "sequence",
+        "layout": "rail",
+        "kind": "steps",
         "heading": "Clean before every client.",
         "lede": "Clean surfaces, fresh barriers and a careful setup reduce contact with the treatment area and the tools.",
-        "kind": "steps",
         "image": {
-          "ratio": "3 / 2",
+          "ratio": "4 / 5",
           "shot": "Disposable barriers going onto the bed and tray before an appointment"
         },
         "items": [
@@ -111,8 +115,13 @@
       },
       {
         "type": "grid",
+        "layout": "bento",
         "heading": "Single-use, then gone.",
         "lede": "Single-use tools cut cross-contamination risk because they touch one client and are then safely discarded.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "A sealed needle cartridge opened in front of the client, gloved hands, close-up"
+        },
         "items": [
           {
             "title": "Needles and cartridges",
@@ -134,8 +143,13 @@
       },
       {
         "type": "grid",
+        "layout": "ledger",
         "heading": "Your preparation matters too.",
         "lede": "A safe appointment is not only the studio. Your skin, your timing, your health history and your aftercare all count.",
+        "image": {
+          "ratio": "5 / 2",
+          "shot": "A health questionnaire, a pen and an open calendar on the studio desk, shot from above"
+        },
         "items": [
           {
             "title": "Arrive with healthy skin",
@@ -162,16 +176,16 @@
       },
       {
         "type": "grid",
+        "layout": "center",
         "heading": "Who should ask first.",
         "lede": "Many of these clients are still good candidates. Timing is what matters, so ask before booking if any apply.",
-        "columns": 2,
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it"
+        },
         "items": [
           {
             "title": "Health and healing",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it"
-            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -181,10 +195,6 @@
           },
           {
             "title": "The treatment area",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Close, even-light shot of a brow area with clear, calm skin, ready for treatment"
-            },
             "bullets": [
               "Irritation, cuts, sunburn or open skin nearby",
               "Active breakouts near the area",
@@ -201,39 +211,77 @@
       },
       {
         "type": "grid",
+        "layout": "tiles",
         "heading": "By service.",
         "lede": "Each service has its own timing and preparation. Ask first if you are unsure.",
         "items": [
           {
             "title": "Brows",
-            "text": "Irritation, breakouts, sunburn, recent brow treatments, Botox, filler, laser or peels near the brows."
+            "text": "Irritation, breakouts, sunburn, recent brow treatments, Botox, filler, laser or peels near the brows.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Dark powder brows with a softer front",
+              "photo": {
+                "ref": "ombre-powder-brows/01",
+                "alt": "Dark powder brows with a softer front",
+                "focus": "50% 0%",
+                "detail": "Close-up"
+              }
+            }
           },
           {
             "title": "Eyeliner and lash enhancement",
-            "text": "Eye irritation, recent eye surgery, certain eye medications, lash extensions or sensitivity around the eyes."
+            "text": "Eye irritation, recent eye surgery, certain eye medications, lash extensions or sensitivity around the eyes.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lash enhancement before and after: a dark line along the upper lashes",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after: a dark line along the upper lashes",
+                "detail": "Before and after"
+              }
+            }
           },
           {
             "title": "Lip tint",
-            "text": "A cold sore history or an active one, cracked lips, recent filler or treatments around the mouth."
+            "text": "A cold sore history or an active one, cracked lips, recent filler or treatments around the mouth.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lip tint before and after: pale pink lips, then deeper rosy red",
+              "photo": {
+                "ref": "lip-tint/03",
+                "alt": "Lip tint before and after: pale pink lips, then deeper rosy red",
+                "detail": "Before and after"
+              }
+            }
           },
           {
             "title": "Scalp micropigmentation",
-            "text": "Scalp irritation, open skin, sunburn, flaking, recent scalp treatments or hair transplant work."
+            "text": "Scalp irritation, open skin, sunburn, flaking, recent scalp treatments or hair transplant work.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Scalp micropigmentation before and after along a thinning part",
+              "photo": {
+                "ref": "scalp-micropigmentation/02",
+                "alt": "Scalp micropigmentation before and after along a thinning part",
+                "detail": "Before and after"
+              }
+            }
           }
         ]
       },
       {
         "type": "grid",
+        "layout": "feature",
         "heading": "Safety continues after.",
         "lede": "Fresh pigment looks darker or brighter at first, then softens as the skin heals. Aftercare protects it while it does.",
-        "columns": 2,
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
+        },
         "items": [
           {
             "title": "Protect the healing area",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
-            },
             "bullets": [
               "No picking, scratching, rubbing or peeling",
               "No makeup on the area until cleared",
@@ -243,10 +291,6 @@
           },
           {
             "title": "Know when to ask",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Phone on the studio counter beside the printed aftercare card"
-            },
             "bullets": [
               "Unsure about an aftercare product",
               "Healing looks different than expected",
@@ -258,9 +302,19 @@
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
         "lede": "Three things worth reading first: how to prepare, what healing looks like, and the questions clients ask most.",
-        "columns": 3,
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Brow with fine strokes at the front and shading through the tail",
+          "photo": {
+            "ref": "microblading-shading/01",
+            "alt": "A brow with fine strokes at the front and shading through the tail",
+            "focus": "100% 50%",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "title": "How to prepare",
@@ -284,8 +338,13 @@
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Safety questions.",
         "lede": "The ones asked most, answered short.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "The treatment room ready for one client: lamp on, the bed covered in a fresh barrier"
+        },
         "items": [
           {
             "q": "Is permanent makeup safe?",
@@ -310,21 +369,6 @@
           {
             "q": "Can I book with irritated skin?",
             "a": "Not over active irritation, cuts, sunburn, breakouts, cold sores, open skin or scalp irritation. Ask first so the timing is handled safely."
-          }
-        ]
-      },
-      {
-        "type": "cta",
-        "heading": "A safety question before you book?",
-        "text": "Call or write before scheduling. Preparation, timing, aftercare, and whether there is anything else you should ask first.",
-        "links": [
-          {
-            "label": "Frequently asked questions",
-            "href": "/faqs"
-          },
-          {
-            "label": "Aftercare",
-            "href": "/aftercare"
           }
         ]
       }
