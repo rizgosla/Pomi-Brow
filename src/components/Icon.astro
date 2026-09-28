@@ -13,13 +13,14 @@ const paths: Record<Props["name"], string> = {
   arrow: '<path d="M4 12h15"/><path d="m13 6 6 6-6 6"/>',
   instagram:
     '<rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/>',
-  // The Yelp burst: five rays fanning from a centre gap. The previous version's first path
-  // was malformed -- "M11.2 3.2 12 11 l-4.6-6.4" draws a chevron, not a ray -- so the mark
-  // rendered as a lopsided asterisk everywhere it appeared. Rays are widened past the set's
-  // 2px so the burst reads as a shape rather than scratches at 16px, and stay in currentColor:
-  // Yelp red would break both the icon rule and the accent rule.
+  // The Yelp burst: one tall petal on top and four shorter ones, each a filled teardrop
+  // tapering into a small centre gap. The stroked versions before this (first a malformed
+  // chevron, then five fat 4.4px dashes) both read as a lopsided asterisk or a blob, never as
+  // Yelp. Solid like the star, for the same reason: at 16px a shape has to be a silhouette.
+  // One petal is drawn pointing up and rotated into place. Stays in currentColor -- Yelp red
+  // would break both the icon rule and the accent rule.
   yelp:
-    '<path stroke-width="4.4" d="M10.6 5.6v3.5"/><path stroke-width="4.4" d="M17.4 9.5l-2.9 1.7"/><path stroke-width="4.4" d="M17.6 16.6l-3.1-1.4"/><path stroke-width="4.4" d="M11.6 18.6v-2.9"/><path stroke-width="4.4" d="M5.8 14.4l3.2-1.2"/>',
+    '<g fill="currentColor" stroke="none"><path d="M11.3 12.2L8.9 5.3a3.1 3.1 0 0 1 6.2 0L12.7 12.2Z" transform="rotate(-10 12 13)"/><path d="M11.3 12.2L9.3 8.1a2.7 2.7 0 0 1 5.4 0L12.7 12.2Z" transform="rotate(-80 12 13)"/><path d="M11.3 12.2L9.3 8.1a2.7 2.7 0 0 1 5.4 0L12.7 12.2Z" transform="rotate(72 12 13)"/><path d="M11.3 12.2L9.3 8.1a2.7 2.7 0 0 1 5.4 0L12.7 12.2Z" transform="rotate(145 12 13)"/><path d="M11.3 12.2L9.3 8.1a2.7 2.7 0 0 1 5.4 0L12.7 12.2Z" transform="rotate(-145 12 13)"/></g>',
   pin: '<path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/>',
   // Solid rather than stroked: five outlined stars at 1rem read as noise, and a rating has
   // to be countable at a glance. It stays in currentColor -- no gold, no Yelp red -- so it
