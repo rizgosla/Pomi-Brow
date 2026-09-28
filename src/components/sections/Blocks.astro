@@ -72,9 +72,11 @@ const photo =
 const [w, h] = (photo?.ratio ?? "4 / 5").split("/").map((v) => Number(v.trim()));
 const aspect = Number((w / h).toFixed(4));
 
-/** How wide each photograph renders, for srcset. Below 60rem a portrait or square frame stops at 28rem. */
+/** How wide each photograph renders, for srcset. Below 60rem a portrait or square frame stops at
+ *  28rem; four tiles or four ledger columns run two up until 80rem (layouts.css). */
+const across = n === 4 ? "(min-width: 80rem) 25vw" : `(min-width: 60rem) ${Math.round(100 / n)}vw`;
 const SIZES: Record<BlockLayout, string> = {
-  tiles: `(min-width: 60rem) ${Math.round(100 / n)}vw, (min-width: 40rem) 50vw, 100vw`,
+  tiles: `${across}, (min-width: 40rem) 50vw, 100vw`,
   split: "(min-width: 60rem) 40vw, (min-width: 30rem) 28rem, 100vw",
   rail: "(min-width: 60rem) 22rem, (min-width: 30rem) 28rem, 100vw",
   feature: "(min-width: 60rem) 55vw, 100vw",
@@ -82,7 +84,7 @@ const SIZES: Record<BlockLayout, string> = {
   center: "(min-width: 60rem) 30vw, (min-width: 30rem) 28rem, 100vw",
   ledger: "(min-width: 60rem) 40vw, 100vw",
 };
-const columnSizes = `(min-width: 60rem) ${Math.round(100 / n)}vw, 100vw`;
+const columnSizes = n === 4 ? `${across}, (min-width: 60rem) 50vw, 100vw` : `${across}, 100vw`;
 
 // The feature's photograph heads its large block; everywhere else it is the shell's media part.
 const media =
@@ -128,7 +130,7 @@ const head = Astro.slots.has("head") ? await Astro.slots.render("head") : "";
       doors ? (
         <LinkTiles items={doors} variant={layout === "split" ? "stack" : "grid"} />
       ) : layout === "tiles" ? (
-        <List class:list={["l-tiles", { "l-tiles--even": blocks.every((b) => !b.image) }]} role="list">
+        <List class:list={["l-tiles", { "l-tiles--even": blocks.every((b) => !b.image), "l-tiles--4": n === 4 }]} role="list">
           {blocks.map((b, i) => (
             <Block block={b} index={i} frame="tile" step={steps} ownPhoto sizes={SIZES.tiles} />
           ))}
@@ -166,7 +168,7 @@ const head = Astro.slots.has("head") ? await Astro.slots.render("head") : "";
           ))}
         </List>
       ) : (
-        <List class="l-ledger l-tile" role="list">
+        <List class:list={["l-ledger", "l-tile", { "l-ledger--4": n === 4 }]} role="list">
           {blocks.map((b, i) => (
             <Block block={b} index={i} frame="col" step={steps} ownPhoto sizes={columnSizes} />
           ))}

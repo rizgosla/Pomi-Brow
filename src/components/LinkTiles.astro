@@ -37,8 +37,7 @@ const columns = Math.min(items.length, 3);
             {/* Every tile's link says "Read", so the title rides along unseen: a screen
                 reader's list of links then says where each one goes. */}
             <a class="link linktile__link" href={item.href}>
-              {item.label ?? "Read"}<span class="visually-hidden">: {item.title}</span>
-              <Icon name="arrow" />
+              {item.label ?? "Read"}<span class="visually-hidden">: {item.title}</span><Icon name="arrow" />
             </a>
           </li>
         ))}

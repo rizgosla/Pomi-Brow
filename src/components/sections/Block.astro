@@ -58,13 +58,7 @@ const stepNumber = step && marker?.kind === "number" ? marker.n : undefined;
   style={`--i: ${index % 4}`}
 >
   {image && <ImageSlot image={image} class="l-block__photo" sizes={sizes} widths={[480, 800, 1320]} />}
-  {
-    numeral !== undefined && (
-      <span class:list={["l-num", { "l-num--rank": rank }]} aria-hidden="true">
-        {numeral}
-      </span>
-    )
-  }
+  {numeral !== undefined && <span class:list={["l-num", { "l-num--rank": rank }]} aria-hidden="true">{numeral}</span>}
   {marker?.kind === "tag" && <span class="tag">{marker.label}</span>}
   <div class="l-block__main">
     <h3 class="l-block__title">{stepNumber !== undefined && <span class="visually-hidden">Step {stepNumber}: </span>}{block.title}</h3>
@@ -81,8 +75,9 @@ const stepNumber = step && marker?.kind === "number" ? marker.n : undefined;
     {
       single && (
         <a class="link l-block__link" href={single.href}>
-          {single.label}<span class="visually-hidden">: {block.title}</span>
-          <Icon name="arrow" />
+          {/* No whitespace around the hidden title: beside an out-of-flow span it renders as a
+              visible space before the arrow. */}
+          {single.label}<span class="visually-hidden">: {block.title}</span><Icon name="arrow" />
         </a>
       )
     }

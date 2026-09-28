@@ -181,8 +181,9 @@
 }
 
 /* One link makes the whole block the target. Its ::after covers the block, so the hit area is
-   the box while the link text stays where the eye lands; the text needs no 44px of its own. */
-.l-block__link {
+   the box while the link text stays where the eye lands; the text needs no 44px of its own.
+   Two classes, so it outranks the global .link whichever stylesheet loads first. */
+.l-block .l-block__link {
   min-height: 0;
   margin-top: auto;
   padding-top: var(--space-2);
@@ -429,7 +430,7 @@
     grid-area: note;
   }
 
-  /* tiles: head on top, the boxes in one row. */
+  /* tiles: head on top, the boxes in one row (four wait for 80rem, below). */
   .l-tiles {
     grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr));
   }
@@ -463,11 +464,12 @@
   }
 
   /* rail, the Guardian's "hanging head": the h2, lede and a small photograph in a left rail
-     4/12; the counted rows in one tile 8/12. The rail is one part so the photograph can hang
-     under the head and stick while the rows scroll; the note follows the rows. */
+     4/12 (5/12 until 80rem, where 4/12 would set the lede at about 24 characters a line); the
+     counted rows in one tile beside it. The rail is one part so the photograph can hang under
+     the head and stick while the rows scroll; the note follows the rows. */
   .l--rail {
     --l-head-gap: var(--space-6);
-    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
     grid-template-rows: auto 1fr;
     grid-template-areas:
       "rail body"
@@ -487,19 +489,6 @@
   }
   .l--rail .l-photo {
     max-inline-size: 22rem;
-  }
-
-  /* Four or more counted rows run down two columns, in reading order, so the tile stays short
-     beside the rail. The first row of each column has no divider above it. */
-  .l-rows--cols {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(var(--rows, 2), auto);
-    grid-auto-flow: column;
-    column-gap: var(--space-7);
-  }
-  .l-rows--cols > .l-row--col-top {
-    border-top: 0;
   }
 
   /* ledger, and the statement's wide: a head row of h2 and lede 7/12 beside a 5:2 strip 5/12;
@@ -577,8 +566,10 @@
   /* center: block, photograph, block, level on the photograph's middle (ProPublica's
      centre-anchored objects). The photograph is its own part, first in the document so a phone
      shows it first; here it takes the middle track of the body's row, and the pair of blocks
-     runs the same three tracks around it. The pair's box passes pointer events through to the
-     photograph it overlaps. */
+     runs the same three tracks around it. The pair is centred on the photograph as one piece and
+     its two tiles match heights, so their edges line up across the photograph instead of each
+     floating to its own middle. The pair's box passes pointer events through to the photograph
+     it overlaps. */
   .l--center {
     --l-center-cols: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 1fr);
     column-gap: var(--space-6);
@@ -599,7 +590,7 @@
   .l--center .l-pair {
     column-gap: var(--space-6);
     grid-template-columns: var(--l-center-cols);
-    align-items: center;
+    align-items: stretch;
   }
   .l--center .l-pair > * {
     grid-row: 1;
@@ -615,6 +606,43 @@
   /* Statements set their paragraphs close under the head: the copy continues the lede. */
   .l.l--statement {
     --l-head-gap: var(--space-6);
+  }
+}
+
+/* Laptops under 80rem (1024-1279px): four across would leave each box or column about 170px of
+   text, so four tiles and a four-column ledger run two by two, the way the price grid waits for
+   80rem before it goes four up. In the 2x2 ledger the hairlines follow the grid: a vertical rule
+   in each row, one horizontal rule between the rows. */
+@media (min-width: 60rem) and (max-width: 79.99rem) {
+  .l-tiles--4,
+  .l-ledger--4.l-tile {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .l-ledger--4 > .l-col:nth-child(odd) {
+    border-left: 0;
+  }
+  .l-ledger--4 > .l-col:nth-child(n + 3) {
+    border-top: 1px solid var(--border);
+  }
+}
+
+@media (min-width: 80rem) {
+  .l--rail {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  }
+
+  /* Four or more counted rows run down two columns, in reading order, so the tile stays short
+     beside the rail. The first row of each column has no divider above it. Under 80rem the rows
+     stay one column: two would leave each about 180px of text. */
+  .l-rows--cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(var(--rows, 2), auto);
+    grid-auto-flow: column;
+    column-gap: var(--space-7);
+  }
+  .l-rows--cols > .l-row--col-top {
+    border-top: 0;
   }
 }
 
