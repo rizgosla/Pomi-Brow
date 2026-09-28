@@ -4,6 +4,7 @@
 // Usage: node scripts/capture-routes.mjs <outDir> <route> [route...]
 //   e.g. node scripts/capture-routes.mjs .impeccable/critique/capture-sections safety learn/how-long-it-lasts
 import puppeteer from "puppeteer-core";
+import sharp from "sharp";
 import { spawn } from "node:child_process";
 import { existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
@@ -20,6 +21,8 @@ if (!out || routes.length === 0) {
 mkdirSync(out, { recursive: true });
 
 const PORT = 4402;
+// Tallest page shot in one piece; anything longer is shot in pieces of this height.
+const TALL = 12000;
 const base = `http://localhost:${PORT}`;
 // Detached on POSIX so the whole process group (the shell, npx and astro) can be stopped at the end;
 // killing only the shell leaves astro serving the port.
@@ -65,8 +68,19 @@ try {
         window.scrollTo(0, 0);
         await new Promise((r) => setTimeout(r, 300));
       });
-      await page.screenshot({ path: join(out, `${name}-${tag}.png`), fullPage: true });
       const height = await page.evaluate(() => document.documentElement.scrollHeight);
+      const file = join(out, `${name}-${tag}.png`);
+      if (height <= TALL) await page.screenshot({ path: file, fullPage: true });
+      else {
+        // Chrome paints nothing past about 16,000px in one full-page shot, so a long page on a
+        // phone is shot in pieces and stitched.
+        const parts = [];
+        for (let y = 0; y < height; y += TALL) {
+          const clip = { x: 0, y, width: w, height: Math.min(TALL, height - y) };
+          parts.push({ input: await page.screenshot({ clip, captureBeyondViewport: true }), left: 0, top: y });
+        }
+        await sharp({ create: { width: w, height, channels: 3, background: "#ffffff" } }).composite(parts).png().toFile(file);
+      }
       console.log(`${name}-${tag}.png  ${height}px`);
       await page.close();
     }
