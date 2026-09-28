@@ -18,6 +18,7 @@
 // exactly as before, and `metaLabel` is ignored.
 import type { FactItem } from "../lib/sections";
 import Icon from "./Icon.astro";
+import Nobr from "./sections/Nobr.astro";
 
 interface Props {
   title: string;
@@ -47,15 +48,15 @@ const hasFacts = facts.length > 0;
           </a>
         )
       }
-      <h1>{title}</h1>
+      <h1><Nobr text={title} /></h1>
       {lede && <p class="lede">{lede}</p>}
       {
         hasFacts && (
           <ul class="pagehead__facts">
             {facts.map((f) => (
               <li class="pagehead__fact">
-                <h3 class="pagehead__fact-title">{f.title}</h3>
-                <p class="pagehead__fact-text">{f.text}</p>
+                <h3 class="pagehead__fact-title"><Nobr text={f.title} /></h3>
+                <p class="pagehead__fact-text"><Nobr text={f.text} /></p>
               </li>
             ))}
           </ul>
@@ -92,8 +93,11 @@ const hasFacts = facts.length > 0;
   .pagehead {
     padding-block: var(--space-7) var(--space-8);
   }
+  /* One column that never widens to a long word: "Scalp micropigmentation" at the display size
+     is wider than a phone, and an auto column grew to fit it, photograph and all. */
   .pagehead__inner {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--space-7);
   }
   .pagehead__copy {
@@ -103,6 +107,16 @@ const hasFacts = facts.length > 0;
   }
   .pagehead h1 {
     max-width: 20ch;
+    overflow-wrap: break-word;
+  }
+  /* "touch-up" stays whole; only a word of 13 letters or more may hyphenate (Nobr.astro). */
+  .pagehead h1 :global(.nobr),
+  .pagehead__fact :global(.nobr) {
+    white-space: nowrap;
+  }
+  .pagehead h1 :global(.hy) {
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
   .pagehead .lede {
     max-width: 46ch;
@@ -196,6 +210,32 @@ const hasFacts = facts.length > 0;
   @media (min-width: 60rem) {
     .pagehead--facts .pagehead__inner--aside {
       align-items: stretch;
+    }
+  }
+  /* On a phone a facts header shows its photograph straight after the lede, then the facts and
+     the footnote: the order the desktop header reads in. After the facts, the photograph pushed
+     the page's first screens into grey frames. The copy column dissolves so its parts and the
+     photograph share one order. */
+  @media (max-width: 59.99rem) {
+    .pagehead--facts .pagehead__inner {
+      gap: var(--space-5);
+    }
+    .pagehead--facts .pagehead__copy {
+      display: contents;
+    }
+    .pagehead--facts .pagehead__parent {
+      justify-self: start;
+    }
+    .pagehead--facts .pagehead__aside {
+      order: 1;
+      margin-block: var(--space-2);
+    }
+    .pagehead--facts .pagehead__facts {
+      order: 2;
+    }
+    .pagehead--facts .pagehead__footnote {
+      order: 3;
+      margin-top: 0;
     }
   }
 </style>

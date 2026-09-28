@@ -1,7 +1,8 @@
 ---
 // Text with its hyphenated words kept whole: a balanced heading otherwise breaks "touch-ups" at
-// the hyphen ("touch- / ups"). The one place the layout library's headings and titles get it.
-import { keepHyphenated } from "../../lib/text";
+// the hyphen ("touch- / ups"). Words of 13 letters or more come back in a .hy span, which the
+// page title lets hyphenate on a phone ("micropig- / mentation") instead of overflowing it.
+import { titleParts } from "../../lib/text";
 
 interface Props {
   text: string;
@@ -9,4 +10,4 @@ interface Props {
 const { text } = Astro.props;
 ---
 
-{keepHyphenated(text).map((p) => (p.keep ? <span class="nobr">{p.text}</span> : p.text))}
+{titleParts(text).map((p) => (p.kind === "keep" ? <span class="nobr">{p.text}</span> : p.kind === "long" ? <span class="hy">{p.text}</span> : p.text))}

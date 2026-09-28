@@ -2,7 +2,7 @@
 // One page per service, including the three Maintenance/Correction ones: Base.astro's JSON-LD
 // emits /services/<slug> for every service, so skipping any would publish schema pointing at 404s.
 //
-// Short on purpose: the hero, the healed work, the guides worth reading first, then the form.
+// Short on purpose: the hero, Pomi's work, the guides worth reading first, then the form.
 // The six-week healing timeline that sat between them was cut on 2026-09-28. The client found
 // it messy, and /aftercare already walks through healing.
 import Base from "../../layouts/Base.astro";
@@ -164,8 +164,8 @@ const tagTone: Record<string, string> = {
       <section class="section svc-work" id="work" aria-labelledby="work-heading">
         <div class="page">
           <div class="section-head reveal">
-            <h2 id="work-heading">{service.title}, healed.</h2>
-            <p class="lede">Every photograph is Pomi's own work on a real client. Some are before-and-after pairs.</p>
+            <h2 id="work-heading">{service.title}, Pomi's work.</h2>
+            <p class="lede">Every photograph is a real client. Some are before-and-after pairs.</p>
           </div>
           <ul class="svc-work__grid">
             {gallery.map((photo, i) => (
@@ -181,8 +181,8 @@ const tagTone: Record<string, string> = {
 
   {
     related.length > 0 && (
-      <section class="section svc-read" aria-labelledby="read-heading">
-        <div class="page">
+      <section class:list={["section svc-read", { "svc-read--one": related.length === 1 }]} aria-labelledby="read-heading">
+        <div class="page svc-read__inner">
           <div class="section-head reveal">
             <h2 id="read-heading">Before you book.</h2>
             <p class="lede">The questions people ask about this service most often.</p>
@@ -295,6 +295,19 @@ const tagTone: Record<string, string> = {
     display: grid;
     gap: var(--space-5);
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* One guide to read: the head and its one tile share a row, instead of one small tile alone
+     under a heading in a band that is otherwise empty. */
+  @media (min-width: 60rem) {
+    .svc-read--one .svc-read__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      column-gap: var(--space-8);
+      align-items: center;
+    }
+    .svc-read--one .section-head {
+      margin-bottom: 0;
+    }
   }
   @media (min-width: 40rem) {
     .svc-work__grid {

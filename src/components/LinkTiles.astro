@@ -9,6 +9,7 @@
 // Keyboard focus gets the same light, held still at the centre. Touch gets nothing, since a
 // finger has no hover, and forced colours drop the light altogether.
 import Icon from "./Icon.astro";
+import Nobr from "./sections/Nobr.astro";
 
 interface Props {
   items: { title: string; text?: string; href: string; label?: string }[];
@@ -32,8 +33,8 @@ const columns = Math.min(items.length, 3);
       >
         {items.map((item, i) => (
           <li class="linktile reveal" style={`--i: ${i % 3}`}>
-            <h3 class="linktile__title">{item.title}</h3>
-            {item.text && <p class="linktile__text">{item.text}</p>}
+            <h3 class="linktile__title"><Nobr text={item.title} /></h3>
+            {item.text && <p class="linktile__text"><Nobr text={item.text} /></p>}
             {/* Every tile's link says "Read", so the title rides along unseen: a screen
                 reader's list of links then says where each one goes. */}
             <a class="link linktile__link" href={item.href}>
@@ -93,6 +94,10 @@ const columns = Math.min(items.length, 3);
     font-weight: 500;
     letter-spacing: -0.01em;
     line-height: 1.3;
+  }
+  /* "touch-up" and "two-visit" stay whole (Nobr.astro); the service pages don't load layouts.css. */
+  .linktile :global(.nobr) {
+    white-space: nowrap;
   }
   .linktile__text {
     max-width: 52ch;

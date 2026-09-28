@@ -10,6 +10,7 @@ import seedServices from "../content/seed/services.json";
 import seedReviews from "../content/seed/reviews.json";
 import seedLearn from "../content/seed/learn.json";
 import seedPages from "../content/seed/pages.json";
+import catalogue from "../assets/gallery/catalogue.json";
 import type { ImageSlot, Section, SectionPage, SeedPhotoRef } from "./sections";
 
 /** What the ruled caption under a photo says beyond its alt text. */
@@ -233,11 +234,18 @@ export function resolveSeedPhoto(pick: SeedPhotoRef): Photo | undefined {
 }
 
 /** Resolve a seed { ref, focus, alt, detail } pick to a Photo carrying its crop point. */
+/** The catalogue's caption for a gallery photo: "Before and after", "Two views", "Close-up",
+ *  "Fresh". A cover with no authored detail says what the photograph is, not the page title. */
+function catalogueCaption(ref: string): string | undefined {
+  const entry = (catalogue as Record<string, unknown>)[ref];
+  return entry && typeof entry === "object" ? (entry as { caption?: string }).caption : undefined;
+}
+
 function seedCover(pick: SeedPick | undefined): Photo | undefined {
   if (!pick) return undefined;
   const { ref, detail, alt, focus } = typeof pick === "string" ? { ref: pick } : (pick as any);
   const photo = localPhoto(ref, alt);
-  return photo ? { ...photo, detail, focus } : undefined;
+  return photo ? { ...photo, detail: detail ?? catalogueCaption(ref), focus } : undefined;
 }
 
 function normalizeSeedServices(): Service[] {

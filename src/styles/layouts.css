@@ -288,11 +288,18 @@
   justify-self: start;
 }
 
-/* A counted row hangs its numeral left of the words, on the title's baseline. */
+/* A counted row sets its numeral above the words on a phone, where a numeral column would leave
+   the words a narrow strip; from 60rem it hangs left of them, on the title's baseline. */
 .l-row--num {
-  grid-template-columns: auto minmax(0, 1fr);
-  column-gap: var(--space-5);
-  align-items: baseline;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--space-2);
+}
+@media (min-width: 60rem) {
+  .l-row--num {
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: var(--space-5);
+    align-items: baseline;
+  }
 }
 
 /* The timeline: text only, down one 1px line with a hollow marker at each moment (Reuters
@@ -553,6 +560,26 @@
   }
   .l-ledger.l-tile {
     grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr));
+  }
+  /* Columns with their own photographs share rows across the tile, as image cards do: a
+     caption that wraps ("Scalp Micropigmentation, Before and after") no longer drops that
+     column's tag and title below its neighbours'. */
+  @supports (grid-template-rows: subgrid) {
+    .l-ledger > .l-col:has(> .l-block__photo) {
+      display: grid;
+      grid-row: span 2;
+      grid-template-rows: subgrid;
+      row-gap: var(--space-3);
+    }
+    .l-ledger > .l-col:has(> .l-block__photo):has(> :is(.tag, .l-num)) {
+      grid-row: span 3;
+    }
+    .l-ledger > .l-col > .l-block__photo {
+      margin-bottom: var(--space-2);
+    }
+    .l-ledger > .l-col:has(> .l-block__photo) > .l-block__photo + * {
+      margin-top: 0;
+    }
   }
   .l-col + .l-col {
     border-top: 0;

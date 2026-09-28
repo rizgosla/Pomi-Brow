@@ -3,14 +3,17 @@
 // side column on pages whose sections run the full width. The tiles, and the light that
 // follows the mouse across them, live in LinkTiles.astro, so the service pages' "Before you
 // book" shares exactly this tile.
-import type { LearnArticle } from "../lib/content";
+import type { LearnArticle, Service } from "../lib/content";
 import LinkTiles from "./LinkTiles.astro";
 
 interface Props {
   articles: LearnArticle[];
   current?: string;
+  /** The guide's related service, named under the lede. It used to sit alone in a band of its
+   *  own after the sign-off, one small line between two hairlines. */
+  service?: Pick<Service, "slug" | "title">;
 }
-const { articles, current } = Astro.props;
+const { articles, current, service } = Astro.props;
 const others = articles
   .filter((a) => a.slug !== current)
   .map((a) => ({ title: a.title, text: a.summary, href: `/learn/${a.slug}`, label: "Read" }));
@@ -21,7 +24,33 @@ const others = articles
     <div class="section-head reveal">
       <h2 id="guides-heading">More guides.</h2>
       <p class="lede">The other questions people ask before they book, answered the same way.</p>
+      {
+        service && (
+          <p class="guides__service">
+            Related service: <a href={`/services/${service.slug}`}>{service.title}</a>
+          </p>
+        )
+      }
     </div>
     <LinkTiles items={others} variant="grid" />
   </div>
 </section>
+
+<style>
+  .guides__service {
+    margin-top: var(--space-4);
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  .guides__service a {
+    color: var(--ink);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+  }
+  .guides__service a:hover {
+    text-decoration-color: currentColor;
+  }
+</style>

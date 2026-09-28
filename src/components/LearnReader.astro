@@ -2,7 +2,7 @@
 // One article in the Learn shell. Two layouts:
 //
 // - Slide pages (article.sections): header with the cover beside the title, the sections full
-//   width, the related service, then the other guides as link tiles above the contact form.
+//   width, then the other guides as link tiles, headed by the related service, above the form.
 // - Prose pages (article.body only): the list of titles on the left, the article on the right.
 //   Kept as the fallback for any article that has not been given sections.
 //
@@ -64,15 +64,7 @@ const coverService = serviceTitle(article.cover?.serviceSlug) ?? captionService;
     <>
       <Sections sections={article.sections!} settings={settings} />
 
-      {service && (
-        <section class="related">
-          <p class="page related__line">
-            Related service: <a href={`/services/${service.slug}`}>{service.title}</a>
-          </p>
-        </section>
-      )}
-
-      <MoreGuides articles={learn} current={article.slug} />
+      <MoreGuides articles={learn} current={article.slug} service={service} />
     </>
   ) : (
     <section class="section reader">
@@ -114,11 +106,6 @@ const coverService = serviceTitle(article.cover?.serviceSlug) ?? captionService;
     margin: 0;
     min-width: 0;
   }
-  .related {
-    padding-block: var(--space-6);
-    border-top: 1px solid var(--border);
-  }
-  .related__line,
   .reader__related {
     font-size: var(--fs-small);
     color: var(--ink-muted);
@@ -140,7 +127,6 @@ const coverService = serviceTitle(article.cover?.serviceSlug) ?? captionService;
     padding-top: var(--space-6);
     border-top: 1px solid var(--border);
   }
-  .related__line a,
   .reader__related a {
     color: var(--ink);
     font-weight: 500;
@@ -149,7 +135,6 @@ const coverService = serviceTitle(article.cover?.serviceSlug) ?? captionService;
     text-underline-offset: 0.25em;
     text-decoration-thickness: 1px;
   }
-  .related__line a:hover,
   .reader__related a:hover {
     text-decoration-color: currentColor;
   }
