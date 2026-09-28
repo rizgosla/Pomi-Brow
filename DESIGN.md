@@ -486,7 +486,7 @@ Content lives in `src/content/seed/pages.json` and `learn.json`. `node scripts/c
 
 ### Link tiles and the spotlight
 "More guides" under every Learn guide and "Before you book" on the service pages are pale-pink link tiles (`LinkTiles.astro`): a title, one muted line, and a "Read" link whose hit area covers the tile. How the spotlight works:
-- **The light.** Under a mouse, a soft white light follows the pointer inside the tile (`src/scripts/spotlight.ts`). It is a `::before` beneath the text: `radial-gradient(18rem circle at var(--x) var(--y), rgb(255 255 255 / .6), transparent 70%)`.
+- **The light.** Under a mouse, a soft white light follows the pointer inside the tile (`src/scripts/spotlight.ts`). It is a `::before` beneath the text: `radial-gradient(16rem circle at var(--x) var(--y), rgb(255 255 255 / .85), transparent 70%)`. The tile is already near white, so a weaker light barely reads (tried at 60%).
 - **Cost.** One listener per group of tiles, and at most one measurement per frame.
 - **Where it shows.** Never on touch. Keyboard focus shows it still, at the centre. It is removed under forced colours, and it doesn't fade under reduced motion.
 - **Why it is allowed.** It is the recorded exception to the No-Atmosphere Rule and to "motion is two gestures": it answers the pointer, stays inside a container, and is gone at rest.
