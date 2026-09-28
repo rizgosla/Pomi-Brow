@@ -6,7 +6,19 @@
 // An optional `aside` slot puts something beside the copy (a lead photograph, on the slide
 // pages): text left, aside right at 60rem and up, stacked below. Pages that pass no aside are
 // unchanged.
+//
+// `facts` (Safety, Aftercare) moves the page's facts into the header. The client read that
+// header as mostly white space with sub text floating in it: short copy centred against a tall
+// photograph, then a separate strip of facts. With facts, the two columns share one height and
+// the copy starts at the top: title, lede, the facts as a compact 2x2, and the meta as a
+// footnote pinned to the foot of the column, level with the bottom of the photograph, in the
+// caption voice (`metaLabel` in Ink 500, then the muted detail). The facts are drawn here, not
+// through sections/Facts.astro, because this header is on every subpage and importing Facts
+// would carry its CSS onto /about, /contact and /faqs. Without `facts` the header renders
+// exactly as before, and `metaLabel` is ignored.
+import type { FactItem } from "../lib/sections";
 import Icon from "./Icon.astro";
+import Nobr from "./sections/Nobr.astro";
 
 interface Props {
   title: string;
@@ -14,13 +26,18 @@ interface Props {
   meta?: string;
   /** Breadcrumb-style parent link, e.g. { href: "/learn", label: "Learn" }. */
   parent?: { href: string; label: string };
+  /** Facts shown under the lede as a compact 2x2; `meta` then becomes the footnote. */
+  facts?: FactItem[];
+  /** The footnote's lead word ("Medical clearance"), with `meta` as its detail. Only with `facts`. */
+  metaLabel?: string;
   class?: string;
 }
-const { title, lede, meta, parent, class: className } = Astro.props;
+const { title, lede, meta, parent, facts = [], metaLabel, class: className } = Astro.props;
 const hasAside = Astro.slots.has("aside");
+const hasFacts = facts.length > 0;
 ---
 
-<header class:list={["pagehead", { "pagehead--aside": hasAside }, className]}>
+<header class:list={["pagehead", { "pagehead--aside": hasAside, "pagehead--facts": hasFacts }, className]}>
   <div class:list={["page", "pagehead__inner", { "pagehead__inner--aside": hasAside }]}>
     <div class="pagehead__copy">
       {
@@ -31,11 +48,32 @@ const hasAside = Astro.slots.has("aside");
           </a>
         )
       }
-      <h1>{title}</h1>
+      <h1><Nobr text={title} /></h1>
       {lede && <p class="lede">{lede}</p>}
       {
-        meta && (
+        hasFacts && (
+          <ul class="pagehead__facts">
+            {facts.map((f) => (
+              <li class="pagehead__fact">
+                <h3 class="pagehead__fact-title"><Nobr text={f.title} /></h3>
+                <p class="pagehead__fact-text"><Nobr text={f.text} /></p>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+      {
+        meta && !hasFacts && (
           <p class="pagehead__meta">
+            <span>{meta}</span>
+          </p>
+        )
+      }
+      {
+        meta && hasFacts && (
+          <p class="pagehead__footnote">
+            {metaLabel && <span class="pagehead__footnote-label">{metaLabel}</span>}
+            {metaLabel && " "}
             <span>{meta}</span>
           </p>
         )
@@ -55,8 +93,11 @@ const hasAside = Astro.slots.has("aside");
   .pagehead {
     padding-block: var(--space-7) var(--space-8);
   }
+  /* One column that never widens to a long word: "Scalp micropigmentation" at the display size
+     is wider than a phone, and an auto column grew to fit it, photograph and all. */
   .pagehead__inner {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--space-7);
   }
   .pagehead__copy {
@@ -66,6 +107,16 @@ const hasAside = Astro.slots.has("aside");
   }
   .pagehead h1 {
     max-width: 20ch;
+    overflow-wrap: break-word;
+  }
+  /* "touch-up" stays whole; only a word of 13 letters or more may hyphenate (Nobr.astro). */
+  .pagehead h1 :global(.nobr),
+  .pagehead__fact :global(.nobr) {
+    white-space: nowrap;
+  }
+  .pagehead h1 :global(.hy) {
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
   .pagehead .lede {
     max-width: 46ch;
@@ -100,6 +151,91 @@ const hasAside = Astro.slots.has("aside");
       grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
       column-gap: var(--space-9);
       align-items: center;
+    }
+  }
+
+  /* With facts: a column that starts at the top, so the footnote can drop to its foot. */
+  .pagehead--facts .pagehead__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pagehead__facts {
+    display: grid;
+    gap: var(--space-3);
+    align-self: stretch;
+  }
+  /* The slide-page tile, one step smaller: a title and one line. */
+  .pagehead__fact {
+    display: grid;
+    gap: var(--space-1);
+    align-content: start;
+    padding: var(--space-4);
+    border: 1px solid var(--outline-pink);
+    border-radius: var(--radius);
+    background: var(--tile);
+  }
+  .pagehead__fact-title {
+    font-size: var(--fs-small);
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--ink);
+  }
+  .pagehead__fact-text {
+    font-size: var(--fs-small);
+    line-height: 1.5;
+    color: var(--ink-muted);
+  }
+  /* margin-top: auto pins it to the foot of the stretched column; on phones it simply follows. */
+  .pagehead__footnote {
+    align-self: stretch;
+    margin-top: auto;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border);
+    font-size: var(--fs-caption);
+    line-height: 1.4;
+    color: var(--ink-muted);
+  }
+  .pagehead__footnote-label {
+    margin-right: var(--space-1);
+    font-weight: 500;
+    color: var(--ink);
+  }
+  @media (min-width: 40rem) {
+    .pagehead__facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 60rem) {
+    .pagehead--facts .pagehead__inner--aside {
+      align-items: stretch;
+    }
+  }
+  /* On a phone a facts header shows its photograph straight after the lede, then the facts and
+     the footnote: the order the desktop header reads in. After the facts, the photograph pushed
+     the page's first screens into grey frames. The copy column dissolves so its parts and the
+     photograph share one order. */
+  @media (max-width: 59.99rem) {
+    .pagehead--facts .pagehead__inner {
+      gap: var(--space-5);
+    }
+    .pagehead--facts .pagehead__copy {
+      display: contents;
+    }
+    .pagehead--facts .pagehead__parent {
+      justify-self: start;
+    }
+    .pagehead--facts .pagehead__aside {
+      order: 1;
+      margin-block: var(--space-2);
+    }
+    .pagehead--facts .pagehead__facts {
+      order: 2;
+    }
+    .pagehead--facts .pagehead__footnote {
+      order: 3;
+      margin-top: 0;
     }
   }
 </style>

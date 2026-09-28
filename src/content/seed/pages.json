@@ -3,40 +3,43 @@
     "slug": "safety",
     "title": "Safety.",
     "lede": "A private studio, a clean setup, and single-use tools opened in front of you. What happens before, during and after, and when to ask first.",
-    "meta": "I can answer questions about the appointment. Medical clearance comes from your healthcare provider.",
+    "metaLabel": "Medical clearance",
+    "meta": "From your healthcare provider.",
     "lead": {
       "ratio": "4 / 5",
       "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway"
     },
-    "sections": [
+    "facts": [
       {
-        "type": "facts",
-        "items": [
-          {
-            "title": "Private studio",
-            "text": "One client at a time, nobody else in the room."
-          },
-          {
-            "title": "Clean setup",
-            "text": "Surfaces disinfected and prepared before each session."
-          },
-          {
-            "title": "Single-use tools",
-            "text": "Needles, supplies and pigment cups used once, then discarded."
-          },
-          {
-            "title": "Clear guidance",
-            "text": "Preparation and aftercare that protect the healed result."
-          }
-        ]
+        "title": "Private studio",
+        "text": "One client at a time, no one else there."
       },
       {
+        "title": "Clean setup",
+        "text": "Surfaces disinfected and prepared before each session."
+      },
+      {
+        "title": "Single-use tools",
+        "text": "Needles, supplies and pigment cups used once, then discarded."
+      },
+      {
+        "title": "Clear guidance",
+        "text": "Preparation and aftercare that protect the healed result."
+      }
+    ],
+    "sections": [
+      {
         "type": "statement",
+        "layout": "split",
         "heading": "What makes permanent makeup safer?",
         "paragraphs": [
-          "Permanent makeup involves the skin, so safety is the whole appointment, not one step of it: a clean studio, fresh disposable barriers, single-use tools, careful pigment handling, gloves, masks, and clear aftercare.",
-          "You should know how the space is prepared, what tools are used, and what to do before and after. Ask anything. A question before booking is always welcome."
+          "Permanent makeup involves the skin, so safety is the whole appointment, not one step of it: a clean studio, fresh barriers, single-use tools, careful pigment handling, gloves, masks and clear aftercare.",
+          "You should know how the space is prepared, what tools are used, and what to do before and after. A question before booking is always welcome."
         ],
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Gloved hands laying sealed single-use tools on a fresh barrier, before the client arrives"
+        },
         "callout": {
           "tone": "voice",
           "title": "My approach",
@@ -45,9 +48,9 @@
       },
       {
         "type": "grid",
+        "layout": "tiles",
         "heading": "One client at a time.",
         "lede": "Detailed work needs a calm, controlled room. A private appointment keeps the focus on your service, your comfort and your safety.",
-        "columns": 2,
         "items": [
           {
             "title": "Why privacy matters",
@@ -79,11 +82,12 @@
       },
       {
         "type": "sequence",
+        "layout": "rail",
+        "kind": "steps",
         "heading": "Clean before every client.",
         "lede": "Clean surfaces, fresh barriers and a careful setup reduce contact with the treatment area and the tools.",
-        "kind": "steps",
         "image": {
-          "ratio": "3 / 2",
+          "ratio": "1 / 1",
           "shot": "Disposable barriers going onto the bed and tray before an appointment"
         },
         "items": [
@@ -111,8 +115,13 @@
       },
       {
         "type": "grid",
+        "layout": "bento",
         "heading": "Single-use, then gone.",
         "lede": "Single-use tools cut cross-contamination risk because they touch one client and are then safely discarded.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "A sealed needle cartridge opened in front of the client, gloved hands, close-up"
+        },
         "items": [
           {
             "title": "Needles and cartridges",
@@ -134,16 +143,21 @@
       },
       {
         "type": "grid",
+        "layout": "feature",
         "heading": "Your preparation matters too.",
         "lede": "A safe appointment is not only the studio. Your skin, your timing, your health history and your aftercare all count.",
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "A health questionnaire, a pen and an open calendar on the studio desk, shot from above"
+        },
         "items": [
-          {
-            "title": "Arrive with healthy skin",
-            "text": "Do not book over sunburn, cuts, irritation, breakouts, cold sores or open skin."
-          },
           {
             "title": "Share health details",
             "text": "Medications, allergies, healing concerns or medical conditions, before we start."
+          },
+          {
+            "title": "Arrive with healthy skin",
+            "text": "Do not book over sunburn, cuts, irritation, breakouts, cold sores or open skin."
           },
           {
             "title": "Plan your timing",
@@ -153,25 +167,20 @@
             "title": "Follow aftercare",
             "text": "It protects the treated area and gives the best healed result."
           }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "Before your appointment",
-          "text": "Ask first if you recently had filler, Botox, laser, a chemical peel, waxing, brow or lip treatments, an eye procedure, scalp treatments, or other cosmetic work near the area."
-        }
+        ]
       },
       {
         "type": "grid",
+        "layout": "center",
         "heading": "Who should ask first.",
-        "lede": "Many of these clients are still good candidates. Timing is what matters, so ask before booking if any apply.",
-        "columns": 2,
+        "lede": "Some clients may still be good candidates, but timing matters.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi on a phone call at the studio, answering a question before a client books"
+        },
         "items": [
           {
             "title": "Health and healing",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it"
-            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -181,10 +190,6 @@
           },
           {
             "title": "The treatment area",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Close, even-light shot of a brow area with clear, calm skin, ready for treatment"
-            },
             "bullets": [
               "Irritation, cuts, sunburn or open skin nearby",
               "Active breakouts near the area",
@@ -201,39 +206,77 @@
       },
       {
         "type": "grid",
-        "heading": "By service.",
+        "layout": "tiles",
+        "heading": "Safety by service.",
         "lede": "Each service has its own timing and preparation. Ask first if you are unsure.",
         "items": [
           {
             "title": "Brows",
-            "text": "Irritation, breakouts, sunburn, recent brow treatments, Botox, filler, laser or peels near the brows."
+            "text": "Irritation, breakouts, sunburn, recent brow treatments, Botox, filler, laser or peels near the brows.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Dark powder brows with a softer front",
+              "photo": {
+                "ref": "ombre-powder-brows/01",
+                "alt": "Dark powder brows with a softer front",
+                "focus": "50% 0%",
+                "detail": "Close-up"
+              }
+            }
           },
           {
-            "title": "Eyeliner and lash enhancement",
-            "text": "Eye irritation, recent eye surgery, certain eye medications, lash extensions or sensitivity around the eyes."
+            "title": "Eyes",
+            "text": "Eye irritation, recent eye surgery, certain eye medications, lash extensions or sensitivity around the eyes.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lash enhancement before and after: a dark line along the upper lashes",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after: a dark line along the upper lashes",
+                "detail": "Before and after"
+              }
+            }
           },
           {
-            "title": "Lip tint",
-            "text": "A cold sore history or an active one, cracked lips, recent filler or treatments around the mouth."
+            "title": "Lips",
+            "text": "A cold sore history or an active one, cracked lips, recent filler or treatments around the mouth.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lip tint before and after: pale pink lips, then deeper rosy red",
+              "photo": {
+                "ref": "lip-tint/03",
+                "alt": "Lip tint before and after: pale pink lips, then deeper rosy red",
+                "detail": "Before and after"
+              }
+            }
           },
           {
-            "title": "Scalp micropigmentation",
-            "text": "Scalp irritation, open skin, sunburn, flaking, recent scalp treatments or hair transplant work."
+            "title": "Scalp",
+            "text": "Scalp irritation, open skin, sunburn, flaking, recent scalp treatments or hair transplant work.",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Scalp micropigmentation before and after along a thinning part",
+              "photo": {
+                "ref": "scalp-micropigmentation/02",
+                "alt": "Scalp micropigmentation before and after along a thinning part",
+                "detail": "Before and after"
+              }
+            }
           }
         ]
       },
       {
         "type": "grid",
+        "layout": "feature",
         "heading": "Safety continues after.",
         "lede": "Fresh pigment looks darker or brighter at first, then softens as the skin heals. Aftercare protects it while it does.",
-        "columns": 2,
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
+        },
         "items": [
           {
             "title": "Protect the healing area",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
-            },
             "bullets": [
               "No picking, scratching, rubbing or peeling",
               "No makeup on the area until cleared",
@@ -243,24 +286,31 @@
           },
           {
             "title": "Know when to ask",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Phone on the studio counter beside the printed aftercare card"
-            },
             "bullets": [
               "Unsure about an aftercare product",
               "Healing looks different than expected",
-              "Before active skincare near healed pigment",
+              "Before using active skincare near healed pigment",
               "For signs of infection, contact a physician"
             ]
           }
-        ]
+        ],
+        "side": "left"
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how to prepare, what healing looks like, and the questions clients ask most.",
-        "columns": 3,
+        "lede": "How to prepare, how it heals, and the common questions.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Brow with fine strokes at the front and shading through the tail",
+          "photo": {
+            "ref": "microblading-shading/01",
+            "alt": "A brow with fine strokes at the front and shading through the tail",
+            "focus": "100% 50%",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "title": "How to prepare",
@@ -284,8 +334,13 @@
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Safety questions.",
-        "lede": "The ones asked most, answered short.",
+        "lede": "Needles, the studio, and who should ask first.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "The treatment room ready for one client: lamp on, the bed covered in a fresh barrier"
+        },
         "items": [
           {
             "q": "Is permanent makeup safe?",
@@ -312,21 +367,6 @@
             "a": "Not over active irritation, cuts, sunburn, breakouts, cold sores, open skin or scalp irritation. Ask first so the timing is handled safely."
           }
         ]
-      },
-      {
-        "type": "cta",
-        "heading": "A safety question before you book?",
-        "text": "Call or write before scheduling. Preparation, timing, aftercare, and whether there is anything else you should ask first.",
-        "links": [
-          {
-            "label": "Frequently asked questions",
-            "href": "/faqs"
-          },
-          {
-            "label": "Aftercare",
-            "href": "/aftercare"
-          }
-        ]
       }
     ]
   },
@@ -334,44 +374,49 @@
     "slug": "aftercare",
     "title": "Aftercare.",
     "lede": "Permanent makeup can look darker, brighter, sharper, dry, flaky or uneven while it heals. That is normal for many clients, so do not judge the final color too early.",
-    "meta": "What to expect after brows, eyeliner, lash enhancement, lip tint and scalp micropigmentation.",
+    "metaLabel": "Covers",
+    "meta": "Brows, eyeliner, lash enhancement, lip tint and scalp micropigmentation.",
     "lead": {
       "ratio": "4 / 5",
       "shot": "Aftercare kit on a white towel: sealed cotton swabs, the recommended balm, a printed instruction card, shot from above"
     },
-    "sections": [
+    "facts": [
       {
-        "type": "facts",
-        "items": [
-          {
-            "title": "Do not pick",
-            "text": "Let dryness or flaking release on its own."
-          },
-          {
-            "title": "Keep it clean",
-            "text": "Clean hands, clean cotton swabs, the instructions you were given."
-          },
-          {
-            "title": "Avoid irritation",
-            "text": "No makeup, heavy sweating, soaking or strong skincare while healing."
-          },
-          {
-            "title": "Wait for healing",
-            "text": "Color can change before the final result settles."
-          }
-        ]
+        "title": "Do not pick",
+        "text": "Let dryness or flaking release on its own."
       },
       {
+        "title": "Keep it clean",
+        "text": "Clean hands, clean cotton swabs, and the instructions given."
+      },
+      {
+        "title": "Avoid irritation",
+        "text": "No makeup, heavy sweating, soaking or strong skincare."
+      },
+      {
+        "title": "Wait for healing",
+        "text": "Color can change before the final result settles."
+      }
+    ],
+    "sections": [
+      {
         "type": "statement",
+        "layout": "wide",
         "heading": "What is normal after permanent makeup?",
+        "lede": "Much of what you see early on is part of the surface healing stage.",
         "paragraphs": [
           "Fresh pigment usually looks darker, sharper or brighter right after the appointment. It has not yet settled into the healed skin.",
-          "As the skin heals, the area can look dry, flaky, lighter or patchy. That can read as fading, but much of it is the surface healing stage.",
-          "Healed results can take several weeks. The touch-up reviews the healed color, shape and softness, and any area that needs more pigment."
+          "As the skin heals, the area can look dry, flaky, lighter or patchy, as if the color were fading too quickly. Final healed results can take several weeks to show."
         ],
         "image": {
-          "ratio": "4 / 5",
-          "shot": "Powder brows the morning after the appointment, crisp and dark, before any flaking"
+          "ratio": "5 / 2",
+          "shot": "Winged eyeliner right after the appointment: a crisp black line on a closed eye",
+          "photo": {
+            "ref": "eyeliner/01",
+            "alt": "Freshly done winged eyeliner on a closed eye, a cotton swab at the top edge",
+            "focus": "50% 10%",
+            "detail": "Fresh"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -381,51 +426,57 @@
       },
       {
         "type": "sequence",
+        "layout": "split",
+        "kind": "timeline",
         "heading": "The healing timeline.",
         "lede": "Every client heals differently, but this is what many experience.",
-        "kind": "timeline",
         "image": {
-          "ratio": "3 / 2",
-          "shot": "One healing brow in three frames, side by side: day one, day five, week six"
+          "ratio": "4 / 5",
+          "shot": "A fresh brow with balm on the brow head, dark and crisp above a closed eye",
+          "photo": {
+            "ref": "microblading-shading/02",
+            "alt": "A freshly done brow with fine strokes at the front and shading through the tail, balm on the brow head",
+            "focus": "50% 50%",
+            "detail": "Fresh"
+          }
         },
         "items": [
           {
             "label": "Day 1",
             "title": "Darker than the finish",
-            "text": "The color looks darker, sharper, brighter or more intense than the healed result. This is normal and it is temporary."
+            "text": "The color looks darker, sharper, brighter or more intense than the healed result. This is normal, and it is temporary."
           },
           {
-            "label": "Days 4 to 7",
+            "label": "Days 2 to 5",
             "title": "Dry and flaky",
             "text": "Dryness, tightness, light flaking or temporary patchiness. Keep it dry and leave it alone; the color underneath is setting."
           },
           {
-            "label": "Around day 10",
+            "label": "Days 6 to 10",
             "title": "Too light",
             "text": "The color looks like it disappeared. It has not. It is under a new layer of skin and will come back."
           },
           {
-            "label": "Week 4",
+            "label": "Weeks 2 to 4",
             "title": "The true color",
             "text": "Healed skin turns clear and the real shade shows, softer and more natural than day one."
           },
           {
-            "label": "Week 6",
+            "label": "Touch-up",
             "title": "The perfecting touch-up",
             "text": "Skin heals unevenly, so some strokes need a second pass. This appointment refines shape and color and finishes the work."
           }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "Usually a two-step process",
-          "text": "The first appointment creates the foundation. The touch-up lets me review retention and refine color, shape, softness or density after healing."
-        }
+        ]
       },
       {
         "type": "grid",
+        "layout": "rail",
         "heading": "What to avoid while it heals.",
         "lede": "Follow the instructions for your service. In general, avoid anything that can irritate, soak, contaminate or fade the area.",
-        "columns": 2,
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin"
+        },
         "items": [
           {
             "title": "Touching and picking",
@@ -434,11 +485,7 @@
               "No rubbing, scratching, picking or peeling",
               "Let flakes release naturally",
               "A clean cotton swab for any recommended product"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin"
-            }
+            ]
           },
           {
             "title": "Water, heat and sweat",
@@ -447,11 +494,7 @@
               "No sauna, steam or heavy sweating",
               "No soaking the treated area",
               "Protect the area before bathing if instructed"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Shower cap and folded towel on a bathroom shelf, the treated area kept dry"
-            }
+            ]
           },
           {
             "title": "Makeup and cosmetic treatments",
@@ -459,11 +502,7 @@
               "No makeup directly on the area",
               "No tinting, lashes, brow or lip products until cleared",
               "No peels, laser, waxing or exfoliation too soon"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Makeup brushes and a brow pencil set aside in a closed pouch, unused"
-            }
+            ]
           },
           {
             "title": "Sun and strong skincare",
@@ -472,11 +511,7 @@
               "Sun protection afterwards helps prevent fading",
               "No AHAs, acids, retinoids or exfoliants nearby",
               "Check labels on active skincare"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Wide-brim hat and mineral sunscreen tube on a bright windowsill"
-            }
+            ]
           }
         ],
         "callout": {
@@ -487,43 +522,59 @@
       },
       {
         "type": "compare",
+        "layout": "tiles",
         "heading": "Brows.",
-        "lede": "Microblading, powder brows and shading can look dramatic at first: dark, crisp, dry, flaky, light or patchy. At the touch-up I review retention, fill lighter areas, adjust softness and refine the final brow.",
+        "lede": "Microblading, powder brows and shading can look dramatic at first: dark, crisp, flaky, light or patchy. At the touch-up I fill lighter areas and refine the brow.",
         "sides": [
           {
             "title": "What is normal",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Soft brows shaded through the tail, client resting on white bedding, head turned",
+              "photo": {
+                "ref": "microblading-shading/05",
+                "alt": "Soft brows with fine strokes at the front and shading through the tail, client lying on white bedding with eyes closed",
+                "detail": "Close-up"
+              }
+            },
             "bullets": [
               "Darker and sharper right after",
               "Flaking can look like fading",
               "Very light before it settles",
               "Several weeks to the healed result"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Microbladed brow on day one, strokes crisp and dark, close and in even light"
-            }
+            ]
           },
           {
             "title": "What to avoid",
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Brow pencil and an exfoliating toner set aside, capped, beside a mirror"
+            },
             "bullets": [
               "Picking flakes or dry skin",
               "Brow makeup on the healing area",
               "Sun, sweat, sauna, swimming, harsh skincare",
               "AHAs, acids, retinoids, exfoliants on healed pigment"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "The same microbladed brow healed at week six, strokes soft and natural, same framing"
-            }
+            ]
           }
         ]
       },
       {
-        "type": "grid",
+        "type": "compare",
+        "layout": "feature",
         "heading": "Eyes.",
         "lede": "Eyeliner and lash enhancement sit at the lash line, so gentle care matters. Defined at first, softer as the area calms.",
-        "columns": 2,
-        "items": [
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "Thin eyeliner with a small wing on an open hazel eye",
+          "photo": {
+            "ref": "eyeliner/03",
+            "alt": "Thin black eyeliner with a small wing on an open hazel eye",
+            "focus": "50% 70%",
+            "detail": "Close-up"
+          }
+        },
+        "sides": [
           {
             "title": "What is normal",
             "bullets": [
@@ -531,38 +582,40 @@
               "Sensitive, tight or slightly tender",
               "Color softens as healing continues",
               "The touch-up refines it if needed"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Fresh eyeliner tattoo on day one, a dark defined line along the lash line, eye closed"
-            }
+            ]
           },
           {
             "title": "What to avoid",
             "bullets": [
               "Eye makeup on the healing area",
               "Rubbing your eyes",
-              "Lash serums, extensions or eye treatments without asking",
+              "Lash serums, extensions or treatments without asking",
               "Unsure about contacts or eye products? Ask"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed eyeliner at week four, the line soft and even, eye open in daylight"
-            }
+            ]
           }
         ],
         "callout": {
           "tone": "caution",
           "title": "Ask before booking eye services",
           "text": "Ask before booking if you have active eye irritation, recent eye surgery, certain eye medications, recent cosmetic eye treatments, or sensitivity around the eyes."
-        }
+        },
+        "side": "left"
       },
       {
-        "type": "grid",
+        "type": "compare",
+        "layout": "center",
         "heading": "Lips.",
         "lede": "Lip tint often looks brighter at first. The healed color is usually softer and more natural.",
-        "columns": 2,
-        "items": [
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Lip tint before and after: pale mauve lips, then soft rosy pink",
+          "photo": {
+            "ref": "lip-tint/04",
+            "alt": "Lip tint before and after: pale mauve lips, then soft rosy-pink lips",
+            "detail": "Before and after"
+          }
+        },
+        "sides": [
           {
             "title": "What is normal",
             "bullets": [
@@ -570,11 +623,7 @@
               "Dryness, tightness or light flaking",
               "Lighter before it settles",
               "Final tone depends on natural lip color, healing and touch-up"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Lip tint the day after, bright and bold with a slight sheen, lips at rest"
-            }
+            ]
           },
           {
             "title": "What to avoid",
@@ -582,12 +631,8 @@
               "Picking or peeling dry lips",
               "Lip products not approved during healing",
               "Spicy, irritating or messy foods that bother the area",
-              "Sun exposure; follow the instructions given"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed lip tint, day 5, light flaking at the border"
-            }
+              "Sun exposure while the lips heal"
+            ]
           }
         ],
         "callout": {
@@ -597,11 +642,15 @@
         }
       },
       {
-        "type": "grid",
+        "type": "compare",
+        "layout": "ledger",
         "heading": "Scalp.",
-        "lede": "Scalp micropigmentation builds the look of fuller density with tiny pigment impressions. Darker at first, blended as it heals.",
-        "columns": 2,
-        "items": [
+        "lede": "Scalp micropigmentation builds the look of fuller density with tiny pigment impressions, often in layers. Darker at first, blended as it heals.",
+        "image": {
+          "ratio": "5 / 2",
+          "shot": "The crown right after a scalp micropigmentation session, impressions dark and distinct, shot from above in daylight"
+        },
+        "sides": [
           {
             "title": "What is normal",
             "bullets": [
@@ -609,11 +658,7 @@
               "Pigment softens as the scalp heals",
               "More sessions may be needed for density",
               "Sun exposure fades pigment faster over time"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Scalp micropigmentation right after the first session, impressions dark and distinct"
-            }
+            ]
           },
           {
             "title": "What to avoid",
@@ -622,23 +667,19 @@
               "Sunburn before and after the appointment",
               "Heavy sweating, soaking, sauna or swimming",
               "Scalp products too soon, without asking"
-            ],
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "The same scalp healed at week three, impressions blended into the surrounding hair"
-            }
+            ]
           }
-        ],
-        "callout": {
-          "tone": "note",
-          "title": "About SMP sessions",
-          "text": "SMP often builds in layers. A consultation decides the treatment area, density goal, hairline plan and how many sessions you may need."
-        }
+        ]
       },
       {
         "type": "grid",
+        "layout": "bento",
         "heading": "Why touch-ups matter.",
-        "lede": "Touch-ups complete the process: a review of what your skin kept after healing, then careful refinements.",
+        "lede": "Touch-ups complete the process, and later keep the color fresh.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Pomi refining a healed brow at the touch-up, shot close from above in soft light"
+        },
         "items": [
           {
             "title": "Color refresh",
@@ -654,15 +695,31 @@
           },
           {
             "title": "Maintenance",
-            "text": "Yearly touch-ups refresh pigment after natural fading."
+            "text": "Yearly touch-ups can help refresh pigment after natural fading."
           }
-        ]
+        ],
+        "callout": {
+          "tone": "note",
+          "title": "Usually a two-step process",
+          "text": "The first appointment creates the foundation. The touch-up lets me review retention and refine color, shape, softness or density after healing."
+        },
+        "side": "left"
       },
       {
         "type": "grid",
+        "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how the studio stays safe, the questions clients ask most, and why the touch-up completes the work.",
-        "columns": 3,
+        "lede": "How the studio stays safe, and healing stage by stage.",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Microblading before and after: sparse natural hairs, then a fuller brow of strokes",
+          "photo": {
+            "ref": "microblading/02",
+            "alt": "Microblading before and after: a sparse brow, then a fuller, darker brow of hair strokes",
+            "focus": "45% 50%",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
             "title": "Safety",
@@ -671,23 +728,33 @@
             "linkLabel": "Read"
           },
           {
-            "title": "Frequently asked questions",
-            "text": "Short answers to the questions clients ask most.",
-            "href": "/faqs",
+            "title": "PMU healing timeline",
+            "text": "Day 1 to the touch-up in detail, and when to reach out.",
+            "href": "/learn/pmu-healing-timeline",
             "linkLabel": "Read"
           },
           {
-            "title": "Why the touch-up matters",
-            "text": "What the second appointment reviews, and when to book it.",
-            "href": "/learn/importance-of-touch-up",
+            "title": "Frequently asked questions",
+            "text": "Short answers to the questions clients ask most.",
+            "href": "/faqs",
             "linkLabel": "Read"
           }
         ]
       },
       {
         "type": "faq",
+        "layout": "split",
         "heading": "Aftercare questions.",
-        "lede": "The ones asked most, answered short.",
+        "lede": "Color, flaking, makeup, and when to ask.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Smiling client lying down, eyes closed, soft brows with fine strokes at the front",
+          "photo": {
+            "ref": "microblading-shading/03",
+            "alt": "A smiling client lying down with eyes closed, soft brows with fine strokes at the front",
+            "detail": "Close-up"
+          }
+        },
         "items": [
           {
             "q": "Why does it look so dark at first?",
@@ -706,27 +773,12 @@
             "a": "Visible healing takes about 1 to 2 weeks, the final color several weeks. Brows may need 4 to 6 weeks before they can be fully evaluated."
           },
           {
+            "q": "Can I wear makeup while it heals?",
+            "a": "Not on or near the treated area until you are cleared. That protects the healing skin and the final result."
+          },
+          {
             "q": "When should I contact the studio?",
             "a": "When unsure about aftercare, products, healing or touch-up timing. For signs of infection or medical concerns, contact your physician."
-          },
-          {
-            "q": "Do I need a touch-up?",
-            "a": "Most services are a two-step process. The touch-up reviews retention and refines color, shape, softness or density."
-          }
-        ]
-      },
-      {
-        "type": "cta",
-        "heading": "An aftercare question?",
-        "text": "Call or write if you are unsure about healing, aftercare, touch-up timing, or whether what you are seeing is normal.",
-        "links": [
-          {
-            "label": "Ask an aftercare question",
-            "href": "/contact"
-          },
-          {
-            "label": "The healing timeline, in detail",
-            "href": "/learn/pmu-healing-timeline"
           }
         ]
       }

@@ -1,12 +1,16 @@
 ---
 // One page per service, including the three Maintenance/Correction ones: Base.astro's JSON-LD
 // emits /services/<slug> for every service, so skipping any would publish schema pointing at 404s.
+//
+// Short on purpose: the hero, Pomi's work, the guides worth reading first, then the form.
+// The six-week healing timeline that sat between them was cut on 2026-09-28. The client found
+// it messy, and /aftercare already walks through healing.
 import Base from "../../layouts/Base.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import PortableText from "../../components/PortableText.astro";
 import Photo from "../../components/Photo.astro";
 import Caption from "../../components/Caption.astro";
-import HealingAxis from "../../components/HealingAxis.astro";
+import LinkTiles from "../../components/LinkTiles.astro";
 import ContactForm from "../../components/ContactForm.astro";
 import Icon from "../../components/Icon.astro";
 import type { Photo as PhotoType } from "../../lib/content";
@@ -34,16 +38,11 @@ const photoKey = (p: PhotoType | undefined) =>
   !p ? null : p.kind === "local" ? p.source : p.src;
 const allPhotos = service.gallery?.length ? service.gallery : localGallery(service.slug);
 // The cover leads the page, so it is held out of the grid below rather than appearing on
-// the page a second time. The healing rail used to reserve a photograph too, but it never
-// rendered one: HealingAxis declared no props and silently dropped what it was passed.
+// the page a second time.
 const usedKeys = new Set([photoKey(service.cover)].filter(Boolean));
 const gallery = allPhotos.filter((p) => !usedKeys.has(photoKey(p)));
 const related = learn.filter((a) => a.relatedService === service.slug);
 const faqs = learn.filter((a) => a.showAsFaq);
-
-// Maintenance and Correction are follow-up work, not a first appointment, so they skip the
-// healing timeline and the gallery framing that assumes a before.
-const isFollowUp = ["Maintenance", "Correction"].includes(service.category);
 
 const title = service.seoTitle || `${service.title} in Tustin, near Irvine | ${settings.businessName}`;
 const description =
@@ -165,8 +164,8 @@ const tagTone: Record<string, string> = {
       <section class="section svc-work" id="work" aria-labelledby="work-heading">
         <div class="page">
           <div class="section-head reveal">
-            <h2 id="work-heading">{service.title}, healed.</h2>
-            <p class="lede">Every photograph is Pomi's own work on a real client. Some are before-and-after pairs.</p>
+            <h2 id="work-heading">{service.title}, Pomi's work.</h2>
+            <p class="lede">Every photograph is a real client. Some are before-and-after pairs.</p>
           </div>
           <ul class="svc-work__grid">
             {gallery.map((photo, i) => (
@@ -180,30 +179,18 @@ const tagTone: Record<string, string> = {
     )
   }
 
-  {!isFollowUp && <HealingAxis />}
-
   {
     related.length > 0 && (
-      <section class="section svc-read" aria-labelledby="read-heading">
-        <div class="page">
+      <section class:list={["section svc-read", { "svc-read--one": related.length === 1 }]} aria-labelledby="read-heading">
+        <div class="page svc-read__inner">
           <div class="section-head reveal">
             <h2 id="read-heading">Before you book.</h2>
             <p class="lede">The questions people ask about this service most often.</p>
           </div>
-          <ul class="svc-read__list">
-            {related.map((a, i) => (
-              <li class="card reveal" style={`--i: ${i % 3}`}>
-                <h3 class="svc-read__title">
-                  <a href={`/learn/${a.slug}`}>{a.title}</a>
-                </h3>
-                <p class="muted">{a.summary}</p>
-                <span class="svc-read__cta">
-                  Read it
-                  <Icon name="arrow" class="svc-read__arrow" />
-                </span>
-              </li>
-            ))}
-          </ul>
+          <LinkTiles
+            items={related.map((a) => ({ title: a.title, text: a.summary, href: `/learn/${a.slug}`, label: "Read" }))}
+            variant="grid"
+          />
         </div>
       </section>
     )
@@ -309,49 +296,23 @@ const tagTone: Record<string, string> = {
     gap: var(--space-5);
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  /* One guide to read: the head and its one tile share a row, instead of one small tile alone
+     under a heading in a band that is otherwise empty. */
+  @media (min-width: 60rem) {
+    .svc-read--one .svc-read__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      column-gap: var(--space-8);
+      align-items: center;
+    }
+    .svc-read--one .section-head {
+      margin-bottom: 0;
+    }
+  }
   @media (min-width: 40rem) {
     .svc-work__grid {
       grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     }
-  }
-  .svc-read__list {
-    display: grid;
-    gap: var(--space-4);
-  }
-  .svc-read__list li {
-    position: relative;
-    display: grid;
-    gap: var(--space-3);
-    align-content: start;
-  }
-  .svc-read__title a {
-    text-decoration: none;
-  }
-  .svc-read__title a::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-  }
-  .svc-read__cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    min-height: 44px;
-    color: var(--ink-muted);
-    font-size: var(--fs-small);
-    font-weight: 500;
-  }
-  .svc-read__list li:hover .svc-read__cta {
-    color: var(--ink);
-  }
-  .svc-read__list :global(.svc-read__arrow) {
-    width: 1rem;
-    height: 1rem;
-    transition: transform var(--dur-base) var(--ease-out);
-  }
-  .svc-read__list li:hover :global(.svc-read__arrow) {
-    transform: translateX(3px);
   }
   @media (min-width: 60rem) {
     .svc-hero {
@@ -360,9 +321,6 @@ const tagTone: Record<string, string> = {
       column-gap: var(--space-8);
       padding-block: var(--space-8) var(--section);
       min-height: min(calc(100svh - var(--header-h)), 46rem);
-    }
-    .svc-read__list {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 </style>

@@ -2,21 +2,32 @@
 // A page's sections, one after another, each on its own hairline: the slide-deck rhythm the
 // previous site had, kept, with its kickers, tints and dark bands left behind. Every section
 // opens with h2 then lede and nothing above the heading.
+//
+// Each section's composition comes from the layout library (src/lib/sections.ts):
+// resolveLayout picks the layout, assignSides alternates the photo left and right down the
+// page, starting opposite the header photo. Blocks renders every group of cards, steps or
+// sides; Statement, Faq and CtaBand keep their own components but share the same layout CSS.
 import type { Section } from "../../lib/sections";
 import type { SiteSettings } from "../../lib/content";
+import { assignSides, effectiveRatio, isBlockSection, resolveLayout, withSlots } from "../../lib/sections";
+import Nobr from "./Nobr.astro";
 import Facts from "./Facts.astro";
 import Statement from "./Statement.astro";
-import Grid from "./Grid.astro";
-import Sequence from "./Sequence.astro";
-import Compare from "./Compare.astro";
+import Blocks from "./Blocks.astro";
+import ImageSlot from "./ImageSlot.astro";
 import Faq from "../Faq.astro";
 import CtaBand from "../CtaBand.astro";
+import "../../styles/layouts.css";
 
 interface Props {
   sections: Section[];
   settings: SiteSettings;
 }
-const { sections, settings } = Astro.props;
+// Image slots that are not really there (a ratio the Studio pre-filled, with no brief and no
+// photo) are dropped first, so every component agrees with resolveLayout() about which sections
+// have a photograph.
+const sections = Astro.props.sections.map(withSlots);
+const { settings } = Astro.props;
 
 const slug = (s: string) =>
   s
@@ -24,11 +35,15 @@ const slug = (s: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
 
-let statements = 0;
+const sides = assignSides(sections, "right");
 ---
 
 {
   sections.map((s, i) => {
+    const layout = resolveLayout(s);
+    const side = sides[i];
+    // A section of a type this site does not know (a CMS document never mapped) renders nothing.
+    if (layout === "none") return null;
     if (s.type === "facts") {
       return (
         <section class="slide slide--facts">
@@ -39,9 +54,10 @@ let statements = 0;
       );
     }
     if (s.type === "cta") {
-      return <CtaBand heading={s.heading} text={s.text} links={s.links} settings={settings} id={`cta-${i}`} />;
+      return <CtaBand heading={s.heading} text={s.text} links={s.links} settings={settings} id={`cta-${i}`} image={s.image} />;
     }
     if (s.type === "faq") {
+      const split = layout === "split" && s.image;
       return (
         <Faq
           items={s.items}
@@ -49,30 +65,39 @@ let statements = 0;
           lede={s.lede ?? "Short answers. Ask the rest before you book."}
           id={s.heading ? slug(s.heading) : `questions-${i}`}
           showLearnLink={false}
-        />
+          layout={split ? "split" : undefined}
+        >
+          {split && (
+            <ImageSlot
+              slot="aside"
+              image={{ ...s.image!, ratio: effectiveRatio("faq", s.image!.ratio) }}
+              sizes="(min-width: 27rem) 24rem, 100vw"
+              widths={[480, 800]}
+            />
+          )}
+        </Faq>
       );
     }
     const id = slug(s.heading);
-    const flip = s.type === "statement" ? statements++ % 2 === 1 : false;
     const head = (
       <div class="section-head slide__head reveal">
-        <h2 id={`${id}-heading`}>{s.heading}</h2>
+        <h2 id={`${id}-heading`}><Nobr text={s.heading} /></h2>
         {s.lede && <p class="lede">{s.lede}</p>}
       </div>
     );
     return (
-      <section class:list={["section", "slide", `slide--${s.type}`]} id={id} aria-labelledby={`${id}-heading`}>
+      <section class:list={["section", "slide", `slide--${s.type}`, `slide--${layout}`]} id={id} aria-labelledby={`${id}-heading`}>
         <div class="page">
-          {/* A statement keeps its heading in the copy column, level with its photograph. */}
-          {s.type !== "statement" && head}
           {s.type === "statement" && (
-            <Statement section={s} flip={flip}>
+            <Statement section={s} layout={layout as "split" | "wide" | "solo"} side={side === "left" || side === "right" ? side : null}>
               <Fragment slot="head">{head}</Fragment>
             </Statement>
           )}
-          {s.type === "grid" && <Grid section={s} />}
-          {s.type === "sequence" && <Sequence section={s} />}
-          {s.type === "compare" && <Compare section={s} />}
+          {isBlockSection(s) && (
+            <Blocks section={s} layout={layout} side={side}>
+              <Fragment slot="head">{head}</Fragment>
+            </Blocks>
+          )}
         </div>
       </section>
     );
@@ -83,6 +108,10 @@ let statements = 0;
   /* The facts strip is the header's last line, not a section: no section pad, no hairline. */
   .slide--facts {
     padding-bottom: var(--space-6);
+  }
+  /* The first real section after the facts strip still opens on the page's hairline. */
+  .slide--facts + :global(.section) {
+    border-top: 1px solid var(--border);
   }
   .slide :global(.slide__head h2) {
     max-width: 24ch;
