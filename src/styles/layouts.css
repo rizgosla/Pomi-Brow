@@ -1,0 +1,627 @@
+/*
+ * The layout library: the compositions the slide pages (Safety, Aftercare, the Learn guides)
+ * are built from. Imported by src/components/sections/Sections.astro only, so the home page and
+ * every page without sections never load it. Global rather than scoped because the parts it
+ * places are rendered by several components (Blocks, Block, Statement) and hold others
+ * (ImageSlot, Callout, LinkTiles). Every class is l- prefixed: PricingTable already owns a scoped
+ * .bento, and nothing here should ever collide with a component's own names.
+ *
+ * Why a library at all. The pages used to render every group of cards one way and every
+ * sequence another, so a page read as one copy-pasted style in thin strips. Editorial designers
+ * keep the system fixed -- grid, type, colour, spacing -- and vary the composition: which side
+ * the photograph takes and how big it is, whether the blocks are separate boxes, rows in one box
+ * or columns of one box. resolveLayout() in src/lib/sections.ts picks the layout per section, and
+ * pageRhythmProblems() keeps neighbours different. DESIGN.md "Slide pages" has the rules and
+ * docs/superpowers/specs/2026-09-28-info-page-layouts.md the sources.
+ *
+ * The shell. Every composition is one grid, .l, with up to four parts in this document order:
+ * head (the h2 and lede), media (the section's photograph), body (the blocks) and note (a
+ * Callout). From 60rem each layout places them with grid-template-areas, never `order`, so the
+ * document order is the reading order: a screen reader, and a phone where the areas fall away,
+ * both meet heading, photograph, blocks, note. The note always comes last.
+ *
+ * Spacing is margins on the parts, not row-gap. A section without a note or a photograph leaves
+ * an empty track, and a row-gap would still open on each side of it: a band of white under the
+ * section that nothing explains.
+ *
+ * Containers are rounded tiles (the client's ruling of 2026-09-11); hairlines appear only inside
+ * a tile, as dividers. Nothing here carries a shadow, and only a tile that is a link answers hover.
+ */
+
+/* ------------------------------------------------------------------------------------------ */
+/* Shell                                                                                        */
+/* ------------------------------------------------------------------------------------------ */
+
+.l {
+  /* From the head to what follows it, and between everything after that. Layouts retune them. */
+  --l-head-gap: var(--space-7);
+  --l-gap: var(--space-6);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+
+.l > *,
+.l__rail > * {
+  min-width: 0;
+}
+
+.l > * + *,
+.l__rail > * + * {
+  margin-top: var(--l-gap);
+}
+
+.l > .l__head + *,
+.l__rail > .l__head + * {
+  margin-top: var(--l-head-gap);
+}
+
+/* The global section head carries 4rem under it for sections that stack; here the shell's
+   margins do that job, and a head beside a photograph must not push its column down. */
+.l .section-head {
+  margin-bottom: 0;
+}
+
+/* The section's own photograph. The frame lives in ImageSlot; this only sizes it. */
+.l__media {
+  display: grid;
+  align-items: start;
+}
+
+.l-photo {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Tile, and the anatomy of one block (Block.astro)                                             */
+/* ------------------------------------------------------------------------------------------ */
+
+/* The slide-page tile: a breath off white inside the blush box line. It sets --frame to the grey
+   card frame, which ImageSlot's empty frame and Photo's real frame both read, so a pink box never
+   holds a pink frame (a double rule) whether the photograph has arrived yet or not. */
+.l-tile {
+  --frame: var(--frame-in-card);
+  position: relative;
+  padding: var(--space-5);
+  border: 1px solid var(--outline-pink);
+  border-radius: var(--radius);
+  background: var(--tile);
+}
+
+.l-block {
+  position: relative;
+  min-width: 0;
+}
+
+/* A block that is a box or a column of its own stacks: photograph, marker, then the words. The
+   main part takes the slack, so a whole-block link lands on the floor of a stretched tile. */
+.l-block:is(.l-tile, .l-col) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.l-block:is(.l-tile, .l-col) > :is(.l-num, .tag) {
+  align-self: flex-start;
+}
+
+.l-block__photo {
+  width: 100%;
+}
+
+/* The photograph sits a step further from the words than the words sit from each other. The
+   margin goes on what follows it: ImageSlot owns its own figure's margins. */
+.l-block > .l-block__photo + * {
+  margin-top: var(--space-2);
+}
+
+.l-block__main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.l-block__title {
+  max-width: 36ch;
+}
+
+.l-block__text {
+  max-width: 48ch;
+  color: var(--ink-body);
+}
+
+.l-bullets {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 48ch;
+  padding-left: 1.1rem;
+  list-style: disc;
+  color: var(--ink-body);
+}
+
+.l-bullets li::marker {
+  color: var(--ink-muted);
+}
+
+/* Steps count in the serif, the way the review count does: one size inside boxes and rows. */
+.l-num {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 72;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: var(--track-display);
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--ink);
+}
+
+/* The rail's counted rows (01, 02): the small numeral scaled down to about 3rem on a laptop, so
+   the count reads as the row's anchor without outweighing the section's h2. */
+.l-num--rank {
+  font-size: calc(var(--fs-numeral-sm) * 0.66);
+  letter-spacing: -0.03em;
+}
+
+/* Several links under one block: a short inline run, each at the full 44px touch height. */
+.l-links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-5);
+}
+
+/* One link makes the whole block the target. Its ::after covers the block, so the hit area is
+   the box while the link text stays where the eye lands; the text needs no 44px of its own. */
+.l-block__link {
+  min-height: 0;
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
+
+.l-block__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.l-linked:hover .l-block__link {
+  text-decoration-color: currentColor;
+}
+
+.l-linked:hover .l-block__link .icon {
+  transform: translateX(3px);
+}
+
+/* The focus ring goes round the whole target, not round the word "Read" inside it. */
+.l-block__link:focus-visible {
+  outline: none;
+}
+
+.l-block__link:focus-visible::after {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: var(--radius);
+}
+
+/* Hover-Is-Open: a tile that is a link takes the open FAQ question's look. Pointer devices only,
+   so a tap never leaves a tile stuck pink. Rows and columns inside a shared tile keep to the
+   link's own underline and arrow; filling part of a box would read as a selection. */
+@media (hover: hover) {
+  .l-tile.l-linked {
+    transition:
+      background-color var(--dur-base) ease,
+      border-color var(--dur-base) ease;
+  }
+  .l-tile.l-linked:hover {
+    background: var(--pale-pink);
+    border-color: var(--line-pink-strong);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* tiles: equal boxes in a row (image cards, parallel points)                                  */
+/* ------------------------------------------------------------------------------------------ */
+
+/* Boxes size to their words. Only a text-only group (--even) matches its siblings' height:
+   photographs already line the row up, and stretching under them opens empty floors. */
+.l-tiles {
+  display: grid;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.l-tiles--even {
+  align-items: stretch;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Rows: one tile of rows under dividers (split, rail)                                         */
+/* ------------------------------------------------------------------------------------------ */
+
+.l-rows.l-tile {
+  padding-block: 0;
+}
+
+.l-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--space-3);
+  padding-block: var(--space-5);
+}
+
+.l-row + .l-row {
+  border-top: 1px solid var(--border);
+}
+
+.l-row > .tag {
+  justify-self: start;
+}
+
+/* A counted row hangs its numeral left of the words, on the title's baseline. */
+.l-row--num {
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: var(--space-5);
+  align-items: baseline;
+}
+
+/* The timeline: text only, down one 1px line with a hollow marker at each moment (Reuters
+   SimpleTimeline). The photograph stays outside it, beside the tile. The dividers start after
+   the line, so the line runs unbroken and never crosses them. --tl-y is the middle of the
+   moment's tag: the row's top padding plus half the tag's 1.5rem. */
+.l-rows--timeline {
+  --tl-inset: 1.75rem;
+  --tl-y: calc(var(--space-5) + var(--space-3));
+}
+
+.l-rows--timeline > .l-row {
+  margin-left: var(--tl-inset);
+}
+
+.l-rows--timeline > .l-row::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: calc(4px - var(--tl-inset));
+  width: 1px;
+  background: var(--line-pink);
+}
+
+.l-rows--timeline > .l-row:first-child::before {
+  top: var(--tl-y);
+}
+
+.l-rows--timeline > .l-row:last-child::before {
+  bottom: auto;
+  height: calc(var(--tl-y) + 1px);
+}
+
+.l-rows--timeline > .l-row:only-child::before {
+  display: none;
+}
+
+.l-rows--timeline > .l-row::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--tl-y) - 4.5px);
+  left: calc(-1 * var(--tl-inset));
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--pink-ink);
+  border-radius: 50%;
+  background: var(--canvas);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* ledger: one tile divided into columns by hairlines                                         */
+/* ------------------------------------------------------------------------------------------ */
+
+.l-ledger.l-tile {
+  display: grid;
+  padding: 0;
+}
+
+.l-col {
+  padding: var(--space-5);
+}
+
+.l-col + .l-col {
+  border-top: 1px solid var(--border);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* bento, feature, center: lists whose composition needs a grid of their own                    */
+/* ------------------------------------------------------------------------------------------ */
+
+.l-bento,
+.l-feature,
+.l-pair {
+  display: grid;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Statement copy                                                                               */
+/* ------------------------------------------------------------------------------------------ */
+
+/* One paragraph size. The first paragraph used to run at the lede size above body-size ones:
+   two starting points and two sets of baselines in one block, which the client read as a
+   mistake. The statement's own lede, in the head, keeps the global .lede. */
+.l-prose {
+  max-width: var(--measure);
+}
+
+.l-prose p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--ink-body);
+}
+
+.l--statement {
+  --l-head-gap: var(--space-6);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Phones and tablets                                                                           */
+/* ------------------------------------------------------------------------------------------ */
+
+/* One column in document order. A portrait or square photograph stops at a size that still
+   leaves the words on screen; a strip turns 4:3, because 5:2 at phone width is a sliver (the
+   Guardian crops 5:3 on desktop to 4:5 on mobile for the same reason). The ratio is set inline
+   by ImageSlot and Photo, hence !important. */
+@media (max-width: 59.99rem) {
+  .l-photo:not(.l-strip) {
+    max-inline-size: 28rem;
+  }
+  .l-strip :is(.slot__frame, .photo) {
+    aspect-ratio: 4 / 3 !important;
+  }
+}
+
+@media (min-width: 40rem) {
+  .l-tiles,
+  .l-bento,
+  .l-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Three bento blocks: the first runs across, the other two share the row below. */
+  .l-bento--3 > :first-child {
+    grid-column: 1 / -1;
+  }
+  .l-bento {
+    align-items: stretch;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Compositions, from 60rem                                                                     */
+/* ------------------------------------------------------------------------------------------ */
+
+@media (min-width: 60rem) {
+  .l {
+    --l-head-gap: var(--space-8);
+    column-gap: var(--space-8);
+    grid-template-areas: "head" "media" "body" "note";
+  }
+  .l > .l__head {
+    grid-area: head;
+  }
+  .l > .l__media {
+    grid-area: media;
+  }
+  /* The blocks always sit under the head, whatever the photograph between them does. */
+  .l > .l__body {
+    grid-area: body;
+    margin-top: var(--l-head-gap);
+  }
+  .l > .l__note {
+    grid-area: note;
+  }
+
+  /* tiles: head on top, the boxes in one row. */
+  .l-tiles {
+    grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr));
+  }
+
+  /* split: the photograph 5/12, the head, rows and note 7/12 beside it. The last track takes
+     whatever height the photograph adds, so the rows stay under the head and the note under the
+     rows. The media part stretches the full height so the photograph can stick inside it. */
+  .l--split {
+    --l-head-gap: var(--space-7);
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      "media head"
+      "media body"
+      "media note";
+  }
+  .l--split[data-side="right"] {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-areas:
+      "head media"
+      "body media"
+      "note media";
+  }
+  .l--split > .l__media {
+    align-self: stretch;
+    margin-top: 0;
+  }
+  /* A photograph narrower than its column (see the viewport cap below) keeps to the page edge. */
+  .l--split[data-side="right"] > .l__media {
+    justify-items: end;
+  }
+
+  /* rail, the Guardian's "hanging head": the h2, lede and a small photograph in a left rail
+     4/12; the counted rows in one tile 8/12. The rail is one part so the photograph can hang
+     under the head and stick while the rows scroll; the note follows the rows. */
+  .l--rail {
+    --l-head-gap: var(--space-6);
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "rail body"
+      "rail note";
+  }
+  .l--rail > .l__rail {
+    grid-area: rail;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .l--rail > .l__body {
+    margin-top: 0;
+  }
+  .l__rail > .l__media {
+    flex: 1 0 auto;
+  }
+  .l--rail .l-photo {
+    max-inline-size: 22rem;
+  }
+
+  /* Four or more counted rows run down two columns, in reading order, so the tile stays short
+     beside the rail. The first row of each column has no divider above it. */
+  .l-rows--cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(var(--rows, 2), auto);
+    grid-auto-flow: column;
+    column-gap: var(--space-7);
+  }
+  .l-rows--cols > .l-row--col-top {
+    border-top: 0;
+  }
+
+  /* ledger, and the statement's wide: a head row of h2 and lede 7/12 beside a 5:2 strip 5/12;
+     below it, the ledger's one tile split into --n columns by hairlines. */
+  .l--ledger,
+  .l--wide {
+    --l-head-gap: var(--space-7);
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-areas:
+      "head media"
+      "body body"
+      "note note";
+  }
+  :is(.l--ledger, .l--wide) > .l__media {
+    margin-top: 0;
+  }
+  .l-ledger.l-tile {
+    grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr));
+  }
+  .l-col + .l-col {
+    border-top: 0;
+    border-left: 1px solid var(--border);
+  }
+
+  /* bento: a square photograph over both rows of a 2x2 (about twice a cell), the blocks
+     filling the rest. The blocks stretch to the photograph's height: here filling the
+     rectangle is the composition. */
+  .l--bento {
+    column-gap: var(--space-5);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    grid-template-areas:
+      "head head"
+      "media body"
+      "note note";
+  }
+  .l--bento[data-side="right"] {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-areas:
+      "head head"
+      "body media"
+      "note note";
+  }
+  .l--bento > .l__body {
+    display: grid;
+    align-self: stretch;
+  }
+  .l-bento {
+    grid-auto-rows: 1fr;
+  }
+
+  /* feature, "1 + N": the first block large (7/12) with the photograph at its head, the rest as
+     compact tiles stacked beside it (5/12). The trailing 1fr track takes the lead's extra
+     height, so the compact tiles stay packed at the top instead of spreading apart. */
+  .l-feature {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-rows: repeat(var(--rest, 1), auto) 1fr;
+  }
+  .l-feature > :first-child {
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+  .l-feature > :not(:first-child) {
+    grid-column: 2;
+  }
+  [data-side="right"] .l-feature {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+  [data-side="right"] .l-feature > :first-child {
+    grid-column: 2;
+  }
+  [data-side="right"] .l-feature > :not(:first-child) {
+    grid-column: 1;
+  }
+
+  /* center: block, photograph, block, level on the photograph's middle (ProPublica's
+     centre-anchored objects). The photograph is its own part, first in the document so a phone
+     shows it first; here it takes the middle track of the body's row, and the pair of blocks
+     runs the same three tracks around it. The pair's box passes pointer events through to the
+     photograph it overlaps. */
+  .l--center {
+    --l-center-cols: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 1fr);
+    column-gap: var(--space-6);
+    grid-template-columns: var(--l-center-cols);
+    grid-template-areas:
+      "head head head"
+      "body body body"
+      "note note note";
+    align-items: center;
+  }
+  .l--center > .l__media {
+    grid-area: body;
+    grid-column: 2;
+  }
+  .l--center > .l__body {
+    pointer-events: none;
+  }
+  .l--center .l-pair {
+    column-gap: var(--space-6);
+    grid-template-columns: var(--l-center-cols);
+    align-items: center;
+  }
+  .l--center .l-pair > * {
+    grid-row: 1;
+    pointer-events: auto;
+  }
+  .l--center .l-pair > :first-child {
+    grid-column: 1;
+  }
+  .l--center .l-pair > :last-child {
+    grid-column: 3;
+  }
+
+  /* Statements set their paragraphs close under the head: the copy continues the lede. */
+  .l.l--statement {
+    --l-head-gap: var(--space-6);
+  }
+}
+
+/* Sticky only where the screen has the height for it. The photograph stops under the header and
+   is capped so it fits the screen with its caption: at 1366x768 a full 5/12 column would run a
+   4:5 frame off the bottom. --ar is the frame's width over its height, set by the component. */
+@media (min-width: 60rem) and (min-height: 45rem) {
+  :is(.l--split, .l--rail) .l__media > .l-photo {
+    position: sticky;
+    top: calc(var(--header-h) + var(--space-6));
+  }
+  .l--split .l__media > .l-photo {
+    max-inline-size: calc((100svh - var(--header-h) - var(--space-8) - 2.5rem) * var(--ar, 0.8));
+  }
+  .l--rail .l__media > .l-photo {
+    max-inline-size: min(22rem, calc((100svh - var(--header-h) - var(--space-8) - 2.5rem) * var(--ar, 0.8)));
+  }
+}

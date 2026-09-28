@@ -8,9 +8,9 @@
 // The frame is one image named "Photo to come: <shot>"; the text inside is aria-hidden, so a
 // screen reader hears the brief once. overflow: hidden is structural, not cosmetic: a box with an
 // aspect-ratio grows to fit its text unless it clips, and a long brief in a small tile would
-// otherwise stretch the frame off its ratio. The brief is centred with auto margins rather than
-// align-content, because auto margins fall back to the top when the text outgrows a short frame
-// (a 5:2 strip, a four-up tile), so the first line is never the one cut off.
+// otherwise stretch the frame off its ratio. When the frame is too short for the whole brief (a
+// four-up tile near 60rem), the shot gives way a whole line at a time; "Photo to come" and the
+// ratio always show, and nothing is cut through the middle of a line.
 import type { ImageSlot as Slot } from "../../lib/sections";
 import { resolveSeedPhoto } from "../../lib/content";
 import Photo from "../Photo.astro";
@@ -82,23 +82,24 @@ const ratioLabel = slot.ratio?.replace(/\s*\/\s*/g, ":");
     border: 1px solid var(--frame);
     border-radius: var(--radius);
   }
-  /* Left-aligned, vertically centred; see the header for why the centring is auto margins.
-     Capped at the frame's height, the brief's own grid gives up space from the shot row alone,
-     so in a small frame the label and the ratio stay whole and only the brief gets shorter. */
+  /* The brief fills the frame's height and is centred by the two 1fr rows around it. Grid sizes
+     the shot row before the 1fr rows get anything, so in a short frame the 1fr rows fall to zero
+     (the label never slides out of the top) and the shot row alone gets shorter, while the label
+     and the ratio stay whole. The spacing is on the label and the ratio, not the shot, so the
+     shot's percentage max-height measures its row exactly. */
   .slot__brief {
     display: grid;
-    grid-template-rows: auto minmax(0, max-content) auto;
-    gap: var(--space-1);
+    grid-template-rows: 1fr auto minmax(0, max-content) auto 1fr;
     justify-items: start;
-    margin-block: auto;
     min-width: 0;
     min-height: 0;
-    max-height: 100%;
     text-align: left;
     overflow-wrap: break-word;
   }
   /* Caption voice: the lead word in Ink 500, the detail muted. */
   .slot__label {
+    grid-row: 2;
+    margin-bottom: var(--space-1);
     font-size: var(--fs-caption);
     line-height: 1.4;
     font-weight: 500;
@@ -109,6 +110,7 @@ const ratioLabel = slot.ratio?.replace(/\s*\/\s*/g, ":");
      rather than through the middle of one. The half pixel absorbs layout rounding: line boxes
      snap to 1/64px, so three lines can measure a hair under 3 x 1.45em and floor to two. */
   .slot__shot {
+    grid-row: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: var(--slot-lines, 5);
@@ -122,7 +124,8 @@ const ratioLabel = slot.ratio?.replace(/\s*\/\s*/g, ":");
     text-wrap: pretty;
   }
   .slot__ratio {
-    margin-top: var(--space-1);
+    grid-row: 4;
+    margin-top: var(--space-2);
     font-family: var(--font-mono);
     font-size: 0.75rem;
     line-height: 1.4;

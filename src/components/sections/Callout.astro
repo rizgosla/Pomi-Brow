@@ -100,6 +100,13 @@ const spoken = title.trim().toLowerCase().startsWith(tone.name.toLowerCase()) ? 
   .callout__title {
     max-width: 22ch;
   }
+  /* Two tags share their band's fill (bone on bone, pale pink on pale pink), which would leave the
+     word floating a pill's padding in from the title's edge. On those bands the tag takes the
+     canvas so it still reads as a pill; the red medical tag already stands out on bone. */
+  .callout--note .callout__label,
+  .callout--voice .callout__label {
+    background: var(--canvas);
+  }
   .callout__body {
     display: grid;
     gap: var(--space-3);

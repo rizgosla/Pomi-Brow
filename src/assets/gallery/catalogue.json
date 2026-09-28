@@ -1,0 +1,482 @@
+{
+  "_about": "Photo catalogue for section image slots: what each gallery photo shows, whether it is a before/after pair, and which frame ratios it survives. Pairs must be captioned \"Before and after\". Written by viewing every file; update it whenever the gallery changes.",
+  "eyeliner/01": {
+    "kind": "single",
+    "service": "eyeliner",
+    "subject": "Winged eyeliner on a closed eye, close-up with the face tilted; cotton swab at the top edge, cheek and side of the nose below",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "4 / 5": "70% 50%",
+      "3 / 2": "50% 15%",
+      "5 / 2": "50% 10%"
+    },
+    "caption": "Fresh",
+    "notes": "Taken in the chair: jet-black, crisp line with a cotton swab in frame. The eye sits in the top third, so wide crops need the top-biased focus."
+  },
+  "eyeliner/02": {
+    "kind": "collage",
+    "service": "eyeliner",
+    "subject": "Two stacked close-ups of one client with eyes open: top, one eye with a thin winged liner; bottom, the other eye with matching liner; brows are done in both. Both panels show finished work; there is no before",
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Two views",
+    "notes": "Two panels meeting 49% down with no divider line, but both are after shots (one per side), so it is catalogued as a collage and must not be captioned \"Before and after\". A ~5px black strip runs along the bottom edge."
+  },
+  "eyeliner/03": {
+    "kind": "single",
+    "service": "eyeliner",
+    "subject": "Close-up of one open eye looking up, hazel iris, thin black upper liner ending in a small wing; soft brow across the top right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "4 / 5": "55% 50%",
+      "3 / 2": "50% 70%",
+      "5 / 2": "50% 63%"
+    },
+    "caption": "Close-up",
+    "notes": "At 5 / 2 the eye fills the frame height and the brow drops out; keep the given focus."
+  },
+  "lash-enhancement/01": {
+    "kind": "pair-v",
+    "service": "lash-enhancement",
+    "subject": "Lash line enhancement before (top) and after (bottom): the same open eye, grey-blue iris; after adds a dark line along the upper lashes with a short flick at the outer corner",
+    "seam": 0.466,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "45% 50%"
+    },
+    "caption": "Before and after",
+    "notes": "Thin white divider. A dark filled brow shows at the top left of both panels."
+  },
+  "lip-tint/01": {
+    "kind": "pair-v",
+    "service": "lip-tint",
+    "subject": "Lip tint before (top) and after (bottom): closed lips, face-on; pale, low-contrast lips before, even rosy-pink colour after",
+    "seam": 0.479,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "50% 50%"
+    },
+    "caption": "Before and after",
+    "notes": "Thin white divider. 4 / 5 trims the corners of the mouth slightly."
+  },
+  "lip-tint/02": {
+    "kind": "pair-v",
+    "service": "lip-tint",
+    "subject": "Lip tint before (top) and after (bottom): pale, dry-looking closed lips before; glossy coral-red lips after, slightly parted with teeth showing",
+    "seam": 0.488,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "50% 50%"
+    },
+    "caption": "Before and after",
+    "notes": "Thin white divider. Light-grey scroll-bar remnant at the right edge of the top panel (the 1 / 1 and 4 / 5 crops leave it out). 4 / 5 trims the corners of the mouth."
+  },
+  "lip-tint/03": {
+    "kind": "pair-v",
+    "service": "lip-tint",
+    "subject": "Lip tint before (top) and after (bottom): pale pink closed lips before; deeper rosy-red closed lips with a defined outline after",
+    "seam": 0.502,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "50% 50%"
+    },
+    "caption": "Before and after",
+    "notes": "Thin white divider. The mouth spans nearly the full width, so 4 / 5 cuts off its corners."
+  },
+  "lip-tint/04": {
+    "kind": "pair-v",
+    "service": "lip-tint",
+    "subject": "Lip tint before (top) and after (bottom): pale mauve closed lips before; soft rosy-pink closed lips after",
+    "seam": 0.482,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "50% 50%"
+    },
+    "caption": "Before and after",
+    "notes": "Thin white divider. The mouth already runs edge to edge, so every crop loses its corners (4 / 5 most). Faint scroll-bar remnant at the right edge of the bottom panel (the 1 / 1 and 4 / 5 crops leave it out)."
+  },
+  "microblading-shading/01": {
+    "kind": "single",
+    "service": "microblading-shading",
+    "subject": "One full brow with fine strokes at the front and shading through the tail, above a closed eye with full dark lashes; client lying down, second brow and eye at left, nose at bottom left",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "1 / 1": "100% 50%",
+      "4 / 5": "100% 50%",
+      "3 / 2": "50% 60%",
+      "5 / 2": "50% 36%"
+    },
+    "caption": "Close-up",
+    "notes": "The brow tail ends near the right edge: a centred square crop clips it, so use the 1 / 1 focus given. 5 / 2 fits both brows with little margin and leaves the lower eye out."
+  },
+  "microblading-shading/02": {
+    "kind": "single",
+    "service": "microblading-shading",
+    "subject": "One full dark brow with fine strokes at the front and shading through the tail, glossy balm on the brow head, above a closed eye with full lashes; client lying on white bedding, nose at left, second brow and eye at top",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "50% 50%",
+      "3 / 2": "50% 28%"
+    },
+    "caption": "Fresh",
+    "notes": "Byte-identical to ombre-powder-brows/02; never use both on one page. At 3 / 2 both brows only just fit (keep the 28% focus); 5 / 2 cuts the lower brow."
+  },
+  "microblading-shading/03": {
+    "kind": "single",
+    "service": "microblading-shading",
+    "subject": "Smiling client lying down with eyes closed and head turned: soft brow with fine strokes at the front, nose rings, ear studs, lips and teeth",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "4 / 5": "55% 50%",
+      "3 / 2": "50% 28%",
+      "5 / 2": "50% 19%"
+    },
+    "caption": "Close-up",
+    "notes": "Widest framing in the set (most of the face and the neck) and the smallest file (944x1024). 5 / 2 keeps the brows and closed eyes and drops the mouth."
+  },
+  "microblading-shading/04": {
+    "kind": "collage",
+    "service": "microblading-shading",
+    "subject": "Three stacked strips of the same client, face-on: top, brows filled in with a soft powdery look, eyes lowered; middle, bare sparse brows, eyes lowered; bottom, finished brows with hair strokes and shading, eyes open",
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Before and after",
+    "notes": "Three panels with white dividers 33% and 67% down; each strip is about 3:1. The top two panels are befores (with and without fill), the bottom one the after."
+  },
+  "microblading-shading/05": {
+    "kind": "single",
+    "service": "microblading-shading",
+    "subject": "Client lying on white bedding with eyes closed and head turned: soft brows with fine strokes at the front and shading through the tail; nose and nude-pink lips at left",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "4 / 5": "55% 50%",
+      "3 / 2": "50% 35%",
+      "5 / 2": "50% 68%"
+    },
+    "caption": "Close-up",
+    "notes": "5 / 2 keeps the lower brow, eye, nose and lips; the upper brow drops out."
+  },
+  "microblading-shading/06": {
+    "kind": "single",
+    "service": "microblading-shading",
+    "subject": "Face rotated about 90 degrees, client lying down: a dark brow with fine strokes at the front runs vertically beside an open brown eye, glossy balm at the brow head; second brow and eye at top, nose at top right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "1 / 1": "0% 50%",
+      "4 / 5": "45% 50%",
+      "3 / 2": "50% 85%"
+    },
+    "caption": "Fresh",
+    "notes": "Small dark-grey semicircle (a screenshot UI remnant) on the bottom edge near the right corner; the 1 / 1 focus given keeps it out. 3 / 2 shows the main brow and eye only; 5 / 2 cuts the brow."
+  },
+  "microblading-shading/07": {
+    "kind": "single",
+    "service": "microblading-shading",
+    "subject": "Tight close-up of one dark shaded brow arching over an open brown eye; the other eye blurred at bottom right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "0% 50%",
+      "3 / 2": "50% 30%"
+    },
+    "caption": "Close-up",
+    "notes": "Very tight crop. The brow tail starts at the left edge, so 4 / 5 is anchored left; 5 / 2 cuts the brow. A pale band of skin follows the brow's upper edge."
+  },
+  "microblading-shading/08": {
+    "kind": "collage",
+    "service": "microblading-shading",
+    "subject": "Two stacked close-ups of one client with eyes open and eyeliner: top, one brow with strokes at the front and shading through the tail; bottom, the other brow. Both panels show finished work; there is no before",
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Two views",
+    "notes": "Two panels split by a white line 50% down, but both are after shots (one per side), so it is catalogued as a collage and must not be captioned \"Before and after\"."
+  },
+  "microblading/01": {
+    "kind": "single",
+    "service": "microblading",
+    "subject": "One full brow of fine hair strokes curving across the frame below a closed eye, face upside down (shot from above the head); nose at top right, second brow and eye partly visible at bottom right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "4 / 5": "20% 50%",
+      "3 / 2": "50% 35%",
+      "5 / 2": "50% 50%"
+    },
+    "caption": "Close-up",
+    "notes": "The face is inverted in the frame. At 5 / 2 the closed eye is cut at the top edge; the brow stays whole."
+  },
+  "microblading/02": {
+    "kind": "pair-v",
+    "service": "microblading",
+    "subject": "Microblading before (top) and after (bottom): the same brow with the eye closed, face tilted; sparse, fine natural hairs before, a fuller, darker brow of hair strokes after",
+    "seam": 0.484,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "45% 50%"
+    },
+    "caption": "Before and after",
+    "notes": "No divider line; the halves meet at a hard edge where the lighting changes."
+  },
+  "microblading/03": {
+    "kind": "collage",
+    "service": "microblading",
+    "subject": "Microblading before (top) and after (bottom): sparse brow under a brow-mapping ruler with tick marks, then a full, dark brow of hair strokes with the eye below",
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Before and after",
+    "notes": "Two panels of unequal height (white divider 37% down). Catalogued as a collage because the before panel carries a measuring ruler; it is still a before/after, so caption it \"Before and after\"."
+  },
+  "microblading/04": {
+    "kind": "pair-v",
+    "service": "microblading",
+    "subject": "Microblading before (top) and after (bottom): both brows and open eyes, face tilted; thin, sparse brows before, fuller brows of hair strokes after",
+    "seam": 0.485,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "85% 50%"
+    },
+    "caption": "Before and after",
+    "notes": "No divider line; the halves meet at a hard edge. Dark hair fills the left edge, so 4 / 5 is anchored right."
+  },
+  "microblading/05": {
+    "kind": "single",
+    "service": "microblading",
+    "subject": "One brow of fine hair strokes running diagonally beside a closed eye, client lying down with head turned; second eye and brow at top right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "50% 50%",
+      "3 / 2": "50% 80%"
+    },
+    "caption": "Close-up",
+    "notes": "The brow spans about 60% of the height, so 5 / 2 cuts it. Patchy redness and a blemish on the forehead at left."
+  },
+  "microblading/06": {
+    "kind": "single",
+    "service": "microblading",
+    "subject": "Both brows of dark hair strokes on a face rotated about 90 degrees (client lying down): one brow at top left, the other at bottom right, closed eyes with heavy dark lashes, nose bridge between",
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "63% 50%"
+    },
+    "caption": "Close-up",
+    "notes": "The two brows sit on a corner-to-corner diagonal; any landscape crop slices one of them."
+  },
+  "microblading/07": {
+    "kind": "pair-h",
+    "service": "microblading",
+    "subject": "Microblading before (left) and after (right): the same brow, close-up; sparse, light natural hairs before, dense crisp hair strokes after",
+    "seam": 0.5,
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Before and after",
+    "notes": "No divider line; the halves meet at a hard edge. The brows run almost the full height of each half, so 3 / 2 cuts their ends: square only."
+  },
+  "microblading/08": {
+    "kind": "collage",
+    "service": "microblading",
+    "subject": "Microblading in three panels: two after shots of the brows with open hazel eyes (top, full width; bottom left) and one before (bottom right) showing a sparse brow with a brow-mapping ruler and drawn guide lines",
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Before and after",
+    "notes": "White dividers 49% down and, in the bottom row, 50% across. Measuring ruler and mapping lines in the before panel."
+  },
+  "ombre-powder-brows/01": {
+    "kind": "single",
+    "service": "ombre-powder-brows",
+    "subject": "Client lying on a white pillow looking up with eyes open, head turned: dark powder brows with a softer front; nose and lips at left",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "1 / 1": "50% 0%",
+      "4 / 5": "90% 50%",
+      "3 / 2": "50% 97%",
+      "5 / 2": "50% 67%"
+    },
+    "caption": "Close-up",
+    "notes": "Small dark-grey semicircle (a screenshot UI remnant) on the bottom edge near the right corner: the 4 / 5 crop shows it, the 1 / 1 and 3 / 2 focus values keep it out. 3 / 2 and 5 / 2 show the lower brow only; at 5 / 2 it spans almost the full frame height."
+  },
+  "ombre-powder-brows/02": {
+    "kind": "single",
+    "service": "ombre-powder-brows",
+    "subject": "One full dark brow with fine strokes at the front and shading through the tail, glossy balm on the brow head, above a closed eye with full lashes; client lying on white bedding, nose at left, second brow and eye at top",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "50% 50%",
+      "3 / 2": "50% 28%"
+    },
+    "caption": "Fresh",
+    "duplicateOf": "microblading-shading/02",
+    "notes": "Byte-identical to microblading-shading/02 (the same photo filed under both services); never use both on one page. The front of the brow shows fine hair-like strokes, so it reads more like a combination brow than a pure powder brow. At 3 / 2 both brows only just fit (keep the 28% focus); 5 / 2 cuts the lower brow."
+  },
+  "ombre-powder-brows/03": {
+    "kind": "collage",
+    "service": "ombre-powder-brows",
+    "subject": "Two stacked close-ups of one client lying down with eyes closed: top, one powder brow with the nose at left; bottom, the other powder brow with hair at left. Both panels show finished work; there is no before",
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Two views",
+    "notes": "Two panels split by a white line 49% down, but both are after shots (one per side), so it is catalogued as a collage and must not be captioned \"Before and after\"."
+  },
+  "ombre-powder-brows/04": {
+    "kind": "single",
+    "service": "ombre-powder-brows",
+    "subject": "Client lying down with eyes closed and head turned: dark powder brows with a soft front; ear with a stud at left, nose and top of the lips at bottom",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "4 / 5": "90% 50%",
+      "3 / 2": "50% 40%",
+      "5 / 2": "50% 33%"
+    },
+    "caption": "Close-up",
+    "notes": "The second brow's tail sits near the right edge, so 4 / 5 is anchored right."
+  },
+  "ombre-powder-brows/05": {
+    "kind": "collage",
+    "service": "ombre-powder-brows",
+    "subject": "Two stacked close-ups of one client lying on white bedding with eyes closed: top, one powder brow with the nose and lips below; bottom, the other powder brow with the nose and lips at right. Both panels show finished work; there is no before",
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Two views",
+    "notes": "Two panels split by a white line 50% down, but both are after shots (one per side), so it is catalogued as a collage and must not be captioned \"Before and after\"."
+  },
+  "pomi/portrait": {
+    "kind": "single",
+    "service": "portrait",
+    "subject": "Waist-up portrait of a woman with long black hair, black blazer over a white V-neck top, facing the camera against a plain grey backdrop",
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {
+      "4 / 5": "55% 50%"
+    },
+    "caption": "Portrait"
+  },
+  "scalp-micropigmentation/01": {
+    "kind": "pair-h",
+    "service": "scalp-micropigmentation",
+    "subject": "Scalp micropigmentation before (left) and after (right): back of the head with short brown hair; scalp shows through a thin crown before, the crown reads denser after",
+    "seam": 0.5,
+    "ratios": [
+      "1 / 1",
+      "3 / 2"
+    ],
+    "focus": {
+      "3 / 2": "50% 10%"
+    },
+    "caption": "Before and after",
+    "notes": "No divider line; the halves meet at a hard edge. Grey wall and door behind, red top at the shoulders."
+  },
+  "scalp-micropigmentation/02": {
+    "kind": "pair-h",
+    "service": "scalp-micropigmentation",
+    "subject": "Scalp micropigmentation before (left) and after (right): top of the head from above, brown hair; pale scalp shows along a thinning part before, the scalp is shaded darker after",
+    "seam": 0.5,
+    "ratios": [
+      "1 / 1",
+      "3 / 2"
+    ],
+    "focus": {
+      "3 / 2": "50% 10%"
+    },
+    "caption": "Before and after",
+    "notes": "Thin white divider."
+  }
+}
