@@ -3232,16 +3232,16 @@
         "type": "facts",
         "items": [
           {
-            "title": "By service",
-            "text": "Brows, eyes, lips and scalp, matched to your goal."
-          },
-          {
             "title": "Skin type",
             "text": "Your skin affects healing and which technique fits."
           },
           {
             "title": "Your routine",
             "text": "Plan healing around events, travel, workouts and sun."
+          },
+          {
+            "title": "By service",
+            "text": "Brows, eyes, lips and scalp, matched to your goal."
           },
           {
             "title": "Near Irvine",
@@ -3274,22 +3274,72 @@
       },
       {
         "type": "grid",
-        "layout": "tiles",
+        "layout": "center",
+        "heading": "Your skin.",
+        "lede": "Skin type affects how permanent makeup heals and how long the color holds. Ask first if you have allergies or past reactions to cosmetic products.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Close-up of bare skin at the brow before mapping, pores and fine lines visible in soft daylight"
+        },
+        "items": [
+          {
+            "title": "Oily or dry skin",
+            "bullets": [
+              "Oily skin may heal softer or fade faster with certain brow techniques. Powder or shading may fit some clients better.",
+              "Dry skin may hold fine detail well, but aftercare still matters during healing."
+            ]
+          },
+          {
+            "title": "Mature or sensitive skin",
+            "bullets": [
+              "Mature skin needs a gentle, realistic approach. Softer designs often heal better than harsh shapes.",
+              "Sensitive skin may need extra care, slower timing, or a conversation before booking."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "layout": "bento",
+        "heading": "Your routine.",
+        "lede": "Permanent makeup works best when the service fits your daily life and you can follow aftercare.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Planner open with the healing weeks marked, a sun hat and swim bag set aside, soft daylight"
+        },
+        "items": [
+          {
+            "title": "Daily makeup style",
+            "text": "If you like soft makeup, choose a softer service. If you like more definition, choose one that matches that look."
+          },
+          {
+            "title": "Healing schedule",
+            "text": "Plan around events, photos, travel, workouts, pools, saunas and sun exposure while healing."
+          },
+          {
+            "title": "Maintenance plan",
+            "text": "Permanent makeup softens over time. Touch-ups help maintain color, shape and definition."
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "layout": "rail",
         "heading": "How to choose the right service.",
         "lede": "Start with the result you want, then match it to your features, skin and routine.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "Thin winged liner on both eyes, finished brows above",
+          "photo": {
+            "ref": "eyeliner/02",
+            "alt": "Two close-ups of one client with eyes open: thin winged eyeliner on each eye, finished brows above",
+            "detail": "Two views"
+          }
+        },
         "items": [
           {
             "title": "Better brows",
             "text": "Hair-like strokes, soft powder or a fuller combination brow, if your brows are sparse, uneven or filled in every morning.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "One brow before and after microblading, close-up",
-              "photo": {
-                "ref": "microblading/07",
-                "alt": "Microblading before and after: a sparse, light brow, then dense, crisp hair strokes",
-                "detail": "Before and after"
-              }
-            },
             "links": [
               {
                 "label": "Microblading",
@@ -3307,16 +3357,7 @@
           },
           {
             "title": "Eye definition",
-            "text": "Lash enhancement for a darker lash base with no visible liner, or eyeliner if you want a more polished look.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "One open eye before and after lash enhancement",
-              "photo": {
-                "ref": "lash-enhancement/01",
-                "alt": "Lash enhancement before and after: the same open eye, then a darker line along the upper lashes",
-                "detail": "Before and after"
-              }
-            },
+            "text": "Lash enhancement for a darker, fuller lash base with no visible liner. Eyeliner if you already wear liner and want a more polished look.",
             "links": [
               {
                 "label": "Lash enhancement",
@@ -3330,16 +3371,7 @@
           },
           {
             "title": "Lip color",
-            "text": "Lip tint if your lips look pale, uneven or undefined and you want a soft, natural color.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Pale lips before lip tint, even rosy pink after",
-              "photo": {
-                "ref": "lip-tint/01",
-                "alt": "Lip tint before and after: pale, low-contrast lips, then an even rosy pink",
-                "detail": "Before and after"
-              }
-            },
+            "text": "Lip tint if your lips look pale, uneven or undefined and you want a soft, natural color with less lipstick.",
             "links": [
               {
                 "label": "Lip tint",
@@ -3349,16 +3381,7 @@
           },
           {
             "title": "Fuller-looking hair",
-            "text": "Scalp micropigmentation if you want the look of more coverage in thinning areas, or a cleaner hairline.",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "A thin crown before scalp micropigmentation, denser-looking after",
-              "photo": {
-                "ref": "scalp-micropigmentation/01",
-                "alt": "Scalp micropigmentation before and after: scalp showing through a thin crown, then a denser-looking crown",
-                "detail": "Before and after"
-              }
-            },
+            "text": "Scalp micropigmentation if you want the look of more coverage in thinning areas or a cleaner hairline. It may reduce the need for powders or fibers.",
             "links": [
               {
                 "label": "Scalp micropigmentation",
@@ -3375,72 +3398,16 @@
       },
       {
         "type": "grid",
-        "layout": "bento",
-        "heading": "Skin type considerations.",
-        "lede": "Your skin affects how permanent makeup heals and how long the color holds. Ask first if you have allergies or past reactions to cosmetic products.",
-        "image": {
-          "ratio": "1 / 1",
-          "shot": "Close-up of bare skin at the brow before mapping, pores and fine lines visible in soft daylight"
-        },
-        "items": [
-          {
-            "title": "Oily skin",
-            "text": "May heal softer or fade faster with certain brow techniques. Powder or shading may fit some clients better."
-          },
-          {
-            "title": "Dry skin",
-            "text": "May hold fine detail well, but aftercare still matters during healing."
-          },
-          {
-            "title": "Mature skin",
-            "text": "Needs a gentle, realistic approach. Softer designs often heal better than harsh shapes."
-          },
-          {
-            "title": "Sensitive skin",
-            "text": "May need extra care, slower timing, or a conversation before booking."
-          }
-        ]
-      },
-      {
-        "type": "sequence",
-        "layout": "rail",
-        "kind": "steps",
-        "heading": "Lifestyle considerations before booking.",
-        "lede": "Permanent makeup works best when the service fits your daily life and you can follow aftercare.",
-        "image": {
-          "ratio": "4 / 5",
-          "shot": "Planner open with the healing weeks marked, a sun hat and swim bag set aside, soft daylight"
-        },
-        "items": [
-          {
-            "label": "Style",
-            "title": "Your daily makeup style",
-            "text": "If you like soft makeup, choose a softer service. If you like more definition, choose one that matches that look."
-          },
-          {
-            "label": "Schedule",
-            "title": "Your healing schedule",
-            "text": "Plan around events, photos, travel, workouts, pools, saunas and sun exposure while healing."
-          },
-          {
-            "label": "Upkeep",
-            "title": "Your maintenance plan",
-            "text": "Permanent makeup softens over time. Touch-ups help maintain color, shape and definition."
-          }
-        ]
-      },
-      {
-        "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three pages worth reading: who should ask first, whether powder brows suit you, and how to choose an eye service.",
+        "lede": "Who should ask first, and how the brow and eye options compare.",
         "image": {
           "ratio": "4 / 5",
-          "shot": "Thin eyeliner with a small wing on an open eye",
+          "shot": "Dark powder brows with a soft front on a client resting, eyes closed",
           "photo": {
-            "ref": "eyeliner/03",
-            "alt": "An open hazel eye looking up, thin black liner ending in a small wing, a soft brow above",
-            "focus": "55% 50%",
+            "ref": "ombre-powder-brows/04",
+            "alt": "Client resting with eyes closed and head turned, dark powder brows with a soft front",
+            "focus": "90% 50%",
             "detail": "Close-up"
           }
         },
@@ -3466,7 +3433,7 @@
         ],
         "callout": {
           "tone": "caution",
-          "title": "My advice",
+          "title": "Ask first if unsure",
           "text": "If you are unsure, ask before booking. It is better to check first than to arrive and find out we need to wait. For medical questions, speak with your healthcare provider before scheduling."
         }
       },
@@ -3474,7 +3441,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "Candidate questions.",
-        "lede": "Asked most, answered short.",
+        "lede": "Whether each service suits you, and when to ask first.",
         "image": {
           "ratio": "1 / 1",
           "shot": "Finished brows from both sides, eyes open",
@@ -3597,21 +3564,21 @@
       },
       {
         "type": "grid",
-        "layout": "ledger",
+        "layout": "bento",
         "heading": "Service by service.",
         "lede": "The brow list is for microblading, ombre powder brows, and microblading + shading. The eye list is for eyeliner and lash enhancement.",
+        "image": {
+          "ratio": "1 / 1",
+          "shot": "A sparse brow mapped under a ruler, then the finished brow",
+          "photo": {
+            "ref": "microblading/03",
+            "alt": "Microblading before and after: a sparse brow under a brow-mapping ruler, then a full brow of hair strokes",
+            "detail": "Before and after"
+          }
+        },
         "items": [
           {
             "title": "Brows",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Microblading before and after on both brows, eyes open",
-              "photo": {
-                "ref": "microblading/04",
-                "alt": "Microblading before and after: thin, sparse brows, then fuller brows of hair strokes",
-                "detail": "Before and after"
-              }
-            },
             "bullets": [
               "Clean skin around the brows",
               "No tanning, sunburn or strong exfoliants beforehand",
@@ -3620,15 +3587,6 @@
           },
           {
             "title": "Eyes",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Lash enhancement before and after along the upper lash line",
-              "photo": {
-                "ref": "lash-enhancement/01",
-                "alt": "Lash enhancement before and after: a bare lash line, then a dark line along the upper lashes",
-                "detail": "Before and after"
-              }
-            },
             "bullets": [
               "Clean skin, eyes calm and not irritated",
               "Ask ahead about contacts, lash extensions, eye makeup or serums",
@@ -3637,15 +3595,6 @@
           },
           {
             "title": "Lips",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Lip tint before and after, closed lips face-on",
-              "photo": {
-                "ref": "lip-tint/01",
-                "alt": "Lip tint before and after: pale lips, then even rosy pink",
-                "detail": "Before and after"
-              }
-            },
             "bullets": [
               "Moisturized lips, plenty of water",
               "No cracked or irritated lips on the day",
@@ -3654,15 +3603,6 @@
           },
           {
             "title": "Scalp",
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Scalp micropigmentation before and after at the crown",
-              "photo": {
-                "ref": "scalp-micropigmentation/01",
-                "alt": "Scalp micropigmentation before and after: a thin crown, then a denser one",
-                "detail": "Before and after"
-              }
-            },
             "bullets": [
               "A clean scalp, no sunburn",
               "Share scalp irritation, skin conditions or recent scalp treatments",
@@ -3678,35 +3618,11 @@
       },
       {
         "type": "grid",
-        "layout": "bento",
-        "heading": "What to bring.",
-        "lede": "Not much. A few small things make the appointment easier.",
-        "image": {
-          "ratio": "1 / 1",
-          "shot": "A phone of saved brow photos beside a handwritten list of questions on the consultation table, top-down, daylight"
-        },
-        "items": [
-          {
-            "title": "Inspiration photos",
-            "text": "Bring photos of brows, eyeliner, lips, or hairlines you like. They help explain your style."
-          },
-          {
-            "title": "Your questions",
-            "text": "Write down anything you want to ask about shape, color, healing, or touch-ups."
-          },
-          {
-            "title": "Health details",
-            "text": "Be ready to share medications, allergies, skin concerns, and recent treatments."
-          }
-        ]
-      },
-      {
-        "type": "grid",
         "layout": "rail",
         "heading": "What to avoid.",
         "lede": "Common reminders for every service. Exact instructions depend on yours.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Retinol serum, an acid toner and exfoliating pads set aside, capped, on a bathroom shelf, soft morning light"
         },
         "items": [
@@ -3737,14 +3653,14 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading first: how the studio stays safe, what healing looks like week by week, and how to care for it.",
+        "lede": "How the studio stays safe, and what to expect once you are home.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Microblading before and after, the brow mapped under a ruler first",
+          "shot": "A fresh brow with balm on the brow head, client resting with eyes closed",
           "photo": {
-            "ref": "microblading/03",
-            "alt": "Microblading before and after: a sparse brow under a brow-mapping ruler, then a full brow of hair strokes",
-            "detail": "Before and after"
+            "ref": "microblading-shading/02",
+            "alt": "A fresh brow with fine strokes at the front and shading through the tail, balm on the brow head, client resting with eyes closed",
+            "detail": "Fresh"
           }
         },
         "items": [
@@ -3755,8 +3671,8 @@
             "linkLabel": "Read"
           },
           {
-            "title": "The healing timeline",
-            "text": "Day 1 to week 6: bold, flaking, too light, then true.",
+            "title": "PMU healing timeline",
+            "text": "Day 1 to the touch-up, so you can plan around events.",
             "href": "/learn/pmu-healing-timeline",
             "linkLabel": "Read"
           },
@@ -3772,14 +3688,14 @@
         "type": "faq",
         "layout": "split",
         "heading": "Preparation questions.",
-        "lede": "The ones asked most, answered short.",
+        "lede": "Recent treatments, cold sores, big events, and what to bring.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Thin eyeliner with a small wing on an open eye",
+          "shot": "Dry, pale lips before lip tint, glossy coral-red after",
           "photo": {
-            "ref": "eyeliner/03",
-            "alt": "Thin eyeliner with a small wing on an open hazel eye",
-            "detail": "Close-up"
+            "ref": "lip-tint/02",
+            "alt": "Lip tint before and after: pale, dry-looking lips, then glossy coral-red lips",
+            "detail": "Before and after"
           }
         },
         "items": [
@@ -3790,6 +3706,10 @@
           {
             "q": "What should I avoid beforehand?",
             "a": "Tanning, sunburn, irritation, and last-minute cosmetic treatments near the area. Ask about retinol, acids, exfoliants, blood thinners, alcohol, and caffeine."
+          },
+          {
+            "q": "What should I bring?",
+            "a": "Photos of brows, eyeliner, lips or hairlines you like; they help explain your style. Write down your questions about shape, color, healing or touch-ups, and be ready to share medications, allergies, skin concerns, and recent treatments."
           },
           {
             "q": "Should I ask if I had recent Botox or filler?",
@@ -3913,7 +3833,7 @@
         ],
         "callout": {
           "tone": "caution",
-          "title": "My advice",
+          "title": "Ask first if unsure",
           "text": "If you are not sure whether your scalp is ready, ask first. It is always better to wait and do the service at the right time than to work over irritated skin. If you are considering surgery, speak with a medical provider."
         }
       },
@@ -3923,7 +3843,7 @@
         "heading": "SMP is not a hair transplant.",
         "lede": "Completely different things: SMP adds pigment for the look of density, while surgery moves hair follicles from one area to another.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "Close-up: a gloved fingertip with soft brown pigment held against the client's hair to match the shade"
         },
         "sides": [
@@ -3954,7 +3874,7 @@
         "heading": "How many sessions you may need.",
         "lede": "It depends on the area, density goal, hairline design and how your scalp holds pigment.",
         "image": {
-          "ratio": "4 / 5",
+          "ratio": "1 / 1",
           "shot": "A hairline design drawn in soft pencil on the forehead before the first session, face-on"
         },
         "items": [
@@ -3984,7 +3904,7 @@
         "type": "grid",
         "layout": "split",
         "heading": "Before you book.",
-        "lede": "Three things worth reading before a consultation: the service itself, who should ask first, and how to care for your scalp as it heals.",
+        "lede": "Pricing and photos, who should ask first, and how your scalp heals.",
         "image": {
           "ratio": "4 / 5",
           "shot": "The treatment chair made up for an SMP client: fresh barrier on the headrest, lamp angled low"
@@ -4014,7 +3934,7 @@
         "type": "faq",
         "layout": "split",
         "heading": "SMP questions.",
-        "lede": "Asked most before a first consultation, answered short.",
+        "lede": "Natural results, fading, cost, and who should ask first.",
         "image": {
           "ratio": "1 / 1",
           "shot": "A client smiling at her crown in a hand mirror, soft window light"
