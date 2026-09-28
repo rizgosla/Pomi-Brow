@@ -28,7 +28,11 @@ const signoff = Boolean(image);
 <section class:list={["section cta", { "cta--signoff": signoff }]} aria-labelledby={`${id}-heading`}>
   <div class="page cta__grid">
     <div class:list={[{ cta__signoff: signoff }, "reveal"]}>
-      {image && <ImageSlot image={{ ...image, ratio: "1 / 1" }} service="Pomi" class="cta__portrait" sizes="12rem" widths={[240, 480]} />}
+      {
+        image && (
+          <ImageSlot image={{ ...image, ratio: "1 / 1" }} service="Pomi" class="cta__portrait" sizes="12rem" widths={[240, 480]} />
+        )
+      }
       <h2 id={`${id}-heading`}>{heading}</h2>
       <p class="lede">{text}</p>
       <div class="cta__actions">

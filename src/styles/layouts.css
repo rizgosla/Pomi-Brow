@@ -56,6 +56,14 @@
   margin-top: var(--l-head-gap);
 }
 
+/* tiles, feature and a statement with no photograph (solo) keep the plain shell at every width:
+   head over body over note. Their compositions live inside the body. */
+.l--tiles,
+.l--feature,
+.l--solo {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 /* The global section head carries 4rem under it for sections that stack; here the shell's
    margins do that job, and a head beside a photograph must not push its column down. */
 .l .section-head {
@@ -556,13 +564,13 @@
   .l-feature > :not(:first-child) {
     grid-column: 2;
   }
-  [data-side="right"] .l-feature {
+  .l--feature[data-side="right"] .l-feature {
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   }
-  [data-side="right"] .l-feature > :first-child {
+  .l--feature[data-side="right"] .l-feature > :first-child {
     grid-column: 2;
   }
-  [data-side="right"] .l-feature > :not(:first-child) {
+  .l--feature[data-side="right"] .l-feature > :not(:first-child) {
     grid-column: 1;
   }
 
