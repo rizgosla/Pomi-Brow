@@ -143,7 +143,7 @@ test("assignSides alternates away from the header photo and respects an authored
   assert.deepEqual(assignSides(strips, "right"), ["left", "right", null]);
 });
 
-test("toBlocks numbers steps, tags timeline moments and turns link cards into one-link blocks", () => {
+test("toBlocks numbers steps only, tags timeline moments and turns link cards into one-link blocks", () => {
   const seq = toBlocks({ type: "sequence", heading: "h", kind: "steps", items: [{ label: "a", title: "One" }, { label: "b", title: "Two" }, { label: "c", title: "Three" }] });
   assert.deepEqual(seq.map((b) => b.marker), [{ kind: "number", n: 1 }, { kind: "number", n: 2 }, { kind: "number", n: 3 }]);
   const tl = toBlocks({ type: "sequence", heading: "h", kind: "timeline", items: [{ label: "Day 1", title: "Bold" }, { label: "Day 5", title: "Flaking" }, { label: "Week 6", title: "Settled" }] });
@@ -154,8 +154,9 @@ test("toBlocks numbers steps, tags timeline moments and turns link cards into on
   assert.equal(grid[0].marker, undefined);
   const emptied = toBlocks({ type: "grid", heading: "h", items: [{ title: "a", href: "/safety", linkLabel: "Read", links: [] }, { title: "b" }] });
   assert.deepEqual(emptied[0].links, [{ label: "Read", href: "/safety" }]);
+  // A list with no order carries no numerals, even in the rail.
   const rail = toBlocks({ type: "grid", heading: "h", layout: "rail", items: [{ title: "a" }, { title: "b" }, { title: "c" }] });
-  assert.deepEqual(rail[2].marker, { kind: "number", n: 3 });
+  assert.equal(rail[2].marker, undefined);
 });
 
 test("withSlots removes image slots that are not really there, at section and block level", () => {
@@ -169,6 +170,8 @@ test("withSlots removes image slots that are not really there, at section and bl
 test("effectiveRatio keeps an authored ratio the role allows and otherwise uses the role default", () => {
   assert.equal(effectiveRatio("split", "1 / 1"), "1 / 1");
   assert.equal(effectiveRatio("split", "3 / 2"), "4 / 5");
+  assert.equal(effectiveRatio("rail"), "1 / 1");
+  assert.equal(effectiveRatio("center", "4 / 5"), "4 / 5");
   assert.equal(effectiveRatio("strip", "4 / 5"), "5 / 2");
   assert.equal(effectiveRatio("item"), "1 / 1");
 });

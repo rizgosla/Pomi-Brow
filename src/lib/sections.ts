@@ -188,10 +188,12 @@ export type SlotRole = "split" | "rail" | "feature" | "bento" | "center" | "stri
 /** Frame ratios per slot role; the first is the default. Renderers and tests both use this. */
 export const SLOT_RATIOS: Record<SlotRole, Ratio[]> = {
   split: ["4 / 5", "1 / 1"],
-  rail: ["4 / 5", "1 / 1"],
+  // Square by default: a 4:5 rail photo or centre photo stood taller than the rows or tiles
+  // beside it, leaving a void under them.
+  rail: ["1 / 1", "4 / 5"],
   feature: ["3 / 2", "1 / 1"],
   bento: ["1 / 1"],
-  center: ["4 / 5", "1 / 1"],
+  center: ["1 / 1", "4 / 5"],
   strip: ["5 / 2"],
   item: ["1 / 1", "3 / 2", "4 / 5"],
   faq: ["1 / 1"],
@@ -296,7 +298,8 @@ export interface Block {
   links?: Link[];
 }
 
-/** The blocks of a grid, sequence or compare section, numbered where the layout counts them. */
+/** The blocks of a grid, sequence or compare section. Only steps are numbered: a list whose
+ *  items have no order (what to avoid, what to ask) carries no numerals. */
 export function toBlocks(s: BlockSection, layout: string = resolveLayout(s)): Block[] {
   if (s.type === "compare") return s.sides.map((side) => ({ title: side.title, bullets: side.bullets, image: side.image }));
   if (s.type === "sequence")
@@ -307,14 +310,12 @@ export function toBlocks(s: BlockSection, layout: string = resolveLayout(s)): Bl
       image: item.image,
       marker: s.kind === "timeline" ? { kind: "tag", label: item.label } : { kind: "number", n: i + 1 },
     }));
-  const numbered = layout === "rail";
-  return s.items.map((item, i) => ({
+  return s.items.map((item) => ({
     title: item.title,
     text: item.text,
     bullets: item.bullets,
     image: item.image,
     links: item.links?.length ? item.links : item.href ? [{ label: item.linkLabel ?? "Read", href: item.href }] : undefined,
-    marker: numbered ? { kind: "number", n: i + 1 } : undefined,
   }));
 }
 

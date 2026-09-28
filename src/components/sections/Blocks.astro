@@ -54,10 +54,9 @@ const steps = section.type === "sequence" && section.kind === "steps";
 const timeline = section.type === "sequence" && section.kind === "timeline";
 const List = section.type === "sequence" || layout === "rail" ? "ol" : "ul";
 
-// The rail counts its rows in two digits, and runs four or more down two columns.
+// The rail counts its steps in two digits. Its rows stay one column: run down two, they read
+// 01 | 03 across the top, and the tile stopped far short of the rail beside it.
 const rank = layout === "rail" && blocks.some((b) => b.marker?.kind === "number");
-const twoColumns = rank && n >= 4;
-const perColumn = Math.ceil(n / 2);
 
 // The section's photograph, framed at the ratio its role here allows. tiles has no place for one;
 // its photographs are the blocks' own.
@@ -140,13 +139,9 @@ const head = Astro.slots.has("head") ? await Astro.slots.render("head") : "";
           ))}
         </List>
       ) : layout === "split" || layout === "rail" ? (
-        <List
-          class:list={["l-rows", "l-tile", { "l-rows--timeline": timeline, "l-rows--cols": twoColumns }]}
-          role="list"
-          style={twoColumns ? `--rows: ${perColumn}` : undefined}
-        >
+        <List class:list={["l-rows", "l-tile", { "l-rows--timeline": timeline }]} role="list">
           {blocks.map((b, i) => (
-            <Block block={b} index={i} frame="row" step={steps} rank={rank} class={twoColumns && i === perColumn ? "l-row--col-top" : undefined} />
+            <Block block={b} index={i} frame="row" step={steps} rank={rank} />
           ))}
         </List>
       ) : layout === "feature" ? (
