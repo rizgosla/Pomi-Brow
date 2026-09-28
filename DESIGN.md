@@ -447,18 +447,18 @@ Rebuilt on 2026-09-28 from the client's critique of 21 sections. Their complaint
 3. **The layout library.**
    - Every section names a `layout`. The model is `src/lib/sections.ts`, the renderers are `sections/Blocks.astro` and `Block.astro`, and the styles are in `src/styles/layouts.css`, which only slide pages load.
    - From 60rem:
-     - **`tiles`**: head on top, then 2–4 equal boxes in one row, each optionally with its own 1:1 photograph. Only for parallel items of 25 words or fewer. Four boxes run 2×2 until 80rem.
+     - **`tiles`**: head on top, then 2–4 equal boxes in one row, each optionally with its own 1:1 photograph (cards, steps and compare sides can all carry one). Only for parallel items of 25 words or fewer. Four boxes run 2×2 until 80rem. Photographs, captions and titles line up across the row.
      - **`split`**: the photograph at 5/12 beside the head, rows and note at 7/12. The photograph is sticky where the screen is at least 45rem tall. The rows share one tile under dividers: serif numerals for steps, a 1px line with hollow markers for a timeline, link rows for "Before you book".
      - **`rail`**: the Guardian's hanging head. The h2, lede and a small 4:5 photograph sit in a sticky left rail (5/12, then 4/12 from 80rem). Counted rows (01, 02…) sit in one tile on the right. From 80rem, four or more rows run down two columns. The rail's photograph is sticky like the split's.
      - **`feature`**: 1 + N. The first block is large (7/12) with the photograph at its head; the rest are compact beside it. With two blocks it becomes a spread: the head moves into the other column, level with the photograph's top, and the second block sits at that column's foot, level with the first block's words. One companion beside a tall photograph used to leave that column standing empty for most of its height.
      - **`bento`**: a square photograph spanning both rows of a 2×2 of short blocks (about 15 words each).
      - **`center`**: block, 4:5 photograph, block. Exactly two blocks of similar length.
-     - **`ledger`**: the h2 and lede (7/12) beside a 5:2 strip (5/12), then one tile split into 2–4 columns by hairlines.
-     - **Statements**: `split` (copy beside a 4:5 photograph) or `wide` (the ledger's head row, with the paragraphs below at 62ch). Every paragraph is body size, at most two per statement. The lede is the one larger voice: the old statement set its first paragraph at lede size, and two sizes in one block read as a mistake.
+     - **`ledger`**: the h2 and lede (7/12) beside a 5:2 strip (5/12), then one tile split into 2–4 columns by hairlines. The strip takes a side like any photograph; on the left it leads the head row. A ledger can instead give each column its own photograph, and then it has no strip and no side.
+     - **Statements**: `split` (copy beside a 4:5 photograph) or `wide` (the ledger's head row, with the paragraphs below at 62ch, always under the heading, whichever side the strip takes). Every paragraph is body size, at most two per statement. The lede is the one larger voice: the old statement set its first paragraph at lede size, and two sizes in one block read as a mistake.
    - Below 60rem every layout is one column in reading order: head, photograph, blocks, note. Strips go 4:3 so they don't turn into slivers. Nothing becomes a carousel.
 4. **Rhythm rules.** `pageRhythmProblems` enforces these, and the tests run it on every page:
-   1. Neighbouring sections never share a layout.
-   2. Neighbouring photographs change sides, and the header photograph counts as the right side. Sides alternate automatically. Rail and the split FAQ always hang left; the sign-off is centred.
+   1. Neighbouring sections never share a layout. A wide statement and a ledger count as one composition.
+   2. Neighbouring photographs change sides, strips included, and the header photograph counts as the right side. Sides alternate automatically. Rail and the split FAQ always hang left; the sign-off is centred. So a guide's "Before you book" sits on the right, and the section before it on the left or with no side.
    3. A layout appears at most twice on a page. `tiles` appears twice only with different counts, and never in neighbouring sections.
    4. No three split-style sections in a row.
    5. Every section except the facts strip has a photograph or a frame for one.
