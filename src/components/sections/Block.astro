@@ -1,0 +1,107 @@
+---
+// One block of a group -- a card, a step, a moment in a timeline, one side of a comparison --
+// whichever section it came from: toBlocks() in src/lib/sections.ts gives them all one shape.
+// The layout chooses only the frame around it (styles in src/styles/layouts.css):
+//   tile  a rounded box of its own (tiles, feature, bento, center)
+//   row   a line inside one shared box, under a divider (split, rail)
+//   col   a column of one box divided by hairlines (ledger)
+// Inside, the anatomy never changes, in reading order: a photograph when the frame takes one, a
+// marker (the serif numeral for steps and counted rows, a neutral tag for a moment in time), the
+// h3, its text or bullets, and its links.
+//
+// One link makes the whole block the target: the link's ::after covers the block, so the hit
+// area is the box while the link text stays where the eye lands. The title rides along unseen,
+// as in LinkTiles, so a screen reader's list of links says where each one goes. Two or more
+// links stay separate, as a short inline list.
+//
+// The numeral is aria-hidden. A step says "Step n:" inside its heading instead, so it is heard
+// once and in words; other counted rows are an <ol>, which already says the order.
+import type { Block, ImageSlot as Slot } from "../../lib/sections";
+import { effectiveRatio } from "../../lib/sections";
+import ImageSlot from "./ImageSlot.astro";
+import Icon from "../Icon.astro";
+
+interface Props {
+  block: Block;
+  /** Place in the group; staggers the reveal (capped, so a long list never lags). */
+  index: number;
+  frame?: "tile" | "row" | "col";
+  /** Say "Step n:" before the title: a sequence of steps. */
+  step?: boolean;
+  /** Count in two digits at the larger size: the rail's 01, 02. */
+  rank?: boolean;
+  /** A photograph to head the block in place of its own: the feature's section photograph. */
+  photo?: Slot;
+  /** Show the block's own photograph. Tiles and ledger columns do; see Blocks.astro. */
+  ownPhoto?: boolean;
+  sizes?: string;
+  class?: string;
+}
+const { block, index, frame = "tile", step = false, rank = false, photo, ownPhoto = false, sizes, class: className } = Astro.props;
+
+const { marker } = block;
+const links = block.links ?? [];
+const single = links.length === 1 ? links[0] : undefined;
+const image = photo ?? (ownPhoto && block.image ? { ...block.image, ratio: effectiveRatio("item", block.image.ratio) } : undefined);
+const numeral = marker?.kind === "number" ? (rank ? String(marker.n).padStart(2, "0") : String(marker.n)) : undefined;
+const stepNumber = step && marker?.kind === "number" ? marker.n : undefined;
+---
+
+<li
+  class:list={[
+    "l-block",
+    `l-${frame}`,
+    { "l-row--num": frame === "row" && numeral !== undefined, "l-linked": Boolean(single) },
+    className,
+    "reveal",
+  ]}
+  style={`--i: ${index % 4}`}
+>
+  {image && <ImageSlot image={image} class="l-block__photo" sizes={sizes} widths={[480, 800, 1320]} />}
+  {
+    numeral !== undefined && (
+      <span class:list={["l-num", { "l-num--rank": rank }]} aria-hidden="true">
+        {numeral}
+      </span>
+    )
+  }
+  {marker?.kind === "tag" && <span class="tag">{marker.label}</span>}
+  <div class="l-block__main">
+    <h3 class="l-block__title">
+      {stepNumber !== undefined && <span class="visually-hidden">Step {stepNumber}: </span>}
+      {block.title}
+    </h3>
+    {block.text && <p class="l-block__text">{block.text}</p>}
+    {
+      block.bullets && block.bullets.length > 0 && (
+        <ul class="l-bullets">
+          {block.bullets.map((b) => (
+            <li>{b}</li>
+          ))}
+        </ul>
+      )
+    }
+    {
+      single && (
+        <a class="link l-block__link" href={single.href}>
+          {single.label}<span class="visually-hidden">: {block.title}</span>
+          <Icon name="arrow" />
+        </a>
+      )
+    }
+    {
+      links.length > 1 && (
+        <ul class="l-links" role="list">
+          {links.map((l) => (
+            <li>
+              <a class="link" href={l.href}>
+                {l.label}
+                <Icon name="arrow" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</li>
