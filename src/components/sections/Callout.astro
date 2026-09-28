@@ -1,10 +1,20 @@
 ---
-// An aside docked to a slide: a note, a line in Pomi's voice, a medical caution, or where to
-// read next. Notes, voice and links are rounded bands with a pastel fill (pale pink for Pomi's
-// voice, bone otherwise); at 60rem and up the tag and title sit in a narrow left column with
-// the text beside them. A medical caution is set as a margin note instead: no fill, one
-// vertical hairline on the left, label, title and text stacked and held to 60 characters, so a
-// few lines of medical wording never get a big container.
+// A note docked to a slide: a note, a line in Pomi's voice, a medical caution, or where to read
+// next. Every tone has one anatomy, the GOV.UK summary list's and the print sidehead's: the title
+// first with its label beneath it as a subtitle (the hgroup pattern), and the text to the right,
+// its first line level with the title's. The label used to sit above the title, which read as the
+// title sitting at the bottom and broke the No-Kicker Rule.
+//
+// Rounded bands: bone for notes, links and medical cautions, pale pink for Pomi's own words, which
+// stay in the serif. A caution is no longer a margin note; the red "Medical note" label carries
+// the meaning, so the wording is never set apart by a thinner, lesser container. The label is
+// aria-hidden and the h3 says the same word first ("Medical note: ..."), so it is heard once.
+//
+// From 60rem the two columns are a wrapping flex row rather than a fixed grid. Title and text run
+// 1 : 2 with a 12rem floor under the title -- exactly minmax(12rem, 1fr) 2fr wherever that fits --
+// but a note in a narrow column (a split's 7/12 on a laptop) stacks instead of squeezing its text
+// to a few words a line. Baseline alignment, not start, puts the title's first line level with
+// the text's whatever the text is: body copy, the taller serif quote, or 44px link rows.
 import type { Callout as CalloutType } from "../../lib/sections";
 import Icon from "../Icon.astro";
 
@@ -14,14 +24,29 @@ interface Props {
 }
 const { callout, class: className } = Astro.props;
 
-const tag = { note: "Note", voice: "From Pomi", caution: "Medical note", links: "" }[callout.tone];
-const tagClass = { note: "tag", voice: "tag tag--pink", caution: "tag tag--red", links: "tag" }[callout.tone];
+/** What each tone is called: spoken before the title, and shown as the label under it. */
+const TONES: Record<CalloutType["tone"], { name: string; label?: string; tag?: string }> = {
+  note: { name: "Note", label: "Note", tag: "tag" },
+  voice: { name: "From Pomi", label: "From Pomi", tag: "tag tag--pink" },
+  caution: { name: "Medical note", label: "Medical note", tag: "tag tag--red" },
+  links: { name: "Read next" },
+};
+const tone = TONES[callout.tone] ?? TONES.note;
+const title = callout.title ?? "";
+// A links note titled "Read next" would be announced "Read next: Read next"; say it once.
+const spoken = title.trim().toLowerCase().startsWith(tone.name.toLowerCase()) ? "" : `${tone.name}: `;
 ---
 
-<aside class:list={["callout", `callout--${callout.tone}`, className]}>
+<aside class:list={["callout", `callout--${callout.tone}`, className]} role="note">
   <div class="callout__head">
-    {tag && <span class={tagClass}>{tag}</span>}
-    <h3 class="callout__title">{callout.title}</h3>
+    <h3 class="callout__title">{spoken && <span class="visually-hidden">{spoken}</span>}{title}</h3>
+    {
+      tone.label && (
+        <span class:list={[tone.tag, "callout__label"]} aria-hidden="true">
+          {tone.label}
+        </span>
+      )
+    }
   </div>
   <div class="callout__body">
     {callout.text && <p class="callout__text">{callout.text}</p>}
@@ -52,6 +77,7 @@ const tagClass = { note: "tag", voice: "tag tag--pink", caution: "tag tag--red",
 </aside>
 
 <style>
+  /* Phones and tablets: one column, in reading order -- title, label, text. */
   .callout {
     display: grid;
     gap: var(--space-4);
@@ -62,74 +88,78 @@ const tagClass = { note: "tag", voice: "tag tag--pink", caution: "tag tag--red",
   .callout--voice {
     background: var(--pale-pink);
   }
-  /* The margin note. */
-  .callout--caution {
-    max-width: 60ch;
-    gap: var(--space-2);
-    padding: 0 0 0 var(--space-5);
-    border-left: 1px solid var(--border);
-    border-radius: 0;
-    background: none;
-  }
-  .callout--caution .callout__head {
-    gap: var(--space-3);
-  }
-  .callout--caution .callout__text,
-  .callout--caution .callout__list {
-    font-size: var(--fs-small);
-    line-height: 1.6;
-  }
+  /* The label hangs under the title as its subtitle, closer to it than to the text. */
   .callout__head {
     display: grid;
-    gap: var(--space-3);
+    gap: var(--space-2);
     justify-items: start;
     align-content: start;
+    min-width: 0;
   }
+  /* Size, weight and tracking come from the site's h3. */
   .callout__title {
-    max-width: 30ch;
+    max-width: 22ch;
   }
   .callout__body {
     display: grid;
     gap: var(--space-3);
+    align-content: start;
     min-width: 0;
   }
   .callout__text {
     max-width: 64ch;
+    font-size: var(--fs-body);
+    line-height: 1.6;
     color: var(--ink-body);
   }
   /* Pomi's own words are set in the serif, the way a quote is set elsewhere on the site. */
   .callout--voice .callout__text {
+    max-width: 44ch;
     font-family: var(--font-display);
     font-variation-settings: "opsz" 24;
     font-size: var(--fs-quote);
     line-height: 1.35;
+    letter-spacing: -0.01em;
     color: var(--ink);
-    max-width: 44ch;
   }
   .callout__list {
     display: grid;
     gap: var(--space-2);
+    max-width: 64ch;
     padding-left: 1.1rem;
     list-style: disc;
-    max-width: 64ch;
+    font-size: var(--fs-body);
+    line-height: 1.6;
     color: var(--ink-body);
   }
   .callout__list li::marker {
     color: var(--ink-muted);
   }
+  /* Link rows fill the text column two or three across; the 44px link height is the row pitch,
+     so no row gap is needed. Each li is a flex box so the link sits on no line box of its own
+     and the rows stay exactly 44px. */
   .callout__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(13rem, 100%), 1fr));
+    gap: 0 var(--space-5);
+  }
+  .callout__links li {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3) var(--space-6);
+    min-width: 0;
   }
   @media (min-width: 60rem) {
     .callout {
-      grid-template-columns: 16rem minmax(0, 1fr);
-      column-gap: var(--space-7);
-      align-items: start;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: var(--space-4) var(--space-7);
+      padding: var(--space-6);
     }
-    .callout--caution {
-      grid-template-columns: minmax(0, 1fr);
+    .callout__head {
+      flex: 1 1 12rem;
+    }
+    .callout__body {
+      flex: 2 1 24rem;
     }
   }
 </style>

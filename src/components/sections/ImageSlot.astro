@@ -1,7 +1,16 @@
 ---
-// One photograph's place on a slide page. With a photo it is a framed Photo and its caption;
-// without one it is the same frame, empty, with the shot it is waiting for written beneath, so
-// the shot list is visible on the page and filling a slot later is a one-line content change.
+// One photograph's place on a slide page. With a photo it is a framed Photo and its caption.
+// Without one it is the same frame at the same ratio with the brief written inside it -- the
+// print "FPO" convention: a box at the final size that says what goes there. The frame is the
+// whole footprint, with no caption under it, so a page of empty slots already shows how much room
+// each photograph will take, and filling a slot later is a one-line content change.
+//
+// The frame is one image named "Photo to come: <shot>"; the text inside is aria-hidden, so a
+// screen reader hears the brief once. overflow: hidden is structural, not cosmetic: a box with an
+// aspect-ratio grows to fit its text unless it clips, and a long brief in a small tile would
+// otherwise stretch the frame off its ratio. The brief is centred with auto margins rather than
+// align-content, because auto margins fall back to the top when the text outgrows a short frame
+// (a 5:2 strip, a four-up tile), so the first line is never the one cut off.
 import type { ImageSlot as Slot } from "../../lib/sections";
 import { resolveSeedPhoto } from "../../lib/content";
 import Photo from "../Photo.astro";
@@ -30,19 +39,29 @@ const {
 // Only gallery refs resolve today; a CMS-uploaded image (no ref) keeps the empty frame until the
 // content layer learns to build remote photos for slots.
 const photo = slot.photo?.ref ? resolveSeedPhoto(slot.photo) : undefined;
+// "4 / 5" the way a photographer writes a crop: 4:5.
+const ratioLabel = slot.ratio?.replace(/\s*\/\s*/g, ":");
 ---
 
 <figure class:list={["slot", className]}>
   {
     photo ? (
-      <Photo photo={photo} ratio={slot.ratio} sizes={sizes} widths={widths} loading={loading} fetchpriority={fetchpriority} />
+      <>
+        <Photo photo={photo} ratio={slot.ratio} sizes={sizes} widths={widths} loading={loading} fetchpriority={fetchpriority} />
+        <figcaption>
+          <Caption service={service} detail={photo.detail ?? slot.shot} />
+        </figcaption>
+      </>
     ) : (
-      <div class="slot__frame" style={`aspect-ratio: ${slot.ratio}`} role="img" aria-label={`Photo to come: ${slot.shot}`} />
+      <div class="slot__frame" style={`aspect-ratio: ${slot.ratio}`} role="img" aria-label={`Photo to come: ${slot.shot}`}>
+        <div class="slot__brief" aria-hidden="true">
+          <span class="slot__label">Photo to come</span>
+          <span class="slot__shot">{slot.shot}</span>
+          {ratioLabel && <span class="slot__ratio">{ratioLabel}</span>}
+        </div>
+      </div>
     )
   }
-  <figcaption>
-    {photo ? <Caption service={service} detail={photo.detail ?? slot.shot} /> : <Caption service="Photo to come" detail={slot.shot} />}
-  </figcaption>
 </figure>
 
 <style>
@@ -50,12 +69,63 @@ const photo = slot.photo?.ref ? resolveSeedPhoto(slot.photo) : undefined;
     margin: 0;
     min-width: 0;
   }
-  /* The same frame a photograph gets, holding its place. Surface is the one fill the
-     system allows for an empty image, and the only thing drawn in it is the hairline. */
+  /* The same frame a photograph gets, holding its place. Surface is the one fill the system
+     allows for an empty image; --frame is the blush line on the page and grey inside a tile. */
   .slot__frame {
+    position: relative;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr);
     width: 100%;
+    padding: clamp(var(--space-3), 4%, var(--space-5));
+    overflow: hidden;
     background: var(--surface);
     border: 1px solid var(--frame);
     border-radius: var(--radius);
+  }
+  /* Left-aligned, vertically centred; see the header for why the centring is auto margins.
+     Capped at the frame's height, the brief's own grid gives up space from the shot row alone,
+     so in a small frame the label and the ratio stay whole and only the brief gets shorter. */
+  .slot__brief {
+    display: grid;
+    grid-template-rows: auto minmax(0, max-content) auto;
+    gap: var(--space-1);
+    justify-items: start;
+    margin-block: auto;
+    min-width: 0;
+    min-height: 0;
+    max-height: 100%;
+    text-align: left;
+    overflow-wrap: break-word;
+  }
+  /* Caption voice: the lead word in Ink 500, the detail muted. */
+  .slot__label {
+    font-size: var(--fs-caption);
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  /* Five lines at most (a layout can lower it with --slot-lines rather than fighting the
+     selector), and when the frame is shorter than that, cut at the last whole line that fits
+     rather than through the middle of one. The half pixel absorbs layout rounding: line boxes
+     snap to 1/64px, so three lines can measure a hair under 3 x 1.45em and floor to two. */
+  .slot__shot {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--slot-lines, 5);
+    line-clamp: var(--slot-lines, 5);
+    overflow: hidden;
+    max-width: 34ch;
+    max-height: round(down, 100% + 0.5px, 1.45em);
+    font-size: var(--fs-caption);
+    line-height: 1.45;
+    color: var(--ink-muted);
+    text-wrap: pretty;
+  }
+  .slot__ratio {
+    margin-top: var(--space-1);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: var(--ink-muted);
   }
 </style>
