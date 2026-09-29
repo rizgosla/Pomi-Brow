@@ -617,9 +617,11 @@
   /* feature, "1 + N": the first block large (7/12) with the photograph at its head, the rest as
      compact tiles stacked beside it (5/12). The trailing 1fr track takes the lead's extra
      height, so the compact tiles stay packed at the top instead of spreading apart. */
+  /* The companions share the lead's height in equal rows, so their stack ends level with the
+     lead's foot rather than stopping short of it. */
   .l-feature {
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-    grid-template-rows: repeat(var(--rest, 1), auto) 1fr;
+    grid-template-rows: repeat(var(--rest, 1), 1fr);
   }
   .l-feature > :first-child {
     grid-column: 1;
@@ -627,6 +629,7 @@
   }
   .l-feature > :not(:first-child) {
     grid-column: 2;
+    align-self: stretch;
   }
   /* With one companion, it settles on the lead's floor, level with the lead's words under its
      photograph, rather than hanging at the top beside the picture. */
@@ -733,8 +736,12 @@
     grid-area: body;
     grid-column: 2;
   }
+  /* The pair runs the full height of the row, so the tiles end level with the photograph's
+     foot as well as its top. */
   .l--center > .l__body {
     pointer-events: none;
+    align-self: stretch;
+    display: grid;
   }
   .l--center .l-pair {
     column-gap: var(--space-6);
@@ -755,6 +762,25 @@
   /* Statements set their paragraphs close under the head: the copy continues the lede. */
   .l.l--statement {
     --l-head-gap: var(--space-6);
+  }
+  /* A statement split centres its copy on the photograph: two
+     flexible empty rows above and below take up the height the photograph adds. */
+  .l--statement.l--split {
+    grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-areas:
+      "media ."
+      "media head"
+      "media body"
+      "media note"
+      "media .";
+  }
+  .l--statement.l--split[data-side="right"] {
+    grid-template-areas:
+      ". media"
+      "head media"
+      "body media"
+      "note media"
+      ". media";
   }
 }
 
