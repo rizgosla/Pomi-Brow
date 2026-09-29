@@ -38,11 +38,8 @@ const shown = visibleReviews(reviews);
 // Read off the listing on 2026-09-19: 5.0 across 235 reviews. The count is every review,
 // not the five-star subset -- that subset is derived below rather than claimed directly,
 // because the listing publishes the total and the average, not the breakdown.
-const { yelpRating: rating, yelpReviewCount: total, yelpOtherReviewCount: other } = settings;
+const { yelpRating: rating, yelpReviewCount: total } = settings;
 const stars = Array.from({ length: 5 });
-// Said out loud only when there is something to say. At zero the sentence would be a boast.
-const candour =
-  other === 1 ? "All but one of them five stars." : other > 1 ? `All but ${other} of them five stars.` : null;
 const monthYear = (iso?: string) => {
   if (!iso) return null;
   const d = new Date(`${iso}T00:00:00`);
@@ -63,14 +60,6 @@ const monthYear = (iso?: string) => {
             <span class="reviews__numeral">{rating}.0</span>
             <span class="reviews__what">on Yelp, across {total} reviews.</span>
           </h2>
-          {/* The word-for-word promise is only made when there are words on the page to keep
-              it. With no quotes yet, the lede is just the standing, said plainly. */}
-          <p class="lede">
-            {candour}
-            {shown.length > 0
-              ? " Copied word for word, and nothing here was written for this page. Where a review is shortened, the full one is a click away."
-              : " Every one written by a client of one artist. Read them before you call."}
-          </p>
         </div>
 
         {shown.length > 0 && (
