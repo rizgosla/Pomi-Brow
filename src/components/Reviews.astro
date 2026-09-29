@@ -29,7 +29,6 @@ const { reviews, settings, photos = [], services = [] } = Astro.props;
 // Placeholders never ship -- the block promises words copied from Yelp. Shared with
 // index.astro so the photographs it prepares line up with the reviews that actually render.
 const shown = visibleReviews(reviews);
-const LONG_QUOTE = 220;
 // The standing and the words are two different promises. The words are quoted, so they ship
 // only when they are real -- that guard stays. The rating and the count are facts about the
 // listing and hold whether or not a quote has been pasted in yet, so the section now leads
@@ -89,7 +88,7 @@ const monthYear = (iso?: string) => {
                 </figure>
               )}
               <blockquote>
-                <p class:list={["reviews__quote", { "reviews__quote--long": r.quote.length > LONG_QUOTE }]}>{r.quote}</p>
+                <p class="reviews__quote">{r.quote}</p>
                 <footer class="reviews__meta">
                   <span class="reviews__who">
                     <span class="reviews__name">{r.reviewer}</span>
@@ -180,22 +179,14 @@ const monthYear = (iso?: string) => {
     gap: var(--space-5);
     align-content: space-between;
   }
+  /* One setting for every quote. Short ones used to switch to the display serif at the quote
+     size, so a row of three cards mixed two type styles. */
   .reviews__quote {
-    font-family: var(--font-display);
-    font-variation-settings: "opsz" 24;
-    font-size: var(--fs-quote);
-    line-height: 1.35;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-    text-wrap: pretty;
-  }
-  .reviews__quote--long {
     font-family: var(--font-body);
-    font-variation-settings: normal;
     font-size: var(--fs-body);
     line-height: var(--lh-body);
-    letter-spacing: 0;
     color: var(--ink-body);
+    text-wrap: pretty;
   }
   .reviews__meta {
     display: flex;
