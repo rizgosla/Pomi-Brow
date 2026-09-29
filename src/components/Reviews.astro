@@ -68,7 +68,7 @@ const monthYear = (iso?: string) => {
           <p class="lede">
             {candour}
             {shown.length > 0
-              ? " Copied word for word. Nothing here was written for this page, and nothing has been left out."
+              ? " Copied word for word, and nothing here was written for this page. Where a review is shortened, the full one is a click away."
               : " Every one written by a client of one artist. Read them before you call."}
           </p>
         </div>
@@ -88,7 +88,14 @@ const monthYear = (iso?: string) => {
                 </figure>
               )}
               <blockquote>
-                <p class="reviews__quote">{r.quote}</p>
+                <div class="reviews__words">
+                  <p class="reviews__quote">{r.excerpt ?? r.quote}</p>
+                  {r.excerpt && r.sourceUrl && (
+                    <a class="reviews__more" href={r.sourceUrl} rel="noopener">
+                      Read the full review on {r.source}
+                    </a>
+                  )}
+                </div>
                 <footer class="reviews__meta">
                   <span class="reviews__who">
                     <span class="reviews__name">{r.reviewer}</span>
@@ -187,6 +194,20 @@ const monthYear = (iso?: string) => {
     line-height: var(--lh-body);
     color: var(--ink-body);
     text-wrap: pretty;
+  }
+  .reviews__words {
+    display: grid;
+    gap: var(--space-3);
+  }
+  .reviews__more {
+    justify-self: start;
+    font-size: var(--fs-small);
+    color: var(--pink-ink);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .reviews__more:hover {
+    color: var(--pink-ink-hover);
   }
   .reviews__meta {
     display: flex;

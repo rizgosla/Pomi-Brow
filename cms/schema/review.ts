@@ -20,6 +20,13 @@ export const review = defineType({
       options: { list: ["Yelp", "Google", "Instagram"] },
       initialValue: "Yelp",
     }),
+    defineField({
+      name: "excerpt",
+      title: "Shortened quote for the card",
+      description: "Optional. The review's own words with \"…\" where anything is cut. The card links to the full review.",
+      type: "text",
+      rows: 3,
+    }),
     defineField({ name: "sourceUrl", title: "Link to the original review", type: "url" }),
     defineField({
       name: "rating",

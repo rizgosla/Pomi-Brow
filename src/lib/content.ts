@@ -58,6 +58,9 @@ export interface Service {
 
 export interface Review {
   quote: string;
+  /** A shortened quote for the card, cut with "…" where words were left out. The card then
+      links to the full review. The full quote still feeds the JSON-LD. */
+  excerpt?: string;
   reviewer: string;
   source: string;
   sourceUrl?: string;
