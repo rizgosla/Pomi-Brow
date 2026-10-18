@@ -146,7 +146,7 @@
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --dur-fast: 150ms;
   --dur-base: 200ms;
-  --dur-reveal: 600ms;
+  --dur-reveal: 400ms;
 
   --shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
