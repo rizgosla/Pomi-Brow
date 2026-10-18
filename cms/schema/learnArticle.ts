@@ -30,6 +30,13 @@ export const learnArticle = defineType({
       description: "Optional. Links the article to a service page.",
     }),
     defineField({
+      name: "serviceGuide",
+      title: "This is the guide to its service",
+      type: "boolean",
+      description: "Lists it first on the related service page, ahead of the questions about it.",
+      initialValue: false,
+    }),
+    defineField({
       name: "showAsFaq",
       title: "Show as a question on the home page",
       type: "boolean",

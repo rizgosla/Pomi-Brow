@@ -41,13 +41,16 @@ const allPhotos = service.gallery?.length ? service.gallery : localGallery(servi
 // the page a second time.
 const usedKeys = new Set([photoKey(service.cover)].filter(Boolean));
 const gallery = allPhotos.filter((p) => !usedKeys.has(photoKey(p)));
-const related = learn.filter((a) => a.relatedService === service.slug);
+// The service's own guide first, then the questions about it.
+const related = learn
+  .filter((a) => a.relatedService === service.slug)
+  .sort((a, b) => Number(Boolean(b.serviceGuide)) - Number(Boolean(a.serviceGuide)));
 const faqs = learn.filter((a) => a.showAsFaq);
 
 const title = service.seoTitle || `${service.title} in Tustin, near Irvine | ${settings.businessName}`;
 const description =
   service.summary ??
-  `${service.title} by Pomi at ${settings.businessName}, ${settings.locationLine}.`;
+  `${service.title} by Pomi at ${settings.businessName}. ${settings.locationLine}.`;
 
 const tagTone: Record<string, string> = {
   Eyebrows: "tag--brow",

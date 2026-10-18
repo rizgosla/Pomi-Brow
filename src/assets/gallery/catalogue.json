@@ -478,5 +478,295 @@
     },
     "caption": "Before and after",
     "notes": "Thin white divider."
+  },
+  "brows/01": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Client with auburn hair lying back, head turned, eyes half open: soft shaded brows; nose and cheek at right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "4 / 5": "60% 50%",
+      "3 / 2": "50% 45%",
+      "5 / 2": "50% 48%"
+    },
+    "caption": "Close-up",
+    "notes": "From Instagram. Service not confirmed, so it sits in brows/."
+  },
+  "brows/02": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Client lying back photographed from above, blue eyes open looking up: two shaded brows running diagonally across the frame, lips at top right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "40% 50%",
+      "3 / 2": "50% 40%"
+    },
+    "caption": "Close-up",
+    "notes": "Diagonal composition; too steep for a 5:2 strip."
+  },
+  "brows/03": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "One shaded brow arching across the centre above an open grey-blue eye; the other eye at top left",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "60% 50%",
+      "3 / 2": "50% 50%"
+    },
+    "caption": "Close-up"
+  },
+  "brows/04": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Face-on close-up, brown eyes open, freckled skin: two soft shaded brows across the top third",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "1 / 1": "50% 30%",
+      "3 / 2": "50% 30%",
+      "5 / 2": "50% 25%"
+    },
+    "caption": "Close-up",
+    "notes": "Portrait 1139x1292; the brows sit high, so wide crops need the top-biased focus."
+  },
+  "brows/05": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Freckled client lying back, eyes open: a full, defined brow running diagonally across the centre; the other eye at top left",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "55% 50%",
+      "3 / 2": "50% 50%"
+    },
+    "caption": "Close-up"
+  },
+  "brows/06": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Client lying back, eyes open: a shaded brow over a fine winged eyeliner, freckles on the cheek",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "1 / 1": "55% 50%",
+      "4 / 5": "60% 50%",
+      "3 / 2": "50% 50%"
+    },
+    "caption": "With eyeliner"
+  },
+  "brows/07": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Smiling client lying back, head turned, eyes open: soft natural brows; the whole face in frame",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "3 / 2": "50% 35%"
+    },
+    "caption": "On a client"
+  },
+  "brows/08": {
+    "kind": "collage",
+    "service": "brows",
+    "subject": "Two stacked close-ups of one client lying down with eyes closed: top, one brow; bottom, the other brow. Both are finished brows; there is no before",
+    "seam": 0.497,
+    "ratios": [
+      "1 / 1"
+    ],
+    "focus": {},
+    "caption": "Two views",
+    "notes": "White divider just under halfway. Both panels are after shots, so never caption it \"Before and after\"."
+  },
+  "brows/09": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Client lying back, eye open looking up: a dark, crisp brow running diagonally down the left; nose at top right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "40% 50%",
+      "3 / 2": "50% 60%"
+    },
+    "caption": "Close-up"
+  },
+  "brows/10": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Smiling client lying back, green eyes open: defined brows across the upper third, lips at bottom right",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "3 / 2": "50% 35%"
+    },
+    "caption": "On a client"
+  },
+  "brows/11": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Client sitting up in a black face mask, eyes open: dark shaded brows across the middle of the frame",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "3 / 2": "50% 60%",
+      "5 / 2": "50% 62%"
+    },
+    "caption": "On a client"
+  },
+  "brows/12": {
+    "kind": "single",
+    "service": "brows",
+    "subject": "Client lying back, brown eye open looking up: a bold, defined brow across the top of the frame",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "45% 50%",
+      "3 / 2": "50% 30%"
+    },
+    "caption": "Close-up"
+  },
+  "lip-tint/05": {
+    "kind": "single",
+    "service": "lip-tint",
+    "subject": "Close-up of glossy closed lips in a soft rosy colour, nose at top left",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "60% 50%",
+      "3 / 2": "50% 70%"
+    },
+    "caption": "Close-up"
+  },
+  "lip-tint/06": {
+    "kind": "pair-v",
+    "service": "lip-tint",
+    "subject": "Lip tint before (top) and after (bottom): closed lips, face-on; pale pink before, soft coral after",
+    "seam": 0.497,
+    "ratios": [
+      "1 / 1",
+      "4 / 5"
+    ],
+    "focus": {},
+    "caption": "Before and after",
+    "notes": "Thin white divider at the seam. Bottom 18px trimmed on import."
+  },
+  "microblading/09": {
+    "kind": "single",
+    "service": "microblading",
+    "subject": "Face-on close-up, eyes open with lash extensions: two microbladed brows with hair strokes through the front",
+    "ratios": [
+      "1 / 1",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "3 / 2": "50% 40%",
+      "5 / 2": "50% 50%"
+    },
+    "caption": "Close-up",
+    "notes": "Both brow tails reach the edges; a 4:5 crop cuts them."
+  },
+  "microblading/10": {
+    "kind": "single",
+    "service": "microblading",
+    "subject": "Client lying back, eye closed: one microbladed brow of hair strokes running front to tail across the centre",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "45% 50%",
+      "3 / 2": "50% 50%"
+    },
+    "caption": "Close-up"
+  },
+  "microblading/11": {
+    "kind": "single",
+    "service": "microblading",
+    "subject": "Client selfie: blonde client, chin on hand, lips pursed, looking up and to the side; brows framing her eyes",
+    "ratios": [
+      "1 / 1",
+      "4 / 5",
+      "3 / 2"
+    ],
+    "focus": {
+      "4 / 5": "55% 50%",
+      "3 / 2": "50% 35%"
+    },
+    "caption": "On a client",
+    "notes": "Client's own photo, cropped from a screenshot."
+  },
+  "ombre-powder-brows/06": {
+    "kind": "single",
+    "service": "ombre-powder-brows",
+    "subject": "Close-up of one ombre powder brow spanning the frame above a closed eye with a fine winged eyeliner",
+    "ratios": [
+      "1 / 1",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "5 / 2": "50% 30%"
+    },
+    "caption": "With eyeliner",
+    "notes": "The brow spans nearly edge to edge; 4:5 cuts it."
+  },
+  "studio/interior": {
+    "kind": "single",
+    "service": "studio",
+    "subject": "Inside the studio: the Pomi B. A Brow Studio sign on a slate wall, a pink wall of paper roses and butterflies, a crystal chandelier above",
+    "ratios": [
+      "1 / 1",
+      "3 / 2",
+      "5 / 2"
+    ],
+    "focus": {
+      "1 / 1": "30% 50%",
+      "5 / 2": "50% 60%"
+    },
+    "caption": "Tustin",
+    "notes": "Landscape 1320x841. Shown on the contact card, so not on any page that renders ContactForm (safety, aftercare, services, home, about, contact, faqs)."
   }
 }

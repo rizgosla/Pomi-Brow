@@ -35,6 +35,14 @@
     {
       "file": "04.jpg",
       "source": "MEDIA/Lip Tint - Pomi B Brow - 4.jpeg"
+    },
+    {
+      "file": "05.jpg",
+      "source": "MEDIA/Lip Tint - Pomi B Brow - 5.jpeg"
+    },
+    {
+      "file": "06.jpg",
+      "source": "MEDIA/Lip Tint - Pomi B Brow - 6.jpeg"
     }
   ],
   "microblading": [
@@ -69,6 +77,18 @@
     {
       "file": "08.jpg",
       "source": "MEDIA/Microblading - Pomi B Brow - 8.jpeg"
+    },
+    {
+      "file": "09.jpg",
+      "source": "MEDIA/Microblading - Pomi B Brow - 9.jpeg"
+    },
+    {
+      "file": "10.jpg",
+      "source": "MEDIA/Microblading - Pomi B Brow - 10.jpeg"
+    },
+    {
+      "file": "11.jpg",
+      "source": "MEDIA/Microblading - Pomi B Brow - 11.jpeg"
     }
   ],
   "microblading-shading": [
@@ -125,6 +145,10 @@
     {
       "file": "05.jpg",
       "source": "MEDIA/Powder Brows - Pomi B Brow - 5.jpeg"
+    },
+    {
+      "file": "06.jpg",
+      "source": "MEDIA/Powder Brows - Pomi B Brow - 6.jpeg"
     }
   ],
   "scalp-micropigmentation": [

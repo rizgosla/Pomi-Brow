@@ -40,7 +40,11 @@ const {
 // Only gallery refs resolve today; a CMS-uploaded image (no ref) keeps the empty frame until the
 // content layer learns to build remote photos for slots.
 const photo = slot.photo?.ref ? resolveSeedPhoto(slot.photo) : undefined;
-const captionService = service ?? (photo?.serviceSlug ? serviceTitle(photo.serviceSlug) : undefined) ?? "Pomi B. Brow Studio";
+// Gallery folders that are not one service still name what the photograph shows.
+const FOLDER_LABELS: Record<string, string> = { brows: "Brows", studio: "The studio" };
+const folder = slot.photo?.ref?.split("/")[0] ?? "";
+const captionService =
+  service ?? (photo?.serviceSlug ? serviceTitle(photo.serviceSlug) : FOLDER_LABELS[folder]) ?? "Pomi B. Brow Studio";
 // "4 / 5" the way a photographer writes a crop: 4:5.
 const ratioLabel = slot.ratio?.replace(/\s*\/\s*/g, ":");
 ---

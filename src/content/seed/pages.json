@@ -7,7 +7,12 @@
     "meta": "From your healthcare provider.",
     "lead": {
       "ratio": "4 / 5",
-      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway"
+      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway",
+      "photo": {
+        "ref": "brows/07",
+        "alt": "A smiling client with soft, natural brows",
+        "detail": "On a client"
+      }
     },
     "facts": [
       {
@@ -38,7 +43,12 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Gloved hands laying sealed single-use tools on a fresh barrier, before the client arrives"
+          "shot": "Gloved hands laying sealed single-use tools on a fresh barrier, before the client arrives",
+          "photo": {
+            "ref": "brows/11",
+            "alt": "A client sitting up in a black mask, new brows framing her eyes",
+            "detail": "On a client"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -56,7 +66,12 @@
             "title": "Why privacy matters",
             "image": {
               "ratio": "3 / 2",
-              "shot": "The studio door closed, one chair, one client's setup on the tray, no one else in frame"
+              "shot": "The studio door closed, one chair, one client's setup on the tray, no one else in frame",
+              "photo": {
+                "ref": "brows/10",
+                "alt": "Defined brows on a smiling client with green eyes",
+                "detail": "On a client"
+              }
             },
             "bullets": [
               "No crowded appointment space",
@@ -69,7 +84,12 @@
             "title": "Why control matters",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Tray laid out for one appointment: gloves, sealed tools, pigment cup, in order"
+              "shot": "Tray laid out for one appointment: gloves, sealed tools, pigment cup, in order",
+              "photo": {
+                "ref": "brows/12",
+                "alt": "A bold, defined brow above a brown eye looking up",
+                "detail": "Close-up"
+              }
             },
             "bullets": [
               "Fresh setup for every appointment",
@@ -88,7 +108,12 @@
         "lede": "Clean surfaces, fresh barriers and a careful setup reduce contact with the treatment area and the tools.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Disposable barriers going onto the bed and tray before an appointment"
+          "shot": "Disposable barriers going onto the bed and tray before an appointment",
+          "photo": {
+            "ref": "brows/03",
+            "alt": "One shaded brow above a grey-blue eye, close up",
+            "detail": "Close-up"
+          }
         },
         "items": [
           {
@@ -120,7 +145,12 @@
         "lede": "Single-use tools cut cross-contamination risk because they touch one client and are then safely discarded.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "A sealed needle cartridge opened in front of the client, gloved hands, close-up"
+          "shot": "A sealed needle cartridge opened in front of the client, gloved hands, close-up",
+          "photo": {
+            "ref": "brows/05",
+            "alt": "A full, defined brow on freckled skin, eye open",
+            "detail": "Close-up"
+          }
         },
         "items": [
           {
@@ -148,7 +178,12 @@
         "lede": "A safe appointment is not only the studio. Your skin, your timing, your health history and your aftercare all count.",
         "image": {
           "ratio": "3 / 2",
-          "shot": "A health questionnaire, a pen and an open calendar on the studio desk, shot from above"
+          "shot": "A health questionnaire, a pen and an open calendar on the studio desk, shot from above",
+          "photo": {
+            "ref": "brows/01",
+            "alt": "Shaded brows on a client with auburn hair, eyes half open",
+            "detail": "Close-up"
+          }
         },
         "items": [
           {
@@ -176,7 +211,12 @@
         "lede": "Some clients may still be good candidates, but timing matters.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Pomi on a phone call at the studio, answering a question before a client books"
+          "shot": "Pomi on a phone call at the studio, answering a question before a client books",
+          "photo": {
+            "ref": "brows/04",
+            "alt": "Soft shaded brows on freckled skin, eyes open",
+            "detail": "Close-up"
+          }
         },
         "items": [
           {
@@ -272,7 +312,12 @@
         "lede": "Fresh pigment looks darker or brighter at first, then softens as the skin heals. Aftercare protects it while it does.",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
+          "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby",
+          "photo": {
+            "ref": "microblading-shading/06",
+            "alt": "Healed combination brows",
+            "detail": "Fresh"
+          }
         },
         "items": [
           {
@@ -339,7 +384,12 @@
         "lede": "Needles, the studio, and who should ask first.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "The treatment room ready for one client: lamp on, the bed covered in a fresh barrier"
+          "shot": "The treatment room ready for one client: lamp on, the bed covered in a fresh barrier",
+          "photo": {
+            "ref": "brows/09",
+            "alt": "Dark, crisp brows on a client lying back, eye open",
+            "detail": "Close-up"
+          }
         },
         "items": [
           {
@@ -378,7 +428,12 @@
     "meta": "Brows, eyeliner, lash enhancement, lip tint and scalp micropigmentation.",
     "lead": {
       "ratio": "4 / 5",
-      "shot": "Aftercare kit on a white towel: sealed cotton swabs, the recommended balm, a printed instruction card, shot from above"
+      "shot": "Aftercare kit on a white towel: sealed cotton swabs, the recommended balm, a printed instruction card, shot from above",
+      "photo": {
+        "ref": "brows/12",
+        "alt": "A bold, defined brow above a brown eye looking up",
+        "detail": "Close-up"
+      }
     },
     "facts": [
       {
@@ -475,7 +530,12 @@
         "lede": "Follow the instructions for your service. In general, avoid anything that can irritate, soak, contaminate or fade the area.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin"
+          "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin",
+          "photo": {
+            "ref": "microblading-shading/06",
+            "alt": "Healed combination brows",
+            "detail": "Fresh"
+          }
         },
         "items": [
           {
@@ -548,7 +608,12 @@
             "title": "What to avoid",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Brow pencil and an exfoliating toner set aside, capped, beside a mirror"
+              "shot": "Brow pencil and an exfoliating toner set aside, capped, beside a mirror",
+              "photo": {
+                "ref": "ombre-powder-brows/04",
+                "alt": "Dark powder brows with a soft front on a client lying with her eyes closed",
+                "detail": "Close-up"
+              }
             },
             "bullets": [
               "Picking flakes or dry skin",
@@ -643,12 +708,17 @@
       },
       {
         "type": "compare",
-        "layout": "ledger",
+        "layout": "feature",
         "heading": "Scalp.",
         "lede": "Scalp micropigmentation builds the look of fuller density with tiny pigment impressions, often in layers. Darker at first, blended as it heals.",
         "image": {
-          "ratio": "5 / 2",
-          "shot": "The crown right after a scalp micropigmentation session, impressions dark and distinct, shot from above in daylight"
+          "ratio": "1 / 1",
+          "shot": "The crown right after a scalp micropigmentation session, impressions dark and distinct, shot from above in daylight",
+          "photo": {
+            "ref": "scalp-micropigmentation/01",
+            "alt": "Scalp micropigmentation before and after: a thin crown, then a denser one",
+            "detail": "Before and after"
+          }
         },
         "sides": [
           {
@@ -678,7 +748,12 @@
         "lede": "Touch-ups complete the process, and later keep the color fresh.",
         "image": {
           "ratio": "1 / 1",
-          "shot": "Pomi refining a healed brow at the touch-up, shot close from above in soft light"
+          "shot": "Pomi refining a healed brow at the touch-up, shot close from above in soft light",
+          "photo": {
+            "ref": "microblading/07",
+            "alt": "Microblading before and after: sparse, light brow hairs, then dense, crisp hair strokes",
+            "detail": "Before and after"
+          }
         },
         "items": [
           {

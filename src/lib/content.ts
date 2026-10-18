@@ -88,6 +88,9 @@ export interface LearnArticle {
       would otherwise show the same picture side by side on the index. */
   cover?: Photo;
   relatedService?: string | null;
+  /** The guide to its related service itself, as opposed to a question about it. It leads
+      that service page's reading list. */
+  serviceGuide?: boolean;
   showAsFaq: boolean;
 }
 
@@ -356,7 +359,7 @@ export async function getLearnArticles(): Promise<LearnArticle[]> {
   if (!usingSanity) return normalizeSeedLearn();
   const c = await client();
   const rows = await c.fetch(`*[_type == "learnArticle"]{
-    title, "slug": slug.current, summary, body, sections, lead, seoTitle, showAsFaq,
+    title, "slug": slug.current, summary, body, sections, lead, seoTitle, serviceGuide, showAsFaq,
     cover{..., asset->{url, metadata{dimensions}}},
     "relatedService": relatedService->slug.current
   }`);
