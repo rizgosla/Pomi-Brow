@@ -3,7 +3,7 @@
 // without one it is the same frame, empty, with the shot it is waiting for written beneath, so
 // the shot list is visible on the page and filling a slot later is a one-line content change.
 import type { ImageSlot as Slot } from "../../lib/sections";
-import { resolveSeedPhoto } from "../../lib/content";
+import { getServices, resolveSeedPhoto } from "../../lib/content";
 import Photo from "../Photo.astro";
 import Caption from "../Caption.astro";
 
@@ -30,6 +30,15 @@ const {
 // Only gallery refs resolve today; a CMS-uploaded image (no ref) keeps the empty frame until the
 // content layer learns to build remote photos for slots.
 const photo = slot.photo?.ref ? resolveSeedPhoto(slot.photo) : undefined;
+
+// The caption names what the photograph shows, not the shot the slot was planned for: a slot is
+// filled from the studio's real work, which is rarely the exact shot on the list.
+const FOLDER_LABELS: Record<string, string> = { brows: "Brows", studio: "The studio" };
+const folder = slot.photo?.ref?.split("/")[0] ?? "";
+const services = photo ? await getServices() : [];
+const photoService = photo
+  ? (services.find((s) => s.slug === photo.serviceSlug)?.title ?? FOLDER_LABELS[folder] ?? service)
+  : service;
 ---
 
 <figure class:list={["slot", className]}>
@@ -41,7 +50,7 @@ const photo = slot.photo?.ref ? resolveSeedPhoto(slot.photo) : undefined;
     )
   }
   <figcaption>
-    {photo ? <Caption service={service} detail={photo.detail ?? slot.shot} /> : <Caption service="Photo to come" detail={slot.shot} />}
+    {photo ? <Caption service={photoService} detail={photo.detail ?? "By Pomi"} /> : <Caption service="Photo to come" detail={slot.shot} />}
   </figcaption>
 </figure>
 

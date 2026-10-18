@@ -6,7 +6,13 @@
     "meta": "I can answer questions about the appointment. Medical clearance comes from your healthcare provider.",
     "lead": {
       "ratio": "4 / 5",
-      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway"
+      "shot": "The studio set for one appointment: disinfected surface, fresh barriers, sealed single-use tools, shot from the doorway",
+      "photo": {
+        "ref": "brows/11",
+        "alt": "A client sitting up in a black mask, new brows framing her eyes",
+        "detail": "By Pomi",
+        "focus": "50% 40%"
+      }
     },
     "sections": [
       {
@@ -53,7 +59,13 @@
             "title": "Why privacy matters",
             "image": {
               "ratio": "3 / 2",
-              "shot": "The studio door closed, one chair, one client's setup on the tray, no one else in frame"
+              "shot": "The studio door closed, one chair, one client's setup on the tray, no one else in frame",
+              "photo": {
+                "ref": "brows/12",
+                "alt": "A bold, defined brow above a brown eye looking up",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             },
             "bullets": [
               "No crowded appointment space",
@@ -66,7 +78,13 @@
             "title": "Why control matters",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Tray laid out for one appointment: gloves, sealed tools, pigment cup, in order"
+              "shot": "Tray laid out for one appointment: gloves, sealed tools, pigment cup, in order",
+              "photo": {
+                "ref": "brows/01",
+                "alt": "Shaded brows on a client with auburn hair, eyes half open",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             },
             "bullets": [
               "Fresh setup for every appointment",
@@ -84,7 +102,13 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Disposable barriers going onto the bed and tray before an appointment"
+          "shot": "Disposable barriers going onto the bed and tray before an appointment",
+          "photo": {
+            "ref": "microblading-shading/03",
+            "alt": "Healed combination brows on a smiling client",
+            "detail": "Healed",
+            "focus": "50% 30%"
+          }
         },
         "items": [
           {
@@ -170,7 +194,13 @@
             "title": "Health and healing",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it"
+              "shot": "Consultation form on a clipboard, the health questions page, a pen resting on it",
+              "photo": {
+                "ref": "brows/07",
+                "alt": "A smiling client with soft, natural brows",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             },
             "bullets": [
               "You are pregnant or nursing",
@@ -183,7 +213,13 @@
             "title": "The treatment area",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Close, even-light shot of a brow area with clear, calm skin, ready for treatment"
+              "shot": "Close, even-light shot of a brow area with clear, calm skin, ready for treatment",
+              "photo": {
+                "ref": "microblading/09",
+                "alt": "Microbladed brows, hair strokes through the front, eyes open",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             },
             "bullets": [
               "Irritation, cuts, sunburn or open skin nearby",
@@ -232,7 +268,13 @@
             "title": "Protect the healing area",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby"
+              "shot": "Healing brows on day three, dry and undisturbed, no makeup nearby",
+              "photo": {
+                "ref": "ombre-powder-brows/06",
+                "alt": "Ombre powder brow above a fine eyeliner, close up",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             },
             "bullets": [
               "No picking, scratching, rubbing or peeling",
@@ -245,7 +287,13 @@
             "title": "Know when to ask",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Phone on the studio counter beside the printed aftercare card"
+              "shot": "Phone on the studio counter beside the printed aftercare card",
+              "photo": {
+                "ref": "brows/10",
+                "alt": "Defined brows on a smiling client with green eyes",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             },
             "bullets": [
               "Unsure about an aftercare product",
@@ -337,7 +385,13 @@
     "meta": "What to expect after brows, eyeliner, lash enhancement, lip tint and scalp micropigmentation.",
     "lead": {
       "ratio": "4 / 5",
-      "shot": "Aftercare kit on a white towel: sealed cotton swabs, the recommended balm, a printed instruction card, shot from above"
+      "shot": "Aftercare kit on a white towel: sealed cotton swabs, the recommended balm, a printed instruction card, shot from above",
+      "photo": {
+        "ref": "brows/02",
+        "alt": "Shaded brows on a blue-eyed client, photographed from above",
+        "detail": "By Pomi",
+        "focus": "50% 45%"
+      }
     },
     "sections": [
       {
@@ -371,7 +425,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Powder brows the morning after the appointment, crisp and dark, before any flaking"
+          "shot": "Powder brows the morning after the appointment, crisp and dark, before any flaking",
+          "photo": {
+            "ref": "ombre-powder-brows/04",
+            "alt": "Healed ombre powder brows, defined through the arch and tail",
+            "detail": "Healed",
+            "focus": "50% 40%"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -386,7 +446,12 @@
         "kind": "timeline",
         "image": {
           "ratio": "3 / 2",
-          "shot": "One healing brow in three frames, side by side: day one, day five, week six"
+          "shot": "One healing brow in three frames, side by side: day one, day five, week six",
+          "photo": {
+            "ref": "microblading-shading/04",
+            "alt": "Brows before and after the first session, three frames",
+            "detail": "Before and after"
+          }
         },
         "items": [
           {
@@ -437,7 +502,13 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin"
+              "shot": "Gloved hand holding a clean cotton swab over a healing brow, fingers kept off the skin",
+              "photo": {
+                "ref": "brows/03",
+                "alt": "One shaded brow above a grey-blue eye, close up",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             }
           },
           {
@@ -450,7 +521,13 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Shower cap and folded towel on a bathroom shelf, the treated area kept dry"
+              "shot": "Shower cap and folded towel on a bathroom shelf, the treated area kept dry",
+              "photo": {
+                "ref": "brows/05",
+                "alt": "A full, defined brow on freckled skin, eye open",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             }
           },
           {
@@ -462,7 +539,13 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Makeup brushes and a brow pencil set aside in a closed pouch, unused"
+              "shot": "Makeup brushes and a brow pencil set aside in a closed pouch, unused",
+              "photo": {
+                "ref": "brows/09",
+                "alt": "Dark, crisp brows on a client lying back, eye open",
+                "detail": "By Pomi",
+                "focus": "50% 45%"
+              }
             }
           },
           {
@@ -475,7 +558,13 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Wide-brim hat and mineral sunscreen tube on a bright windowsill"
+              "shot": "Wide-brim hat and mineral sunscreen tube on a bright windowsill",
+              "photo": {
+                "ref": "microblading/10",
+                "alt": "Microbladed brow, hair strokes from front to tail",
+                "detail": "By Pomi",
+                "focus": "40% 50%"
+              }
             }
           }
         ],
@@ -500,7 +589,12 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Microbladed brow on day one, strokes crisp and dark, close and in even light"
+              "shot": "Microbladed brow on day one, strokes crisp and dark, close and in even light",
+              "photo": {
+                "ref": "microblading/07",
+                "alt": "Microblading before and after, side by side",
+                "detail": "Before and after"
+              }
             }
           },
           {
@@ -513,7 +607,13 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "The same microbladed brow healed at week six, strokes soft and natural, same framing"
+              "shot": "The same microbladed brow healed at week six, strokes soft and natural, same framing",
+              "photo": {
+                "ref": "microblading/05",
+                "alt": "Healed microblading, fine individual hair strokes",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
             }
           }
         ]
@@ -534,7 +634,13 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Fresh eyeliner tattoo on day one, a dark defined line along the lash line, eye closed"
+              "shot": "Fresh eyeliner tattoo on day one, a dark defined line along the lash line, eye closed",
+              "photo": {
+                "ref": "eyeliner/01",
+                "alt": "Permanent eyeliner along the upper lash line, eye closed",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             }
           },
           {
@@ -547,7 +653,13 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Healed eyeliner at week four, the line soft and even, eye open in daylight"
+              "shot": "Healed eyeliner at week four, the line soft and even, eye open in daylight",
+              "photo": {
+                "ref": "eyeliner/03",
+                "alt": "Healed permanent eyeliner, close up",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
             }
           }
         ],
@@ -572,8 +684,14 @@
               "Final tone depends on natural lip color, healing and touch-up"
             ],
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Lip tint the day after, bright and bold with a slight sheen, lips at rest"
+              "ratio": "1 / 1",
+              "shot": "Lip tint the day after, bright and bold with a slight sheen, lips at rest",
+              "photo": {
+                "ref": "lip-tint/05",
+                "alt": "Lip tint, a soft rosy colour, close up",
+                "detail": "By Pomi",
+                "focus": "55% 55%"
+              }
             }
           },
           {
@@ -585,8 +703,13 @@
               "Sun exposure; follow the instructions given"
             ],
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed lip tint, day 5, light flaking at the border"
+              "ratio": "1 / 1",
+              "shot": "Healed lip tint, day 5, light flaking at the border",
+              "photo": {
+                "ref": "lip-tint/06",
+                "alt": "Lip tint before and after, straight on",
+                "detail": "Before and after"
+              }
             }
           }
         ],
@@ -612,7 +735,12 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Scalp micropigmentation right after the first session, impressions dark and distinct"
+              "shot": "Scalp micropigmentation right after the first session, impressions dark and distinct",
+              "photo": {
+                "ref": "scalp-micropigmentation/01",
+                "alt": "Scalp micropigmentation before and after",
+                "detail": "Before and after"
+              }
             }
           },
           {
@@ -625,7 +753,12 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "The same scalp healed at week three, impressions blended into the surrounding hair"
+              "shot": "The same scalp healed at week three, impressions blended into the surrounding hair",
+              "photo": {
+                "ref": "scalp-micropigmentation/02",
+                "alt": "Scalp micropigmentation before and after at the part",
+                "detail": "Before and after"
+              }
             }
           }
         ],

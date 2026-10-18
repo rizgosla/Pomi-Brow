@@ -1,7 +1,9 @@
 ---
 // The contact form plus the studio's location. Submissions go to a Cloudflare Pages Function, never to Sanity.
 import type { SiteSettings, Service } from "../lib/content";
+import { localPhoto } from "../lib/content";
 import Icon from "./Icon.astro";
+import Photo from "./Photo.astro";
 
 interface Props {
   settings: SiteSettings;
@@ -9,6 +11,11 @@ interface Props {
 }
 const { settings, services } = Astro.props;
 const options = services.filter((s) => ["Eyebrows", "Eyes", "Lips", "Hair"].includes(s.category));
+// What a first-timer walks into, so the address has a place attached to it.
+const studioPhoto = localPhoto(
+  "studio/interior",
+  "Inside the studio: the Pomi B. sign on a grey wall beside a pink wall of paper roses"
+);
 ---
 
 <section class="contact section" id="contact" aria-labelledby="contact-heading">
@@ -72,13 +79,14 @@ const options = services.filter((s) => ["Eyebrows", "Eyes", "Lips", "Hair"].incl
 
     <div class="contact__where reveal" style="--i: 1">
       <div class="card contact__card">
+        {studioPhoto && <Photo photo={studioPhoto} ratio="3 / 2" sizes="(min-width: 60rem) 30vw, 100vw" widths={[480, 800, 1200]} />}
         <p class="contact__head">The studio</p>
         <address class="contact__address">
           <strong>{settings.businessName}</strong><br />
           {settings.street}<br />
           {settings.city}, {settings.state} {settings.zip}
         </address>
-        <p class="muted">{settings.locationLine}.</p>
+        <p class="muted">Serving Irvine and Orange County.</p>
         <p class="muted">
           {
             settings.hours.length > 0

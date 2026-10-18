@@ -914,7 +914,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Brows a year on, softened and ready for a refresh"
+          "shot": "Brows a year on, softened and ready for a refresh",
+          "photo": {
+            "ref": "microblading/05",
+            "alt": "Healed microblading, fine individual hair strokes",
+            "detail": "Healed",
+            "focus": "50% 45%"
+          }
         },
         "callout": {
           "tone": "note",
@@ -929,7 +935,12 @@
         "kind": "timeline",
         "image": {
           "ratio": "4 / 5",
-          "shot": "Hair strokes at the touch-up, fresh beside the softened originals"
+          "shot": "Hair strokes at the touch-up, fresh beside the softened originals",
+          "photo": {
+            "ref": "microblading/04",
+            "alt": "Microblading before and after, both brows",
+            "detail": "Before and after"
+          }
         },
         "items": [
           {
@@ -1013,7 +1024,13 @@
             "text": "Oily, dry, sensitive, mature or textured skin holds pigment differently.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Brow close-up on oily skin, hair strokes softened at the edges"
+              "shot": "Brow close-up on oily skin, hair strokes softened at the edges",
+              "photo": {
+                "ref": "brows/03",
+                "alt": "One shaded brow above a grey-blue eye, close up",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             }
           },
           {
@@ -1021,7 +1038,13 @@
             "text": "Sun fades pigment faster, especially brows and scalp micropigmentation.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Sunscreen dotted around healed brows, hat brim in frame"
+              "shot": "Sunscreen dotted around healed brows, hat brim in frame",
+              "photo": {
+                "ref": "brows/05",
+                "alt": "A full, defined brow on freckled skin, eye open",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             }
           },
           {
@@ -1029,7 +1052,13 @@
             "text": "Exfoliants, acids, retinoids and strong treatments fade pigment faster near brows.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "A retinol dropper held well away from the brow line"
+              "shot": "A retinol dropper held well away from the brow line",
+              "photo": {
+                "ref": "microblading-shading/07",
+                "alt": "Healed combination brows, close up",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
             }
           },
           {
@@ -1037,7 +1066,13 @@
             "text": "Following aftercare protects the healing area and the healed result.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Aftercare balm on a clean cotton swab, brows freshly healed"
+              "shot": "Aftercare balm on a clean cotton swab, brows freshly healed",
+              "photo": {
+                "ref": "ombre-powder-brows/06",
+                "alt": "Ombre powder brow above a fine eyeliner, close up",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             }
           }
         ],
@@ -1243,7 +1278,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Sealed single-use needle cartridge held up to the client before it is opened"
+          "shot": "Sealed single-use needle cartridge held up to the client before it is opened",
+          "photo": {
+            "ref": "brows/11",
+            "alt": "A client sitting up in a black mask, new brows framing her eyes",
+            "detail": "By Pomi",
+            "focus": "50% 40%"
+          }
         },
         "callout": {
           "tone": "note",
@@ -1281,7 +1322,13 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Used cartridges and disposable supplies going into the sharps bin after a session"
+          "shot": "Used cartridges and disposable supplies going into the sharps bin after a session",
+          "photo": {
+            "ref": "brows/07",
+            "alt": "A smiling client with soft, natural brows",
+            "detail": "By Pomi",
+            "focus": "50% 35%"
+          }
         },
         "items": [
           {
@@ -1316,14 +1363,26 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "The empty private treatment room, door closed, one bed and one tray ready"
+              "shot": "The empty private treatment room, door closed, one bed and one tray ready",
+              "photo": {
+                "ref": "studio/interior",
+                "alt": "Inside the studio: the Pomi B. sign beside a pink wall of paper roses",
+                "detail": "Tustin",
+                "focus": "35% 50%"
+              }
             }
           },
           {
             "title": "Disinfected surfaces and barriers",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Disinfectant wipe passing over the treatment bed, a roll of fresh barrier film beside it"
+              "shot": "Disinfectant wipe passing over the treatment bed, a roll of fresh barrier film beside it",
+              "photo": {
+                "ref": "brows/01",
+                "alt": "Shaded brows on a client with auburn hair, eyes half open",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             },
             "bullets": [
               "Surfaces cleaned before and after appointments",
@@ -1340,14 +1399,26 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Gloved hands and mask on, laying out the tray before the client sits down"
+              "shot": "Gloved hands and mask on, laying out the tray before the client sits down",
+              "photo": {
+                "ref": "brows/04",
+                "alt": "Soft shaded brows on freckled skin, eyes open",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             }
           },
           {
             "title": "Clear aftercare instructions",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Printed aftercare card handed across the counter at the end of an appointment"
+              "shot": "Printed aftercare card handed across the counter at the end of an appointment",
+              "photo": {
+                "ref": "microblading/09",
+                "alt": "Microbladed brows, hair strokes through the front, eyes open",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             },
             "bullets": [
               "Know what to avoid while healing",
@@ -1430,7 +1501,13 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Consultation notes and the pre-care sheet on the desk before an appointment"
+          "shot": "Consultation notes and the pre-care sheet on the desk before an appointment",
+          "photo": {
+            "ref": "microblading-shading/03",
+            "alt": "Healed combination brows on a smiling client",
+            "detail": "Healed",
+            "focus": "50% 30%"
+          }
         },
         "items": [
           {
@@ -2345,7 +2422,7 @@
         ]
       }
     ],
-    "seoTitle": "What Is Microblading?",
+    "seoTitle": "Are Powder Brows for Me? | Pomi B. Brow Studio, Tustin",
     "cover": {
       "ref": "ombre-powder-brows/03",
       "focus": "50% 85%",
@@ -2382,7 +2459,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Healed ombre powder brows, soft at the front and defined through the arch and tail"
+          "shot": "Healed ombre powder brows, soft at the front and defined through the arch and tail",
+          "photo": {
+            "ref": "ombre-powder-brows/04",
+            "alt": "Healed ombre powder brows, defined through the arch and tail",
+            "detail": "Healed",
+            "focus": "50% 40%"
+          }
         },
         "callout": {
           "tone": "note",
@@ -2422,7 +2505,13 @@
         ],
         "image": {
           "ratio": "3 / 2",
-          "shot": "Brow mapping in progress: the shape drawn and measured before any shading begins"
+          "shot": "Brow mapping in progress: the shape drawn and measured before any shading begins",
+          "photo": {
+            "ref": "ombre-powder-brows/06",
+            "alt": "Ombre powder brow above a fine eyeliner, close up",
+            "detail": "By Pomi",
+            "focus": "50% 40%"
+          }
         }
       },
       {
@@ -2440,7 +2529,13 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Healed powder brows up close, showing the soft shaded gradient"
+              "shot": "Healed powder brows up close, showing the soft shaded gradient",
+              "photo": {
+                "ref": "ombre-powder-brows/01",
+                "alt": "Healed ombre powder brows with a soft gradient",
+                "detail": "Healed",
+                "focus": "50% 40%"
+              }
             }
           },
           {
@@ -2453,7 +2548,13 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Healed microblading up close, individual hair-like strokes through the brow"
+              "shot": "Healed microblading up close, individual hair-like strokes through the brow",
+              "photo": {
+                "ref": "microblading/06",
+                "alt": "Healed microblading, soft hair strokes on both brows",
+                "detail": "Healed",
+                "focus": "50% 40%"
+              }
             }
           }
         ]
@@ -2465,7 +2566,12 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "A consultation: a client's natural brows beside reference photos of healed work"
+          "shot": "A consultation: a client's natural brows beside reference photos of healed work",
+          "photo": {
+            "ref": "ombre-powder-brows/05",
+            "alt": "Powder brows before and after",
+            "detail": "Before and after"
+          }
         },
         "items": [
           {
@@ -2522,7 +2628,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Powder brows on day one beside the same brows healed at six weeks"
+          "shot": "Powder brows on day one beside the same brows healed at six weeks",
+          "photo": {
+            "ref": "ombre-powder-brows/02",
+            "alt": "Healed ombre powder brows, soft at the front",
+            "detail": "Healed",
+            "focus": "50% 40%"
+          }
         },
         "callout": {
           "tone": "links",
@@ -2640,6 +2752,793 @@
           }
         ]
       }
+    ],
+    "serviceGuide": true
+  },
+  {
+    "title": "What is microblading?",
+    "slug": "what-is-microblading",
+    "summary": "Fine, hair-like strokes placed into the brow for a fuller, more balanced look. Mapped to your face so the result stays soft and natural.",
+    "relatedService": "microblading",
+    "serviceGuide": true,
+    "showAsFaq": false,
+    "seoTitle": "What Is Microblading? | Pomi B. Brow Studio, Tustin",
+    "cover": {
+      "ref": "microblading/09",
+      "focus": "50% 35%",
+      "alt": "Microbladed brows, hair strokes through the front, eyes open",
+      "detail": "By Pomi"
+    },
+    "sections": [
+      {
+        "type": "facts",
+        "items": [
+          {
+            "title": "Natural hair strokes",
+            "text": "Fine strokes that blend with your own brow hair."
+          },
+          {
+            "title": "Custom brow mapping",
+            "text": "The shape is mapped and approved before anything begins."
+          },
+          {
+            "title": "No daily pencil",
+            "text": "Wake up with brows you do not need to fill in."
+          },
+          {
+            "title": "Tustin, CA",
+            "text": "Permanent makeup in Tustin, serving Irvine and Orange County."
+          }
+        ]
+      },
+      {
+        "type": "statement",
+        "heading": "Microblading is ideal if you want better brows without daily pencil.",
+        "paragraphs": [
+          "Microblading is a strong choice if your brows look sparse, uneven, over-plucked, or hard to shape on your own. Pomi creates a custom brow shape based on your facial features, natural brow growth, and preferred style.",
+          "This service is designed for clients who want brows with a soft, natural finish instead of a heavy makeup look."
+        ],
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Healed microblading, soft hair strokes on both brows",
+          "photo": {
+            "ref": "microblading/06",
+            "alt": "Healed microblading, soft hair strokes on both brows",
+            "detail": "Healed",
+            "focus": "50% 40%"
+          }
+        }
+      },
+      {
+        "type": "grid",
+        "heading": "Microblading may be right for you if...",
+        "lede": "For clients who want fuller-looking brows that still read as their own.",
+        "items": [
+          {
+            "title": "Your brows are sparse",
+            "text": "Fill in thin areas with soft strokes designed to blend with your natural brow hair."
+          },
+          {
+            "title": "Your shape is uneven",
+            "text": "Create better balance between both brows with custom mapping before the service begins."
+          },
+          {
+            "title": "Your brows are over-plucked",
+            "text": "Restore the look of fuller brows when natural growth has become patchy or limited."
+          },
+          {
+            "title": "Your mornings are busy",
+            "text": "Spend less time filling, shaping, and correcting your brows before leaving home."
+          }
+        ]
+      },
+      {
+        "type": "statement",
+        "heading": "What is microblading?",
+        "paragraphs": [
+          "Microblading is a semi-permanent brow service where fine, hair-like strokes are placed into the brow area to create a fuller and more balanced look.",
+          "The goal is not to change your face. The goal is to frame your features with brows suited to you. At Pomi B. Brow Studio, the result is soft, symmetrical, and natural-looking."
+        ],
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "Microbladed brow, hair strokes from front to tail",
+          "photo": {
+            "ref": "microblading/10",
+            "alt": "Microbladed brow, hair strokes from front to tail",
+            "detail": "By Pomi",
+            "focus": "40% 50%"
+          }
+        }
+      },
+      {
+        "type": "grid",
+        "heading": "Why clients choose microblading.",
+        "lede": "To save time, enjoy fuller-looking brows, skip daily brow makeup, and feel confident bare-faced.",
+        "items": [
+          {
+            "title": "Save time every morning",
+            "text": "Wake up with brows that already look shaped and defined."
+          },
+          {
+            "title": "Fuller-looking brows",
+            "text": "Add the look of natural fullness where brows appear thin or patchy."
+          },
+          {
+            "title": "Better symmetry",
+            "text": "Improve balance with a mapped shape created around your facial features."
+          },
+          {
+            "title": "Less daily makeup",
+            "text": "Reduce the need for pencil, powder, and constant brow touch-ups."
+          }
+        ]
+      },
+      {
+        "type": "sequence",
+        "heading": "Custom brows, not one-size-fits-all brows.",
+        "lede": "Your appointment starts with brow mapping and a consultation. Pomi reviews your natural brow pattern, face shape, and desired result before creating your final brow design.",
+        "kind": "steps",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Microblading before and after",
+          "photo": {
+            "ref": "microblading/02",
+            "alt": "Microblading before and after",
+            "detail": "Before and after"
+          }
+        },
+        "items": [
+          {
+            "label": "One",
+            "title": "Consultation and brow goals",
+            "text": "Talk through your current brows, your daily makeup routine, and the result you want."
+          },
+          {
+            "label": "Two",
+            "title": "Brow mapping and approval",
+            "text": "Your brow shape is mapped, reviewed, and adjusted before the microblading begins."
+          },
+          {
+            "label": "Three",
+            "title": "Microblading and aftercare",
+            "text": "Fine strokes are added for a fuller look, then you receive aftercare guidance for healing."
+          }
+        ]
+      },
+      {
+        "type": "compare",
+        "heading": "Microblading vs ombre powder brows.",
+        "lede": "Microblading creates fine hair-like strokes for a natural brow-hair look. Ombre powder brows create a soft shaded effect, similar to brow powder or pencil.",
+        "sides": [
+          {
+            "title": "Microblading",
+            "bullets": [
+              "Fine hair-like strokes",
+              "A natural brow-hair look",
+              "Blends with your own brow hair"
+            ],
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Healed microblading, fine hair strokes through both brows",
+              "photo": {
+                "ref": "microblading/01",
+                "alt": "Healed microblading, fine hair strokes through both brows",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
+            }
+          },
+          {
+            "title": "Ombre powder brows",
+            "bullets": [
+              "A soft shaded effect",
+              "Similar to brow powder or pencil",
+              "Lighter at the front, deeper at the tail"
+            ],
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Healed ombre powder brows with a soft gradient",
+              "photo": {
+                "ref": "ombre-powder-brows/01",
+                "alt": "Healed ombre powder brows with a soft gradient",
+                "detail": "Healed",
+                "focus": "50% 40%"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Worth reading first: the other brow services, and how the studio stays safe.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Microblading and shading",
+            "text": "Hair strokes at the front, soft shading through the body and tail.",
+            "href": "/services/microblading-shading",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Ombre powder brows",
+            "text": "A soft powdered finish, lighter at the front and deeper at the tail.",
+            "href": "/services/ombre-powder-brows",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "heading": "Microblading questions.",
+        "lede": "The ones asked most, answered short.",
+        "items": [
+          {
+            "q": "How long does microblading last?",
+            "a": "Results vary by skin type, lifestyle, aftercare, and how your skin holds pigment. Most clients need a touch-up to refine the color and shape after the initial appointment."
+          },
+          {
+            "q": "Does microblading look natural?",
+            "a": "Yes. The goal at Pomi B. Brow Studio is a soft, natural-looking brow. The shape is mapped to your face, and the strokes are designed to blend with your natural brows."
+          },
+          {
+            "q": "What is the difference between microblading and ombre powder brows?",
+            "a": "Microblading creates fine hair-like strokes for a natural brow-hair look. Ombre powder brows create a soft shaded effect, similar to brow powder or pencil."
+          },
+          {
+            "q": "Is the touch-up included?",
+            "a": "The touch-up is priced separately. Both prices are on the microblading page; confirm current pricing when booking, since rates are subject to change."
+          },
+          {
+            "q": "Where is Pomi B. Brow Studio located?",
+            "a": "At 2801 El Camino Real, Ste 13, in Tustin, CA, serving Irvine and Orange County."
+          },
+          {
+            "q": "Who should ask before booking microblading?",
+            "a": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, undergoing certain skin treatments, or have a skin condition near the brow area."
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Ready for natural-looking brows?",
+        "text": "Book your microblading appointment at Pomi B. Brow Studio in Tustin and get brows designed for your face, your routine, and your style.",
+        "links": [
+          {
+            "label": "Book a consultation",
+            "href": "/contact"
+          },
+          {
+            "label": "Microblading",
+            "href": "/services/microblading"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "What is microblading and shading?",
+    "slug": "what-is-microblading-shading",
+    "summary": "Fine hair-like strokes combined with soft powder shading, for brows that look fuller, balanced and naturally defined.",
+    "relatedService": "microblading-shading",
+    "serviceGuide": true,
+    "showAsFaq": false,
+    "seoTitle": "What Is Microblading / Shading? | Pomi B. Brow Studio, Tustin",
+    "cover": {
+      "ref": "microblading-shading/05",
+      "focus": "50% 40%",
+      "alt": "Healed microblading and shading",
+      "detail": "Healed"
+    },
+    "sections": [
+      {
+        "type": "facts",
+        "items": [
+          {
+            "title": "Hair strokes + shading",
+            "text": "Natural detail with added softness and density."
+          },
+          {
+            "title": "Custom brow mapping",
+            "text": "Shape and color fitted to your face and skin tone."
+          },
+          {
+            "title": "More than microblading",
+            "text": "Extra fullness where strokes alone are not enough."
+          },
+          {
+            "title": "Tustin, CA",
+            "text": "Permanent makeup in Tustin, serving Irvine and Orange County."
+          }
+        ]
+      },
+      {
+        "type": "statement",
+        "heading": "Microblading and shading is ideal if you want natural detail with extra fullness.",
+        "paragraphs": [
+          "Microblading / shading is a strong choice if you want the natural look of fine brow strokes with added softness and density through shaded areas.",
+          "This service works well for clients with sparse brows, uneven shape, patchy areas, or anyone who wants more definition than microblading alone."
+        ],
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Healed combination brows, close up",
+          "photo": {
+            "ref": "microblading-shading/07",
+            "alt": "Healed combination brows, close up",
+            "detail": "Healed",
+            "focus": "50% 45%"
+          }
+        }
+      },
+      {
+        "type": "grid",
+        "heading": "Microblading and shading may be right for you if...",
+        "lede": "For clients who want strokes that look like brow hair, with a brow that looks complete.",
+        "items": [
+          {
+            "title": "Your brows are sparse",
+            "text": "Add hair-like detail and soft shading where brows look thin."
+          },
+          {
+            "title": "Your shape is uneven",
+            "text": "Create better balance with a mapped brow shape before the service begins."
+          },
+          {
+            "title": "You have patchy areas",
+            "text": "Use shading to soften gaps and build a more complete brow look."
+          },
+          {
+            "title": "You want less brow makeup",
+            "text": "Spend less time filling, shaping, and correcting your brows each day."
+          }
+        ]
+      },
+      {
+        "type": "statement",
+        "heading": "What is microblading and shading?",
+        "paragraphs": [
+          "Microblading / shading is a combination brow service. Microblading creates fine hair-like strokes, while shading adds a soft powder effect to create more density and definition.",
+          "The goal is to keep the brows soft and natural while adding enough fullness to improve shape, balance, and everyday polish."
+        ],
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "Healed microblading and shading on both brows",
+          "photo": {
+            "ref": "microblading-shading/01",
+            "alt": "Healed microblading and shading on both brows",
+            "detail": "Healed",
+            "focus": "50% 45%"
+          }
+        }
+      },
+      {
+        "type": "grid",
+        "heading": "Why clients choose microblading and shading.",
+        "lede": "Natural hair-stroke detail with more fullness than microblading alone.",
+        "items": [
+          {
+            "title": "Natural detail",
+            "text": "Fine strokes help the brow look soft and realistic."
+          },
+          {
+            "title": "Added fullness",
+            "text": "Shading helps fill patchy areas and create a more complete brow."
+          },
+          {
+            "title": "Better definition",
+            "text": "Create more shape through the arch and tail while keeping the front softer."
+          },
+          {
+            "title": "Custom brow shape",
+            "text": "Your brows are mapped around your face before the service starts."
+          }
+        ]
+      },
+      {
+        "type": "sequence",
+        "heading": "A combination brow look designed around your face.",
+        "lede": "Your appointment starts with a consultation and brow mapping. Pomi reviews your natural brows, your preferred finish, and your daily makeup routine before creating the final shape.",
+        "kind": "steps",
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Microblading and shading before and after",
+          "photo": {
+            "ref": "microblading-shading/08",
+            "alt": "Microblading and shading before and after",
+            "detail": "Before and after"
+          }
+        },
+        "items": [
+          {
+            "label": "One",
+            "title": "Consultation and brow goals",
+            "text": "Talk through your current brows, how you fill them in, and the result you want."
+          },
+          {
+            "label": "Two",
+            "title": "Mapping and shape approval",
+            "text": "Your brow shape is mapped, reviewed, and adjusted before the service begins."
+          },
+          {
+            "label": "Three",
+            "title": "Hair strokes, shading, and aftercare",
+            "text": "Fine strokes and soft shading are added, then you receive healing guidance."
+          }
+        ]
+      },
+      {
+        "type": "compare",
+        "heading": "Microblading vs microblading and shading.",
+        "lede": "Microblading uses fine hair-like strokes. Microblading / shading combines those strokes with soft shading to create more fullness, density, and definition.",
+        "sides": [
+          {
+            "title": "Microblading",
+            "bullets": [
+              "Fine hair-like strokes only",
+              "The softest, most natural finish",
+              "For brows that need detail, not density"
+            ],
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Healed microblading, fine individual hair strokes",
+              "photo": {
+                "ref": "microblading/05",
+                "alt": "Healed microblading, fine individual hair strokes",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
+            }
+          },
+          {
+            "title": "Microblading and shading",
+            "bullets": [
+              "Hair strokes plus soft shading",
+              "More fullness and definition",
+              "For sparse, uneven or patchy brows"
+            ],
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Healed combination brows on a smiling client",
+              "photo": {
+                "ref": "microblading-shading/03",
+                "alt": "Healed combination brows on a smiling client",
+                "detail": "Healed",
+                "focus": "50% 30%"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Worth reading first: the other brow services, and how the studio stays safe.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Microblading",
+            "text": "Hair strokes drawn one by one, following your own brow.",
+            "href": "/services/microblading",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Ombre powder brows",
+            "text": "A soft powdered finish, lighter at the front and deeper at the tail.",
+            "href": "/services/ombre-powder-brows",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "heading": "Microblading and shading questions.",
+        "lede": "The ones asked most, answered short.",
+        "items": [
+          {
+            "q": "Who is microblading and shading best for?",
+            "a": "It is a strong fit if you want a natural brow look but need more fullness than hair strokes alone provide. It works well for sparse, uneven, or patchy brows."
+          },
+          {
+            "q": "Does microblading and shading look natural?",
+            "a": "Yes. The goal is a soft, balanced brow. The hair strokes create natural detail, while the shading adds fullness without making the brows look too heavy."
+          },
+          {
+            "q": "How long does it last?",
+            "a": "Results vary by skin type, lifestyle, aftercare, and how your skin holds pigment. Most clients need a touch-up to refine the color, shape, and softness after the initial appointment."
+          },
+          {
+            "q": "Is the touch-up included?",
+            "a": "The touch-up is priced separately. Both prices are on the microblading and shading page; confirm current pricing when booking, since rates are subject to change."
+          },
+          {
+            "q": "Where is Pomi B. Brow Studio located?",
+            "a": "At 2801 El Camino Real, Ste 13, in Tustin, CA, serving Irvine and Orange County."
+          },
+          {
+            "q": "Who should ask before booking?",
+            "a": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, undergoing certain skin treatments, or have a skin condition near the brow area."
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Ready for fuller, more defined brows?",
+        "text": "Book your microblading and shading appointment at Pomi B. Brow Studio in Tustin and get brows designed for your face, your routine, and your style.",
+        "links": [
+          {
+            "label": "Book a consultation",
+            "href": "/contact"
+          },
+          {
+            "label": "Microblading and shading",
+            "href": "/services/microblading-shading"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "What is permanent eyeliner?",
+    "slug": "what-is-permanent-eyeliner",
+    "summary": "Pigment placed along the lash line for lasting eye definition, kept soft or made more defined to suit your eyes and your style.",
+    "relatedService": "eyeliner",
+    "serviceGuide": true,
+    "showAsFaq": false,
+    "seoTitle": "What Is Permanent Eyeliner? | Pomi B. Brow Studio, Tustin",
+    "cover": {
+      "ref": "eyeliner/03",
+      "focus": "50% 45%",
+      "alt": "Healed permanent eyeliner, close up",
+      "detail": "Healed"
+    },
+    "sections": [
+      {
+        "type": "facts",
+        "items": [
+          {
+            "title": "Soft eye definition",
+            "text": "A clean line along the lash area, every day."
+          },
+          {
+            "title": "Custom eyeliner style",
+            "text": "Planned around your eye shape and comfort level."
+          },
+          {
+            "title": "No smudging",
+            "text": "No liner that fades, moves or transfers."
+          },
+          {
+            "title": "Tustin, CA",
+            "text": "Permanent makeup in Tustin, serving Irvine and Orange County."
+          }
+        ]
+      },
+      {
+        "type": "statement",
+        "heading": "Eyeliner is ideal if you want defined eyes without daily liner.",
+        "paragraphs": [
+          "Permanent eyeliner is a strong choice if your liner smudges, transfers, fades during the day, or takes too much time to apply evenly.",
+          "This service works well for clients who want subtle lash-line definition, a soft everyday eyeliner look, or a more polished result that stays consistent."
+        ],
+        "image": {
+          "ratio": "4 / 5",
+          "shot": "Permanent eyeliner along the upper lash line, eye closed",
+          "photo": {
+            "ref": "eyeliner/01",
+            "alt": "Permanent eyeliner along the upper lash line, eye closed",
+            "detail": "By Pomi",
+            "focus": "50% 35%"
+          }
+        }
+      },
+      {
+        "type": "grid",
+        "heading": "Permanent eyeliner may be right for you if...",
+        "lede": "For clients who want their eyes defined without the daily effort.",
+        "items": [
+          {
+            "title": "You want soft definition",
+            "text": "Enhance your eyes with a clean line along the lash area."
+          },
+          {
+            "title": "Your liner smudges",
+            "text": "Reduce the daily frustration of liner that fades, moves, or transfers."
+          },
+          {
+            "title": "You want a custom shape",
+            "text": "Your eyeliner style is planned around your eyes and preferred look."
+          },
+          {
+            "title": "You want less makeup time",
+            "text": "Spend less time applying and correcting eyeliner each morning."
+          }
+        ]
+      },
+      {
+        "type": "statement",
+        "heading": "What is permanent eyeliner?",
+        "paragraphs": [
+          "Permanent eyeliner is a cosmetic tattoo service that places pigment along the lash line or eyeliner area to create lasting eye definition.",
+          "The look can be kept soft and natural or made more defined depending on your eye shape, skin, and preferred style. The goal is to enhance your eyes while keeping the result balanced and wearable."
+        ],
+        "image": {
+          "ratio": "3 / 2",
+          "shot": "Shaded brows with a fine winged eyeliner, eyes open",
+          "photo": {
+            "ref": "brows/06",
+            "alt": "Shaded brows with a fine winged eyeliner, eyes open",
+            "detail": "With eyeliner",
+            "focus": "50% 45%"
+          }
+        }
+      },
+      {
+        "type": "grid",
+        "heading": "Why clients choose permanent eyeliner.",
+        "lede": "Defined eyes, fewer makeup steps, and a clean liner look that does not need daily reapplication.",
+        "items": [
+          {
+            "title": "Everyday definition",
+            "text": "Enhance your eyes with soft color along the lash line."
+          },
+          {
+            "title": "Less daily effort",
+            "text": "Skip the struggle of trying to make both eyes match every morning."
+          },
+          {
+            "title": "Smudge-free look",
+            "text": "Reduce the need for touch-ups from makeup that moves during the day."
+          },
+          {
+            "title": "Custom finish",
+            "text": "Choose a softer or more defined look based on your comfort level."
+          }
+        ]
+      },
+      {
+        "type": "sequence",
+        "heading": "Eyeliner designed around your eyes.",
+        "lede": "Your appointment starts with a consultation. Pomi reviews your eye shape, natural lash line, makeup habits, and preferred eyeliner style before the service begins.",
+        "kind": "steps",
+        "items": [
+          {
+            "label": "One",
+            "title": "Consultation and style goals",
+            "text": "Talk through whether you want subtle lash-line definition or a more visible eyeliner look."
+          },
+          {
+            "label": "Two",
+            "title": "Shape and placement review",
+            "text": "Your eyeliner placement is reviewed so the final look fits your eyes and daily style."
+          },
+          {
+            "label": "Three",
+            "title": "Eyeliner and aftercare",
+            "text": "Pigment is applied with care, then you receive aftercare guidance for healing."
+          }
+        ]
+      },
+      {
+        "type": "compare",
+        "heading": "Eyeliner vs lash enhancement.",
+        "lede": "Lash enhancement is usually softer and placed close to the lash line for subtle fullness. Eyeliner can create a more visible lined effect, depending on your preferred style.",
+        "sides": [
+          {
+            "title": "Eyeliner",
+            "bullets": [
+              "A more visible lined effect",
+              "Soft or defined, your choice",
+              "Replaces daily pencil or liquid liner"
+            ],
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Eyeliner before and after",
+              "photo": {
+                "ref": "eyeliner/02",
+                "alt": "Eyeliner before and after",
+                "detail": "Before and after"
+              }
+            }
+          },
+          {
+            "title": "Lash enhancement",
+            "bullets": [
+              "Placed close to the lash line",
+              "Subtle fullness, no visible line",
+              "The softest option for the eyes"
+            ],
+            "image": {
+              "ratio": "1 / 1",
+              "shot": "Lash enhancement before and after",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after",
+                "detail": "Before and after"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "grid",
+        "heading": "Before you book.",
+        "lede": "Worth reading first: the two eye services side by side, and how the studio stays safe.",
+        "columns": 3,
+        "items": [
+          {
+            "title": "Eyeliner",
+            "text": "Prices and healed results for permanent eyeliner.",
+            "href": "/services/eyeliner",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Eyeliner vs lash enhancement",
+            "text": "Which of the two eye services fits the look you want.",
+            "href": "/learn/eyeliner-vs-lash-enhancement",
+            "linkLabel": "Read"
+          },
+          {
+            "title": "Safety",
+            "text": "How the studio stays clean and private, and who should ask first.",
+            "href": "/safety",
+            "linkLabel": "Read"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "heading": "Eyeliner questions.",
+        "lede": "The ones asked most, answered short.",
+        "items": [
+          {
+            "q": "Can permanent eyeliner look natural?",
+            "a": "Yes. Permanent eyeliner can be kept soft and subtle, especially when focused close to the lash line. Your style is discussed before the service begins."
+          },
+          {
+            "q": "How long does permanent eyeliner last?",
+            "a": "Results vary by skin type, lifestyle, aftercare, and how your skin holds pigment. Most clients need a touch-up to refine the color and shape after the initial appointment."
+          },
+          {
+            "q": "Is the touch-up included?",
+            "a": "The touch-up is priced separately. Both prices are on the eyeliner page; confirm current pricing when booking, since rates are subject to change."
+          },
+          {
+            "q": "Where is Pomi B. Brow Studio located?",
+            "a": "At 2801 El Camino Real, Ste 13, in Tustin, CA, serving Irvine and Orange County."
+          },
+          {
+            "q": "Who should ask before booking permanent eyeliner?",
+            "a": "Ask before booking if you are pregnant, nursing, taking blood thinners, prone to keloids, using certain eye medications, have eye irritation, or have had recent eye surgery or cosmetic eye treatments."
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": "Ready for soft, defined eyes?",
+        "text": "Book your eyeliner appointment at Pomi B. Brow Studio in Tustin and get eye definition designed for your face, your routine, and your style.",
+        "links": [
+          {
+            "label": "Book a consultation",
+            "href": "/contact"
+          },
+          {
+            "label": "Eyeliner",
+            "href": "/services/eyeliner"
+          }
+        ]
+      }
     ]
   },
   {
@@ -2685,7 +3584,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Day 1 brows, fresh pigment darker and sharper than it will heal"
+          "shot": "Day 1 brows, fresh pigment darker and sharper than it will heal",
+          "photo": {
+            "ref": "brows/09",
+            "alt": "Dark, crisp brows on a client lying back, eye open",
+            "detail": "By Pomi",
+            "focus": "50% 45%"
+          }
         },
         "callout": {
           "tone": "note",
@@ -2700,7 +3605,12 @@
         "kind": "timeline",
         "image": {
           "ratio": "4 / 5",
-          "shot": "Day 7 brows mid-flake, color looking lighter before it returns"
+          "shot": "Day 7 brows mid-flake, color looking lighter before it returns",
+          "photo": {
+            "ref": "microblading-shading/08",
+            "alt": "Microblading and shading before and after",
+            "detail": "Before and after"
+          }
         },
         "items": [
           {
@@ -2817,7 +3727,13 @@
             "text": "Microblading, shading and powder brows look darker first, then flaky, lighter, and finally softer.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Healed brows at week three, soft and blended"
+              "shot": "Healed brows at week three, soft and blended",
+              "photo": {
+                "ref": "microblading-shading/05",
+                "alt": "Healed microblading and shading",
+                "detail": "Healed",
+                "focus": "50% 40%"
+              }
             }
           },
           {
@@ -2825,7 +3741,13 @@
             "text": "Eyeliner and lash enhancement look more defined at first, then soften as the area calms.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Healed eyeliner, defined but calm, lashes at rest"
+              "shot": "Healed eyeliner, defined but calm, lashes at rest",
+              "photo": {
+                "ref": "eyeliner/03",
+                "alt": "Healed permanent eyeliner, close up",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
             }
           },
           {
@@ -2833,7 +3755,13 @@
             "text": "Lip tint looks bright at first, then settles into a more natural color.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Healed lip tint, a soft natural color with no product on"
+              "shot": "Healed lip tint, a soft natural color with no product on",
+              "photo": {
+                "ref": "lip-tint/05",
+                "alt": "Lip tint, a soft rosy colour, close up",
+                "detail": "By Pomi",
+                "focus": "55% 55%"
+              }
             }
           },
           {
@@ -2841,7 +3769,12 @@
             "text": "Scalp micropigmentation looks darker at first, then blends naturally as it settles.",
             "image": {
               "ratio": "1 / 1",
-              "shot": "Healed scalp micropigmentation blending into the hairline"
+              "shot": "Healed scalp micropigmentation blending into the hairline",
+              "photo": {
+                "ref": "scalp-micropigmentation/02",
+                "alt": "Scalp micropigmentation before and after at the part",
+                "detail": "Before and after"
+              }
             }
           }
         ]
@@ -2987,7 +3920,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Healed lash enhancement, eyes open, no other eye makeup, natural light"
+          "shot": "Healed lash enhancement, eyes open, no other eye makeup, natural light",
+          "photo": {
+            "ref": "eyeliner/01",
+            "alt": "Permanent eyeliner along the upper lash line, eye closed",
+            "detail": "By Pomi",
+            "focus": "50% 35%"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -3009,7 +3948,12 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Close crop of a healed lash enhancement, lashes darker at the base"
+              "shot": "Close crop of a healed lash enhancement, lashes darker at the base",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after",
+                "detail": "Before and after"
+              }
             }
           },
           {
@@ -3022,7 +3966,12 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Close crop of healed permanent eyeliner, a soft pencil-style line"
+              "shot": "Close crop of healed permanent eyeliner, a soft pencil-style line",
+              "photo": {
+                "ref": "eyeliner/02",
+                "alt": "Eyeliner before and after",
+                "detail": "Before and after"
+              }
             }
           }
         ]
@@ -3119,7 +4068,13 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Reviewing healed eyeliner at the touch-up, client seated, mirror in hand"
+          "shot": "Reviewing healed eyeliner at the touch-up, client seated, mirror in hand",
+          "photo": {
+            "ref": "brows/06",
+            "alt": "Shaded brows with a fine winged eyeliner, eyes open",
+            "detail": "With eyeliner",
+            "focus": "50% 45%"
+          }
         },
         "items": [
           {
@@ -3288,7 +4243,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Healed lip tint in natural light, no lipstick, lips relaxed"
+          "shot": "Healed lip tint in natural light, no lipstick, lips relaxed",
+          "photo": {
+            "ref": "lip-tint/05",
+            "alt": "Lip tint, a soft rosy colour, close up",
+            "detail": "By Pomi",
+            "focus": "55% 55%"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -3310,7 +4271,12 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Close crop of healed lip tint, soft border, natural finish"
+              "shot": "Close crop of healed lip tint, soft border, natural finish",
+              "photo": {
+                "ref": "lip-tint/01",
+                "alt": "Lip tint before and after",
+                "detail": "Before and after"
+              }
             }
           },
           {
@@ -3323,7 +4289,12 @@
             ],
             "image": {
               "ratio": "1 / 1",
-              "shot": "Sheer blushed lip color on a client, straight on, daylight"
+              "shot": "Sheer blushed lip color on a client, straight on, daylight",
+              "photo": {
+                "ref": "lip-tint/04",
+                "alt": "Lip tint before and after, a soft natural colour",
+                "detail": "Before and after"
+              }
             }
           }
         ]
@@ -3381,7 +4352,12 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Lip tint on day one beside the same lips healed, same light and angle"
+          "shot": "Lip tint on day one beside the same lips healed, same light and angle",
+          "photo": {
+            "ref": "lip-tint/06",
+            "alt": "Lip tint before and after, straight on",
+            "detail": "Before and after"
+          }
         },
         "items": [
           {
@@ -3559,7 +4535,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Pomi and a client looking at brow shapes together at the consultation mirror"
+          "shot": "Pomi and a client looking at brow shapes together at the consultation mirror",
+          "photo": {
+            "ref": "brows/10",
+            "alt": "Defined brows on a smiling client with green eyes",
+            "detail": "By Pomi",
+            "focus": "50% 40%"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -3604,8 +4586,13 @@
               "You rarely wear eyeliner"
             ],
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed lash enhancement: a darker lash base with no visible liner"
+              "ratio": "1 / 1",
+              "shot": "Healed lash enhancement: a darker lash base with no visible liner",
+              "photo": {
+                "ref": "lash-enhancement/01",
+                "alt": "Lash enhancement before and after",
+                "detail": "Before and after"
+              }
             }
           },
           {
@@ -3617,8 +4604,14 @@
               "You want your liner to look more even"
             ],
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Healed permanent eyeliner: an even, defined line along the upper lash line"
+              "ratio": "1 / 1",
+              "shot": "Healed permanent eyeliner: an even, defined line along the upper lash line",
+              "photo": {
+                "ref": "eyeliner/03",
+                "alt": "Healed permanent eyeliner, close up",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
             }
           }
         ]
@@ -3684,7 +4677,13 @@
             "title": "Health and healing",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Health history form open on the consultation desk, reading glasses resting beside it"
+              "shot": "Health history form open on the consultation desk, reading glasses resting beside it",
+              "photo": {
+                "ref": "studio/interior",
+                "alt": "Inside the studio: the Pomi B. sign beside a pink wall of paper roses",
+                "detail": "Tustin",
+                "focus": "35% 50%"
+              }
             },
             "bullets": [
               "You are pregnant or nursing",
@@ -3697,7 +4696,13 @@
             "title": "Skin or treatment area concerns",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Bare brow area in soft daylight, checked for irritation before any mapping"
+              "shot": "Bare brow area in soft daylight, checked for irritation before any mapping",
+              "photo": {
+                "ref": "brows/12",
+                "alt": "A bold, defined brow above a brown eye looking up",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             },
             "bullets": [
               "Irritation, sunburn, cuts, breakouts or open skin nearby",
@@ -3744,7 +4749,13 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "A client's calendar and aftercare kit laid out, planning the two healing weeks"
+          "shot": "A client's calendar and aftercare kit laid out, planning the two healing weeks",
+          "photo": {
+            "ref": "microblading/10",
+            "alt": "Microbladed brow, hair strokes from front to tail",
+            "detail": "By Pomi",
+            "focus": "40% 50%"
+          }
         },
         "items": [
           {
@@ -3909,7 +4920,13 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "The tray before a brow appointment: mapping pencil, ruler, and sealed single-use tools"
+          "shot": "The tray before a brow appointment: mapping pencil, ruler, and sealed single-use tools",
+          "photo": {
+            "ref": "brows/02",
+            "alt": "Shaded brows on a blue-eyed client, photographed from above",
+            "detail": "By Pomi",
+            "focus": "50% 45%"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -3933,14 +4950,26 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "Clean, product-free brows on the morning of a mapping appointment"
+              "shot": "Clean, product-free brows on the morning of a mapping appointment",
+              "photo": {
+                "ref": "brows/03",
+                "alt": "One shaded brow above a grey-blue eye, close up",
+                "detail": "By Pomi",
+                "focus": "50% 40%"
+              }
             }
           },
           {
             "title": "Ask first if",
             "image": {
               "ratio": "3 / 2",
-              "shot": "A brow with a small healing scratch beside it, the kind of thing to mention before booking"
+              "shot": "A brow with a small healing scratch beside it, the kind of thing to mention before booking",
+              "photo": {
+                "ref": "brows/05",
+                "alt": "A full, defined brow on freckled skin, eye open",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             },
             "bullets": [
               "Irritation, cuts, breakouts, sunburn or open skin nearby",
@@ -3961,7 +4990,13 @@
             "title": "Before your eye appointment",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Bare, calm eyelid with no mascara or extensions, ready for mapping"
+              "shot": "Bare, calm eyelid with no mascara or extensions, ready for mapping",
+              "photo": {
+                "ref": "eyeliner/01",
+                "alt": "Permanent eyeliner along the upper lash line, eye closed",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             },
             "bullets": [
               "Clean skin, eyes calm and not irritated",
@@ -3974,7 +5009,13 @@
             "title": "Ask first if",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Contact lens case and eye drops set aside on the studio counter"
+              "shot": "Contact lens case and eye drops set aside on the studio counter",
+              "photo": {
+                "ref": "eyeliner/03",
+                "alt": "Healed permanent eyeliner, close up",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
             },
             "bullets": [
               "Eye irritation, redness, infection or sensitivity",
@@ -4000,15 +5041,26 @@
               "Bring a favorite lip color photo"
             ],
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Lips at the color consultation, natural tone beside the pigment swatch"
+              "ratio": "1 / 1",
+              "shot": "Lips at the color consultation, natural tone beside the pigment swatch",
+              "photo": {
+                "ref": "lip-tint/05",
+                "alt": "Lip tint, a soft rosy colour, close up",
+                "detail": "By Pomi",
+                "focus": "55% 55%"
+              }
             }
           },
           {
             "title": "Ask first if",
             "image": {
-              "ratio": "3 / 2",
-              "shot": "Phone open to a message to the studio, asking about timing after lip filler"
+              "ratio": "1 / 1",
+              "shot": "Phone open to a message to the studio, asking about timing after lip filler",
+              "photo": {
+                "ref": "lip-tint/03",
+                "alt": "Lip tint before and after",
+                "detail": "Before and after"
+              }
             },
             "bullets": [
               "You have ever had a cold sore, even once",
@@ -4040,14 +5092,24 @@
             ],
             "image": {
               "ratio": "3 / 2",
-              "shot": "A clean scalp at the hairline consultation, before any mapping"
+              "shot": "A clean scalp at the hairline consultation, before any mapping",
+              "photo": {
+                "ref": "scalp-micropigmentation/01",
+                "alt": "Scalp micropigmentation before and after",
+                "detail": "Before and after"
+              }
             }
           },
           {
             "title": "Ask first if",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Hairline in hard side light showing flaking at the part, the reason to ask before booking"
+              "shot": "Hairline in hard side light showing flaking at the part, the reason to ask before booking",
+              "photo": {
+                "ref": "scalp-micropigmentation/02",
+                "alt": "Scalp micropigmentation before and after at the part",
+                "detail": "Before and after"
+              }
             },
             "bullets": [
               "Scalp irritation, open skin, sunburn or active flaking",
@@ -4093,7 +5155,13 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "A client's reference photos and written questions laid out on the consultation table"
+          "shot": "A client's reference photos and written questions laid out on the consultation table",
+          "photo": {
+            "ref": "microblading/06",
+            "alt": "Healed microblading, soft hair strokes on both brows",
+            "detail": "Healed",
+            "focus": "50% 40%"
+          }
         },
         "items": [
           {
@@ -4123,7 +5191,13 @@
             "title": "Health or skin concerns",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Consultation form on the desk, the medications question circled in pencil"
+              "shot": "Consultation form on the desk, the medications question circled in pencil",
+              "photo": {
+                "ref": "studio/interior",
+                "alt": "Inside the studio: the Pomi B. sign beside a pink wall of paper roses",
+                "detail": "Tustin",
+                "focus": "35% 50%"
+              }
             },
             "bullets": [
               "You are pregnant or nursing",
@@ -4136,7 +5210,13 @@
             "title": "Tight timing",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Wall calendar with a wedding date marked, six weeks counted back to the appointment"
+              "shot": "Wall calendar with a wedding date marked, six weeks counted back to the appointment",
+              "photo": {
+                "ref": "brows/09",
+                "alt": "Dark, crisp brows on a client lying back, eye open",
+                "detail": "By Pomi",
+                "focus": "50% 45%"
+              }
             },
             "bullets": [
               "A wedding, vacation, photo shoot or event ahead",
@@ -4263,8 +5343,13 @@
           "It may help with thinning hair, visible scalp, soft hairline loss, sparse areas, or anywhere you want a more filled-in look."
         ],
         "image": {
-          "ratio": "4 / 5",
-          "shot": "A crown with diffuse thinning, healed SMP blended into the surrounding hair"
+          "ratio": "1 / 1",
+          "shot": "A crown with diffuse thinning, healed SMP blended into the surrounding hair",
+          "photo": {
+            "ref": "scalp-micropigmentation/02",
+            "alt": "Scalp micropigmentation before and after at the part",
+            "detail": "Before and after"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -4354,11 +5439,7 @@
               "Creates the look of hair density",
               "Does not grow new hair",
               "Non-surgical, custom pigment placement"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "Healed SMP at the hairline, close enough to see the individual impressions"
-            }
+            ]
           },
           {
             "title": "Hair transplant surgery",
@@ -4367,11 +5448,7 @@
               "Moves hair follicles",
               "Healing and results vary by procedure",
               "Should be discussed with a licensed medical provider"
-            ],
-            "image": {
-              "ratio": "1 / 1",
-              "shot": "An untreated scalp with diffuse thinning, photographed in daylight for planning"
-            }
+            ]
           }
         ]
       },
@@ -4380,10 +5457,6 @@
         "heading": "How many SMP sessions may be needed?",
         "lede": "It depends on the area, density goal, hairline design, and how your scalp holds pigment.",
         "kind": "steps",
-        "image": {
-          "ratio": "3 / 2",
-          "shot": "Hairline design drawn on the scalp before the first SMP session"
-        },
         "items": [
           {
             "label": "One",
@@ -4438,10 +5511,6 @@
         "items": [
           {
             "title": "Scalp concerns",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Crown of a scalp in even light, checked for flaking and open skin before booking"
-            },
             "bullets": [
               "Active scalp irritation",
               "Open skin, sores, or sunburn on the scalp",
@@ -4451,10 +5520,6 @@
           },
           {
             "title": "Health and healing concerns",
-            "image": {
-              "ratio": "3 / 2",
-              "shot": "Consultation form for SMP on the desk, the health questions page open"
-            },
             "bullets": [
               "You are pregnant or nursing",
               "You take blood thinners",
@@ -4477,7 +5542,13 @@
         ],
         "image": {
           "ratio": "3 / 2",
-          "shot": "A consultation: examining the crown under daylight to plan the treatment area"
+          "shot": "A consultation: examining the crown under daylight to plan the treatment area",
+          "photo": {
+            "ref": "studio/interior",
+            "alt": "Inside the studio: the Pomi B. sign beside a pink wall of paper roses",
+            "detail": "Tustin",
+            "focus": "35% 50%"
+          }
         },
         "callout": {
           "tone": "note",
@@ -4557,7 +5628,8 @@
           }
         ]
       }
-    ]
+    ],
+    "serviceGuide": true
   },
   {
     "title": "Why the touch-up matters",
@@ -4602,7 +5674,12 @@
         ],
         "image": {
           "ratio": "4 / 5",
-          "shot": "Brows at the touch-up, healed and softened, before the second pass"
+          "shot": "Brows at the touch-up, healed and softened, before the second pass",
+          "photo": {
+            "ref": "brows/08",
+            "alt": "Brows before and after, eyes closed",
+            "detail": "Before and after"
+          }
         },
         "callout": {
           "tone": "voice",
@@ -4640,7 +5717,12 @@
         "kind": "timeline",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Healed brows beside the first-day photo, compared at the touch-up"
+          "shot": "Healed brows beside the first-day photo, compared at the touch-up",
+          "photo": {
+            "ref": "microblading/02",
+            "alt": "Microblading before and after",
+            "detail": "Before and after"
+          }
         },
         "items": [
           {
@@ -4728,7 +5810,13 @@
             "text": "Tails, arches, fronts, and areas that healed lighter, for microblading, powder brows, and microblading / shading.",
             "image": {
               "ratio": "3 / 2",
-              "shot": "A brow tail being refined at the touch-up, one side mapped in pencil"
+              "shot": "A brow tail being refined at the touch-up, one side mapped in pencil",
+              "photo": {
+                "ref": "brows/04",
+                "alt": "Soft shaded brows on freckled skin, eyes open",
+                "detail": "By Pomi",
+                "focus": "50% 35%"
+              }
             }
           },
           {
@@ -4740,7 +5828,13 @@
             "text": "Color, softness, and border definition, refined once the lips settle into their healed shade.",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Healed lip tint at the touch-up, the border checked before refining"
+              "shot": "Healed lip tint at the touch-up, the border checked before refining",
+              "photo": {
+                "ref": "lip-tint/05",
+                "alt": "Lip tint, a soft rosy colour, close up",
+                "detail": "By Pomi",
+                "focus": "55% 55%"
+              }
             }
           },
           {
@@ -4759,7 +5853,13 @@
             "title": "Yearly touch-ups",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Healed brows at the one-year mark, color softened, before the refresh"
+              "shot": "Healed brows at the one-year mark, color softened, before the refresh",
+              "photo": {
+                "ref": "microblading-shading/01",
+                "alt": "Healed microblading and shading on both brows",
+                "detail": "Healed",
+                "focus": "50% 45%"
+              }
             },
             "text": "For color and shape that stay fresh, instead of waiting until the result fades too much.",
             "bullets": [
@@ -4773,7 +5873,13 @@
             "title": "Additional touch-ups",
             "image": {
               "ratio": "3 / 2",
-              "shot": "Healed brow with one lighter patch at the tail, mapped for extra density"
+              "shot": "Healed brow with one lighter patch at the tail, mapped for extra density",
+              "photo": {
+                "ref": "ombre-powder-brows/01",
+                "alt": "Healed ombre powder brows with a soft gradient",
+                "detail": "Healed",
+                "focus": "50% 40%"
+              }
             },
             "text": "When skin healed lighter than expected, or you want a stronger result after seeing the healed color.",
             "bullets": [
@@ -4797,7 +5903,13 @@
         "kind": "steps",
         "image": {
           "ratio": "3 / 2",
-          "shot": "Pomi reviewing a client's healed photos at the desk before booking the touch-up"
+          "shot": "Pomi reviewing a client's healed photos at the desk before booking the touch-up",
+          "photo": {
+            "ref": "brows/12",
+            "alt": "A bold, defined brow above a brown eye looking up",
+            "detail": "By Pomi",
+            "focus": "50% 40%"
+          }
         },
         "items": [
           {
