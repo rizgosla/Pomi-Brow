@@ -390,7 +390,7 @@ a[aria-disabled="true"]:not([href]) {
   transition:
     opacity var(--dur-reveal) var(--ease-out),
     transform var(--dur-reveal) var(--ease-out);
-  transition-delay: calc(var(--i, 0) * 80ms);
+  transition-delay: calc(var(--i, 0) * 50ms);
 }
 
 .reveal.is-in {
