@@ -1,16 +1,22 @@
 ---
 // The other Learn guides, as pale-pink link tiles at the end of a guide. Replaces the sticky
-// side column on pages whose sections run the full width. Each tile is one door: title,
-// summary, and a "Read" link whose hit area covers the whole tile, the way Grid.astro does it.
-import type { LearnArticle } from "../lib/content";
-import Icon from "./Icon.astro";
+// side column on pages whose sections run the full width. The tiles, and the light that
+// follows the mouse across them, live in LinkTiles.astro, so the service pages' "Before you
+// book" shares exactly this tile.
+import type { LearnArticle, Service } from "../lib/content";
+import LinkTiles from "./LinkTiles.astro";
 
 interface Props {
   articles: LearnArticle[];
   current?: string;
+  /** The guide's related service, named under the lede. It used to sit alone in a band of its
+   *  own after the sign-off, one small line between two hairlines. */
+  service?: Pick<Service, "slug" | "title">;
 }
-const { articles, current } = Astro.props;
-const others = articles.filter((a) => a.slug !== current);
+const { articles, current, service } = Astro.props;
+const others = articles
+  .filter((a) => a.slug !== current)
+  .map((a) => ({ title: a.title, text: a.summary, href: `/learn/${a.slug}`, label: "Read" }));
 ---
 
 <section class="section guides" aria-labelledby="guides-heading">
@@ -18,76 +24,33 @@ const others = articles.filter((a) => a.slug !== current);
     <div class="section-head reveal">
       <h2 id="guides-heading">More guides.</h2>
       <p class="lede">The other questions people ask before they book, answered the same way.</p>
-    </div>
-    <ul class="guides__list">
       {
-        others.map((a, i) => (
-          <li class="guides__item reveal" style={`--i: ${i % 3}`}>
-            <h3 class="guides__title">{a.title}</h3>
-            <p class="guides__summary">{a.summary}</p>
-            <a class="link guides__more" href={`/learn/${a.slug}`}>
-              Read
-              <Icon name="arrow" />
-            </a>
-          </li>
-        ))
+        service && (
+          <p class="guides__service">
+            Related service: <a href={`/services/${service.slug}`}>{service.title}</a>
+          </p>
+        )
       }
-    </ul>
+    </div>
+    <LinkTiles items={others} variant="grid" />
   </div>
 </section>
 
 <style>
-  .guides__list {
-    display: grid;
-    gap: var(--space-5);
-  }
-  .guides__item {
-    position: relative;
-    display: grid;
-    gap: var(--space-3);
-    align-content: start;
-    justify-items: start;
-    padding: var(--space-5);
-    border-radius: var(--radius);
-    background: var(--pale-pink);
-  }
-  .guides__title {
-    font-size: var(--fs-h3);
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
-  }
-  .guides__summary {
-    max-width: 52ch;
+  .guides__service {
+    margin-top: var(--space-4);
     font-size: var(--fs-small);
     color: var(--ink-muted);
   }
-  /* The whole tile is the target; the link text is where the eye lands. */
-  .guides__more {
-    min-height: 0;
-    margin-top: auto;
-    padding-top: var(--space-2);
+  .guides__service a {
+    color: var(--ink);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
   }
-  .guides__more::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-  }
-  .guides__item:hover .guides__more {
+  .guides__service a:hover {
     text-decoration-color: currentColor;
-  }
-  .guides__item:hover .guides__more :global(.icon) {
-    transform: translateX(3px);
-  }
-  @media (min-width: 40rem) {
-    .guides__list {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 60rem) {
-    .guides__list {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
   }
 </style>

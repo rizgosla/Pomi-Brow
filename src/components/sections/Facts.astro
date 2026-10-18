@@ -2,6 +2,7 @@
 // The strip under a page header: three or four things worth knowing before anything else.
 // No heading of its own; it reads as the header's last line, one light-gray pink-outlined tile per fact.
 import type { FactItem } from "../../lib/sections";
+import Nobr from "./Nobr.astro";
 
 interface Props {
   items: FactItem[];
@@ -13,8 +14,8 @@ const { items } = Astro.props;
   {
     items.map((f, i) => (
       <li class="facts__item reveal" style={`--i: ${i}`}>
-        <h3 class="facts__title">{f.title}</h3>
-        <p class="facts__text">{f.text}</p>
+        <h3 class="facts__title"><Nobr text={f.title} /></h3>
+        <p class="facts__text"><Nobr text={f.text} /></p>
       </li>
     ))
   }

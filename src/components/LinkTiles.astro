@@ -1,0 +1,170 @@
+---
+// Pale-pink link tiles. Each tile is one door to another page: a title, an optional line of
+// text, and a "Read" link whose hit area covers the whole tile. This is the "More guides"
+// tile the client called perfect, lifted out so the service pages' "Before you book" uses the
+// same tile rather than a second, plainer card.
+//
+// With a mouse, a soft white light follows the pointer across the tile (scripts/spotlight.ts).
+// It is drawn beneath the text, never over it, so the words stay as legible as at rest.
+// Keyboard focus gets the same light, held still at the centre. Touch gets nothing, since a
+// finger has no hover, and forced colours drop the light altogether.
+import Icon from "./Icon.astro";
+import Nobr from "./sections/Nobr.astro";
+
+interface Props {
+  items: { title: string; text?: string; href: string; label?: string }[];
+  /** "grid" runs 1, 2, then 3 across. "stack" is one column, for tiles that sit beside something. */
+  variant?: "grid" | "stack";
+  class?: string;
+}
+const { items, variant = "grid", class: className } = Astro.props;
+
+// The grid never runs more columns than it has tiles: a lone tile keeps a readable width
+// instead of a third of the row, and two share the row instead of leaving a hole.
+const columns = Math.min(items.length, 3);
+---
+
+{
+  items.length > 0 && (
+    <>
+      <ul
+        class:list={["linktiles", `linktiles--${variant}`, variant === "grid" && `linktiles--${columns}`, className]}
+        data-spotlight
+      >
+        {items.map((item, i) => (
+          <li class="linktile reveal" style={`--i: ${i % 3}`}>
+            <h3 class="linktile__title"><Nobr text={item.title} /></h3>
+            {item.text && <p class="linktile__text"><Nobr text={item.text} /></p>}
+            {/* Every tile's link says "Read", so the title rides along unseen: a screen
+                reader's list of links then says where each one goes. */}
+            <a class="link linktile__link" href={item.href}>
+              {item.label ?? "Read"}<span class="visually-hidden">: {item.title}</span><Icon name="arrow" />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <script>
+        // Rendered with the tiles, so a page without any never loads it. Astro bundles it and
+        // includes it once per page, however many tile groups there are.
+        import "../scripts/spotlight.ts";
+      </script>
+    </>
+  )
+}
+
+<style>
+  .linktiles {
+    display: grid;
+    gap: var(--space-5);
+  }
+  .linktiles--stack {
+    gap: var(--space-4);
+  }
+  .linktiles--1 {
+    max-width: 36rem;
+  }
+  @media (min-width: 40rem) {
+    .linktiles--2,
+    .linktiles--3 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 60rem) {
+    .linktiles--3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  /* A flex column, so the link's auto margin can take up the slack: tiles in a row stretch to
+     the tallest, and every "Read" lands on the same line at the foot of its tile. */
+  .linktile {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-5);
+    border-radius: var(--radius);
+    background: var(--pale-pink);
+  }
+  .linktile__title {
+    font-size: var(--fs-h3);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+  /* "touch-up" and "two-visit" stay whole (Nobr.astro); the service pages don't load layouts.css. */
+  .linktile :global(.nobr) {
+    white-space: nowrap;
+  }
+  .linktile__text {
+    max-width: 52ch;
+    font-size: var(--fs-small);
+    color: var(--ink-muted);
+  }
+  /* The whole tile is the target; the link text is where the eye lands. */
+  .linktile__link {
+    min-height: 0;
+    margin-top: auto;
+    padding-top: var(--space-2);
+  }
+  .linktile__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+  .linktile:hover .linktile__link {
+    text-decoration-color: currentColor;
+  }
+  .linktile:hover .linktile__link :global(.icon) {
+    transform: translateX(3px);
+  }
+
+  /* The light. The tile is its own stacking context (isolation), so z-index -1 puts the glow
+     above the tile's pink fill but beneath the text: the fill shows around it and the words
+     are never washed out. The link's whole-tile ::after still sits on top of everything.
+     --x / --y come from scripts/spotlight.ts; until it writes them the light is centred. */
+  .linktile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(
+      16rem circle at var(--x, 50%) var(--y, 50%),
+      rgb(255 255 255 / 0.85),
+      rgb(255 255 255 / 0) 70%
+    );
+    transition: opacity var(--dur-base) ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .linktile:hover::before {
+      opacity: 1;
+    }
+  }
+  /* Keyboard focus has no pointer to follow, so the light holds still at the centre. The
+     centre is set outright rather than left to the fallbacks, because a mouse may already
+     have left its last position on this tile; while the mouse is over the tile, it leads. */
+  .linktile:has(.linktile__link:focus-visible)::before {
+    opacity: 1;
+  }
+  .linktile:not(:hover):has(.linktile__link:focus-visible)::before {
+    --x: 50%;
+    --y: 50%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .linktile::before {
+      transition: none;
+    }
+  }
+  /* Forced colours flatten the fill anyway, and a gradient there is only noise. */
+  @media (forced-colors: active) {
+    .linktile::before {
+      display: none;
+    }
+  }
+</style>

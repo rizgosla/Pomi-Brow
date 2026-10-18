@@ -1,15 +1,16 @@
 // Folds authored section files into the seed content.
 //
-// Reads .impeccable/live-content/sections/<slug>.json. A file with "title" is a standalone page
-// (Safety, Aftercare) and goes into src/content/seed/pages.json; a file without one is a Learn
-// article and its "sections" (and "lead", if any) go onto the matching entry in learn.json.
-// Existing entries are replaced by slug; nothing else in either file is touched.
+// Reads <dir>/<slug>.json (default .impeccable/live-content/sections). A file with "title" is a
+// standalone page (Safety, Aftercare) and goes into src/content/seed/pages.json; a file without
+// one is a Learn article and its "sections" (and "lead", if any) go onto the matching entry in
+// learn.json. Existing entries are replaced by slug; nothing else in either file is touched.
+// Check each file first with scripts/check-sections.mjs.
 //
-// Usage: node scripts/merge-sections.mjs
+// Usage: node scripts/merge-sections.mjs [dir]
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const DIR = ".impeccable/live-content/sections";
+const DIR = process.argv[2] ?? ".impeccable/live-content/sections";
 const LEARN = "src/content/seed/learn.json";
 const PAGES = "src/content/seed/pages.json";
 
