@@ -164,7 +164,9 @@ const faqSchema =
           }
         }
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
+      // Starts a block's reveal a full screen before it scrolls into view, so a reader
+      // arriving at a section finds it already there rather than an empty band fading in.
+      { rootMargin: "0px 0px 100% 0px", threshold: 0 }
     );
     blocks.forEach((b) => io.observe(b));
   }
